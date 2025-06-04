@@ -6,7 +6,6 @@ import { useEffect } from "react";
 
 import digitalMarketingImage from "../../../assets/specialized/digital-marketing.png";
 import linkedin from "../../../assets/specialized/linkedin.png";
-
 import blog from "../../../assets/specialized/blogging.png";
 import wordpress from "../../../assets/specialized/WordPress.png";
 import smo from "../../../assets/specialized/smo.png";
@@ -15,11 +14,10 @@ import ppc2 from "../../../assets/specialized/ppc2.png";
 import googleAdsense from "../../../assets/specialized/google-analytics-new-logo.png";
 import googleAdsense2 from "../../../assets/specialized/Google-AdWord-Course.png";
 import lead from "../../../assets/specialized/lead-generation.png";
-// import lead2 from "../../../assets/specialized/lead-generation1.png";
-import emailMarketing from "../../../assets/specialized/email-marketing.png";
 
+import emailMarketing from "../../../assets/specialized/email-marketing.png";
 import goodlead from "../../../assets/specialized/lead-generation1.png";
- import localBusiness from "../../../assets/specialized/local-businesses.png";
+import localBusiness from "../../../assets/specialized/local-businesses.png";
 import affiliate from "../../../assets/specialized/affiliate-marketing-1.png";
 import mobile from "../../../assets/specialized/Mobile-Marketing-icon.png";
 import analytics from "../../../assets/specialized/youtube.png";
