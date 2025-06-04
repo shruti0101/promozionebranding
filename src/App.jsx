@@ -1,11 +1,11 @@
-import React from 'react';
+
 import { Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import './index.css';
 import Layout from './Layout';
-import CustomCursor from './components/CustomCursor';
+
 import Hero from './components/Hero';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -45,7 +45,7 @@ function App() {
   return (
     <div>
 
-    <CustomCursor></CustomCursor>
+ 
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Hero />} />

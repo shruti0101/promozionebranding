@@ -4,14 +4,14 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "../../../styles/WhyChoose.css";
+import "../../../styles/Whychoose.css";
 
 // Images
 import img1 from "../../../assets/fxer1.webp";
 import img2 from "../../../assets/fxer2.webp";
 import img3 from "../../../assets/fxer3.webp";
 import img4 from "../../../assets/fxer4.png";
-import dots from "../../../assets/bg/light-blue-top-dots.png"; // <-- Make sure this path is correct
+import dots from "../../../assets/bg/light-blue-top-dots.png"; 
 
 const WhyChooseUs = () => {
   const [ref, inView] = useInView({ triggerOnce: true });
