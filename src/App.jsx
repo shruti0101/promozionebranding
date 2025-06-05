@@ -11,7 +11,9 @@ import ScrollToTop from './components/ScrollToTop';
 
 // Placeholder components for demonstration
 const OurApproach = () => <div>Our Approach</div>;
-const WhoWeAre = () => <div>Who We Are</div>;
+import Whoweare from './pages/who we are/Whoweare';
+
+
 const Blogs = () => <div>Blogs</div>;
 const ClientReviews = () => <div>Client Reviews</div>;
 const WordPressWebsite = () => <div>WordPress Website</div>;
@@ -52,7 +54,7 @@ function App() {
 
         {/* Company Profile */}
         <Route path="profile/OurApproach" element={<OurApproach />} />
-        <Route path="profile/whoweare" element={<WhoWeAre />} />
+        <Route path="profile/whoweare" element={<Whoweare/>} />
         <Route path="profile/blogs" element={<Blogs />} />
         <Route path="profile/reviews" element={<ClientReviews />} />
 
