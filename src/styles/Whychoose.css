@@ -1,11 +1,10 @@
 .whychooseus-section {
- 
   padding: 80px 0;
-    position: relative;
+  position: relative;
   background: linear-gradient(to bottom, #ffffff 0%, #e9f3fa 100%);
-
-  overflow: hidden;
+  overflow-x: hidden;
   z-index: 1;
+  width: 100%;
 }
 
 .heading {
@@ -13,17 +12,22 @@
   font-size: 2.5rem;
 }
 
+.divider {
+  width: 60px;
+  height: 4px;
+  background-color: #0d6efd;
+}
+
 .whychooseus-dots {
   position: absolute;
   top: 0;
   right: 0;
   width: 160px;
+  max-width: 100%;
   opacity: 0.5;
   z-index: 0;
   pointer-events: none;
 }
-
-
 
 .why-card {
   background: #fff;
@@ -39,9 +43,27 @@
 .icon {
   font-size: 3rem;
 }
+
 .stat-box:hover {
   transform: translateY(-4px);
   transition: all 0.3s ease;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
+.stat-img {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+/* Make sure the container and rows respect viewport */
+/* .container,
+.container-fluid,
+.row {
+  overflow-x: hidden;
+} */

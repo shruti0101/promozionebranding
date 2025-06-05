@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import '../styles/Scrolltop.css'
+import "../styles/scrolltop.css"; // make sure the path is correct
 
 const ScrollToTop = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [visible, setVisible] = useState(false);
 
   const handleScroll = () => {
-    setIsVisible(window.scrollY > 300);
+    setVisible(window.scrollY > 300);
   };
 
   const scrollToTop = () => {
@@ -19,10 +19,11 @@ const ScrollToTop = () => {
 
   return (
     <button
-      className={`scroll-to-top-btn btn btn-primary ${isVisible ? "show" : ""}`}
       onClick={scrollToTop}
+      className={`scroll-to-top-btn btn btn-primary ${visible ? "show" : ""}`}
+      aria-label="Scroll to top"
     >
-      ↑ Top
+      ↑
     </button>
   );
 };

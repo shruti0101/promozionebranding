@@ -1,10 +1,17 @@
-h1{
-    color:rgb(37, 72, 189);;
-    font-family: "Mona Sans", sans-serif;
-    font-weight: 700;
-    /* margin-bottom: 20px; */
+/* Section Safe for Overflow */
+.services-section {
+  overflow-x: hidden;
+  width: 100%;
 }
 
+/* Heading */
+h1 {
+  color: rgb(37, 72, 189);
+  font-family: "Mona Sans", sans-serif;
+  font-weight: 700;
+}
+
+/* Card Styles */
 .card {
   height: 420px;
   overflow: hidden;
@@ -18,16 +25,10 @@ h1{
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
 }
 
-/* .card-img-top {
-  height: 140px;
-  object-fit: contain;
-  padding: 10px;
-  background: #f5f5f5;
-} */
-
+/* Card Body Scrollable */
 .card-body {
   height: 360px;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   text-align: left;
   padding: 13px;
@@ -41,15 +42,16 @@ h1{
   background-color: #303438;
   border-radius: 8px;
 }
-
 .card-body::-webkit-scrollbar-thumb:hover {
   background-color: #1577d9;
-  border-radius: 8px;
 }
 
+/* Card Text & List */
 .card-title {
   font-size: 1.3rem;
   font-weight: 600;
+  color: var(--primary-color);
+  font-family: "Mona Sans", sans-serif;
 }
 
 .card-text {
@@ -58,29 +60,32 @@ h1{
   margin-top: 10px;
 }
 
-.card-body h5{
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-.card-body ul li {
-    font-size: 0.9rem;
-    color: #555;
-    margin-bottom: 5px;
+.card-body h5 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
-.card-body ul li span{
-     color: black;
-    font-family: "Mona Sans", sans-serif;
-    font-weight: 600;
+.card-body ul li {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 5px;
 }
-.card-title{
-    color: var(--primary-color);
-    font-family: "Mona Sans", sans-serif;
-  
+
+.card-body ul li span {
+  color: black;
+  font-family: "Mona Sans", sans-serif;
+  font-weight: 600;
 }
-.card-body p span{
-    color: var(--secondary-color);
-    font-family: "Mona Sans", sans-serif;
-    font-weight: 600;
+
+.card-body p span {
+  color: var(--secondary-color);
+  font-family: "Mona Sans", sans-serif;
+  font-weight: 600;
+}
+
+/* Ensure Layout Grid Gap */
+.row {
+  margin-right: 0;
+  margin-left: 0;
 }

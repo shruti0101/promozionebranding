@@ -5,11 +5,15 @@ const Slider = () => {
   const scrollWrapperRef = useRef(null);
 
   const handleMouseEnter = () => {
-    scrollWrapperRef.current.style.animationPlayState = 'paused';
+    if (scrollWrapperRef.current) {
+      scrollWrapperRef.current.style.animationPlayState = 'paused';
+    }
   };
 
   const handleMouseLeave = () => {
-    scrollWrapperRef.current.style.animationPlayState = 'running';
+    if (scrollWrapperRef.current) {
+      scrollWrapperRef.current.style.animationPlayState = 'running';
+    }
   };
 
   const items = [
@@ -33,8 +37,8 @@ const Slider = () => {
       >
         {repeatedItems.map((item, index) => (
           <React.Fragment key={index}>
-            <span>{item}</span>
-            <span className="star-icon">★</span>
+            <span className="scroll-item">{item}</span>
+            <span className="scroll-item star-icon">★</span>
           </React.Fragment>
         ))}
       </div>

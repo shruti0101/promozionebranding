@@ -1,9 +1,8 @@
 import contactusImage from '../../../assets/contactus.svg';
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect, useRef, useState } from 'react';
-import "../../../styles/Form1.css"
+import "../../../styles/Form1.css";
 
 function Form1() {
   const [showToast, setShowToast] = useState(false);
@@ -15,11 +14,10 @@ function Form1() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     const formData = new FormData(formRef.current);
 
     try {
-      const response = await fetch("https://formsubmit.co/shrutiguptabhu@gmail.com", {
+      const response = await fetch("https://formsubmit.co/promozionebranding@gmail.com", {
         method: "POST",
         body: formData,
         headers: {
@@ -29,7 +27,7 @@ function Form1() {
 
       if (response.ok) {
         setShowToast(true);
-        formRef.current.reset(); // clear form
+        formRef.current.reset();
         setTimeout(() => setShowToast(false), 3000);
       } else {
         alert("Something went wrong. Please try again.");
@@ -41,16 +39,15 @@ function Form1() {
   };
 
   return (
-    <section className="pt-2 text-white position-relative" style={{ backgroundColor: "#14234B" }}>
+    <section className="form1-section text-white position-relative">
       <div className="container py-5">
-        <div className="row align-items-center">
+        <div className="row align-items-center gx-4 gy-5">
           {/* Image */}
-          <div className="col-lg-6 mb-4 mb-lg-0 text-center" data-aos="fade-right">
+          <div className="col-lg-6 text-center" data-aos="fade-right">
             <img
               src={contactusImage}
               alt="CTA Graphic"
               className="img-fluid cta-image"
-              style={{ maxWidth: '100%', height: 'auto' }}
             />
           </div>
 
@@ -94,8 +91,7 @@ function Form1() {
           <div className="toast show text-white bg-success border-0">
             <div className="d-flex">
               <div className="toast-body">
-                🎉 Form submitted successfully!
-                we'll get back to you soon!
+                🎉 Form submitted successfully! We'll get back to you soon!
               </div>
               <button
                 type="button"

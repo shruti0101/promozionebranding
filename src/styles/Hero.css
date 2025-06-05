@@ -1,20 +1,24 @@
 .hero-section {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("../assets/bg/h1bg-1.png");
-  background-color: #f9e0e7;
+  background-color: #e8d2ff;
   background-size: cover;
-  background-position: center;
-  /* overflow: hidden; */
-  background-blend-mode: color-burn;
-}    
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  /* overflow-x: hidden; */
+  background-blend-mode: color-dodge;
+
+  padding: 40px 20px;
+}
 
 .hero-content {
   position: relative;
   z-index: 2;
   text-align: start;
+  max-width: 100%;
+  width: 100%;
   padding: 0 20px;
-  margin-bottom: 75px;
 }
 
 .hero-title {
@@ -22,44 +26,84 @@
   font-size: 4.5rem;
   font-weight: bold;
   margin-bottom: 3rem;
-  text-align: start;
-}
-
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 1.8rem;
-  }
-
-  .glow-ball {
-    width: 80px;
-  }
+  max-width: 750px;
 }
 
 .glow-ball {
   position: absolute;
-  width: 100px;
-  height: auto;
   pointer-events: none;
   z-index: 999;
   opacity: 1;
   transition: transform 0.2s ease-out;
 }
 
+/* Ball 1 */
 .ball1 {
   width: 27%;
-  left: 56%; /* slightly left from 70% */
+  left: 66%;
   top: 55%;
-  z-index: 999;
   animation: fallAndBounce1 1.9s ease-out forwards, float 4s ease-in-out 3s infinite;
 }
 
+/* ✅ Ball 2 — Top Right */
 .ball2 {
   width: 14%;
-  left: 39%;
-  top: 25%;
+  right: 35%;
+  top: 5%;
   animation: fallAndBounce2 2s ease-out forwards, floatReverse 4s ease-in-out 3.5s infinite;
 }
 
+/* Tablet */
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 2.8rem;
+    width: 90%;
+  }
+
+  .ball1 {
+    width: 22%;
+    left: 54%;
+    top: 58%;
+  }
+
+  .ball2 {
+    width: 12%;
+    right: 0;
+    top: 5%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .hero-section {
+           min-height: 65vh;
+    padding: 30px 15px;
+  }
+
+  .hero-title {
+    font-size: 2.6rem;
+  
+    width: 100%;
+  }
+
+  .hero-content {
+    padding: 0 10px;
+  }
+
+  .ball1 {
+          width: 30%;
+        left: 69%;
+    top: 65%;
+  }
+
+  .ball2 {
+         width: 25%;
+        right: 21px;
+    top: 5%;
+  }
+}
+
+/* Animations */
 @keyframes fallAndBounce1 {
   0% {
     top: -200px;
@@ -83,20 +127,20 @@
 @keyframes fallAndBounce2 {
   0% {
     top: -250px;
-    transform: translateX(-50%) rotate(0deg) scale(0.6);
+    transform: rotate(0deg) scale(0.6);
     opacity: 0;
   }
   50% {
-    transform: translateX(-50%) rotate(700deg) scale(1.2);
+    transform: rotate(700deg) scale(1.2);
     opacity: 1;
   }
   70% {
-    top: 26%;
-    transform: translateX(-50%) rotate(600deg) scale(0.95);
+    top: 6%;
+    transform: rotate(600deg) scale(0.95);
   }
   100% {
-    top: 25%;
-    transform: translateX(-50%) rotate(550deg) scale(1);
+    top: 5%;
+    transform: rotate(550deg) scale(1);
   }
 }
 
@@ -114,12 +158,12 @@
 
 @keyframes floatReverse {
   0% {
-    transform: translateX(-50%) translateY(0px) rotate(720deg);
+    transform: translateY(0px) rotate(720deg);
   }
   50% {
-    transform: translateX(-50%) translateY(10px) rotate(715deg);
+    transform: translateY(10px) rotate(715deg);
   }
   100% {
-    transform: translateX(-50%) translateY(0px) rotate(720deg);
+    transform: translateY(0px) rotate(720deg);
   }
 }

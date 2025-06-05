@@ -19,3 +19,22 @@
 .btn-success:hover {
   background-color: #198754;
 }
+
+/* Prevent image overflow on mobile */
+.cta-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive handling */
+@media (max-width: 768px) {
+  .cta-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .btn-success {
+    width: 100%;
+  }
+}

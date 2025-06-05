@@ -106,15 +106,13 @@ const FooterContent = () => {
             <p>
               <FaMapMarkerAlt className="me-2" /> Promozione Branding Pvt. Ltd.
             </p>
-            <p>123 Creative Street, Sector 45</p>
-            <p>Gurgaon, Haryana, India</p>
-            <p>
-              <FaPhone className="me-2" /> +91-9876543210
+            <p>Vardhman Plaza, Sector-3, </p>
+            <p>Rohini, New Delhi</p>
+            <p  className="d-flex ">
+              <FaPhone className="me-2" /> 011 42603232  <br />+91 9971700871
             </p>
-            <p>
-              <FaEnvelope className="me-2" /> info@promozione.in
-            </p>
-            <p>
+      
+          
               <a
                 href="https://www.linkedin.com/company/promozione-branding/"
                 target="_blank"
@@ -123,6 +121,10 @@ const FooterContent = () => {
               >
                 <FaLinkedin className="me-2" /> LinkedIn
               </a>
+            <p>
+              <FaEnvelope  /> info@promozionebranding.com
+            </p>
+            <p>
             </p>
             <a
               href="/brochure.pdf" // <-- match the actual filename

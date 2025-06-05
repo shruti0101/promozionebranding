@@ -1,33 +1,36 @@
 .scroll-container {
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: #000;
   padding: 12px 0;
   color: white;
   font-weight: 600;
   font-family: "Mona Sans", sans-serif;
+  position: relative;
 }
 
 .scrolling-wrapper {
-  display: inline-block;
+  display: flex;
+  gap: 30px;
   white-space: nowrap;
-  animation: scroll 20s linear infinite;
+  animation: scroll 5s linear infinite;
   animation-play-state: running;
+  will-change: transform;
 }
 
-.scrolling-wrapper span {
-  margin: 0 15px;
-  display: inline-block;
+.scroll-item {
   font-size: 1.4rem;
+  flex: 0 0 auto;
 }
 
-.star {
-  color: #0b2599;
+.star-icon {
+  color: white;
 }
 
+/* Fix horizontal scroll bleed caused by 100% width animation */
 @keyframes scroll {
   0% {
-    transform: translateX(0%);
+    transform: translateX(0);
   }
   100% {
     transform: translateX(-50%);

@@ -49,6 +49,7 @@
   z-index: 10;
 }
 
+/* Tablet and below */
 @media (max-width: 992px) {
   .specialized-card {
     padding: 24px 16px;
@@ -58,14 +59,26 @@
   }
 }
 
+/* Mobile devices */
 @media (max-width: 576px) {
   .specialized-card {
     padding: 20px 14px;
   }
   .specialized-card-img {
-    max-width: 60px;
+    max-width: 80px; /* Increased from 60px to 80px */
+    margin-bottom: 16px;
   }
   .specialized-card-text {
-    font-size: 0.9rem;
+    font-size: 1rem; /* Slightly bigger for readability */
+  }
+}
+
+/* Extra small devices (optional) */
+@media (max-width: 400px) {
+  .specialized-card-img {
+    max-width: 90px;
+  }
+  .specialized-card-text {
+    font-size: 0.95rem;
   }
 }
