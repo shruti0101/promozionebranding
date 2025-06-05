@@ -1,6 +1,6 @@
 
 import '../../../styles/Form2.css';
-import ctaImage from '../../../assets/CTAIMG.png'; 
+import ctaImage from '../../../assets/formimg.webp'; 
 
 const Form2 = () => {
   return (
