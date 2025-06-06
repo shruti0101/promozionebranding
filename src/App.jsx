@@ -12,10 +12,11 @@ import ScrollToTop from './components/ScrollToTop';
 // Placeholder components for demonstration
 const OurApproach = () => <div>Our Approach</div>;
 import Whoweare from './pages/who we are/Whoweare';
+import Review from './pages/Reviews/Review';
 
 
 const Blogs = () => <div>Blogs</div>;
-const ClientReviews = () => <div>Client Reviews</div>;
+
 const WordPressWebsite = () => <div>WordPress Website</div>;
 const PHPWebsiteDevelopment = () => <div>PHP Website Development</div>;
 const CMSWebDevelopment = () => <div>CMS Web Development</div>;
@@ -56,7 +57,7 @@ function App() {
         <Route path="profile/OurApproach" element={<OurApproach />} />
         <Route path="profile/whoweare" element={<Whoweare/>} />
         <Route path="profile/blogs" element={<Blogs />} />
-        <Route path="profile/reviews" element={<ClientReviews />} />
+        <Route path="profile/reviews" element={<Review/>} />
 
         {/* Website Development */}
         <Route path="services/design" element={<WordPressWebsite />} />

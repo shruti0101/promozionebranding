@@ -10,9 +10,9 @@ const testimonials = [
     quote: 'Had a amazing experience their innovative startegies have taken my online presence to the next level driven real growth good team to work with'
   },
   {
-    name: 'John Smith',
-    title: 'Founder, TechStart',
-    quote: 'Highly skilled, transparent, and always ahead of the curve. A game changer for us.',
+    name: ' Tisha Nagarwal',
+    title: 'Client',
+    quote: "Promoizone branding Pvt Ltd gave our website a facelift, making it an extremely user-friendly site and more visually appealing to its customers. The professionals here worked tirelessly on improving the navigation, load speed, and mobile responsiveness of the site. The really easy and fabulous design improved our online presence and customer participation.",
   },
   {
     name: 'Anjali Sharma',
@@ -23,6 +23,17 @@ const testimonials = [
     name: 'Neeraj Goyal',
     title: 'Client',
     quote:"Great experience working with Promozione Branding thier team is creative,innovative and hardworking their digital marketing strategies have increased my digital visibility"
+  },
+    {
+    name: 'Dia',
+    title: 'Client',
+    quote:"I have partnered with Promozione Branding Pvt.Ltd for my company....the team is very knowledgeable,supportive they listen to each and every feedback you provide also very dutiful.Must try their services.....👍😊"
+  },
+
+  {
+    name:"vikas kumar",
+    title:"Client",
+    quote:"I am so glad we partnered with Promozione Branding for our digital marketing needs. Their performance marketing team was outstanding at analyzing our previous campaigns and optimizing them for better results. Their proactive approach and consistent communication made the whole process smooth and productive. The results have been fantastic, and I will continue to work with them for future campaigns!"
   },
 ];
 
@@ -39,10 +50,10 @@ const TestimonialSlider = () => {
   return (
     <>
       <section className="testimonial-marquee-section">
-        <h2 className="mt-1 fw-bold fs-2 text-center mb-sm-0 text-capitalize" style={{ color: "#2548BD" }}>
+        <h2 className="mt-1 fw-bold fs-2 text-center mb-sm-0 text-capitalize" style={{ color:" #00448F"}}>
           what our clients say
         </h2>
-        <div
+        <div  data-aos="zoom-in"
           className="mx-auto mb-4 mt-3"
           style={{ width: "60px", height: "4px", backgroundColor: "#0d6efd" }}
         ></div>

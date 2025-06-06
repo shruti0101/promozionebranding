@@ -57,7 +57,7 @@ const WhyChooseUs = () => {
         <img src={dots} alt="dots" className="whychooseus-dots" />
 
         <Container fluid>
-          <h2 className="text-center heading text-dark" data-aos="fade-up">
+          <h2  className="text-center heading text-dark" data-aos="zoom-in">
             Why Choose <span style={{ color: "#2548BD" }}>Us?</span>
           </h2>
           <div className="divider mx-auto mb-4"></div>

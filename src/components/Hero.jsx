@@ -4,19 +4,23 @@ import "aos/dist/aos.css";
 
 import "../styles/Hero.css";
 
+
+import ctaImage from "../assets/formimg.webp";
+
 import im1 from "../../src/assets/bg/boll1.webp";
 import im2 from "../assets/bg/boll2.webp";
 
 import Services from "./Home/Landingpage/Services";
 import WhyChoose from "./Home/Landingpage/WhyChoose";
 import Form1 from "./Home/Landingpage/Form1";
-import Form2 from "./Home/Landingpage/Form2";
+
 import SectorServe from "./Home/Landingpage/SectorServe";
 import Specialized from "./Home/Landingpage/Specialized";
 import Faq from "./Home/Landingpage/Faq";
 import Orbit from "./Home/Landingpage/Orbit";
 import Testimonials from "./Home/Landingpage/Testimonials";
 import Project from "./Home/Landingpage/Project";
+import Form2 from "./Home/Landingpage/Form2";
 
 export default function HeroSection() {
   const ball1Ref = useRef(null);
@@ -86,7 +90,15 @@ export default function HeroSection() {
 
       <Services />
       <WhyChoose />
-      <Form2 />
+
+<Form2
+ heading="Get your Brands Ranked With Us"
+  price="₹499"
+  buttonText="Chalo Shuru Karaein"
+  image={ctaImage}
+
+></Form2>
+
       <Project></Project>
       <Form1 />
       <SectorServe />
