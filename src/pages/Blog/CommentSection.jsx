@@ -1,39 +1,67 @@
-import { useState } from "react";
+import  { useState } from "react";
 
 const CommentSection = () => {
-  const [comments, setComments] = useState([]);
-  const [text, setText] = useState("");
+  const [name, setName] = useState("");
+  const [comment, setComment] = useState("");
+  const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
+  const SHEETDB_API_URL = "https://sheetdb.io/api/v1/81xdikajy240l"; 
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!text.trim()) return;
-    setComments([...comments, text]);
-    setText("");
+
+    if (!name.trim() || !comment.trim()) {
+      setMessage("Please enter both name and comment.");
+      return;
+    }
+
+    try {
+      const res = await fetch(SHEETDB_API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          data: [{ name, comment }],
+        }),
+      });
+
+      if (res.ok) {
+        setMessage("Thank you! Your comment was submitted.");
+        setName("");
+        setComment("");
+      } else {
+        setMessage("Failed to submit comment, please try again.");
+      }
+    } catch (error) {
+      setMessage("Error submitting comment.");
+      console.error(error);
+    }
   };
 
   return (
-    <div className="bg-light p-4 rounded shadow-sm">
-      <h4 className="mb-3">Leave a Comment</h4>
+    <div style={{ maxWidth: 600, margin: "auto" }}>
+      <h3>Leave a Comment</h3>
       <form onSubmit={handleSubmit}>
-        <textarea
-          className="form-control mb-3"
-          rows="3"
-          placeholder="Write your comment..."
-          value={text}
-          onChange={(e) => setText(e.target.value)}
+        <input
+          type="text"
+          placeholder="Your Name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          style={{ width: "100%", marginBottom: 10, padding: 8 }}
+          required
         />
-        <button className="btn btn-primary" type="submit">
-          Post Comment
+        <textarea
+          placeholder="write your Comment here"
+          value={comment}
+          onChange={(e) => setComment(e.target.value)}
+          rows={4}
+          style={{ width: "100%", marginBottom: 10, padding: 8 }}
+          required
+        />
+        <button className="btn btn-primary" type="submit" style={{ padding: "8px 20px" }}>
+          Submit
         </button>
       </form>
-
-      <ul className="list-group mt-4">
-        {comments.map((c, i) => (
-          <li key={i} className="list-group-item">
-            {c}
-          </li>
-        ))}
-      </ul>
+      {message && <p style={{ marginTop: 10 }}>{message}</p>}
     </div>
   );
 };

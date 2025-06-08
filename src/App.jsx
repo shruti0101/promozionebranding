@@ -1,26 +1,19 @@
+import { Routes, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "./index.css";
+import Layout from "./Layout";
 
-import { Routes, Route } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
-import '@fortawesome/fontawesome-free/css/all.min.css';
-import './index.css';
-import Layout from './Layout';
+import Hero from "./components/Hero";
+import ScrollToTop from "./components/ScrollToTop";
 
-import Hero from './components/Hero';
-import ScrollToTop from './components/ScrollToTop';
-
-
-
-import Whoweare from './pages/who we are/Whoweare';
-import Review from './pages/Reviews/Review';
-import Approach from './pages/Ourapproach.jsx/Approach';
+import Whoweare from "./pages/who we are/Whoweare";
+import Review from "./pages/Reviews/Review";
+import Approach from "./pages/Ourapproach.jsx/Approach";
 import BlogList from "./pages/Blog/BlogList";
 import BlogPage from "./pages/Blog/BlogPage";
 import AllBlogs from "./pages/Blog/AllBlog";
-
-
-
-
 
 const WordPressWebsite = () => <div>WordPress Website</div>;
 const PHPWebsiteDevelopment = () => <div>PHP Website Development</div>;
@@ -32,7 +25,9 @@ const WebsiteRedesigning = () => <div>Website Redesigning</div>;
 const PerformanceMarketing = () => <div>Performance Marketing</div>;
 const B2BMarketing = () => <div>B2B Marketing</div>;
 const LeadGenerations = () => <div>Lead Generations</div>;
-const AIPerformanceMarketingServices = () => <div>AI Performance Marketing Services</div>;
+const AIPerformanceMarketingServices = () => (
+  <div>AI Performance Marketing Services</div>
+);
 const AdsManagement = () => <div>Ads Management</div>;
 const InternetMarketing = () => <div>Internet Marketing</div>;
 const ContentMarketing = () => <div>Content Marketing</div>;
@@ -42,7 +37,9 @@ const VideoMarketing = () => <div>Video Marketing</div>;
 const SocialMediaAds = () => <div>Social Media Ads</div>;
 const SMO = () => <div>SMO</div>;
 const SMM = () => <div>SMM</div>;
-const AIDigitalMarketingServices = () => <div>AI Digital Marketing Services</div>;
+const AIDigitalMarketingServices = () => (
+  <div>AI Digital Marketing Services</div>
+);
 const ECommerceSEOServices = () => <div>E-Commerce SEO Services</div>;
 const DigitalMarketingServices = () => <div>Digital Marketing Services</div>;
 const EnterpriseSEOServices = () => <div>Enterprise SEO Services</div>;
@@ -52,65 +49,85 @@ const FreeSEOAudit = () => <div>Free SEO Audit</div>;
 function App() {
   return (
     <div>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Hero />} />
 
- 
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Hero />} />
+          {/* Company Profile */}
+          <Route path="profile/OurApproach" element={<Approach />} />
+          <Route path="profile/whoweare" element={<Whoweare />} />
+          <Route path="profile/blogs" element={<BlogList />} />
+          <Route path="profile/blogs/all" element={<AllBlogs />} />
+          <Route path="profile/blogs/:id" element={<BlogPage />} />
 
-        {/* Company Profile */}
-        <Route path="profile/OurApproach" element={<Approach/>} />
-        <Route path="profile/whoweare" element={<Whoweare/>} />
-        <Route path="profile/blogs" element={<Blogs />} />
-        <Route path="profile/reviews" element={<Review/>} />
+          <Route path="profile/reviews" element={<Review />} />
 
-        {/* Website Development */}
-        <Route path="services/design" element={<WordPressWebsite />} />
-        <Route path="services/development" element={<PHPWebsiteDevelopment />} />
-        <Route path="services/marketing" element={<CMSWebDevelopment />} />
-        {/* Add more specific routes as needed */}
-        <Route path="services/mern" element={<MernWebDevelopment />} />
-        <Route path="services/ecommerce" element={<EcommerceWebDesigning />} />
-        <Route path="services/seo" element={<SEOWebDesigning />} />
-        <Route path="services/redesign" element={<WebsiteRedesigning />} />
+          {/* Website Development */}
+          <Route path="services/design" element={<WordPressWebsite />} />
+          <Route
+            path="services/development"
+            element={<PHPWebsiteDevelopment />}
+          />
+          <Route path="services/marketing" element={<CMSWebDevelopment />} />
+          {/* Add more specific routes as needed */}
+          <Route path="services/mern" element={<MernWebDevelopment />} />
+          <Route
+            path="services/ecommerce"
+            element={<EcommerceWebDesigning />}
+          />
+          <Route path="services/seo" element={<SEOWebDesigning />} />
+          <Route path="services/redesign" element={<WebsiteRedesigning />} />
 
-        {/* Revenue Marketing & CRO */}
-        <Route path="services/performance" element={<PerformanceMarketing />} />
-        <Route path="services/b2b" element={<B2BMarketing />} />
-        <Route path="services/leads" element={<LeadGenerations />} />
-        <Route path="services/ai-performance" element={<AIPerformanceMarketingServices />} />
-        <Route path="services/ads" element={<AdsManagement />} />
-        <Route path="services/internet" element={<InternetMarketing />} />
+          {/* Revenue Marketing & CRO */}
+          <Route
+            path="services/performance"
+            element={<PerformanceMarketing />}
+          />
+          <Route path="services/b2b" element={<B2BMarketing />} />
+          <Route path="services/leads" element={<LeadGenerations />} />
+          <Route
+            path="services/ai-performance"
+            element={<AIPerformanceMarketingServices />}
+          />
+          <Route path="services/ads" element={<AdsManagement />} />
+          <Route path="services/internet" element={<InternetMarketing />} />
 
-        {/* Digital Marketing */}
-        <Route path="services/content" element={<ContentMarketing />} />
-        <Route path="services/crm" element={<CRMOptimizations />} />
-        <Route path="services/email" element={<EmailMarketing />} />
-        <Route path="services/video" element={<VideoMarketing />} />
-        <Route path="services/social" element={<SocialMediaAds />} />
-        <Route path="services/smo" element={<SMO />} />
-        <Route path="services/smm" element={<SMM />} />
+          {/* Digital Marketing */}
+          <Route path="services/content" element={<ContentMarketing />} />
+          <Route path="services/crm" element={<CRMOptimizations />} />
+          <Route path="services/email" element={<EmailMarketing />} />
+          <Route path="services/video" element={<VideoMarketing />} />
+          <Route path="services/social" element={<SocialMediaAds />} />
+          <Route path="services/smo" element={<SMO />} />
+          <Route path="services/smm" element={<SMM />} />
 
-        {/* Guaranteed SEO */}
-        <Route path="services/ai-digital" element={<AIDigitalMarketingServices />} />
-        <Route path="services/ecommerce-seo" element={<ECommerceSEOServices />} />
-        <Route path="services/digital-seo" element={<DigitalMarketingServices />} />
-        <Route path="services/enterprise-seo" element={<EnterpriseSEOServices />} />
-        <Route path="services/ai-seo" element={<AISEOServices />} />
+          {/* Guaranteed SEO */}
+          <Route
+            path="services/ai-digital"
+            element={<AIDigitalMarketingServices />}
+          />
+          <Route
+            path="services/ecommerce-seo"
+            element={<ECommerceSEOServices />}
+          />
+          <Route
+            path="services/digital-seo"
+            element={<DigitalMarketingServices />}
+          />
+          <Route
+            path="services/enterprise-seo"
+            element={<EnterpriseSEOServices />}
+          />
+          <Route path="services/ai-seo" element={<AISEOServices />} />
 
-        {/* Free SEO Audit */}
-        <Route path="boost" element={<FreeSEOAudit />} />
-      </Route>
-    </Routes>
+          {/* Free SEO Audit */}
+          <Route path="boost" element={<FreeSEOAudit />} />
+        </Route>
+      </Routes>
 
-    <ScrollToTop></ScrollToTop>
+      <ScrollToTop></ScrollToTop>
     </div>
-
   );
 }
 
 export default App;
-
-
-
-
