@@ -1,18 +1,40 @@
-.section-bg {
-  background-image: url("../../assets/reviews/bg-intro.webp");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  padding: 80px 0; /* Ensures some height */
-  color: black;     /* Optional: makes text readable */
+.tabs {
+  padding: 20px;
+  width: 100%;
 }
-.review h2{
-    font-size: 3rem;
-    font-weight:700;
 
+.tab-labels {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #ddd;
 }
-.review p{
-    line-height: 1.4rem;
-    font-size: 1.1rem;
 
+.tab-label {
+  flex: 1;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 18px;
+  color: #aaa;
+  border-top: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-label .tab-number {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.tab-label.active {
+  color: #001957;
+  font-weight: 600;
+  border-top: 4px solid #001957;
+}
+
+.tab-label.active .tab-number {
+  color: #001957;
+}
+
+.tab-label:hover {
+  color: #444;
 }

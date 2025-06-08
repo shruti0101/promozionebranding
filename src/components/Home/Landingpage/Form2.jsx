@@ -11,7 +11,7 @@ const Form2 = ({ heading, price, buttonText, image }) => {
           <div className="col-lg-6 text-white text-center text-lg-start">
             <h2 className="fw-bold mb-3">
               {heading}<br />
-              Starting at <span className="highlight-price">{price}</span> 
+            <span className="highlight-price">{price}</span> 
             </h2>
             <button className="btn btn-success px-4 py-2 rounded-pill fw-semibold mt-2">
               {buttonText}

@@ -1,0 +1,146 @@
+.section-bg {
+  background-image: url("../../assets/reviews/bg-intro.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  padding: 60px 0;
+}
+
+.approach-text {
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.approach-heading {
+  font-size: 2.9rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.approach-subheading {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.approach-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #666;
+  max-width: 90%;
+}
+
+.approach-image {
+  max-width: 120%;
+  height: auto;
+
+}
+
+
+/* tabs */
+
+.tabs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.tab-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  background: #f7f7f9;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+.tab-text {
+  flex: 1;
+  padding-right: 30px;
+}
+
+.tab-text h2 {
+  color: #1d2354;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.tab-text h4 {
+  color: #2c3b8f;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.tab-text p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 15px;
+  color: #e4002b;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tab-image {
+  flex: 1;
+  text-align: right;
+}
+
+.tab-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Tab Line & Navigation */
+.tab-progress-bar {
+  position: relative;
+  border-top: 2px solid #1d2354;
+  padding-top: 20px;
+}
+
+.progress-line {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  height: 2px;
+  background: #1d2354;
+  transition: width 0.4s ease;
+  z-index: 2;
+}
+
+.tab-navigation {
+  display: flex;
+  justify-content: space-between;
+  z-index: 3;
+  position: relative;
+}
+
+.tab-item {
+  text-align: center;
+  flex: 1;
+  cursor: pointer;
+  color: #bbb;
+  transition: all 0.3s;
+  margin-top: 10px;
+}
+
+.tab-item.active {
+  color: #1d2354;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.tab-number {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.tab-title {
+  font-size: 16px;
+}

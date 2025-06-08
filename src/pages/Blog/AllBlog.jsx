@@ -1,0 +1,17 @@
+import BlogCard from "./BlogCard";
+import { blogs } from "../../Data/Data"
+
+const AllBlogs = () => (
+  <div className="container py-5">
+    <h2 className="mb-4 fw-bold">All Blogs</h2>
+    <div className="row g-4">
+      {blogs.map(blog => (
+        <div className="col-md-4" key={blog.id}>
+          <BlogCard blog={blog} />
+        </div>
+      ))}
+    </div>
+  </div>
+);
+
+export default AllBlogs;

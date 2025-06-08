@@ -2,8 +2,17 @@ html{
   scroll-behavior: smooth;
 
 }
+.section-bg {
+  background-image: url("../../assets/reviews/bg-intro.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+
+  background-color: white;
 
 
+}
 
 body{
     margin: 0;

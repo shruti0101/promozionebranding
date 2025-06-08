@@ -1,0 +1,200 @@
+.enhanced-timeline-wrapper {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  background-color: #f8faff;
+}
+
+.section-title {
+  font-size: 36px;
+  color: #001957;
+  font-weight: 700;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.timeline-step {
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  flex: 1;
+  min-width: 120px;
+  transition: all 0.4s ease;
+}
+
+.circle-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pulse {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(0, 25, 87, 0.2);
+  animation: pulse 1.5s infinite;
+  z-index: 0;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.3s;
+}
+
+.timeline-step.active .pulse {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  background: #e3e7f0;
+  border-radius: 50%;
+  color: #001957;
+  font-weight: bold;
+  line-height: 40px;
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-step.active .circle {
+  background: #001957;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.timeline-step .line {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  height: 2px;
+  width: 100%;
+  background: #dcdcdc;
+  z-index: -1;
+  transform: translateX(-50%);
+}
+
+.timeline-step:first-child .line {
+  left: 50%;
+  width: 50%;
+  transform: none;
+}
+
+.timeline-step:last-child .line {
+  left: 0;
+  width: 50%;
+  transform: none;
+}
+
+.timeline-step.active .line {
+  background: #001957;
+}
+
+.step-title {
+  margin-top: 15px;
+  font-size: 15px;
+  color: #888;
+  transition: color 0.3s;
+  padding: 0 10px;
+}
+
+.timeline-step.active .step-title {
+  color: #001957;
+  font-weight: 600;
+}
+
+.timeline-content {
+  padding: 30px 20px;
+  min-height: 160px;
+}
+
+.content-card {
+  max-width: 650px;
+  margin: auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  animation: fadeInUp 0.6s ease;
+}
+
+.content-card h2 {
+  font-size: 24px;
+  color: #001957;
+  margin-bottom: 12px;
+}
+
+.content-card p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Animations */
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0.4;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-step {
+    flex: none;
+    margin-bottom: 20px;
+  }
+
+  .timeline-step .line {
+    display: none;
+  }
+
+  .step-title {
+    text-align: center;
+  }
+
+  .content-card {
+    padding: 20px;
+  }
+}

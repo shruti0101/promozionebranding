@@ -9,13 +9,18 @@ import Layout from './Layout';
 import Hero from './components/Hero';
 import ScrollToTop from './components/ScrollToTop';
 
-// Placeholder components for demonstration
-const OurApproach = () => <div>Our Approach</div>;
+
+
 import Whoweare from './pages/who we are/Whoweare';
 import Review from './pages/Reviews/Review';
+import Approach from './pages/Ourapproach.jsx/Approach';
+import BlogList from "./pages/Blog/BlogList";
+import BlogPage from "./pages/Blog/BlogPage";
+import AllBlogs from "./pages/Blog/AllBlog";
 
 
-const Blogs = () => <div>Blogs</div>;
+
+
 
 const WordPressWebsite = () => <div>WordPress Website</div>;
 const PHPWebsiteDevelopment = () => <div>PHP Website Development</div>;
@@ -54,7 +59,7 @@ function App() {
         <Route index element={<Hero />} />
 
         {/* Company Profile */}
-        <Route path="profile/OurApproach" element={<OurApproach />} />
+        <Route path="profile/OurApproach" element={<Approach/>} />
         <Route path="profile/whoweare" element={<Whoweare/>} />
         <Route path="profile/blogs" element={<Blogs />} />
         <Route path="profile/reviews" element={<Review/>} />
