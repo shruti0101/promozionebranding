@@ -1,6 +1,6 @@
 .scroll-to-top-btn {
   position: fixed;
-  bottom: 30px;
+  bottom: 100px;
   right: 20px;
   opacity: 0;
   visibility: hidden;

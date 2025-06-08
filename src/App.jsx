@@ -5,7 +5,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./index.css";
 import Layout from "./Layout";
 
-import Hero from "./components/Hero";
+import ScrollToTopOnRouteChange from "./components/ScrollToTopOnRouteChange";
 import ScrollToTop from "./components/ScrollToTop";
 
 import Whoweare from "./pages/who we are/Whoweare";
@@ -50,6 +50,7 @@ const FreeSEOAudit = () => <div>Free SEO Audit</div>;
 function App() {
   return (
     <div>
+       <ScrollToTopOnRouteChange /> 
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
