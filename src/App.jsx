@@ -14,6 +14,7 @@ import Approach from "./pages/Ourapproach.jsx/Approach";
 import BlogList from "./pages/Blog/BlogList";
 import BlogPage from "./pages/Blog/BlogPage";
 import AllBlogs from "./pages/Blog/AllBlog";
+import Home from "./components/Home/Home";
 
 const WordPressWebsite = () => <div>WordPress Website</div>;
 const PHPWebsiteDevelopment = () => <div>PHP Website Development</div>;
@@ -51,7 +52,7 @@ function App() {
     <div>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Hero />} />
+          <Route index element={<Home />} />
 
           {/* Company Profile */}
           <Route path="profile/OurApproach" element={<Approach />} />

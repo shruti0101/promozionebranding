@@ -1,9 +1,75 @@
 .blog-card {
-  transition: all 0.3s ease;
-  border: 1px solid #eee;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 12px;
 }
+
 .blog-card:hover {
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
   transform: translateY(-5px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
-  border-color: #ccc;
+}
+
+.image-wrapper {
+  overflow: hidden;
+  border-radius: 12px;
+  max-height: 200px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.blog-card:hover .image-wrapper img {
+  transform: scale(1.05);
+}
+
+.blog-title {
+  font-size: 1.3rem;
+  color: #222;
+}
+
+.blog-excerpt {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.blog-snippet {
+  font-size: 1rem;
+  color: #444;
+  flex-grow: 1; /* push the button to bottom */
+}
+
+.read-more-btn {
+  align-self: flex-start;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 15px rgba(0, 86, 179, 0.5);
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn-icon {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.read-more-btn:hover .btn-icon {
+  transform: translateX(5px);
 }
