@@ -1,5 +1,7 @@
 import React from "react";
 import "./Style.css"
+import ctaImage from "../../assets/Formimg.webp"
+import Form2 from "../../components/Home/Landingpage/Form2"
 const Lead = () => {
   return (
     <div>
@@ -57,7 +59,7 @@ const Lead = () => {
 
       <section className="py-5 bg-light">
   <div className="container">
-    <div className="text-center mb-5" data-aos="fade-up">
+    <div className="text-center mb-5" >
       <h2 className="fw-bold" style={{ color: "#2548BD" }}>
         Why Choose Our Lead Generation Services in India?
       </h2>
@@ -93,7 +95,7 @@ const Lead = () => {
           icon: "https://cdn-icons-png.flaticon.com/512/1170/1170627.png",
         },
       ].map((item, idx) => (
-        <div className="col-md-4" key={idx} data-aos="fade-up" data-aos-delay={`${idx * 100}`}>
+        <div className="col-md-4" key={idx}  data-aos-delay={`${idx * 100}`}>
           <div className="p-4 bg-white rounded shadow-sm h-100 text-center">
             <img
               src={item.icon}
@@ -119,7 +121,7 @@ const Lead = () => {
 
 <section className="py-5 bg-white">
   <div className="container">
-    <h2 className="text-center fw-bold mb-5" style={{ color: "#2548BD" }} data-aos="fade-up">
+    <h2 className="text-center fw-bold mb-5" style={{ color: "#2548BD" }}>
       Our Lead Generation Services Include
     </h2>
 
@@ -134,7 +136,7 @@ const Lead = () => {
         { title: "Lead Nurturing Campaigns", icon: "https://cdn-icons-png.flaticon.com/512/9407/9407723.png" },
         { title: "Cold Email & WhatsApp Marketing", icon: "https://cdn-icons-png.flaticon.com/512/684/684908.png" },
       ].map((item, idx) => (
-        <div className="col-md-3 col-sm-6 text-center" key={idx} data-aos="fade-up" data-aos-delay={`${idx * 100}`}>
+        <div className="col-md-3 col-sm-6 text-center" key={idx}  data-aos-delay={`${idx * 100}`}>
           <div className="d-flex flex-column align-items-center px-3">
             <img
               src={item.icon}
@@ -152,7 +154,7 @@ const Lead = () => {
 
 
 <section class="container py-5">
-  <h2 class="text-center mb-5 fw-bold">How Our Lead Generation Process Works</h2>
+  <h1 class="text-center mb-5 fw-bold"  >How Our Lead Generation Process Works</h1>
   <div class="leadgen-timeline position-relative">
     <div class="leadgen-step leadgen-left">
       <div class="leadgen-box">
@@ -198,11 +200,81 @@ const Lead = () => {
     </div>
   </div>
   <div class="text-center mt-5">
-    <button class="btn btn-primary px-5 py-2 fs-5">Start Your Lead Generation Campaign</button>
+    <button class="nav-btn">Start Your Lead Generation Campaign</button>
   </div>
 </section>
 
 
+
+<section class="container py-5">
+  <h1 class="text-center  mb-4">Why Lead Generation is Important for Your Business</h1>
+  <p class="text-center text-muted mb-5 fs-5">
+    Unlock growth opportunities and connect with your ideal customers through a focused lead generation strategy.
+  </p>
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-4">
+      <div class="leadgen-card">
+        <div class="leadgen-icon-box bg-primary">
+          <i class="bi bi-bar-chart-line"></i>
+        </div>
+        <h5>Boosts Sales Pipeline</h5>
+        <p>Fuel your sales funnel with a steady stream of potential customers ready to convert.</p>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="leadgen-card">
+        <div class="leadgen-icon-box bg-success">
+          <i class="bi bi-graph-up-arrow"></i>
+        </div>
+        <h5>Increases Conversion Rates</h5>
+        <p>Reach prospects who are genuinely interested, resulting in better conversion performance.</p>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="leadgen-card">
+        <div class="leadgen-icon-box bg-warning">
+          <i class="bi bi-clock-history"></i>
+        </div>
+        <h5>Saves Time & Resources</h5>
+        <p>Focus your efforts on leads that matter while we handle the heavy lifting.</p>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="leadgen-card">
+        <div class="leadgen-icon-box bg-danger">
+          <i class="bi bi-person-check"></i>
+        </div>
+        <h5>Generates High-Quality Leads</h5>
+        <p>Filter out noise and get connected to decision-makers ready to buy.</p>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="leadgen-card">
+        <div class="leadgen-icon-box bg-info">
+          <i class="bi bi-rocket-takeoff"></i>
+        </div>
+        <h5>Helps Businesses Scale Faster</h5>
+        <p>Accelerate growth by continuously acquiring customers who match your ideal profile.</p>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="leadgen-card">
+        <div class="leadgen-icon-box bg-secondary">
+          <i class="bi bi-wallet2"></i>
+        </div>
+        <h5>Cost-Effective Marketing Strategy</h5>
+        <p>Maximize ROI with targeted lead generation instead of expensive, broad marketing campaigns.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <Form2
+        heading="Let's Build Your Success Story Together"
+        price="Your Growth is Our Guarantee."
+        buttonText="Book Your Free Consultation Now!"
+        image={ctaImage}
+      ></Form2>
 
     </div>
   );

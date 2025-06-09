@@ -5,7 +5,7 @@
   border: 1px solid #e6e6e6;
 }
 .service-box:hover {
-  background: linear-gradient(to right, #2548BD, #1a33a0);
+  background: linear-gradient(to right, #6781d6, #93a5f5);
   color: white;
   transform: translateY(-6px);
 }
@@ -34,7 +34,7 @@
   transition: all 0.3s ease-in-out;
 }
 .execution-section .matter-box:hover {
-  background: #2548BD;
+  background: #4663c3;
   color: #fff;
 }
 .execution-section .matter-box:hover h6 {
