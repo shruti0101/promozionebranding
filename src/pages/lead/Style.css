@@ -1,0 +1,103 @@
+/* Optional hover effect */
+.lead-icon-box:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.leadgen-timeline {
+  position: relative;
+  padding: 2rem 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.leadgen-timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #0d6efd;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.leadgen-step {
+  position: relative;
+  width: 50%;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}
+
+.leadgen-box {
+  background-color: #f8f9fa;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.leadgen-box:hover {
+  transform: translateY(-5px);
+}
+
+.leadgen-left {
+  left: 0;
+  text-align: right;
+}
+
+.leadgen-right {
+  left: 50%;
+  text-align: left;
+}
+
+.leadgen-icon {
+  position: absolute;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  background: #0d6efd;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 3;
+  font-size: 18px;
+}
+
+.leadgen-left .leadgen-icon {
+  right: -20px;
+}
+
+.leadgen-right .leadgen-icon {
+  left: -20px;
+}
+
+@media (max-width: 768px) {
+  .leadgen-step,
+  .leadgen-left,
+  .leadgen-right {
+    left: 0 !important;
+    width: 100%;
+    text-align: left;
+  }
+
+  .leadgen-timeline::before {
+    left: 20px;
+  }
+
+  .leadgen-icon {
+    left: -10px !important;
+    right: auto !important;
+  }
+
+  .leadgen-box {
+    margin-left: 40px;
+  }
+}

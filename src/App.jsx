@@ -15,17 +15,19 @@ import BlogList from "./pages/Blog/BlogList";
 import BlogPage from "./pages/Blog/BlogPage";
 import AllBlogs from "./pages/Blog/AllBlog";
 import Home from "./components/Home/Home";
+import Wordpress from "./pages/wordpress/Wordpress";
+import Performance from "./pages/performancemarket/Performance";
+import Lead from "./pages/lead/Lead";
 
-const WordPressWebsite = () => <div>WordPress Website</div>;
 const PHPWebsiteDevelopment = () => <div>PHP Website Development</div>;
 const CMSWebDevelopment = () => <div>CMS Web Development</div>;
 const MernWebDevelopment = () => <div>Mern Web Development</div>;
 const EcommerceWebDesigning = () => <div>Ecommerce Web Designing</div>;
 const SEOWebDesigning = () => <div>SEO Web Designing</div>;
 const WebsiteRedesigning = () => <div>Website Redesigning</div>;
-const PerformanceMarketing = () => <div>Performance Marketing</div>;
+
 const B2BMarketing = () => <div>B2B Marketing</div>;
-const LeadGenerations = () => <div>Lead Generations</div>;
+
 const AIPerformanceMarketingServices = () => (
   <div>AI Performance Marketing Services</div>
 );
@@ -65,7 +67,7 @@ function App() {
           <Route path="profile/reviews" element={<Review />} />
 
           {/* Website Development */}
-          <Route path="services/design" element={<WordPressWebsite />} />
+          <Route path="services/design" element={<Wordpress />} />
           <Route
             path="services/development"
             element={<PHPWebsiteDevelopment />}
@@ -83,10 +85,10 @@ function App() {
           {/* Revenue Marketing & CRO */}
           <Route
             path="services/performance"
-            element={<PerformanceMarketing />}
+            element={<Performance/>}
           />
           <Route path="services/b2b" element={<B2BMarketing />} />
-          <Route path="services/leads" element={<LeadGenerations />} />
+          <Route path="services/leads" element={<Lead />} />
           <Route
             path="services/ai-performance"
             element={<AIPerformanceMarketingServices />}

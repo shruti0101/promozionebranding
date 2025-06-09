@@ -3,6 +3,7 @@ import BlogCard from "./BlogCard";
 import { blogs } from "../../Data/Data";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import CommentSection  from "./CommentSection";
 
 const AllBlogs = () =>
     
@@ -17,6 +18,10 @@ const AllBlogs = () =>
         </div>
       ))}
     </div>
+
+      <div className="mt-5 " data-aos="fade-up">
+        <CommentSection />
+      </div>
   </div>
 );
 

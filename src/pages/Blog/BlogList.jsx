@@ -15,8 +15,8 @@ const BlogList = () => {
   const previewBlogs = blogs.slice(0, 3);
 
   return (
-    <div className="container py-5">
-      <h2 className="text-center  fw-bold " data-aos="fade-down" style={{color:"#2548BD"}}>Latest Blogs</h2>
+    <div className="container-fluid bg-light py-5">
+      <h2 className="text-center fs-1 fw-bold " data-aos="fade-down" style={{color:"#2548BD"}}>Latest Blogs</h2>
   <div data-aos="zoom-in"
         className="mx-auto mb-5 mt-3"
         style={{ width: "60px", height: "4px", backgroundColor: "#0d6efd" }}

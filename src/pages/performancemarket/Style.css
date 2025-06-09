@@ -1,0 +1,42 @@
+.service-box {
+  background: #fdfdfd;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  border: 1px solid #e6e6e6;
+}
+.service-box:hover {
+  background: linear-gradient(to right, #2548BD, #1a33a0);
+  color: white;
+  transform: translateY(-6px);
+}
+.service-box:hover h5,
+.service-box:hover p {
+  color: white !important;
+}
+.service-box img {
+  transition: transform 0.3s ease;
+}
+.service-box:hover img {
+  transform: scale(1.1);
+}
+
+.execution-section .step-box {
+  border: 1px solid #e4e4e4;
+  transition: transform 0.3s ease;
+}
+.execution-section .step-box:hover {
+  transform: translateY(-6px);
+  background: #f0f7ff;
+}
+
+.execution-section .matter-box {
+  border: 1px solid #dee2e6;
+  transition: all 0.3s ease-in-out;
+}
+.execution-section .matter-box:hover {
+  background: #2548BD;
+  color: #fff;
+}
+.execution-section .matter-box:hover h6 {
+  color: #fff;
+}

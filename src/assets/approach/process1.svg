@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="574px" height="384px" viewBox="0 0 574 384" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>keyword-explorer</title>
+    <g id="keyword-explorer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="574" height="384"></rect>
+        <rect id="Rectangle" stroke="#CFCFCF" x="0" y="0" width="574" height="384"></rect>
+        <rect id="Rectangle" fill-opacity="0.0815941871" fill="#273A75" x="448" y="102" width="108" height="79"></rect>
+        <rect id="Rectangle-Copy-31" fill-opacity="0.0815941871" fill="#273A75" x="30" y="210" width="244" height="19"></rect>
+        <rect id="Rectangle-Copy-32" fill-opacity="0.0815941871" fill="#273A75" x="306" y="210" width="244" height="19"></rect>
+        <rect id="Rectangle" fill="#D8D8D8" x="290.6" y="129" width="8" height="45"></rect>
+        <rect id="Rectangle-Copy-19" fill="#D8D8D8" x="279" y="133" width="8" height="41"></rect>
+        <rect id="Rectangle-Copy-20" fill="#D8D8D8" x="267.4" y="137" width="8" height="37"></rect>
+        <rect id="Rectangle-Copy-21" fill="#D8D8D8" x="255.8" y="139" width="8" height="35"></rect>
+        <rect id="Rectangle-Copy-22" fill="#D8D8D8" x="244.2" y="143" width="8" height="31"></rect>
+        <rect id="Rectangle-Copy-23" fill="#464646" x="232.6" y="146" width="8" height="28"></rect>
+        <rect id="Rectangle-Copy-24" fill="#464646" x="221" y="151" width="8" height="23"></rect>
+        <rect id="Rectangle-Copy-25" fill="#464646" x="209.4" y="154" width="8" height="20"></rect>
+        <rect id="Rectangle-Copy-26" fill="#464646" x="197.8" y="158" width="8" height="16"></rect>
+        <rect id="Rectangle-Copy-27" fill="#464646" x="186.2" y="163" width="8" height="11"></rect>
+        <rect id="Rectangle-Copy-28" fill="#464646" x="174.6" y="165" width="8" height="9"></rect>
+        <rect id="Rectangle-Copy-29" fill="#464646" x="163" y="168" width="8" height="6"></rect>
+        <rect id="Rectangle" fill="#273A75" x="0" y="0" width="574" height="28"></rect>
+        <text id="Keyword-Explorer" font-family="ProximaNova-Semibold, Proxima Nova" font-size="14" font-weight="500" fill="#FFFFFF">
+            <tspan x="16" y="19">Keyword Explorer</tspan>
+        </text>
+        <text id="Overview:-‘webdesign" font-family="ProximaNova-Semibold, Proxima Nova" font-size="17" font-weight="500" fill="#464646">
+            <tspan x="33" y="81">Overview: ‘webdesign’</tspan>
+        </text>
+        <text id="Keyword-Suggestions" font-family="ProximaNova-Semibold, Proxima Nova" font-size="12" font-weight="500" fill="#464646">
+            <tspan x="33" y="203">Keyword Suggestions</tspan>
+        </text>
+        <text id="Mentions" font-family="ProximaNova-Semibold, Proxima Nova" font-size="12" font-weight="500" fill="#464646">
+            <tspan x="33" y="296">Mentions</tspan>
+        </text>
+        <text id="Keyword" font-family="ProximaNova-Semibold, Proxima Nova" font-size="10" font-weight="500" fill="#464646">
+            <tspan x="41" y="223">Keyword</tspan>
+        </text>
+        <text id="Volume" font-family="ProximaNova-Semibold, Proxima Nova" font-size="10" font-weight="500" fill="#464646">
+            <tspan x="212" y="223">Volume</tspan>
+        </text>
+        <text id="Rank" font-family="ProximaNova-Semibold, Proxima Nova" font-size="10" font-weight="500" fill="#464646">
+            <tspan x="310" y="223">Rank</tspan>
+        </text>
+        <text id="1" font-family="ProximaNova-Semibold, Proxima Nova" font-size="10" font-weight="500" fill="#464646">
+            <tspan x="317" y="243">1</tspan>
+        </text>
+        <text id="2" font-family="ProximaNova-Semibold, Proxima Nova" font-size="10" font-weight="500" fill="#464646">
+            <tspan x="316" y="255">2</tspan>
+        </text>
+        <text id="Title-&amp;-URL" font-family="ProximaNova-Semibold, Proxima Nova" font-size="10" font-weight="500" fill="#464646">
+            <tspan x="343" y="223">Title &amp; URL</tspan>
+        </text>
+        <text id="PA" font-family="ProximaNova-Semibold, Proxima Nova" font-size="10" font-weight="500" fill="#464646">
+            <tspan x="471" y="223">PA</tspan>
+        </text>
+        <text id="DA" font-family="ProximaNova-Semibold, Proxima Nova" font-size="10" font-weight="500" fill="#464646">
+            <tspan x="508" y="223">DA</tspan>
+        </text>
+        <text id="SERP-Analysis" font-family="ProximaNova-Semibold, Proxima Nova" font-size="12" font-weight="500" fill="#464646">
+            <tspan x="309" y="203">SERP Analysis</tspan>
+        </text>
+        <text id="45" font-family="ProximaNova-Semibold, Proxima Nova" font-size="17" font-weight="500" fill="#464646">
+            <tspan x="30" y="119">45</tspan>
+        </text>
+        <text id="10,000---20,000" font-family="ProximaNova-Semibold, Proxima Nova" font-size="17" font-weight="500" fill="#464646">
+            <tspan x="161" y="119">10,000 - 20,000</tspan>
+        </text>
+        <text id="Difficulty" font-family="ProximaNova-Semibold, Proxima Nova" font-size="9" font-weight="500" fill="#464646">
+            <tspan x="30" y="133">Difficulty</tspan>
+        </text>
+        <text id="Volume" font-family="ProximaNova-Semibold, Proxima Nova" font-size="9" font-weight="500" fill="#464646">
+            <tspan x="161" y="133">Volume</tspan>
+        </text>
+        <text id="75" font-family="ProximaNova-Semibold, Proxima Nova" font-size="17" font-weight="500" fill="#464646">
+            <tspan x="339" y="119">75</tspan>
+        </text>
+        <text id="64" font-family="ProximaNova-Semibold, Proxima Nova" font-size="17" font-weight="500" fill="#464646">
+            <tspan x="455" y="119">64</tspan>
+        </text>
+        <text id="Organic-CTR%" font-family="ProximaNova-Semibold, Proxima Nova" font-size="9" font-weight="500" fill="#464646">
+            <tspan x="339" y="133">Organic CTR%</tspan>
+        </text>
+        <text id="Priority-Score" font-family="ProximaNova-Semibold, Proxima Nova" font-size="9" font-weight="500" fill="#464646">
+            <tspan x="455" y="133">Priority Score</tspan>
+        </text>
+        <rect id="Rectangle-Copy" fill="#212252" x="0" y="30" width="574" height="25"></rect>
+        <rect id="Rectangle" fill="#FFFFFF" x="25" y="34" width="451" height="14"></rect>
+        <rect id="Rectangle" fill="#FB1845" x="485" y="34" width="64" height="14"></rect>
+        <text id="webdesign" font-family="ProximaNova-Regular, Proxima Nova" font-size="9" font-weight="normal" fill="#212252">
+            <tspan x="40" y="44">webdesign</tspan>
+        </text>
+        <g id="Group-2" transform="translate(512.000000, 36.000000)" stroke="#FFFFFF">
+            <circle id="Oval" cx="6.3092869" cy="3.5" r="3.5"></circle>
+            <line x1="3.3092869" y1="6.5" x2="0" y2="9.8092869" id="Path-4"></line>
+        </g>
+        <line x1="25.4666667" y1="91.8092869" x2="555.5" y2="91.5" id="Path-5" stroke="#CFCFCF"></line>
+        <line x1="30.5" y1="305.5" x2="540.5" y2="305.5" id="Path-5-Copy" stroke="#F3F3F3"></line>
+        <line x1="30.5" y1="345.5" x2="540.5" y2="345.5" id="Path-5-Copy-2" stroke="#F3F3F3"></line>
+        <rect id="Rectangle" fill="#FB1845" x="30" y="146" width="11" height="28"></rect>
+        <rect id="Rectangle-Copy-7" fill="#212252" x="339" y="146" width="11" height="28"></rect>
+        <rect id="Rectangle-Copy-13" fill="#273A75" x="455" y="146" width="11" height="28"></rect>
+        <rect id="Rectangle-Copy-2" fill="#FB1845" x="46" y="146" width="11" height="28"></rect>
+        <rect id="Rectangle-Copy-8" fill="#212252" x="355" y="146" width="11" height="28"></rect>
+        <rect id="Rectangle-Copy-14" fill="#273A75" x="471" y="146" width="11" height="28"></rect>
+        <rect id="Rectangle-Copy-3" fill="#FB1845" x="62" y="146" width="11" height="28"></rect>
+        <rect id="Rectangle-Copy-9" fill="#212252" x="371" y="146" width="11" height="28"></rect>
+        <rect id="Rectangle-Copy-15" fill="#273A75" x="487" y="146" width="11" height="28"></rect>
+        <rect id="Rectangle-Copy-4" fill="#CFCFCF" x="78" y="146" width="11" height="28"></rect>
+        <rect id="Rectangle-Copy-10" fill="#CFCFCF" x="387" y="146" width="11" height="28"></rect>
+        <rect id="Rectangle-Copy-16" fill="#273A75" x="503" y="146" width="11" height="28"></rect>
+        <rect id="Rectangle-Copy-5" fill="#CFCFCF" x="94" y="146" width="11" height="28"></rect>
+        <rect id="Rectangle-Copy-11" fill="#CFCFCF" x="403" y="146" width="11" height="28"></rect>
+        <rect id="Rectangle-Copy-17" fill="#CFCFCF" x="519" y="146" width="11" height="28"></rect>
+        <rect id="Rectangle-Copy-6" fill="#CFCFCF" x="110" y="146" width="11" height="28"></rect>
+        <rect id="Rectangle-Copy-12" fill="#CFCFCF" x="419" y="146" width="11" height="28"></rect>
+        <rect id="Rectangle-Copy-18" fill="#CFCFCF" x="535" y="146" width="11" height="28"></rect>
+        <rect id="Rectangle" stroke="#CFCFCF" x="25" y="187" width="254" height="79"></rect>
+        <rect id="Rectangle-Copy-33" stroke="#CFCFCF" x="25" y="281" width="530" height="79"></rect>
+        <rect id="Rectangle-Copy-30" stroke="#CFCFCF" x="301" y="187" width="254" height="79"></rect>
+        <line x1="41" y1="240.309287" x2="92.5" y2="240.309287" id="Path-6" stroke="#CFCFCF" stroke-width="3"></line>
+        <line x1="212" y1="240.309287" x2="263.5" y2="240.309287" id="Path-6-Copy-2" stroke="#CFCFCF" stroke-width="3"></line>
+        <line x1="343" y1="240.309287" x2="394.5" y2="240.309287" id="Path-6-Copy-4" stroke="#CFCFCF" stroke-width="3"></line>
+        <line x1="472" y1="240.309287" x2="495" y2="240.309287" id="Path-6-Copy-6" stroke="#273A75" stroke-width="3"></line>
+        <line x1="510" y1="240.309287" x2="533" y2="240.309287" id="Path-6-Copy-8" stroke="#FB1845" stroke-width="3"></line>
+        <line x1="41" y1="251.309287" x2="92.5" y2="251.309287" id="Path-6-Copy" stroke="#CFCFCF" stroke-width="3"></line>
+        <line x1="212" y1="251.309287" x2="263.5" y2="251.309287" id="Path-6-Copy-3" stroke="#CFCFCF" stroke-width="3"></line>
+        <line x1="343" y1="251.309287" x2="394.5" y2="251.309287" id="Path-6-Copy-5" stroke="#CFCFCF" stroke-width="3"></line>
+        <line x1="472" y1="251.309287" x2="495" y2="251.309287" id="Path-6-Copy-7" stroke="#273A75" stroke-width="3"></line>
+        <line x1="510" y1="251.309287" x2="533" y2="251.309287" id="Path-6-Copy-9" stroke="#FB1845" stroke-width="3"></line>
+        <circle id="Oval" stroke="#FB1845" cx="35.5" cy="349.5" r="3.5"></circle>
+        <circle id="Oval-Copy" stroke="#FB1845" cx="85.5" cy="345.5" r="3.5"></circle>
+        <circle id="Oval-Copy-2" stroke="#FB1845" cx="135.5" cy="345.5" r="3.5"></circle>
+        <circle id="Oval-Copy-3" stroke="#FB1845" cx="185.5" cy="353.5" r="3.5"></circle>
+        <circle id="Oval-Copy-4" stroke="#FB1845" cx="236.5" cy="329.5" r="3.5"></circle>
+        <circle id="Oval-Copy-5" stroke="#FB1845" cx="287.5" cy="318.5" r="3.5"></circle>
+        <circle id="Oval-Copy-6" stroke="#FB1845" cx="336.5" cy="326.5" r="3.5"></circle>
+        <circle id="Oval-Copy-7" stroke="#FB1845" cx="385.5" cy="323.5" r="3.5"></circle>
+        <circle id="Oval-Copy-8" stroke="#FB1845" cx="437.5" cy="323.5" r="3.5"></circle>
+        <circle id="Oval-Copy-9" stroke="#FB1845" cx="487.5" cy="323.5" r="3.5"></circle>
+        <circle id="Oval-Copy-10" stroke="#FB1845" cx="539.5" cy="322.5" r="3.5"></circle>
+        <line x1="40" y1="348.809287" x2="82" y2="346" id="Path-17" stroke="#FB1845"></line>
+        <line x1="89" y1="345.809287" x2="132" y2="345.309287" id="Path-18" stroke="#FB1845"></line>
+        <line x1="139" y1="345.5" x2="182" y2="353" id="Path-19" stroke="#FB1845"></line>
+        <line x1="189" y1="352.309287" x2="233" y2="332.309287" id="Path-20" stroke="#FB1845"></line>
+        <line x1="240" y1="328.809287" x2="284" y2="318.309287" id="Path-21" stroke="#FB1845"></line>
+        <line x1="291" y1="318.5" x2="333" y2="326" id="Path-22" stroke="#FB1845"></line>
+        <line x1="340.721311" y1="326.5" x2="382" y2="323.809287" id="Path-23" stroke="#FB1845"></line>
+        <line x1="389" y1="323.809287" x2="434" y2="323.559287" id="Path-24" stroke="#FB1845"></line>
+        <line x1="441" y1="323.809287" x2="483.5" y2="323.5" id="Path-25" stroke="#FB1845"></line>
+        <line x1="491" y1="323.809287" x2="536" y2="322.5" id="Path-26" stroke="#FB1845"></line>
+    </g>
+</svg>
