@@ -2,19 +2,20 @@ import React from "react";
 import "./Style.css"
 import ctaImage from "../../assets/Formimg.webp"
 import Form2 from "../../components/Home/Landingpage/Form2"
+import lead from "../../assets/approach/lead.png"
 const Lead = () => {
   return (
-    <div>
-      <section className="section-bg">
-        <div className="container">
+    <div >
+      <section className="section-bg" >
+        <div className="container ">
           <div className="row">
-            <div className="col-md-7">
+            <div className="col-md-6">
               <h1>
                 {" "}
                 Best Lead Generation Services in India – 100% Guaranteed Leads
                 with Promozione Branding Pvt. Ltd.
               </h1>
-              <p className="text-black  p-2 fw-semibold fs-6">
+              <p className="text-black   fw-semibold fs-6">
                 Struggling to find high-quality leads for your business? At
                 Promozione Branding Pvt. Ltd., we provide 100% Guaranteed Lead
                 Generation Services in India to help you attract, nurture, and
@@ -27,16 +28,69 @@ const Lead = () => {
                 Start Your Lead Generation Campaign
               </button>
             </div>
+
+                <div className="col-md-6 mt-5 mt-md-0">
+          <div className="d-flex flex-wrap justify-content-center gap-4">
+            {/* Circle 1 */}
+            <div className="circle-stat">
+              <div className="circle-inner">
+                <div className="circle-front">
+                  <h3>165K</h3>
+                  <p className="m-0 fs-6">SOCIAL POSTS<br />FOR CLIENTS</p>
+                </div>
+                <div className="circle-back">
+                  <p>Result-Driven<br />Campaigns</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Circle 2 */}
+            <div className="circle-stat circle-purple">
+              <div className="circle-inner">
+                <div className="circle-front">
+                  <h3>93%</h3>
+                  <p className="m-0 fs-6 text-center">CLIENT SATISFACTION<br /><small>Industry Avg: 72%</small></p>
+                </div>
+                <div className="circle-back">
+                  <p>Above-Industry<br />Retention Rates</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Circle 3 */}
+            <div className="circle-stat circle-dark">
+              <div className="circle-inner">
+                <div className="circle-front">
+                  <h3>$15.7M</h3>
+                  <p className="m-0 fs-6 text-center">SOCIAL AD SPEND<br /><small>Facebook & LinkedIn</small></p>
+                </div>
+                <div className="circle-back">
+                  <p>Optimized Budget<br />Across Platforms</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Review Box */}
+            <div className="review-box mt-4">
+              <p>“Your agency has performed well in terms of project management. You're constantly working towards … churning our high-quality content for our blog and social media posts.”</p>
+              <p className="fw-bold mb-1">Client Review </p>
+              <div className="review-stars">
+                ★★★★★ Rated 4.9/5 stars<br />
+              
+              </div>
+            </div>
+          </div>
+        </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-light">
+      <section className="bg-light pt-2">
         <div className="container">
           <div className="row">
-            <div className="col-md-7">
+            <div className="col-md-6">
               <h2  className="mb-3 fw-bold fs-1 pt-5"> What Are Lead Generation Services?</h2>
-              <p className="fw-semibold fs-6 ">
+              <p className=" " style={{fontSize:"1.1rem"}}>
                 Lead Generation is the process of attracting potential customers
                 and converting them into leads through various digital marketing
                 strategies. Our lead generation services help businesses
@@ -48,8 +102,8 @@ const Lead = () => {
               </p>
             </div>
 
-            <div className="col-md-5">
-                <img src="" alt="ej" />
+            <div className="col-md-6 mt-4">
+                <img src={lead} className="img-fluid"  alt="lead" />
             </div>
           </div>
         </div>

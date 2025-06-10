@@ -4,8 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import Form2 from "../../components/Home/Landingpage/Form2"
-import ctaImage from "../../assets/Formimg.webp"
+import Form2 from "../../components/Home/Landingpage/Form2";
+import ctaImage from "../../assets/Formimg.webp";
 import icon1 from "../../assets/reviews/seo.webp";
 import icon2 from "../../assets/reviews/ppc.webp";
 import icon3 from "../../assets/reviews/design.webp";
@@ -14,16 +14,15 @@ import icon5 from "../../assets/reviews/customer-service.webp";
 import icon6 from "../../assets/reviews/results.webp";
 import icon7 from "../../assets/reviews/technology.webp";
 import icon8 from "../../assets/reviews/expertise.webp";
-import right from "../../assets/reviews/right.jpg"
+import right from "../../assets/reviews/right.jpg";
 
 const Review = () => {
-
   useEffect(() => {
-  AOS.init({
-    duration: 1000, // animation duration in ms
-    once: true,     // whether animation should happen only once
-  });
-}, []);
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: true, // whether animation should happen only once
+    });
+  }, []);
   const tabs = [
     { id: "seo", label: "SEO", icon: icon1 },
     { id: "ppc", label: "PPC", icon: icon2 },
@@ -196,240 +195,210 @@ Promozione Branding has demonstrated its expertise and value many times over dur
         author: "Client",
       },
 
-        {
+      {
         text: " Promozione’s social team goes beyond just posting – they plan, design, track results, and optimize regularly. You can tell they genuinely care about growing your brand.",
         author: "Client",
       },
 
-        {
+      {
         text: "Promozione Branding built our website from the ground up, and we couldn’t be happier. It's fast, modern, and exactly what we envisioned. They were responsive, professional, and technically sharp.",
         author: "Client",
       },
 
-        {
+      {
         text: "The UI/UX of our new website is fantastic — clean, mobile-friendly, and highly functional. The team nailed the design and delivered on time with zero hassles.",
         author: "Client",
       },
 
-        {
+      {
         text: "Our e-commerce site went live last month, and it’s already performing better than our last one. Promozione’s dev team knew exactly how to combine form and function.",
         author: "Client",
       },
 
-         {
+      {
         text: " They revamped our outdated site into something sleek, responsive, and aligned with our brand. Plus, they took care of SEO basics so we could launch with confidence.",
         author: "Client",
       },
 
-         {
+      {
         text: "Loved working with Promozione on our website redesign. Their attention to detail and creative input made a huge difference in how our brand is now perceived online Promozione helped us rank on page one for our most competitive keywords. Their SEO game is strong, and they’re transparent with progress reports.",
         author: "Client",
       },
-         {
+      {
         text: " Their Google Ads campaign brought in qualified leads within the first week. Smart targeting, great reporting, and real results. Definitely recommend their PPC team It’s rare to find a digital agency that handles design and marketing with equal strength. From ad creatives to landing page optimization, Promozione delivered!",
         author: "Client",
       },
-
-    
-      
     ],
 
-    results:[
+    results: [
       {
-        text:"game-changer for our business. Their SEO expertise has significantly boosted our online visibility and helped us reach new customers. Highly recommended for anyone looking to take their digital marketing to the next level!",
-        author:"Client",
-
+        text: "game-changer for our business. Their SEO expertise has significantly boosted our online visibility and helped us reach new customers. Highly recommended for anyone looking to take their digital marketing to the next level!",
+        author: "Client",
       },
 
-        {
-        text:"Promozione Branding has made running a business fun again, and also increased our customer base by 100%. Best dollars spent by far. Our internet marketer has made all the difference to our company and our bottom line.",
-        author:"Client",
-
+      {
+        text: "Promozione Branding has made running a business fun again, and also increased our customer base by 100%. Best dollars spent by far. Our internet marketer has made all the difference to our company and our bottom line.",
+        author: "Client",
       },
 
-        {
-        text:"As a marketing executive with many years and experiences with agencies I can say that Promozione Branding is by far the best digital group I have ever had the opportunity to work with. I’ve led multiple projects with 3 different companies utilizing the services at Promozione Branding and we always see ROI. Beyond that, the education, responsiveness, professionalism and closed loop reporting make Promozione Brandingmy go to for digital marketing services. They are an extension of my lean internal marketing team.",
-        author:"Client",
-
+      {
+        text: "As a marketing executive with many years and experiences with agencies I can say that Promozione Branding is by far the best digital group I have ever had the opportunity to work with. I’ve led multiple projects with 3 different companies utilizing the services at Promozione Branding and we always see ROI. Beyond that, the education, responsiveness, professionalism and closed loop reporting make Promozione Brandingmy go to for digital marketing services. They are an extension of my lean internal marketing team.",
+        author: "Client",
       },
 
-        {
-        text:"Promozione Branding just get it. They take time to understand what you want to accomplish and why. Then they provide multiply options to get the job done. They are also willing to change quickly to adapt with changes in the business plan. Great service and wicked fast response times.",
-        author:"Client",
-
+      {
+        text: "Promozione Branding just get it. They take time to understand what you want to accomplish and why. Then they provide multiply options to get the job done. They are also willing to change quickly to adapt with changes in the business plan. Great service and wicked fast response times.",
+        author: "Client",
       },
 
-        {
-        text:"Promozione Branding has been a great partner to our organization for years now. They are constantly improving our digital footprint and helping our organization grow and succeed. Our year over year growth has been incredible and our investment with Promozione Branding has proven very financially effective.",
-        author:"Client",
-
+      {
+        text: "Promozione Branding has been a great partner to our organization for years now. They are constantly improving our digital footprint and helping our organization grow and succeed. Our year over year growth has been incredible and our investment with Promozione Branding has proven very financially effective.",
+        author: "Client",
       },
 
-        {
-        text:"Promozione Branding has been a great addition to our marketing efforts. Our account manager is top notch, understands my needs and always responds quickly with answers to my questions. She updates me constantly about what the team is doing, I am not worried that things are not being done when not asked, I am a data driven person so for me to be able to go in and see it for myself has been a great way for me to always know what's going on and get insights.",
-        author:"Client",
-
+      {
+        text: "Promozione Branding has been a great addition to our marketing efforts. Our account manager is top notch, understands my needs and always responds quickly with answers to my questions. She updates me constantly about what the team is doing, I am not worried that things are not being done when not asked, I am a data driven person so for me to be able to go in and see it for myself has been a great way for me to always know what's going on and get insights.",
+        author: "Client",
       },
 
-        {
-        text:"'ve been thoroughly pleased with Promozione Branding's services. Their team's dedication, expertise, and innovative approach have significantly boosted our online presence and overall performance. Highly recommended!",
-        author:"Client",
-
+      {
+        text: "'ve been thoroughly pleased with Promozione Branding's services. Their team's dedication, expertise, and innovative approach have significantly boosted our online presence and overall performance. Highly recommended!",
+        author: "Client",
       },
 
-        {
-        text:"From our start with Promozione Branding to the present, we have had nothing but a positive experience with a great ROI!",
-        author:"Client",
-
+      {
+        text: "From our start with Promozione Branding to the present, we have had nothing but a positive experience with a great ROI!",
+        author: "Client",
       },
-        {
-        text:" Promozione Branding is the first SEO provider that has met all of our organizational objectives and then some.",
-        author:"Client",
-
-      }, 
-       {
-        text:"Fantastic company to work with. I've continually seen an improvement in our website exposure and our continued increase in sales speaks for itself.",
-        author:"Client",
-
+      {
+        text: " Promozione Branding is the first SEO provider that has met all of our organizational objectives and then some.",
+        author: "Client",
       },
-
+      {
+        text: "Fantastic company to work with. I've continually seen an improvement in our website exposure and our continued increase in sales speaks for itself.",
+        author: "Client",
+      },
     ],
 
-     support:[
+    support: [
+      {
+        text: "Promozione Branding provides top notch service with a team of friendly and professional experts. I am continuously impressed with their communication, unique technology and personalized strategies for fine-tuning results. ",
+        author: "Client",
+      },
 
       {
-
-        text:"Promozione Branding provides top notch service with a team of friendly and professional experts. I am continuously impressed with their communication, unique technology and personalized strategies for fine-tuning results. ",
-        author:"Client",
+        text: "I usually don't look forward to meetings - unless these are meetings with Promozione Branding. The team is very responsive and always knowledgeable. It feels like they are less of a vendor, and more of an extension of our own team working towards the same goals. ",
+        author: "Client",
       },
-
-        {
-
-        text:"I usually don't look forward to meetings - unless these are meetings with Promozione Branding. The team is very responsive and always knowledgeable. It feels like they are less of a vendor, and more of an extension of our own team working towards the same goals. ",
-        author:"Client",
+      {
+        text: "If you're looking for a digital marketing agency that truly cares about YOUR business and understands YOUR unique needs- look no further than Promozione Branding. Our company provides very niche services and the Promozione Branding team has gone above and beyond to understand our unique business and our company's tone-of-voice. Their communication is top-notch, we are always informed of what has been completed and what is next to come. They are always willing to help support in any task I throw their way and they consistently deliver innovative strategies and recommendations. ",
+        author: "Client",
       },
-        {
-
-        text:"If you're looking for a digital marketing agency that truly cares about YOUR business and understands YOUR unique needs- look no further than Promozione Branding. Our company provides very niche services and the Promozione Branding team has gone above and beyond to understand our unique business and our company's tone-of-voice. Their communication is top-notch, we are always informed of what has been completed and what is next to come. They are always willing to help support in any task I throw their way and they consistently deliver innovative strategies and recommendations. ",
-        author:"Client",
-      },
-
-        {
-
-        text:" Promozione Branding just get it. They take time to understand what you want to accomplish and why. Then they provide multiply options to get the job done. They are also willing to change quickly to adapt with changes in the business plan. Great service and wicked fast response times.",
-        author:"Client",
-      },
-
-        {
-
-        text:"The Promozione Branding team is extremely professional, friendly and provides personalized service. They take the time to understand your business' needs and are consistently implementing new strategies to improve results. ",
-        author:"Client",
-      },
-
-        {
-
-        text:" Our team is always forward thinking about helping us reach our marketing goals - introducing new concepts and ways to accomplish our objectives. They are proactive about issues that could negatively impact us and stay ahead of technology changes, they help us increase our reach while respecting our budget. They are smart and responsive, and we feel like they truly are part of our team, working with us to achieve our goals and increase sales.",
-        author:"Client",
-      },
-
-        {
-
-        text:" We are extremely satisfied with the level of service and results we continue to receive from Promozione Branding over the years and we expect to be with them for many more years to come!",
-        author:"Client",
-      },
-
-        {
-
-        text:"Promozione Branding goes above and beyond to understand the ins and outs of your business. Their customer service is top notch and they take the time to explain their processes. ",
-        author:"Client",
-      },
-
-     ],
-
-     expertise:[
 
       {
-        text:"Promozione Brandingprovides top notch service with a team of friendly and professional experts. I am continuously impressed with their communication, unique technology and personalized strategies for fine-tuning results.",
-        author:"Client",
+        text: " Promozione Branding just get it. They take time to understand what you want to accomplish and why. Then they provide multiply options to get the job done. They are also willing to change quickly to adapt with changes in the business plan. Great service and wicked fast response times.",
+        author: "Client",
       },
 
-       {
-        text:"The collection of bright and talented experts in all facets of digital marketing and advertising has allowed us to expand our reach well beyond what would have been possible with our small internal team.",
-        author:"Client",
-      },
-
-       {
-        text:"The Promozione Branding team are a group of truly caring SEO and SEM specialists that offer helpful services that yield results at affordable price points.",
-        author:"Client",
-      },
-
-       {
-        text:"The Promozione Branding team is extremely professional, friendly and provides personalized service. They take the time to understand your business' needs and are consistently implementing new strategies to improve results.",
-        author:"Client",
-      },
-
-       {
-        text:"From our start with Promozione Branding to the present, we have had nothing but a positive experience with a great ROI!",
-        author:"Client",
-      },
-
-       {
-        text:"Promozione Branding has given us the ability to reach customers that we never could previously.",
-        author:"Client",
-      },
-
-       {
-        text:"We have been a Promozione Branding customer for many months and continue to be pleased with the high level of service that we receive.",
-        author:"Client",
-      },
-
-
-     ],
-
-     tech:[
       {
-        text:"We hired Promozione to develop an AI chatbot for our website, and the results have been fantastic. It handles 80% of queries automatically and has improved our customer support efficiency drastically, What impressed us most was how Promozione balances design with functionality. Our site not only looks great — it actually converts better now.",
-        author:"Client",
+        text: "The Promozione Branding team is extremely professional, friendly and provides personalized service. They take the time to understand your business' needs and are consistently implementing new strategies to improve results. ",
+        author: "Client",
       },
 
-       {
-        text:"Promozione redesigned our website with a modern, mobile-first approach. The UI is clean, fast, and user-friendly. We’ve received amazing feedback from our customers,Their AI-based analytics dashboard gives us real-time insights we never had before. Now we can make faster, data-driven decisions.",
-        author:"Client",
+      {
+        text: " Our team is always forward thinking about helping us reach our marketing goals - introducing new concepts and ways to accomplish our objectives. They are proactive about issues that could negatively impact us and stay ahead of technology changes, they help us increase our reach while respecting our budget. They are smart and responsive, and we feel like they truly are part of our team, working with us to achieve our goals and increase sales.",
+        author: "Client",
       },
 
-        {
-        text:"Their AI-powered content suggestions and email targeting features helped increase our engagement significantly. A very knowledgeable and supportive team!",
-        author:"Client",
+      {
+        text: " We are extremely satisfied with the level of service and results we continue to receive from Promozione Branding over the years and we expect to be with them for many more years to come!",
+        author: "Client",
       },
 
-        {
-        text:"The SEO and PPC services we received were top-notch. Our Google rankings improved in just 2 months, and the paid campaigns brought in high-converting leads.",
-        author:"Client",
+      {
+        text: "Promozione Branding goes above and beyond to understand the ins and outs of your business. Their customer service is top notch and they take the time to explain their processes. ",
+        author: "Client",
+      },
+    ],
+
+    expertise: [
+      {
+        text: "Promozione Brandingprovides top notch service with a team of friendly and professional experts. I am continuously impressed with their communication, unique technology and personalized strategies for fine-tuning results.",
+        author: "Client",
       },
 
-        {
-        text:"Promozione helped us integrate AI into our CRM to predict customer behavior. It’s made a big difference in how we prioritize leads. Worth every penny.",
-        author:"Client",
+      {
+        text: "The collection of bright and talented experts in all facets of digital marketing and advertising has allowed us to expand our reach well beyond what would have been possible with our small internal team.",
+        author: "Client",
       },
 
-        {
-        text:"They built us a fully responsive, scalable web platform from scratch. Excellent communication, clear timelines, and great post-launch support",
-        author:"Client",
+      {
+        text: "The Promozione Branding team are a group of truly caring SEO and SEM specialists that offer helpful services that yield results at affordable price points.",
+        author: "Client",
       },
 
-        {
-        text:"We ran our first AI-personalized email campaign with Promozione and saw a 35% increase in click-throughs. Their content and targeting were spot on.",
-        author:"Client",
+      {
+        text: "The Promozione Branding team is extremely professional, friendly and provides personalized service. They take the time to understand your business' needs and are consistently implementing new strategies to improve results.",
+        author: "Client",
       },
 
-        {
-        text:"What impressed us most was how Promozione balances design with functionality. Our site not only looks great — it actually converts better now.",
-        author:"Client",
+      {
+        text: "From our start with Promozione Branding to the present, we have had nothing but a positive experience with a great ROI!",
+        author: "Client",
       },
 
-      
-     ]
+      {
+        text: "Promozione Branding has given us the ability to reach customers that we never could previously.",
+        author: "Client",
+      },
 
+      {
+        text: "We have been a Promozione Branding customer for many months and continue to be pleased with the high level of service that we receive.",
+        author: "Client",
+      },
+    ],
+
+    tech: [
+      {
+        text: "We hired Promozione to develop an AI chatbot for our website, and the results have been fantastic. It handles 80% of queries automatically and has improved our customer support efficiency drastically, What impressed us most was how Promozione balances design with functionality. Our site not only looks great — it actually converts better now.",
+        author: "Client",
+      },
+
+      {
+        text: "Promozione redesigned our website with a modern, mobile-first approach. The UI is clean, fast, and user-friendly. We’ve received amazing feedback from our customers,Their AI-based analytics dashboard gives us real-time insights we never had before. Now we can make faster, data-driven decisions.",
+        author: "Client",
+      },
+
+      {
+        text: "Their AI-powered content suggestions and email targeting features helped increase our engagement significantly. A very knowledgeable and supportive team!",
+        author: "Client",
+      },
+
+      {
+        text: "The SEO and PPC services we received were top-notch. Our Google rankings improved in just 2 months, and the paid campaigns brought in high-converting leads.",
+        author: "Client",
+      },
+
+      {
+        text: "Promozione helped us integrate AI into our CRM to predict customer behavior. It’s made a big difference in how we prioritize leads. Worth every penny.",
+        author: "Client",
+      },
+
+      {
+        text: "They built us a fully responsive, scalable web platform from scratch. Excellent communication, clear timelines, and great post-launch support",
+        author: "Client",
+      },
+
+      {
+        text: "We ran our first AI-personalized email campaign with Promozione and saw a 35% increase in click-throughs. Their content and targeting were spot on.",
+        author: "Client",
+      },
+
+      {
+        text: "What impressed us most was how Promozione balances design with functionality. Our site not only looks great — it actually converts better now.",
+        author: "Client",
+      },
+    ],
   };
 
   const [activeTab, setActiveTab] = useState("seo");
@@ -437,44 +406,68 @@ Promozione Branding has demonstrated its expertise and value many times over dur
   return (
     <div>
       {/* Header Section */}
-  <div className="container-fluid m-0 mb-0 section-bg">
-  <div className="row align-items-center">
-    {/* Image on the left */}
-    <div className="col-md-5" data-aos="fade-right">
-      <img src={right} alt="Client Testimonials" className="img-fluid" />
-    </div>
+      <section className="container-fluid section-marketing position-relative overflow-hidden">
+        {/* SVG Background */}
+        <svg
+          className="svg-bg"
+          viewBox="0 0 1458 1362"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="xMidYMid meet"
+        >
+          <path
+            className="path-animate svg-color"
+            d="M146.963 34C68.8835 119.852 -35.7659 309.427 170.27 380.906C376.305 452.385 577.757 309.427 652.728 229.013L445.056 655.556C680.718 473.621 940.183 270.58 1161.6 433.738C1413.69 619.498 1151.24 937.204 940.183 919.717C738.576 903.012 761.883 668.375 940.183 628.751C1173.6 576.878 1569.6 809.302 1337.57 1160.18C1225.31 1329.94 977.475 1345.09 838.797 1265.85"
+            stroke="#CDE9DE"
+            strokeWidth="100"
+            fill="none"
+            strokeLinejoin="round"
+          />
+        </svg>
 
-    {/* Text on the right */}
-    <div className="col-md-7 review px-5 mb-0 responsive-font" data-aos="fade-left">
-      <h2>Learn What It’s Like to Work With Promozione Branding</h2>
-      <p>
-        Curious about what it’s like to work with Promozione Branding?
-        Explore our more than 1,100 client testimonials and experience the
-        impact of Digital Marketing That Drives Revenue. Hear from clients
-        that partnered with WebFX for search engine optimization (SEO)
-        services, pay-per-click (PPC) advertising services, web design
-        services, social media services, and other digital marketing
-        services to learn what it’s like to have our team on yours. Join
-        our raving fanbase! Experience what it’s like to have an
-        award-winning digital marketing partner helping to drive real
-        revenue for your business.
-      </p>
-    </div>
-  </div>
-</div>
-
-
+        {/* Content */}
+        <div className="container position-relative">
+          <div className="row align-items-center text-center ">
+            <div className="col-12" data-aos="fade-right">
+              <h1 className="display-5 fw-bold mb-3 mx-auto">
+                {" "}
+                Learn What It’s Like to Work With Promozione Branding
+              </h1>
+              <p className="text-black p-2 fs-5 mx-auto">
+                Curious about what it’s like to work with Promozione Branding?
+                Explore our more than 1,100 client testimonials and experience
+                the impact of Digital Marketing That Drives Revenue. Hear from
+                clients that partnered with WebFX for search engine optimization
+                (SEO) services, pay-per-click (PPC) advertising services, web
+                design services, social media services, and other digital
+                marketing services to learn what it’s like to have our team on
+                yours. Join our raving fanbase! Experience what it’s like to
+                have an award-winning digital marketing partner helping to drive
+                real revenue for your business.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Tabs Section */}
       <div className="container py-5">
-        <h2 className="text-center  fw-bold  "  style={{color:"#00448F"}} data-aos="zoom-in">Hear from our happy customers</h2>
+        <h2
+          className="text-center  fw-bold  "
+          style={{ color: "#00448F" }}
+          data-aos="zoom-in"
+        >
+          Hear from our happy customers
+        </h2>
         <div
-        className="mx-auto mb-5 " data-aos="zoom-in"
+          className="mx-auto mb-5 "
+          data-aos="zoom-in"
+          style={{ width: "60px", height: "4px", backgroundColor: "#0d6efd" }}
+        ></div>
 
-        style={{ width: "60px", height: "4px", backgroundColor: "#0d6efd" }}
-      ></div>
-
-        <div className="d-flex  flex-wrap justify-content-center gap-4 mb-4 border-bottom position-relative" data-aos="zoom-up">
+        <div
+          className="d-flex  flex-wrap justify-content-center gap-4 mb-4 border-bottom position-relative"
+          data-aos="zoom-up"
+        >
           {tabs.map((tab) => (
             <button
               key={tab.id}
@@ -532,7 +525,7 @@ Promozione Branding has demonstrated its expertise and value many times over dur
         </div>
       </div>
 
-    <Form2
+      <Form2
         heading="Do you want to be our next happy client? "
         price="Get your Brand up."
         buttonText=" Free Consultation Now!"

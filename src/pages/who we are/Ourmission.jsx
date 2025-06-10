@@ -39,7 +39,7 @@ const cards = [
     content: (
       <>
         <p>
-          To become India's #1 Growth Partner for SMEs, delivering digital
+          <strong>To become India's #1 Growth Partner for SMEs</strong>, delivering digital
           excellence with 100% guaranteed business growth in Delhi NCR,
           Gurugram, Noida, Faridabad, and Ghaziabad.
         </p>
@@ -84,7 +84,7 @@ const cards = [
 
 const Ourmission = () => (
   <section className="mvv-simple-wrapper position-relative ">
-    <img src={wave} alt="wave" className="position-absolute" style={{top:0, right:0, height:"25%"}}/>
+    <img src={wave} alt="wave" className="position-absolute d-none d-lg-block" style={{top:0, right:0, height:"25%"}}/>
     <div className="mvv-heading">
       <h2>What Makes Us Different?</h2>
       <div  data-aos="zoom-in" className="underline-bar"></div>

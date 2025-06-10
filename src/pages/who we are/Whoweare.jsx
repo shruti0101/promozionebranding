@@ -43,7 +43,7 @@ const Whoweare = () => {
 
   return (
     <>
-      <div className="whoweare-section">
+      <div className="whoweare-section ">
         <img
           src={star}
           className="star top-left"
@@ -88,7 +88,7 @@ const Whoweare = () => {
         </div>
       </div>
 
-      <div className="container py-2">
+      <div className="container py-2 mt-3">
         <div className="row align-items-center">
           {/* Text Section */}
           <div className="col-md-6">

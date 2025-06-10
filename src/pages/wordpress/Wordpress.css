@@ -1,0 +1,101 @@
+.path-animate {
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 3000;
+  animation: drawPath 4s ease-out forwards;
+}
+
+@keyframes drawPath {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.svg-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+background-color: #E5F1FC;
+ 
+}
+
+.pathfinder-svg {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  bottom: 0;
+  width: 100%; /* Wider so the stroke curves through */
+  height: auto;
+  transform: translate(-50%, -50%);
+  height: auto;
+  z-index: 2;
+  opacity: 0.3;
+ 
+}
+
+.color-svg{
+      stroke: #86cae7;
+        opacity: 0.6;
+}
+
+/* Overlay content container */
+.content-overlay {
+  z-index: 2;
+}
+
+/* Tilt container */
+.tilt-container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  max-width: 508px;
+  min-height: 550px;
+  transition: transform 0.3s ease;
+  will-change: transform;
+  transform-style: preserve-3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+       
+}
+
+
+
+.tilt-skew-wrapper {
+  transform:perspective(1000px)  rotateY(-20deg) ;
+  transform-style: preserve-3d;
+}
+
+.custom-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  will-change: transform;
+  transform-style: preserve-3d;
+  /* min-width: 240px;
+  max-width: 300px; */
+}
+
+.custom-card.card-hovered {
+  transform: translateY(-30px) scale(1.5);
+  box-shadow: 0 20px 45px rgba(3, 5, 3, 0.35);
+}
+.custom-card:hover{
+    color: #25299b;
+
+}
+.icon-wrapper {
+  width: 48px;
+  height: 48px;
+  background-color: #eceeff;
+  color: #5a60f0;
+  font-size: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}

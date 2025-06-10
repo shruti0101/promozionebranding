@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import approach from "../../assets/approach/approach.png";
+
 import image1 from "../../assets/approach/image1.jpg";
 import image2 from "../../assets/approach/image2.jpg";
 import image3 from "../../assets/approach/image3.jpg";
@@ -7,8 +7,9 @@ import image4 from "../../assets/approach/image4.jpg";
 import image5 from "../../assets/approach/image5.jpg";
 import process1 from "../../assets/approach/process1.svg";
 import process2 from "../../assets/approach/process2.png";
-import ctaImage from "../../assets/Formimg.webp"
-import Form2 from "../../components/Home/Landingpage/Form2"
+import ctaImage from "../../assets/Formimg.webp";
+import Form2 from "../../components/Home/Landingpage/Form2";
+import wheel from "../../assets/approach/service-wheel.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Style.css";
@@ -55,36 +56,47 @@ const Approach = () => {
 
   return (
     <>
-      <div className="section-bg">
-        <div className="container">
+      <section className="container-fluid section-marketing position-relative overflow-hidden">
+        {/* SVG Background */}
+        <svg
+          className="svg-bg"
+          viewBox="0 0 1458 1362"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="xMidYMid meet"
+        >
+          <path
+            className="path-animate svg-color"
+            d="M146.963 34C68.8835 119.852 -35.7659 309.427 170.27 380.906C376.305 452.385 577.757 309.427 652.728 229.013L445.056 655.556C680.718 473.621 940.183 270.58 1161.6 433.738C1413.69 619.498 1151.24 937.204 940.183 919.717C738.576 903.012 761.883 668.375 940.183 628.751C1173.6 576.878 1569.6 809.302 1337.57 1160.18C1225.31 1329.94 977.475 1345.09 838.797 1265.85"
+            stroke="#CDE9DE"
+            strokeWidth="100"
+            fill="none"
+            strokeLinejoin="round"
+          />
+        </svg>
+
+        {/* Content */}
+        <div className="container position-relative">
           <div className="row align-items-center">
-            <div className="col-lg-7 col-md-12" data-aos="fade-right">
-              <div className="approach-text">
-                <h1 className="approach-heading">
-                  Our Approach to Digital Marketing
-                </h1>
-                <h3 className="approach-subheading">
-                  We build digital experiences that grow the relationship
-                  between you and your audience.
-                </h3>
-                <p className="approach-description">
-                  We turn ideas into reality with our multidisciplinary team of
-                  specialists. Our approach realizes the importance of listening
-                  to and understanding your audience — a process that helps you
-                  craft the best possible user experience.
-                </p>
-              </div>
+            <div className="col-md-7" data-aos="fade-right">
+              <h1 className="display-5 fw-bold mb-3">
+                {" "}
+                Our Approach to Digital Marketing
+              </h1>
+              <p className="text-black p-2 fs-5">
+                We turn ideas into reality with our multidisciplinary team of
+                specialists. Our approach realizes the importance of listening
+                to and understanding your audience — a process that helps you
+                craft the best possible user experience.
+              </p>
             </div>
-            <div className="col-lg-5 d-none d-lg-block" data-aos="fade-left">
-              <img
-                src={approach}
-                alt="Our Approach"
-                className="approach-image"
-              />
+            <div className="col-md-5 d-none d-md-block" data-aos="fade-left">
+              <img src={wheel} width="100%" alt="Marketing Visual" />
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+
 
       <div className="container timeline-wrapper">
         <h1 data-aos="zoom-in" className="text-center">
@@ -144,12 +156,14 @@ const Approach = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-6 d-none d-lg-block">
-              <img src={process1} alt=""className="img-fluid" />
+              <img src={process1} alt="" className="img-fluid" />
             </div>
 
             <div className="col-md-6">
               <p className="text-danger  fw-bold">01. Research & Discovery</p>
-              <h1 className="fw-bold text-white">Keyword Research & Strategy</h1>
+              <h1 className="fw-bold text-white">
+                Keyword Research & Strategy
+              </h1>
               <p className="text-white fs-6 lh-lg">
                 Depending on the goals and requirements set, we will gather more
                 information such as your current marketing activities, where you
@@ -240,7 +254,7 @@ const Approach = () => {
         </div>
       </section>
 
-     <Form2
+      <Form2
         heading="Let's Build Your Success Story Together"
         price="Your Growth is Our Guarantee."
         buttonText="Book Your Free Consultation Now!"

@@ -1,4 +1,7 @@
-/* Optional hover effect */
+.section-bg{
+    background-color: #E5F1FC;
+    padding: 35px;
+}
 .lead-icon-box:hover img {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;

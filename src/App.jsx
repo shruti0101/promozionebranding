@@ -18,6 +18,8 @@ import Home from "./components/Home/Home";
 import Wordpress from "./pages/wordpress/Wordpress";
 import Performance from "./pages/performancemarket/Performance";
 import Lead from "./pages/lead/Lead";
+import Email from "./pages/email/Email"
+import Socialmedia from "./pages/Socialmediamanagement/Socialmedia"
 
 const PHPWebsiteDevelopment = () => <div>PHP Website Development</div>;
 const CMSWebDevelopment = () => <div>CMS Web Development</div>;
@@ -35,9 +37,9 @@ const AdsManagement = () => <div>Ads Management</div>;
 const InternetMarketing = () => <div>Internet Marketing</div>;
 const ContentMarketing = () => <div>Content Marketing</div>;
 const CRMOptimizations = () => <div>CRM Optimizations</div>;
-const EmailMarketing = () => <div>Email Marketing</div>;
+
 const VideoMarketing = () => <div>Video Marketing</div>;
-const SocialMediaAds = () => <div>Social Media Ads</div>;
+
 const SMO = () => <div>SMO</div>;
 const SMM = () => <div>SMM</div>;
 const AIDigitalMarketingServices = () => (
@@ -99,9 +101,9 @@ function App() {
           {/* Digital Marketing */}
           <Route path="services/content" element={<ContentMarketing />} />
           <Route path="services/crm" element={<CRMOptimizations />} />
-          <Route path="services/email" element={<EmailMarketing />} />
+          <Route path="services/email" element={<Email />} />
           <Route path="services/video" element={<VideoMarketing />} />
-          <Route path="services/social" element={<SocialMediaAds />} />
+          <Route path="services/social" element={<Socialmedia />} />
           <Route path="services/smo" element={<SMO />} />
           <Route path="services/smm" element={<SMM />} />
 

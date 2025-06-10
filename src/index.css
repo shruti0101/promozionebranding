@@ -2,16 +2,157 @@ html{
   scroll-behavior: smooth;
 
 }
-.section-bg {
-  background-image: url("../../assets/reviews/bg-intro.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 100%;
-
-  background-color: white;
 
 
+/* Section wrapper */
+.section-marketing {
+  position: relative;
+  padding: 100px 0;
+background-color: #E5F1FC;
+  overflow: hidden;
+}
+
+/* SVG Background */
+.svg-bg {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  transform: translateX(-50%) translateY(30%);
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .svg-bg {
+    width: 250%;
+    transform: translateX(-50%) translateY(50%);
+  }
+
+  .section-marketing {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .svg-bg {
+    width: 300%;
+    transform: translateX(-50%) translateY(60%);
+  }
+}
+
+.svg-color {
+   stroke: #86cae7;
+        opacity: 0.6;
+}
+
+.section-marketing .container {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+.lead-heading {
+  font-weight: 800;
+  font-size: 2.5rem;
+  max-width: 600px;
+}
+
+.lead-subtext {
+  max-width: 600px;
+  color: #555;
+}
+
+.circle-stat {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
+  perspective: 1000px;
+}
+
+.circle-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.circle-stat:hover .circle-inner {
+  transform: rotateY(180deg);
+}
+
+.circle-front,
+.circle-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.circle-front {
+  background: #007bff;
+}
+
+.circle-back {
+  background: #0056b3;
+  transform: rotateY(180deg);
+}
+
+.circle-purple .circle-front {
+  background: #ab28a6;
+  
+}
+
+.circle-purple .circle-back {
+  background: #8c1d86;
+}
+
+.circle-dark .circle-front {
+  background: #004080;
+}
+
+.circle-dark .circle-back {
+  background: #002d59;
+}
+
+.review-box {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.08);
+  max-width: 500px;
+}
+
+.review-stars {
+  color: #f44336;
+  font-size: 1rem;
+}
+
+@media (max-width:576px){
+    
 }
 
 body{
@@ -97,4 +238,10 @@ h1,h2{
 .nav-btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
+}
+
+h2{
+  color:black;
+ font-size: 2rem;
+  font-weight: bold;
 }

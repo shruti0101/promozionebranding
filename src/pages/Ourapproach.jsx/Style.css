@@ -1,8 +1,53 @@
-.section-bg {
-  background: white url("../../assets/reviews/bg-intro.webp") no-repeat center center/cover;
-  padding: 60px 0;
-  min-height: 100%;
+/* Section wrapper */
+.section-marketing {
+  position: relative;
+  padding: 100px 0;
+background-color: #E5F1FC;
+  overflow: hidden;
 }
+
+/* SVG Background */
+.svg-bg {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  transform: translateX(-50%) translateY(30%);
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .svg-bg {
+    width: 250%;
+    transform: translateX(-50%) translateY(50%);
+  }
+
+  .section-marketing {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .svg-bg {
+    width: 300%;
+    transform: translateX(-50%) translateY(60%);
+  }
+}
+
+.svg-color {
+   stroke: #86cae7;
+        opacity: 0.6;
+}
+
+.section-marketing .container {
+  position: relative;
+  z-index: 2;
+}
+
 
 /* Text */
 .approach-text {
