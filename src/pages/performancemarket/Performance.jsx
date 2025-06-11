@@ -6,30 +6,34 @@ import { FaArrowRight } from "react-icons/fa";
 import ctaImage from "../../assets/Formimg.webp";
 import Form2 from "../../components/Home/Landingpage/Form2";
 import bg from "../../assets/approach/wrapper-bg.png";
+import google from "../../assets/specialized/Google-AdWord-course.png"
+import Story from "../Story/Story"
+
 import { useRef } from "react";
 
 const cardItems = [
   {
-    icon: "✉️",
+    icon: "📱", // Reflects mobile & social platforms
     title: "Social Media Ads",
     description: "Tool for professional newsletters",
   },
   {
-    icon: "🔁",
+    icon: "🎯", // Represents targeting (remarketing precision)
     title: "Remarketing Campaigns",
     description: "Platform for multichannel marketing automation",
   },
   {
-    icon: "🗞️",
+    icon: "📈", // Suggests analytics & conversion improvements
     title: "Conversion Rate Optimization",
     description: "Solutions for press releases and media monitoring",
   },
   {
-    icon: "🛍️",
+    icon: "🛒", // Classic e-commerce icon
     title: "E-Commerce Performance Marketing",
     description: "Scalable websites and profitable online stores",
   },
 ];
+
 
 const TiltCard = ({ icon, title, description }) => {
   const cardRef = useRef(null);
@@ -176,7 +180,7 @@ const Performance = () => {
               {
                 title: "Google Ads Management",
                 desc: "Optimized PPC campaigns to drive traffic & conversions.",
-                icon: "https://cdn-icons-png.flaticon.com/512/733/733609.png",
+                icon: google,
               },
               {
                 title: "Facebook & Instagram Ads",
@@ -367,6 +371,8 @@ const Performance = () => {
           </div>
         </div>
       </section>
+
+<Story></Story>
 
       <Form2
         heading="Let's Build Your Success Story Together"

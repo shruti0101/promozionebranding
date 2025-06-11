@@ -5,7 +5,12 @@ import instagram from "../../assets/specialized/instagram-icon-1.png";
 import facebook from "../../assets/specialized/facebook.png";
 import google from "../../assets/specialized/Google-AdWord-Course.png";
 import smo from "../../assets/services/smo.jpg"
-import dots from "../../assets/bg/light-blue-top-dots.png"
+// import dots from "../../assets/bg/light-blue-top-dots.png"
+import social from "../../assets/services/social.png"
+import social2 from "../../assets/services/social2.webp"
+import funnel from "../../assets/services/funnel.webp"
+import ctaImage from "../../assets/formimg.webp"
+import Form2 from "../../components/Home/Landingpage/Form2"
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./style.css"
@@ -109,21 +114,75 @@ const Socialmedia = () => {
   "We don't just post – we create content that drives action!",
 ];
 const services = [
-  "Social Media Strategy Development",
-  "Content Creation (Posts, Stories, Reels, Videos)",
-  "Social Media Calendar Planning",
-  "Community Management",
-  "Paid Social Media Advertising",
-  "Influencer Marketing",
-  "Performance Analysis & Reporting",
+  {
+    icon: "bi-bullseye",
+    title: "Paid Advertising",
+    description: "Strategic ad placements on Google, Meta, and LinkedIn to drive targeted traffic.",
+  },
+  {
+    icon: "bi-search",
+    title: "SEO & Content Marketing",
+    description: "Rank higher organically and provide value with high-converting content.",
+  },
+  {
+    icon: "bi-envelope-paper",
+    title: "Email Marketing Campaigns",
+    description: "Automated email flows and newsletters that nurture leads and re-engage users.",
+  },
+  {
+    icon: "bi-person-plus",
+    title: "Lead Generation & Nurturing",
+    description: "Capture quality leads and convert them through multi-touch engagement.",
+  },
+  {
+    icon: "bi-graph-up-arrow",
+    title: "Conversion Rate Optimization (CRO)",
+    description: "Optimize landing pages and user journeys to increase conversion performance.",
+  },
+  {
+    icon: "bi-arrow-repeat",
+    title: "Retargeting Campaigns",
+    description: "Stay top-of-mind and re-engage potential customers through retargeting ads.",
+  },
+  {
+    icon: "bi-diagram-3",
+    title: "Revenue Funnel Setup",
+    description: "Build a scalable funnel tailored to your sales process and buyer stages.",
+  },
+  {
+    icon: "bi-bar-chart-line",
+    title: "Performance Tracking & Reporting",
+    description: "Custom dashboards and analytics for real-time performance insights.",
+  },
 ];
 
 
-
+const funnelData = [
+  {
+ 
+    title: "Drive website traffic",
+    services: ["SEO Services", "Local SEO Services", "Ecommerce SEO Services", "Content Marketing Services"],
+  },
+  {
+   
+    title: "Create and manage powerful ad campaigns",
+    services: ["PPC Management Services", "Social Advertising Services", "Programmatic Advertising Services", "Geofencing Advertising Services"],
+  },
+  {
+    
+    title: "Collect, analyze, and deploy marketing data",
+    services: ["RevenueCloudFX", "Nutshell", "Website Call Tracking", "Lead Management"],
+  },
+  {
+   
+    title: "Improve brand messaging and conversion",
+    services: ["Website Design Services", "CRO Services", "Landing Page Design Services", "Social Media Management Services"],
+  },
+];
 
   return (
     <>
-      <section className="svg-section position-relative">
+      <section className="svg-section position-relative ">
         <svg
           className="pathfinder-svg d-none d-lg-block"
           width="1658"
@@ -222,14 +281,14 @@ const services = [
 {/* section 3 */}
 
 
- <section className="why-choose-section text-white mt-4">
+ <section className="why-choose-section text-black mt-4">
         <div className="container py-5">
           <div className="row align-items-center">
             <div className="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
               <h2 className="fw-bold display-6 text-black mb-4">
                 Why Choose Our <span className="text-accent">Social Media Management</span> Services?
               </h2>
-              <ul className="list-style-custom">
+              <ul className="list-style-custom ">
                 <li>100% Guaranteed Social Media Growth in 6 Months</li>
                 <li>Custom Content Strategy for Every Business</li>
                 <li>Dedicated Social Media Manager</li>
@@ -242,7 +301,7 @@ const services = [
             </div>
             <div className="col-md-6" data-aos="fade-left">
               <img
-                src="/images/social-illustration.svg"
+                src={social}
                 className="img-fluid"
                 alt="Social Media"
               />
@@ -257,32 +316,90 @@ const services = [
       </section>
 
       {/* Section 2: Our Services */}
-      <section className="services-section bg-light py-5">
-        <div className="container">
-          <h3 className="text-center fw-bold mb-5" data-aos="zoom-in">
-            Our Social Media Management Services Include
-          </h3>
-          <div className="row g-4">
-            {[
-              "Social Media Strategy Development",
-              "Content Creation (Posts, Stories, Reels, Videos)",
-              "Social Media Calendar Planning",
-              "Community Management",
-              "Paid Social Media Advertising",
-              "Influencer Marketing",
-              "Performance Analysis & Reporting"
-            ].map((service, index) => (
-              <div className="col-md-4" key={index} data-aos="fade-up" data-aos-delay={index * 100}>
-                <div className="service-box h-100 p-4 rounded shadow-sm text-center bg-white">
-                  <i className="bi bi-stars display-6 text-accent mb-3"></i>
-                  <h5 className="fw-semibold">{service}</h5>
-                </div>
+
+<section className="revenue-section py-5 bg-white">
+      <div className="container">
+        <div className="row align-items-start">
+          {/* Left Column */}
+          <div className="col-lg-4 mb-4 mb-lg-0">
+            <h1 className="fw-bold mb-2">Our Revenue Marketing Services</h1>
+            <h5 className="text-primary">Fueling measurable growth at every funnel stage</h5>
+            <p className="text-muted mt-3 p-3">
+              We offer full-funnel marketing services focused on one goal — driving consistent, scalable revenue.
+              From top-of-funnel awareness to final conversions, we align your marketing with business outcomes.
+             <div className="mt-4">
+                <p className="text-muted small fst-italic">
+                  Whether you're launching a new campaign or scaling existing efforts, our team helps you turn strategy into revenue.
+                </p>
               </div>
-            ))}
+
+            </p>
+
+            <img src={social2} alt="" className="img-fluid mt-3" />
+          </div>
+
+          {/* Right Column */}
+          <div className="col-lg-8">
+            <div className="service-stack">
+              {services.map((service, index) => (
+                <div key={index} className="service-item d-flex">
+                  <div className="service-icon">
+                    <i className={`bi ${service.icon}`}></i>
+                  </div>
+                  <div className="service-text">
+                    <h5>{service.title}</h5>
+                    <p>{service.description}</p>
+                  </div>
+                </div>
+              ))}
+            
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
+
+
+{/* funeel  */}
+
+<section className="revenue-funnel-section py-5">
+      
+      <div className="container-fluid m-0 p-0 d-flex flex-column flex-md-row align-items-start">
+      <img src={funnel} alt="" className="img-fluid" width={"18%"} />
+      
+
+        {/* Content Column */}
+        <div className="content-col ms-4 w-100">
+          {funnelData.map((step, index) => (
+            <div key={index} className="step-block">
+              <h5 className="fw-bold mb-2">{step.title}</h5>
+              <div className="row">
+                {step.services.map((service, i) => (
+                  <div key={i} className="col-md-6 mb-1 fw-semibold">
+                  
+                      {service} 
+                   
+                  </div>
+                ))}
+              </div>
+              {index !== funnelData.length - 1 && (
+                <hr style={{ borderTop: `2px solid ${step.color}`  }} />
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+
+
+     <Form2
+            heading="Let's Build Your Success Story Together"
+            price="Your Growth is Our Guarantee."
+            buttonText="Book Your Free Consultation Now!"
+            image={ctaImage}
+          ></Form2>
     </>
   );
 };

@@ -1,0 +1,66 @@
+.success-stories {
+  background: linear-gradient(135deg, #f1f4f9, #e2ecf7);
+  text-align: center;
+  border-radius: 20px;
+  padding: 60px 20px;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+}
+
+.section-title .highlight {
+  color: #2e7d32;
+}
+
+.section-text {
+  font-size: 1.15rem;
+  color: #444;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.section-text .bold {
+  font-weight: 600;
+  color: #1b5e20;
+}
+
+.stats-row {
+  margin-top: 40px;
+}
+
+.stat {
+  padding: 10px;
+}
+
+.stat-number {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #2e7d32;
+  margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+  .stat-number {
+    font-size: 1.8rem;
+  }
+  .stats-row{
+    margin: 0 auto;
+  }
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 8px;
+}

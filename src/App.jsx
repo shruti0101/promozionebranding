@@ -18,8 +18,14 @@ import Home from "./components/Home/Home";
 import Wordpress from "./pages/wordpress/Wordpress";
 import Performance from "./pages/performancemarket/Performance";
 import Lead from "./pages/lead/Lead";
-import Email from "./pages/email/Email"
-import Socialmedia from "./pages/Socialmediamanagement/Socialmedia"
+import Email from "./pages/email/Email";
+import Socialmedia from "./pages/Socialmediamanagement/Socialmedia";
+import Content from "./pages/content/Content";
+import Seoservices from "./pages/SeoServices/Seoservices";
+import Demand from "./pages/DemandGenerate/Demand";
+import B2b from "./pages/B2Bmarket/B2b"
+
+
 
 const PHPWebsiteDevelopment = () => <div>PHP Website Development</div>;
 const CMSWebDevelopment = () => <div>CMS Web Development</div>;
@@ -28,33 +34,33 @@ const EcommerceWebDesigning = () => <div>Ecommerce Web Designing</div>;
 const SEOWebDesigning = () => <div>SEO Web Designing</div>;
 const WebsiteRedesigning = () => <div>Website Redesigning</div>;
 
-const B2BMarketing = () => <div>B2B Marketing</div>;
+
 
 const AIPerformanceMarketingServices = () => (
   <div>AI Performance Marketing Services</div>
 );
 const AdsManagement = () => <div>Ads Management</div>;
 const InternetMarketing = () => <div>Internet Marketing</div>;
-const ContentMarketing = () => <div>Content Marketing</div>;
+
 const CRMOptimizations = () => <div>CRM Optimizations</div>;
 
 const VideoMarketing = () => <div>Video Marketing</div>;
 
 const SMO = () => <div>SMO</div>;
-const SMM = () => <div>SMM</div>;
+const Socialads = () => <div>socialads</div>;
 const AIDigitalMarketingServices = () => (
   <div>AI Digital Marketing Services</div>
 );
 const ECommerceSEOServices = () => <div>E-Commerce SEO Services</div>;
 const DigitalMarketingServices = () => <div>Digital Marketing Services</div>;
 const EnterpriseSEOServices = () => <div>Enterprise SEO Services</div>;
-const AISEOServices = () => <div>AI SEO Services</div>;
+
 const FreeSEOAudit = () => <div>Free SEO Audit</div>;
 
 function App() {
   return (
     <div>
-       <ScrollToTopOnRouteChange /> 
+      <ScrollToTopOnRouteChange />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -85,27 +91,25 @@ function App() {
           <Route path="services/redesign" element={<WebsiteRedesigning />} />
 
           {/* Revenue Marketing & CRO */}
-          <Route
-            path="services/performance"
-            element={<Performance/>}
-          />
-          <Route path="services/b2b" element={<B2BMarketing />} />
+          <Route path="services/performance" element={<Performance />} />
+          <Route path="services/b2b" element={<B2b />} />
           <Route path="services/leads" element={<Lead />} />
           <Route
             path="services/ai-performance"
             element={<AIPerformanceMarketingServices />}
           />
+          <Route path="services/demand" element={<Demand />} />
           <Route path="services/ads" element={<AdsManagement />} />
           <Route path="services/internet" element={<InternetMarketing />} />
 
           {/* Digital Marketing */}
-          <Route path="services/content" element={<ContentMarketing />} />
+          <Route path="services/content" element={<Content />} />
           <Route path="services/crm" element={<CRMOptimizations />} />
           <Route path="services/email" element={<Email />} />
           <Route path="services/video" element={<VideoMarketing />} />
-          <Route path="services/social" element={<Socialmedia />} />
+          <Route path="services/social" element={<Socialads />} />
           <Route path="services/smo" element={<SMO />} />
-          <Route path="services/smm" element={<SMM />} />
+          <Route path="services/smm" element={<Socialmedia />} />
 
           {/* Guaranteed SEO */}
           <Route
@@ -124,7 +128,7 @@ function App() {
             path="services/enterprise-seo"
             element={<EnterpriseSEOServices />}
           />
-          <Route path="services/ai-seo" element={<AISEOServices />} />
+          <Route path="services/ai-seo" element={<Seoservices />} />
 
           {/* Free SEO Audit */}
           <Route path="boost" element={<FreeSEOAudit />} />

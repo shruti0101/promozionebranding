@@ -3,6 +3,7 @@ import "./Style.css"
 import ctaImage from "../../assets/Formimg.webp"
 import Form2 from "../../components/Home/Landingpage/Form2"
 import lead from "../../assets/approach/lead.png"
+import Story from "../Story/Story";
 const Lead = () => {
   return (
     <div >
@@ -207,114 +208,114 @@ const Lead = () => {
 </section>
 
 
-<section class="container py-5">
-  <h1 class="text-center mb-5 fw-bold"  >How Our Lead Generation Process Works</h1>
-  <div class="leadgen-timeline position-relative">
-    <div class="leadgen-step leadgen-left">
-      <div class="leadgen-box">
-        <div class="leadgen-icon">1</div>
+<section className="container py-5">
+  <h1 className="text-center mb-5 fw-bold"  >How Our Lead Generation Process Works</h1>
+  <div className="leadgen-timeline position-relative">
+    <div className="leadgen-step leadgen-left">
+      <div className="leadgen-box">
+        <div className="leadgen-icon">1</div>
         <h5>Business Analysis & Target Audience Research</h5>
         <p>We understand your business goals and define your ideal customer profile (ICP) to target the right audience.</p>
       </div>
     </div>
-    <div class="leadgen-step leadgen-right">
-      <div class="leadgen-box">
-        <div class="leadgen-icon">2</div>
+    <div className="leadgen-step leadgen-right">
+      <div className="leadgen-box">
+        <div className="leadgen-icon">2</div>
         <h5>Custom Lead Generation Strategy</h5>
         <p>Our experts craft a custom lead generation strategy based on your industry, target location, and business goals.</p>
       </div>
     </div>
-    <div class="leadgen-step leadgen-left">
-      <div class="leadgen-box">
-        <div class="leadgen-icon">3</div>
+    <div className="leadgen-step leadgen-left">
+      <div className="leadgen-box">
+        <div className="leadgen-icon">3</div>
         <h5>Campaign Setup & Execution</h5>
         <p>We set up and launch lead generation campaigns through Google Ads, Meta Ads, LinkedIn Ads, and Cold Email Marketing.</p>
       </div>
     </div>
-    <div class="leadgen-step leadgen-right">
-      <div class="leadgen-box">
-        <div class="leadgen-icon">4</div>
+    <div className="leadgen-step leadgen-right">
+      <div className="leadgen-box">
+        <div className="leadgen-icon">4</div>
         <h5>Lead Filtering & Qualification</h5>
         <p>We filter out spam leads and deliver only qualified leads that have the potential to convert.</p>
       </div>
     </div>
-    <div class="leadgen-step leadgen-left">
-      <div class="leadgen-box">
-        <div class="leadgen-icon">5</div>
+    <div className="leadgen-step leadgen-left">
+      <div className="leadgen-box">
+        <div className="leadgen-icon">5</div>
         <h5>Real-Time Lead Tracking & Reporting</h5>
         <p>Track every lead with our real-time dashboard and weekly performance reports.</p>
       </div>
     </div>
-    <div class="leadgen-step leadgen-right">
-      <div class="leadgen-box">
-        <div class="leadgen-icon">6</div>
+    <div className="leadgen-step leadgen-right">
+      <div className="leadgen-box">
+        <div className="leadgen-icon">6</div>
         <h5>Guaranteed Results in 7 Days</h5>
         <p>We guarantee 100% qualified leads in 7 days – or your money back!</p>
       </div>
     </div>
   </div>
-  <div class="text-center mt-5">
-    <button class="nav-btn">Start Your Lead Generation Campaign</button>
+  <div className="text-center mt-5">
+    <button className="nav-btn">Start Your Lead Generation Campaign</button>
   </div>
 </section>
 
 
 
-<section class="container py-5">
-  <h1 class="text-center  mb-4">Why Lead Generation is Important for Your Business</h1>
-  <p class="text-center text-muted mb-5 fs-5">
+<section className="container py-5">
+  <h1 className="text-center  mb-4">Why Lead Generation is Important for Your Business</h1>
+  <p className="text-center text-muted mb-5 fs-5">
     Unlock growth opportunities and connect with your ideal customers through a focused lead generation strategy.
   </p>
-  <div class="row g-4">
-    <div class="col-md-6 col-lg-4">
-      <div class="leadgen-card">
-        <div class="leadgen-icon-box bg-primary">
-          <i class="bi bi-bar-chart-line"></i>
+  <div className="row g-4">
+    <div className="col-md-6 col-lg-4">
+      <div className="leadgen-card">
+        <div className="leadgen-icon-box bg-primary">
+          <i className="bi bi-bar-chart-line"></i>
         </div>
         <h5>Boosts Sales Pipeline</h5>
         <p>Fuel your sales funnel with a steady stream of potential customers ready to convert.</p>
       </div>
     </div>
-    <div class="col-md-6 col-lg-4">
-      <div class="leadgen-card">
-        <div class="leadgen-icon-box bg-success">
-          <i class="bi bi-graph-up-arrow"></i>
+    <div className="col-md-6 col-lg-4">
+      <div className="leadgen-card">
+        <div className="leadgen-icon-box bg-success">
+          <i className="bi bi-graph-up-arrow"></i>
         </div>
         <h5>Increases Conversion Rates</h5>
         <p>Reach prospects who are genuinely interested, resulting in better conversion performance.</p>
       </div>
     </div>
-    <div class="col-md-6 col-lg-4">
-      <div class="leadgen-card">
-        <div class="leadgen-icon-box bg-warning">
-          <i class="bi bi-clock-history"></i>
+    <div className="col-md-6 col-lg-4">
+      <div className="leadgen-card">
+        <div className="leadgen-icon-box bg-warning">
+          <i className="bi bi-clock-history"></i>
         </div>
         <h5>Saves Time & Resources</h5>
         <p>Focus your efforts on leads that matter while we handle the heavy lifting.</p>
       </div>
     </div>
-    <div class="col-md-6 col-lg-4">
-      <div class="leadgen-card">
-        <div class="leadgen-icon-box bg-danger">
-          <i class="bi bi-person-check"></i>
+    <div className="col-md-6 col-lg-4">
+      <div className="leadgen-card">
+        <div className="leadgen-icon-box bg-danger">
+          <i className="bi bi-person-check"></i>
         </div>
         <h5>Generates High-Quality Leads</h5>
         <p>Filter out noise and get connected to decision-makers ready to buy.</p>
       </div>
     </div>
-    <div class="col-md-6 col-lg-4">
-      <div class="leadgen-card">
-        <div class="leadgen-icon-box bg-info">
-          <i class="bi bi-rocket-takeoff"></i>
+    <div className="col-md-6 col-lg-4">
+      <div className="leadgen-card">
+        <div className="leadgen-icon-box bg-info">
+          <i className="bi bi-rocket-takeoff"></i>
         </div>
         <h5>Helps Businesses Scale Faster</h5>
         <p>Accelerate growth by continuously acquiring customers who match your ideal profile.</p>
       </div>
     </div>
-    <div class="col-md-6 col-lg-4">
-      <div class="leadgen-card">
-        <div class="leadgen-icon-box bg-secondary">
-          <i class="bi bi-wallet2"></i>
+    <div className="col-md-6 col-lg-4">
+      <div className="leadgen-card">
+        <div className="leadgen-icon-box bg-secondary">
+          <i className="bi bi-wallet2"></i>
         </div>
         <h5>Cost-Effective Marketing Strategy</h5>
         <p>Maximize ROI with targeted lead generation instead of expensive, broad marketing campaigns.</p>
@@ -322,6 +323,8 @@ const Lead = () => {
     </div>
   </div>
 </section>
+
+<Story></Story>
 
  <Form2
         heading="Let's Build Your Success Story Together"

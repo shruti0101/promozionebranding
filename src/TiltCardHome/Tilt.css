@@ -1,0 +1,91 @@
+.path-animate {
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 3000;
+  animation: drawPath 4s ease-out forwards;
+}
+
+@keyframes drawPath {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.svg-section {
+  position: relative;
+  height: 120vh;
+  overflow: hidden;
+  background-color: #E5F1FC;
+}
+
+.pathfinder-svg {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  opacity: 0.3;
+}
+
+.color-svg {
+  stroke: #86cae7;
+  opacity: 0.6;
+}
+
+.content-overlay {
+  z-index: 2;
+}
+
+.tilt-container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  max-width: 508px;
+  min-height: 500px;
+  transform-style: preserve-3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tilt-skew-wrapper {
+  transform: perspective(1000px) rotateY(-25deg);
+  transform-style: preserve-3d;
+}
+
+.custom-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+  transform-style: preserve-3d;
+}
+
+.custom-card:hover {
+  transform: translateY(-20px) scale(1.05);
+  box-shadow: 0 20px 45px rgba(3, 5, 3, 0.35);
+
+}
+
+.icon-wrapper {
+  width: 48px;
+  height: 48px;
+  background-color: #eceeff;
+  color: #5a60f0;
+  font-size: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+@media(max-width: 768px) {
+  .svg-section {
+    height: 60vh;
+  }
+}

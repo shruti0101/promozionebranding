@@ -1,0 +1,22 @@
+.revenue-funnel-section h2 {
+  font-size: 2.3rem;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .revenue-funnel-section h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .revenue-funnel-section .row {
+    flex-direction: column;
+  }
+}
+
+.shadow-sm {
+  transition: transform 0.3s ease;
+}
+.shadow-sm:hover {
+  transform: translateY(-4px);
+}

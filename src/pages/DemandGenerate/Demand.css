@@ -1,0 +1,38 @@
+.hover-shadow:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  transform: translateY(-5px);
+}
+.transition {
+  transition: all 0.3s ease;
+}
+
+.demand-section {
+  background: linear-gradient(135deg, #5288b1, #5070db);
+  overflow: hidden;
+  position: relative;
+}
+
+.background-shape {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1), transparent 70%);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.demand-section .container {
+  z-index: 2;
+  position: relative;
+}
+
+.text-highlight {
+  color: #050505; /* Gold */
+}
+
+.cta-box {
+  background-color: #fff;
+  border-left: 5px solid #2548BD;
+}
