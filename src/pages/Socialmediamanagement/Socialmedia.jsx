@@ -253,10 +253,10 @@ const funnelData = [
         <div className="container">
           <div className="row mt-4">
 {/* <img src={dots} alt="" className="position-absolute" /> */}
-            <div className="col-md-5">
+            <div className="col-md-5" data-aos="fade-up">
                 <img src={smo} alt="social-ads" className="img-fluid"/>
             </div>
-            <div className="col-md-7">
+            <div className="col-md-7" data-aos="fade-up">
               <h2 className="mb-3 fw-bold fs-1 pt-5">What is Social Media Management?</h2>
               <p className="text-black"style={{fontSize:"1.1rem"}}>
                 Social Media Management is the process of managing your
@@ -321,7 +321,7 @@ const funnelData = [
       <div className="container">
         <div className="row align-items-start">
           {/* Left Column */}
-          <div className="col-lg-4 mb-4 mb-lg-0">
+          <div className="col-lg-4 mb-4 mb-lg-0" data-aos="fade-left">
             <h1 className="fw-bold mb-2">Our Revenue Marketing Services</h1>
             <h5 className="text-primary">Fueling measurable growth at every funnel stage</h5>
             <p className="text-muted mt-3 p-3">
@@ -339,7 +339,7 @@ const funnelData = [
           </div>
 
           {/* Right Column */}
-          <div className="col-lg-8">
+          <div className="col-lg-8" data-aos="fade-right">
             <div className="service-stack">
               {services.map((service, index) => (
                 <div key={index} className="service-item d-flex">
@@ -366,11 +366,11 @@ const funnelData = [
 <section className="revenue-funnel-section py-5">
       
       <div className="container-fluid m-0 p-0 d-flex flex-column flex-md-row align-items-start">
-      <img src={funnel} alt="" className="img-fluid" width={"18%"} />
+      <img src={funnel} alt="" className="img-fluid" width={"18%"}  data-aos="fade-up"/>
       
 
         {/* Content Column */}
-        <div className="content-col ms-4 w-100">
+        <div className="content-col ms-4 w-100" data-aos="fade-down">
           {funnelData.map((step, index) => (
             <div key={index} className="step-block">
               <h5 className="fw-bold mb-2">{step.title}</h5>

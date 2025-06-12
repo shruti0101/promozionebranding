@@ -1,11 +1,11 @@
-import React, { useRef } from "react";
-import bg from "../assets/approach/wrapper-bg.png" // adjust the path as needed
-import "./Tilt.css"
+import React, { useRef, useEffect } from "react";
+import bg from "../assets/approach/wrapper-bg.png"; // Adjust path if needed
+import "./Tilt.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import { useEffect } from "react";
-const TiltCard = ({ title, description }) => {
+// Single Tilt Card
+const TiltCard = ({ title, description, icon }) => {
   const cardRef = useRef(null);
 
   const handleMouseEnter = () => {
@@ -37,13 +37,15 @@ const TiltCard = ({ title, description }) => {
       onMouseLeave={handleMouseLeave}
     >
       <div className="custom-card text-center p-3" ref={cardRef}>
-        <h5 className="fw-bold">{title}</h5>
-        <p className=" " style={{fontSize:"0.9rem"}}>{description}</p>
+        <div className="fs-4 mb-2">{icon}</div>
+        <h5 className="fw-semibold">{title}</h5>
+        <p className="" style={{ fontSize: "0.8rem" }}>{description}</p>
       </div>
     </div>
   );
 };
 
+// Main Tiltcard Section
 const Tiltcard = ({ heading, paragraph, cardItems }) => {
   const wrapperRef = useRef(null);
 
@@ -63,18 +65,16 @@ const Tiltcard = ({ heading, paragraph, cardItems }) => {
     wrapperRef.current.style.transform = "rotateX(0deg) rotateY(0deg)";
   };
 
-    useEffect(() => {
-      AOS.init({
-        duration: 1000, // animation duration
-        once: true, // whether animation should happen only once
-      });
-    }, []);
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
 
   return (
     <section className="svg-section position-relative">
       {/* Background SVG */}
       <svg
         className="pathfinder-svg d-none d-lg-block"
+        style={{ top: "83%" }}
         width="1658"
         height="2062"
         viewBox="0 0 1458 1362"
@@ -90,14 +90,15 @@ const Tiltcard = ({ heading, paragraph, cardItems }) => {
         />
       </svg>
 
-      <div className="content-overlay container py-4 position-absolute top-0 start-50 translate-middle-x" data-aos="fade-up">
-        <div className="row align-items-center mt-3">
+      {/* Content Area */}
+      <div className="content-overlay container position-absolute top-0 start-50 translate-middle-x" data-aos="fade-up">
+        <div className="row align-items-center mt-2">
           <div className="col-md-6 mb-4">
             <h1 className="fw-bold mb-3">{heading}</h1>
             <p className="text-black" data-aos="fade-up" data-aos-delay="200">
               {paragraph}
             </p>
-            <button className="nav-btn text-capitalize" data-aos="zoom-in">
+            <button className="nav-btn text-capitalize mt-4" data-aos="zoom-in">
               let’s get started
             </button>
           </div>
@@ -108,7 +109,7 @@ const Tiltcard = ({ heading, paragraph, cardItems }) => {
             onMouseLeave={handleWrapperLeave}
             data-aos="fade-up"
           >
-            <div className="tilt-skew-wrapper  d-none d-md-block">
+            <div className="tilt-skew-wrapper d-none d-md-block">
               <div
                 className="tilt-container"
                 ref={wrapperRef}

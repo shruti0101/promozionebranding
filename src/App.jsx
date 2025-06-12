@@ -24,12 +24,15 @@ import Content from "./pages/content/Content";
 import Seoservices from "./pages/SeoServices/Seoservices";
 import Demand from "./pages/DemandGenerate/Demand";
 import B2b from "./pages/B2Bmarket/B2b"
+import CustomWeb from "./pages/CustomWeb/CustomWeb";
+import Php from "./pages/PHP/Php";
+import Cms from "./pages/Cms/Cms";
+import Reactt from "./pages/React/Reactt";
+import Enterpriseseo from "./pages/EnterpriseSEO/Enterpriseseo"
 
 
 
-const PHPWebsiteDevelopment = () => <div>PHP Website Development</div>;
-const CMSWebDevelopment = () => <div>CMS Web Development</div>;
-const MernWebDevelopment = () => <div>Mern Web Development</div>;
+
 const EcommerceWebDesigning = () => <div>Ecommerce Web Designing</div>;
 const SEOWebDesigning = () => <div>SEO Web Designing</div>;
 const WebsiteRedesigning = () => <div>Website Redesigning</div>;
@@ -76,13 +79,14 @@ function App() {
 
           {/* Website Development */}
           <Route path="services/design" element={<Wordpress />} />
+          <Route path="services/custom" element={<CustomWeb/>}> </Route>
           <Route
             path="services/development"
-            element={<PHPWebsiteDevelopment />}
+            element={<Php />}
           />
-          <Route path="services/marketing" element={<CMSWebDevelopment />} />
+          <Route path="services/marketing" element={<Cms />} />
           {/* Add more specific routes as needed */}
-          <Route path="services/mern" element={<MernWebDevelopment />} />
+          <Route path="services/mern" element={<Reactt />} />
           <Route
             path="services/ecommerce"
             element={<EcommerceWebDesigning />}
@@ -126,7 +130,7 @@ function App() {
           />
           <Route
             path="services/enterprise-seo"
-            element={<EnterpriseSEOServices />}
+            element={<Enterpriseseo />}
           />
           <Route path="services/ai-seo" element={<Seoservices />} />
 

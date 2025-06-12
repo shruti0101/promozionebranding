@@ -1,40 +1,4 @@
-.path-animate {
-  stroke-dasharray: 3000;
-  stroke-dashoffset: 3000;
-  animation: drawPath 4s ease-out forwards;
-}
 
-@keyframes drawPath {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-.svg-section {
-  position: relative;
-  height: 120vh;
-  overflow: hidden;
-  background-color: #E5F1FC;
-}
-
-.pathfinder-svg {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  width: 100%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  opacity: 0.3;
-}
-
-.color-svg {
-  stroke: #86cae7;
-  opacity: 0.6;
-}
-
-.content-overlay {
-  z-index: 2;
-}
 
 .tilt-container {
   background-size: cover;
@@ -86,6 +50,9 @@
 
 @media(max-width: 768px) {
   .svg-section {
-    height: 60vh;
+    height: 80vh;
+  }
+  .content-overlay {
+    padding-top: 2rem;
   }
 }

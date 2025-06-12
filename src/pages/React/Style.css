@@ -1,0 +1,87 @@
+.react-hero-section {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #ffffff;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.react-hero-section .highlight {
+  color: #61dafb;
+}
+
+.text-content h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.features li {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  list-style: none;
+  position: relative;
+  padding-left: 24px;
+}
+
+.features li::before {
+  content: "✅";
+  position: absolute;
+  left: 0;
+  top: 1px;
+  color: #61dafb;
+}
+
+.logo-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* ✨ React Logo Container Effects */
+.react-logo-glow {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border-radius: 50%;
+  padding: 60px;
+  box-shadow: 0 0 60px #61dafb55, 0 0 100px #61dafb33;
+  animation: pulseGlow 3s ease-in-out infinite;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+/* 🌟 Actual React Logo Image */
+.react-logo {
+  width: 180px;
+  height: 180px;
+  filter: drop-shadow(0 0 10px #61dafb);
+  animation: spinReact 20s linear infinite;
+  z-index: 10;
+}
+
+/* 🔁 Spin Animation */
+@keyframes spinReact {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 💡 Glowing Pulse */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 60px #61dafb55, 0 0 100px #61dafb33;
+  }
+  50% {
+    box-shadow: 0 0 80px #61dafb88, 0 0 140px #61dafb55;
+  }
+}

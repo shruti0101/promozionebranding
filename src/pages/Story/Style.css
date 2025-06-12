@@ -19,7 +19,7 @@
 }
 
 .section-title .highlight {
-  color: #2e7d32;
+  color: #2563EB;
 }
 
 .section-text {
@@ -32,7 +32,7 @@
 
 .section-text .bold {
   font-weight: 600;
-  color: #1b5e20;
+  color: #2563EB;
 }
 
 .stats-row {
@@ -46,7 +46,7 @@
 .stat-number {
   font-size: 2.4rem;
   font-weight: 800;
-  color: #2e7d32;
+  color: #2563EB;
   margin: 0 auto;
 }
 

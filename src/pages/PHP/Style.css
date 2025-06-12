@@ -1,0 +1,61 @@
+.php-section {
+  background: #f1f5fa;
+  position: relative;
+  overflow: hidden;
+}
+
+.php-heading {
+  font-size: 2.5rem; font-weight: 700; color: #1e2a3a;
+}
+
+.php-desc { font-size: 1.1rem; color: #333; margin-bottom: 15px; }
+
+.php-points { list-style: none; margin: 0 0 25px; padding: 0; }
+
+.php-points li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #222;
+  opacity: 0;
+  animation: slideInLeft 0.6s ease forwards;
+}
+
+.php-points li .icon { font-size: 1.2rem; margin-right: 12px; color: #007bff; }
+
+.php-note { font-size: 1.05rem; color: #111; margin-top: 20px; }
+
+.php-illustration img.svg-float {
+  width: 100%;
+  /* max-width: 360px; */
+  animation: float 4s ease-in-out infinite;
+  border-radius: 8px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+}
+
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Soft liquid‑blob bg */
+.blob-bg {
+  position: absolute;
+  top: -120px; right: -160px;
+  width: 500px; height: 500px;
+  background: radial-gradient(circle at top right, #007bff33, transparent 70%);
+  border-radius: 50%;
+  z-index: 0;
+  animation: blobMove 8s ease-in-out infinite;
+}
+
+@keyframes blobMove {
+  0%,100% { transform: translate(0,0) scale(1); }
+  50% { transform: translate(-20px,30px) scale(1.05); }
+}

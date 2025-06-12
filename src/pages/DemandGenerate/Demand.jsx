@@ -1,15 +1,8 @@
 import React from "react";
 import Tiltcard from "../../TiltCardHome/Tiltcard";
 import demand from "../../assets/services/demand.png";
-import { Container, Row, Col } from "react-bootstrap";
-import {
-  FaSearch,
-  FaProjectDiagram,
-  FaPenNib,
-  FaShareAlt,
-  FaChartLine,
-  FaRedo,
-} from "react-icons/fa";
+
+
 import './Demand.css'
 import { FaCheckCircle } from "react-icons/fa";
 import Story from "../Story/Story";
@@ -191,14 +184,46 @@ At Promozione Branding Pvt. Ltd., we combine the power of content, ads, automati
           </div>
 
           {/* Right Column - CTA Box */}
-          <div className="col-md-5 mt-5 mt-md-0">
-            <div className="cta-box p-4 shadow rounded-4 bg-white text-dark">
-              <h4 className="fw-bold mb-3">Ready to Build Demand, Not Just Awareness?</h4>
-              <p className="mb-4">Stop guessing. Start scaling.</p>
-              <p className="mb-4">Let’s create a demand generation engine for your brand that runs 24/7 – and delivers real results.</p>
-              <a href="#contact" className="btn btn-primary w-100">Let’s Get Started</a>
-            </div>
-          </div>
+              <div className="col-md-5 mt-5 mt-md-0" data-aos="fade-up" data-aos-delay="150">
+  <div
+    className="p-5 rounded-4 shadow-sm cta-enhanced text-dark position-relative overflow-hidden"
+    style={{
+      background: "linear-gradient(135deg, #f9fafb, #e0e7ff)",
+      border: "1px solid #e0e0e0",
+    }}
+  >
+    <div style={{ zIndex: 2, position: "relative" }}>
+      <h4 className="fw-bold mb-3 text-primary">
+   Ready to Build Demand, Not Just Awareness?
+
+      </h4>
+      <p className="mb-3 text-dark fs-6">Stop guessing. Start scaling.</p>
+      <p className="mb-4 text-secondary">
+     Let’s create a demand generation engine for your brand that runs 24/7 – and delivers real results.
+
+      </p>
+      <a
+        href="#contact"
+        className="btn btn-primary w-100 fw-semibold"
+        style={{
+          borderRadius: "12px",
+          fontSize: "16px",
+          padding: "12px 20px",
+        }}
+      >
+        🚀 Let’s Get Started
+      </a>
+    </div>
+    <div
+      className="position-absolute top-0 start-0 w-100 h-100"
+      style={{
+        background:
+          "radial-gradient(circle at 30% 20%, rgba(59,130,246,0.1), transparent)",
+        zIndex: 1,
+      }}
+    ></div>
+  </div>
+</div>
         </div>
       </div>
     </section>
