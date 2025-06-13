@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import bg from "../assets/approach/wrapper-bg.png"; // Adjust path if needed
+import bg from "../assets/approach/wrapper-bg.png";
 import "./Tilt.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -39,14 +39,16 @@ const TiltCard = ({ title, description, icon }) => {
       <div className="custom-card text-center p-3" ref={cardRef}>
         <div className="fs-4 mb-2">{icon}</div>
         <h5 className="fw-semibold">{title}</h5>
-        <p className="" style={{ fontSize: "0.8rem" }}>{description}</p>
+        <p className="" style={{ fontSize: "0.8rem" }}>
+          {description}
+        </p>
       </div>
     </div>
   );
 };
 
 // Main Tiltcard Section
-const Tiltcard = ({ heading, paragraph, cardItems }) => {
+const Tiltcard = ({ heading, paragraph, cardItems, services }) => {
   const wrapperRef = useRef(null);
 
   const handleWrapperMove = (e) => {
@@ -91,7 +93,10 @@ const Tiltcard = ({ heading, paragraph, cardItems }) => {
       </svg>
 
       {/* Content Area */}
-      <div className="content-overlay container position-absolute top-0 start-50 translate-middle-x" data-aos="fade-up">
+      <div
+        className="content-overlay container position-absolute top-0 start-50 translate-middle-x"
+        data-aos="fade-up"
+      >
         <div className="row align-items-center mt-2">
           <div className="col-md-6 mb-4">
             <h1 className="fw-bold mb-3">{heading}</h1>
@@ -111,12 +116,20 @@ const Tiltcard = ({ heading, paragraph, cardItems }) => {
           >
             <div className="tilt-skew-wrapper d-none d-md-block">
               <div
-                className="tilt-container"
+                className="tilt-container position-relative"
                 ref={wrapperRef}
                 style={{ backgroundImage: `url(${bg})` }}
                 data-aos="zoom-in-left"
               >
                 <div className="container-fluid p-4">
+                  {/* Our Services Heading */}
+                  <h2
+                    className="services-heading text-capitalize text-center fw-bold mb-4"
+                    data-aos="fade-down"
+                  >
+                   promozione branding
+                  </h2>
+
                   <div className="row">
                     {cardItems.map((item, index) => (
                       <TiltCard key={index} {...item} />

@@ -29,25 +29,29 @@ import Php from "./pages/PHP/Php";
 import Cms from "./pages/Cms/Cms";
 import Reactt from "./pages/React/Reactt";
 import Enterpriseseo from "./pages/EnterpriseSEO/Enterpriseseo"
+import Shopify from "./pages/shopify/Shopify";
+import SeoWeb from "./pages/SEOwebdesing/SeoWeb";
+import GoogleAds from "./pages/Googleads/GoogleAds";
+import Crm from "./pages/CrmOptimization/Crm"
+import GoogleAdword from "./pages/GoogleAdword/GoogleAdword";
+import Video from "./pages/Video/Video";
+import AiPerformance from "./pages/AI performance market/AiPerformance";
+import Internet from "./pages/InternetMarketing/Internet"
 
 
 
 
-const EcommerceWebDesigning = () => <div>Ecommerce Web Designing</div>;
-const SEOWebDesigning = () => <div>SEO Web Designing</div>;
+
+
 const WebsiteRedesigning = () => <div>Website Redesigning</div>;
 
 
 
-const AIPerformanceMarketingServices = () => (
-  <div>AI Performance Marketing Services</div>
-);
 const AdsManagement = () => <div>Ads Management</div>;
-const InternetMarketing = () => <div>Internet Marketing</div>;
 
-const CRMOptimizations = () => <div>CRM Optimizations</div>;
 
-const VideoMarketing = () => <div>Video Marketing</div>;
+
+
 
 const SMO = () => <div>SMO</div>;
 const Socialads = () => <div>socialads</div>;
@@ -56,7 +60,7 @@ const AIDigitalMarketingServices = () => (
 );
 const ECommerceSEOServices = () => <div>E-Commerce SEO Services</div>;
 const DigitalMarketingServices = () => <div>Digital Marketing Services</div>;
-const EnterpriseSEOServices = () => <div>Enterprise SEO Services</div>;
+
 
 const FreeSEOAudit = () => <div>Free SEO Audit</div>;
 
@@ -89,9 +93,9 @@ function App() {
           <Route path="services/mern" element={<Reactt />} />
           <Route
             path="services/ecommerce"
-            element={<EcommerceWebDesigning />}
+            element={< Shopify />}
           />
-          <Route path="services/seo" element={<SEOWebDesigning />} />
+          <Route path="services/seo" element={<SeoWeb />} />
           <Route path="services/redesign" element={<WebsiteRedesigning />} />
 
           {/* Revenue Marketing & CRO */}
@@ -100,20 +104,25 @@ function App() {
           <Route path="services/leads" element={<Lead />} />
           <Route
             path="services/ai-performance"
-            element={<AIPerformanceMarketingServices />}
+            element={<AiPerformance />}
           />
           <Route path="services/demand" element={<Demand />} />
           <Route path="services/ads" element={<AdsManagement />} />
-          <Route path="services/internet" element={<InternetMarketing />} />
+          <Route path="services/internet" element={<Internet />} />
 
           {/* Digital Marketing */}
           <Route path="services/content" element={<Content />} />
-          <Route path="services/crm" element={<CRMOptimizations />} />
+          <Route path="services/crm" element={<Crm />} />
           <Route path="services/email" element={<Email />} />
-          <Route path="services/video" element={<VideoMarketing />} />
+          <Route path="services/video" element={<Video />} />
           <Route path="services/social" element={<Socialads />} />
           <Route path="services/smo" element={<SMO />} />
           <Route path="services/smm" element={<Socialmedia />} />
+           <Route path="/services/google" element={<GoogleAds />} />
+          <Route path="/services/google-ads" element={<GoogleAdword />} />
+
+
+
 
           {/* Guaranteed SEO */}
           <Route

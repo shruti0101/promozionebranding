@@ -4,50 +4,43 @@ import Tiltcard from "../../TiltCardHome/Tiltcard";
 import wp1 from "../../assets/services/wp1.png";
 import themesImg from "../../assets/services/themes-img.png";
 import { FaCheckCircle } from "react-icons/fa";
+import VanillaTilt from "vanilla-tilt";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
 import ctaImage from "../../assets/formimg.webp"
+import Service from "../Servicecomponent/Service";
+import wordpress from "../../assets/services/wordpress.webp"
 const cardItems = [
   {
-
+    icon: "🎨", // UI/UX Design
     title: "Custom UI/UX Design",
-    description:
-      " Har website ka design unique hota hai, built from scratch according to your business type",
   },
   {
- 
+    icon: "⚡", // Speed & Performance
     title: "Speed & Performance Optimization",
-    description:
-      "Hum pages ko optimize karte hain taaki loading super fast ho –",
   },
   {
-   
+    icon: "🔍", // SEO
     title: "Basic SEO Setup",
-    description:
-      "Meta tags, sitemaps, schema markup – sab kuch pre-installed hota hai taaki aapki site Google ke liye ready ho.",
   },
   {
-
+    icon: "🛒", // E-Commerce
     title: "E-Commerce Integration",
-    description:
-      "Agar aap products sell karna chahte hain, to hum aapke liye WooCommerce store setup bhi karte hain.",
   },
   {
-
+    icon: "🎓", // Training
     title: "Training & Handover",
-    description:
-      "Website ke launch ke baad hum aapko sikhate hain kaise aap khud updates kar sakte hain ",
   },
   {
-
+    icon: "📱", // Responsive Design
     title: "Responsive Development",
-    description:
-      "Chahe mobile ho ya tablet, aapki site har device par smoothly chalegi.",
   },
 ];
+
+
 const steps = [
   {
     title: "Business Understanding",
@@ -77,15 +70,72 @@ const steps = [
 
 
 
+// services
+const services = [
+  {
+    icon: "bi-easel2", // Design
+    title: "Custom UI/UX Design",
+    description:
+      "Har website ka design unique hota hai, built from scratch according to your business type and customer journey.",
+  },
+  {
+    icon: "bi-phone", // Mobile / responsive
+    title: "Responsive Development",
+    description:
+      "Chahe mobile ho ya tablet, aapki site har device par smoothly chalegi.",
+  },
+  {
+    icon: "bi-speedometer2", // Performance
+    title: "Speed & Performance Optimization",
+    description:
+      "Hum pages ko optimize karte hain taaki loading super fast ho – better SEO + better user experience.",
+  },
+  {
+    icon: "bi-bar-chart-line", // SEO
+    title: "Basic SEO Setup",
+    description:
+      "Meta tags, sitemaps, schema markup – sab kuch pre-installed hota hai taaki aapki site Google ke liye ready ho.",
+  },
+  {
+    icon: "bi-ui-checks-grid", // Forms
+    title: "Contact & Lead Forms",
+    description:
+      "Ham custom lead forms setup karte hain jo customer queries aur sales leads capture kar sakein.",
+  },
+  {
+    icon: "bi-bag", // E-commerce
+    title: "E-Commerce Integration",
+    description:
+      "Agar aap products sell karna chahte hain, to hum aapke liye WooCommerce store setup bhi karte hain.",
+  },
+];
+
+
+const note=[
+  "If your brand’s online footprint is huge, Enterprise SEO is your most powerful growth channel."
+
+] 
+const points=[
+ " Aapka online presence strong banata hai",
+"New customers attract karta hai",
+"Search engines se free traffic laata hai",
+"Lead generation aur conversions boost karta hai",
+"Brand credibility is built karta hai"
+
+]
+
+
 
 
 const Wordpress = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // animation duration
-      once: true, // whether animation should happen only once
-    });
-  }, []);
+   useEffect(() => {
+     AOS.init({
+       duration: 1000,
+       once: true,
+       easing: "ease-in-out",
+     });
+   }, []);
+ 
 
   return (
     <div>
@@ -97,6 +147,7 @@ Chahe aapka business service-based ho ya product-based, hum aapke liye ek aisi w
 
 "
         cardItems={cardItems}
+        services="our wordpress services"
       />
 
       {/* sestion 1  what is */}
@@ -236,6 +287,20 @@ Chahe aapka business service-based ho ya product-based, hum aapke liye ek aisi w
         </div>
       </div>
     </section>
+
+    {/* our services */}
+
+       <Service
+      title="Our  wordpress services includes"
+      subtitle="Why a WordPress Website is Important for Your Business
+      "
+        note={note}
+      points={points}
+    
+      services={services}
+      image={wordpress}
+    />
+
 
     {/* process section */}
 <section className="process-section py-5">

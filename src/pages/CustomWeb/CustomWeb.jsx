@@ -96,6 +96,7 @@ const floatingIcons = [
         heading="Custom Web Development & Design Services in India – Tailored for Your Business"
         paragraph="Aapka business unique hai – toh aapki website bhi unique honi chahiye! At Promozione Branding Pvt. Ltd., we offer Custom Web Development & Design Services jo banaye aapke brand ki ek high-performing digital identity. Forget templates. Hum banate hain fully customized websites jo not just look great, but also perform like a pro – from loading speed to lead generation!"
         cardItems={cardItems}
+        services="custom web services"
       />
 
       {/* What is Custom Web Dev Section */}

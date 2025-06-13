@@ -12,6 +12,7 @@ import {
   FaChartLine,
   FaRedo,
 } from "react-icons/fa";
+import { useEffect } from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import Story from "../Story/Story";
 import ctaImage from "../../assets/formimg.webp";
@@ -48,6 +49,14 @@ const cardItems = [
   },
 ];
 const Seoservices = () => {
+    useEffect(() => {
+      AOS.init({
+        duration: 1000,
+        once: true,
+        easing: "ease-in-out",
+      });
+    }, []);
+
   return (
     <>
       <Tiltcard
@@ -55,6 +64,7 @@ const Seoservices = () => {
         paragraph="Struggling to rank your website on Google? At Promozione Branding Pvt. Ltd., we offer 100% Guaranteed SEO Services in India that help your business rank higher, drive traffic, and generate qualified leads.
 We don't just promise results – we guarantee them in 6 months, or you get your money back!"
         cardItems={cardItems}
+         services="AI Seo services"
       />
 
       {/* section2 */}

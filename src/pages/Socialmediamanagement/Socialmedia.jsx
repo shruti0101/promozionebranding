@@ -14,7 +14,10 @@ import Form2 from "../../components/Home/Landingpage/Form2"
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./style.css"
+import Tiltcard from "../../TiltCardHome/Tiltcard";
 import { useEffect } from "react";
+import Story from "../Story/Story";
+
 const cardItems = [
   {
     icon: <img src={google} alt="Google Ads" style={{ height: 40 }} />,
@@ -38,68 +41,12 @@ const cardItems = [
   },
 ];
 
-const TiltCard = ({ icon, title, description }) => {
-  const cardRef = useRef(null);
 
-  const handleMouseEnter = () => {
-    cardRef.current.classList.add("card-hovered");
-    document.querySelector(".tilt-container")?.classList.add("bg-tilt");
-  };
-
-  const handleMouseLeave = () => {
-    cardRef.current.classList.remove("card-hovered");
-    document.querySelector(".tilt-container")?.classList.remove("bg-tilt");
-    cardRef.current.style.transform = "rotateX(0deg) rotateY(0deg)";
-  };
-
-  const handleMouseMove = (e) => {
-    const card = cardRef.current;
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    const rotateX = ((y - rect.height / 2) / 10).toFixed(2);
-    const rotateY = ((x - rect.width / 2) / 10).toFixed(2);
-    card.style.transform = `translateY(-4px) rotateX(${-rotateX}deg) rotateY(${rotateY}deg)`;
-  };
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // animation duration
-      once: true, // whether animation should happen only once
-    });
-  }, []);
-
-  return (
-    <div
-      className="col-sm-6 col-lg-6 mb-4 d-flex justify-content-center"
-      onMouseEnter={handleMouseEnter}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
-    >
-      <div className="custom-card text-center p-3" ref={cardRef}>
-        <div className="icon-wrapper mb-3">{icon}</div>
-        <h5 className="mb-2">{title}</h5>
-        <p className="text-muted small">{description}</p>
-      </div>
-    </div>
-  );
-};
 
 const Socialmedia = () => {
-  const wrapperRef = useRef(null);
+ 
 
-  const handleWrapperMove = (e) => {
-    const wrapper = wrapperRef.current;
-    const rect = wrapper.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    const rotateX = ((y - rect.height / 2) / 20).toFixed(2);
-    const rotateY = ((x - rect.width / 2) / 20).toFixed(2);
-    wrapper.style.transform = `perspective(1000px) rotateX(${-rotateX}deg) rotateY(${rotateY}deg)`;
-  };
 
-  const handleWrapperLeave = () => {
-    wrapperRef.current.style.transform = "rotateX(0deg) rotateY(0deg)";
-  };
 
 
 
@@ -179,75 +126,25 @@ const funnelData = [
     services: ["Website Design Services", "CRO Services", "Landing Page Design Services", "Social Media Management Services"],
   },
 ];
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+
+ 
+  }, []);
 
   return (
     <>
-      <section className="svg-section position-relative ">
-        <svg
-          className="pathfinder-svg d-none d-lg-block"
-          width="1658"
-          height="2062"
-          viewBox="0 0 1458 1362"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            className="path-animate color-svg"
-            d="M146.963 34C68.8835 119.852 -35.7659 309.427 170.27 380.906C376.305 452.385 577.757 309.427 652.728 229.013L445.056 655.556C680.718 473.621 940.183 270.58 1161.6 433.738C1413.69 619.498 1151.24 937.204 940.183 919.717C738.576 903.012 761.883 668.375 940.183 628.751C1173.6 576.878 1569.6 809.302 1337.57 1160.18C1225.31 1329.94 977.475 1345.09 838.797 1265.85"
-            stroke="#CDE9DE"
-            strokeWidth="100"
-            strokeLinejoin="round"
-          />
-        </svg>
-
-        <div className="content-overlay container py-5 position-absolute top-0 start-50 translate-middle-x">
-          <div className="row align-items-center">
-            <div className="col-md-6 mb-4">
-              <h1 className="fw-bold mb-3" data-aos="fade-up">
-                Elevate Your Brand with 100% Guaranteed Social Media Management
-                Services in India
-              </h1>
-              <p className="text-black" data-aos="fade-up" data-aos-delay="200">
-                Looking to make your brand the next big thing on social media?
-                At Promozione Branding Pvt. Ltd., we offer 100% Guaranteed
-                Social Media Management Services in India designed to help SMEs
-                boost brand awareness, drive engagement, and generate qualified
-                leads through social media platforms. Our expert social media
-                strategies don't just increase followers – we turn your social
-                media into a revenue-generating powerhouse.
-              </p>
-              <button className="nav-btn text-capitalize" data-aos="zoom-in">
-                Let's get started
-              </button>
-            </div>
-
-            {/* Hide Tilt Container on small screens */}
-            <div
-              className="col-md-6 d-none d-md-block d-flex justify-content-center"
-              onMouseMove={handleWrapperMove}
-              onMouseLeave={handleWrapperLeave}
-              data-aos="fade-up"
-            >
-              <div className="tilt-skew-wrapper">
-                <div
-                  className="tilt-container"
-                  ref={wrapperRef}
-                  style={{ backgroundImage: `url(${bg})` }}
-                  data-aos="zoom-in-left"
-                >
-                  <div className="container-fluid p-4">
-                    <div className="row">
-                      {cardItems.map((item, index) => (
-                        <TiltCard key={index} {...item} />
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    
+      <Tiltcard
+        heading="Elevate Your Brand with 100% Guaranteed Social Media Management Services in India
+"
+        paragraph="Looking to make your brand the next big thing on social media? At Promozione Branding Pvt. Ltd., we offer 100% Guaranteed Social Media Management Services in India designed to help SMEs boost brand awareness, drive engagement, and generate qualified leads through social media platforms.
+Our expert social media strategies don't just increase followers – we turn your social media into a revenue-generating powerhouse.
+"
+        cardItems={cardItems}
+        services="Social Media Management Services "
+      />
+      {/* section 2 */}
 
       <section className="position-relative">
         <div className="container">
@@ -363,35 +260,45 @@ const funnelData = [
 
 {/* funeel  */}
 
-<section className="revenue-funnel-section py-5">
-      
-      <div className="container-fluid m-0 p-0 d-flex flex-column flex-md-row align-items-start">
-      <img src={funnel} alt="" className="img-fluid" width={"18%"}  data-aos="fade-up"/>
-      
+<section className="revenue-funnel-section py-4 bg-white">
+  <div className="container-fluid m-0 p-0">
+    <h1 className="text-center text-capitalize mb-5">
+      Our Process of Social Media Management
+    </h1>
 
-        {/* Content Column */}
-        <div className="content-col ms-4 w-100" data-aos="fade-down">
-          {funnelData.map((step, index) => (
-            <div key={index} className="step-block">
-              <h5 className="fw-bold mb-2">{step.title}</h5>
-              <div className="row">
-                {step.services.map((service, i) => (
-                  <div key={i} className="col-md-6 mb-1 fw-semibold">
-                  
-                      {service} 
-                   
-                  </div>
-                ))}
-              </div>
-              {index !== funnelData.length - 1 && (
-                <hr style={{ borderTop: `2px solid ${step.color}`  }} />
-              )}
-            </div>
-          ))}
-        </div>
+    <div className="row align-items-start">
+      {/* Funnel Image Column */}
+      <div className="col-lg-3 d-none d-lg-block text-center" data-aos="fade-up">
+        <img
+          src={funnel}
+          alt="Funnel"
+          className="img-fluid funnel-image"
+        />
       </div>
-    </section>
 
+      {/* Content Column */}
+      <div className="col-12 col-lg-9 mt-5" data-aos="fade-down">
+        {funnelData.map((step, index) => (
+          <div key={index} className="mb-4 step-block">
+            <h5 className="fw-bold mb-2">{step.title}</h5>
+            <div className="row">
+              {step.services.map((service, i) => (
+                <div key={i} className="col-sm-12 col-md-6 mb-2 fw-semibold">
+                  {service}
+                </div>
+              ))}
+            </div>
+            {index !== funnelData.length - 1 && (
+              <hr style={{ borderTop: `2px solid ${step.color}` }} />
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<Story></Story>
 
 
      <Form2

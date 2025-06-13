@@ -96,6 +96,7 @@ const cardItems = [
 At Promozione Branding Pvt. Ltd., we build dynamic, secure, and SEO-friendly websites using core PHP and modern PHP frameworks like Laravel, CodeIgniter, and more. Whether it’s a custom portal, business site, or e-commerce system – hum banate hain solution jo kaam kare... aur fast kaam kare!
 "
         cardItems={cardItems}
+        services="php web services"
       />
 
 

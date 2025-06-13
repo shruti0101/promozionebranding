@@ -8,7 +8,19 @@ import { FaCheckCircle } from "react-icons/fa";
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
 import ctaImage from "../../assets/formimg.webp"
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const Demand = () => {
+
+    useEffect(() => {
+      AOS.init({
+        duration: 1000,
+        once: true,
+        easing: "ease-in-out",
+      });
+    }, []);
+  
   const cardItems = [
     {
       title: "Content Marketing ",
@@ -44,6 +56,7 @@ const Demand = () => {
 At Promozione Branding Pvt. Ltd., we combine the power of content, ads, automation, and strategy to generate high-intent leads that convert into paying customers.
 "
         cardItems={cardItems}
+        services="Demand Generation services"
       />
 
       {/* section 2 */}

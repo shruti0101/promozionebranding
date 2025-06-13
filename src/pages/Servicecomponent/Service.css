@@ -1,0 +1,27 @@
+.check-icon i {
+  color: #28a745;
+  font-size: 1.1rem;
+}
+
+.service-item {
+  align-items: flex-start;
+}
+
+.service-icon i {
+  line-height: 1.2;
+}
+
+
+
+.service-img {
+  width: 250%;
+  max-width: 750px; /* Increase this to 500px or more if needed */
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .service-image {
+    max-width: 500px;
+  }
+}
+
