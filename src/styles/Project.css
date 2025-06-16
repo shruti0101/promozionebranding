@@ -1,69 +1,120 @@
-.project-gallery-section {
-  padding: 80px 20px;
-  background: #f9faff;
-}
 
-.section-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #1f3bb3;
-  margin-bottom: 10px;
-}
 
-.underline {
-  width: 60px;
-  height: 4px;
-  background-color: #0d6efd;
-  margin: 0 auto 40px auto;
-}
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-}
-
+/* === CARD STYLES === */
 .project-card {
-  background: white;
-  border-radius: 12px;
+  width: 240px;
+  height: 280px;
+  border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #000;
+  position: relative;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
 }
 
-.project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
-}
-
-.image-wrapper {
-  overflow: hidden;
-  height: 200px;
-}
-
-.image-wrapper img {
+.project-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.4s ease;
+  display: block;
+  transition: transform 0.6s ease;
 }
 
 .project-card:hover img {
   transform: scale(1.1);
 }
 
-.project-info {
-  padding: 20px;
-  text-align: left;
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  color: white;
+  padding: 0.5rem;
+  z-index: 2;
 }
 
-.project-info h5 {
-  margin-bottom: 10px;
-  font-size: 1.25rem;
-  color: #1f3bb3;
+.project-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.3s ease;
+  z-index: 1;
 }
 
-.project-info p {
-  font-size: 0.95rem;
-  color: #555;
+.project-card:hover::after {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* === SCROLLING ANIMATION === */
+.scroll-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  height: 520px;
+  animation: scroll 18s linear infinite;
+  position: relative;
+}
+
+.scroll-up {
+  animation-direction: reverse;
+}
+
+/* FADE EDGES OVERLAY */
+.scroll-column::before,
+.scroll-column::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 80px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.scroll-column::before {
+  top: 0;
+  background: linear-gradient(to bottom, #f8f9fa, transparent);
+}
+
+.scroll-column::after {
+  bottom: 0;
+  background: linear-gradient(to top, #f8f9fa, transparent);
+}
+
+/* LOOP SCROLLING EFFECT */
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+/* === TRIANGLES === */
+.triangle-indicators {
+  display: flex;
+  gap: 5px;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 12px solid;
+}
+
+.triangle.orange {
+  border-bottom-color: #266fe4;
+}
+
+.triangle.gray {
+  border-bottom-color: #999;
+}
+
+.triangle.lightgray {
+  border-bottom-color: #ddd;
 }

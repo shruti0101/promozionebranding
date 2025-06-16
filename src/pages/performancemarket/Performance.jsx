@@ -107,6 +107,11 @@ const Performance = () => {
                 desc: "Enhance landing pages for higher conversions.",
                 icon: "https://cdn-icons-png.flaticon.com/512/1256/1256650.png",
               },
+              {
+                title: "Performance Analytics",
+                desc: "In-depth analysis to optimize campaigns.",
+                icon: "https://cdn-icons-png.flaticon.com/512/1042/1042455.png",
+              },
             ].map((item, i) => (
               <div
                 className="col-md-3"
@@ -114,7 +119,7 @@ const Performance = () => {
                 data-aos="fade-up"
                 data-aos-delay={`${i * 100}`}
               >
-                <div className="p-4 shadow-sm h-100 rounded service-box text-center">
+                <div className="p-3 shadow-sm h-100 rounded service-box text-center">
                   <img
                     src={item.icon}
                     alt={item.title}
@@ -144,6 +149,7 @@ const Performance = () => {
               "Dedicated Marketing Experts",
               "High-Quality Lead Generation",
               "Customized Campaign Strategies",
+              "Proven Track Record of Success",
             ].map((item, index) => (
               <div
                 className="col-md-4"

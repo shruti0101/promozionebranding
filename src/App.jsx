@@ -37,37 +37,39 @@ import GoogleAdword from "./pages/GoogleAdword/GoogleAdword";
 import Video from "./pages/Video/Video";
 import AiPerformance from "./pages/AI performance market/AiPerformance";
 import Internet from "./pages/InternetMarketing/Internet"
+import Contact from "./components/contact-us/Contact";
+import Career from "./pages/Careerpage/Career";
+import B2c from "./pages/B2c Market/B2c";
+import D2c from "./pages/D2C/D2c";
+import Ads from "./pages/ADS management/Ads";
+import Smo from "./pages/SMO/Smo";
+import Webredesign from "./pages/WEB REDESIGN/Webredesign"
+import Landing from "./pages/Landingpage/Landing";
+import Aidigital from "./pages/AIdigital/Aidigital";
+import Digital from "./pages/Digitalmarket/Digital";
+import Webapp from "./pages/Webapp/Webapp";
+import Social from "./components/SOCIALSLIDER/Social";
 
 
 
 
 
 
-const WebsiteRedesigning = () => <div>Website Redesigning</div>;
-
-
-
-const AdsManagement = () => <div>Ads Management</div>;
 
 
 
 
 
-const SMO = () => <div>SMO</div>;
-const Socialads = () => <div>socialads</div>;
-const AIDigitalMarketingServices = () => (
-  <div>AI Digital Marketing Services</div>
-);
-const ECommerceSEOServices = () => <div>E-Commerce SEO Services</div>;
-const DigitalMarketingServices = () => <div>Digital Marketing Services</div>;
 
 
-const FreeSEOAudit = () => <div>Free SEO Audit</div>;
+
+
 
 function App() {
   return (
     <div>
       <ScrollToTopOnRouteChange />
+       <Social />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -80,6 +82,7 @@ function App() {
           <Route path="profile/blogs/:id" element={<BlogPage />} />
 
           <Route path="profile/reviews" element={<Review />} />
+          <Route path="profile/career" element={<Career />} />
 
           {/* Website Development */}
           <Route path="services/design" element={<Wordpress />} />
@@ -96,7 +99,9 @@ function App() {
             element={< Shopify />}
           />
           <Route path="services/seo" element={<SeoWeb />} />
-          <Route path="services/redesign" element={<WebsiteRedesigning />} />
+          <Route path="services/redesign" element={<Webredesign />} />
+          <Route path="services/landing" element={<Landing />} />
+          <Route path="services/webapp" element={<Webapp />} />
 
           {/* Revenue Marketing & CRO */}
           <Route path="services/performance" element={<Performance />} />
@@ -107,19 +112,22 @@ function App() {
             element={<AiPerformance />}
           />
           <Route path="services/demand" element={<Demand />} />
-          <Route path="services/ads" element={<AdsManagement />} />
+          <Route path="services/ads" element={<Ads />} />
           <Route path="services/internet" element={<Internet />} />
+          <Route path="services/b2c-marketing" element={<B2c />} />
+          <Route path="services/d2c" element={<D2c />} />
 
           {/* Digital Marketing */}
           <Route path="services/content" element={<Content />} />
           <Route path="services/crm" element={<Crm />} />
           <Route path="services/email" element={<Email />} />
           <Route path="services/video" element={<Video />} />
-          <Route path="services/social" element={<Socialads />} />
-          <Route path="services/smo" element={<SMO />} />
+          {/* <Route path="services/social" element={<Socialads />} /> */}
+          <Route path="services/smo" element={<Smo />} />
           <Route path="services/smm" element={<Socialmedia />} />
            <Route path="/services/google" element={<GoogleAds />} />
           <Route path="/services/google-ads" element={<GoogleAdword />} />
+          <Route path="/Contact" element={<Contact />} />
 
 
 
@@ -127,15 +135,15 @@ function App() {
           {/* Guaranteed SEO */}
           <Route
             path="services/ai-digital"
-            element={<AIDigitalMarketingServices />}
+            element={<Aidigital />}
           />
-          <Route
+          {/* <Route
             path="services/ecommerce-seo"
             element={<ECommerceSEOServices />}
-          />
+          /> */}
           <Route
             path="services/digital-seo"
-            element={<DigitalMarketingServices />}
+            element={<Digital />}
           />
           <Route
             path="services/enterprise-seo"
@@ -144,7 +152,7 @@ function App() {
           <Route path="services/ai-seo" element={<Seoservices />} />
 
           {/* Free SEO Audit */}
-          <Route path="boost" element={<FreeSEOAudit />} />
+      
         </Route>
       </Routes>
 

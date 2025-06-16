@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../../styles/Form2.css';
+import { Link } from 'react-router-dom';
 
 const Form2 = ({ heading, price, buttonText, image }) => {
 
@@ -13,9 +14,10 @@ const Form2 = ({ heading, price, buttonText, image }) => {
               {heading}<br />
             <span className="highlight-price">{price}</span> 
             </h2>
-            <button className="btn btn-success px-4 py-2 rounded-pill fw-semibold mt-2">
+           <Link to="/Contact"><button className="btn btn-success px-4 py-2 rounded-pill fw-semibold mt-2">
               {buttonText}
             </button>
+            </Link>
           </div>
           <div className="col-lg-6 text-center">
             <img 

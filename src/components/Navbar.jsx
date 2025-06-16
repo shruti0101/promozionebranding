@@ -61,6 +61,7 @@ const Navbar = () => {
         ["Who We Are", "/profile/whoweare"],
         ["Blogs", "/profile/blogs"],
         ["Client Reviews", "/profile/reviews"],
+        ["Career", "/profile/career"],
       ],
     },
     {
@@ -91,7 +92,7 @@ const Navbar = () => {
         ["Internet Marketing", "/services/internet"],
         ["Demand Generation", "/services/demand"],
         ["B2B Lead Generation", "/services/b2b-leads"],
-        ["D2C Lead Generation" ,"/D2C Marketing", "/services/d2c"],
+        ["D2C Marketing", "/services/d2c"],
           ["B2C Marketing", "/services/b2c-marketing"]
       ],
     },
@@ -115,7 +116,7 @@ const Navbar = () => {
       label: "Guaranteed SEO",
       items: [
         ["AI Digital Marketing Services", "/services/ai-digital"],
-        ["E-Commerce SEO Services", "/services/ecommerce-seo"],
+        // ["E-Commerce SEO Services", "/services/ecommerce-seo"],
         ["Digital Marketing Services", "/services/digital-seo"],
         ["Enterprise SEO Services", "/services/enterprise-seo"],
         ["AI SEO Services", "/services/ai-seo"],
@@ -198,7 +199,7 @@ const Navbar = () => {
 
           <div className="nav-btn">
             <Link
-              to="/boost"
+              to="/Contact"
               className="text-white text-decoration-none"
               onClick={closeNavbar}
             >

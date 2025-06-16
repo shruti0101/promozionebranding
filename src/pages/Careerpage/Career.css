@@ -1,0 +1,23 @@
+.career-wrapper {
+  background: linear-gradient(to bottom, #f0f4ff 0%, #ffffff 100%);
+}
+
+.career-section {
+  background: linear-gradient(135deg, #3b60ff, #2548BD);
+}
+
+.card-glass {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(200, 200, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-glass:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.gradient-form {
+  background: linear-gradient(135deg, #f0f4ff 0%, #e8ecff 100%);
+}

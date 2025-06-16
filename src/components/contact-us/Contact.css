@@ -1,0 +1,13 @@
+.bg-dark {
+ background-image: url("../../assets/contact/contact-bg.webp");
+ background-repeat: no-repeat;
+ background-size: cover;    
+}
+
+
+
+
+.custom-bg-blue {
+  background: linear-gradient(135deg, #f1f5f9, #e2ecf6);
+
+}

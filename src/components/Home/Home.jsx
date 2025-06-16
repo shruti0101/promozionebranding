@@ -24,6 +24,17 @@ const Home = () => {
 <Services />
       <WhyChoose />
 
+
+
+    
+    
+      <SectorServe />
+        <Form1 />
+      <Specialized />
+      <Orbit />
+        <Project></Project>
+      <Testimonials />
+      <Faq />
 <Form2
  heading="Get your Brands Ranked With Us"
   price="₹499"
@@ -31,15 +42,6 @@ const Home = () => {
   image={ctaImage}
 
 ></Form2>
-
-      <Project></Project>
-      <Form1 />
-      <SectorServe />
-      <Specialized />
-      <Orbit />
-      <Testimonials />
-      <Faq />
-
     </div>
   )
 }

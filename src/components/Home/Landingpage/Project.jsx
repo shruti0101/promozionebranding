@@ -1,72 +1,73 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import "../../../styles/Project.css"
-import project1 from "../../../assets/projects/project-1.webp"
-import project2 from "../../../assets/projects/project-2.webp"
-import project3 from"../../../assets/projects/project-5.webp"
-import project4 from "../../../assets/projects/project-4.webp"
-import project5 from "../../../assets/projects/project-7.webp"
+import React from "react";
+import { Link } from "react-router-dom";
+import "../../../styles/Project.css";
+
+import img1 from "../../../assets/projects/project-1.webp";
+import img2 from "../../../assets/projects/project-2.webp";
+import img3 from "../../../assets/projects/project-4.webp";
+import img4 from "../../../assets/projects/project-5.webp";
+import img5 from "../../../assets/projects/project-7.webp";
+
 const projects = [
-  {
-    title: "E-commerce Website",
-    image: project1,
-    description: "A modern online store built with React & Stripe.",
-  },
-  {
-    title: "Corporate Branding",
-    image: project2,
-    description: "Branding and design system for a fintech startup.",
-  },
-  {
-    title: "Real Estate Platform",
-    image: project3,
-    description: "A property listing site with search filters and admin panel.",
-  },
-  {
-    title: "Mobile App UI/UX",
-    image: project4,
-    description: "Sleek and intuitive mobile app design for a food delivery company.",
-  },
-    {
-    title: "Mobile App UI/UX",
-    image: project5,
-    description: "Sleek and intuitive mobile app design for a food delivery company.",
-  },
+  { title: "Cultural Arts Center", img: img1 },
+  { title: "Donaldson Plastic Surgery", img: img2 },
+  { title: "Del-Mor Dwellings", img: img3 },
+  { title: "CORE HCM", img: img4 },
+  { title: "New Project", img: img5 },
 ];
 
-const Project = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
-  }, []);
+const ProjectCard = ({ project }) => (
+  <div className="project-card text-white position-relative">
+    <img src={project.img} alt={project.title} className="img-fluid" />
+    <div className="card-overlay">
+      <h6 className="mb-0">{project.title}</h6>
+    </div>
+  </div>
+);
 
+const Project = () => {
   return (
-    <section className="project-gallery-section">
-      <div className="container text-center">
-        <h2 className="section-title" data-aos="fade-up">
-          Our Projects
-        </h2>
-        <div className="underline" />
-        <div className="project-grid">
-          {projects.map((project, index) => (
-            <div
-              className="project-card"
-              key={index}
-              data-aos="zoom-in"
-              data-aos-delay={index * 100}
-            >
-              <div className="image-wrapper">
-                <img src={project.image} alt={project.title} />
-              </div>
-              <div className="project-info">
-                <h5>{project.title}</h5>
-                <p>{project.description}</p>
-              </div>
-            </div>
-          ))}
+    <div className="container py-5">
+      <div className="row align-items-center">
+        {/* Scrolling Image Columns */}
+        <div className="col-md-7 d-flex gap-3 overflow-hidden">
+          <div className="scroll-column scroll-down">
+            {[...projects, ...projects].map((project, i) => (
+              <ProjectCard key={`down-${i}`} project={project} />
+            ))}
+          </div>
+          <div className="scroll-column scroll-up">
+            {[...projects, ...projects].map((project, i) => (
+              <ProjectCard key={`up-${i}`} project={project} />
+            ))}
+          </div>
+        </div>
+
+        {/* Right Side Content */}
+        <div className="col-md-5 mt-4 mt-md-0">
+          <h1 className="fw-bold mb-3 text-center">Our Work Speaks for Itself</h1>
+          <div className="mb-3 triangle-indicators mx-auto d-flex justify-content-center">
+            <span className="triangle orange" />
+            <span className="triangle gray" />
+            <span className="triangle lightgray" />
+          </div>
+          <p className="mb-3 text-center">
+            We specialize in crafting exceptional web design and SEO services,
+            creating high-performing websites that stand out. Along with that,
+            we offer a comprehensive range of digital marketing services to support your online presence.
+          </p>
+          <p className="mb-4 text-center">
+            While we understand the technical side of things, we focus on delivering results
+            that speak louder than words. Check out some of our recent client successes to see the impact we’ve made:
+          </p>
+          <Link to="/Contact">
+            <button className="nav-btn mx-auto d-block">
+              Schedule an Appointment
+            </button>
+          </Link>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

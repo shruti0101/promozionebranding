@@ -17,7 +17,7 @@ function Form1() {
     const formData = new FormData(formRef.current);
 
     try {
-      const response = await fetch("https://formsubmit.co/promozionebranding@gmail.com", {
+      const response = await fetch("https://formsubmit.co/shrutiguptabhu@gmail.com", {
         method: "POST",
         body: formData,
         headers: {
@@ -59,6 +59,7 @@ function Form1() {
             </p>
             <form className="row g-3 cta-form" ref={formRef} onSubmit={handleSubmit}>
               <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_subject" value="New submission! from Home Page"></input>
 
               <div className="col-md-6">
                 <input type="text" className="form-control input-fill" placeholder="Your name" name="name" required />
