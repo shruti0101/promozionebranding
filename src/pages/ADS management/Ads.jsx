@@ -192,8 +192,7 @@ const features = [
 "
         paragraph="Running ads is easy. Running ads that actually convert? That’s where we come in.
 At Promozione Branding Pvt. Ltd., we offer expert Ads Management Services across platforms like Google, Meta (Facebook + Instagram), YouTube, LinkedIn, and more.
- Our job? To make sure your ad budget doesn’t just spend — it performs.
-Clicks? Check. Leads? Check. ROI? Double check.
+
 
 
 

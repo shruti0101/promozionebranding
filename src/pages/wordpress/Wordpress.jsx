@@ -143,7 +143,7 @@ const Wordpress = () => {
         heading="WordPress Website Designing Services in India – Bilkul Business-Ready!
 "
         paragraph="Apne business ke liye ek modern, fast aur SEO-friendly website chahiye? At Promozione Branding Pvt. Ltd., hum aapko provide karte hain Best WordPress website designing services jo sirf sundar nahi, balki smart bhi hoti hain – specially made for Indian SMEs.
-Chahe aapka business service-based ho ya product-based, hum aapke liye ek aisi website banate hain jo leads laaye, customers banaye, aur brand ko boost kare. 
+
 
 "
         cardItems={cardItems}
@@ -161,7 +161,7 @@ Chahe aapka business service-based ho ya product-based, hum aapke liye ek aisi w
                 {" "}
                 What is WordPress Website design?
               </h1>
-              <p className="text-black p-2" style={{ fontSize: "1.2rem" }}>
+              <p className="text-black p-2" style={{ fontSize: "1rem" }}>
                 WordPress is a world-famous CMS (content management system) hai
                 – jisme aapki website banana easy, scalable aur secure hota hai.
                 Hum WordPress par fully custom websites banate hain – bina kisi

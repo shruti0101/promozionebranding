@@ -13,6 +13,7 @@ import wheel from "../../assets/approach/service-wheel.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Style.css";
+import roi from "../../assets/services/roi.png";
 
 const Approach = () => {
   useEffect(() => {
@@ -249,6 +250,25 @@ const Approach = () => {
 
             <div className="col-md-5">
               <img src={process2} alt="" className="img-fluid " />
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+        <section id="section-5" className=" p-5 mt-5">
+        <div className="container d-flex justify-content-between">
+          <div className="row">
+            <div className="col-md-7 ">
+              <p className="text-danger  fw-bold">05. Return On Investment</p>
+              <h1 className="fw-bold">Maximising Your ROI</h1>
+              <p className=" fs-6 lh-lg">
+                Our revenue-focused strategies are designed with one clear goal: to drive measurable business growth. Once the strategy is fully implemented, you can expect to see a noticeable uplift in performance — whether it’s increased website conversions, higher-quality leads from social media, or improved engagement through email campaigns.As the volume and quality of leads grow, so does your revenue. This natural progression leads to a significant improvement in your overall return on investment (ROI). Every marketing rupee spent works harder, delivering real value and driving sustainable business results.
+              </p>
+            </div>
+
+            <div className="col-md-5">
+              <img src={roi} alt="" className="img-fluid " />
             </div>
           </div>
         </div>

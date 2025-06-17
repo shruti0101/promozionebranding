@@ -22,37 +22,31 @@ import Tiltcard from "../../TiltCardHome/Tiltcard";
 
 const cardItems = [
   {
-    // Reflects mobile & social platforms
-    title: "Website Content Writing ",
-    description: " Engaging website copy that connects with your audience.",
+    title: "Website Content Writing",
+    icon: "🖋️", // Fountain pen – professional writing
   },
   {
-    // Reflects mobile & social platforms
     title: "Email Marketing Content",
-    description: "Personalized email campaigns that increase conversions.",
+    icon: "📧", // Email – direct communication
   },
   {
-    // Represents targeting (remarketing precision)
     title: "SEO Blog Writing",
-    description: "SEO-friendly blog content that ranks and drives traffic.",
+    icon: "📈", // Chart increasing – SEO performance
   },
   {
-    // Suggests analytics & conversion improvements
-    title: "Social Media Content ",
-    description: "Creative posts that boost brand awareness.",
+    title: "Social Media Content",
+    icon: "📱", // Mobile phone – social platforms
   },
   {
-    // Classic e-commerce icon
     title: "Landing Page Content",
-    description: "Persuasive content that converts visitors into leads.",
+    icon: "🧲", // Magnet – conversion pull
   },
-
   {
-    // Classic e-commerce icon
-    title: "Product Descriptions ",
-    description: "SEO-rich product descriptions for eCommerce websites.",
+    title: "Product Descriptions",
+    icon: "🛍️", // Shopping bag – ecommerce & products
   },
 ];
+
 
 const Content = () => {
   useEffect(() => {
@@ -67,10 +61,10 @@ const Content = () => {
     <div>
       {/* hero */}
       <Tiltcard
-        heading="Content Marketing Services in India – Drive Engagement & Guaranteed Results with Promozione Branding Pvt. Ltd."
+        heading="Content Marketing Services in India – GetGuaranteed Results with Promozione Branding Pvt. Ltd."
         paragraph="Content is not just king – it’s the heartbeat of your brand. At Promozione Branding Pvt. Ltd., we offer 100% Guaranteed Content Marketing Services in India that captivate your audience, boost your brand presence, and drive qualified leads.
-We create content that doesn't just rank – it sells, engages, and converts.
-.
+
+
 "
         cardItems={cardItems}
         services="content marketing services"

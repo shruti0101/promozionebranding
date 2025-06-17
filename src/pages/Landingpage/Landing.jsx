@@ -180,7 +180,7 @@ const features = [
 "
         paragraph="Tired of traffic that doesn’t convert?
  With our high-performance landing page design services, you get a focused, results-driven page that turns visitors into customers fast.
-At Promozione Branding Pvt. Ltd., we design landing pages that look great, load fast, and sell smarter. Whether it’s for lead gen, product launch, or ads – your page will do one thing REALLY well: convert.
+At Promozione Branding Pvt. Ltd., we design landing pages that look great, load fast, and sell smarter. 
 
 
 

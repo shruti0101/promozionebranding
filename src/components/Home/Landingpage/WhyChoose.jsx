@@ -17,7 +17,7 @@ const WhyChooseUs = () => {
   const [ref, inView] = useInView({ triggerOnce: true });
 
   useEffect(() => {
-    AOS.init({ duration: 800, once: true });
+    AOS.init({ duration: 200, once: true });
   }, []);
 
   const stats = [

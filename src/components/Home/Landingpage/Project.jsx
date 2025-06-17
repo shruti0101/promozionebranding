@@ -17,11 +17,9 @@ const projects = [
 ];
 
 const ProjectCard = ({ project }) => (
-  <div className="project-card text-white position-relative">
-    <img src={project.img} alt={project.title} className="img-fluid" />
-    <div className="card-overlay">
-      <h6 className="mb-0">{project.title}</h6>
-    </div>
+  <div className="project-card">
+    <img src={project.img} alt={project.title} />
+    <div className="project-title">{project.title}</div>
   </div>
 );
 
@@ -29,41 +27,40 @@ const Project = () => {
   return (
     <div className="container py-5">
       <div className="row align-items-center">
-        {/* Scrolling Image Columns */}
-        <div className="col-md-7 d-flex gap-3 overflow-hidden">
-          <div className="scroll-column scroll-down">
-            {[...projects, ...projects].map((project, i) => (
-              <ProjectCard key={`down-${i}`} project={project} />
-            ))}
+        {/* Scrolling Columns */}
+        <div className="col-md-7 mb-4 mb-md-0 d-flex gap-3 justify-content-center">
+          <div className="vertical-scroll-wrapper">
+            <div className="vertical-scroll scroll-down">
+              {[...projects, ...projects].map((project, idx) => (
+                <ProjectCard key={`down-${idx}`} project={project} />
+              ))}
+            </div>
           </div>
-          <div className="scroll-column scroll-up">
-            {[...projects, ...projects].map((project, i) => (
-              <ProjectCard key={`up-${i}`} project={project} />
-            ))}
+          <div className="vertical-scroll-wrapper">
+            <div className="vertical-scroll scroll-up">
+              {[...projects, ...projects].map((project, idx) => (
+                <ProjectCard key={`up-${idx}`} project={project} />
+              ))}
+            </div>
           </div>
         </div>
 
         {/* Right Side Content */}
-        <div className="col-md-5 mt-4 mt-md-0">
-          <h1 className="fw-bold mb-3 text-center">Our Work Speaks for Itself</h1>
-          <div className="mb-3 triangle-indicators mx-auto d-flex justify-content-center">
-            <span className="triangle orange" />
-            <span className="triangle gray" />
-            <span className="triangle lightgray" />
+        <div className="col-md-5">
+          <h2 className="fw-bold mb-3">Our Work Speaks for Itself</h2>
+          <div className="d-flex gap-2 mb-3">
+            <span className="triangle triangle-blue"></span>
+            <span className="triangle triangle-gray"></span>
+            <span className="triangle triangle-lightgray"></span>
           </div>
-          <p className="mb-3 text-center">
-            We specialize in crafting exceptional web design and SEO services,
-            creating high-performing websites that stand out. Along with that,
-            we offer a comprehensive range of digital marketing services to support your online presence.
+          <p className="mb-3">
+            We specialize in crafting exceptional web design and SEO services, creating high-performing websites that stand out.
           </p>
-          <p className="mb-4 text-center">
-            While we understand the technical side of things, we focus on delivering results
-            that speak louder than words. Check out some of our recent client successes to see the impact we’ve made:
+          <p className="mb-4">
+            Explore a few recent wins below to see real-world results.
           </p>
           <Link to="/Contact">
-            <button className="nav-btn mx-auto d-block">
-              Schedule an Appointment
-            </button>
+            <button className="nav-btn ">Schedule An Appointment</button>
           </Link>
         </div>
       </div>

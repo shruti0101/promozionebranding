@@ -53,7 +53,7 @@ const Demand = () => {
       <Tiltcard
         heading="Demand Generation Services in India – Drive Real Interest, Real Leads, Real Growth."
         paragraph="Tired of chasing cold leads? With our Demand Generation Services, we help you create the demand first – so customers come looking for you, not the other way around!
-At Promozione Branding Pvt. Ltd., we combine the power of content, ads, automation, and strategy to generate high-intent leads that convert into paying customers.
+At Promozione Branding Pvt. Ltd.
 "
         cardItems={cardItems}
         services="Demand Generation services"
@@ -79,7 +79,7 @@ At Promozione Branding Pvt. Ltd., we combine the power of content, ads, automati
               </span>{" "}
             </h1>
 
-            <p className=" pt-4 lh-lead fs-5">
+            <p className=" pt-4 fs-6">
               Demand Generation is a strategic marketing process to build
               awareness, interest, and trust in your brand – long before a
               customer even thinks of buying. Iska matlab? Educating your

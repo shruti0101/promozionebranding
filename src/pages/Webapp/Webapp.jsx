@@ -187,7 +187,6 @@ const services = [
 "
         paragraph="Looking to build a smart, scalable, and secure web application that solves real problems?
  At Promozione Branding Pvt. Ltd., we turn your business ideas into high-performance web apps that are fast, functional, and future-ready.
-Whether you need a CRM, a customer portal, a booking engine, or a custom dashboard, we build it from scratch, just for you.
 
 
 

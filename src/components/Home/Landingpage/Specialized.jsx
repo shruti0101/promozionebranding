@@ -137,7 +137,7 @@ const specializedCards = [
 const Specialized = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 100,
       once: false,
       easing: "ease-in-out",
     });
@@ -159,8 +159,8 @@ const Specialized = () => {
               className="col card-hover"
               key={idx}
               data-aos="fade-up"
-              data-aos-delay={idx * 80}
-              data-aos-duration="900"
+              // data-aos-delay={idx * 80}
+              data-aos-duration="500"
             >
               <div className="specialized-card h-100 border-light shadow-sm">
                 <img

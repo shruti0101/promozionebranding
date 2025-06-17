@@ -46,11 +46,13 @@ import Smo from "./pages/SMO/Smo";
 import Webredesign from "./pages/WEB REDESIGN/Webredesign"
 import Landing from "./pages/Landingpage/Landing";
 import Aidigital from "./pages/AIdigital/Aidigital";
-import Digital from "./pages/Digitalmarket/Digital";
+import Digital from "./pages/Digitalmarket/Digital";  
 import Webapp from "./pages/Webapp/Webapp";
 import Social from "./components/SOCIALSLIDER/Social";
+import Popup from "./components/POPUP/Popup";
 
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 
 
@@ -68,8 +70,10 @@ import Social from "./components/SOCIALSLIDER/Social";
 function App() {
   return (
     <div>
+       <ToastContainer />
       <ScrollToTopOnRouteChange />
        <Social />
+       <Popup />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -105,7 +109,7 @@ function App() {
 
           {/* Revenue Marketing & CRO */}
           <Route path="services/performance" element={<Performance />} />
-          <Route path="services/b2b" element={<B2b />} />
+          <Route path="/services/b2b" element={<B2b />} />
           <Route path="services/leads" element={<Lead />} />
           <Route
             path="services/ai-performance"

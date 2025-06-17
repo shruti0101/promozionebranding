@@ -173,7 +173,7 @@ const services = [
 "
         paragraph="B2C marketing ka funda simple hai:
  Jo dikhta hai, woh bikta hai… par jo connect karta hai, woh repeat bhi hota hai.
-At Promozione Branding Pvt. Ltd., we help brands connect directly with consumers using creative, performance-driven B2C marketing strategies. Whether you're launching a new product, boosting online sales, or building a loyal customer base, we make sure your brand doesn’t just get noticed, it gets loved.
+At Promozione Branding Pvt. Ltd., we help brands connect directly with consumers using creative, performance-driven B2C marketing strategies. 
  Let’s turn browsers into buyers and clicks into customers.
 
 

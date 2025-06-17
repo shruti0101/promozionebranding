@@ -15,23 +15,32 @@ const cardItems = [
   {
     icon: "📱", // Reflects mobile & social platforms
     title: "Social Media Ads",
-    description: "Tool for professional newsletters",
+   
   },
   {
     icon: "🎯", // Represents targeting (remarketing precision)
     title: "Remarketing Campaigns",
-    description: "Platform for multichannel marketing automation",
+   
   },
   {
     icon: "📈", // Suggests analytics & conversion improvements
     title: "Conversion Rate Optimization",
-    description: "Solutions for press releases and media monitoring",
+   
   },
   {
     icon: "🛒", // Classic e-commerce icon
     title: "E-Commerce Performance Marketing",
-    description: "Scalable websites and profitable online stores",
+  
   },
+  {
+    icon: "📊", // Represents data analysis & reporting
+    title: "Data Analytics & Reporting",
+
+  },
+  {
+    icon: "🤝", // Symbolizes partnership & collaboration
+    title: "Partnership Marketing",
+  }
 ];
 
 
@@ -40,7 +49,7 @@ const cardItems = [
 const Performance = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 600,
       once: true,
       easing: "ease-in-out",
     });
@@ -54,8 +63,8 @@ const Performance = () => {
     <div>
       {/* hero */}
    <Tiltcard
-        heading="Performance Marketing Services in India – Unlock Guaranteed Growth with Promozione Branding Pvt. Ltd."
-        paragraph="Are you tired of investing in marketing campaigns without seeing tangible results? At Promozione Branding Pvt. Ltd., we offer Performance Marketing Services in India with 100% Guaranteed Results. We don’t just promise – we deliver measurable growth, leads, and revenue that takes your business to new heights.
+        heading="Performance Marketing Services Get Guaranteed Growth with Promozione Branding Pvt. Ltd."
+        paragraph="Are you tired of investing in marketing campaigns without seeing tangible results? At Promozione Branding Pvt. Ltd., we offer Performance Marketing Services in India with 100% Guaranteed Results. We don’t just promise – we deliver measurable growth
 "
         cardItems={cardItems}
         services="Performance Marketing Services "

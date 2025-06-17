@@ -108,21 +108,7 @@ font-family: "Mona Sans", sans-serif;
   font-size: 15px;
 }
 
-/* .download-brochure-btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 9px 2px;
-  background-color: #2548BD;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 400;
-  transition: background-color 0.3s ease;
-} */
 
-/* .download-brochure-btn:hover {
-  background-color: #0d3ccd;
-} */
 
 
 
@@ -152,3 +138,40 @@ font-family: "Mona Sans", sans-serif;
   }
 }
 
+
+.get-in-touch {
+  font-size: 15px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+.contact-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 33%;
+}
+
+.contact-icon {
+  font-size: 30px;
+  color: #2548BD;
+}
+
+.contact-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.contact-subtitle {
+  margin: 0;
+  font-size: 14px;
+  color: #ccc;
+}

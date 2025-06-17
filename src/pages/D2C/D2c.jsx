@@ -173,7 +173,7 @@ const services = [
         paragraph="Middleman hatao, customer se direct judo.
  That’s the D2C (Direct-to-Consumer) way – and we help you master it.
 At Promozione Branding Pvt. Ltd., we specialize in crafting full-funnel, ROI-driven D2C marketing strategies that help your brand build awareness, drive sales, and create loyal customers — all without relying on marketplaces.
-Launch. Scale. Repeat. We’ve helped D2C brands grow 3x to 10x. You could be next.
+Launch. Scale. Repeat. 
 
 
 
@@ -229,7 +229,7 @@ Launch. Scale. Repeat. We’ve helped D2C brands grow 3x to 10x. You could be ne
               data-aos="zoom-in"
             >
               <div className="php-illustration tilt">
-                <img src={d2c1} alt="google adword" className="svg-float" />
+                <img src={d2c1} alt="google adword" className="svg-float img-fluid" />
               </div>
             </div>
           </div>

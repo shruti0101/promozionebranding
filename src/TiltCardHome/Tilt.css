@@ -1,65 +1,100 @@
+/* === Typography === */
 
 
+.responsive-para {
+  font-size: clamp(1rem, 2.2vw, 1.125rem);
+  line-height: 1.7;
+}
+
+.card-desc {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 1.6;
+}
+
+/* === Button (nav-btn preserved) === */
+
+
+
+
+/* === Tilt Container === */
 .tilt-container {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 30px;
   width: 100%;
-  height: 100%;
-  max-width: 508px;
-  min-height: 500px;
+  max-width: 800px;
+  aspect-ratio: 1 / 1.2;
   transform-style: preserve-3d;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
-.tilt-skew-wrapper {
-  transform: perspective(1000px) rotateY(-25deg);
-  transform-style: preserve-3d;
+@media (max-width: 992px) {
+  .tilt-container {
+    aspect-ratio: 1 / 1.3;
+    border-radius: 25px;
+  }
+
+  
 }
 
+@media (max-width: 768px) {
+  .tilt-container {
+    aspect-ratio: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+  }
+
+  .tilt-skew-wrapper {
+    transform: none !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .tilt-container {
+    border-radius: 15px;
+  }
+  .responsive-para {
+    font-size: 0.78rem;
+  }
+}
+
+/* === Card Style === */
 .custom-card {
   background: #ffffff;
   border-radius: 20px;
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  will-change: transform;
   transform-style: preserve-3d;
+  height: 100%;
 }
 
 .custom-card:hover {
-  transform: translateY(-20px) scale(1.05);
+  transform: translateY(-12px) scale(1.03);
   box-shadow: 0 20px 45px rgba(3, 5, 3, 0.35);
-
 }
 
-.icon-wrapper {
-  width: 48px;
-  height: 48px;
-  background-color: #eceeff;
-  color: #5a60f0;
-  font-size: 24px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
+/* === Skew Wrapper === */
+.tilt-skew-wrapper {
+  transform: perspective(1000px) rotateY(-25deg);
+  transform-style: preserve-3d;
 }
 
-
+/* === Section Heading === */
 .services-heading {
-  font-size: 1.7rem;
+  font-size: clamp(1.4rem, 4vw, 1.8rem);
   text-transform: uppercase;
   letter-spacing: 1.5px;
   font-weight: 800;
-  text-align: center;
   color: #4534A6;
-  position: relative;
-  margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
   text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
-  z-index: 2;
+  position: relative;
 }
 
 .services-heading::after {
@@ -76,7 +111,7 @@
 }
 
 @keyframes slideFade {
-  0% {
+  0%, 100% {
     width: 0;
     opacity: 0;
   }
@@ -84,27 +119,5 @@
     width: 60px;
     opacity: 1;
   }
-  100% {
-    width: 0;
-    opacity: 0;
-  }
 }
 
-@media (max-width: 768px) {
-  .services-heading {
-    font-size: 1.6rem;
-    line-height: 1.4;
-  }
-}
-
-
-
-
-@media(max-width: 768px) {
-  .svg-section {
-    height: 80vh;
-  }
-  .content-overlay {
-    padding-top: 2rem;
-  }
-}

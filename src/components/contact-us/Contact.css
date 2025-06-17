@@ -1,13 +1,38 @@
+/* Contact.css */
+
 .bg-dark {
- background-image: url("../../assets/contact/contact-bg.webp");
- background-repeat: no-repeat;
- background-size: cover;    
+  background-image: url("../../assets/contact/contact-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
 }
-
-
-
 
 .custom-bg-blue {
   background: linear-gradient(135deg, #f1f5f9, #e2ecf6);
+}
+
+@media (max-width: 768px) {
+  .bg-dark {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .bg-dark h1 {
+    font-size: 1.5rem;
+  }
+
+  .bg-dark li {
+    font-size: 0.95rem;
+  }
+
+  .form-label {
+    font-size: 0.95rem;
+  }
+
+  .form-control {
+    font-size: 1rem;
+  }
+
 
 }

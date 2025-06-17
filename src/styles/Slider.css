@@ -13,7 +13,8 @@
   display: flex;
   gap: 30px;
   white-space: nowrap;
-  animation: scroll 5s linear infinite;
+  width: 200%; /* Ensure enough width for smooth horizontal scroll */
+  animation: scroll-x 10s linear infinite;
   animation-play-state: running;
   will-change: transform;
 }
@@ -28,7 +29,7 @@
 }
 
 /* Fix horizontal scroll bleed caused by 100% width animation */
-@keyframes scroll {
+@keyframes scroll-x {
   0% {
     transform: translateX(0);
   }

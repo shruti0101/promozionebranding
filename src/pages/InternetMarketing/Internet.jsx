@@ -13,6 +13,7 @@ import adword from "../../assets/services/adword.webp";
 import VanillaTilt from "vanilla-tilt";
 import WhyChoose from "../WHYCHOOSE/WhyChoose";
 import image from "../../assets/services/adword1.webp";
+import "./Internet.css";
 
 const Internet = () => {
   useEffect(() => {
@@ -178,8 +179,7 @@ const funnelData = [
 "
         paragraph="Aaj kal sab kuch online hai… Toh marketing kyun nahi?
  At Promozione Branding Pvt. Ltd., we help businesses like yours grow online visibility, traffic, and sales with result-driven Internet Marketing Services.
-From SEO to social media, from paid ads to content – our full-stack digital team ensures your brand is always one click away from your next customer.
-🌐 Whether you're a local business or a national brand, we put you on the digital map.
+From SEO to social media, from paid ads to content our full-stack digital team ensures your brand is always one click away 
 
 
 
@@ -190,49 +190,40 @@ From SEO to social media, from paid ads to content – our full-stack digital te
 
       {/* section 2 what is */}
 
-      <section className="php-section py-5 position-relative overflow-hidden">
-        {/* Background Blob */}
-        <div className="blob-bg"></div>
+  <section className="php-section py-5 position-relative overflow-hidden">
+  {/* Background Blob */}
+  <div className="blob-bg"></div>
 
-        <div className="container-fluid">
-          <div className="row align-items-center flex-wrap-reverse">
-            {/* Text Content */}
-            <div className="col-md-6" data-aos="fade-right">
-              <h2 className="php-heading">
-                What is{" "}
-                <span style={{ color: "#2548BD" }}>Internet Marketing?</span>{" "}
-              </h2>
-              <p className="php-desc">
-                Internet Marketing (a.k.a. Digital Marketing) is promoting your
-                business online through multiple digital channels like: Search
-                Engines (Google, Bing) Social Media (Instagram, Facebook,
-                LinkedIn) Email Marketing Paid Ads (Google Ads, Meta Ads)
-                Content Marketing (Blogs, Videos, etc.) It’s the modern way of
-                reaching your ideal audience – wherever they are scrolling,
-                searching, or shopping.
-              </p>
-        
-            </div>
+  <div className="container">
+    <div className="row align-items-center flex-column-reverse flex-md-row">
+      {/* Text Content */}
+      <div className="col-md-6 text-center text-md-start" data-aos="fade-right">
+        <h2 className="php-heading">
+          What is <span style={{ color: "#2548BD" }}>Internet Marketing?</span>
+        </h2>
+        <p className="php-desc">
+          Internet Marketing (a.k.a. Digital Marketing) is promoting your business online through multiple digital channels like: <br />
+          <strong>Search Engines</strong> (Google, Bing), <strong>Social Media</strong> (Instagram, Facebook, LinkedIn), <strong>Email Marketing</strong>, <strong>Paid Ads</strong> (Google Ads, Meta Ads), <strong>Content Marketing</strong> (Blogs, Videos, etc.) <br />
+          It’s the modern way of reaching your ideal audience – wherever they are scrolling, searching, or shopping.
+        </p>
+      </div>
 
-            {/* Tilted SVG */}
-            <div
-              className="col-md-6 text-center mb-4 mb-md-0"
-              data-aos="zoom-in"
-            >
-              <div className="php-illustration tilt">
-                <img src={adword} alt="google adword" className="svg-float" />
-              </div>
-            </div>
-          </div>
+      {/* Illustration */}
+      <div className="col-md-6 text-center mb-4 mb-md-0" data-aos="zoom-in">
+        <div className="php-illustration tilt">
+          <img src={adword} alt="google adword" className="img-fluid svg-float" />
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* section 3 why choose*/}
 
       <WhyChoose
-        title="Why Choose Our 
+        title="Why Choose 
 "
-        highlightedText="PPC Management Services?"
+        highlightedText="Internet Marketing Services?"
         features={features}
         ctaTitle="Ready to Launch Your Shopify Store?
 "
@@ -245,7 +236,7 @@ Want results-driven PPC for your business? "
 
       {/* our process */}
       <Process
-        title="Our  Internet Marketing Process"
+        title="  Internet Marketing Process"
         image={funnel}
         data={funnelData}
       ></Process>

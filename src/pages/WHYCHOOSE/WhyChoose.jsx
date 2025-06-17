@@ -1,12 +1,10 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 
-
-
 const WhyChoose = ({
   title,
   highlightedText,
-  features, // <-- renamed from points to features
+  features,
   ctaTitle,
   ctaSubtext,
   ctaParagraph,
@@ -21,20 +19,20 @@ const WhyChoose = ({
       <div className="container position-relative" data-aos="fade-down">
         <div className="row align-items-center">
           {/* Left Column */}
-          <div className="col-md-7">
-            <h2 className="display-5 fw-bold mb-4">
+          <div className="col-12 col-md-7 mb-4 mb-md-0">
+            <h2 className="display-6 fw-bold mb-3 text-center text-md-start">
               {title}{" "}
               {highlightedText && (
                 <span className="text-highlight">{highlightedText}</span>
               )}
             </h2>
-            <p className="fw-semibold">{para}</p>
+            <p className="fw-semibold text-center text-md-start">{para}</p>
 
-            <ul className="list-unstyled fs-5">
+            <ul className="list-unstyled fs-6 ps-1 ps-md-0">
               {features.map((feature, index) => (
-                <li key={index} className="mb-2">
-                  <FaCheckCircle className="text-success me-2" />
-                  {feature}
+                <li key={index} className="mb-2 d-flex align-items-start">
+                  <FaCheckCircle className="text-success me-2 mt-1 flex-shrink-0" />
+                  <span>{feature}</span>
                 </li>
               ))}
             </ul>
@@ -42,21 +40,27 @@ const WhyChoose = ({
 
           {/* Right Column - CTA */}
           <div
-            className="col-md-5 mt-5 mt-md-0"
+            className="col-12 col-md-5"
             data-aos="fade-up"
             data-aos-delay="150"
           >
             <div
-              className="p-5 rounded-4 shadow-sm cta-enhanced text-dark position-relative overflow-hidden"
+              className="p-4 rounded-4 shadow-sm cta-enhanced text-dark position-relative overflow-hidden"
               style={{
                 background: "linear-gradient(135deg, #f9fafb, #e0e7ff)",
                 border: "1px solid #e0e0e0",
               }}
             >
               <div style={{ zIndex: 2, position: "relative" }}>
-                <h4 className="fw-bold mb-3 text-primary">{ctaTitle}</h4>
-                <p className="mb-3 text-dark fs-6">{ctaSubtext}</p>
-                <p className="mb-4 text-secondary">{ctaParagraph}</p>
+                <h4 className="fw-bold mb-2 text-primary text-center text-md-start">
+                  {ctaTitle}
+                </h4>
+                <p className="mb-2 text-dark fs-6 text-center text-md-start">
+                  {ctaSubtext}
+                </p>
+                <p className="mb-3 text-secondary text-center text-md-start">
+                  {ctaParagraph}
+                </p>
                 <a
                   href={ctaButtonLink}
                   className="btn btn-primary w-100 fw-semibold"

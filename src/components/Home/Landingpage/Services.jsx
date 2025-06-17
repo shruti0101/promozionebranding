@@ -10,9 +10,9 @@ import Slider from "../../Slider";
 const Services = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
-      once: false,
-      easing: "ease-in-out",
+      duration: 50,
+      once: true,
+      easing: 'ease-out-cubic',
     });
   }, []);
 
@@ -21,8 +21,8 @@ const Services = () => {
       icon: "fas fa-chart-line",
       title: "Digital Marketing Agency",
       text: "Looking for More Customers Online? You’ve come to the right place – We’re the Best Digital Marketing Agency in Delhi",
-      linkText: "Let’s Plan Your Growth",
-      link: "/services/ai-digital",
+      linkText: "Let’s Plan Growth",
+      link: "/services/digital-seo",
       highlights: [
         "Google Ads & Social Media Ads – Get more calls, leads & sales.",
         "SEO (Rank on Google) – Be seen when people search for your business.",
@@ -42,8 +42,8 @@ const Services = () => {
       icon: "fas fa-laptop-code",
       title: "Website Designing and Development",
       text: "We create fast, modern, and mobile-friendly websites that help you grow your business",
-      linkText: "I Need a Website – Help Me!",
-      link: "/services/ai-digital",
+      linkText: "I Need a Website",
+      link: "/services/custom",
       highlights: [
         "Custom Website Design (No boring templates)",
         "Mobile & SEO-Friendly",
@@ -64,8 +64,8 @@ const Services = () => {
       icon: "fas fa-bullhorn",
       title: "Pay Per Click Advertising",
       text: "We run powerful Google Ads and Social Media Ads that bring you real customers",
-      linkText: "Let’s Plan Your Campaign (Free)",
-      link: "/services/ai-digital",
+      linkText: "Let’s Plan Your Campaign",
+      link: "/services/ads",
       highlights: [
         "Google Ads & Facebook/Instagram Ads",
         "Keyword & Audience Targeting",
@@ -87,7 +87,7 @@ const Services = () => {
       title: "Shopping Ads",
       text: "We create and manage Shopping Ads that put your products in front of shoppers",
       linkText: "Launch My Shopping Ads",
-      link: "/services/ai-digital",
+      link: "/services/ads",
       highlights: [
         "Setup & Optimization of Google Shopping Campaigns",
         "Product Feed Management & Updates",
@@ -95,6 +95,7 @@ const Services = () => {
         "Competitive Bidding to Maximize ROI",
         "Regular Performance Reports",
         "Expert Support to Grow Your Sales",
+        "Local Delhi Team",
       ],
       benefits: [
         "Get your products seen by thousands of buyers.",
@@ -108,8 +109,8 @@ const Services = () => {
       icon: "fas fa-cube",
       title: "CGI Ads",
       text: "Our CGI Ads use high-quality 3D visuals and animations to showcase your products",
-      linkText: "Showcase My Product in 3D",
-      link: "/services/ai-digital",
+      linkText: "Showcase My Products",
+      link: "/services/google-ads",
       highlights: [
         "Eye-catching 3D product animations",
         "Realistic and detailed product visuals",
@@ -130,8 +131,8 @@ const Services = () => {
       icon: "fas fa-ad",
       title: "Google Ads",
       text: "We create and manage Google Ads campaigns that bring you real customers",
-      linkText: "Chat with Our Google Ads Team",
-      link: "/services/ai-digital",
+      linkText: "Rank my website ",
+      link: "/services/google-ads",
       highlights: [
         "Targeted Google Search & Display Ads",
         "Smart Keyword Research & Ad Writing",
@@ -139,6 +140,8 @@ const Services = () => {
         "Daily Monitoring & Optimization",
         "Detailed Monthly Reports",
         "Expert Support from Our Delhi Team",
+        "Local Delhi Team",
+        "Fast Setup & Results",
       ],
       benefits: [
         "Reach customers exactly when they’re searching for you online.",
@@ -154,7 +157,7 @@ const Services = () => {
     <>
       <section className="mt-4  ">
         <div className="container py-5">
-          <div className="text-center mb-5" data-aos="fade-up">
+          <div className="text-center mb-5">
             <h1>Complete AI Digital Marketing Services Delhi</h1>
             <h3>Our Strategies that Drive Web Traffic & Results</h3>
           </div>
@@ -165,7 +168,7 @@ const Services = () => {
                 className="col-md-4 col-sm-12"
                 key={index}
                 data-aos="fade-up"
-                data-aos-delay={index * 100}
+                data-aos-duration="300"
               >
                 <div className="card text-center mb-4">
                   <div className="card-body text-center">

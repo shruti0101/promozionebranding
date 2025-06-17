@@ -4,6 +4,7 @@ html{
 }
 
 
+
 /* Section wrapper */
 .section-marketing {
   position: relative;
@@ -165,7 +166,7 @@ width: 100vw; */
 overflow-x: hidden !important;
   /* font-family: "Josefin Sans", sans-serif; */
   scroll-behavior: smooth;
-   padding-top: 85px; 
+ 
 }
 .container{
   width: 90%;
@@ -251,3 +252,49 @@ h2{
 /* hero */
 
 
+/* Button styles */
+.nav-btn1 {
+  position: relative;
+  font-size: 15px;
+  text-transform: capitalize;
+  padding: 0.7rem;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  font-weight: bold;
+  color: white !important;
+  text-decoration: none !important;
+  background: linear-gradient(to right, #8e2de2, #083A74);
+}
+
+.nav-btn1:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn1:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn1::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+  background: linear-gradient(to right, #8e2de2, #083A74);
+}
+
+/* Expanding hover animation */
+.nav-btn1:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}

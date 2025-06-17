@@ -72,7 +72,7 @@ const cardItems = [
 
 
     useEffect(() => {
-    AOS.init({ duration: 800, once: true });
+    AOS.init({ duration: 300, once: true });
 
     const tiltElements = document.querySelectorAll(".tilt");
     VanillaTilt.init(tiltElements, {
@@ -93,7 +93,7 @@ const cardItems = [
         heading="PHP Website Development Services in India – Fast, Secure & Fully Custom
 "
         paragraph="Looking for a powerful, fast, and scalable website for your business? Our PHP Website Development Services are tailor-made to deliver just that – no slow-loading, buggy websites allowed!
-At Promozione Branding Pvt. Ltd., we build dynamic, secure, and SEO-friendly websites using core PHP and modern PHP frameworks like Laravel, CodeIgniter, and more. Whether it’s a custom portal, business site, or e-commerce system – hum banate hain solution jo kaam kare... aur fast kaam kare!
+At Promozione Branding Pvt. Ltd., we build dynamic, SEO-friendly websites using core PHP and modern PHP frameworks like Laravel, CodeIgniter
 "
         cardItems={cardItems}
         services="php web services"

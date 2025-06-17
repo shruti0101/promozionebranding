@@ -257,7 +257,7 @@ It’s not just about running ads — it’s about building a brand that grows i
 
       {/* our process */}
 <Process
-title="Our  Digital Marketing Process" image={funnel} data={funnelData} 
+title=" Digital Marketing Process" image={funnel} data={funnelData} 
 
 ></Process>
 

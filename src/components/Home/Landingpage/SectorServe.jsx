@@ -37,7 +37,7 @@ const sectors = [
 
 const SectorServe = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 100 });
   }, []);
 
   return (
@@ -48,7 +48,7 @@ const SectorServe = () => {
       <div className="mx-auto mb-4 mt-3" style={{ width: "60px", height: "4px", backgroundColor: "#0d6efd" }}></div>
       <div className="row">
         {sectors.map((sector, index) => (
-          <div className="col-lg-3 col-md-4 col-sm-6 mb-4" key={sector.title} data-aos="fade-up" data-aos-delay={index * 50}>
+          <div className="col-lg-3 col-md-4 col-sm-6 mb-4" key={sector.title} data-aos="fade-up" >
             <div className="sector-card h-100">
               {/* Animated Borders */}
               <span className="left-border"></span>

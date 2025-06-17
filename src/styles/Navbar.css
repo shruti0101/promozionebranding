@@ -1,18 +1,15 @@
-
 .navbar {
-  position: fixed;
-  top: 0;
+  position: sticky;
+  top: 0; /* Height of Topbar */
   left: 0;
   width: 100%;
   z-index: 9999;
   transition: top 0.3s ease-in-out;
-
+  background: #fff; /* Ensure navbar is visible over content */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04); /* Subtle shadow for separation */
 }
 
-body {
-  padding-top: 80px; 
-  
-}
+
 
 
 .nav-item .nav-link {
@@ -228,5 +225,6 @@ body {
   .nav-btn{
     margin-bottom: 12px;
   }
-  
+
+ 
 }

@@ -84,7 +84,7 @@ const steps = [
         heading="CMS Website Development Services in India – Take Control of Your Website Content
 "
         paragraph="Why depend on developers every time you want to update your website?
-With our CMS Website Development Services, you get a user-friendly, dynamic, and fully manageable website – no coding needed. Bas login karo, update karo, publish karo. 
+With our CMS Website Development Services, you get a user-friendly, dynamic, and fully manageable website – no coding needed.
 At Promozione Branding Pvt. Ltd., we build custom CMS websites that are fast, secure, responsive, and made for content-first growth.
 "
         cardItems={cardItems}

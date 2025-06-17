@@ -9,7 +9,7 @@ function Form1() {
   const formRef = useRef();
 
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 100, once: true });
   }, []);
 
   const handleSubmit = async (e) => {

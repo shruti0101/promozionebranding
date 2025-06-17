@@ -179,7 +179,7 @@ const features = [
 "
         paragraph="Chahti hai aapki online store bhi ekdum premium dikhe aur sales laaye?
  Welcome to Promozione Branding Pvt. Ltd., where we turn your eCommerce dreams into high-converting, beautiful Shopify stores 
-Whether you're starting fresh or revamping your old store, our Shopify Web Designing Services in India are built to impress both Google aur customers.
+Whether you're starting fresh or revamping your old store
 "
         cardItems={cardItems}
         services="Social Media Management Services "
@@ -188,7 +188,7 @@ Whether you're starting fresh or revamping your old store, our Shopify Web Desig
       {/* what is shopify */}
 
       <section className="php-section py-5 position-relative overflow-hidden">
-        {/* Background Blob */}
+   
         <div className="blob-bg"></div>
 
         <div className="container-fluid">

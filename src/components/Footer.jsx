@@ -11,145 +11,184 @@ import "../styles/Footer.css";
 
 const FooterContent = () => {
   return (
-    <div className="container-fluid m-0 p-0 footer-bg">
+
+    <section className="footer">
+
+
+    <div className="container-fluid footer-bg">
       <footer className="footer">
         <div className="footer-top">
+          {/* Company Profile */}
           <div className="footer-column">
-            <h3>Marketing</h3>
+            <h3>Company Profile</h3>
             <ul>
               <li>
-                <Link to="/social-media">Social Media Marketing</Link>
+                <Link to="/profile/OurApproach">Our Approach</Link>
               </li>
               <li>
-                <Link to="/viral-marketing">Viral Marketing</Link>
+                <Link to="/profile/whoweare">Who We Are</Link>
               </li>
               <li>
-                <Link to="/hashtag-marketing">Hashtag Marketing</Link>
+                <Link to="/profile/blogs">Blogs</Link>
               </li>
               <li>
-                <Link to="/meme-marketing">Meme Marketing</Link>
+                <Link to="/profile/reviews">Client Reviews</Link>
               </li>
               <li>
-                <Link to="/youtube-marketing">YouTube Marketing</Link>
-              </li>
-              <li>
-                <Link to="/influencer-marketing">Influencer Marketing</Link>
-              </li>
-              <li>
-                <Link to="/seo">Search Engine Optimization</Link>
+                <Link to="/profile/career">Career</Link>
               </li>
             </ul>
           </div>
 
+          {/* Website Development */}
           <div className="footer-column">
-            <h3>Advertising</h3>
+            <h3>Website Development</h3>
             <ul>
               <li>
-                <Link to="/lead-generation">Lead Generation</Link>
+                <Link to="/services/design">WordPress Website</Link>
               </li>
               <li>
-                <Link to="/google-facebook-ads">Google / Facebook Ads</Link>
+                <Link to="/services/custom">Custom Web Development</Link>
               </li>
               <li>
-                <Link to="/ppc">Pay Per Click (PPC)</Link>
+                <Link to="/services/development">PHP Website Development</Link>
               </li>
               <li>
-                <Link to="/digital-marketing">Digital Marketing</Link>
+                <Link to="/services/marketing">CMS Web Development</Link>
               </li>
               <li>
-                <Link to="/reviews">Google Facebook Reviews</Link>
+                <Link to="/services/mern">React Web Development</Link>
+              </li>
+              <li>
+                <Link to="/services/ecommerce">Shopify Web Designing</Link>
+              </li>
+              <li>
+                <Link to="/services/seo">SEO Web Designing</Link>
+              </li>
+             
+            
+            </ul>
+          </div>
+
+          {/* Revenue Marketing & CRO */}
+          <div className="footer-column">
+            <h3>Revenue Marketing</h3>
+            <ul>
+              <li>
+                <Link to="/services/performance">Performance Marketing</Link>
+              </li>
+              <li>
+                <Link to="/services/b2b">B2B Marketing</Link>
+              </li>
+              <li>
+                <Link to="/services/leads">Lead Generations</Link>
+              </li>
+              <li>
+                <Link to="/services/ai-performance">AI Performance Marketing</Link>
+              </li>
+              <li>
+                <Link to="/services/ads">Ads Management</Link>
+              </li>
+              <li>
+                <Link to="/services/internet">Internet Marketing</Link>
+              </li>
+              <li>
+                <Link to="/services/demand">Demand Generation</Link>
+              </li>
+             
+            
+            </ul>
+          </div>
+
+          {/* Digital Marketing */}
+          <div className="footer-column">
+            <h3>Digital Marketing</h3>
+            <ul>
+              <li>
+                <Link to="/services/content">Content Marketing</Link>
+              </li>
+              <li>
+                <Link to="/services/crm">CRM Optimizations</Link>
+              </li>
+              <li>
+                <Link to="/services/email">Email Marketing</Link>
+              </li>
+              <li>
+                <Link to="/services/video">Video Marketing</Link>
+              </li>
+              <li>
+                <Link to="/services/social">Social Media Ads</Link>
+              </li>
+              <li>
+                <Link to="/services/google">Google Ads</Link>
+              </li>
+              <li>
+                <Link to="/services/google-ads">Google AdWords/PPC</Link>
+              </li>
+             
+            </ul>
+          </div>
+
+          {/* Guaranteed SEO */}
+          <div className="footer-column">
+            <h3>Guaranteed SEO</h3>
+            <ul>
+              <li>
+                <Link to="/services/ai-digital">AI Digital Marketing Services</Link>
+              </li>
+              <li>
+                <Link to="/services/digital-seo">Digital Marketing Services</Link>
+              </li>
+              <li>
+                <Link to="/services/enterprise-seo">Enterprise SEO Services</Link>
+              </li>
+              <li>
+                <Link to="/services/ai-seo">AI SEO Services</Link>
               </li>
             </ul>
           </div>
 
-          <div className="footer-column">
-            <h3>Designing</h3>
-            <ul>
-              <li>
-                <Link to="/logo-design">Logo Design</Link>
-              </li>
-              <li>
-                <Link to="/website-design">Website Design</Link>
-              </li>
-              <li>
-                <Link to="/graphic-design">Graphic Design</Link>
-              </li>
-              <li>
-                <Link to="/content-writing">Content Writing</Link>
-              </li>
-              <li>
-                <Link to="/viralcard">Viralcard</Link>
-              </li>
-            </ul>
-          </div>
+          {/* Get in Touch */}
+       {/* Get in Touch (Redesigned to match screenshot) */}
+<div className="footer-column get-in-touch w-100 d-flex justify-content-between flex-wrap text-center text-lg-start">
+ 
+ 
+  <div className="contact-box">
+    <FaPhone className="contact-icon" />
+    <div>
+      <h5 className="contact-title mb-1">011 42603232</h5>
+      <p className="contact-subtitle">Mon–Sat 9:30AM–6:30PM</p>
+    </div>
+  </div>
+  <div className="contact-box">
+    <FaEnvelope className="contact-icon" />
+    <div>
+      <h5 className="contact-title mb-1">info@promozionebranding.com</h5>
+      <p className="contact-subtitle">online support</p>
+    </div>
+  </div>
+  <div className="contact-box">
+    <FaMapMarkerAlt className="contact-icon" />
+    <div>
+      <h5 className="contact-title mb-1">PromozioneBranding</h5>
+      <p className="contact-subtitle">Vardhman Plaza, Sector-3, Rohini, New Delhi
 
-          <div className="footer-column">
-            <h3>Company</h3>
-            <ul>
-              <li>
-                <Link to="/about-us">About Us</Link>
-              </li>
-              <li>
-                <Link to="/blogs">Blogs</Link>
-              </li>
-              <li>
-                <Link to="/careers">Careers</Link>
-              </li>
-              <li>
-                <Link to="/contact">Contact</Link>
-              </li>
-            </ul>
-          </div>
+</p>
+    </div>
+  </div>
+</div>
 
-          <div className="footer-column get-in-touch mr-lg-5">
-            <h3>Get in Touch</h3>
-            <p>
-              <FaMapMarkerAlt className="me-2" /> Promozione Branding Pvt. Ltd.
-            </p>
-            <p>Vardhman Plaza, Sector-3, </p>
-            <p>Rohini, New Delhi</p>
-            <p  className="d-flex ">
-              <FaPhone className="me-2" /> 011 42603232  <br />+91 9971700871
-            </p>
-      
-          
-              <a
-                href="https://www.linkedin.com/company/promozione-branding/"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: "white" }}
-              >
-                <FaLinkedin className="me-2" /> LinkedIn
-              </a>
-            <p>
-              <FaEnvelope  /> info@promozionebranding.com
-            </p>
-            <p>
-            </p>
-            <a
-              href="/brochure.pdf" // <-- match the actual filename
-              download
-              className="nav-btn mt-2 d-inline-block text-white"
-              style={{
-                backgroundColor: "#2548BD",
-                padding: "8px 16px",
-                borderRadius: "5px",
-                textDecoration: "none",
-                marginTop: "10px",
-              }}
-            >
-              <FaDownload className="me-2" />
-              Download Brochure
-            </a>
-          </div>
+
         </div>
 
         <div className="footer-bottom text-center">
-          <p className="m-0">Promozione Branding © 2024 All rights reserved</p>
+          <p className="m-0">Promozione Branding © 2025 All rights reserved</p>
         </div>
       </footer>
     </div>
+    </section>
   );
 };
 
 export default FooterContent;
+            

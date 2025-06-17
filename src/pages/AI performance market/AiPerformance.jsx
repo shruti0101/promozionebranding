@@ -31,7 +31,7 @@ const AiPerformance = () => {
 
 const cardItems = [
   {
-    title: "Campaign Planning + Predictive Targeting",
+    title: " Predictive Targeting",
     icon: "🎯", // Target — for strategic planning and audience targeting
   },
   {
@@ -181,7 +181,7 @@ const cardItems = [
         paragraph="Marketing budget ud gaya par result zero?
  It’s time to ditch guesswork and switch to AI-Powered Performance Marketing with Promozione Branding Pvt. Ltd.
 We combine artificial intelligence + human expertise to deliver ads that convert, campaigns that scale, and ROAS that actually makes sense.
-Get 10x smarter with your marketing. Because digital ho ya data – we’ve got AI for that.
+Get 10x smarter with your marketing. 
 
 
 
@@ -196,7 +196,7 @@ Get 10x smarter with your marketing. Because digital ho ya data – we’ve got 
         {/* Background Blob */}
         <div className="blob-bg"></div>
 
-        <div className="container-fluid">
+        <div className="container">
           <div className="row align-items-center flex-wrap-reverse">
             {/* Text Content */}
             <div className="col-md-6" data-aos="fade-right">

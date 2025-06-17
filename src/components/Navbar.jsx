@@ -8,6 +8,8 @@ import {
   LiaLongArrowAltRightSolid,
 } from "react-icons/lia";
 
+
+
 const Navbar = () => {
   const [dropdownStates, setDropdownStates] = useState({});
   const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
@@ -124,20 +126,6 @@ const Navbar = () => {
     },
   ];
 
-  useEffect(() => {
-    let lastScrollY = window.scrollY;
-    const navbar = document.querySelector(".navbar");
-
-    const handleScroll = () => {
-      if (!navbar) return;
-      navbar.style.top = window.scrollY < lastScrollY ? "0" : "-10px";
-      lastScrollY = window.scrollY;
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <nav className="navbar m-0 p-0 navbar-expand-lg px-3 shadow bg-white">
       <div className="container-fluid">
@@ -200,7 +188,7 @@ const Navbar = () => {
           <div className="nav-btn">
             <Link
               to="/Contact"
-              className="text-white text-decoration-none"
+              className="text-white  text-decoration-none seo-audit-btn"
               onClick={closeNavbar}
             >
               free SEO audit!
@@ -213,3 +201,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+

@@ -18,6 +18,7 @@ import Hero from "../Hero";
 const Home = () => {
   return (
     <div>
+      
 
         <Hero></Hero>
 
@@ -37,7 +38,7 @@ const Home = () => {
       <Faq />
 <Form2
  heading="Get your Brands Ranked With Us"
-  price="₹499"
+  price="Your Growth is Our Guarantee."
   buttonText="Chalo Shuru Karaein"
   image={ctaImage}
 

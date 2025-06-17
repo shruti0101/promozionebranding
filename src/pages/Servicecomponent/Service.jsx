@@ -8,14 +8,14 @@ import "aos/dist/aos.css";
 const Service = ({ title, subtitle, points, note, services, image }) => {
    useEffect(() => {
      AOS.init({
-       duration: 1000,
+       duration: 700,
        once: true,
        easing: "ease-in-out",
      });
    }, []);
 
   return (
-    <section className="revenue-section py-5 bg-white">
+    <section className="revenue-section  bg-white">
       <div className="container-fluid">
         <div className="row align-items-start">
           {/* Left Column */}
@@ -38,10 +38,9 @@ const Service = ({ title, subtitle, points, note, services, image }) => {
               <p className="text-muted small fst-italic px-3 mt-4">{note}</p>
             )}
           
-              <div className="" data-aos="fade-up">
-                <img src={image} alt="" className=" img-fluid mt-5" />
-              </div>
-          
+        <div className="mt-4" data-aos="fade-up">
+  <img src={image} alt="service" className="img-fluid" />
+</div> 
           </div>
 
           {/* Right Column */}

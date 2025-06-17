@@ -7,6 +7,7 @@ import { FaCheckCircle } from "react-icons/fa";
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
 import ctaImage from "../../assets/formimg.webp"
+
 const B2b = () => {
 
 const funnelData = [
@@ -53,45 +54,36 @@ const funnelData = [
 ];
 
 
-  const cardItems = [
-    {
-      // Reflects mobile & social platforms
-      title: "Targeted Lead Generation",
-      description:
-        " We help you reach decision-makers in your ideal industries using precision targeting",
-    },
-    {
-      // Reflects mobile & social platforms
-      title: "Content Marketing",
-      description:
-        "Whitepapers, case studies, blogs, and industry-focused content that positions you as an expert.",
-    },
-    {
-      // Represents targeting (remarketing precision)
-      title: "Account-Based Marketing",
-      description:
-        "Custom campaigns for high-value clients – treat every big prospect like your only prospect.",
-    },
-    {
-      // Suggests analytics & conversion improvements
-      title: "LinkedIn Marketing ",
-      description:
-        "From content to outreach, we make LinkedIn your lead-gen powerhouse.",
-    },
-    {
-      // Classic e-commerce icon
-      title: "Email Nurturing",
-      description:
-        "Stay top-of-mind and gently guide B2B leads down the funnel.",
-    },
 
-    {
-      // Classic e-commerce icon
-      title: "Brand Strategy ",
-      description:
-        "Explainer videos, testimonials & thought leadership to boost credibility ",
-    },
-  ];
+
+const cardItems = [
+  {
+    title: "Targeted Lead Generation",
+    icon: "🎯", // Bullseye emoji
+  },
+  {
+    title: "Content Marketing",
+    icon: "✍️", // Writing hand emoji
+  },
+  {
+    title: "Account-Based Marketing",
+    icon: "🔗", // Link emoji (represents connections)
+  },
+  {
+    title: "LinkedIn Marketing",
+    icon: "💼", // Briefcase emoji (professional network)
+  },
+  {
+    title: "Email Nurturing",
+    icon: "📧", // Email emoji
+  },
+  {
+    title: "Brand Strategy",
+    icon: "💡", // Lightbulb emoji (ideas/strategy)
+  },
+];
+
+
 
   return (
     <div>
@@ -99,7 +91,7 @@ const funnelData = [
         heading="B2B Marketing Services in India – Build Trust, Generate Quality Leads & Close Bigger Deals"
         paragraph="B2B marketing is not about massive reach — it’s about reaching the right decision-makers at the right time.
 At Promozione Branding Pvt. Ltd., we specialize in B2B Marketing Services in India that help businesses create trust-based relationships, generate high-quality leads, and drive long-term growth.
-Let’s turn your brand into the go-to choice for other businesses. 
+
 
 "
         cardItems={cardItems}
@@ -339,8 +331,8 @@ Let’s turn your brand into the go-to choice for other businesses.
     <Story></Story>
 
   <Form2
-        heading=" 📊 Get Your B2B Marketing Plan"
-        price= "📞 Schedule a Consultation Now"
+        heading="  Get Your B2B Marketing Plan"
+        price= " Schedule a Consultation Now"
         buttonText= "Talk to a Strategist Today"
         image={ctaImage}
       ></Form2>

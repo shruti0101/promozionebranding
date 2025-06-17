@@ -13,24 +13,22 @@ const Lead = () => {
             <div className="col-md-6">
               <h1>
                 {" "}
-                Best Lead Generation Services in India – 100% Guaranteed Leads
+                Best Lead Generation Services – 100% Guaranteed Leads
                 with Promozione Branding Pvt. Ltd.
               </h1>
-              <p className="text-black   fw-semibold fs-6">
+              <p className="text-black   fs-6">
                 Struggling to find high-quality leads for your business? At
                 Promozione Branding Pvt. Ltd., we provide 100% Guaranteed Lead
                 Generation Services in India to help you attract, nurture, and
-                convert potential customers into paying clients. With our
-                strategic lead generation campaigns, we don't just bring traffic
-                – we deliver qualified leads that are ready to buy!
+                convert potential customers into paying clients.
               </p>
 
               <button className="nav-btn">
-                Start Your Lead Generation Campaign
+                Get Started Now 
               </button>
             </div>
 
-                <div className="col-md-6 mt-5 mt-md-0">
+                <div className="col-md-6 mt-5 mt-md-0 d-none d-lg-block">
           <div className="d-flex flex-wrap justify-content-center gap-4">
             {/* Circle 1 */}
             <div className="circle-stat">
