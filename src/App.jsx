@@ -50,7 +50,7 @@ import Digital from "./pages/Digitalmarket/Digital";
 import Webapp from "./pages/Webapp/Webapp";
 import Social from "./components/SOCIALSLIDER/Social";
 import Popup from "./components/POPUP/Popup";
-
+import B2bweb from "./pages/B2Bwebdev/B2bweb"
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -106,11 +106,12 @@ function App() {
           <Route path="services/redesign" element={<Webredesign />} />
           <Route path="services/landing" element={<Landing />} />
           <Route path="services/webapp" element={<Webapp />} />
+          <Route path="/services/b2bdev" element={<B2bweb/>}/>
 
           {/* Revenue Marketing & CRO */}
           <Route path="services/performance" element={<Performance />} />
           <Route path="/services/b2b" element={<B2b />} />
-          <Route path="services/leads" element={<Lead />} />
+          <Route path="services/b2b-leads" element={<Lead />} />
           <Route
             path="services/ai-performance"
             element={<AiPerformance />}
@@ -129,7 +130,7 @@ function App() {
           {/* <Route path="services/social" element={<Socialads />} /> */}
           <Route path="services/smo" element={<Smo />} />
           <Route path="services/smm" element={<Socialmedia />} />
-           <Route path="/services/google" element={<GoogleAds />} />
+           <Route path="/services/Bing-ads" element={<GoogleAds />} />
           <Route path="/services/google-ads" element={<GoogleAdword />} />
           <Route path="/Contact" element={<Contact />} />
 

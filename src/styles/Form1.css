@@ -1,5 +1,5 @@
 .form1-section {
-  background-color: #14234B;
+  background-color: #013b7a;
   overflow-x: hidden;
  
 }
@@ -19,7 +19,7 @@
 .cta-form input,
 .cta-form textarea {
   background-color: transparent !important;
-  border: 1px solid #444;
+  border: 1px solid #f4eeee;
   color: #fff;
   border-radius: 8px;
   padding: 12px;
@@ -27,7 +27,7 @@
 
 .cta-form input::placeholder,
 .cta-form textarea::placeholder {
-  color: #aaa;
+  color: #c7c7c7;
 }
 
 .cta-form input:focus,

@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { useState } from "react";
-
+import { Link } from "react-router-dom";
 import ctaImage from "../../assets/formimg.webp";
 import star from "../../assets/about/star.svg";
 import hello from "../../assets/about/hello.svg";
@@ -34,7 +34,7 @@ const Whoweare = () => {
     branding:
       "We help brands stand out with bold identities, creative assets, and consistent visual storytelling across platforms.Our web and app development services ensure performance, responsiveness, and seamless user experience across all devices. with PromozioneBranding Our web and app development services ensure performance, responsiveness, and seamless user experience across all devices. with PromozioneBranding",
     digital:
-      "From SEO to social media marketing, we run intelligent campaigns that drive ROI and position your brand in front of the right audience.,Our web and app development services ensure performance, responsiveness, and seamless user experience across all devices ensure performance, responsiveness, and seamless user experience across all devices. with PromozioneBranding.",
+      "Web Se Vyapaar Tak, we run intelligent campaigns that drive ROI and position your brand in front of the right audience.,Our web and app development services ensure performance, responsiveness, and seamless user experience across all devices ensure performance, responsiveness, and seamless user experience across all devices. with PromozioneBranding.",
     development:
       "Our web and app development services ensure performance, responsiveness, and seamless user experience across all devices,Our web and app development services ensure performance, responsiveness, and seamless user experience across all devices ensure performance, responsiveness, and seamless user experience across all devices. with PromozioneBranding.",
     content:
@@ -108,10 +108,10 @@ const Whoweare = () => {
                 proven digital strategies across Delhi NCR, Gurugram, Noida,
                 Faridabad, and Ghaziabad.
               </p>
-              <a href="#contact" className="hover-link">
+              <Link to ="/Contact" className="hover-link">
                 Start Generating Leads in Just 7 Days!
                 <span className="arrow-icon">→</span>
-              </a>
+              </Link>
             </div>
           </div>
 

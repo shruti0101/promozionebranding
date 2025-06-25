@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./Process.css"; 
+import "./Process.css";
 
 const Process = ({ title, image, data }) => {
   useEffect(() => {
@@ -9,8 +9,8 @@ const Process = ({ title, image, data }) => {
   }, []);
 
   return (
-    <section className="py-5" style={{ backgroundColor: "#f9f9ff",  }}>
-      <div className="container-fluid">
+    <section className="py-5" style={{ backgroundColor: "#f9f9ff" }}>
+      <div className="container-fluid m-0 p-0">
         <h2
           className="fw-bold text-center fs-1 mb-5"
           style={{ color: "#2548BD" }}
@@ -19,16 +19,16 @@ const Process = ({ title, image, data }) => {
           {title}
         </h2>
 
-        <div className="row g-4 align-items-start">
+        <div className="row g-4  align-items-start">
           {/* Funnel Image (Hidden on smaller screens) */}
           <div className="col-lg-3 d-none d-lg-block" data-aos="fade-up">
             <img
               src={image}
               alt="Funnel"
-              className="img-fluid"
+              className="img-fluid d-block mx-auto"
               style={{
                 maxWidth: "100%",
-                height: "auto",
+                maxHeight: "650px", // ↓ adjust this value as needed
                 objectFit: "contain",
               }}
             />
@@ -37,13 +37,22 @@ const Process = ({ title, image, data }) => {
           {/* Steps Content */}
           <div className="col-12 col-lg-9" style={{ overflowX: "hidden" }}>
             {data.map((step, index) => (
-              <div key={index} className="mb-4" data-aos="fade-left" data-aos-delay={index * 100}>
+              <div
+                key={index}
+                className="mb-4"
+                data-aos="fade-left"
+                data-aos-delay={index * 100}
+              >
                 <h5 className="fw-semibold" style={{ color: step.color }}>
                   {step.title}
                 </h5>
                 <ul className="ps-3 mb-2">
                   {step.services.map((item, i) => (
-                    <li key={i} className="mb-1 text-secondary" style={{ wordBreak: "break-word" }}>
+                    <li
+                      key={i}
+                      className="mb-1 text-secondary"
+                      style={{ wordBreak: "break-word" }}
+                    >
                       {item}
                     </li>
                   ))}

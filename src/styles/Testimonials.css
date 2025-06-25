@@ -26,7 +26,7 @@
 
 .testimonial-card {
   flex: 0 0 auto;
-  width: 520px;
+  width: 420px;
   height: auto;
   margin: 0 20px;
   /* background: #ffffff; */
@@ -103,7 +103,7 @@ padding: 10px;
 
 @media (max-width: 480px) {
   .testimonial-card {
-    width: 520px;
+    width: 450px;
     padding: 20px;
     margin: 0 10px;
   }

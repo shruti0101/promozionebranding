@@ -112,7 +112,7 @@ At Promozione Branding Pvt. Ltd., we build custom CMS websites that are fast, se
               </p>
               <ul className="php-points">
                 {[
-                  "WordPress",
+                  "WOOCommerce",
                   "Shopify",
                   "Joomla",
                   "Drupal",

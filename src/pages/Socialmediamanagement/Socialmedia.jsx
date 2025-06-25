@@ -139,7 +139,7 @@ const funnelData = [
         heading="Elevate Your Brand with 100% Guaranteed Social Media Management Services in India
 "
         paragraph="Looking to make your brand the next big thing on social media? At Promozione Branding Pvt. Ltd., we offer 100% Guaranteed Social Media Management Services in India designed to help SMEs boost brand awareness, drive engagement, and generate qualified leads through social media platforms.
-Our expert social media strategies don't just increase followers – we turn your social media into a revenue-generating powerhouse.
+
 "
         cardItems={cardItems}
         services="Social Media Management Services "

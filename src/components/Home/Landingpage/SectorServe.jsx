@@ -43,7 +43,7 @@ const SectorServe = () => {
   return (
     <div className="container py-5">
       <h2 className="fw-bold text-center mb-sm-0 text-capitalize mt-2" style={{ color: "#2548BD" }}>
-        different sector we serve
+        different Industry we serve
       </h2>
       <div className="mx-auto mb-4 mt-3" style={{ width: "60px", height: "4px", backgroundColor: "#0d6efd" }}></div>
       <div className="row">

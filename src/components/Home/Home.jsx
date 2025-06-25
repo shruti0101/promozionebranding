@@ -9,7 +9,7 @@ import Orbit from "./Landingpage/Orbit";
 import Testimonials from "./Landingpage/Testimonials";
 import Project from "./Landingpage/Project";
 
-
+import Leadgen from "./Landingpage/Leadgen";
 import Form2 from "./Landingpage/Form2";
 import ctaImage from "../../assets/formimg.webp"
 
@@ -23,11 +23,12 @@ const Home = () => {
         <Hero></Hero>
 
 <Services />
+
+    <Leadgen></Leadgen>
       <WhyChoose />
 
 
 
-    
     
       <SectorServe />
         <Form1 />

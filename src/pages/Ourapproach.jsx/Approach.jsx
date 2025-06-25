@@ -78,7 +78,7 @@ const Approach = () => {
         {/* Content */}
         <div className="container position-relative">
           <div className="row align-items-center">
-            <div className="col-md-7" data-aos="fade-right">
+            <div className="col-12 col-md-7 mb-4 mb-md-0" data-aos="fade-right">
               <h1 className="display-5 fw-bold mb-3">
                 {" "}
                 Our Approach to Digital Marketing
@@ -90,8 +90,8 @@ const Approach = () => {
                 craft the best possible user experience.
               </p>
             </div>
-            <div className="col-md-5 d-none d-md-block" data-aos="fade-left">
-              <img src={wheel} width="100%" alt="Marketing Visual" />
+            <div className="col-12 col-md-5 d-none d-md-block" data-aos="fade-left">
+              <img src={wheel} className="img-fluid" width="100%" alt="Marketing Visual" />
             </div>
           </div>
         </div>
@@ -110,8 +110,8 @@ const Approach = () => {
         </p>
 
         <div className="timeline-content container">
-          <div className="content-box">
-            <div className="content-text">
+          <div className="content-box flex-column flex-md-row">
+            <div className="content-text mb-4 mb-md-0 w-100">
               <h1 className="fw-bold fs-1">{steps[activeId - 1].title}</h1>
               <p className="text-muted">{steps[activeId - 1].desc}</p>
               <a
@@ -122,7 +122,7 @@ const Approach = () => {
                 Read More
               </a>
             </div>
-            <div className="content-image">
+            <div className="content-image w-100">
               <img
                 src={steps[activeId - 1].image}
                 alt={steps[activeId - 1].title}
@@ -149,41 +149,42 @@ const Approach = () => {
         </div>
       </div>
 
-      <section
-        id="section-1"
-        className=" p-5 mt-5"
-        style={{ backgroundColor: "#212252" }}
-      >
+{/* summary of our approach */}
+     <section
+  id="section-1"
+  className="p-5 mt-5"
+  style={{ backgroundColor: "#212252" }}
+>
+  <div className="container">
+    <div className="row">
+      {/* 🖼️ IMAGE: show after text on mobile (order-2), before on large screens (order-lg-1) */}
+      <div className="col-12 col-lg-6 mb-4 mb-lg-0 order-2 order-lg-1">
+        <img src={process1} alt="" className="img-fluid" />
+      </div>
+
+      {/* 📝 TEXT: show before image on mobile (order-1), after on large screens (order-lg-2) */}
+      <div className="col-12 col-lg-6 order-1 order-lg-2">
+        <p className="text-danger fw-bold">01. Research & Discovery</p>
+        <h1 className="fw-bold text-white">Keyword Research & Strategy</h1>
+        <p className="text-white fs-6 lh-lg">
+          Depending on the goals and requirements set, we will gather more
+          information such as your current marketing activities, where you
+          rank locally on search engines or your website design. This helps
+          us when we are creating tailored strategies to make sure we get it
+          right. Using your business’ website and tools such as Moz and Local
+          Viking, we can see what keywords you currently rank for, and other
+          long-tail keywords that you could rank for. The data collected is
+          used to form the strategy.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="section-2" className="p-5 mt-5">
         <div className="container">
           <div className="row">
-            <div className="col-md-6 d-none d-lg-block">
-              <img src={process1} alt="" className="img-fluid" />
-            </div>
-
-            <div className="col-md-6">
-              <p className="text-danger  fw-bold">01. Research & Discovery</p>
-              <h1 className="fw-bold text-white">
-                Keyword Research & Strategy
-              </h1>
-              <p className="text-white fs-6 lh-lg">
-                Depending on the goals and requirements set, we will gather more
-                information such as your current marketing activities, where you
-                rank locally on search engines or your website design. This
-                helps us when we are creating tailored strategies to make sure
-                we get it right. Using your business’ website and tools such as
-                Moz and Local Viking, we can see what keywords you currently
-                rank for, and other long-tail keywords that you could rank for.
-                The data collected is used to form the strategy.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="section-2" className=" p-5 mt-5">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6">
+            <div className="col-12 col-md-6 mb-4 mb-md-0">
               <p className="text-danger  fw-bold">02. Collaborative Planning</p>
               <h1 className="fw-bold">
                 Creating Interactive & Collaborative Prototypes
@@ -199,7 +200,7 @@ const Approach = () => {
               </p>
             </div>
 
-            <div className="col-md-6">
+            <div className="col-12 col-md-6">
               <img
                 src={image2}
                 alt=""
@@ -214,24 +215,26 @@ const Approach = () => {
       <section id="section-3" className="bg-light mt-3 p-5 py-5">
         <div className="container text-center">
           <div className="row">
-            <p className="text-danger fw-bold">03. Design & Build</p>
-            <h1>Build to Industry & Accessibility Standards</h1>
-            <p className="fs-5 w-50 mx-auto lh-lead ">
-              After finalising the prototype, we begin to build the final
-              project. Our projects are built with the needs and goals of the
-              business in mind to ensure we are providing the best ROI possible.
-              We also build with accessibility in mind. Being accessible is
-              essential, it helps your SEO, and makes your website open to
-              everyone.
-            </p>
+            <div className="col-12">
+              <p className="text-danger fw-bold">03. Design & Build</p>
+              <h1>Build to Industry & Accessibility Standards</h1>
+              <p className=" w-100 mx-auto lh-lead ">
+                After finalising the prototype, we begin to build the final
+                project. Our projects are built with the needs and goals of the
+                business in mind to ensure we are providing the best ROI possible.
+                We also build with accessibility in mind. Being accessible is
+                essential, it helps your SEO, and makes your website open to
+                everyone.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="section-4" className=" p-5 mt-5">
-        <div className="container d-flex justify-content-between">
+      <section id="section-4" className="p-5 mt-5">
+        <div className="container">
           <div className="row">
-            <div className="col-md-7 ">
+            <div className="col-12 col-md-7 mb-4 mb-md-0">
               <p className="text-danger  fw-bold">04. Live Reporting</p>
               <h1 className="fw-bold">Live Data & Personalised Reports</h1>
               <p className=" fs-6 lh-lg">
@@ -248,7 +251,7 @@ const Approach = () => {
               </p>
             </div>
 
-            <div className="col-md-5">
+            <div className="col-12 col-md-5">
               <img src={process2} alt="" className="img-fluid " />
             </div>
           </div>
@@ -256,10 +259,10 @@ const Approach = () => {
       </section>
 
 
-        <section id="section-5" className=" p-5 mt-5">
-        <div className="container d-flex justify-content-between">
+        <section id="section-5" className="p-5 mt-5">
+        <div className="container">
           <div className="row">
-            <div className="col-md-7 ">
+            <div className="col-12 col-md-7 mb-4 mb-md-0">
               <p className="text-danger  fw-bold">05. Return On Investment</p>
               <h1 className="fw-bold">Maximising Your ROI</h1>
               <p className=" fs-6 lh-lg">
@@ -267,7 +270,7 @@ const Approach = () => {
               </p>
             </div>
 
-            <div className="col-md-5">
+            <div className="col-12 col-md-5">
               <img src={roi} alt="" className="img-fluid " />
             </div>
           </div>

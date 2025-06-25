@@ -2,40 +2,45 @@ import React, { useEffect } from 'react';
 import "../../../styles/Testimonials.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
 const testimonials = [
   {
-    name: 'Shivam Thakur',
-    title: 'Client',
-    quote: 'Had a amazing experience their innovative startegies have taken my online presence to the next level driven real growth good team to work with'
+    name: "Shivam Thakur",
+    title: "Client",
+    quote:
+      "Had an amazing experience — their innovative strategies have taken my online presence to the next level. The team drove real growth and always responded quickly. A great company to work with!",
   },
   {
-    name: ' Tisha Nagarwal',
-    title: 'Client',
-    quote: "Promoizone branding Pvt Ltd gave our website a facelift, making it an extremely user-friendly site and more visually appealing to its customers. The professionals here worked tirelessly on improving the navigation, load speed, and mobile responsiveness of the site. The really easy and fabulous design improved our online presence and customer participation.",
+    name: "Tisha Nagarwal",
+    title: "Client",
+    quote:
+      "Promoizone Branding Pvt Ltd gave our website a facelift, making it extremely user-friendly and visually appealing. Their dedication to improving navigation, load speed, and mobile responsiveness truly stood out.",
   },
   {
-    name: 'Anjali Sharma',
-    title: 'Client',
-    quote: 'Excellent experience with Promozione Branding their teams expertise in digital marketing has increased my visibility highly recommended! ',
+    name: "Anjali Sharma",
+    title: "Client",
+    quote:
+      "Excellent experience with Promozione Branding. Their team's digital expertise significantly boosted my brand visibility. Highly recommended for anyone looking to grow online effectively!",
   },
   {
-    name: 'Neeraj Goyal',
-    title: 'Client',
-    quote:"Great experience working with Promozione Branding thier team is creative,innovative and hardworking their digital marketing strategies have increased my digital visibility"
+    name: "Neeraj Goyal",
+    title: "Client",
+    quote:
+      "Great experience working with Promozione Branding. Their team is creative, innovative, and dedicated to results. We’ve seen a big jump in online visibility since we started working with them.",
   },
-    {
-    name: 'Dia',
-    title: 'Client',
-    quote:"I have partnered with Promozione Branding Pvt.Ltd for my company....the team is very knowledgeable,supportive they listen to each and every feedback you provide also very dutiful.Must try their services.....👍😊"
-  },
-
   {
-    name:"vikas kumar",
-    title:"Client",
-    quote:"I am so glad we partnered with Promozione Branding for our digital marketing needs. Their performance marketing team was outstanding at analyzing our previous campaigns and optimizing them for better results. Their proactive approach and consistent communication made the whole process smooth and productive. The results have been fantastic, and I will continue to work with them for future campaigns!"
+    name: "Priya Sharma",
+    title: "Client",
+    quote:
+      "I partnered with Promozione Branding Pvt. Ltd. for my business, and I’m really impressed. They’re knowledgeable, supportive, and genuinely care about your feedback. Must try their services!",
+  },
+  {
+    name: "Vikas Kumar",
+    title: "Client",
+    quote:
+      "So glad we partnered with Promozione Branding for digital marketing. Their team revamped our past campaigns and delivered outstanding results. Professional, proactive, and easy to collaborate with!",
   },
 ];
+
 
 const duplicated = [...testimonials, ...testimonials]; // Seamless loop
 
@@ -68,8 +73,8 @@ const TestimonialSlider = () => {
               <div className="testimonial-card" key={i}>
                 <p className="quote">“{t.quote}”</p>
                 <div className="author">
-                  <strong>{t.name}</strong>
-                  <span>{t.title}</span>
+                  <strong className='text-capitalize'>{t.name}</strong>
+                  <span className='text-capitalize'>{t.title}</span>
                 </div>
               </div>
             ))}

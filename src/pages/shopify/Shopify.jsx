@@ -149,7 +149,7 @@ const funnelData = [
 
 const features = [
   "100% In-house UI/UX + eCommerce ",
-  " 100% mobile-first, SEO-ready Shopify design",
+  " 100% mobile-friendly, SEO-ready Shopify design",
   " Store setup with marketing & conversion in mind",
   "Multi-language, multi-currency store options",
   "Post-launch support for upgrades, fixes & marketing",
@@ -174,7 +174,7 @@ const features = [
   return (
     <div>
       <Tiltcard
-        heading="Shopify Web Designing Services in India – Launch Your Online Store with Style
+        heading="Shopify Web Designing Services in India – Launch Your Online Store 
 
 "
         paragraph="Chahti hai aapki online store bhi ekdum premium dikhe aur sales laaye?
@@ -187,7 +187,7 @@ Whether you're starting fresh or revamping your old store
 
       {/* what is shopify */}
 
-      <section className="php-section py-5 position-relative overflow-hidden">
+      <section className=" container php-section py-5 position-relative overflow-hidden">
    
         <div className="blob-bg"></div>
 
@@ -197,7 +197,7 @@ Whether you're starting fresh or revamping your old store
             <div className="col-md-6" data-aos="fade-right">
               <h2 className="php-heading">
                 What is{" "}
-                <span style={{ color: "#2548BD" }}>Web Designing?</span>{" "}
+                <span style={{ color: "#2548BD" }} > Shopify Web Designing?</span>{" "}
               </h2>
               <p className="php-desc">
                 Shopify is the #1 platform for eCommerce businesses – trusted by
@@ -207,10 +207,9 @@ Whether you're starting fresh or revamping your old store
               <ul className="php-points">
                 {[
                   "No Coding Required – Manage products, orders & customers with zero tech stress",
-                  "Mobile-First Design – 80% log phone se shopping karte hain, hum uska bhi dhyan rakhte hain",
+                  "Mobile-Friendly – 80% log phone se shopping karte hain, hum uska bhi dhyan rakhte hain",
                   "Built-In SEO Features – Better visibility = more organic traffic",
-                  " Fast & Secure Checkout – Payment gateway se leke SSL tak – sab kuch included",
-                  " Scalable Infrastructure – Grow from 10 to 10,000 products without breaking",
+                 
                 ].map((item, index) => (
                   <li
                     data-aos="fade-left"
@@ -267,7 +266,7 @@ Whether you're starting fresh or revamping your old store
 
 {/* our process */}
 <Process
-title="Our  Shopify Web Designing Process" image={funnel} data={funnelData} 
+title="Our Shopify Web Designing Process" image={funnel} data={funnelData} 
 
 ></Process>
 

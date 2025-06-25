@@ -185,7 +185,7 @@ const note=[
 "
         paragraph="Your CRM isn’t just a database – it’s your sales engine. But if it feels slow, messy, or underused, it's time for a serious upgrade.
 At Promozione Branding Pvt. Ltd., we specialize in CRM Optimization Services that transform your CRM from “just a tool” into a revenue-driving machine 
-Chahe aap HubSpot use kar rahe ho ya Zoho, Salesforce ya koi aur — we’ll make it faster, cleaner, and way more effective.
+
 
 
 
@@ -200,14 +200,14 @@ Chahe aap HubSpot use kar rahe ho ya Zoho, Salesforce ya koi aur — we’ll mak
         {/* Background Blob */}
         <div className="blob-bg"></div>
 
-        <div className="container-fluid">
+        <div className="container">
           <div className="row align-items-center flex-wrap-reverse">
             {/* Text Content */}
             <div className="col-md-6" data-aos="fade-right">
               <h2 className="php-heading">
                 What is{" "}
                 <span style={{ color: "#2548BD" }}>
-                  What is CRM Optimization?
+                  CRM Optimization?
                 </span>{" "}
               </h2>
               <p className="php-desc">
@@ -219,11 +219,9 @@ Chahe aap HubSpot use kar rahe ho ya Zoho, Salesforce ya koi aur — we’ll mak
               </p>
               <ul className="php-points">
                 {[
-                  "No Coding Required – Manage products, orders & customers with zero tech stress",
-                  "Mobile-First Design – 80% log phone se shopping karte hain, hum uska bhi dhyan rakhte hain",
-                  "Built-In SEO Features – Better visibility = more organic traffic",
-                  " Fast & Secure Checkout – Payment gateway se leke SSL tak – sab kuch included",
-                  " Scalable Infrastructure – Grow from 10 to 10,000 products without breaking",
+                  "Less chaos, more clarity",
+                  "Less data entry, more deals closed",
+                  "Less manual work, more automation",
                 ].map((item, index) => (
                   <li
                     data-aos="fade-left"

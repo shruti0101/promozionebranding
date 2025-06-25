@@ -1,6 +1,6 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
 const WhyChoose = ({
   title,
   highlightedText,
@@ -10,7 +10,7 @@ const WhyChoose = ({
   ctaParagraph,
   ctaButtonText,
   para,
-  ctaButtonLink = "#contact",
+
 }) => {
   return (
     <section className="demand-section py-5 position-relative text-white">
@@ -61,8 +61,8 @@ const WhyChoose = ({
                 <p className="mb-3 text-secondary text-center text-md-start">
                   {ctaParagraph}
                 </p>
-                <a
-                  href={ctaButtonLink}
+                <Link to="/Contact"
+                
                   className="btn btn-primary w-100 fw-semibold"
                   style={{
                     borderRadius: "12px",
@@ -71,7 +71,7 @@ const WhyChoose = ({
                   }}
                 >
                   🚀 {ctaButtonText}
-                </a>
+                </Link>
               </div>
               <div
                 className="position-absolute top-0 start-0 w-100 h-100"

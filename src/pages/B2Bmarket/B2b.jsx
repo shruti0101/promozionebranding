@@ -7,6 +7,7 @@ import { FaCheckCircle } from "react-icons/fa";
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
 import ctaImage from "../../assets/formimg.webp"
+import { Link } from "react-router-dom";
 
 const B2b = () => {
 
@@ -88,7 +89,7 @@ const cardItems = [
   return (
     <div>
       <Tiltcard
-        heading="B2B Marketing Services in India – Build Trust, Generate Quality Leads & Close Bigger Deals"
+        heading="B2B Marketing Services in India – Generate Quality Leads & Close Bigger Deals"
         paragraph="B2B marketing is not about massive reach — it’s about reaching the right decision-makers at the right time.
 At Promozione Branding Pvt. Ltd., we specialize in B2B Marketing Services in India that help businesses create trust-based relationships, generate high-quality leads, and drive long-term growth.
 
@@ -154,7 +155,10 @@ At Promozione Branding Pvt. Ltd., we specialize in B2B Marketing Services in Ind
             ))}
           </div>
           <div className="text-center mt-5 pb-4" data-aos="zoom-in">
+            <Link to="/Contact">
+            
             <button className="nav-btn">Talk to Our Experts</button>
+            </Link>
           </div>
         </div>
       </section>
@@ -301,8 +305,8 @@ At Promozione Branding Pvt. Ltd., we specialize in B2B Marketing Services in Ind
       <p className="mb-4 text-secondary">
        Chhoti baatein nahi. Big-picture results chahiye? Then your B2B marketing must be strategic, data-backed, and customer-focused.
       </p>
-      <a
-        href="#contact"
+      <Link to="/Contact"
+       
         className="btn btn-primary w-100 fw-semibold"
         style={{
           borderRadius: "12px",
@@ -311,7 +315,7 @@ At Promozione Branding Pvt. Ltd., we specialize in B2B Marketing Services in Ind
         }}
       >
         🚀 Let’s Get Started
-      </a>
+      </Link>
     </div>
     <div
       className="position-absolute top-0 start-0 w-100 h-100"

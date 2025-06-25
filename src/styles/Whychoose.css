@@ -67,3 +67,12 @@
 .row {
   overflow-x: hidden;
 } */
+@media (max-width:576px) {
+  .heading{
+    
+    
+  font-size: 1.9rem;
+
+  }
+  
+}

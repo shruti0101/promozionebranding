@@ -28,20 +28,19 @@
   transition: all 0.3s ease;
 }
 
-/* Mobile Responsiveness */
+
 @media (max-width: 576px) {
   .top-header {
     flex-direction: column;
     text-align: center;
-    gap: 0.5rem;
-    padding: 10px 15px;
+
   }
 
   .contact-info,
   .social-icons {
     justify-content: center !important;
     flex-wrap: wrap;
-    margin: 5px 0;
+ 
   }
 
   .contact-info span,
@@ -51,7 +50,7 @@
   }
 
   .contact-info i {
-    display: none; /* optional: hide icons on small screens */
+    display: none;
   }
 
   .social-icons a {

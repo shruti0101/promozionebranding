@@ -3,6 +3,7 @@ import content from "../../assets/services/content.png";
 import { useRef, useEffect } from "react";
 import bg from "../../assets/approach/wrapper-bg.png";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import {
   FaSearch,
   FaProjectDiagram,
@@ -213,7 +214,9 @@ const Content = () => {
             ))}
           </div>
           <div className="text-center mt-5 pb-4" data-aos="zoom-in">
+            <Link to="/Contact">
             <button className="nav-btn">Talk to Our Experts</button>
+            </Link>
           </div>
         </div>
       </section>

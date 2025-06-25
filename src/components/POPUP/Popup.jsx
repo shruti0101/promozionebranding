@@ -1,103 +1,65 @@
-import { useEffect, useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+import { useEffect, useRef, useState } from "react";
 import "./Popup.css";
 
-export default function Popup() {
-  const [showPopup, setShowPopup] = useState(false);
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
+import post1  from "../../assets/popup/post1.jpg";
+import post2  from "../../assets/popup/post2.jpg";
+import post3  from "../../assets/popup/post3.jpg";
+import post4  from "../../assets/popup/post4.jpg";
+import post5  from "../../assets/popup/post5.jpg";
+import post6  from "../../assets/popup/post6.jpg";
+import post7  from "../../assets/popup/post7.jpg";
+import post8  from "../../assets/popup/post8.jpg";
+import post9  from "../../assets/popup/post9.jpg";
+import post10 from "../../assets/popup/post10.jpg";
+import post11 from "../../assets/popup/post11.jpg";
+import post12 from "../../assets/popup/post12.jpg";
+import post13 from "../../assets/popup/post13.jpg";
+import post14 from "../../assets/popup/post14.jpg";
+import post15 from "../../assets/popup/post15.jpg";
+
+const postImages = [
+  post1, post2, post3, post4, post5,
+  post6, post7, post8, post9, post10,
+  post11, post12, post13, post14, post15,
+];
+
+const Popup = () => {
+  const [show, setShow] = useState(false);
+  const [selectedPost, setSelectedPost] = useState(null);
+  const popupRef = useRef(null);
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowPopup(true), 2000);
-    return () => clearTimeout(timer);
+    // pick a random post every mount
+    const randomIndex = Math.floor(Math.random() * postImages.length);
+    setSelectedPost(postImages[randomIndex]);
+
+    // show after 2 s
+    const timer = setTimeout(() => setShow(true), 2000);
+
+    // close when clicking outside
+    const handleClickOutside = (e) => {
+      if (popupRef.current && !popupRef.current.contains(e.target)) {
+        setShow(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      clearTimeout(timer);
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, []);
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      await fetch("https://sheetdb.io/api/v1/0sl1jasb6zeal", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ data: formData }),
-      });
-      toast.success("Submitted successfully! 🎉");
-      setFormData({ name: "", email: "", phone: "", message: "" });
-      setTimeout(() => setShowPopup(false), 3000);
-    } catch (error) {
-      toast.error("Submission failed. Please try again.");
-    }
-  };
-
-  if (!showPopup) return null;
+  if (!show || !selectedPost) return null;
 
   return (
-    <div className="popup-overlay">
-      <div className="popup-box shadow">
-        <ToastContainer
-          position="top-center"
-          autoClose={3000}
-          hideProgressBar={false}
-          newestOnTop={true}
-          closeOnClick
-          pauseOnHover
-          draggable
-          toastStyle={{ zIndex: 2 }}
-          containerStyle={{
-            position: "absolute",
-            top: "10px",
-            left: 0,
-            right: 0,
-            margin: "0 auto",
-            width: "100%",
-            maxWidth: "400px",
-          }}
-        />
-        <button className="close-btn" onClick={() => setShowPopup(false)}>×</button>
-        <h2 className="text-center mb-3">Get Your Free Proposal</h2>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            value={formData.name}
-            required
-            onChange={handleChange}
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            value={formData.email}
-            required
-            onChange={handleChange}
-          />
-          <input
-            type="tel"
-            name="phone"
-            placeholder="Contact Number"
-            value={formData.phone}
-            required
-            onChange={handleChange}
-          />
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            rows="4"
-            value={formData.message}
-            onChange={handleChange}
-          ></textarea>
-          <button type="submit" className="submit-btn">Submit</button>
-        </form>
+    <div className="fact-popup-overlay">
+      <div className="fact-popup" ref={popupRef}>
+        <button className="close-btn" onClick={() => setShow(false)}>X</button>
+        <img src={selectedPost} alt="Popup Post" className="popup-img" />
       </div>
     </div>
   );
-}
+};
+
+export default Popup;

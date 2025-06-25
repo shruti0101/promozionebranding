@@ -64,13 +64,14 @@ const Navbar = () => {
         ["Blogs", "/profile/blogs"],
         ["Client Reviews", "/profile/reviews"],
         ["Career", "/profile/career"],
+         ["Contact Us", "/Contact"],
       ],
     },
     {
       name: "website",
       label: "Website Development",
       items: [
-        ["WordPress Website", "/services/design"],
+       
         ["Custom Web Development", "/services/custom"],
         ["PHP Website Development", "/services/development"],
         ["CMS Web Development", "/services/marketing"],
@@ -80,6 +81,8 @@ const Navbar = () => {
         ["Website Redesigning", "/services/redesign"],
         ["Landing Page Design", "/services/landing"],
         ["Web Application Development", "/services/webapp"],
+       ["B2B Web Development", "/services/b2bdev"],
+        ["WordPress Website", "/services/design"],
       ],
     },
     {
@@ -88,7 +91,7 @@ const Navbar = () => {
       items: [
         ["Performance Marketing", "/services/performance"],
         ["B2B Marketing", "/services/b2b"],
-        ["Lead Generations", "/services/leads"],
+        // ["Lead Generations", "/services/leads"],
         ["AI Performance Marketing Services", "/services/ai-performance"],
         ["Ads Management", "/services/ads"],
         ["Internet Marketing", "/services/internet"],
@@ -106,8 +109,8 @@ const Navbar = () => {
         ["CRM Optimizations", "/services/crm"],
         ["Email Marketing", "/services/email"],
         ["Video Marketing", "/services/video"],
-        ["Social Media Ads", "/services/social"],
-        ["Google Ads", "/services/google"],
+        // ["Social Media Ads", "/services/social"],
+        ["Microsoft/Bing Ads", "/services/Bing-ads"],
         ["Google AdWords/PPC", "/services/google-ads"],
         ["SMO", "/services/smo"],
         ["SMM", "/services/smm"],

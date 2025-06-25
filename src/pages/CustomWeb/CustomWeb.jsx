@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Tiltcard from "../../TiltCardHome/Tiltcard";
-import cmsweb from "../../assets/services/cmsweb.webp";
+import cms from "../../assets/services/cms.png";
 import ctaImage from "../../assets/formimg.webp"
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
@@ -23,11 +23,11 @@ import { FaCode, FaRocket, FaUsers, FaServer, FaGlobe, FaShieldAlt } from "react
 const CustomWeb = () => {
   const cardItems = [
     { title: "Custom Dashboards & Admin Panels", icon: "📊" },
-    { title: "Multi-language or Multi-region Support", icon: "🌐" },
+    { title: "Multi-language Support", icon: "🌐" },
     { title: "Secure Payment Gateways", icon: "💳" },
     { title: "Booking Systems", icon: "📅" },
     { title: "Lead Management Systems", icon: "📇" },
-    { title: "AI Chatbots & WhatsApp Integrations", icon: "🤖" },
+    { title: "AI Chatbots,WhatsApp Integrations", icon: "🤖" },
   ];
 
 const benefits = [
@@ -104,13 +104,13 @@ const floatingIcons = [
         <div className="row">
           <div className="col-md-5" data-aos="fade-right">
             <img
-              src={cmsweb}
-              className="img-fluid mb-4"
+              src={cms}
+              className="img-fluid "
               alt="content-marketing"
             />
           </div>
           <div className="col-md-7 pt-4" data-aos="fade-left">
-            <h1>
+            <h1 className="text-center">
               What is{" "}
               <span className="text-black">Custom Web Development?</span>
             </h1>

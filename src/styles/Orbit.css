@@ -1,13 +1,8 @@
-
 .orbit-container {
   position: absolute;
-  border: 1px solid #cbbdee;
+  border: 1px solid #d7d0e7;
   border-radius: 50%;
-  animation: rotateOrbit 9s linear infinite;
-}
-
-.orbit-container:hover {
-  animation-play-state: paused;
+  animation: rotateOrbit 12s linear infinite;
 }
 
 .orbit {
@@ -16,87 +11,107 @@
   height: 100%;
 }
 
-
+/* Enlarged orbits to avoid overlap */
 .orbit-1 {
-  width: 180px;
-  height: 180px;
+  width: 220px;
+  height: 220px;
 }
-
 .orbit-2 {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
 }
-
 .orbit-3 {
-  width: 320px;
-  height: 320px;
+  width: 380px;
+  height: 380px;
 }
-
 .orbit-4 {
-  width: 400px;
-  height: 400px;
+  width: 460px;
+  height: 460px;
 }
 
-
+/* Icon base positioning */
 .orbit-icon,
 .orbit-dot {
   position: absolute;
 }
 
-
+/* === ICON POSITIONS - EVENLY DISTRIBUTED === */
 .orbit-icon-1 {
-  top: -130px;
+  top: -25px;
   left: 50%;
   transform: translateX(-50%);
 }
 .orbit-icon-2 {
-  right: -20px;
-  top: 50%;
+  top: 20%;
+  right: -37px;
   transform: translateY(-50%);
 }
 .orbit-icon-3 {
-  bottom: -20px;
+  bottom: -25px;
   left: 50%;
   transform: translateX(-50%);
 }
 .orbit-icon-4 {
-  left: -20px;
-  top: 50%;
+  bottom: 20%;
+  right: 25px;
+  transform: translateX(50%);
+}
+
+.orbit-icon-5 {
+  top: 55%;
+  left: -25px;
+  transform: translateY(-50%);
+}
+.orbit-icon-4 {
+  bottom: 20%;
+  right: 25px;
+  transform: translateX(50%);
+}
+.orbit-icon-7 {
+  bottom: -25px;
+  right: 20%;
   transform: translateY(-50%);
 }
 
-
+/* === DOT POSITIONS === */
 .orbit-dot {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 .orbit-dot-1 {
   bottom: 10px;
   right: 12%;
-  background-color: #00bcd4; 
+  background-color: #00bcd4;
 }
-
 .orbit-dot-2 {
   top: 10px;
   right: 22%;
-  background-color: #ff9800; 
+  background-color: #ff9800;
 }
-
 .orbit-dot-3 {
   top: 23%;
   left: 10px;
-  background-color: #8bc34a; 
+  background-color: #8bc34a;
 }
-
 .orbit-dot-4 {
   bottom: 10px;
   left: 25%;
-  background-color: #f44336; 
+  background-color: #f44336;
+}
+.orbit-dot-5 {
+  top: 40%;
+  left: 10%;
+  background-color: #2196f3;
+}
+.orbit-dot-6 {
+  bottom: 40%;
+  right: 10%;
+  background-color: #9c27b0;
 }
 
+/* Animation */
 @keyframes rotateOrbit {
   from {
     transform: rotate(0deg);
@@ -106,3 +121,27 @@
   }
 }
 
+/* Responsive Orbits */
+@media (max-width: 576px) {
+  .orbit-1 {
+    width: 160px;
+    height: 160px;
+  }
+  .orbit-2 {
+    width: 220px;
+    height: 220px;
+  }
+  .orbit-3 {
+    width: 300px;
+    height: 300px;
+  }
+  .orbit-4 {
+    width: 370px;
+    height: 370px;
+  }
+
+  .orbit-icon img {
+    width: 35px !important;
+    height: 35px !important;
+  }
+}

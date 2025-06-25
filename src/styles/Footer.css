@@ -1,16 +1,11 @@
-.fsbg {
-    background: #2548BD;
-}.footer {
+.footer {
   background-color: #0B1720;
   color: white;
   padding: 40px 20px;
-
-font-family: "Mona Sans", sans-serif;
-  font-size: 17px;
+  font-family: "Mona Sans", sans-serif;
+  font-size: 16px;
   line-height: 1.6;
-  position: relative;
 }
-
 
 .footer h3 {
   font-weight: bold;
@@ -18,22 +13,31 @@ font-family: "Mona Sans", sans-serif;
   display: inline-block;
   padding-bottom: 5px;
   margin-bottom: 15px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .footer ul {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
 }
 
 .footer ul li {
-  margin-bottom: 10px;
-  font-size: 15px;
+  margin-bottom: 8px;
+  font-size: 14px;
 }
 
-.footer ul  li a:hover {
-  color: #2548BD;
-  text-decoration: underline;
+.footer ul li a,
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block; /* ✅ Required for transform */
+}
+
+.footer ul li a:hover,
+.footer-links a:hover {
+  transform: translateX(5px);
+  color: #0D6EFD;
 }
 
 
@@ -42,136 +46,115 @@ font-family: "Mona Sans", sans-serif;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 30px;
+  margin-bottom: 40px;
 }
 
 .footer-column {
-  flex: 1 1 200px;
-  min-width: 180px;
+  flex: 1 1 100%;
+  max-width: 100%;
 }
 
-.cert-logos img {
-  width: 120px;
-  margin: 10px 10px 0 0;
-  vertical-align: middle;
-  background-color: white;
-  padding: 4px;
-  border-radius: 6px;
+@media (min-width: 768px) {
+  .footer-column {
+    flex: 1 1 45%;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-column {
+    flex: 1 1 18%;
+  }
+
+   .dropdown-header .dropdown-icon {
+    display: none;
+  }
+
+  .dropdown-links {
+    display: block !important;
+  }
 }
 
 .footer-bottom {
-  border-top: 3px solid #2548BD;
-  margin-top: 30px;
+  border-top: 2px solid #2548BD;
+  margin-top: 40px;
   padding-top: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  text-align: center;
   font-size: 14px;
 }
 
-
-
-
-
-.footer ul li a {
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.footer ul li a:hover {
-  transform: translateX(5px);
-  color: #0D6EFD;
-  text-decoration: none;
-}
-
-.footer-links a {
-  color: white;
-  text-decoration: none;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.footer-links a:hover {
-  transform: translateX(5px);
-  color:#0D6EFD;
-  /* text-decoration: underline; */
-}
-
-.get-in-touch p {
-  margin: 6px 0;
-  font-size: 15px;
-}
-
-
-
-
-
-
-@media (max-width: 768px) {
-  .footer-top {
-    flex-direction: column;
-  }
-
-  .footer-column {
-    margin-bottom: 20px;
-  }
-
-  .footer-links {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .cert-logos img {
-    width: 100px;
-  }
-
-  .protection-logos {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-
+/* Contact Info */
 .get-in-touch {
-  font-size: 15px;
-  color: white;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 20px;
-  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .contact-box {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 15px;
-  flex: 1;
-  min-width: 250px;
-  max-width: 33%;
 }
 
 .contact-icon {
-  font-size: 30px;
+  font-size: 24px;
   color: #2548BD;
+  margin-top: 4px;
 }
 
 .contact-title {
   margin: 0;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 600;
   color: white;
 }
 
 .contact-subtitle {
   margin: 0;
-  font-size: 14px;
+  font-size: 13px;
   color: #ccc;
+}
+
+@media (min-width: 768px) {
+  .get-in-touch {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contact-box {
+    flex: 1 1 30%;
+  }
+}
+
+/* Dropdown Toggle Styling */
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  font-size: 14px;
+  margin-left: 10px;
+  color: #ccc;
+}
+
+/* Initially hide links */
+.dropdown-links {
+  display: none;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.dropdown-links.open {
+  display: block;
+}
+
+.dropdown-links li {
+  margin-bottom: 8px;
+  font-size: 14px;
 }

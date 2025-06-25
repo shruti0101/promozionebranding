@@ -215,7 +215,7 @@ At Promozione Branding Pvt. Ltd., we don’t just design websites — we create 
                   "Be crawlable by search engines",
                   "Load lightning-fast on all devices",
                   " Be mobile-friendly and responsive",
-                  " Include all the right meta tags, schema & structure",
+                  " Include all the right meta tags,schema & structure",
                 ].map((item, index) => (
                   <li
                     data-aos="fade-left"

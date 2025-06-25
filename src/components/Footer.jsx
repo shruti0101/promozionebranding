@@ -1,194 +1,130 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
   FaPhone,
   FaEnvelope,
-  FaLinkedin,
   FaMapMarkerAlt,
-  FaDownload,
+  FaChevronDown,
+  FaChevronUp,
 } from "react-icons/fa";
 import "../styles/Footer.css";
 
-const FooterContent = () => {
+const Footer = () => {
+  const [openMenus, setOpenMenus] = useState({});
+
+  const toggleMenu = (menuKey) => {
+    // Enable toggle only on mobile
+    if (window.innerWidth < 992) {
+      setOpenMenus((prev) => ({
+        ...prev,
+        [menuKey]: !prev[menuKey],
+      }));
+    }
+  };
+
+  const renderDropdown = (key, title, links) => (
+    <div className="footer-column">
+      <div className="dropdown-header" onClick={() => toggleMenu(key)}>
+        <h3>{title}</h3>
+        <span className="dropdown-icon">
+          {openMenus[key] ? <FaChevronUp /> : <FaChevronDown />}
+        </span>
+      </div>
+      <ul className={`dropdown-links ${openMenus[key] ? "open" : ""}`}>
+        {links.map(({ label, to }) => (
+          <li key={to}>
+            <Link to={to}>{label}</Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+
   return (
-
     <section className="footer">
-
-
-    <div className="container-fluid footer-bg">
-      <footer className="footer">
+      <div className="container-fluid">
         <div className="footer-top">
-          {/* Company Profile */}
-          <div className="footer-column">
-            <h3>Company Profile</h3>
-            <ul>
-              <li>
-                <Link to="/profile/OurApproach">Our Approach</Link>
-              </li>
-              <li>
-                <Link to="/profile/whoweare">Who We Are</Link>
-              </li>
-              <li>
-                <Link to="/profile/blogs">Blogs</Link>
-              </li>
-              <li>
-                <Link to="/profile/reviews">Client Reviews</Link>
-              </li>
-              <li>
-                <Link to="/profile/career">Career</Link>
-              </li>
-            </ul>
-          </div>
+          {renderDropdown("company", "Company Profile", [
+            { label: "Our Approach", to: "/profile/OurApproach" },
+            { label: "Who We Are", to: "/profile/whoweare" },
+            { label: "Blogs", to: "/profile/blogs" },
+            { label: "Client Reviews", to: "/profile/reviews" },
+            { label: "Career", to: "/profile/career" },
+             { label: "Contact", to: "/Contact" },
+          ])}
 
-          {/* Website Development */}
-          <div className="footer-column">
-            <h3>Website Development</h3>
-            <ul>
-              <li>
-                <Link to="/services/design">WordPress Website</Link>
-              </li>
-              <li>
-                <Link to="/services/custom">Custom Web Development</Link>
-              </li>
-              <li>
-                <Link to="/services/development">PHP Website Development</Link>
-              </li>
-              <li>
-                <Link to="/services/marketing">CMS Web Development</Link>
-              </li>
-              <li>
-                <Link to="/services/mern">React Web Development</Link>
-              </li>
-              <li>
-                <Link to="/services/ecommerce">Shopify Web Designing</Link>
-              </li>
-              <li>
-                <Link to="/services/seo">SEO Web Designing</Link>
-              </li>
-             
-            
-            </ul>
-          </div>
+          {renderDropdown("web", "Website Development", [
+            { label: "WordPress Website", to: "/services/design" },
+            { label: "Custom Web Development", to: "/services/custom" },
+            { label: "PHP Website", to: "/services/development" },
+            { label: "CMS Development", to: "/services/marketing" },
+            { label: "React Development", to: "/services/mern" },
+            { label: "Shopify Design", to: "/services/ecommerce" },
+            { label: "SEO Web Design", to: "/services/seo" },
+          ])}
 
-          {/* Revenue Marketing & CRO */}
-          <div className="footer-column">
-            <h3>Revenue Marketing</h3>
-            <ul>
-              <li>
-                <Link to="/services/performance">Performance Marketing</Link>
-              </li>
-              <li>
-                <Link to="/services/b2b">B2B Marketing</Link>
-              </li>
-              <li>
-                <Link to="/services/leads">Lead Generations</Link>
-              </li>
-              <li>
-                <Link to="/services/ai-performance">AI Performance Marketing</Link>
-              </li>
-              <li>
-                <Link to="/services/ads">Ads Management</Link>
-              </li>
-              <li>
-                <Link to="/services/internet">Internet Marketing</Link>
-              </li>
-              <li>
-                <Link to="/services/demand">Demand Generation</Link>
-              </li>
-             
-            
-            </ul>
-          </div>
+          {renderDropdown("revenue", "Revenue Marketing", [
+            { label: "Performance Marketing", to: "/services/performance" },
+            { label: "B2B Marketing", to: "/services/b2b" },
+            { label: "Lead Generation", to: "/services/leads" },
+            { label: "AI Marketing", to: "/services/ai-performance" },
+            { label: "Ads Management", to: "/services/ads" },
+            { label: "Internet Marketing", to: "/services/internet" },
+            { label: "Demand Generation", to: "/services/demand" },
+          ])}
 
-          {/* Digital Marketing */}
-          <div className="footer-column">
-            <h3>Digital Marketing</h3>
-            <ul>
-              <li>
-                <Link to="/services/content">Content Marketing</Link>
-              </li>
-              <li>
-                <Link to="/services/crm">CRM Optimizations</Link>
-              </li>
-              <li>
-                <Link to="/services/email">Email Marketing</Link>
-              </li>
-              <li>
-                <Link to="/services/video">Video Marketing</Link>
-              </li>
-              <li>
-                <Link to="/services/social">Social Media Ads</Link>
-              </li>
-              <li>
-                <Link to="/services/google">Google Ads</Link>
-              </li>
-              <li>
-                <Link to="/services/google-ads">Google AdWords/PPC</Link>
-              </li>
-             
-            </ul>
-          </div>
+          {renderDropdown("digital", "Digital Marketing", [
+            { label: "Content Marketing", to: "/services/content" },
+            { label: "CRM Optimization", to: "/services/crm" },
+            { label: "Email Marketing", to: "/services/email" },
+            { label: "Video Marketing", to: "/services/video" },
+            { label: "Meta Ads", to: "/services/smm" },
+            { label: "Google Ads", to: "/services/google" },
+            { label: "Google AdWords", to: "/services/google-ads" },
+          ])}
 
-          {/* Guaranteed SEO */}
-          <div className="footer-column">
-            <h3>Guaranteed SEO</h3>
-            <ul>
-              <li>
-                <Link to="/services/ai-digital">AI Digital Marketing Services</Link>
-              </li>
-              <li>
-                <Link to="/services/digital-seo">Digital Marketing Services</Link>
-              </li>
-              <li>
-                <Link to="/services/enterprise-seo">Enterprise SEO Services</Link>
-              </li>
-              <li>
-                <Link to="/services/ai-seo">AI SEO Services</Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Get in Touch */}
-       {/* Get in Touch (Redesigned to match screenshot) */}
-<div className="footer-column get-in-touch w-100 d-flex justify-content-between flex-wrap text-center text-lg-start">
- 
- 
-  <div className="contact-box">
-    <FaPhone className="contact-icon" />
-    <div>
-      <h5 className="contact-title mb-1">011 42603232</h5>
-      <p className="contact-subtitle">Mon–Sat 9:30AM–6:30PM</p>
-    </div>
-  </div>
-  <div className="contact-box">
-    <FaEnvelope className="contact-icon" />
-    <div>
-      <h5 className="contact-title mb-1">info@promozionebranding.com</h5>
-      <p className="contact-subtitle">online support</p>
-    </div>
-  </div>
-  <div className="contact-box">
-    <FaMapMarkerAlt className="contact-icon" />
-    <div>
-      <h5 className="contact-title mb-1">PromozioneBranding</h5>
-      <p className="contact-subtitle">Vardhman Plaza, Sector-3, Rohini, New Delhi
-
-</p>
-    </div>
-  </div>
-</div>
-
-
+          {renderDropdown("seo", "Guaranteed SEO", [
+            { label: "AI Digital Marketing", to: "/services/ai-digital" },
+            { label: "Digital SEO Services", to: "/services/digital-seo" },
+            { label: "Enterprise SEO", to: "/services/enterprise-seo" },
+            { label: "AI SEO Services", to: "/services/ai-seo" },
+          ])}
         </div>
 
-        <div className="footer-bottom text-center">
-          <p className="m-0">Promozione Branding © 2025 All rights reserved</p>
+        {/* Contact Info */}
+        <div className="get-in-touch">
+          <div className="contact-box">
+            <FaPhone className="contact-icon" />
+            <div>
+              <h5 className="contact-title">011 42603232</h5>
+              <p className="contact-subtitle">Mon–Sat 9:30AM–6:30PM</p>
+            </div>
+          </div>
+          <div className="contact-box">
+            <FaEnvelope className="contact-icon" />
+            <div>
+              <h5 className="contact-title">info@promozionebranding.com</h5>
+              <p className="contact-subtitle">Online support</p>
+            </div>
+          </div>
+          <div className="contact-box">
+            <FaMapMarkerAlt className="contact-icon" />
+            <div>
+              <h5 className="contact-title">Promozione Branding</h5>
+              <p className="contact-subtitle">
+                Vardhman Plaza, Sector-3, Rohini, New Delhi
+              </p>
+            </div>
+          </div>
         </div>
-      </footer>
-    </div>
+
+        {/* Footer Bottom */}
+        <div className="footer-bottom">
+          <p>© 2025 Promozione Branding. All rights reserved.</p>
+        </div>
+      </div>
     </section>
   );
 };
 
-export default FooterContent;
-            
+export default Footer;

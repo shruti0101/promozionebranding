@@ -144,12 +144,7 @@ const funnelData = [
       description:
         "From Reels to blogs – we create content that educates, entertains, and converts.",
     },
-    {
-      icon: "bi-sliders",
-      title: "Performance Analytics & Reporting",
-      description:
-        "See what’s working and where to grow next with smart, real-time dashboards.",
-    },
+  
     {
       icon: "bi-graph-up",
       title: "Monthly Data-Driven Insights",

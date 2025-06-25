@@ -34,5 +34,48 @@
     font-size: 1rem;
   }
 
+  .custom-bg-blue,
+  .bg-dark {
+    overflow-x: hidden !important;
+  }
 
+    .address-card {
+    text-align: center;
+  }
 }
+
+
+.frosted-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.frosted-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.gradient-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.address-card {
+  transition: all 0.3s ease;
+  border: 1px solid #e0e0e0;
+}
+
+.address-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+

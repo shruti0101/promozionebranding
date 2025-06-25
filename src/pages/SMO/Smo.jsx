@@ -248,7 +248,7 @@ At Promozione Branding Pvt. Ltd., we help you create a social media presence tha
 
       {/* our process */}
       <Process
-        title="Our  CRM Optimization Process"
+        title="Our SMO  Process"
         image={funnel}
         data={funnelData}
       ></Process>

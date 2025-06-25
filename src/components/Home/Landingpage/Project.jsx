@@ -2,19 +2,37 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../../styles/Project.css";
 
-import img1 from "../../../assets/projects/project-1.webp";
-import img2 from "../../../assets/projects/project-2.webp";
-import img3 from "../../../assets/projects/project-4.webp";
-import img4 from "../../../assets/projects/project-5.webp";
-import img5 from "../../../assets/projects/project-7.webp";
+import img1 from "../../../assets/projects/project1.png";
+import img2 from "../../../assets/projects/project2.png";
+import img3 from "../../../assets/projects/project3.png";
+import img4 from "../../../assets/projects/project4.png";
+import img5 from "../../../assets/projects/project5.png";
+import img6 from "../../../assets/projects/project6.png";
+import img7 from "../../../assets/projects/project7.png";
+import img8 from "../../../assets/projects/project8.png";
+import img9 from "../../../assets/projects/project9.png";
+import img10 from "../../../assets/projects/project10.png";
+import img11 from "../../../assets/projects/project11.png";
+import img12 from "../../../assets/projects/project12.png";
 
 const projects = [
-  { title: "Cultural Arts Center", img: img1 },
-  { title: "Donaldson Plastic Surgery", img: img2 },
-  { title: "Del-Mor Dwellings", img: img3 },
-  { title: "CORE HCM", img: img4 },
-  { title: "New Project", img: img5 },
+  { title: "Trader", img: img1 },
+  { title: "Manufacturer", img: img2 },
+  { title: "Manufacturer", img: img3 },
+  { title: "Manufacturer", img: img4 },
+  { title: "Manufacturer", img: img5 },
+  { title: "Manufacturer ", img: img6 },
+  { title: "Company Registration Consultant", img: img7 },
+  { title: "Manufacturer", img: img8 },
+  { title: "Manufacturer", img: img9 },
+  { title: "Trader", img: img10 },
+  { title: "Trader", img: img11 },
+  { title: "Decor", img: img12 },
 ];
+
+/* left column = original order | right column = reversed order  */
+const leftSeq  = projects;
+const rightSeq = [...projects].reverse();
 
 const ProjectCard = ({ project }) => (
   <div className="project-card">
@@ -23,49 +41,56 @@ const ProjectCard = ({ project }) => (
   </div>
 );
 
-const Project = () => {
-  return (
-    <div className="container py-5">
-      <div className="row align-items-center">
-        {/* Scrolling Columns */}
-        <div className="col-md-7 mb-4 mb-md-0 d-flex gap-3 justify-content-center">
-          <div className="vertical-scroll-wrapper">
-            <div className="vertical-scroll scroll-down">
-              {[...projects, ...projects].map((project, idx) => (
-                <ProjectCard key={`down-${idx}`} project={project} />
-              ))}
-            </div>
-          </div>
-          <div className="vertical-scroll-wrapper">
-            <div className="vertical-scroll scroll-up">
-              {[...projects, ...projects].map((project, idx) => (
-                <ProjectCard key={`up-${idx}`} project={project} />
-              ))}
-            </div>
+const Project = () => (
+  <div className="container py-4">
+    <div className="row align-items-center">
+      {/* ─── scrolling columns ─── */}
+      <div className="col-md-7 mb-4 mb-md-0 d-flex gap-3 justify-content-center">
+        {/* LEFT: scrolls down, original order */}
+        <div className="vertical-scroll-wrapper">
+          <div className="vertical-scroll scroll-down">
+            {[...leftSeq, ...leftSeq].map((p, i) => (
+              <ProjectCard key={`L-${i}`} project={p} />
+            ))}
           </div>
         </div>
-
-        {/* Right Side Content */}
-        <div className="col-md-5">
-          <h2 className="fw-bold mb-3">Our Work Speaks for Itself</h2>
-          <div className="d-flex gap-2 mb-3">
-            <span className="triangle triangle-blue"></span>
-            <span className="triangle triangle-gray"></span>
-            <span className="triangle triangle-lightgray"></span>
+        {/* RIGHT: scrolls up, reversed order */}
+        <div className="vertical-scroll-wrapper">
+          <div className="vertical-scroll scroll-up">
+            {[...rightSeq, ...rightSeq].map((p, i) => (
+              <ProjectCard key={`R-${i}`} project={p} />
+            ))}
           </div>
-          <p className="mb-3">
-            We specialize in crafting exceptional web design and SEO services, creating high-performing websites that stand out.
-          </p>
-          <p className="mb-4">
-            Explore a few recent wins below to see real-world results.
-          </p>
-          <Link to="/Contact">
-            <button className="nav-btn ">Schedule An Appointment</button>
-          </Link>
         </div>
       </div>
+
+      {/* ─── right-side copy & CTA ─── */}
+      <div className="col-md-5">
+        <h2 className="fw-bold mb-3">Our Work Speaks for Itself</h2>
+        <div className="d-flex gap-2 mb-3">
+          <span className="triangle triangle-blue" />
+          <span className="triangle triangle-gray" />
+          <span className="triangle triangle-lightgray" />
+        </div>
+        <p className="mb-3">
+          We craft exceptional <strong>web designs</strong> and{" "}
+          <strong>SEO strategies</strong> that turn clicks into customers.
+        </p>
+        <p className="mb-3">
+          From sleek landing pages to full-scale ecommerce, our builds attract,
+          engage, and convert.
+        </p>
+        <p className="mb-4">
+          Brands in <strong>education</strong>, <strong>healthcare</strong>, and{" "}
+          <strong>real estate</strong> trust us to boost visibility and
+          revenue—explore a few wins below.
+        </p>
+        <Link to="/Contact">
+          <button className="nav-btn">Schedule An Appointment</button>
+        </Link>
+      </div>
     </div>
-  );
-};
+  </div>
+);
 
 export default Project;

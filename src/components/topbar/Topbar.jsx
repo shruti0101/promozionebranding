@@ -1,27 +1,27 @@
-import React from "react";
+
 import "./Topbar.css";
 
 const Topbar = () => {
   return (
-    <div className="top-header d-flex justify-content-between align-items-center px-3 py-2">
+    <div className="top-header d-flex justify-content-between align-items-center px-3 py-2 d-none d-md-block" >
       {/* Left side: Contact info */}
      <div className="contact-info d-flex align-items-center">
   <i className="fas fa-headset me-2"></i>
-  <span className="me-4">011 42603232</span>
+  <span className="me-4">+919717220321</span>
   <i className="fas fa-envelope me-2"></i>
   <a
-    href="https://mail.google.com/mail/?view=cm&fs=1&to=info@promozionebranding.com"
+    href="https://mail.google.com/mail/?view=cm&fs=1&to=customercare@promozionebranding.com"
     target="_blank"
     rel="noreferrer"
     className="text-white"
   >
-    info@promozionebranding.com
+   customercare@promozionebranding.com
   </a>
 </div>
 
 
       {/* Right side: Social icons */}
-      <div className="social-icons d-flex">
+      <div className="social-icons d-flex me-3">
         <a href="https://www.facebook.com/people/Promozione-Branding-Private-Limited/61564246253324/?rdid=EkzZ3eY00Yvg9QXI&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1ATKsvCkfv%2F" target="_blank" rel="noreferrer" className="me-3">
           <i className="fab fa-facebook-f"></i>
         </a>

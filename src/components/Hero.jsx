@@ -35,11 +35,11 @@ export default function HeroSection() {
 
   return (
     <div className="container-fluid m-0 p-0">
-      <section className="hero-section d-flex align-items-center justify-content-center">
+      <section className="hero-section pt-0 pt-md-5 d-flex align-items-center justify-content-center">
         <div className="hero-overlay" />
         <div className="hero-content text-start ">
           <h1
-            className="hero-title pt-2"
+            className="hero-title pt-3 pt-md-5"
             data-aos="fade-right"
             data-aos-duration="600"
           >

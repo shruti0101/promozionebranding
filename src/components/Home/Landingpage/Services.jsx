@@ -24,7 +24,7 @@ const Services = () => {
       linkText: "Let’s Plan Growth",
       link: "/services/digital-seo",
       highlights: [
-        "Google Ads & Social Media Ads – Get more calls, leads & sales.",
+        "Google Ads & Meta Ads – Get more calls, leads & sales.",
         "SEO (Rank on Google) – Be seen when people search for your business.",
         "Instagram & Facebook Marketing – Get noticed. Get followers. Get customers.",
         "Website That Sells – Mobile-friendly, fast, and built to convert.",
@@ -67,7 +67,7 @@ const Services = () => {
       linkText: "Let’s Plan Your Campaign",
       link: "/services/ads",
       highlights: [
-        "Google Ads & Facebook/Instagram Ads",
+        "Google Ads & Meta Ads",
         "Keyword & Audience Targeting",
         "Ad Copywriting That Sells.",
         "Budget Optimization (More results, less spend)",
@@ -158,7 +158,7 @@ const Services = () => {
       <section className="mt-4  ">
         <div className="container py-5">
           <div className="text-center mb-5">
-            <h1>Complete AI Digital Marketing Services Delhi</h1>
+            <h1>Complete AI Digital Marketing Services in Delhi</h1>
             <h3>Our Strategies that Drive Web Traffic & Results</h3>
           </div>
 

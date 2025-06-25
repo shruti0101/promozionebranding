@@ -162,8 +162,7 @@ const funnelData = [
 "
         paragraph="When you're managing a large business, basic SEO just won’t cut it.
 You need an Enterprise SEO Strategy that scales across hundreds (or thousands) of pages, boosts rankings across multiple locations or services, and brings in high-converting traffic—without breaking.
-At Promozione Branding Pvt. Ltd., we deliver Enterprise SEO Services in India that blend technical SEO mastery + content depth + automation + performance marketing for high-impact results.
-Scale your search presence, not your stress.
+
 
 
 "
@@ -323,7 +322,7 @@ Scale your search presence, not your stress.
     {/* our process */}
 
 <Process
-title="Our  CRM Optimization Process" image={funnel} data={funnelData} 
+title="Our Enterprise SEO Process" image={funnel} data={funnelData} 
 
 ></Process>
 
@@ -332,7 +331,7 @@ title="Our  CRM Optimization Process" image={funnel} data={funnelData}
    <Form2
         heading=" Still using cold emails? Bro, it's 2025.."
         price=" Chat With a Strategist Today."
-        buttonText=" [Request a Custom Plan!"
+        buttonText=" Request a Custom Plan!"
         image={ctaImage}
       ></Form2>
     </div>

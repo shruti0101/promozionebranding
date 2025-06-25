@@ -133,69 +133,67 @@ export default function ContactSection() {
         </div>
       </section>
 
-      {/* Contact Cards */}
-      <section className="py-5 bg-light">
-        <div className="container">
-          <div className="row g-4">
-            <div className="col-md-6">
-              <div className="card h-100 shadow rounded-4 p-4 border-0">
-                <div className="d-flex align-items-center mb-3">
-                  <div className="bg-primary text-white rounded-circle p-3 me-3">
-                    <i className="bi bi-geo-alt-fill fs-4"></i>
-                  </div>
-                  <h5 className="mb-0">Company Address</h5>
-                </div>
-                <p className="mb-0">
-                  Vardhman Plaza, Sector-3,
-                  <br />
-                  Rohini, New Delhi
-                </p>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="card h-100 shadow rounded-4 p-4 border-0">
-                <div className="d-flex align-items-center mb-3">
-                  <div className="bg-success text-white rounded-circle p-3 me-3">
-                    <i className="bi bi-telephone-fill fs-4"></i>
-                  </div>
-                  <h5 className="mb-0">Contact Details</h5>
-                </div>
-                <p className="mb-2">
-                  📞 <a href="tel:01142603232" className="text-dark">011 42603232</a>
-                </p>
-                <p className="mb-2">
-                  📧 <a href="mailto:info@promozionebranding.com" className="text-black" target="_blank" rel="noreferrer">
-                    info@promozionebranding.com
-                  </a>
-                </p>
-                <p className="mb-0">
-                  🌐 <a href="http://top10digitalmarketingagency.com" className="text-dark" target="_blank" rel="noreferrer">
-                    www.promotionbranding.com
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Google Map */}
-      <section className="pb-5">
-        <div className="container">
-          <div className="ratio ratio-16x9 rounded-4 overflow-hidden shadow">
-            <iframe
-              title="Promotion Branding Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.240745375424!2d77.04630667534233!3d28.622655275667386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d189cb5ce7d2f%3A0x7d4d9c0489cce9a4!2sPromotion%20Viral%20Branding!5e0!3m2!1sen!2sin!4v1718615975086!5m2!1sen!2sin"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
+
+{/* Company Offices Section */}
+<section className="py-5 bg-light office-locations">
+  <div className="container">
+    <div className="text-center mb-5">
+      <h2 className="fw-bold text-dark">📍 Our Office Locations</h2>
+      <p className="text-muted">Visit us at any of our branches for a personalized consultation.</p>
+    </div>
+    <div className="row g-4">
+      {/* Gurugram Office */}
+      <div className="col-md-6">
+        <div className="address-card p-4 bg-white shadow-sm rounded-4 h-100 border-start border-4 border-primary">
+          <h5 className="fw-bold text-primary mb-3">
+            <i className="bi bi-geo-alt-fill me-2"></i> Gurugram Office
+          </h5>
+          <p className="mb-2 text-muted">Huda Market, Sector-56<br />Gurugram, Haryana - 122002</p>
+          <p className="mb-1"><i className="bi bi-telephone me-2 text-success"></i> +011 42603232</p>
+          <p className="mb-0"><i className="bi bi-envelope me-2 text-danger"></i> info@promozionebranding.com</p>
         </div>
-      </section>
+      </div>
+
+      {/* Noida Office */}
+      <div className="col-md-6">
+        <div className="address-card p-4 bg-white shadow-sm rounded-4 h-100 border-start border-4 border-primary">
+          <h5 className="fw-bold text-primary mb-3">
+            <i className="bi bi-geo-alt-fill me-2"></i> Noida Office
+          </h5>
+          <p className="mb-2 text-muted">Tower C, Bhutani Alphatum<br />Sector 90, Noida (U.P.)</p>
+          <p className="mb-1"><i className="bi bi-telephone me-2 text-success"></i> +011 42603232</p>
+          <p className="mb-0"><i className="bi bi-envelope me-2 text-danger"></i> info@promozionebranding.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      
+  {/* Google Map */}
+<section className="pb-5">
+  <div className="container">
+    <div className="ratio ratio-16x9 rounded-4 overflow-hidden shadow">
+      <iframe
+        title="Promozione Branding Pvt. Ltd. – Delhi NCR"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.68863877533!2d77.1115529090143!3d28.698959175526813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa31cc1ea81ac353%3A0x219b4593ea52037f!2sPromozione%20Branding%20Pvt.%20Ltd%20%7C%20Best%20Digital%20Marketing%20Agency%20In%20Delhi%20NCR%20%7C%20Web%20Development%2CSEO%2C%20PPC%2C%20SMM%20Agency!5e0!3m2!1sen!2sin!4v1750832801634!5m2!1sen!2sin"
+        width="100%"
+        height="100%"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+
+
+
+
     </>
   );
 }

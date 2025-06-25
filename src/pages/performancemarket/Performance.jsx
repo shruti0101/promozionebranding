@@ -9,7 +9,7 @@ import bg from "../../assets/approach/wrapper-bg.png";
 import google from "../../assets/specialized/Google-AdWord-course.png"
 import Story from "../Story/Story"
 import Tiltcard from "../../TiltCardHome/Tiltcard";
-
+import { Link } from "react-router-dom";
 
 const cardItems = [
   {
@@ -173,7 +173,9 @@ const Performance = () => {
             ))}
           </div>
           <div className="text-center mt-5" data-aos="zoom-in">
+            <Link to="/Contact">
             <button className="nav-btn">Talk to Our Experts</button>
+            </Link>
           </div>
         </div>
       </section>
@@ -248,7 +250,9 @@ const Performance = () => {
           </div>
 
           <div className="text-center mt-5" data-aos="zoom-in">
+            <Link to="/Contact">
             <button className="nav-btn">Request Free Audit</button>
+            </Link>
           </div>
 
           {/* Why It Matters */}

@@ -179,11 +179,11 @@ const note=[
   return (
     <div>
       <Tiltcard
-        heading="Google Ads / PPC Services in India – Get Instant Leads & ROI-Driven Results
+        heading="Micosoft/Bing Ads  – Get Instant Leads & ROI-Driven Results
 
 
 "
-        paragraph="Thak gaye ho wait karke? With our Google Ads / PPC (Pay-Per-Click) Services, you can start getting qualified leads and real customers from Day 1.
+        paragraph="Thak gaye ho wait karke? With our Micosoft/Bing Ads Services, you can start getting qualified leads and real customers from Day 1.
 At Promozione Branding Pvt. Ltd., hum banate hain high-converting PPC campaigns jo sirf traffic nahi, results laate hain – fast!
 
 
@@ -205,34 +205,17 @@ At Promozione Branding Pvt. Ltd., hum banate hain high-converting PPC campaigns 
               <h2 className="php-heading">
                 What is{" "}
                 <span style={{ color: "#2548BD" }}>
-                  Google Ads / PPC Advertising?
+                 Micosoft / Bing Ads
                 </span>{" "}
               </h2>
               <p className="php-desc">
-                Google Ads ya PPC ek paid advertising method hai jahan aap
+               Micosoft/Bing Ads ek  advertising method hai jahan aap
                 Google search results, YouTube, Gmail, aur partner websites par
                 apni ad dikha sakte ho – aur sirf clicks ke liye pay karte ho.
                 Agar aapko chahiye: Quick visibility Instant ROI Fast lead
                 generation Toh Google Ads aapka shortcut hai success tak.
               </p>
-              <ul className="php-points">
-                {[
-                  "No Coding Required – Manage products, orders & customers with zero tech stress",
-                  "Mobile-First Design – 80% log phone se shopping karte hain, hum uska bhi dhyan rakhte hain",
-                  "Built-In SEO Features – Better visibility = more organic traffic",
-                  " Fast & Secure Checkout – Payment gateway se leke SSL tak – sab kuch included",
-                  " Scalable Infrastructure – Grow from 10 to 10,000 products without breaking",
-                ].map((item, index) => (
-                  <li
-                    data-aos="fade-left"
-                    data-aos-delay={index * 200}
-                    key={index}
-                  >
-                    <span className="icon">✅</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
+            
             </div>
 
             {/* Tilted SVG */}
@@ -253,13 +236,13 @@ At Promozione Branding Pvt. Ltd., hum banate hain high-converting PPC campaigns 
       <WhyChoose
         title="Why Choose Our 
 "
-        highlightedText="PPC Management Services?"
+        highlightedText="Micosoft/Bing Ads Services?"
         features={features}
-        ctaTitle="Ready to Launch Your Shopify Store?
+        ctaTitle="Ready to Launch Your Micosoft/Bing Ads?
 "
-        para="Hum PPC campaigns sirf run nahi karte – hum optimize karte hain har click ke value ke liye. From audience targeting to ad creatives, we manage everything end-to-end."
+        para="Hum Micosoft/Bing Ads sirf run nahi karte – hum optimize karte hain har click ke value ke liye. From audience targeting to ad creatives, we manage everything end-to-end."
         ctaSubtext="Let’s Run Ads That Work"
-        ctaParagraph="Google Ads mein paisa daalna easy hai... lekin paisa wapas lana strategy se hota hai.
+        ctaParagraph="Micosoft/Bing Ads Ads mein paisa daalna easy hai... lekin paisa wapas lana strategy se hota hai.
 Want results-driven PPC for your business? "
         ctaButtonText="Let’s Get Started"
       />
@@ -267,7 +250,7 @@ Want results-driven PPC for your business? "
 
       {/* our process */}
 <Process
-title="Our  Shopify Web Designing Process" image={funnel} data={funnelData} 
+title="Our Micosoft/Bing Ads Process" image={funnel} data={funnelData} 
 
 ></Process>
 
@@ -275,8 +258,8 @@ title="Our  Shopify Web Designing Process" image={funnel} data={funnelData}
 {/* our services */}
 
  <Service
-      title="Our  PPC Management Services includes:"
-      subtitle="Hum PPC campaigns sirf run nahi karte – hum optimize karte hain har click ke value ke liye. From audience targeting to ad creatives, we manage everything end-to-end.
+      title="Our Micosoft/Bing Ads Services includes:"
+      subtitle="Hum Micosoft/Bing Ads sirf run nahi karte – hum optimize karte hain har click ke value ke liye. From audience targeting to ad creatives, we manage everything end-to-end.
 
 
 

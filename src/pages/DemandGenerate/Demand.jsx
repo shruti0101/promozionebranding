@@ -21,32 +21,34 @@ const Demand = () => {
       });
     }, []);
   
-  const cardItems = [
-    {
-      title: "Content Marketing ",
-      description: "  Blogs, guides, videos that answer real customer.",
-    },
-    {
-      title: "Account-Based Marketing (ABM)",
-      description: "Targeted campaigns for high-value B2B clients",
-    },
-    {
-      title: "Email Marketing & Automation",
-      description: "Nurture leads smartly, without sounding robotic.",
-    },
-    {
-      title: "SEO & Paid Ads",
-      description: "Rank organically & run performance-driven PPC campaigns",
-    },
-    {
-      title: "LinkedIn Outreach Campaigns",
-      description: "Especially for B2B demand generation",
-    },
-    {
-      title: "Video Marketing & Webinars",
-      description: "Engage, educate, and excite",
-    },
-  ];
+const cardItems = [
+  {
+    title: "Advanced SEO Audits",
+    icon: "🧪", // Lab flask — symbolizes analysis/testing
+  },
+  {
+    title: "Scalable Technical SEO",
+    icon: "🛠️", // Tools — perfect for tech/configuration
+  },
+  {
+    title: "Keyword Strategy for Scale",
+    icon: "🎯", // Target — keyword precision and strategy
+  },
+  {
+    title: "Enterprise Content Strategy",
+    icon: "📊", // Bar chart — content strategy and performance
+  },
+  {
+    title: "Multi-location SEO",
+    icon: "🌍", // Globe — perfect for geographic/multi-location SEO
+  },
+  {
+    title: "White Hat Link Building at Scale",
+    icon: "🔗", // Link — directly represents link building
+  },
+];
+
+
 
   return (
     <>

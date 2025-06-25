@@ -10,6 +10,7 @@ import { FaCheckCircle } from "react-icons/fa";
 import { FaLaptopCode, FaPencilRuler, FaServer, FaPlug, FaMobileAlt, FaRocket } from "react-icons/fa";
 import Story from '../Story/Story';
 import ctaImage from "../../assets/formimg.webp"
+import { Link } from 'react-router-dom';
 import Form2 from '../../components/Home/Landingpage/Form2';
 
 
@@ -29,7 +30,7 @@ const steps = [
     desc: "Core PHP, Laravel, ya CodeIgniter ka use karke secure backend create karte hain."
   },
   {
-    icon: <FaPlug />, title: "Step 4: API Integrations & Dynamic Features",
+    icon: <FaPlug />, title: "Step 4: API Integrations",
     desc: "Need WhatsApp? Booking engine? CRM? Sab kuch connect karte hain seamlessly."
   },
   {
@@ -45,23 +46,23 @@ const steps = [
     
 const cardItems = [
   {
-    title: "100% Custom Code – No bloated plugins",
+    title: "100% Custom Code ",
     icon: "🧩", // Puzzle piece = modular, clean code
   },
   {
-    title: "Scalable Development – Grow with your traffic",
+    title: "Scalable Development ",
     icon: "📈", // Growth chart
   },
   {
-    title: "Ultra-Fast Delivery – On time, every time",
+    title: "Ultra-Fast Delivery ",
     icon: "🚀", // Rocket = speed
   },
   {
-    title: "Affordable Pricing – SME-friendly packages",
+    title: "Affordable Pricing ",
     icon: "💰", // Money bag = budget-friendly
   },
   {
-    title: "Reliable Support – Bugs ka full treatment",
+    title: "Reliable Support ",
     icon: "🛠️", // Wrench/hammer = fixing bugs
   },
   {
@@ -216,17 +217,22 @@ At Promozione Branding Pvt. Ltd., we build dynamic, SEO-friendly websites using 
       <p className="mb-4 text-secondary">
        Chahe aap startup ho ya growing brand – aapke liye ek strong PHP website game-changer ban sakti hai.
       </p>
-      <a
-        href="#contact"
-        className="btn btn-primary w-100 fw-semibold"
+   <Link to="/Contact" >
+<button  className="btn btn-primary w-100 fw-semibold"
         style={{
           borderRadius: "12px",
           fontSize: "16px",
           padding: "12px 20px",
-        }}
-      >
+        }}>
+
         🚀Boost Your Digital Karma
-      </a>
+</button>
+      
+   
+   </Link>
+     
+      
+      
     </div>
     <div
       className="position-absolute top-0 start-0 w-100 h-100"

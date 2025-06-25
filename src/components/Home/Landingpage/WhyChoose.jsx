@@ -29,9 +29,9 @@ const WhyChooseUs = () => {
       img: img1
     },
     {
-      label: "Qualified Leads",
-      end: 7,
-      note: "Days - No Waiting",
+      label: " Return Clients",
+      end: 10,
+      note: "Optimized Campaign Execution",
       bg: "#fff6eb",
       img: img2
     },

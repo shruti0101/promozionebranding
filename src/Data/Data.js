@@ -11,7 +11,7 @@ export const blogs = [
     id: 1,
     title: "CGI Ads: The Future of Brand Promotions",
     excerpt:
-      "In today’s fast-evolving digital world, brands are constantly searching for innovative ways to captivate their audience. One of the biggest game-changers in advertising is CGI Ads (Computer-Generated Imagery)...",
+      "In today’s fast-evolving digital world, brands are constantly searching for innovative ways to captivate their audience. One of the biggest game-changers in advertising is CGI Ads (Computer-Generated Imagery) ",
     content: `In today’s fast-evolving digital world, brands are constantly searching for innovative ways to captivate their audience. One of the biggest game-changers in advertising is __CGI Ads (Computer-Generated Imagery)__ a technology that is revolutionizing how brands tell their stories. From hyper-realistic visuals to __breathtaking animations__, CGI ads are redefining the future of __brand promotions__.
 
 But why is CGI advertising gaining so much traction? And how can brands leverage it to stay ahead of the competition? Let’s dive deep into the world of CGI ads, their advantages, and why they are the future of brand marketing.
@@ -80,7 +80,8 @@ Is your brand ready for the __next era of marketing? The future is CGI.__`,
       "Performance Marketing vs. Brand Marketing: Which One Drives More Growth?",
     excerpt:
       "In today’s highly competitive digital landscape, businesses face a crucial dilemma—should __they prioritize Performance Marketing or Brand Marketing?__ Both strategies play a significant role in shaping a company’s success, but they serve different purposes....",
-    content: `In today’s highly competitive digital landscape, businesses face a crucial dilemma—should they __prioritize Performance Marketing or Brand Marketing?__ Both strategies play a significant role in shaping a company’s success, but they serve different purposes. __Performance Marketing__ is all about immediate, measurable results, while Brand Marketing focuses on long-term brand equity and customer loyalty.
+    content: `In today’s highly competitive digital landsca
+    pe, businesses face a crucial dilemma—should they __prioritize Performance Marketing or Brand Marketing?__ Both strategies play a significant role in shaping a company’s success, but they serve different purposes. __Performance Marketing__ is all about immediate, measurable results, while Brand Marketing focuses on long-term brand equity and customer loyalty.
 
 So, which one is better for your business? __The truth is, you need both.__ But before diving into why a combination of the two is the ultimate growth strategy, let’s break down their differences, benefits, and how they can work together to achieve __maximum impact.__
 

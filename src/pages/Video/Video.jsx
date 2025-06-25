@@ -177,10 +177,9 @@ const services = [
 
 
 "
-        paragraph="Scroll karte-karte sab dekhta hai… par rukta sirf video par hai!
+        paragraph="Scroll karte-karte sab dekhta hai… par rukte sirf video par hai!
  That’s the power of video marketing – attention-grabbing, emotion-driving, and conversion-boosting content your brand needs in 2025.
-At Promozione Branding Pvt. Ltd., we create and promote high-impact videos that don’t just look pretty – they generate leads, build trust, and drive ROI.
-Let’s turn the camera on your brand's success.
+At Promozione Branding Pvt. Ltd., we create and promote high-impact videos they drive ROI
 
 
 
@@ -190,33 +189,48 @@ Let’s turn the camera on your brand's success.
       />
 
       {/* what is */}
+<section className="position-relative">
+  <div className="container p-3 p-md-4">
+    <div className="row align-items-center">
+      {/* Text Column */}
+      <div className="col-12 col-md-7  " data-aos="fade-up">
+        <h1 className="fw-bold display-6 display-md-4 text-center text-md-start px-2">
+          Why Video Marketing?
+        </h1>
+   
 
-      <section className="position-relative">
-        <div className="container p-4">
-          <div className="row">
-            {/* <img src={dots} alt="" className="position-absolute" /> */}
 
-            <div className="col-md-7 mt-5 pt-4" data-aos="fade up">
-              <h1 className="fw-bold fs-1 p-2 "> Why Video Marketing?</h1>
-              <p className="text-black p-2" style={{ fontSize: "1.2rem" }}>
-                92% of internet users watch videos online Brands using video
-                grow revenue 49% faster Video content boosts conversions by up
-                to 80% It builds emotional connection faster than any other
-                format People retain 95% of a message when seen in a video (vs
-                10% in text)
-              </p>
-              <p className="fw-bold">
-                {" "}
-                If you’re not doing video, you’re invisible.
-              </p>
-            </div>
+         <ul className="php-points">
+                {[
+                  " 92% of internet users watch videos online.",
+                  "Brands using video grow revenue 49% faster.",
+                  "Video content boosts conversions by up to 80%.",
+                  "It builds emotional connection faster than any other format.",
+                  "People retain 90% of a message when seen in a video (vs 10% in text)."
+                ].map((item, index) => (
+                  <li
+                    data-aos="fade-left"
+                    data-aos-delay={index * 200}
+                    key={index}
+                  >
+                    <span className="icon">✅</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+        <p className="fw-bold text-center text-md-start px-2">
+          If you’re not doing video, you’re invisible.
+        </p>
+      </div>
 
-            <div className="col-md-5" data-aos="zoom-in">
-              <img src={video} alt="social-ads" className="img-fluid" />
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Image Column */}
+      <div className="col-12 col-md-5  " data-aos="zoom-in">
+        <img src={video} alt="social-ads" className="img-fluid " />
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
 

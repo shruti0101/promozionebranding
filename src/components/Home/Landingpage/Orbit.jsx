@@ -3,11 +3,17 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import img1 from "../../../assets/share.png"
-import img2 from "../../../assets/share2.png";
+import img1 from "../../../assets/orbit/facebook (2).png"
+import img2 from "../../../assets/orbit/youtube (1).png";
+import img3 from "../../../assets/orbit/instagram (1).png";
+import img4 from "../../../assets/orbit/semrush.png";
+import img5 from "../../../assets/orbit/business.png";
+import img6 from "../../../assets/orbit/ahrefs.webp";
+import img7 from "../../../assets/orbit/console.webp";
+// import img8 from "../../../assets/orbit/";
 import logo from "../../../assets/logoo.jpg";
 import bgabout from "../../../assets/bg/bg-wavedown.png";
-import "../../../styles/Orbit.css";
+import   "../../../styles/Orbit.css";
 
 const Orbit = () => {
   useEffect(() => {
@@ -99,27 +105,117 @@ const Orbit = () => {
             </div>
 
             {/* Orbit Rings */}
-            {[1, 2, 3, 4].map((i) => (
-              <div
-                key={i}
-                className={`orbit-container orbit-${i}`}
-                data-aos="fade-up"
-                data-aos-delay={300 + i * 150}
-              >
-                <div className="orbit">
-                  <div className={`orbit-icon orbit-icon-${i}`}>
-                    <img
-                      src={i % 2 === 0 ? img1 : img2}
-                      alt={`icon-${i}`}
-                      className="rounded-circle shadow"
-                      width="45"
-                      height="45"
-                    />
-                  </div>
-                  <div className={`orbit-dot orbit-dot-${i}`}></div>
+            {/* Now 4 unique images: img1, img2, img3, img4 */}
+            <div className="orbit-container orbit-1" data-aos="fade-up" data-aos-delay={450}>
+              <div className="orbit">
+                <div className="orbit-icon orbit-icon-1">
+                  <img
+                    src={img1}
+                    alt="icon-1"
+                    className="rounded-circle shadow"
+                    width="45"
+                    height="45"
+                  />
                 </div>
+                <div className="orbit-dot orbit-dot-1"></div>
               </div>
-            ))}
+            </div>
+            <div className="orbit-container orbit-2" data-aos="fade-up" data-aos-delay={600}>
+              <div className="orbit">
+                <div className="orbit-icon orbit-icon-2">
+                  <img
+                  
+                    src={img2}
+                    alt="icon-2"
+                    className="rounded-circle shadow"
+                    width="45"
+                    height="45"
+                  />
+                </div>
+                <div className="orbit-dot orbit-dot-2"></div>
+              </div>
+            </div>
+            <div className="orbit-container orbit-3" data-aos="fade-up" data-aos-delay={750}>
+              <div className="orbit">
+                <div className="orbit-icon orbit-icon-3">
+                  <img
+                    src={img3}
+                    alt="icon-3"
+                    className="rounded-circle shadow"
+                    width="45"
+                    height="45"
+                  />
+                </div>
+                <div className="orbit-dot orbit-dot-3"></div>
+              </div>
+            </div>
+            <div className="orbit-container orbit-4" data-aos="fade-up" data-aos-delay={900}>
+              <div className="orbit">
+                <div className="orbit-icon orbit-icon-4">
+                  <img
+                    src={img4}
+                    alt="icon-4"
+                    className="rounded-circle shadow"
+                    width="45"
+                    height="45"
+                  />
+                </div>
+                <div className="orbit-dot orbit-dot-4"></div>
+              </div>
+            </div>
+
+
+
+                <div className="orbit-container orbit-4" data-aos="fade-up" data-aos-delay={900}>
+              <div className="orbit">
+                <div className="orbit-icon orbit-icon-5">
+                  <img
+                    src={img5}
+                    alt="icon-4"
+                    className="rounded-circle shadow"
+                    width="45"
+                    height="45"
+                  />
+                </div>
+                <div className="orbit-dot orbit-dot-4"></div>
+              </div>
+            </div>
+
+
+            {/* 5th icon - Ahrefs */}
+<div className="orbit-container orbit-3" data-aos="fade-up" data-aos-delay={1050}>
+  <div className="orbit">
+    <div className="orbit-icon orbit-icon-6">
+      <img
+        src={img6}
+        alt="icon-6"
+        className="rounded-circle shadow"
+        width="45"
+        height="45"
+      />
+    </div>
+    <div className="orbit-dot orbit-dot-5"></div>
+  </div>
+</div>
+
+{/* 6th icon - Console */}
+<div className="orbit-container orbit-2" data-aos="fade-up" data-aos-delay={1200}>
+  <div className="orbit">
+    <div className="orbit-icon orbit-icon-7">
+      <img
+        src={img7}
+        alt="icon-7"
+        className="rounded-circle shadow"
+        width="45"
+        height="45"
+      />
+    </div>
+    <div className="orbit-dot orbit-dot-6"></div>
+  </div>
+</div>
+
+
+            
           </div>
         </div>
       </div>

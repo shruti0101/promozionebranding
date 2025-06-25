@@ -1,13 +1,16 @@
-.section-bg{
-    background-color: #E5F1FC;
-    padding: 35px;
+/* === SECTION BACKGROUND === */
+.section-bg {
+  background-color: #E5F1FC;
+  padding: 35px;
 }
+
+/* === ICON HOVER === */
 .lead-icon-box:hover img {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
 }
 
-
+/* === TIMELINE BASE STYLES === */
 .leadgen-timeline {
   position: relative;
   padding: 2rem 0;
@@ -27,6 +30,7 @@
   z-index: 1;
 }
 
+/* === EACH STEP CONTAINER === */
 .leadgen-step {
   position: relative;
   width: 50%;
@@ -48,6 +52,7 @@
   transform: translateY(-5px);
 }
 
+/* === POSITIONING LEFT/RIGHT === */
 .leadgen-left {
   left: 0;
   text-align: right;
@@ -58,6 +63,7 @@
   text-align: left;
 }
 
+/* === STEP CIRCLE ICON === */
 .leadgen-icon {
   position: absolute;
   top: 20px;
@@ -74,6 +80,7 @@
   font-size: 18px;
 }
 
+/* === ICON LEFT/RIGHT === */
 .leadgen-left .leadgen-icon {
   right: -20px;
 }
@@ -82,28 +89,37 @@
   left: -20px;
 }
 
+/* === MOBILE RESPONSIVENESS FIX === */
 @media (max-width: 768px) {
   .leadgen-step,
   .leadgen-left,
   .leadgen-right {
+    width: 100% !important;
     left: 0 !important;
-    width: 100%;
     text-align: left;
+    padding-left: 2.5rem;
   }
 
   .leadgen-timeline::before {
-    left: 20px;
+    left: 28px; /* Aligns with icons */
+    transform: none;
   }
 
   .leadgen-icon {
-    left: -10px !important;
+    position: absolute;
+    top: 0;
+    left: -69px !important;
     right: auto !important;
+    margin-top: 10px;
+    transform: translateY(0);
   }
 
   .leadgen-box {
-    margin-left: 40px;
+    margin-left: 2.5rem;
   }
 }
+
+/* === CARD ALTERNATIVE === */
 .leadgen-card {
   background: #fff;
   border-radius: 1rem;

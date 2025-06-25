@@ -1,6 +1,6 @@
 .navbar {
-  position: sticky;
-  top: 0; /* Height of Topbar */
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100%;
   z-index: 9999;
@@ -227,4 +227,10 @@
   }
 
  
+}
+
+@media(max-width:576px){
+  .navbar{
+    position: sticky;
+  }
 }

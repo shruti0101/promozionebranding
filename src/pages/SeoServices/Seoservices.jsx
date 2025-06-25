@@ -22,32 +22,30 @@ import "aos/dist/aos.css";
 const cardItems = [
   {
     title: "On-Page SEO",
-    description:
-      " Optimizing website content, meta tags, and internal linking.",
+    icon: "📝", // Document/edit – content and meta optimizations
   },
   {
     title: "Off-Page SEO",
-    description: "High-quality backlink building to improve domain authority.",
+    icon: "🔗", // Link – backlinks and external signals
   },
   {
     title: "Technical SEO",
-    description:
-      "Website speed optimization, mobile responsiveness, and website structure.",
+    icon: "⚙️", // Gear – performance and infrastructure
   },
   {
-    title: "eCommerce SEO,Local SEO ",
-    description:
-      "Creative posts that boost brand awareness Boosting your local business presence on Google Maps and search.",
+    title: "eCommerce SEO, Local SEO",
+    icon: "🛒📍", // Cart + location pin – eCommerce and local visibility
   },
   {
     title: "SEO Audit & Reporting",
-    description: "Comprehensive website SEO analysis.",
+    icon: "📊", // Bar chart – audit and tracking performance
   },
   {
     title: "Competitor Analysis",
-    description: "Tracking and outperforming competitors.",
+    icon: "🕵️‍♂️", // Detective – spying/analyzing competitors
   },
 ];
+
 const Seoservices = () => {
     useEffect(() => {
       AOS.init({
@@ -78,7 +76,7 @@ We don't just promise results – we guarantee them in 6 months, or you get your
             </div>
             <div className="col-md-7">
               <h1 className="fw-bold fs-1 p-5 "> What Are SEO Services?</h1>
-              <p className="text-black " style={{ fontSize: "1.2rem" }}>
+              <p className="text-black " style={{ fontSize: "1.1rem" }}>
                 Search Engine Optimization (SEO) is the process of optimizing
                 your website to improve its visibility on search engines like
                 Google. It helps businesses increase their organic traffic,
