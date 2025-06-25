@@ -53,6 +53,7 @@ import Popup from "./components/POPUP/Popup";
 import B2bweb from "./pages/B2Bwebdev/B2bweb"
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Whatsapp from "./components/Whatsapp";
 
 
 
@@ -72,6 +73,7 @@ function App() {
     <div>
        <ToastContainer />
       <ScrollToTopOnRouteChange />
+      <Whatsapp></Whatsapp>
        <Social />
        <Popup />
       <Routes>
