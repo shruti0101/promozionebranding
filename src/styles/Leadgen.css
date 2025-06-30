@@ -64,3 +64,21 @@
     left: -40px;
   }
 }
+
+.leadgen-points .check-icon {
+  width: 22px;
+  height: 22px;
+  background: linear-gradient(135deg, #004AAD, #00A9FF);
+  flex-shrink: 0;
+  font-size: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.leadgen-points li:hover .check-icon {
+  transform: scale(1.1);
+}
+
+.leadgen-points span {
+  line-height: 1.4;
+}

@@ -3,8 +3,8 @@
   color: white;
   padding: 40px 20px;
   font-family: "Mona Sans", sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 10px;
+  /* line-height: 1.6; */
 }
 
 .footer h3 {
@@ -12,8 +12,8 @@
   border-bottom: 3px solid #2548BD;
   display: inline-block;
   padding-bottom: 5px;
-  margin-bottom: 15px;
-  font-size: 18px;
+  /* margin-bottom: 15px; */
+  font-size: 16px;
 }
 
 .footer ul {
@@ -22,7 +22,7 @@
 }
 
 .footer ul li {
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
   font-size: 14px;
 }
 
@@ -45,8 +45,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 30px;
-  margin-bottom: 40px;
+  /* gap: 30px; */
+  /* margin-bottom: 40px; */
 }
 
 .footer-column {
@@ -58,6 +58,16 @@
   .footer-column {
     flex: 1 1 45%;
   }
+
+}
+
+@media (max-width:576px){
+.footer h3{
+  margin-bottom: 12px;
+}
+.footer ul li{
+  margin-bottom: 14px;
+}
 }
 
 @media (min-width: 992px) {
@@ -74,6 +84,8 @@
   }
 }
 
+/*  */
+
 .footer-bottom {
   border-top: 2px solid #2548BD;
   margin-top: 40px;
@@ -81,6 +93,7 @@
   text-align: center;
   font-size: 14px;
 }
+
 
 /* Contact Info */
 .get-in-touch {
@@ -126,6 +139,8 @@
   .contact-box {
     flex: 1 1 30%;
   }
+
+  
 }
 
 /* Dropdown Toggle Styling */

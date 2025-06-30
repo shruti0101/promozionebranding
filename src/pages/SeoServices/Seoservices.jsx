@@ -58,7 +58,7 @@ const Seoservices = () => {
   return (
     <>
       <Tiltcard
-        heading="Best SEO Services in India – 100% Guaranteed Google Ranking with Promozione Branding Pvt. Ltd."
+        heading="Best AI SEO Services in India –  6 Month Guaranteed Google Ranking with Promozione Branding Pvt. Ltd."
         paragraph="Struggling to rank your website on Google? At Promozione Branding Pvt. Ltd., we offer 100% Guaranteed SEO Services in India that help your business rank higher, drive traffic, and generate qualified leads.
 We don't just promise results – we guarantee them in 6 months, or you get your money back!"
         cardItems={cardItems}
@@ -75,7 +75,7 @@ We don't just promise results – we guarantee them in 6 months, or you get your
               <img src={aiseo} alt="social-ads" className="img-fluid" />
             </div>
             <div className="col-md-7">
-              <h1 className="fw-bold fs-1 p-5 "> What Are SEO Services?</h1>
+              <h1 className="fw-bold fs-1 p-5 "> What Are AI SEO Services?</h1>
               <p className="text-black " style={{ fontSize: "1.1rem" }}>
                 Search Engine Optimization (SEO) is the process of optimizing
                 your website to improve its visibility on search engines like
@@ -97,7 +97,7 @@ We don't just promise results – we guarantee them in 6 months, or you get your
           <Row className="justify-content-center text-center mb-5">
             <Col lg={10}>
               <h3 className="strategy-title" style={{ color: "#2548BD" }}>
-                How Our <span className="text-black">SEO Strategy</span> Works
+                How Our <span className="text-black">AI SEO Strategy</span> Works
               </h3>
               <p className="strategy-subtitle">
                 A well-defined and results-driven process to turn your brand
@@ -188,7 +188,7 @@ We don't just promise results – we guarantee them in 6 months, or you get your
           <Row className="justify-content-center text-center mb-5">
             <Col lg={10}>
               <h3 className="strategy-title" style={{ color: "#2548BD" }}>
-                Why <span className="text-black">Seo Strategies</span>{" "}
+                Why <span className="text-black">AI Seo Strategies</span>{" "}
                 Matters for Your Business
               </h3>
               <p className="strategy-subtitle">

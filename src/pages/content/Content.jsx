@@ -48,7 +48,6 @@ const cardItems = [
   },
 ];
 
-
 const Content = () => {
   useEffect(() => {
     AOS.init({
@@ -73,31 +72,45 @@ const Content = () => {
 
       {/* section 2 */}
 
-      <div className="container-fluid mt-5">
+      <div className="container mt-5">
         <div className="row">
           <div className="col-md-5">
             <img
               src={content}
-              className="img-fluid rounded mb-4"
+              className="img-fluid rounded mb-4 "
               alt="content-marketing"
             />
           </div>
 
-          <div className="col-md-7 mt-5 pt-5">
+          <div className="col-md-7 ">
             <h1>
               {" "}
-              What is <span className="text-black">
-                Content Marketing?
-              </span>{" "}
+              <span className="text-black">What is</span> Content Marketing
             </h1>
 
-            <p className=" pt-4 lh-lead fs-5">
+            <p className="   " style={{ fontSize: "1.1rem" }}>
               Content Marketing is the art of telling your brand story in a way
-              that drives engagement, trust, and conversions. Whether it’s blog
-              articles, social media posts, or video content – great content
-              makes your brand stand out in a crowded digital landscape. At
-              Promozione, we blend creativity with data-driven strategies to
-              create content that delivers measurable results.
+              that{" "}
+              <strong>
+                sparks engagement, builds trust, and drives meaningful
+                conversions. In today’s noisy digital world, content isn’t just
+                king—it’s the entire kingdom.
+              </strong>
+              Whether it’s informative blog articles, compelling social media
+              posts, attention-grabbing videos, or interactive infographics,
+              great content makes your brand stand out and stay memorable. It’s
+              not just about words and visuals — it’s about crafting experiences
+              that resonate with your audience. At{" "}
+              <strong>
+                {" "}
+                Promozione Branding, we don’t just create content; we create
+                impact.
+              </strong>{" "}
+              By blending creativity with data-backed insights, our team ensures
+              every piece of content is aligned with your business goals and
+              speaks directly to your audience. From brand awareness to lead
+              generation, we deliver content that not only tells your story —
+              but drives results you can measure.
             </p>
           </div>
         </div>
@@ -215,7 +228,7 @@ const Content = () => {
           </div>
           <div className="text-center mt-5 pb-4" data-aos="zoom-in">
             <Link to="/Contact">
-            <button className="nav-btn">Talk to Our Experts</button>
+              <button className="nav-btn">Talk to Our Experts</button>
             </Link>
           </div>
         </div>

@@ -132,10 +132,10 @@ const Performance = () => {
                   <img
                     src={item.icon}
                     alt={item.title}
-                    className="mb-3"
-                    style={{ width: "50px", height: "50px" }}
+                    className="mb-2"
+                    style={{ width: "36px", height: "36px" }}
                   />
-                  <h5 className="fw-bold mb-2">{item.title}</h5>
+                  <h5 className="fw-semibold mb-2">{item.title}</h5>
                   <p className="text-muted small">{item.desc}</p>
                 </div>
               </div>

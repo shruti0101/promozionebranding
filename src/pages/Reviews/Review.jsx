@@ -378,9 +378,9 @@ tech: [
               </h1>
               <p className="text-black p-2 mx-auto">
                 Curious about what it’s like to work with Promozione Branding?
-                Explore our more than 1,100 client testimonials and experience
+                Explore our more than 100+ client testimonials and experience
                 the impact of Digital Marketing That Drives Revenue. Hear from
-                clients that partnered with WebFX for search engine optimization
+                clients that partnered with Promozione Branding for search engine optimization
                 (SEO) services, pay-per-click (PPC) advertising services, web
                 design services, social media services, and other digital
                 marketing services to learn what it’s like to have our team on

@@ -71,7 +71,7 @@ const Navbar = () => {
       name: "website",
       label: "Website Development",
       items: [
-       
+             ["B2B Web Development", "/services/b2bdev"],
         ["Custom Web Development", "/services/custom"],
         ["PHP Website Development", "/services/development"],
         ["CMS Web Development", "/services/marketing"],
@@ -81,7 +81,7 @@ const Navbar = () => {
         ["Website Redesigning", "/services/redesign"],
         ["Landing Page Design", "/services/landing"],
         ["Web Application Development", "/services/webapp"],
-       ["B2B Web Development", "/services/b2bdev"],
+ 
         ["WordPress Website", "/services/design"],
       ],
     },
@@ -89,14 +89,15 @@ const Navbar = () => {
       name: "revenue",
       label: "Revenue Marketing & CRO",
       items: [
-        ["Performance Marketing", "/services/performance"],
+       
+          ["B2B Lead Generation", "/services/b2b-leads"],
         ["B2B Marketing", "/services/b2b"],
         // ["Lead Generations", "/services/leads"],
         ["AI Performance Marketing Services", "/services/ai-performance"],
         ["Ads Management", "/services/ads"],
         ["Internet Marketing", "/services/internet"],
         ["Demand Generation", "/services/demand"],
-        ["B2B Lead Generation", "/services/b2b-leads"],
+       ["Performance Marketing", "/services/performance"],
         ["D2C Marketing", "/services/d2c"],
           ["B2C Marketing", "/services/b2c-marketing"]
       ],

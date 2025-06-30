@@ -242,7 +242,7 @@
 
 
 .whatwedo-section {
-  padding: 4rem 2rem;
+  padding: 2rem ;
   background: linear-gradient(to bottom, #f1f5fa, #ffffff);
   font-family: 'Arial', sans-serif;
   color: #00448F;
@@ -269,6 +269,7 @@
   text-decoration: none;
   cursor: pointer;
   transition: color 0.3s ease;
+  border: 2px solid #00448F;
 }
 
 .hover-link .arrow-icon {

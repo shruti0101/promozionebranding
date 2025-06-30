@@ -144,7 +144,7 @@ export default function ContactSection() {
     </div>
     <div className="row g-4">
       {/* Gurugram Office */}
-      <div className="col-md-6">
+      <div className="col-md-4">
         <div className="address-card p-4 bg-white shadow-sm rounded-4 h-100 border-start border-4 border-primary">
           <h5 className="fw-bold text-primary mb-3">
             <i className="bi bi-geo-alt-fill me-2"></i> Gurugram Office
@@ -156,12 +156,25 @@ export default function ContactSection() {
       </div>
 
       {/* Noida Office */}
-      <div className="col-md-6">
+      <div className="col-md-4">
         <div className="address-card p-4 bg-white shadow-sm rounded-4 h-100 border-start border-4 border-primary">
           <h5 className="fw-bold text-primary mb-3">
             <i className="bi bi-geo-alt-fill me-2"></i> Noida Office
           </h5>
           <p className="mb-2 text-muted">Tower C, Bhutani Alphatum<br />Sector 90, Noida (U.P.)</p>
+          <p className="mb-1"><i className="bi bi-telephone me-2 text-success"></i> +011 42603232</p>
+          <p className="mb-0"><i className="bi bi-envelope me-2 text-danger"></i> info@promozionebranding.com</p>
+        </div>
+      </div>
+
+
+{/* delhi office */}
+         <div className="col-md-4">
+        <div className="address-card p-4 bg-white shadow-sm rounded-4 h-100 border-start border-4 border-primary">
+          <h5 className="fw-bold text-primary mb-3">
+            <i className="bi bi-geo-alt-fill me-2"></i> Delhi Office
+          </h5>
+          <p className="mb-2 text-muted">Vardhman Plaza, <br />Sector-3, Rohini, New Delhi</p>
           <p className="mb-1"><i className="bi bi-telephone me-2 text-success"></i> +011 42603232</p>
           <p className="mb-0"><i className="bi bi-envelope me-2 text-danger"></i> info@promozionebranding.com</p>
         </div>

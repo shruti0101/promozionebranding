@@ -2,7 +2,7 @@ import React from "react";
 import Tiltcard from "../../TiltCardHome/Tiltcard";
 import demand from "../../assets/services/demand.png";
 
-
+import { Link } from "react-router-dom";
 import './Demand.css'
 import { FaCheckCircle } from "react-icons/fa";
 import Story from "../Story/Story";
@@ -279,9 +279,13 @@ At Promozione Branding Pvt. Ltd.
               </div>
             ))}
           </div>
-          <div className="text-center mt-5" data-aos="zoom-in">
+
+          <Link to="/Contact">
+           <div className="text-center mt-5" data-aos="zoom-in">
             <button className="nav-btn">Talk to Our Experts</button>
           </div>
+          </Link>
+         
         </div>
       </section>
 

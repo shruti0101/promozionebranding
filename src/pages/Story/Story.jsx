@@ -19,7 +19,12 @@ const Story = () => {
               <span className="highlight">Our Success Stories</span>
             </h3>
             <p className="section-text">
-              We’ve helped businesses in <span className="bold">Delhi NCR, Gurgaon, Noida</span> and across India achieve <span className="bold">100% growth in organic traffic</span> and generate <span className="bold">qualified leads</span> through content marketing.
+              We’ve helped businesses in{" "}
+              <span className="bold">Delhi NCR, Gurgaon, Noida</span> and across
+              India achieve{" "}
+              <span className="bold">100% growth in organic traffic</span> and
+              generate <span className="bold">qualified leads</span> through
+              content marketing.
             </p>
           </Col>
         </Row>
@@ -33,12 +38,13 @@ const Story = () => {
           </Col>
           <Col xs={12} sm={6} md={3} className="stat mb-4">
             <h2 className="stat-number">
-              {inView && <CountUp end={30} duration={2} suffix="+" />}
+              {inView && <CountUp end={10} duration={2} suffix="X" />}
             </h2>
-            <p className="stat-label">Monthly Qualified Leads</p>
+            <p className="stat-label">Optimized Campaign Execution</p>
           </Col>
           <Col xs={12} sm={6} md={3} className="stat mb-4">
             <h2 className="stat-number">
+              
               {inView && <CountUp end={4} duration={2} suffix="X" />}
             </h2>
             <p className="stat-label">Content ROI</p>

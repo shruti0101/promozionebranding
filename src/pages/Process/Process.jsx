@@ -25,10 +25,10 @@ const Process = ({ title, image, data }) => {
             <img
               src={image}
               alt="Funnel"
-              className="img-fluid d-block mx-auto"
+              className="img-fluid  d-block mx-auto"
               style={{
                 maxWidth: "100%",
-                maxHeight: "650px", // ↓ adjust this value as needed
+                maxHeight: "600px", // ↓ adjust this value as needed
                 objectFit: "contain",
               }}
             />

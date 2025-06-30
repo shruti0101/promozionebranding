@@ -44,55 +44,77 @@ const Footer = () => {
     <section className="footer">
       <div className="container-fluid">
         <div className="footer-top">
-          {renderDropdown("company", "Company Profile", [
-            { label: "Our Approach", to: "/profile/OurApproach" },
-            { label: "Who We Are", to: "/profile/whoweare" },
-            { label: "Blogs", to: "/profile/blogs" },
-            { label: "Client Reviews", to: "/profile/reviews" },
-            { label: "Career", to: "/profile/career" },
-             { label: "Contact", to: "/Contact" },
-          ])}
 
-          {renderDropdown("web", "Website Development", [
-            { label: "WordPress Website", to: "/services/design" },
+
+       {renderDropdown("web", "Website Development", [
             { label: "Custom Web Development", to: "/services/custom" },
             { label: "PHP Website", to: "/services/development" },
             { label: "CMS Development", to: "/services/marketing" },
             { label: "React Development", to: "/services/mern" },
             { label: "Shopify Design", to: "/services/ecommerce" },
             { label: "SEO Web Design", to: "/services/seo" },
+            { label: "Website Redesigning", to: "/services/redesign" },
+            { label: "Landing Page Design", to: "/services/landing" },
+
+            { label: "Web Application Development ", to: "/services/webapp" },
+            { label: "B2B Website Development ", to: "/services/b2bdev" },
+
+            { label: "WordPress Website", to: "/services/design" },
           ])}
 
-          {renderDropdown("revenue", "Revenue Marketing", [
+
+    {renderDropdown("revenue", "Revenue Marketing", [
             { label: "Performance Marketing", to: "/services/performance" },
             { label: "B2B Marketing", to: "/services/b2b" },
+              { label: "AI Performance Marketing", to: "/services/ai-performance" },
             { label: "Lead Generation", to: "/services/leads" },
-            { label: "AI Marketing", to: "/services/ai-performance" },
-            { label: "Ads Management", to: "/services/ads" },
+             { label: "Ads Management", to: "/services/ads" },
+            { label: "B2B Lead Generation", to: "/services/b2b-leads" },
+            { label: "B2C Marketing ", to: "/services/b2c-marketing" },
+            { label: "D2C Marketing ", to: "/services/d2c" },
             { label: "Internet Marketing", to: "/services/internet" },
             { label: "Demand Generation", to: "/services/demand" },
           ])}
 
+
+
+   
           {renderDropdown("digital", "Digital Marketing", [
             { label: "Content Marketing", to: "/services/content" },
             { label: "CRM Optimization", to: "/services/crm" },
             { label: "Email Marketing", to: "/services/email" },
             { label: "Video Marketing", to: "/services/video" },
-            { label: "Meta Ads", to: "/services/smm" },
-            { label: "Google Ads", to: "/services/google" },
-            { label: "Google AdWords", to: "/services/google-ads" },
+            { label: "Micosoft/Bing Ads", to: "/services/Bing-ads" },
+                  { label: "Google AdWords", to: "/services/google-ads" },
+            { label: "SMM", to: "/services/smm" },
+       
+             { label: "SMO", to: "/services/smo" },
+            
           ])}
+
+          {renderDropdown("company", "Company Profile", [
+            { label: "Our Approach", to: "/profile/OurApproach" },
+            { label: "Who We Are", to: "/profile/whoweare" },
+            { label: "Blogs", to: "/profile/blogs" },
+            { label: "Client Reviews", to: "/profile/reviews" },
+            { label: "Career", to: "/profile/career" },
+            { label: "Contact", to: "/Contact" },
+          ])}
+
+   
+
+     
 
           {renderDropdown("seo", "Guaranteed SEO", [
             { label: "AI Digital Marketing", to: "/services/ai-digital" },
-            { label: "Digital SEO Services", to: "/services/digital-seo" },
+            { label: "Digital Marketing Services", to: "/services/digital-seo" },
             { label: "Enterprise SEO", to: "/services/enterprise-seo" },
             { label: "AI SEO Services", to: "/services/ai-seo" },
           ])}
         </div>
 
         {/* Contact Info */}
-        <div className="get-in-touch">
+        <div className="get-in-touch footer-bottom1">
           <div className="contact-box">
             <FaPhone className="contact-icon" />
             <div>

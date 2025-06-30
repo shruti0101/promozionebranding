@@ -15,10 +15,10 @@ const cards = [
       <>
         Helping businesses transform their digital presence through:
         <ul>
-          <li>SEO Services – Rank #1 on Google in 6 Months</li>
-          <li>CGI Ads – Build Realistic and Attention-Grabbing Ads</li>
+          <li><strong> SEO Services – Rank #1 on Google in 6 Months</strong></li>
+          <li> <strong>CGI Ads</strong>  – Build Realistic and Attention-Grabbing Ads</li>
           <li>Performance Marketing – Scale Your Business with Paid Ads</li>
-          <li>Website Development – Build Modern & Conversion‑Based Websites</li>
+          <li> <strong>Website Development</strong>  – Build Modern & Conversion‑Based Websites</li>
         </ul>
       </>
     )
@@ -40,12 +40,12 @@ const cards = [
       <>
         <p>
           <strong>To become India's #1 Growth Partner for SMEs</strong>, delivering digital
-          excellence with 100% guaranteed business growth in Delhi NCR,
-          Gurugram, Noida, Faridabad, and Ghaziabad.
+          excellence with <strong>100% guaranteed business growth in Delhi NCR,
+          Gurugram, Noida, Faridabad, and Ghaziabad.</strong> 
         </p>
         <p>
           Our vision is not just about offering services – it's about becoming
-          a name that SMEs trust for consistent and guaranteed digital success.
+          a name that SMEs trust for consistent and <strong>guaranteed digital success.</strong> 
         </p>
       </>
     )

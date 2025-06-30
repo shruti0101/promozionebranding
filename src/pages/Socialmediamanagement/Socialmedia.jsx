@@ -50,16 +50,16 @@ const Socialmedia = () => {
 
 
 
-  const points = [
-  "100% Guaranteed Social Media Growth in 6 Months",
-  "Custom Content Strategy for Every Business",
-  "Dedicated Social Media Manager",
-  "Creative Content Creation (Graphics + Videos)",
-  "Performance Tracking & Reporting",
-  "Audience Engagement & Community Building",
-  "Affordable Packages for SMEs",
-  "We don't just post – we create content that drives action!",
-];
+//   const points = [
+//   "100% Guaranteed Social Media Growth in 6 Months",
+//   "Custom Content Strategy for Every Business",
+//   "Dedicated Social Media Manager",
+//   "Creative Content Creation (Graphics + Videos)",
+//   "Performance Tracking & Reporting",
+//   "Audience Engagement & Community Building",
+//   "Affordable Packages for SMEs",
+//   "We don't just post – we create content that drives action!",
+// ];
 const services = [
   {
     icon: "bi-bullseye",
@@ -104,28 +104,53 @@ const services = [
 ];
 
 
-const funnelData = [
+    const funnelData = [
   {
- 
-    title: "Drive website traffic",
-    services: ["SEO Services", "Local SEO Services", "Ecommerce SEO Services", "Content Marketing Services"],
+    title: "Step 1: Business & Goal Understanding",
+    services: [
+      " We understand your business goals, target audience, and brand voice.",
+  
+    ],
+    color: "#2563eb",
   },
   {
-   
-    title: "Create and manage powerful ad campaigns",
-    services: ["PPC Management Services", "Social Advertising Services", "Programmatic Advertising Services", "Geofencing Advertising Services"],
+    title: "Step 2: Custom Social Media Strategy",
+    services: [
+      " We craft a personalized social media strategy tailored to your business niche.",
+    ],
+    color: "#16a34a",
   },
   {
-    
-    title: "Collect, analyze, and deploy marketing data",
-    services: ["RevenueCloudFX", "Nutshell", "Website Call Tracking", "Lead Management"],
+    title: "Step 3: Content Creation & Scheduling",
+    services: [
+      "  Our creative team designs engaging graphics, videos, and captions.",
+    ],
+    color: "#f59e0b",
   },
   {
-   
-    title: "Improve brand messaging and conversion",
-    services: ["Website Design Services", "CRO Services", "Landing Page Design Services", "Social Media Management Services"],
+    title: "Step 4: Community Engagement",
+    services: [
+      " We interact with your followers, respond to comments, and build a loyal community.",
+    ],
+    color: "#ec4899",
+  },
+  {
+    title: "Step 5: Performance Tracking & Reporting",
+    services: [
+      "Track your social media growth with our weekly and monthly performance reports.",
+    ],
+    color: "#0ea5e9",
+  },
+
+   {
+    title: "Step 6: Guaranteed Social Media Growth in 6 Months",
+    services: [
+      " we deliver guaranteed growth.",
+    ],
+    color: "#222",
   },
 ];
+
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
 

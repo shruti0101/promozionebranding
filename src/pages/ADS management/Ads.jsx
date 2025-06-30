@@ -70,7 +70,6 @@ const funnelData = [
     title: "Step 2: Keyword & Competitor Research",
     services: [
       "Jo log aapka product Google pe search kar rahe hain, unko identify aur target karte hain.",
-      "Competitors kya kar rahe hain, unke ads ka breakdown bhi milta hai.",
       
     ],
     color: "#16a34a", // Green
@@ -88,7 +87,6 @@ const funnelData = [
     title: "Step 4: Launch Campaigns & Monitor KPIs",
     services: [
       "Campaigns launch hone ke baad, daily CTR, CPC, conversion rate monitor kiya jata hai.",
-      "WhatsApp clicks, lead forms, phone calls – sab ke liye conversion tracking setup hota hai.",
      
     ],
     color: "#ec4899", // Pink
@@ -105,7 +103,6 @@ const funnelData = [
   {
     title: "Step 6: Reporting & ROI Analysis",
     services: [
-      "Aapko milta hai ek clear, easy-to-understand report har week ya month.",
       "ROI, CPL, CTR – sab kuch transparent aur actionable hota hai.",
     
     ],
@@ -288,7 +285,7 @@ At Promozione Branding Pvt. Ltd., we offer expert Ads Management Services across
 
       {/* our process */}
       <Process
-        title="Our  CRM Optimization Process"
+        title="Our ADS Management Process"
         image={funnel}
         data={funnelData}
       ></Process>

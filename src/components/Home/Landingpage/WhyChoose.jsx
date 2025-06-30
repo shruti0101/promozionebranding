@@ -29,8 +29,8 @@ const WhyChooseUs = () => {
       img: img1
     },
     {
-      label: " Return Clients",
-      end: 10,
+      label: "Industries Served",
+      end: 50,
       note: "Optimized Campaign Execution",
       bg: "#fff6eb",
       img: img2

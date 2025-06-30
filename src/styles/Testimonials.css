@@ -103,7 +103,7 @@ padding: 10px;
 
 @media (max-width: 480px) {
   .testimonial-card {
-    width: 450px;
+    width: 340px;
     padding: 20px;
     margin: 0 10px;
   }

@@ -150,6 +150,6 @@ background-color: #E5F1FC;
 
 @media(max-width:768px){
   .svg-section{
-    height: 48vh;
+    height: auto;
   }
 }

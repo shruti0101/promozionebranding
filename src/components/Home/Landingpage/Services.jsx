@@ -168,7 +168,7 @@ const Services = () => {
                 className="col-md-4 col-sm-12"
                 key={index}
                 data-aos="fade-up"
-                data-aos-duration="300"
+                // data-aos-duration="300"  
               >
                 <div className="card text-center mb-4">
                   <div className="card-body text-center">

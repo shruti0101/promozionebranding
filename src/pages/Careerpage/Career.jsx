@@ -67,7 +67,7 @@ const Career = () => {
         "Develop scalable web applications using React and Node.js. Work closely with UI/UX designers and integrate APIs efficiently.",
     },
     {
-      title: "Business Development",
+      title: "Business Development Manager",
       location: "Delhi, India",
       description:
         "Identify and engage potential clients, craft effective outreach strategies, and drive lead generation for digital marketing services.",
