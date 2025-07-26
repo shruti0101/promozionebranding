@@ -2,7 +2,7 @@ import Service from "../Servicecomponent/Service";
 import funnel from "../../assets/services/funnel.webp";
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
-import ctaImage from "../../assets/formimg.webp";
+import ctaImage from "../../assets/ctaweb.webp";
 import Process from "../Process/Process";
 import { FaCheckCircle } from "react-icons/fa";
 import { useEffect } from "react";
@@ -12,7 +12,7 @@ import Tiltcard from "../../TiltCardHome/Tiltcard";
 import crm2 from "../../assets/services/B2C.webp";
 import VanillaTilt from "vanilla-tilt";
 import WhyChoose from "../WHYCHOOSE/WhyChoose";
-import b2c1 from "../../assets/services/b2c1.png";
+import b2c1 from "../../assets/services/b2c1_1.webp";
 
 const B2c = () => {
   useEffect(() => {
@@ -28,33 +28,32 @@ const B2c = () => {
     });
   }, []);
 
-const cardItems = [
-  {
-    title: "Social Media Marketing",
-    icon: "📱", // Mobile phone – represents social platforms and digital engagement
-  },
-  {
-    title: "Performance Ads (Meta + Google)",
-    icon: "🎯", // Bullseye – symbolizes precision targeting in ads
-  },
-  {
-    title: "SEO & Content Marketing",
-    icon: "🔍", // Magnifying glass – directly represents search and discovery
-  },
-  {
-    title: "Influencer & Creator Campaigns",
-    icon: "📸", // Camera – captures influencer content and personal branding
-  },
-  {
-    title: "Email & WhatsApp Marketing",
-    icon: "✉️", // Envelope – clearly represents messaging and email communication
-  },
-  {
-    title: "Product & Brand Video Creation",
-    icon: "🎬", // Clapperboard – represents video production and storytelling
-  },
-];
-
+  const cardItems = [
+    {
+      title: "Social Media Marketing",
+      icon: "📱", // Mobile phone – represents social platforms and digital engagement
+    },
+    {
+      title: "Performance Ads (Meta + Google)",
+      icon: "🎯", // Bullseye – symbolizes precision targeting in ads
+    },
+    {
+      title: "SEO & Content Marketing",
+      icon: "🔍", // Magnifying glass – directly represents search and discovery
+    },
+    {
+      title: "Influencer & Creator Campaigns",
+      icon: "📸", // Camera – captures influencer content and personal branding
+    },
+    {
+      title: "Email & WhatsApp Marketing",
+      icon: "✉️", // Envelope – clearly represents messaging and email communication
+    },
+    {
+      title: "Product & Brand Video Creation",
+      icon: "🎬", // Clapperboard – represents video production and storytelling
+    },
+  ];
 
   const funnelData = [
     {
@@ -102,48 +101,46 @@ const cardItems = [
     },
   ];
 
-const services = [
-  {
-    icon: "bi-megaphone", // Loudspeaker – suitable for marketing announcements
-    title: "Social Media Marketing",
-    description:
-      "Create content that stops the scroll & sparks the buy – reels, stories, ads & more.",
-  },
-  {
-    icon: "bi-bullseye", // Target – ideal for performance-focused ads
-    title: "Performance Ads (Meta + Google)",
-    description:
-      "Get your products in front of the right people at the right time with laser-targeted ads.",
-  },
-  {
-    icon: "bi-search", // Search icon – fits SEO and discoverability
-    title: "SEO & Content Marketing",
-    description:
-      "Get found on Google when consumers are searching for what you offer.",
-  },
-  {
-    icon: "bi-person-video3", // Person on video – matches influencer/creator campaigns
-    title: "Influencer & Creator Campaigns",
-    description:
-      "Build trust & virality through influencer-led product storytelling.",
-  },
-  {
-    icon: "bi-envelope-open", // Open envelope – great for email/WhatsApp messaging
-    title: "Email & WhatsApp Marketing",
-    description:
-      "Engage your audience with updates, offers & abandoned cart reminders.",
-  },
-  {
-    icon: "bi-camera-reels", // Reels icon – perfect for video creation
-    title: "Product & Brand Video Creation",
-    description:
-      "Tell your story in a way people remember – and share!",
-  },
-];
-
+  const services = [
+    {
+      icon: "bi-megaphone", // Loudspeaker – suitable for marketing announcements
+      title: "Social Media Marketing",
+      description:
+        "Create content that stops the scroll & sparks the buy – reels, stories, ads & more.",
+    },
+    {
+      icon: "bi-bullseye", // Target – ideal for performance-focused ads
+      title: "Performance Ads (Meta + Google)",
+      description:
+        "Get your products in front of the right people at the right time with laser-targeted ads.",
+    },
+    {
+      icon: "bi-search", // Search icon – fits SEO and discoverability
+      title: "SEO & Content Marketing",
+      description:
+        "Get found on Google when consumers are searching for what you offer.",
+    },
+    {
+      icon: "bi-person-video3", // Person on video – matches influencer/creator campaigns
+      title: "Influencer & Creator Campaigns",
+      description:
+        "Build trust & virality through influencer-led product storytelling.",
+    },
+    {
+      icon: "bi-envelope-open", // Open envelope – great for email/WhatsApp messaging
+      title: "Email & WhatsApp Marketing",
+      description:
+        "Engage your audience with updates, offers & abandoned cart reminders.",
+    },
+    {
+      icon: "bi-camera-reels", // Reels icon – perfect for video creation
+      title: "Product & Brand Video Creation",
+      description: "Tell your story in a way people remember – and share!",
+    },
+  ];
 
   const points = [
-    " D2C & Ecommerce Brands",
+    " B2C & Ecommerce Brands",
     "Beauty, Fashion, Lifestyle & Food Brands",
     "Startups launching new B2C products",
     "Mobile apps & consumer tech brands",
@@ -198,7 +195,6 @@ At Promozione Branding Pvt. Ltd., we help brands connect directly with consumers
               <p className="php-desc">
                 B2C (Business-to-Consumer) Marketing is all about promoting your
                 product or service directly to end-users using channels like:
-                
               </p>
               <ul className="php-points">
                 {[
@@ -208,7 +204,6 @@ At Promozione Branding Pvt. Ltd., we help brands connect directly with consumers
                   "Email & SMS Marketing",
                   "Video & Content Campaigns",
                   "Product Launch Promotions",
-              
                 ].map((item, index) => (
                   <li
                     data-aos="fade-left"
@@ -220,7 +215,11 @@ At Promozione Branding Pvt. Ltd., we help brands connect directly with consumers
                   </li>
                 ))}
               </ul>
-              <p >It focuses on <strong>emotion, attention, convenience & trust</strong>  – everything your customers need to say "YES" to your brand.</p>
+              <p>
+                It focuses on{" "}
+                <strong>emotion, attention, convenience & trust</strong> –
+                everything your customers need to say "YES" to your brand.
+              </p>
             </div>
 
             {/* Tilted SVG */}

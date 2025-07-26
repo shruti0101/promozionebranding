@@ -4,6 +4,7 @@
   font-family: "Segoe UI", sans-serif;
   color: #333;
   line-height: 1.7;
+  padding: 1rem;
 }
 
 .blog-header {
@@ -14,6 +15,7 @@
   font-size: 2.2rem;
   font-weight: 700;
   color: #2548BD;
+  text-align: center;
 }
 
 .blog-divider {
@@ -29,17 +31,21 @@
   height: auto;
   border-radius: 8px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
 }
 
 .blog-content {
   margin-top: 2rem;
 }
 
-.blog-paragraph {
-  margin-bottom: 1.4rem;
-  font-size: 1.05rem;
+/* Paragraph styling */
+.blog-content p {
+  font-size: 1.09rem;
+  line-height: 1.7;
+  margin: 0.8rem 0;
 }
 
+/* Full paragraph highlights */
 .blog-highlight {
   background: #fff8e1;
   color: #8a6d3b;
@@ -51,15 +57,8 @@
   font-size: 1.1rem;
 }
 
-.inline-highlight {
-  background-color: #fff3cd;
-  color: #8a6d3b;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 1.4rem;
-}
-.inline-highlight {
+/* Inline text highlight (for **highlight**) */
+.blog-content .highlight {
   background-color: #fff3cd;
   color: #8a6d3b;
   padding: 0.2rem 0.4rem;
@@ -67,7 +66,44 @@
   font-weight: 600;
 }
 
-.black-bold {
+/* Bold text (for __bold__) */
+.blog-content strong {
   color: #000;
   font-weight: 700;
+}
+
+/* Headings inside blog */
+.blog-content h2 {
+  font-size: 1.9rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #1c1c1c;
+  font-weight: 700;
+}
+
+.blog-content h3 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Optional: Responsive tweaks */
+@media (max-width: 600px) {
+  .blog-title {
+    font-size: 1.6rem;
+  }
+
+  .blog-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .blog-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .blog-featured-image {
+    margin-bottom: 1.2rem;
+  }
 }

@@ -5,19 +5,19 @@ import "aos/dist/aos.css";
 import "../../../styles/Sectorserve.css";
 
 // Images
-import packaging from "../../../assets/package.png";
-import dna from "../../../assets/dna.png";
-import car from "../../../assets/car.png";
-import forklift from "../../../assets/forklift.png";
-import giftbox from "../../../assets/gift.png";
-import health from "../../../assets/healthcare.png";
-import school from "../../../assets/school.png";
-import tiles from "../../../assets/tiles.png";
-import printers from "../../../assets/printer.png";
-import manufacture from "../../../assets/manufacturing.png";
-import jewellery from "../../../assets/jewelry.png";
-import electric from "../../../assets/electric-vehicle.png";
-import dinner from "../../../assets/dinner.png";
+import packaging from "../../../assets/package.webp";
+import dna from "../../../assets/dna.webp";
+import car from "../../../assets/car.webp";
+import forklift from "../../../assets/forklift.webp";
+import giftbox from "../../../assets/gift.webp";
+import health from "../../../assets/healthcare.webp";
+import school from "../../../assets/school.webp";
+import tiles from "../../../assets/tiles.webp";
+import printers from "../../../assets/printer.webp";
+
+import jewellery from "../../../assets/jewelry.webp";
+import electric from "../../../assets/electric-vehicle.webp";
+import dinner from "../../../assets/dinner.webp";
 
 // Sector data
 const sectors = [

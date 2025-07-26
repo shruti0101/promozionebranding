@@ -2,7 +2,7 @@
 import "./style.css";
 // import { useEffect } from "react";
 import Tiltcard from "../../TiltCardHome/Tiltcard";
-import aiseo from "../../assets/services/aiseo.png";
+import aiseo from "../../assets/services/aiseo.webp";
 import { Container, Row, Col } from "react-bootstrap";
 import {
   FaSearch,
@@ -15,7 +15,7 @@ import {
 import { useEffect } from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import Story from "../Story/Story";
-import ctaImage from "../../assets/formimg.webp";
+import ctaImage from "../../assets/ctaweb.webp";
 import Form2 from "../../components/Home/Landingpage/Form2";
 import AOS from "aos";
 import "aos/dist/aos.css";

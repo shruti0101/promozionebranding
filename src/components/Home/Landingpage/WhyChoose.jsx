@@ -7,10 +7,11 @@ import "aos/dist/aos.css";
 import "../../../styles/Whychoose.css";
 
 // Images
-import img1 from "../../../assets/fxer1.webp";
-import img2 from "../../../assets/fxer2.webp";
-import img3 from "../../../assets/fxer3.webp";
-import img4 from "../../../assets/fxer4.png";
+import img1 from "../../../assets/about/img1.webp";
+import img2 from "../../../assets/about/img2.webp";
+import img4 from "../../../assets/about/img4.webp";
+import img3 from "../../../assets/about/img3.webp";
+
 import dots from "../../../assets/bg/light-blue-top-dots.png";
 
 const WhyChooseUs = () => {
@@ -77,7 +78,7 @@ const WhyChooseUs = () => {
               <ul className="mt-4 ps-3 list-unstyled">
                 <li className="mb-2">✅ Get Ranked on Google in 6 Months – Guaranteed!</li>
                 <li className="mb-2">✅ Qualified Leads in Just 7 Days – No Waiting!</li>
-                <li className="mb-2">✅ 360° Digital Solutions – From SEO to CGI Ads</li>
+                <li className="mb-2">✅ 360° Digital Solutions – From Website to Google Ads</li>
                 <li className="mb-2">✅ Dedicated Project Manager – Your personal growth partner</li>
                 <li className="mb-2">✅ 100% Transparent Reporting – Know where every penny goes</li>
                 <li className="mb-2">✅ Turning SMEs into digital powerhouses without breaking the bank</li>

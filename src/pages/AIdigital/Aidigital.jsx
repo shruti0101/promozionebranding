@@ -2,9 +2,9 @@ import Service from "../Servicecomponent/Service";
 import funnel from "../../assets/services/funnel.webp";
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
-import ctaImage from "../../assets/formimg.webp";
+import ctaImage from "../../assets/ctaweb.webp";
 import Process from "../Process/Process";
-import { FaCheckCircle } from "react-icons/fa";
+// import { FaCheckCircle } from "react-icons/fa";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -12,7 +12,7 @@ import Tiltcard from "../../TiltCardHome/Tiltcard";
 import crm2 from "../../assets/services/crm1.webp";
 import VanillaTilt from "vanilla-tilt";
 import WhyChoose from "../WHYCHOOSE/WhyChoose";
-import digital2 from "../../assets/services/digital2.png"
+import digital2 from "../../assets/services/digital2.webp"
 
 const Aidigital = () => {
 

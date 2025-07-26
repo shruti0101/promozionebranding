@@ -1,12 +1,12 @@
 import React from "react";
 import Tiltcard from "../../TiltCardHome/Tiltcard";
-import b2b from "../../assets/services/b2b-marketing.jpg";
+import b2b from "../../assets/services/b2b-marketing.webp";
 import funnel from "../../assets/services/funnel.webp";
 import "./B2b.css"
 import { FaCheckCircle } from "react-icons/fa";
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
-import ctaImage from "../../assets/formimg.webp"
+import ctaImage from "../../assets/ctaweb.webp"
 import { Link } from "react-router-dom";
 
 const B2b = () => {
@@ -205,7 +205,7 @@ At Promozione Branding Pvt. Ltd., we specialize in B2B Marketing Services in Ind
   </h4>
   <div className="row g-3">
     {[
-      "SaaS Companies targeting global clients",
+      "SMEs Companies , Manufacturers, Traders, Suppliers, Distributers, Dealers, Importers, Exporters, targeting global clients",
       "IT & Tech Service Providers",
       "B2B Startups & Enterprise Vendors",
       "Industrial Product Manufacturers",

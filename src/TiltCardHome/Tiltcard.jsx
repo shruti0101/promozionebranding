@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import bg from "../assets/approach/wrapper-bg.png";
+import bg from "../assets/wrapper-bg.webp"
 import "./Tilt.css";
 import AOS from "aos";
 import "aos/dist/aos.css";

@@ -1,12 +1,12 @@
-/* === Base Styles === */
+/* ──────────────────  Base Styles  ────────────────── */
 .check-icon i {
   color: #28a745;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .service-item {
   align-items: flex-start;
-  flex-direction: row;
+  gap: 0.75rem;                /* consistent spacing */
 }
 
 .service-icon i {
@@ -15,26 +15,19 @@
 
 .service-img {
   width: 100%;
-  max-width: 100%;
   height: auto;
-  display: block;
   border-radius: 12px;
+  display: block;
 }
 
-/* === Responsive Adjustments === */
-@media (max-width: 992px) {
+/* ───────────────  Tablet 768‑991 px  ─────────────── */
+@media (min-width: 768px) and (max-width: 991.98px) {
   .revenue-section .row {
-    flex-direction: column; /* Previously column-reverse */
+    flex-direction: column;          /* stack columns */
   }
 
   .service-item {
     flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-
-  .service-stack {
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
 
   .service-text h5 {
@@ -45,89 +38,106 @@
     font-size: 0.95rem;
   }
 
+  .service-stack {
+    padding: 0 9rem;
+  }
+  .point{
+    text-align: center!important;
+  }
+
   .revenue-section h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-align: center;
   }
 
   .revenue-section h5 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-align: center;
-  }
-
-  .revenue-section ul {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-  }
-
-  .revenue-section .text-muted {
-    font-size: 0.95rem;
-    text-align: justify;
   }
 
   .service-img {
-    margin-top: 2rem;
+    margin: 2rem auto 0;
+    max-width: 80%;
+  }
+
+  .revenue-section ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .revenue-section ul li {
+    justify-content: center;          /* center icon and text */
     text-align: center;
+    width: 100%;                      /* allow full width spacing */
+  }
+
+  .revenue-section .check-icon {
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .revenue-section .text-muted {
+    text-align: center;
+    width: 100%;
   }
 }
 
-/* === Mobile Icon Centering === */
-@media (max-width: 576px) {
+/* ───────────────  Phones <768 px  ─────────────── */
+@media (max-width: 767.98px) {
+  .revenue-section .row {
+    flex-direction: column;
+  }
+
   .service-item {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    justify-content: center;
-    width: 100%;
   }
 
   .service-icon {
-    margin: 0 0 0.5rem 0;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
   }
 
-  .service-text {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .service-text h5,
-  .service-text p {
-    text-align: center !important;
-    width: 100%;
-  }
-
-  /* --- Points (ul/li) mobile spacing improvements --- */
   .revenue-section ul {
-    padding-left: 0.5rem !important;
-    padding-right: 0.5rem !important;
-    margin-bottom: 1.2rem !important;
+    padding: 0 0.75rem;
   }
+
   .revenue-section ul li {
-    margin-bottom: 0.7rem !important;
-    padding: 0.5rem 0.5rem 0.5rem 0.2rem !important;
+    margin-bottom: 0.7rem;
+    padding: 0.5rem;
     border-radius: 8px;
     background: #f8f9fa;
-    display: flex;
-    align-items: flex-start;
-    gap: 0.6rem;
   }
-  .revenue-section ul li:last-child {
-    margin-bottom: 0 !important;
-  }
+
   .revenue-section .check-icon {
-    min-width: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    min-width: 1.4rem;
   }
-  .revenue-section .text-muted {
-    font-size: 0.97rem;
-    text-align: left;
-    word-break: break-word;
+
+  .service-img {
+    margin: 1.5rem auto 0;
+    max-width: 90%;
   }
+  .point{
+text-align: center!important;
+}
+
+
+}
+
+/* ───────────────  Desktop ≥992 px  ─────────────── */
+@media (min-width: 992px) {
+  .service-stack {
+    padding-left: 2rem;
+  }
+
+  .service-text h5 {
+    font-size: 1.05rem;
+  }
+.point{
+text-align: center!important;
+}
+
 }

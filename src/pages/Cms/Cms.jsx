@@ -12,7 +12,7 @@ import {
   FaRocket,
 } from "react-icons/fa";
 import { FaCheckCircle } from "react-icons/fa";
-import ctaImage from "../../assets/formimg.webp";
+import ctaImage from "../../assets/ctaweb.webp";
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
 import { Link } from "react-router-dom";

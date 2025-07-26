@@ -5,11 +5,11 @@ import "aos/dist/aos.css";
 import Tiltcard from '../../TiltCardHome/Tiltcard';
 import "./Style.css"
 import VanillaTilt from "vanilla-tilt";
-import php from "../../assets/services/php.jpg"
+import php from "../../assets/services/php.webp"
 import { FaCheckCircle } from "react-icons/fa";
 import { FaLaptopCode, FaPencilRuler, FaServer, FaPlug, FaMobileAlt, FaRocket } from "react-icons/fa";
 import Story from '../Story/Story';
-import ctaImage from "../../assets/formimg.webp"
+import ctaImage from "../../assets/ctaweb.webp"
 import { Link } from 'react-router-dom';
 import Form2 from '../../components/Home/Landingpage/Form2';
 

@@ -161,7 +161,7 @@ body{
   font-family: "mona-sans", sans-serif;
 /* height: 100vh;
 width: 100vw; */
-overflow-x: hidden !important;
+overflow-x: hidden;
   /* font-family: "Josefin Sans", sans-serif; */
   scroll-behavior: smooth;
  
@@ -299,8 +299,9 @@ h2{
 html, body {
   width: 100vw;
   max-width: 100vw;
-  overflow-x: hidden !important;
+
 }
+
 
 @media (max-width:576px){
   .nav-btn1{

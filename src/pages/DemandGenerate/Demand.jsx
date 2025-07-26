@@ -1,13 +1,12 @@
 import React from "react";
 import Tiltcard from "../../TiltCardHome/Tiltcard";
-import demand from "../../assets/services/demand.png";
-
+import demand from "../../assets/services/demand.webp";
 import { Link } from "react-router-dom";
 import './Demand.css'
 import { FaCheckCircle } from "react-icons/fa";
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
-import ctaImage from "../../assets/formimg.webp"
+import ctaImage from "../../assets/ctaweb.webp"
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -217,8 +216,8 @@ At Promozione Branding Pvt. Ltd.
      Let’s create a demand generation engine for your brand that runs 24/7 – and delivers real results.
 
       </p>
-      <a
-        href="#contact"
+      <Link
+        to="/Contact"
         className="btn btn-primary w-100 fw-semibold"
         style={{
           borderRadius: "12px",
@@ -227,7 +226,7 @@ At Promozione Branding Pvt. Ltd.
         }}
       >
         🚀 Let’s Get Started
-      </a>
+      </Link>
     </div>
     <div
       className="position-absolute top-0 start-0 w-100 h-100"
@@ -292,9 +291,9 @@ At Promozione Branding Pvt. Ltd.
       <Story></Story>
 
        <Form2
-        heading=" Still using cold emails? Bro, it's 2025.."
+        heading=" Still using cold Emails? Bro, it's 2025.."
         price=" Chat With a Strategist Today."
-        buttonText=" [Request a Custom Plan!"
+        buttonText=" Request a Custom Plan!"
         image={ctaImage}
       ></Form2>
 

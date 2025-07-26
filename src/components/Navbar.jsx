@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import logoo from "../assets/logoo.jpg";
+import logoo from "../assets/logoo.webp";
 import "../styles/Navbar.css";
 import {
   LiaAngleDownSolid,
   LiaAngleUpSolid,
   LiaLongArrowAltRightSolid,
 } from "react-icons/lia";
-
-
 
 const Navbar = () => {
   const [dropdownStates, setDropdownStates] = useState({});
@@ -22,6 +20,7 @@ const Navbar = () => {
   }, []);
 
   const toggleDropdown = (name) => {
+    
     setDropdownStates((prev) => ({
       ...prev,
       [name]: !prev[name],
@@ -64,76 +63,92 @@ const Navbar = () => {
         ["Blogs", "/profile/blogs"],
         ["Client Reviews", "/profile/reviews"],
         ["Career", "/profile/career"],
-         ["Contact Us", "/Contact"],
+        ["Contact Us", "/Contact"],
       ],
     },
     {
       name: "website",
       label: "Website Development",
       items: [
-             ["B2B Web Development", "/services/b2bdev"],
-        ["Custom Web Development", "/services/custom"],
-        ["PHP Website Development", "/services/development"],
-        ["CMS Web Development", "/services/marketing"],
-        ["React Web Development", "/services/mern"],
-        ["Shopify Web Designing", "/services/ecommerce"],
-        ["SEO Web Designing", "/services/seo"],
-        ["Website Redesigning", "/services/redesign"],
-        ["Landing Page Design", "/services/landing"],
-        ["Web Application Development", "/services/webapp"],
- 
-        ["WordPress Website", "/services/design"],
+        ["B2B Web Development", "/services/b2b-web-development-services"],
+        ["Custom Web Development", "/services/custom-web-development-services"],
+        [
+          "PHP Website Development",
+          "/services/php-website-development-services",
+        ],
+        ["CMS Web Development", "/services/cms-web-development-services"],
+        ["React Web Development", "/services/react-web-development-services"],
+        ["Shopify Web Designing", "/services/shopify-web-designing-services"],
+        ["SEO Web Designing", "/services/seo-web-designing-services"],
+        ["Website Redesigning", "/services/website-redesigning-services"],
+        ["Landing Page Design", "/services/landing-page-design-services"],
+        [
+          "Web Application Development",
+          "/services/web-application-development-services",
+        ],
+
+        ["WordPress Website", "/services/wordpress-website-services"],
       ],
     },
+
     {
       name: "revenue",
       label: "Revenue Marketing & CRO",
       items: [
-       
-          ["B2B Lead Generation", "/services/b2b-leads"],
-        ["B2B Marketing", "/services/b2b"],
-        // ["Lead Generations", "/services/leads"],
-        ["AI Performance Marketing Services", "/services/ai-performance"],
-        ["Ads Management", "/services/ads"],
-        ["Internet Marketing", "/services/internet"],
-        ["Demand Generation", "/services/demand"],
-       ["Performance Marketing", "/services/performance"],
-        ["D2C Marketing", "/services/d2c"],
-          ["B2C Marketing", "/services/b2c-marketing"]
+        ["B2B Lead Generation", "/services/b2b-lead-generation-services"],
+        ["B2B Marketing", "/services/b2b-marketing-services"],
+
+        ["B2C Marketing", "/services/b2c-marketing-services"],
+        ["D2C Marketing", "/services/d2c-marketing-services"],
+
+        [
+          "AI Performance Marketing Services",
+          "/services/ai-performance-marketing-services",
+        ],
+        ["Ads Management", "/services/ads-management-services"],
+        ["Internet Marketing", "/services/internet-marketing-services"],
+        ["Demand Generation", "/services/demand-generation-services"],
+        ["Performance Marketing", "/services/performance-marketing-services"],
       ],
     },
+
+
     {
       name: "digital",
       label: "Digital Marketing",
       items: [
-        ["Content Marketing", "/services/content"],
-        ["CRM Optimizations", "/services/crm"],
-        ["Email Marketing", "/services/email"],
-        ["Video Marketing", "/services/video"],
+        ["Content Marketing", "/services/content-marketing-services"],
+        ["CRM Optimizations", "/services/crm-optimizations-services"],
+        ["Email Marketing", "/services/email-marketing-services"],
+        ["Video Marketing", "/services/video-marketing-services"],
         // ["Social Media Ads", "/services/social"],
-        ["Microsoft/Bing Ads", "/services/Bing-ads"],
-        ["Google AdWords/PPC", "/services/google-ads"],
-        ["SMO", "/services/smo"],
-        ["SMM", "/services/smm"],
+        ["Microsoft/Bing Ads", "/services/microsoft-bing-ads-services"],
+        ["Google AdWords/PPC", "/services/google-adword-ppc-services"],
+        ["SMO", "/services/social-media-optimization"],
+        ["SMM", "/services/social-media-marketing"],
       ],
     },
     {
       name: "seo",
       label: "Guaranteed SEO",
       items: [
-        ["AI Digital Marketing Services", "/services/ai-digital"],
+        ["AI Digital Marketing Services", "/services/ai-digital-marketing-services"],
         // ["E-Commerce SEO Services", "/services/ecommerce-seo"],
-        ["Digital Marketing Services", "/services/digital-seo"],
-        ["Enterprise SEO Services", "/services/enterprise-seo"],
-        ["AI SEO Services", "/services/ai-seo"],
+        ["Digital Marketing Services", "/services/digital-marketing-services"],
+        ["Enterprise SEO Services", "/services/enterprise-seo-services"],
+        ["AI SEO Services", "/services/ai-seo-services"],
       ],
     },
   ];
 
   return (
-    <nav className="navbar m-0 p-0 navbar-expand-lg px-3 shadow bg-white">
-      <div className="container-fluid">
-        <Link className="navbar-brand" to="/" onClick={closeNavbar}>
+    <nav className="navbar m-0 p-0  navbar-expand-lg px-3 shadow bg-white">
+      <div className="container-fluid ">
+        <Link
+          className="navbar-brand d-flex align-items-center gap-2"
+          to="/"
+          onClick={closeNavbar}
+        >
           <img
             src={logoo}
             alt="logo"
@@ -141,6 +156,7 @@ const Navbar = () => {
             height="70"
             className="rounded-circle d-inline-block align-text-top"
           />
+       
         </Link>
 
         <button
@@ -205,5 +221,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-

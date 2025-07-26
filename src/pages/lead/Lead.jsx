@@ -1,8 +1,8 @@
 import React from "react";
 import "./Style.css";
-import ctaImage from "../../assets/Formimg.webp";
+import ctaImage from "../../assets/ctaweb.webp";
 import Form2 from "../../components/Home/Landingpage/Form2";
-import lead from "../../assets/approach/lead.png";
+import lead from "../../assets/approach/lead.webp";
 import Story from "../Story/Story";
 import { Link } from "react-router-dom";
 const Lead = () => {
@@ -14,7 +14,7 @@ const Lead = () => {
             <div className="col-md-6">
               <h1>
                 {" "}
-                Best Lead Generation Services – 100% Guaranteed Leads 
+                Best B2B Lead Generation Services – 100% Guaranteed Leads 
               </h1>
               <p className="text-black   fs-6">
                 Struggling to find high-quality leads for your business? At

@@ -5,7 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Form2 from "../../components/Home/Landingpage/Form2";
-import ctaImage from "../../assets/Formimg.webp";
+import ctaImage from "../../assets/ctaweb.webp";
 import icon1 from "../../assets/reviews/seo.webp";
 import icon2 from "../../assets/reviews/ppc.webp";
 import icon3 from "../../assets/reviews/design.webp";
@@ -14,7 +14,7 @@ import icon5 from "../../assets/reviews/customer-service.webp";
 import icon6 from "../../assets/reviews/results.webp";
 import icon7 from "../../assets/reviews/technology.webp";
 import icon8 from "../../assets/reviews/expertise.webp";
-import right from "../../assets/reviews/right.jpg";
+
 
 const Review = () => {
   useEffect(() => {

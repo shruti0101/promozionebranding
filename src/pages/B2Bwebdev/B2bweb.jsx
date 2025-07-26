@@ -2,31 +2,18 @@ import Service from "../Servicecomponent/Service";
 import funnel from "../../assets/services/funnel.webp";
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
-import ctaImage from "../../assets/formimg.webp";
+import ctaImage from "../../assets/ctaweb.webp";
 import Process from "../Process/Process";
 import { FaCheckCircle } from "react-icons/fa";
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 import Tiltcard from "../../TiltCardHome/Tiltcard";
-import b2bweb1 from "../../assets/services/b2bweb.webp";
-import VanillaTilt from "vanilla-tilt";
+import b2bweb1 from "../../assets/services/b2b.webp";
+
 import WhyChoose from "../WHYCHOOSE/WhyChoose";
 import b2bweb from "../../assets/services/b2bweb1.webp";
 
 const B2bweb = () => {
-  useEffect(() => {
-    AOS.init({ duration: 800, once: true });
 
-    const tiltElements = document.querySelectorAll(".tilt");
-    VanillaTilt.init(tiltElements, {
-      max: 15,
-      speed: 400,
-      scale: 1.05,
-      glare: true,
-      "max-glare": 0.3,
-    });
-  }, []);
 
   const cardItems = [
     {
@@ -191,14 +178,14 @@ const funnelData = [
 
       {/* what is section */}
 
-      <section className="php-section py-5 position-relative overflow-hidden">
-        {/* Background Blob */}
+      <section className="php-section py-5 ">
+       
         <div className="blob-bg"></div>
 
         <div className="container">
           <div className="row align-items-center flex-wrap-reverse">
-            {/* Text Content */}
-            <div className="col-md-6" data-aos="fade-right">
+           
+            <div className="col-md-6">
               <h2 className="php-heading">
                 Why is Different (and Important)
                 <span style={{ color: "#2548BD" }}>
@@ -221,8 +208,8 @@ const funnelData = [
                   " Support longer sales cycles",
                 ].map((item, index) => (
                   <li
-                    data-aos="fade-left"
-                    data-aos-delay={index * 200}
+                 
+                   
                     key={index}
                   >
                     <span className="icon">✅</span>
@@ -232,7 +219,6 @@ const funnelData = [
               </ul>
             </div>
 
-            {/* Tilted SVG */}
             <div
               className="col-md-6 text-center mb-4 mb-md-0"
               data-aos="zoom-in"

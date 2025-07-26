@@ -17,20 +17,23 @@
 
 
 /* === Tilt Container === */
-.tilt-container {
+ .tilt-container {
+  margin-top: 2.99rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 30px;
   width: 100%;
-  max-width: 800px;
-  aspect-ratio: 1 / 1.2;
+  height: auto;
+  max-width: 508px;
+  min-height: 500px;
+  transition: transform 0.3s ease;
+  will-change: transform;
   transform-style: preserve-3d;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-}
+ }
 
 @media (max-width: 992px) {
   .tilt-container {
@@ -97,27 +100,6 @@
   position: relative;
 }
 
-.services-heading::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -10px;
-  width: 60px;
-  height: 4px;
-  background: linear-gradient(90deg, #4534A6, #0072ff);
-  border-radius: 2px;
-  animation: slideFade 2.5s ease-in-out infinite;
-}
 
-@keyframes slideFade {
-  0%, 100% {
-    width: 0;
-    opacity: 0;
-  }
-  50% {
-    width: 60px;
-    opacity: 1;
-  }
-}
+
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useRef } from 'react';
-import email from "../../assets/services/email.png"
+import email from "../../assets/services/email.webp"
 import Tiltcard from "../../TiltCardHome/Tiltcard"
 import Process from "../Process/Process"
 import Service from "../Servicecomponent/Service"
@@ -8,10 +8,10 @@ import WhyChoose from "../WHYCHOOSE/WhyChoose"
 import { useEffect } from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css";
-import email1 from "../../assets/services/email1.png"
+import email1 from "../../assets/services/email1.webp"
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
-import ctaImage from "../../assets/formimg.webp";
+import ctaImage from "../../assets/ctaweb.webp";
 
 const Email = () => {
 
@@ -174,7 +174,7 @@ Chalo ab inbox ko revenue machine banate hain!
                      <ul className="php-points">
                        {[
                          "Direct access to your audience (no algorithm drama)",
-                         "High ROI – up to 4200% returns",
+                         "High ROI – up to 120% returns",
                          "Nurture cold leads into warm customers",
                          " Ideal for B2B, B2C, D2C – sabke liye",
                          " Automated flows that work 24/7",

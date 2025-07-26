@@ -1,15 +1,14 @@
-import React, { useRef } from "react";
-import bg from "../../assets/approach/wrapper-bg.png";
-import youtube from "../../assets/specialized/youtube.png";
-import instagram from "../../assets/specialized/instagram-icon-1.png";
-import facebook from "../../assets/specialized/facebook.png";
-import google from "../../assets/specialized/Google-AdWord-Course.png";
-import smo from "../../assets/services/smo.jpg"
+
+import youtube from "../../assets/specialized/youtube.webp";
+import instagram from "../../assets/specialized/instagram-icon-1.webp";
+import facebook from "../../assets/specialized/facebook.webp";
+import google from "../../assets/specialized/Google-AdWord-Course.webp";
+import smo from "../../assets/services/smo.webp"
 // import dots from "../../assets/bg/light-blue-top-dots.png"
-import social from "../../assets/services/social.png"
+import social from "../../assets/services/social.webp"
 import social2 from "../../assets/services/social2.webp"
 import funnel from "../../assets/services/funnel.webp"
-import ctaImage from "../../assets/formimg.webp"
+import ctaImage from "../../assets/ctaweb.webp"
 import Form2 from "../../components/Home/Landingpage/Form2"
 import AOS from "aos";
 import "aos/dist/aos.css";

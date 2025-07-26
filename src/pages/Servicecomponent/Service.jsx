@@ -1,31 +1,30 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import "./Service.css";
+
+
+import "./Service.css";               // make sure the path is correct
 
 const Service = ({ title, subtitle, points, note, services, image }) => {
-  useEffect(() => {
-    AOS.init({
-      duration: 700,
-      once: true,
-      easing: "ease-in-out",
-    });
-  }, []);
 
   return (
     <section className="revenue-section bg-white">
       <div className="container-fluid">
         <div className="row align-items-start">
-          {/* Text Content Column */}
-          <div className="col-lg-4 mb-4 mt-3 mb-lg-0 " data-aos="fade-left">
-            <h1 className="fw-bold mb-3 pt-4">{title}</h1>
-            <h5 className="text-primary mb-3">{subtitle}</h5>
+          {/* ─────── Text / Checklist Column ─────── */}
+          <div
+            className="col-lg-4 mb-4 mt-3"
+          
+          >
+            <h1 className="fw-bold mb-3 pt-4 text-center text-lg-start">
+              {title}
+            </h1>
+            <h5 className="text-primary mb-3 text-center text-lg-start">
+              {subtitle}
+            </h5>
 
             <ul className="list-unstyled px-3">
               {points.map((point, index) => (
                 <li className="d-flex align-items-start mb-2" key={index}>
-                  <span className="check-icon me-2 mt-1 text-success">
-                    <i className="bi bi-check-circle-fill fs-5"></i>
+                  <span className="check-icon me-2 mt-1">
+                    <i className="bi bi-check-circle-fill"></i>
                   </span>
                   <span className="text-muted">{point}</span>
                 </li>
@@ -33,20 +32,25 @@ const Service = ({ title, subtitle, points, note, services, image }) => {
             </ul>
 
             {note && (
-              <p className="text-muted small fst-italic px-3 mt-4">{note}</p>
+              <p className="text-muted 
+              small fst-italic px-3 mt-3">{note}</p>
             )}
 
-            <div className="mt-1 mx-auto" data-aos="fade-up">
-              <img src={image} alt="service" className="img-fluid" />
-            </div>
+            {/* Image */}
+            <img
+              src={image}
+              alt="service"
+              className="service-img mt-4"
+           
+            />
           </div>
 
-          {/* Services Column */}
-          <div className="col-lg-8  pt-md-5" data-aos="fade-right">
+          {/* ─────── Services Column ─────── */}
+          <div className="col-lg-8 pt-md-5" >
             <div className="service-stack">
               {services.map((service, index) => (
                 <div key={index} className="service-item d-flex mb-4">
-                  <div className="service-icon text-primary me-3 fs-3">
+                  <div className="service-icon text-primary fs-3">
                     <i className={`bi ${service.icon}`}></i>
                   </div>
                   <div className="service-text">

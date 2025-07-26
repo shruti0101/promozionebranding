@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from "react";
 
 import image1 from "../../assets/approach/image1.jpg";
-import image2 from "../../assets/approach/image2.jpg";
-import image3 from "../../assets/approach/image3.jpg";
-import image4 from "../../assets/approach/image4.jpg";
-import image5 from "../../assets/approach/image5.jpg";
+import image2 from "../../assets/approach/image2.webp";
+import image3 from "../../assets/approach/image3.webp";
+import image4 from "../../assets/approach/image4.webp";
+import image5 from "../../assets/approach/image5.webp";
 import process1 from "../../assets/approach/process1.svg";
-import process2 from "../../assets/approach/process2.png";
-import ctaImage from "../../assets/Formimg.webp";
+import process2 from "../../assets/approach/process2.webp";
+import ctaImage from "../../assets/ctaweb.webp";
 import Form2 from "../../components/Home/Landingpage/Form2";
-import wheel from "../../assets/approach/service-wheel.png";
+import wheel from "../../assets/approach/service-wheel.webp";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Style.css";
-import roi from "../../assets/services/roi.png";
+import roi from "../../assets/services/roi_1.webp";
 
 const Approach = () => {
   useEffect(() => {
@@ -152,8 +152,9 @@ const Approach = () => {
 {/* summary of our approach */}
      <section
   id="section-1"
-  className="p-5 mt-5"
-  style={{ backgroundColor: "#212252" }}
+  className="p-5 mt-5 bg-white bg-md-primary  "
+ 
+  
 >
   <div className="container">
     <div className="row">
@@ -165,8 +166,8 @@ const Approach = () => {
       {/* 📝 TEXT: show before image on mobile (order-1), after on large screens (order-lg-2) */}
       <div className="col-12 col-lg-6 order-1 order-lg-2">
         <p className="text-danger fw-bold">01. Research & Discovery</p>
-        <h1 className="fw-bold text-white">Keyword Research & Strategy</h1>
-        <p className="text-white fs-6 lh-lg">
+        <h1 className="fw-bold text-black">Keyword Research & Strategy</h1>
+        <p className="text-black  fs-6 lh-lg">
           Depending on the goals and requirements set, we will gather more
           information such as your current marketing activities, where you
           rank locally on search engines or your website design. This helps

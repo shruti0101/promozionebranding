@@ -2,20 +2,20 @@ import Service from "../Servicecomponent/Service";
 import funnel from "../../assets/services/funnel.webp";
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
-import ctaImage from "../../assets/formimg.webp";
+import ctaImage from "../../assets/ctaweb.webp";
 import Process from "../Process/Process";
-import { FaCheckCircle } from "react-icons/fa";
+
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Tiltcard from "../../TiltCardHome/Tiltcard";
-import crm2 from "../../assets/services/ads2.webp";
+import crm2 from "../../assets/services/smo3.webp";
 import VanillaTilt from "vanilla-tilt";
 import WhyChoose from "../WHYCHOOSE/WhyChoose";
-import crm from "../../assets/services/ads.png";
-import smo2 from "../../assets/services/smo2.png";
+import crm from "../../assets/services/smo4.webp";
+import smo2 from "../../assets/services/smo2.webp";
 
-import { FaArrowRight } from "react-icons/fa";
+
 
 const Smo = () => {
   useEffect(() => {
@@ -192,7 +192,7 @@ At Promozione Branding Pvt. Ltd., we help you create a social media presence tha
 
       {/* what is section */}
 
-      <section className="php-section py-5 position-relative overflow-hidden">
+      <section className=" py-5 position-relative overflow-hidden">
         {/* Background Blob */}
         <div className="blob-bg"></div>
 

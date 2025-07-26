@@ -1,7 +1,7 @@
 import React from "react";
-import content from "../../assets/services/content.png";
+import content from "../../assets/services/content.webp";
 import { useRef, useEffect } from "react";
-import bg from "../../assets/approach/wrapper-bg.png";
+
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import {
@@ -15,7 +15,7 @@ import {
 import "./Content.css";
 import { FaCheckCircle } from "react-icons/fa";
 import Story from "../Story/Story";
-import ctaImage from "../../assets/formimg.webp";
+import ctaImage from "../../assets/ctaweb.webp";
 import Form2 from "../../components/Home/Landingpage/Form2";
 import AOS from "aos";
 import "aos/dist/aos.css";

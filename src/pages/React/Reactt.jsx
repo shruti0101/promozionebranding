@@ -14,10 +14,10 @@ import {
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import ctaImage from "../../assets/formimg.webp";
+import ctaImage from "../../assets/ctaweb.webp";
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
-import react from "../../assets/services/react.svg";
+import react from "../../assets/services/react.webp";
 const Reactt = () => {
   const cardItems = [
     {

@@ -17,7 +17,7 @@ function Form1() {
     const formData = new FormData(formRef.current);
 
     try {
-      const response = await fetch("https://formsubmit.co/shrutiguptabhu@gmail.com", {
+      const response = await fetch("https://formsubmit.co/info@promozionebranding.com", {
         method: "POST",
         body: formData,
         headers: {

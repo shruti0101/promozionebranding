@@ -2,7 +2,7 @@ import Service from "../Servicecomponent/Service";
 import funnel from "../../assets/services/funnel.webp";
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
-import ctaImage from "../../assets/formimg.webp";
+import ctaImage from "../../assets/ctaweb.webp";
 import Process from "../Process/Process";
 import { FaCheckCircle } from "react-icons/fa";
 import { useEffect } from "react";
@@ -13,7 +13,7 @@ import Tiltcard from "../../TiltCardHome/Tiltcard";
 
 import VanillaTilt from "vanilla-tilt";
 import WhyChoose from "../WHYCHOOSE/WhyChoose";
-import aimarket from "../../assets/services/aimarket.png";
+import aimarket from "../../assets/services/aimarket.webp";
 import aimarket2 from "../../assets/services/aimarket2.webp";
 const AiPerformance = () => {
   useEffect(() => {
@@ -114,7 +114,7 @@ const cardItems = [
       icon: "bi-bullseye",
       title: "Smart Ad Creative Testing",
       description:
-        "Let AI test 50 ad versions in a day and pick the top 3 that actually work. No more guessing!",
+        "Let AI test 3 ad versions in a day and pick the 1 that actually work. No more guessing!",
     },
     {
       icon: "bi-geo-alt",

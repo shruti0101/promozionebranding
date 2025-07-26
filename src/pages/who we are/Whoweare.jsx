@@ -4,20 +4,19 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import ctaImage from "../../assets/formimg.webp";
+import ctaImage from "../../assets/ctaweb.webp";
 import star from "../../assets/about/star.svg";
 import hello from "../../assets/about/hello.svg";
 import line from "../../assets/about/line.svg";
 import office from "../../assets/about/right-img.webp";
 import video from "../../assets/about/playvideo.svg";
 import img1 from "../../assets/about/img1.webp";
-import img2 from "../../assets/about/img2.jpg";
+import img2 from "../../assets/about/img2.webp";
 import shape from "../../assets/about/shapeabout.webp";
 import OurMission from "./Ourmission";
 import Testimonial from "../../components/Home/Landingpage/Testimonials";
 import Form2 from "../../components/Home/Landingpage/Form2";
-import Project from "../../components/Home/Landingpage/Project"
-
+import Project from "../../components/Home/Landingpage/Project";
 
 const Whoweare = () => {
   useEffect(() => {
@@ -33,15 +32,13 @@ const Whoweare = () => {
   const tabData = {
     branding:
       "We help brands stand out through bold identities, compelling creative assets, and consistent visual storytelling across all platforms. From logos to brand kits, every element is crafted to communicate your unique value. Our web and app development services focus on speed, performance, and seamless user experience — ensuring your digital presence looks and works flawlessly on every device. With PromozioneBranding, you get design precision backed by powerful tech, We blend creativity with functionality to build digital experiences that not only look great but convert. Whether you're a startup or an established brand, we craft solutions tailored to your goals.",
-digital: 
-  "From 'Web Se Vyapaar Tak', we create intelligent digital campaigns that drive measurable ROI and strategically position your brand in front of your target audience. Our performance-driven approach blends creativity with data, helping you build visibility, engagement, and trust across platforms.With PromozioneBranding, you also get future-ready web and app development services that ensure lightning-fast speed, mobile responsiveness, and a seamless user experience across all devices. Whether you're launching a new product or scaling your business, we deliver digital solutions that grow with you.",
-development: 
-  "Our web and app development services are built for performance, scalability, and exceptional user experience across all devices. Whether it’s a dynamic website or a powerful mobile app, we ensure fast loading speeds, mobile responsiveness, and seamless functionality. With PromozioneBranding, you get a tech-driven approach that blends sleek design with clean code — tailored to your business goals. We don’t just build platforms; we craft digital experiences that engage users and convert traffic into results.",
+    digital:
+      "From 'Web Se Vyapaar Tak', we create intelligent digital campaigns that drive measurable ROI and strategically position your brand in front of your target audience. Our performance-driven approach blends creativity with data, helping you build visibility, engagement, and trust across platforms.With PromozioneBranding, you also get future-ready web and app development services that ensure lightning-fast speed, mobile responsiveness, and a seamless user experience across all devices. Whether you're launching a new product or scaling your business, we deliver digital solutions that grow with you.",
+    development:
+      "Our web and app development services are built for performance, scalability, and exceptional user experience across all devices. Whether it’s a dynamic website or a powerful mobile app, we ensure fast loading speeds, mobile responsiveness, and seamless functionality. With PromozioneBranding, you get a tech-driven approach that blends sleek design with clean code — tailored to your business goals. We don’t just build platforms; we craft digital experiences that engage users and convert traffic into results.",
 
-      
-    content: 
-  "We craft compelling content strategies, engaging videos, informative blogs, and striking visuals that connect with your audience and communicate real value. Every piece of content is designed to strengthen your brand voice and drive meaningful engagement across platforms. With PromozioneBranding, we ensure your content not only looks great — but also performs. From storytelling to SEO-focused writing, we help you build authority, trust, and conversions through smart, consistent content delivery."
-
+    content:
+      "We craft compelling content strategies, engaging videos, informative blogs, and striking visuals that connect with your audience and communicate real value. Every piece of content is designed to strengthen your brand voice and drive meaningful engagement across platforms. With PromozioneBranding, we ensure your content not only looks great — but also performs. From storytelling to SEO-focused writing, we help you build authority, trust, and conversions through smart, consistent content delivery.",
   };
 
   return (
@@ -111,7 +108,7 @@ development:
                 proven digital strategies across Delhi NCR, Gurugram, Noida,
                 Faridabad, and Ghaziabad.
               </p>
-              <Link to ="/Contact" className="hover-link btn btn-outline ">
+              <Link to="/Contact" className="hover-link btn btn-outline ">
                 Start Generating Leads in Just 7 Days!
                 <span className="arrow-icon">→</span>
               </Link>
@@ -166,8 +163,6 @@ development:
       </div>
 
       {/* form */}
-
-
 
       <OurMission></OurMission>
       <Project></Project>

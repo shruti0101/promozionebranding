@@ -11,7 +11,7 @@ import Project from "./Landingpage/Project";
 
 import Leadgen from "./Landingpage/Leadgen";
 import Form2 from "./Landingpage/Form2";
-import ctaImage from "../../assets/formimg.webp"
+import ctaImage from "../../assets/ctaweb.webp"
 
 import Hero from "../Hero";
 

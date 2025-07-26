@@ -5,11 +5,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import shopify from "../../assets/services/shopify.webp";
 import Service from "../Servicecomponent/Service";
-import image from "../../assets/services/shopify1.png"
+import image from "../../assets/services/shopify1.webp";
 import Process from "../Process/Process";
-import funnel from "../../assets/services/funnel.webp"
+import funnel from "../../assets/services/funnel.webp";
 import WhyChoose from "../WHYCHOOSE/WhyChoose";
-import ctaImage from "../../assets/formimg.webp"
+import ctaImage from "../../assets/ctaweb.webp";
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
 const Shopify = () => {
@@ -41,120 +41,114 @@ const Shopify = () => {
   ];
 
   const services = [
-  {
-    icon: "bi-bullseye",
-    title: "Advanced SEO Audits",
-    description:
-      "Deep technical + content audits using enterprise-grade tools like SEMrush, Ahrefs, Screaming Frog, and Google Search Console.",
-  },
-  {
-    icon: "bi-search",
-    title: "Scalable Technical SEO",
-    description:
-      "Crawl budget optimization, site architecture planning, mobile-friendliness, indexation fixes & Core Web Vitals improvement.",
-  },
-  {
-    icon: "bi-envelope-paper",
-    title: "Keyword Strategy for Scale",
-    description:
-      "Target long-tail, transactional, branded & local keywords across hundreds of pages.",
-  },
-  {
-    icon: "bi-person-plus",
-    title: "Enterprise Content Strategy",
-    description:
-      "Content hubs, pillar pages, product content, localization, and programmatic SEO.",
-  },
-  {
-    icon: "bi-graph-up-arrow",
-    title: "Multi-location SEO",
-    description:
-      "Rank your brand in 10, 50, or 100+ cities using smart local SEO strategies + Google Business Profiles.",
-  },
-  {
-    icon: "bi-arrow-repeat",
-    title: "Data-Driven Reporting",
-    description:
-      "Track keyword movement, ROI, traffic behavior, conversions & technical health—delivered monthly.",
-  },
-  {
-    icon: "bi-diagram-3",
-    title: "White Hat Link Building at Scale",
-    description:
-      "Authority-building via content outreach, PR, guest posts, and high DA backlinks.",
-  },
-];
+    {
+      icon: "bi-bullseye",
+      title: "Advanced SEO Audits",
+      description:
+        "Deep technical + content audits using enterprise-grade tools like SEMrush, Ahrefs, Screaming Frog, and Google Search Console.",
+    },
+    {
+      icon: "bi-search",
+      title: "Scalable Technical SEO",
+      description:
+        "Crawl budget optimization, site architecture planning, mobile-friendliness, indexation fixes & Core Web Vitals improvement.",
+    },
+    {
+      icon: "bi-envelope-paper",
+      title: "Keyword Strategy for Scale",
+      description:
+        "Target long-tail, transactional, branded & local keywords across hundreds of pages.",
+    },
+    {
+      icon: "bi-person-plus",
+      title: "Enterprise Content Strategy",
+      description:
+        "Content hubs, pillar pages, product content, localization, and programmatic SEO.",
+    },
+    {
+      icon: "bi-graph-up-arrow",
+      title: "Multi-location SEO",
+      description:
+        "Rank your brand in 10, 50, or 100+ cities using smart local SEO strategies + Google Business Profiles.",
+    },
+    {
+      icon: "bi-arrow-repeat",
+      title: "Data-Driven Reporting",
+      description:
+        "Track keyword movement, ROI, traffic behavior, conversions & technical health—delivered monthly.",
+    },
+    {
+      icon: "bi-diagram-3",
+      title: "White Hat Link Building at Scale",
+      description:
+        "Authority-building via content outreach, PR, guest posts, and high DA backlinks.",
+    },
+  ];
 
+  const points = [
+    " D2C & Fashion Brands",
+    "Home-Bakers & Boutique Stores",
+    "Gift Shops & Custom Products",
+    "Beauty, Wellness & Ayurvedic Brands",
+    "Digital & Downloadable Product Sellers",
+    "B2B or Niche Shopify Stores",
+  ];
+  const note = [
+    "Hum sirf design nahi karte — hum aapke Shopify store ko revenue machine banate hain.",
+  ];
 
+  const funnelData = [
+    {
+      title: "Step 1: Discovery & Audit",
+      services: [
+        " We analyze your site structure, content depth, backlinks & competitor landscape.",
+      ],
+      color: "#2563eb",
+    },
+    {
+      title: "Step 2: Strategy Blueprint",
+      services: [
+        " We create a page-level SEO roadmap based on priority, difficulty, and revenue opportunity.",
+      ],
+      color: "#16a34a",
+    },
+    {
+      title: "Step 3: Technical Implementation",
+      services: [
+        " Fix crawling, speed, indexation, schema, and more – backed by dev collaboration.",
+      ],
+      color: "#f59e0b",
+    },
+    {
+      title: "Step 4: Content Optimization",
+      services: [
+        " Refresh & expand existing content + add high-performance pages.",
+      ],
+      color: "#ec4899",
+    },
+    {
+      title: "Step 5:Link Building & Authority Growt",
+      services: [" Earn backlinks from premium, relevant sources – at scale."],
+      color: "#0ea5e9",
+    },
 
-const points=[
- " D2C & Fashion Brands",
-"Home-Bakers & Boutique Stores",
-"Gift Shops & Custom Products",
-"Beauty, Wellness & Ayurvedic Brands",
-"Digital & Downloadable Product Sellers",
-"B2B or Niche Shopify Stores",
+    {
+      title: "Step 6: Monitoring & Scaling",
+      services: [
+        " Track performance, adapt, and grow into new markets or verticals.",
+      ],
+      color: "#222",
+    },
+  ];
 
-]
-const note=[
-  "Hum sirf design nahi karte — hum aapke Shopify store ko revenue machine banate hain."
-] 
-
-const funnelData = [
-  {
-    title: "Step 1: Discovery & Audit",
-    services: [
-      " We analyze your site structure, content depth, backlinks & competitor landscape.",
-  
-    ],
-    color: "#2563eb",
-  },
-  {
-    title: "Step 2: Strategy Blueprint",
-    services: [
-      " We create a page-level SEO roadmap based on priority, difficulty, and revenue opportunity.",
-    ],
-    color: "#16a34a",
-  },
-  {
-    title: "Step 3: Technical Implementation",
-    services: [
-      " Fix crawling, speed, indexation, schema, and more – backed by dev collaboration.",
-    ],
-    color: "#f59e0b",
-  },
-  {
-    title: "Step 4: Content Optimization",
-    services: [
-      " Refresh & expand existing content + add high-performance pages.",
-    ],
-    color: "#ec4899",
-  },
-  {
-    title: "Step 5:Link Building & Authority Growt",
-    services: [
-      " Earn backlinks from premium, relevant sources – at scale.",
-    ],
-    color: "#0ea5e9",
-  },
-
-   {
-    title: "Step 6: Monitoring & Scaling",
-    services: [
-      " Track performance, adapt, and grow into new markets or verticals.",
-    ],
-    color: "#222",
-  },
-];
-
-const features = [
-  "100% In-house UI/UX + eCommerce ",
-  " 100% mobile-friendly, SEO-ready Shopify design",
-  " Store setup with marketing & conversion in mind",
-  "Multi-language, multi-currency store options",
-  "Post-launch support for upgrades, fixes & marketing",
-  "Dedicated SEO manager & regular strategy reviews",
-];
+  const features = [
+    "100% In-house UI/UX + eCommerce ",
+    " 100% mobile-friendly, SEO-ready Shopify design",
+    " Store setup with marketing & conversion in mind",
+    "Multi-language, multi-currency store options",
+    "Post-launch support for upgrades, fixes & marketing",
+    "Dedicated SEO manager & regular strategy reviews",
+  ];
 
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
@@ -168,8 +162,6 @@ const features = [
       "max-glare": 0.3,
     });
   }, []);
-
-
 
   return (
     <div>
@@ -187,8 +179,7 @@ Whether you're starting fresh or revamping your old store
 
       {/* what is shopify */}
 
-      <section className=" container php-section py-5 position-relative overflow-hidden">
-   
+      <section className=" container-fluid php-section py-5 position-relative overflow-hidden">
         <div className="blob-bg"></div>
 
         <div className="container-fluid">
@@ -197,7 +188,10 @@ Whether you're starting fresh or revamping your old store
             <div className="col-md-6" data-aos="fade-right">
               <h2 className="php-heading">
                 What is{" "}
-                <span style={{ color: "#2548BD" }} > Shopify Web Designing?</span>{" "}
+                <span style={{ color: "#2548BD" }}>
+                  {" "}
+                  Shopify Web Designing?
+                </span>{" "}
               </h2>
               <p className="php-desc">
                 Shopify is the #1 platform for eCommerce businesses – trusted by
@@ -207,9 +201,8 @@ Whether you're starting fresh or revamping your old store
               <ul className="php-points">
                 {[
                   "No Coding Required – Manage products, orders & customers with zero tech stress",
-                  "Mobile-Friendly – 80% log phone se shopping karte hain, hum uska bhi dhyan rakhte hain",
+                  "Mobile-Friendly – 92% log phone se shopping karte hain, hum uska bhi dhyan rakhte hain",
                   "Built-In SEO Features – Better visibility = more organic traffic",
-                 
                 ].map((item, index) => (
                   <li
                     data-aos="fade-left"
@@ -238,7 +231,7 @@ Whether you're starting fresh or revamping your old store
                 <img
                   src={shopify}
                   alt="PHP Development"
-                  className="svg-float"
+                  className="svg-float img-fluid"
                 />
               </div>
             </div>
@@ -246,52 +239,48 @@ Whether you're starting fresh or revamping your old store
         </div>
       </section>
 
-
       {/* services */}
 
- <Service
-      title="Our Shopify Web Designing Services Include:"
-      subtitle="Hum sirf design nahi karte — hum aapke Shopify store ko revenue machine banate hain.
+      <Service
+        title="Our Shopify Web Designing Services Include:"
+        subtitle="Hum sirf design nahi karte — hum aapke Shopify store ko revenue machine banate hain.
 
 
 
       "
         points={points}
         note={note}
-    
-    
-      services={services}
-      image={image }
-    />
+        services={services}
+        image={image}
+      />
 
-{/* our process */}
-<Process
-title="Our Shopify Web Designing Process" image={funnel} data={funnelData} 
+      {/* our process */}
+      <Process
+        title="Our Shopify Web Designing Process"
+        image={funnel}
+        data={funnelData}
+      ></Process>
 
-></Process>
+      {/* why choose us */}
 
-
-{/* why choose us */}
-
-<WhyChoose
-  title="Why  Store Design?"
-  highlightedText="Promozione for Shopify"
-  features={features}
-  ctaTitle="Ready to Launch Your Shopify Store?
+      <WhyChoose
+        title="Why  Store Design?"
+        highlightedText="Promozione for Shopify"
+        features={features}
+        ctaTitle="Ready to Launch Your Shopify Store?
 "
-  ctaSubtext="Stop guessing. Start scaling."
-  ctaParagraph="Whether you're a first-time founder or an existing business going online, our Shopify Web Designing Services will give your brand the edge to stand out and sell more."
-  ctaButtonText="Let’s Get Started"
-/>
+        ctaSubtext="Stop guessing. Start scaling."
+        ctaParagraph="Whether you're a first-time founder or an existing business going online, our Shopify Web Designing Services will give your brand the edge to stand out and sell more."
+        ctaButtonText="Let’s Get Started"
+      />
 
-
-<Story></Story>
-    <Form2
-            heading="Let's Build Your Success Story Together"
-            price="Your Growth is Our Guarantee."
-            buttonText="Book Your Free Consultation Now!"
-            image={ctaImage}
-          ></Form2>
+      <Story></Story>
+      <Form2
+        heading="Let's Build Your Success Story Together"
+        price="Your Growth is Our Guarantee."
+        buttonText="Book Your Free Consultation Now!"
+        image={ctaImage}
+      ></Form2>
     </div>
   );
 };

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://top10digitalmarketingagency.com/sitemap.xml

@@ -1,18 +1,16 @@
 import React, { useRef } from "react";
 import "./Wordpress.css";
 import Tiltcard from "../../TiltCardHome/Tiltcard";
-import wp1 from "../../assets/services/wp1.png";
-import themesImg from "../../assets/services/themes-img.png";
+import wp1 from "../../assets/services/wp1.webp";
+import themesImg from "../../assets/services/themes-img.webp";
 import { FaCheckCircle } from "react-icons/fa";
-import VanillaTilt from "vanilla-tilt";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
-import ctaImage from "../../assets/formimg.webp"
+import ctaImage from "../../assets/ctaweb.webp"
 import Service from "../Servicecomponent/Service";
 import wordpress from "../../assets/services/wordpress.webp"
+import { Link } from "react-router-dom";
 const cardItems = [
   {
     icon: "🎨", // UI/UX Design
@@ -128,13 +126,7 @@ const points=[
 
 
 const Wordpress = () => {
-   useEffect(() => {
-     AOS.init({
-       duration: 1000,
-       once: true,
-       easing: "ease-in-out",
-     });
-   }, []);
+   
  
 
   return (
@@ -156,7 +148,7 @@ const Wordpress = () => {
           <div className="row mt-4">
             {/* <img src={dots} alt="" className="position-absolute" /> */}
 
-    <div className="col-md-7" data-aos="fade up">
+    <div className="col-md-7">
               <h1 className="fw-bold fs-1 p-2 ">
                 {" "}
                 What is WordPress Website design?
@@ -175,7 +167,7 @@ const Wordpress = () => {
 
 
 
-            <div className="col-md-5" data-aos="zoom-in">
+            <div className="col-md-5" >
               <img src={wp1} alt="social-ads" className="img-fluid" />
             </div>
         
@@ -193,7 +185,7 @@ const Wordpress = () => {
       <div className="container position-relative">
         <div className="row align-items-center">
           {/* Left Column */}
-          <div className="col-md-7" data-aos="fade-right">
+          <div className="col-md-7" >
             <h2 className="display-6 fw-bold mb-4">
               Why Choose Our < span className="text-highlight">WordPress Website </span>  Services ?
             </h2>
@@ -243,7 +235,7 @@ const Wordpress = () => {
           </div>
 
           {/* Right Column - CTA Box */}
-              <div className="col-md-5 mt-5 mt-md-0" data-aos="fade-up" data-aos-delay="150">
+              <div className="col-md-5 mt-5 mt-md-0" >
   <div
     className="p-5 rounded-4 shadow-sm cta-enhanced text-dark position-relative overflow-hidden"
     style={{
@@ -262,8 +254,8 @@ const Wordpress = () => {
      We’re not just designers—we’re your digital growth partners. Our project focus is on ROI, conversion, and customer trust.
 
       </p>
-      <a
-        href="#contact"
+      <Link
+        to="/Contact"
         className="btn btn-primary w-100 fw-semibold"
         style={{
           borderRadius: "12px",
@@ -272,7 +264,7 @@ const Wordpress = () => {
         }}
       >
         🚀 Let’s Get Started
-      </a>
+      </Link>
     </div>
     <div
       className="position-absolute top-0 start-0 w-100 h-100"
@@ -305,12 +297,12 @@ const Wordpress = () => {
     {/* process section */}
 <section className="process-section py-5">
       <div className="container">
-        <h2 className="section-title text-center mb-5" data-aos="fade-down">
+        <h2 className="section-title text-center mb-5">
           Our <span>WordPress</span> Design Process
         </h2>
         <div className="row align-items-center">
           {/* Left Side: Steps */}
-          <div className="col-md-6" data-aos="fade-right">
+          <div className="col-md-6" >
             <div className="steps-wrapper">
               {steps.map((step, index) => (
                 <div className="step-item" key={index}>
@@ -325,7 +317,7 @@ const Wordpress = () => {
           </div>
 
           {/* Right Side: Image */}
-          <div className="col-md-6 text-center" data-aos="fade-left">
+          <div className="col-md-6 text-center" >
             <img
               src={themesImg}
               alt="WordPress Themes"

@@ -1,11 +1,11 @@
 import Tiltcard from "../../TiltCardHome/Tiltcard";
-import enterprise from "../../assets/services/enterprise.png";
+import enterprise from "../../assets/services/enterprise.webp";
 import image from "../../assets/services/social2.webp"
 import Service from "../Servicecomponent/Service";
 import funnel from "../../assets/services/funnel.webp";
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
-import ctaImage from "../../assets/formimg.webp"
+import ctaImage from "../../assets/ctaweb.webp"
 import { FaCheckCircle } from "react-icons/fa";
 import React, { useEffect } from "react";
 import AOS from "aos";

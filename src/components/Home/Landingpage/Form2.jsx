@@ -2,6 +2,7 @@ import React from 'react';
 import '../../../styles/Form2.css';
 import { Link } from 'react-router-dom';
 
+
 const Form2 = ({ heading, price, buttonText, image }) => {
 
 

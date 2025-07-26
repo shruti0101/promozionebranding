@@ -1,28 +1,25 @@
 .hero-section {
   position: relative;
   min-height: 100vh;
-  background-image: url("../assets/bg/h1bg-1.png");
-  background-color: #e8d2ff;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: color-dodge;
+  background: #013B7A;
+  background-size: center;
+  background-repeat: repeat;
   padding: 40px 20px;
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 100%;
   width: 100%;
   padding: 0 20px;
-  text-align: left; /* Default: left aligned */
+  text-align: left;
 }
 
 .hero-title {
-  color: #000;
-  font-size: 4.5rem;
+  color: white;
+  font-size: 3.5rem;
   font-weight: bold;
-  margin-bottom: 2rem;
+ 
   max-width: 750px;
   line-height: 1.2;
 }
@@ -30,36 +27,52 @@
 .hero-subtitle {
   font-size: 1.25rem;
   font-weight: 500;
-  color: #333;
+  color: white;
   max-width: 750px;
-  margin-bottom: 2rem;
+
   line-height: 1.6;
 }
 
-
-
-
-
-.glow-ball {
-  position: absolute;
-  pointer-events: none;
-  z-index: 1;
-  transition: transform 0.2s ease-out;
+.nav-btn2 {
+  background-color: #ffffff;
+  color: #013B7A;
+  border: none;
+  padding: 12px 28px;
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin: 0 auto;
 }
 
-.ball1 {
-  width: 27%;
-  left: 66%;
-  top: 55%;
-  animation: fallAndBounce1 1.9s ease-out forwards, float 4s ease-in-out 3s infinite;
+.nav-btn2:hover {
+  background-color: #f2f2f2;
+  color: #002A5E;
+  transform: translateY(-2px);
+}
+.form-glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
-.ball2 {
-  width: 14%;
-  right: 30%;
-  top: 5%;
-  animation: fallAndBounce2 2s ease-out forwards, floatReverse 4s ease-in-out 3.5s infinite;
+.input-fill {
+  background: rgba(255, 255, 255, 0.85);
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 0.95rem;
 }
+
+.input-fill:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+
 
 /* Tablet */
 @media (max-width: 992px) {
@@ -77,21 +90,38 @@
     text-align: center;
   }
 
-  .nav-btn1 {
-    font-size: 1rem;
-    padding: 10px 24px;
-  }
-
   .hero-content {
     text-align: center;
+  }
+
+  .nav-btn2 {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* Tablet specific fixes */
+@media (min-width: 768px) and (max-width: 991.98px) {
+ 
+
+  .hero-content {
+    text-align: center !important;
+  }
+
+  .hero-title,
+  .hero-subtitle,
+  .nav-btn2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-section {
+    min-height: unset !important;
   }
 }
 
 /* Mobile */
 @media (max-width: 576px) {
-  .hero-content{
-    text-align: center;
-  }
   .hero-section {
     min-height: 42vh;
     padding: 20px 5vw;
@@ -108,77 +138,16 @@
     line-height: 1.5;
   }
 
-  .nav-btn1 {
-    font-size: 0.95rem;
-    padding: 10px 20px;
-    width: 100%;
-    max-width: 200px;
+  .hero-content {
+    text-align: center;
+  }
 
-    margin: 0 auto;
+  .nav-btn2 {
     display: block;
+    margin: 0 auto;
   }
 
-  .ball1,
-  .ball2 {
-    display: none !important;
-  }
+
 }
 
-/* Animations */
-@keyframes fallAndBounce1 {
-  0% {
-    top: -200px;
-    transform: rotate(720deg) scale(0.8);
-    opacity: 0;
-  }
-  50% {
-    transform: rotate(500deg) scale(1.1);
-    opacity: 1;
-  }
-  70% {
-    top: 52%;
-    transform: rotate(400deg) scale(0.95);
-  }
-  100% {
-    top: 50%;
-    transform: rotate(360deg) scale(1);
-  }
-}
 
-@keyframes fallAndBounce2 {
-  0% {
-    top: -250px;
-    transform: rotate(0deg) scale(0.6);
-    opacity: 0;
-  }
-  50% {
-    transform: rotate(700deg) scale(1.2);
-    opacity: 1;
-  }
-  70% {
-    top: 6%;
-    transform: rotate(600deg) scale(0.95);
-  }
-  100% {
-    top: 5%;
-    transform: rotate(550deg) scale(1);
-  }
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px) rotate(360deg);
-  }
-  50% {
-    transform: translateY(-10px) rotate(365deg);
-  }
-}
-
-@keyframes floatReverse {
-  0%, 100% {
-    transform: translateY(0px) rotate(720deg);
-  }
-  50% {
-    transform: translateY(10px) rotate(715deg);
-  }
-}

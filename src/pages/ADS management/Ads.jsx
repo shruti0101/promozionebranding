@@ -2,7 +2,7 @@ import Service from "../Servicecomponent/Service";
 import funnel from "../../assets/services/funnel.webp";
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
-import ctaImage from "../../assets/formimg.webp";
+import ctaImage from "../../assets/ctaweb.webp";
 import Process from "../Process/Process";
 import { FaCheckCircle } from "react-icons/fa";
 import { useEffect } from "react";
@@ -12,7 +12,7 @@ import Tiltcard from "../../TiltCardHome/Tiltcard";
 import crm2 from "../../assets/services/ads2.webp";
 import VanillaTilt from "vanilla-tilt";
 import WhyChoose from "../WHYCHOOSE/WhyChoose";
-import crm from "../../assets/services/ads.png";
+import crm from "../../assets/services/ads.webp";
 import ads3 from "../../assets/services/ads3.webp";
 const Ads = () => {
   useEffect(() => {
@@ -28,138 +28,128 @@ const Ads = () => {
     });
   }, []);
 
-const cardItems = [
-  {
-    title: "Market & Audience Research",
-    icon: "🔍", // Magnifying glass – Perfect for research/discovery
-  },
-  {
-    title: "Campaign Strategy & Funnel Setup",
-    icon: "🧠", // Brain – Strategic thinking, planning funnels
-  },
-  {
-    title: "Ad Copywriting & Creative Design",
-    icon: "🖌️", // Paintbrush – Creative work like design and copy
-  },
-  {
-    title: "Retargeting & Remarketing",
-    icon: "♻️", // Recycling – Circular process, targeting again
-  },
-  {
-    title: "A/B Testing & Scaling",
-    icon: "📊", // Bar chart – Perfect for testing and measuring
-  },
-  {
-    title: "Transparent Reporting & Analytics",
-    icon: "📈", // Line chart – Data, growth, reporting
-  },
-];
+  const cardItems = [
+    {
+      title: "Market & Audience Research",
+      icon: "🔍", // Magnifying glass – Perfect for research/discovery
+    },
+    {
+      title: "Campaign Strategy & Funnel Setup",
+      icon: "🧠", // Brain – Strategic thinking, planning funnels
+    },
+    {
+      title: "Ad Copywriting & Creative Design",
+      icon: "🖌️", // Paintbrush – Creative work like design and copy
+    },
+    {
+      title: "Retargeting & Remarketing",
+      icon: "♻️", // Recycling – Circular process, targeting again
+    },
+    {
+      title: "A/B Testing & Scaling",
+      icon: "📊", // Bar chart – Perfect for testing and measuring
+    },
+    {
+      title: "Transparent Reporting & Analytics",
+      icon: "📈", // Line chart – Data, growth, reporting
+    },
+  ];
 
+  const funnelData = [
+    {
+      title: "Step 1: Business Audit & Strategy Planning",
+      services: [
+        "Aapka target customer, product/service aur campaign objective samajhkar ek custom plan banate hain.",
+        "Hum aapki current marketing efforts ka audit karke improvement areas identify karte hain.",
+      ],
+      color: "#2563eb", // Blue
+    },
+    {
+      title: "Step 2: Keyword & Competitor Research",
+      services: [
+        "Jo log aapka product Google pe search kar rahe hain, unko identify aur target karte hain.",
+      ],
+      color: "#16a34a", // Green
+    },
+    {
+      title: "Step 3: Creative Development & Ad Setup",
+      services: [
+        "Search ads, display banners, YouTube videos – sab create karke launch karte hain.",
+        "High-converting ad copies, visuals & videos – Hindi, English, Hinglish mein.",
+      ],
+      color: "#f59e0b", // Amber
+    },
+    {
+      title: "Step 4: Launch Campaigns & Monitor KPIs",
+      services: [
+        "Campaigns launch hone ke baad, daily CTR, CPC, conversion rate monitor kiya jata hai.",
+      ],
+      color: "#ec4899", // Pink
+    },
+    {
+      title: "Step 5: Optimization & Scaling",
+      services: [
+        "Low CTR? High CPC? Hum fix karte hain using data-backed decisions.",
+        "High-performing ads ko scale karke zyada leads aur ROI generate karte hain.",
+      ],
+      color: "#0ea5e9", // Sky blue
+    },
+    {
+      title: "Step 6: Reporting & ROI Analysis",
+      services: [
+        "ROI, CPL, CTR – sab kuch transparent aur actionable hota hai.",
+      ],
+      color: "#222", // Dark
+    },
+  ];
 
-const funnelData = [
-  {
-    title: "Step 1: Business Audit & Strategy Planning",
-    services: [
-      "Aapka target customer, product/service aur campaign objective samajhkar ek custom plan banate hain.",
-      "Hum aapki current marketing efforts ka audit karke improvement areas identify karte hain.",
-     
-    ],
-    color: "#2563eb", // Blue
-  },
-  {
-    title: "Step 2: Keyword & Competitor Research",
-    services: [
-      "Jo log aapka product Google pe search kar rahe hain, unko identify aur target karte hain.",
-      
-    ],
-    color: "#16a34a", // Green
-  },
-  {
-    title: "Step 3: Creative Development & Ad Setup",
-    services: [
-      "Search ads, display banners, YouTube videos – sab create karke launch karte hain.",
-      "High-converting ad copies, visuals & videos – Hindi, English, Hinglish mein.",
-      
-    ],
-    color: "#f59e0b", // Amber
-  },
-  {
-    title: "Step 4: Launch Campaigns & Monitor KPIs",
-    services: [
-      "Campaigns launch hone ke baad, daily CTR, CPC, conversion rate monitor kiya jata hai.",
-     
-    ],
-    color: "#ec4899", // Pink
-  },
-  {
-    title: "Step 5: Optimization & Scaling",
-    services: [
-      "Low CTR? High CPC? Hum fix karte hain using data-backed decisions.",
-      "High-performing ads ko scale karke zyada leads aur ROI generate karte hain.",
-    
-    ],
-    color: "#0ea5e9", // Sky blue
-  },
-  {
-    title: "Step 6: Reporting & ROI Analysis",
-    services: [
-      "ROI, CPL, CTR – sab kuch transparent aur actionable hota hai.",
-    
-    ],
-    color: "#222", // Dark
-  },
-];
-
-
- const services = [
-  {
-    icon: "bi-search", // Magnifying glass for research
-    title: "Market & Audience Research",
-    description:
-      "We start with data-driven research to understand your audience, competitors, and ideal channels.",
-  },
-  {
-    icon: "bi-diagram-3", // Funnel chart for strategy setup
-    title: "Campaign Strategy & Funnel Setup",
-    description:
-      "Custom ad funnels built to match your business goals — whether it’s signups, purchases, or app installs.",
-  },
-  {
-    icon: "bi-megaphone", // Megaphone for ad copy & design
-    title: "Ad Copywriting & Creative Design",
-    description:
-      "High-performing visuals + attention-grabbing ad copy (Hinglish bhi chalega).",
-  },
-  {
-    icon: "bi-rocket-takeoff", // Rocket for launch/optimization
-    title: "Campaign Setup & Optimization",
-    description:
-      "From ad group structure to audience targeting and bidding — fully optimized for ROI.",
-  },
-  {
-    icon: "bi-arrow-repeat", // Circular arrow for retargeting
-    title: "Retargeting & Remarketing",
-    description:
-      "Bring back warm leads with smart, automated follow-up ads.",
-  },
-  {
-    icon: "bi-sliders2", // Sliders for testing and scaling
-    title: "A/B Testing & Scaling",
-    description:
-      "We test headlines, visuals, CTAs and more — so your best-performing ad always leads the charge.",
-  },
-  {
-    icon: "bi-graph-up-arrow", // Graph for reporting
-    title: "Transparent Reporting & Analytics",
-    description:
-      "Weekly & monthly reports with KPIs, ROI, CPL, CTR, ROAS — sab kuch milega.",
-  },
-];
-
+  const services = [
+    {
+      icon: "bi-search", // Magnifying glass for research
+      title: "Market & Audience Research",
+      description:
+        "We start with data-driven research to understand your audience, competitors, and ideal channels.",
+    },
+    {
+      icon: "bi-diagram-3", // Funnel chart for strategy setup
+      title: "Campaign Strategy & Funnel Setup",
+      description:
+        "Custom ad funnels built to match your business goals — whether it’s signups, purchases, or app installs.",
+    },
+    {
+      icon: "bi-megaphone", // Megaphone for ad copy & design
+      title: "Ad Copywriting & Creative Design",
+      description:
+        "High-performing visuals + attention-grabbing ad copy (Hinglish bhi chalega).",
+    },
+    {
+      icon: "bi-rocket-takeoff", // Rocket for launch/optimization
+      title: "Campaign Setup & Optimization",
+      description:
+        "From ad group structure to audience targeting and bidding — fully optimized for ROI.",
+    },
+    {
+      icon: "bi-arrow-repeat", // Circular arrow for retargeting
+      title: "Retargeting & Remarketing",
+      description: "Bring back warm leads with smart, automated follow-up ads.",
+    },
+    {
+      icon: "bi-sliders2", // Sliders for testing and scaling
+      title: "A/B Testing & Scaling",
+      description:
+        "We test headlines, visuals, CTAs and more — so your best-performing ad always leads the charge.",
+    },
+    {
+      icon: "bi-graph-up-arrow", // Graph for reporting
+      title: "Transparent Reporting & Analytics",
+      description:
+        "Weekly & monthly reports with KPIs, ROI, CPL, CTR, ROAS — sab kuch milega.",
+    },
+  ];
 
   const points = [
     " E-commerce & D2C brands",
-    "B2B & SaaS companies",
+    "B2B & SMEs Companies, Manufacturers, Traders, Suppliers, Distributers, Dealers, Importers, Exporters",
     "Real estate, education, healthcare",
     "Events, webinars & online coaching",
     "Lead generation for services",
@@ -169,15 +159,14 @@ const funnelData = [
     "If your customer is online — we’ll help you find (and convert) them.",
   ];
 
-const features = [
-  "Multi-platform expertise (Google, Meta, LinkedIn, YouTube)",
-  "Full-funnel focus — not just leads, but conversions",
-  "Performance + creativity = ads that sell",
-  "Hindi, English, Hinglish — your language, your audience",
-  "Dedicated ad strategist + 100% transparency",
-  "Affordable packages for startups, SMEs & D2C brands"
-];
-
+  const features = [
+    "Multi-platform expertise (Google, Meta, LinkedIn, YouTube)",
+    "Full-funnel focus — not just leads, but conversions",
+    "Performance + creativity = ads that sell",
+    "Hindi, English, Hinglish — your language, your audience",
+    "Dedicated ad strategist + 100% transparency",
+    "Affordable packages for startups, SMEs & D2C brands",
+  ];
 
   return (
     <>
@@ -212,11 +201,12 @@ At Promozione Branding Pvt. Ltd., we offer expert Ads Management Services across
                 <span style={{ color: "#2548BD" }}>Ads Management?</span>{" "}
               </h2>
               <p className="php-desc">
-                 <strong>Ads Management</strong> is the complete process of planning, creating,
-                launching, optimizing, and scaling your digital advertising
-                campaigns across different platforms like: Whether you’re
-                looking to <strong>get leads, drive sales, or grow brand awareness</strong>   — we
-                make sure your ads do the heavy lifting.
+                <strong>Ads Management</strong> is the complete process of
+                planning, creating, launching, optimizing, and scaling your
+                digital advertising campaigns across different platforms like:
+                Whether you’re looking to{" "}
+                <strong>get leads, drive sales, or grow brand awareness</strong>{" "}
+                — we make sure your ads do the heavy lifting.
               </p>
               <ul className="php-points">
                 {[

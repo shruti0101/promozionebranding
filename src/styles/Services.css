@@ -55,8 +55,8 @@ h1 {
 }
 
 .card-text {
-  font-size: 0.9rem;
-  color: #555;
+  font-size: 1.1rem;
+  color: black;
   margin-top: 10px;
 }
 
@@ -67,15 +67,15 @@ h1 {
 }
 
 .card-body ul li {
-  font-size: 0.9rem;
-  color: #555;
+  font-size: 1rem;
+  color: black;
   margin-bottom: 5px;
 }
 
 .card-body ul li span {
   color: black;
   font-family: "Mona Sans", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .card-body p span {

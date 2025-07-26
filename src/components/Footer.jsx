@@ -46,71 +46,62 @@ const Footer = () => {
         <div className="footer-top">
 
 
-       {renderDropdown("web", "Website Development", [
-            { label: "Custom Web Development", to: "/services/custom" },
-            { label: "PHP Website", to: "/services/development" },
-            { label: "CMS Development", to: "/services/marketing" },
-            { label: "React Development", to: "/services/mern" },
-            { label: "Shopify Design", to: "/services/ecommerce" },
-            { label: "SEO Web Design", to: "/services/seo" },
-            { label: "Website Redesigning", to: "/services/redesign" },
-            { label: "Landing Page Design", to: "/services/landing" },
+ 
 
-            { label: "Web Application Development ", to: "/services/webapp" },
-            { label: "B2B Website Development ", to: "/services/b2bdev" },
+{renderDropdown("web", "Website Development", [
+  { label: "B2B Web Development", to: "/services/b2b-web-development-services" },
+  { label: "Custom Web Development", to: "/services/custom-web-development-services" },
+  { label: "PHP Website Development", to: "/services/php-website-development-services" },
+  { label: "CMS Web Development", to: "/services/cms-web-development-services" },
+  { label: "React Web Development", to: "/services/react-web-development-services" },
+  { label: "Shopify Web Designing", to: "/services/shopify-web-designing-services" },
+  { label: "SEO Web Designing", to: "/services/seo-web-designing-services" },
+  { label: "Website Redesigning", to: "/services/website-redesigning-services" },
+  { label: "Landing Page Design", to: "/services/landing-page-design-services" },
+  { label: "Web Application Development", to: "/services/web-application-development-services" },
+  { label: "WordPress Website", to: "/services/wordpress-website-services" },
+])}
 
-            { label: "WordPress Website", to: "/services/design" },
-          ])}
+{renderDropdown("revenue", "Revenue Marketing & CRO", [
+  { label: "B2B Lead Generation", to: "/services/b2b-lead-generation-services" },
+  { label: "B2B Marketing", to: "/services/b2b-marketing-services" },
+  { label: "B2C Marketing", to: "/services/b2c-marketing-services" },
+  { label: "D2C Marketing", to: "/services/d2c-marketing-services" },
+  { label: "AI Performance Marketing Services", to: "/services/ai-performance-marketing-services" },
+  { label: "Ads Management", to: "/services/ads-management-services" },
+  { label: "Internet Marketing", to: "/services/internet-marketing-services" },
+  { label: "Demand Generation", to: "/services/demand-generation-services" },
+  { label: "Performance Marketing", to: "/services/performance-marketing-services" },
+])}
+
+{renderDropdown("digital", "Digital Marketing", [
+  { label: "Content Marketing", to: "/services/content-marketing-services" },
+  { label: "CRM Optimizations", to: "/services/crm-optimizations-services" },
+  { label: "Email Marketing", to: "/services/email-marketing-services" },
+  { label: "Video Marketing", to: "/services/video-marketing-services" },
+  { label: "Microsoft/Bing Ads", to: "/services/microsoft-bing-ads-services" },
+  { label: "Google AdWords/PPC", to: "/services/google-adword-ppc-services" },
+  { label: "SMO", to: "/services/social-media-optimization" },
+  { label: "SMM", to: "/services/social-media-marketing" },
+])}
+
+{renderDropdown("company", "Company Profile", [
+  { label: "Our Approach", to: "/profile/OurApproach" },
+  { label: "Who We Are", to: "/profile/whoweare" },
+  { label: "Blogs", to: "/profile/blogs" },
+  { label: "Client Reviews", to: "/profile/reviews" },
+  { label: "Career", to: "/profile/career" },
+  { label: "Contact Us", to: "/Contact" },
+])}
+
+{renderDropdown("seo", "Guaranteed SEO", [
+  { label: "AI Digital Marketing Services", to: "/services/ai-digital-marketing-services" },
+  { label: "Digital Marketing Services", to: "/services/digital-marketing-services" },
+  { label: "Enterprise SEO Services", to: "/services/enterprise-seo-services" },
+  { label: "AI SEO Services", to: "/services/ai-seo-services" },
+])}
 
 
-    {renderDropdown("revenue", "Revenue Marketing", [
-            { label: "Performance Marketing", to: "/services/performance" },
-            { label: "B2B Marketing", to: "/services/b2b" },
-              { label: "AI Performance Marketing", to: "/services/ai-performance" },
-            { label: "Lead Generation", to: "/services/leads" },
-             { label: "Ads Management", to: "/services/ads" },
-            { label: "B2B Lead Generation", to: "/services/b2b-leads" },
-            { label: "B2C Marketing ", to: "/services/b2c-marketing" },
-            { label: "D2C Marketing ", to: "/services/d2c" },
-            { label: "Internet Marketing", to: "/services/internet" },
-            { label: "Demand Generation", to: "/services/demand" },
-          ])}
-
-
-
-   
-          {renderDropdown("digital", "Digital Marketing", [
-            { label: "Content Marketing", to: "/services/content" },
-            { label: "CRM Optimization", to: "/services/crm" },
-            { label: "Email Marketing", to: "/services/email" },
-            { label: "Video Marketing", to: "/services/video" },
-            { label: "Micosoft/Bing Ads", to: "/services/Bing-ads" },
-                  { label: "Google AdWords", to: "/services/google-ads" },
-            { label: "SMM", to: "/services/smm" },
-       
-             { label: "SMO", to: "/services/smo" },
-            
-          ])}
-
-          {renderDropdown("company", "Company Profile", [
-            { label: "Our Approach", to: "/profile/OurApproach" },
-            { label: "Who We Are", to: "/profile/whoweare" },
-            { label: "Blogs", to: "/profile/blogs" },
-            { label: "Client Reviews", to: "/profile/reviews" },
-            { label: "Career", to: "/profile/career" },
-            { label: "Contact", to: "/Contact" },
-          ])}
-
-   
-
-     
-
-          {renderDropdown("seo", "Guaranteed SEO", [
-            { label: "AI Digital Marketing", to: "/services/ai-digital" },
-            { label: "Digital Marketing Services", to: "/services/digital-seo" },
-            { label: "Enterprise SEO", to: "/services/enterprise-seo" },
-            { label: "AI SEO Services", to: "/services/ai-seo" },
-          ])}
         </div>
 
         {/* Contact Info */}

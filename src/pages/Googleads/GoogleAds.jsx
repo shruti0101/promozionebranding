@@ -2,17 +2,17 @@ import Service from "../Servicecomponent/Service";
 import funnel from "../../assets/services/funnel.webp";
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
-import ctaImage from "../../assets/formimg.webp";
+import ctaImage from "../../assets/ctaweb.webp";
 import Process from "../Process/Process";
-import { FaCheckCircle } from "react-icons/fa";
-import React, { useEffect } from "react";
+
+import  { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Tiltcard from "../../TiltCardHome/Tiltcard";
-import adword from "../../assets/services/adword.webp";
+import adword from "../../assets/services/bing.webp";
 import VanillaTilt from "vanilla-tilt";
 import WhyChoose from "../WHYCHOOSE/WhyChoose";
-import image from "../../assets/services/adword1.webp"
+import image from "../../assets/services/bing2.svg"
 
 
 const GoogleAds = () => {
@@ -198,7 +198,7 @@ At Promozione Branding Pvt. Ltd., hum banate hain high-converting PPC campaigns 
         {/* Background Blob */}
         <div className="blob-bg"></div>
 
-        <div className="container-fluid">
+        <div className="container">
           <div className="row align-items-center flex-wrap-reverse">
             {/* Text Content */}
             <div className="col-md-6" data-aos="fade-right">

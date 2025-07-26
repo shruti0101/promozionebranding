@@ -4,26 +4,26 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 // Import images
-import digitalMarketingImage from "../../../assets/specialized/digital-marketing.png";
-import linkedin from "../../../assets/specialized/linkedin.png";
-import blog from "../../../assets/specialized/blogging.png";
-import wordpress from "../../../assets/services/web-design.png";
-import smo from "../../../assets/specialized/smo.png";
-import ppc from "../../../assets/specialized/ppc.png";
-import ppc2 from "../../../assets/specialized/ppc2.png";
-import googleAdsense from "../../../assets/specialized/google-analytics-new-logo.png";
-import googleAdsense2 from "../../../assets/specialized/Google-AdWord-Course.png";
-import lead from "../../../assets/specialized/lead-generation.png";
-import emailMarketing from "../../../assets/specialized/email-marketing.png";
-import goodlead from "../../../assets/specialized/lead-generation1.png";
-import localBusiness from "../../../assets/specialized/local-businesses.png";
-import affiliate from "../../../assets/specialized/affiliate-marketing-1.png";
-import mobile from "../../../assets/specialized/Mobile-Marketing-icon.png";
-import analytics from "../../../assets/specialized/youtube.png";
-import ecom from "../../../assets/specialized/ecommerce-shopping.png";
-import icon2 from "../../../assets/specialized/icon-2.png";
-import insta from "../../../assets/specialized/instagram-icon-1.png";
-import seo from "../../../assets/specialized/seo-1.png";
+import digitalMarketingImage from "../../../assets/specialized/digital-marketing.webp";
+import linkedin from "../../../assets/specialized/linkedin.webp";
+import blog from "../../../assets/specialized/blogging.webp";
+import wordpress from "../../../assets/services/web-design.webp";
+import smo from "../../../assets/specialized/smo.webp";
+import ppc from "../../../assets/specialized/ppc.webp";
+import ppc2 from "../../../assets/specialized/ppc2.webp";
+import googleAdsense from "../../../assets/specialized/google-analytics-new-logo.webp";
+import googleAdsense2 from "../../../assets/specialized/Google-AdWord-Course.webp";
+import lead from "../../../assets/specialized/lead-generation.webp";
+import emailMarketing from "../../../assets/specialized/email-marketing.webp";
+import goodlead from "../../../assets/specialized/lead-generation1.webp";
+import localBusiness from "../../../assets/specialized/local-businesses.webp";
+import affiliate from "../../../assets/specialized/affiliate-marketing-1.webp";
+import mobile from "../../../assets/specialized/Mobile-Marketing-icon.webp";
+import analytics from "../../../assets/specialized/youtube.webp";
+import ecom from "../../../assets/specialized/ecommerce-shopping.webp";
+import icon2 from "../../../assets/specialized/icon-2.webp";
+import insta from "../../../assets/specialized/instagram-icon-1.webp";
+import seo from "../../../assets/specialized/seo-1.webp";
 
 // Data
 const specializedCards = [
@@ -34,11 +34,11 @@ const specializedCards = [
   { img: ppc, alt: "Pay Per Click", title: "Pay Per Click Services" },
   { img: lead, alt: "Website Designing", title: "Website Designing Services" },
   { img: smo, alt: "Social Media Optimization", title: "Social Media Services" },
-  { img: ppc2, alt: "Google Adsense", title: "Google Adsense Services" },
+  { img: ppc2, alt: "Google Adsense", title: "B2B,D2C Lead Generation" },
   { img: affiliate, alt: "Affiliate Marketing", title: "Affiliate Marketing Services" },
   { img: mobile, alt: "Mobile App Marketing", title: "Mobile App Marketing Services" },
   { img: emailMarketing, alt: "Email Marketing", title: "Email Marketing Services" },
-  { img: goodlead, alt: "Google AdWord", title: "Lead Generation Services" },
+  { img: goodlead, alt: "Google AdWord", title: "B2C Lead Generation Services" },
   { img: ecom, alt: "E-commerce Marketing", title: "E-commerce Marketing Services" },
   { img: localBusiness, alt: "Local Business Listing", title: "Local Business Listing Services" },
   { img: blog, alt: "Blogging", title: "Blogging Services" },

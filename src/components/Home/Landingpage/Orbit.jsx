@@ -3,15 +3,15 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import img1 from "../../../assets/orbit/facebook (2).png"
-import img2 from "../../../assets/orbit/youtube (1).png";
-import img3 from "../../../assets/orbit/instagram (1).png";
-import img4 from "../../../assets/orbit/semrush.png";
-import img5 from "../../../assets/orbit/business.png";
+import img1 from "../../../assets/orbit/facebook (2).webp"
+import img2 from "../../../assets/orbit/youtube (1).webp";
+import img3 from "../../../assets/orbit/instagram (1).webp";
+import img4 from "../../../assets/orbit/semrush.webp";
+import img5 from "../../../assets/orbit/business.webp";
 import img6 from "../../../assets/orbit/ahrefs.webp";
 import img7 from "../../../assets/orbit/console.webp";
 // import img8 from "../../../assets/orbit/";
-import logo from "../../../assets/logoo.jpg";
+import logo from "../../../assets/logoo.webp";
 import bgabout from "../../../assets/bg/bg-wavedown.png";
 import   "../../../styles/Orbit.css";
 
@@ -28,7 +28,7 @@ const Orbit = () => {
         backgroundImage: `url(${bgabout})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        minHeight: "100vh",
+        // minHeight: "100vh",
         position: "relative",
         overflow: "hidden",
       }}

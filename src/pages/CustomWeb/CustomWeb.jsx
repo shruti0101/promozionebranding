@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Tiltcard from "../../TiltCardHome/Tiltcard";
-import cms from "../../assets/services/cms.png";
-import ctaImage from "../../assets/formimg.webp"
+import cms from "../../assets/services/cms.webp";
+import ctaImage from "../../assets/ctaweb.webp"
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
 import {
@@ -31,9 +31,9 @@ const CustomWeb = () => {
   ];
 
 const benefits = [
-  { icon: <FaCode />, title: "100% Custom Design", desc: "No themes, no copies." },
+  { icon: <FaCode />, title: "100% Custom Design", desc: "No themes, No copies." },
   { icon: <FaUsers />, title: "India-based Team", desc: "Fast support & better market understanding." },
-  { icon: <FaRocket />, title: "Conversion-Focused", desc: "More leads, better user experience." },
+  { icon: <FaRocket />, title: "Conversion-Focused", desc: "More leads, Better user experience." },
   { icon: <FaGlobe />, title: "Latest Technologies", desc: "React, Node, WordPress & more." },
   { icon: <FaServer />, title: "End-to-End Delivery", desc: "From domain to deployment – all done here." },
   { icon: <FaShieldAlt />, title: "Security & Speed", desc: "Built with performance & protection in mind." },

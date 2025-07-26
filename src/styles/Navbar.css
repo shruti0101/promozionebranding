@@ -1,14 +1,14 @@
 .navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 9999;
-  transition: top 0.3s ease-in-out;
+   
+  
   background: #fff; /* Ensure navbar is visible over content */
   box-shadow: 0 2px 8px rgba(0,0,0,0.04); /* Subtle shadow for separation */
 }
-
 
 
 

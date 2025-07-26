@@ -2,17 +2,17 @@ import Service from "../Servicecomponent/Service";
 import funnel from "../../assets/services/funnel.webp";
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
-import ctaImage from "../../assets/formimg.webp";
+import ctaImage from "../../assets/ctaweb.webp";
 import Process from "../Process/Process";
 import { FaCheckCircle } from "react-icons/fa";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Tiltcard from "../../TiltCardHome/Tiltcard";
-import d2c1 from "../../assets/services/d2c1.png";
+import d2c1 from "../../assets/services/d2c1.webp";
 import VanillaTilt from "vanilla-tilt";
 import WhyChoose from "../WHYCHOOSE/WhyChoose";
-import crm from "../../assets/services/d2c.png";
+import crm from "../../assets/services/d2c.webp";
 
 const D2c = () => {
   useEffect(() => {
@@ -100,49 +100,47 @@ const D2c = () => {
       color: "#222",
     },
   ];
-const services = [
-  {
-    icon: "bi-flag", // Represents brand identity and positioning
-    title: "Brand Strategy & Positioning",
-    description:
-      "We help you define your brand voice, identify your ideal audience, and carve out a niche that stands out in the market.",
-  },
-  {
-    icon: "bi-bullseye", // Target icon – precise for performance ads
-    title: "Performance Marketing (Meta & Google Ads)",
-    description:
-      "From cold audiences to hot buyers – we craft campaigns that drive conversions and deliver measurable ROI.",
-  },
-  {
-    icon: "bi-bag-check", // Shopping bag with check – suitable for optimized eCommerce
-    title: "Shopify / WooCommerce Optimization",
-    description:
-      "We design high-converting online stores, fix funnel leaks, and reduce cart abandonment with seamless UX improvements.",
-  },
-  {
-    icon: "bi-camera-reels", // Reels icon – perfect for video and UGC content
-    title: "Creative Content & UGC Campaigns",
-    description:
-      "We create scroll-stopping visuals – from reels and product videos to authentic influencer content that builds trust.",
-  },
-  {
-    icon: "bi-graph-up-arrow", // Represents tracking and optimization
-    title: "Full-Funnel Analytics & CRO",
-    description:
-      "We monitor every step of the funnel – analyzing what works, fixing what doesn't, and optimizing conversions throughout.",
-  },
- {
-  icon: "bi-chat-dots", // Chat/message bubbles – represents messaging automation
-  title: "Email, WhatsApp & SMS Automation",
-  description:
-    "Automate retention and re-engagement – from welcome emails to abandoned carts and cross-sell campaigns.",
-}
-
-];
-
+  const services = [
+    {
+      icon: "bi-flag", // Represents brand identity and positioning
+      title: "Brand Strategy & Positioning",
+      description:
+        "We help you define your brand voice, identify your ideal audience, and carve out a niche that stands out in the market.",
+    },
+    {
+      icon: "bi-bullseye", // Target icon – precise for performance ads
+      title: "Performance Marketing (Meta & Google Ads)",
+      description:
+        "From cold audiences to hot buyers – we craft campaigns that drive conversions and deliver measurable ROI.",
+    },
+    {
+      icon: "bi-bag-check", // Shopping bag with check – suitable for optimized eCommerce
+      title: "Shopify / WooCommerce Optimization",
+      description:
+        "We design high-converting online stores, fix funnel leaks, and reduce cart abandonment with seamless UX improvements.",
+    },
+    {
+      icon: "bi-camera-reels", // Reels icon – perfect for video and UGC content
+      title: "Creative Content & UGC Campaigns",
+      description:
+        "We create scroll-stopping visuals – from reels and product videos to authentic influencer content that builds trust.",
+    },
+    {
+      icon: "bi-graph-up-arrow", // Represents tracking and optimization
+      title: "Full-Funnel Analytics & CRO",
+      description:
+        "We monitor every step of the funnel – analyzing what works, fixing what doesn't, and optimizing conversions throughout.",
+    },
+    {
+      icon: "bi-chat-dots", // Chat/message bubbles – represents messaging automation
+      title: "Email, WhatsApp & SMS Automation",
+      description:
+        "Automate retention and re-engagement – from welcome emails to abandoned carts and cross-sell campaigns.",
+    },
+  ];
 
   const points = [
-    " Skincare & beauty brands",
+    " Cosmetic brands",
     "Personal wellness & nutrition",
     "Apparel, fashion & lifestyle",
     "Fitness, gadgets & home essentials",
@@ -229,7 +227,11 @@ Launch. Scale. Repeat.
               data-aos="zoom-in"
             >
               <div className="php-illustration tilt">
-                <img src={d2c1} alt="google adword" className="svg-float img-fluid" />
+                <img
+                  src={d2c1}
+                  alt="google adword"
+                  className="svg-float img-fluid"
+                />
               </div>
             </div>
           </div>

@@ -2,11 +2,11 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Style.css";
-import { FaArrowRight } from "react-icons/fa";
-import ctaImage from "../../assets/Formimg.webp";
+
+import ctaImage from "../../assets/ctaweb.webp";
 import Form2 from "../../components/Home/Landingpage/Form2";
-import bg from "../../assets/approach/wrapper-bg.png";
-import google from "../../assets/specialized/Google-AdWord-course.png"
+
+import google from "../../assets/specialized/Google-AdWord-course.webp"
 import Story from "../Story/Story"
 import Tiltcard from "../../TiltCardHome/Tiltcard";
 import { Link } from "react-router-dom";

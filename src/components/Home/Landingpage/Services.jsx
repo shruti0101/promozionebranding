@@ -1,6 +1,6 @@
-import { useEffect } from "react";
+
 import { Link } from "react-router-dom";
-import AOS from "aos";
+
 import "aos/dist/aos.css";
 
 import "../../../styles/Services.css";
@@ -8,13 +8,8 @@ import "../../../styles/Services.css";
 import Slider from "../../Slider";
 
 const Services = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 50,
-      once: true,
-      easing: 'ease-out-cubic',
-    });
-  }, []);
+ 
+
 
   const serviceCards = [
     {
@@ -22,7 +17,7 @@ const Services = () => {
       title: "Digital Marketing Agency",
       text: "Looking for More Customers Online? You’ve come to the right place – We’re the Best Digital Marketing Agency in Delhi",
       linkText: "Let’s Plan Growth",
-      link: "/services/digital-seo",
+      link: "/services/digital-marketing-services", // updated
       highlights: [
         "Google Ads & Meta Ads – Get more calls, leads & sales.",
         "SEO (Rank on Google) – Be seen when people search for your business.",
@@ -43,7 +38,7 @@ const Services = () => {
       title: "Website Designing and Development",
       text: "We create fast, modern, and mobile-friendly websites that help you grow your business",
       linkText: "I Need a Website",
-      link: "/services/custom",
+      link: "/services/custom-web-development-services", // updated
       highlights: [
         "Custom Website Design (No boring templates)",
         "Mobile & SEO-Friendly",
@@ -65,7 +60,7 @@ const Services = () => {
       title: "Pay Per Click Advertising",
       text: "We run powerful Google Ads and Social Media Ads that bring you real customers",
       linkText: "Let’s Plan Your Campaign",
-      link: "/services/ads",
+      link: "/services/ads-management-services", // updated
       highlights: [
         "Google Ads & Meta Ads",
         "Keyword & Audience Targeting",
@@ -87,7 +82,7 @@ const Services = () => {
       title: "Shopping Ads",
       text: "We create and manage Shopping Ads that put your products in front of shoppers",
       linkText: "Launch My Shopping Ads",
-      link: "/services/ads",
+      link: "/services/ads-management-services", // updated
       highlights: [
         "Setup & Optimization of Google Shopping Campaigns",
         "Product Feed Management & Updates",
@@ -110,7 +105,7 @@ const Services = () => {
       title: "CGI Ads",
       text: "Our CGI Ads use high-quality 3D visuals and animations to showcase your products",
       linkText: "Showcase My Products",
-      link: "/services/google-ads",
+      link: "/services/microsoft-bing-ads-services", // updated (closest match)
       highlights: [
         "Eye-catching 3D product animations",
         "Realistic and detailed product visuals",
@@ -132,7 +127,7 @@ const Services = () => {
       title: "Google Ads",
       text: "We create and manage Google Ads campaigns that bring you real customers",
       linkText: "Rank my website ",
-      link: "/services/google-ads",
+      link: "/services/google-adword-ppc-services", // updated
       highlights: [
         "Targeted Google Search & Display Ads",
         "Smart Keyword Research & Ad Writing",
@@ -153,6 +148,7 @@ const Services = () => {
     },
   ];
 
+
   return (
     <>
       <section className="mt-4  ">
@@ -167,7 +163,7 @@ const Services = () => {
               <div
                 className="col-md-4 col-sm-12"
                 key={index}
-                data-aos="fade-up"
+                // data-aos="zoom-in"
                 // data-aos-duration="300"  
               >
                 <div className="card text-center mb-4">

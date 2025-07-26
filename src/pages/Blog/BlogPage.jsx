@@ -1,4 +1,3 @@
-// src/components/Blog/BlogPage.jsx
 import React from "react";
 import { useParams } from "react-router-dom";
 import { blogs } from "../../Data/Data";
@@ -9,6 +8,13 @@ const BlogPage = () => {
   const blog = blogs.find((b) => b.id.toString() === id);
 
   if (!blog) return <h2 className="text-center mt-5">Blog not found</h2>;
+
+  // Convert markdown-style bold to real HTML before rendering
+  const formatContent = (text) => {
+    return text
+      .replace(/__(.*?)__/g, "<strong>$1</strong>") // __bold__ → <strong>
+      .replace(/\*\*(.*?)\*\*/g, "<span class='highlight'>$1</span>"); // **highlight** → styled span
+  };
 
   return (
     <div className="blog-container container py-5">
@@ -23,42 +29,10 @@ const BlogPage = () => {
         className="blog-featured-image mb-4"
       />
 
-   {blog.content.split("\n").map((line, index) => {
-  // Full paragraph highlight
-  if (line.trim().startsWith("##") && line.trim().endsWith("##")) {
-    return (
-      <p key={index} className="blog-highlight">
-        {line.trim().replace(/##/g, "").trim()}
-      </p>
-    );
-  }
-
-  // Handle inline formatting
-  const parts = line.split(/(\*\*[^\*]+\*\*|__[^\_]+__)/g);
-
-  return (
-    <p key={index} className="blog-paragraph">
-      {parts.map((part, i) => {
-        if (part.startsWith("**") && part.endsWith("**")) {
-          return (
-            <span key={i} className="inline-highlight">
-              {part.replace(/\*\*/g, "")}
-            </span>
-          );
-        } else if (part.startsWith("__") && part.endsWith("__")) {
-          return (
-            <strong key={i} className="black-bold">
-              {part.replace(/__/g, "")}
-            </strong>
-          );
-        } else {
-          return part;
-        }
-      })}
-    </p>
-  );
-})}
-
+      <div
+        className="blog-content"
+        dangerouslySetInnerHTML={{ __html: formatContent(blog.content) }}
+      />
     </div>
   );
 };
