@@ -28,7 +28,7 @@ export default function HeroSection() {
           <div className="row align-items-center">
             {/* Left: Text */}
             <div className="col-lg-6 text-white" data-aos="fade-right">
-              <h1 className="hero-title pt-3 pt-md-5">
+              <h1 className="hero-title pt-3 pt-md-3">
                 Digital Marketing Agency That Drives Revenue
               </h1>
               <p className="hero-subtitle">
@@ -43,8 +43,8 @@ export default function HeroSection() {
             </div>
 
             {/* Right: Stylish Form */}
-            <div className="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left">
-              <div className="form-glass p-4 p-md-5 rounded-4 shadow-lg">
+            <div className="col-lg-6 mt-5 mt-lg-0 d-none d-md-block" data-aos="fade-left">
+              <div className="form-glass p-3 p-md-5 rounded-4 shadow-lg">
                 <h3 className="text-white fw-semibold mb-4">
                Coffee or Beer? It's on us!
                 </h3>
@@ -97,7 +97,7 @@ export default function HeroSection() {
                   <div className="col-12 text-center">
                     <button
                       type="submit"
-                      className="btn btn-light px-4 py-2 fw-semibold rounded-pill"
+                      className="btn btn-light px-4  fw-semibold rounded-pill"
                     >
                       Get Started Now
                     </button>

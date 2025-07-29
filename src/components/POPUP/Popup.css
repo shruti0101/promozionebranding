@@ -1,94 +1,65 @@
-.fact-popup-overlay {
+/* components/Popup.css */
+.popup-overlay {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1055;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(20, 20, 20, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: rgba(0, 0, 0, 0.65);
   padding: 1rem;
-  z-index: 99999;
-  overflow-y: auto;
 }
 
-.fact-popup {
-  width: 100%;
-  max-width: 630px;
-  background: transparent;
-  position: relative;
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
-  animation: popupFade 0.4s ease-in-out;
-  z-index: 100000;
-}
-
-.popup-img {
-  width: 100%;
-  height: auto;
-  border-radius: 16px;
-  display: block;
-  object-fit: cover;
-}
-
-/* Close Button */
-.close-btn {
-  position: absolute;
-  top: 8px;
-  right: 12px;
-  width: 32px;
-  height: 32px;
+.popup-box {
+  animation: popupFade 0.4s ease-out;
+  border-radius: 8px;
+  overflow: hidden;
   background: #fff;
-  border: none;
-  border-radius: 50%;
-  color: #333;
-  font-size: 1.5rem;
-  font-weight: bold;
-  cursor: pointer;
+}
+
+.left-section {
+  background-color: #273b63;
+}
+
+.right-section {
+  background-color: #E40257!important;
+}
+
+.stat-box {
+  padding: 3px 9px;
+  border-radius: 6px;
+  min-width: 100px;
+}
+
+.input-yellow {
+  border: 2px solid #fff3cd;
+  background-color: #fffbea;
+}
+
+.recaptcha-placeholder {
+  width: 140px;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #ccc;
+  font-size: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 2;
-  padding: 0;
-  line-height: 0; /* FIX: This aligns "×" exactly in center */
 }
 
-
-
-/* Animation */
 @keyframes popupFade {
   from {
     opacity: 0;
-    transform: scale(0.92);
+    transform: translateY(40px);
   }
   to {
     opacity: 1;
-    transform: scale(1);
+    transform: translateY(0);
   }
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 576px) {
-  .fact-popup {
-    max-width: 85vw;
-    margin-top: unset;
-  }
 
-  .popup-img {
-    height: auto;
-    max-height: 90vh;       
-    object-fit: contain;    
-    border-radius: 12px;
-  }
-
-.close-btn {
-  top: 4px;
-  right: 8px;
-  width: 28px;
-  height: 28px;
-  font-size: 1.2rem;
-  line-height: 0; /* keep it consistent here too */
+.text-justify-custom {
+ 
+  line-height: 1.2;
 }
-
-}
-
