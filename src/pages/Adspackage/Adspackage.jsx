@@ -200,82 +200,75 @@ From audience research to A/B testing, performance tracking, and real-time optim
         </div>
       </div>
 
-      <div className="container my-5">
-        <div className="text-center mb-5">
-          <h2 className="fw-bold text-dark pt-4">
-            Why Choose Google Ads Marketing?
-          </h2>
-          <p className="text-muted">
-            Google Ads helps your business appear at the right place, at the
-            right time, to the right people.
-          </p>
-        </div>
+<div className="container my-5">
+  <div className="text-center mb-5">
+    <h2 className="fw-bold text-dark pt-4">
+      Benefits of Google Ads Marketing?
+    </h2>
+    <p className="text-muted">
+      Google Ads helps your business appear at the right place, at the right time, to the right people.
+    </p>
+  </div>
 
-        <div className="row g-4">
-          {[
-            {
-              icon: "🚀",
-              title: "Instant Search Visibility",
-              desc: "Get your business in front of customers the moment they search.",
-            },
-            {
-              icon: "🎯",
-              title: "Laser-Focused Targeting",
-              desc: "Target by location, interest, device, or intent for better ROI.",
-            },
-            {
-              icon: "📊",
-              title: "Full Performance Tracking",
-              desc: "Monitor ad performance, conversions, and optimize in real-time.",
-            },
-            {
-              icon: "💰",
-              title: "Control Your Budget",
-              desc: "Flexible spending—adjust your daily or monthly ad budget anytime.",
-            },
-            {
-              icon: "⏱️",
-              title: "Faster Than SEO",
-              desc: "Start generating leads without waiting months like organic SEO.",
-            },
-            {
-              icon: "🔁",
-              title: "Smart Remarketing",
-              desc: "Reconnect with users who’ve already shown interest in your brand.",
-            },
-            {
-              icon: "📈",
-              title: "Lead Generation Powerhouse",
-              desc: "Drive high-intent traffic to landing pages for better conversions.",
-            },
-            {
-              icon: "🧠",
-              title: "AI Bidding Strategies",
-              desc: "Google’s machine learning helps you get the most out of your ad spend.",
-            },
-          ].map((item, i) => (
-            <div key={i} className="col-md-6">
-              <div className="d-flex align-items-start">
-                <span
-                  className="me-3"
-                  style={{
-                    fontSize: "2rem",
-                    lineHeight: 1,
-                    color: "#007bff",
-                    flexShrink: 0,
-                  }}
-                >
-                  {item.icon}
-                </span>
-                <div>
-                  <h5 className="fw-semibold mb-1">{item.title}</h5>
-                  <p className="text-muted mb-0">{item.desc}</p>
-                </div>
-              </div>
-            </div>
-          ))}
+  <div className="row g-4">
+    {[
+      {
+        title: "Instant Visibility on Google",
+        desc: "Get your business in front of customers the moment they search.",
+      },
+      {
+        title: "Pay only for results",
+        desc: "Target by location, interest, device, or intent for better ROI.",
+      },
+      {
+        title: "Highly Targeted Advertising",
+        desc: "Monitor ad performance, conversions, and optimize in real-time.",
+      },
+      {
+        title: "Detailed Performance Tracking",
+        desc: "Flexible spending—adjust your daily or monthly ad budget anytime.",
+      },
+      {
+        title: "Full Control over Budget",
+        desc: "Start generating leads without waiting months like organic SEO.",
+      },
+      {
+        title: "OutRank Competitors",
+        desc: "Reconnect with users who’ve already shown interest in your brand.",
+      },
+      {
+        title: "Remarketing Option",
+        desc: "Drive high-intent traffic to landing pages for better and efficient conversions.",
+      },
+      {
+        title: "Flexible Ad Forms",
+        desc: "Google’s machine learning helps you get the most out of your ad spend.",
+      },
+      {
+        title: "Scalable Growth Oriented",
+        desc: "Scale campaigns efficiently as your business grows.",
+      },
+      {
+        title: "Great for Local & Global Reach",
+        desc: "Expand your visibility from local customers to international markets.",
+      },
+    ].map((item, i) => (
+      <div key={i} className="col-md-6">
+        <div className="d-flex align-items-start">
+          <i
+            className="bi bi-check-circle-fill text-success me-3"
+            style={{ fontSize: "1.3rem", flexShrink: 0 }}
+          ></i>
+          <div>
+            <h5 className="fw-semibold mb-1">{item.title}</h5>
+            <p className="text-muted mb-0">{item.desc}</p>
+          </div>
         </div>
       </div>
+    ))}
+  </div>
+</div>
+
     </>
   );
 };
