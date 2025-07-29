@@ -14,13 +14,16 @@
 
 .nav-item .nav-link {
   color: #000;
-  font-weight: 500;
-  font-size: 15px;
+  font-weight: semibold;
+  font-size: 1rem;
    font-family: "Mona Sans", sans-serif;
+     /* display: inline-block; */
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .nav-item .nav-link:hover {
-  color: #2548BD
+  color: #2548BD;
+ transform: scale(1.03);
 }
 
 /* Show dropdown on hover */
@@ -92,15 +95,13 @@
 
 .dropdown-menu .dropdown-item {
   color: #000;
-  font-weight: 400;
-  font-size: 13px;
+  font-weight: 500;
+  font-size: 14px;
  
 
 }
 .dropdown-menu .dropdown-item:hover{
    color:#2548BD;
-
-  
 }
 
 /* Smooth transition for dropdown toggle arrow */

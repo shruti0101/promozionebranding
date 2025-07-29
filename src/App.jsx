@@ -18,7 +18,6 @@ import "react-toastify/dist/ReactToastify.css";
 /* — pages — */
 import Home from "./components/Home/Home";
 
-
 import Whoweare from "./pages/who we are/Whoweare";
 import Review from "./pages/Reviews/Review";
 import Approach from "./pages/Ourapproach.jsx/Approach";
@@ -60,15 +59,18 @@ import Aidigital from "./pages/AIdigital/Aidigital";
 import Digital from "./pages/Digitalmarket/Digital";
 import Webapp from "./pages/Webapp/Webapp";
 import B2bweb from "./pages/B2Bwebdev/B2bweb";
+import Web from "./pages/webawarenesspackage/Web";
 import { Navigate } from "react-router-dom";
 
 import Popup from "./components/POPUP/Popup";
+import Socialpackage from "./pages/Socialpackage/Socialpackage";
+import Seopackage from "./pages/Seopackage/Seopackage";
+import Adspackage from "./pages/Adspackage/Adspackage";
+
 
 function App() {
   return (
     <div>
-
-    
       <ToastContainer />
       <ScrollToTopOnRouteChange />
       <Whatsapp />
@@ -91,49 +93,125 @@ function App() {
           <Route path="profile/career" element={<Career />} />
 
           {/* —— Website Development —— */}
-          <Route path="services/wordpress-website-services" element={<Wordpress />} />
-          <Route path="services/custom-web-development-services" element={<CustomWeb />} />
-          <Route path="services/php-website-development-services" element={<Php />} />
-          <Route path="services/cms-web-development-services" element={<Cms />} />
-          <Route path="services/react-web-development-services" element={<Reactt />} />
-          <Route path="services/shopify-web-designing-services" element={<Shopify />} />
-          <Route path="services/seo-web-designing-services" element={<SeoWeb />} />
-          <Route path="services/website-redesigning-services" element={<Webredesign />} />
-          <Route path="services/landing-page-design-services" element={<Landing />} />
-          <Route path="services/web-application-development-services" element={<Webapp />} />
-          <Route path="services/b2b-web-development-services" element={<B2bweb />} />
-
+          <Route
+            path="services/wordpress-website-services"
+            element={<Wordpress />}
+          />
+          <Route
+            path="services/custom-web-development-services"
+            element={<CustomWeb />}
+          />
+          <Route
+            path="services/php-website-development-services"
+            element={<Php />}
+          />
+          <Route
+            path="services/cms-web-development-services"
+            element={<Cms />}
+          />
+          <Route
+            path="services/react-web-development-services"
+            element={<Reactt />}
+          />
+          <Route
+            path="services/shopify-web-designing-services"
+            element={<Shopify />}
+          />
+          <Route
+            path="services/seo-web-designing-services"
+            element={<SeoWeb />}
+          />
+          <Route
+            path="services/website-redesigning-services"
+            element={<Webredesign />}
+          />
+          <Route
+            path="services/landing-page-design-services"
+            element={<Landing />}
+          />
+          <Route
+            path="services/web-application-development-services"
+            element={<Webapp />}
+          />
+          <Route
+            path="services/b2b-web-development-services"
+            element={<B2bweb />}
+          />
 
           {/* —— Revenue Marketing & CRO —— */}
-          <Route path="services/performance-marketing-services" element={<Performance />} />
+          <Route
+            path="services/performance-marketing-services"
+            element={<Performance />}
+          />
           <Route path="services/b2b-marketing-services" element={<B2b />} />
-          <Route path="services/b2b-lead-generation-services" element={<Lead />} />
-          <Route path="services/ai-performance-marketing-services" element={<AiPerformance />} />
-          <Route path="services/demand-generation-services" element={<Demand />} />
+          <Route
+            path="services/b2b-lead-generation-services"
+            element={<Lead />}
+          />
+          <Route
+            path="services/ai-performance-marketing-services"
+            element={<AiPerformance />}
+          />
+          <Route
+            path="services/demand-generation-services"
+            element={<Demand />}
+          />
           <Route path="services/ads-management-services" element={<Ads />} />
-          <Route path="services/internet-marketing-services" element={<Internet />} />
+          <Route
+            path="services/internet-marketing-services"
+            element={<Internet />}
+          />
           <Route path="services/b2c-marketing-services" element={<B2c />} />
           <Route path="services/d2c-marketing-services" element={<D2c />} />
 
           {/* —— Digital Marketing —— */}
-          <Route path="services/content-marketing-services" element={<Content />} />
+          <Route
+            path="services/content-marketing-services"
+            element={<Content />}
+          />
           <Route path="services/crm-optimizations-services" element={<Crm />} />
           <Route path="services/email-marketing-services" element={<Email />} />
           <Route path="services/video-marketing-services" element={<Video />} />
           <Route path="services/social-media-optimization" element={<Smo />} />
-          <Route path="services/social-media-marketing" element={<Socialmedia />} />
-          <Route path="services/microsoft-bing-ads-services" element={<GoogleAds />} />
-          <Route path="services/google-adword-ppc-services" element={<GoogleAdword />} />
+          <Route
+            path="services/social-media-marketing"
+            element={<Socialmedia />}
+          />
+          <Route
+            path="services/microsoft-bing-ads-services"
+            element={<GoogleAds />}
+          />
+          <Route
+            path="services/google-adword-ppc-services"
+            element={<GoogleAdword />}
+          />
           <Route path="contact" element={<Contact />} />
 
           {/* —— Guaranteed SEO —— */}
-          <Route path="services/ai-digital-marketing-services" element={<Aidigital />} />
-          <Route path="services/digital-marketing-services" element={<Digital />} />
-          <Route path="services/enterprise-seo-services" element={<Enterpriseseo />} />
+          <Route
+            path="services/ai-digital-marketing-services"
+            element={<Aidigital />}
+          />
+          <Route
+            path="services/digital-marketing-services"
+            element={<Digital />}
+          />
+          <Route
+            path="services/enterprise-seo-services"
+            element={<Enterpriseseo />}
+          />
           <Route path="services/ai-seo-services" element={<Seoservices />} />
 
+          {/* packages */}
+
+         <Route path="/packages/web-awareness" element={<Web></Web>}/>
+<Route path="/packages/social-media-management" element={<Socialpackage></Socialpackage>}/>
+<Route path="/packages/seo" element={<Seopackage></Seopackage>}/>
+<Route path="/packages/Ads-management" element={<Adspackage></Adspackage>}/>
+
+
           {/* —— 404 catch‑all (keep LAST) —— */}
-         <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>
 

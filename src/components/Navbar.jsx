@@ -20,7 +20,6 @@ const Navbar = () => {
   }, []);
 
   const toggleDropdown = (name) => {
-    
     setDropdownStates((prev) => ({
       ...prev,
       [name]: !prev[name],
@@ -112,7 +111,6 @@ const Navbar = () => {
       ],
     },
 
-
     {
       name: "digital",
       label: "Digital Marketing",
@@ -132,11 +130,26 @@ const Navbar = () => {
       name: "seo",
       label: "Guaranteed SEO",
       items: [
-        ["AI Digital Marketing Services", "/services/ai-digital-marketing-services"],
+        [
+          "AI Digital Marketing Services",
+          "/services/ai-digital-marketing-services",
+        ],
         // ["E-Commerce SEO Services", "/services/ecommerce-seo"],
         ["Digital Marketing Services", "/services/digital-marketing-services"],
         ["Enterprise SEO Services", "/services/enterprise-seo-services"],
         ["AI SEO Services", "/services/ai-seo-services"],
+      ],
+    },
+
+    {
+      name: "Packages",
+      label: "Packages",
+      items: [
+        ["WEB Awareness", "/packages/web-awareness"],
+        ["Social Media Management", "/packages/social-media-management"],
+
+        ["Ads Management ", "/packages/Ads-management"],
+        ["SEO ", "/packages/seo"],
       ],
     },
   ];
@@ -156,7 +169,6 @@ const Navbar = () => {
             height="70"
             className="rounded-circle d-inline-block align-text-top"
           />
-       
         </Link>
 
         <button
