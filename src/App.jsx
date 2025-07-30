@@ -55,8 +55,7 @@ import Ads from "./pages/ADS management/Ads";
 import Smo from "./pages/SMO/Smo";
 import Webredesign from "./pages/WEB REDESIGN/Webredesign";
 import Landing from "./pages/Landingpage/Landing";
-import Aidigital from "./pages/AIdigital/Aidigital";
-import Digital from "./pages/Digitalmarket/Digital";
+
 import Webapp from "./pages/Webapp/Webapp";
 import B2bweb from "./pages/B2Bwebdev/B2bweb";
 import Web from "./pages/webawarenesspackage/Web";
@@ -66,6 +65,8 @@ import Popup from "./components/POPUP/Popup";
 import Socialpackage from "./pages/Socialpackage/Socialpackage";
 import Seopackage from "./pages/Seopackage/Seopackage";
 import Adspackage from "./pages/Adspackage/Adspackage";
+import Privacy from "./pages/PrivacyPolicy/Privacy";
+import Tc from "./pages/T&C/Tc";
 
 
 function App() {
@@ -189,12 +190,12 @@ function App() {
 
           {/* —— Guaranteed SEO —— */}
           <Route
-            path="services/ai-digital-marketing-services"
-            element={<Aidigital />}
+            path="policies/privacy-policy"
+            element={<Privacy />}
           />
           <Route
-            path="services/digital-marketing-services"
-            element={<Digital />}
+            path="/policies/terms&conditions"
+            element={<Tc />}
           />
           <Route
             path="services/enterprise-seo-services"

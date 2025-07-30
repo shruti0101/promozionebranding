@@ -173,3 +173,15 @@
   margin-bottom: 8px;
   font-size: 14px;
 }
+
+.download-link {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon-style {
+  font-size: 1rem;
+  color: white;
+}

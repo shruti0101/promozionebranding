@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "../styles/Hero.css";
 import { Link } from "react-router-dom";
+import { FaDownload } from "react-icons/fa";
 
 export default function HeroSection() {
   const formRef = useRef();

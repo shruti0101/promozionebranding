@@ -4,9 +4,7 @@ import "aos/dist/aos.css";
 import "./Career.css";
 
 const Career = () => {
-  const [showToast, setShowToast] = useState(false);
-  const [selectedPosition, setSelectedPosition] = useState("");
-  const [loading, setLoading] = useState(false);
+ 
   const formRef = useRef();
 
   useEffect(() => {

@@ -31,9 +31,9 @@ const Web = () => {
   const pointer = [
     "Upto 100 Products",
     "Logo",
-    "Contact Form - 3",
+    "3 - Contact Forms ",
     "Whatsapp Chat Integration",
-    "Social Profile Link",
+    "Social Profile Linking",
     "Gallery Sections",
     "Login Details will be given",
     "Delivery in 21 Days",
@@ -41,10 +41,10 @@ const Web = () => {
     "Testimonials Section",
     "Dynamic Website",
     "Click to Call/Email",
-    "Hosting free",
-    "Domain-free",
+    "Free - Hosting ",
+    "Free - Domain",
     "12 - Months Maintanance",
-    "Sliders/Banner-3",
+    "3 - Sliders/Banner",
     "Free SSL",
     "1 Keyword Ranking on Google 1st Page "
   ];
@@ -52,7 +52,7 @@ const Web = () => {
   return (
     <>
       <Tiltcard
-        heading="Website Development Plans in India
+        heading="Website Development Plans in India,
 High-Quality Web Design & Development at Affordable Rates
 
 "
@@ -74,9 +74,9 @@ Get a FREE consultation today and discover the best plans with Promozione Brandi
     <div className="col-lg-6">
       <div
         className="p-4 rounded-4 shadow-lg bg-white"
-        style={{ borderTop: "5px solid #28a745" }}
+        style={{ borderTop: "5px solid #0D6EFD" }}
       >
-        <div className="text-center bg-success text-white rounded-3 py-3 mb-4">
+        <div className="text-center bg-primary text-white rounded-3 py-3 mb-4">
           <h3 className="fw-bold mb-1">WEB Awareness</h3>
           <p className="mb-0">Website Development Package</p>
         </div>
@@ -85,12 +85,12 @@ Get a FREE consultation today and discover the best plans with Promozione Brandi
           {pointer.map((point, index) => (
             <li
               key={index}
-              className="d-flex align-items-start py-3 px-2 border-bottom"
+              className="d-flex align-items-start py-2 px-2 border-bottom"
             >
               <span className="me-2 px-3 ">
                 <i
                   className="bi bi-check-circle-fill"
-                  style={{ fontSize: "1.3rem", color: "#28a745" }}
+                  style={{ fontSize: "1.3rem", color: "#0D6EFD" }}
                 ></i>
               </span>
               <span
@@ -110,7 +110,7 @@ Get a FREE consultation today and discover the best plans with Promozione Brandi
             {/* ✅ PRICE SECTION */}
         <div className="text-center my-4">
           <h4 className="fw-bold text-danger mb-1" style={{ fontSize: "1.8rem" }}>
-            ₹79,500 <span className="text-muted fs-6">+ GST / Year</span>
+            ₹79,500<sup>*</sup> <span className="text-muted fs-6">+ GST / Year</span>
           </h4>
         </div>
 
@@ -118,7 +118,7 @@ Get a FREE consultation today and discover the best plans with Promozione Brandi
 
           <Link to="/Contact">
              <button
-            className="btn btn-success px-4 py-2 fw-semibold rounded-pill"
+            className="btn btn-primary px-4 py-2 fw-semibold rounded-pill"
             style={{
               fontSize: "1rem",
               transition: "0.3s",

@@ -63,3 +63,20 @@
  
   line-height: 1.2;
 }
+
+
+@media (max-width: 768px) {
+  .popup-box {
+    flex-direction: column;
+  }
+
+  .stat-box {
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .right-section {
+    margin-top: 20px;
+  }
+}

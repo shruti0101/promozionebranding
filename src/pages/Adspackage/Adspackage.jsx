@@ -69,9 +69,9 @@ From audience research to A/B testing, performance tracking, and real-time optim
           <div className="col-lg-6">
             <div
               className="p-4 rounded-4 shadow-lg bg-white"
-              style={{ borderTop: "5px solid #28a745" }}
+              style={{ borderTop: "5px solid #0D6EFD" }}
             >
-              <div className="text-center bg-success text-white rounded-3 py-3 mb-4">
+              <div className="text-center bg-primary text-white rounded-3 py-3 mb-4">
                 <h3 className="fw-bold mb-1">ADS Management</h3>
                 <p className="mb-0">
                   Tools that we use to Run highly Successful ADS Campaign
@@ -82,12 +82,12 @@ From audience research to A/B testing, performance tracking, and real-time optim
                 {pointer.map((point, index) => (
                   <li
                     key={index}
-                    className="d-flex align-items-start py-3 px-2 border-bottom"
+                    className="d-flex align-items-start py-2 px-2 border-bottom"
                   >
                     <span className="me-2 px-3">
                       <i
                         className="bi bi-check-circle-fill"
-                        style={{ fontSize: "1.3rem", color: "#28a745" }}
+                        style={{ fontSize: "1.3rem", color: "#0D6EFD" }}
                       ></i>
                     </span>
                     <span
@@ -107,15 +107,15 @@ From audience research to A/B testing, performance tracking, and real-time optim
                   className="fw-bold text-danger mb-1"
                   style={{ fontSize: "1.8rem" }}
                 >
-                  ₹60,000{" "}
-                  <span className="text-muted fs-6">+ GST For Six Months</span>
+                  ₹60,000<sup>*</sup>
+                  <span className="text-muted fs-6">+ GST For 6 Months</span>
                 </h4>
               </div>
 
               <div className="text-center mt-3">
                 <Link to="/Contact">
                   <button
-                    className="btn btn-success px-4 py-2 fw-semibold rounded-pill"
+                    className="btn btn-primary px-4 py-2 fw-semibold rounded-pill"
                     style={{
                       fontSize: "1rem",
                       transition: "0.3s",
@@ -190,7 +190,7 @@ From audience research to A/B testing, performance tracking, and real-time optim
               icon: "💰",
             },
           ].map((item, index) => (
-            <div key={index} className="col-md-4 col-lg-3">
+            <div key={index} className="col-6 col-md-3">
               <div className="border rounded-4 shadow-sm h-100 p-2 bg-white text-center hover-shadow">
                 <div className="display-6 mb-3">{item.icon}</div>
                 <h5 className="fw-semibold fs-5 text-dark">{item.title}</h5>
@@ -229,8 +229,8 @@ From audience research to A/B testing, performance tracking, and real-time optim
         desc: "Flexible spending—adjust your daily or monthly ad budget anytime.",
       },
       {
-        title: "Full Control over Budget",
-        desc: "Start generating leads without waiting months like organic SEO.",
+        title: "Control Your Marketing Spend",
+        desc: "Launch targeted campaigns and generate leads while your SEO builds long-term value.",
       },
       {
         title: "OutRank Competitors",

@@ -145,7 +145,7 @@ const Navbar = () => {
       name: "Packages",
       label: "Packages",
       items: [
-        ["WEB Awareness", "/packages/web-awareness"],
+        ["Web Awareness", "/packages/web-awareness"],
         ["Social Media Management", "/packages/social-media-management"],
 
         ["Ads Management ", "/packages/Ads-management"],

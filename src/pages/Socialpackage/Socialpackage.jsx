@@ -35,7 +35,7 @@ const cardItems = [
     "Facebook/Instagram/LinkedIn Profile Page Creation",
     "Facebook/Instagram/LinkedIn Page /Account Optimization ",
     "Creation of Facebook Reels/Quiz",
-    "Sharing Post in groups/ Market place ",
+    "Sharing Post in Groups/ Marketplace ",
     "Responding to Comments ",
     "Call to Action Button Creation ",
     "Hashtag Research in 21 Days",
@@ -43,12 +43,20 @@ const cardItems = [
     "1 Reels Posting Per Week",
     "Page Monitoring",
     "Competitors Analysis",
+    "Meta Business Manager setup",
+    "Custom Conversion Creation",
+    "Detailed/Custom Audience Creation",
+    "Analytics Report Creation",
+    "Dynamic Post Creation",
+    "Carousel Creation",
+    "Traffic Monitoring",
+    "Monthly Report"
   ];
 
   return (
     <>
     <Tiltcard
-  heading={`Social Media Management Packages in India
+  heading={`Social Media Management Packages in India,
 Boost Your Brand Visibility on Instagram, Facebook & LinkedIn
 `}
   paragraph={`Looking for affordable and result-driven social media marketing packages in India? Promozione Branding offers professional social media management services tailored for startups, small businesses, and growing brands.
@@ -71,9 +79,9 @@ From content creation to profile optimization and engagement strategies—we han
           <div className="col-lg-6">
             <div
               className="p-4 rounded-4 shadow-lg bg-white"
-              style={{ borderTop: "5px solid #28a745" }}
+              style={{ borderTop: "5px solid #0D6EFD" }}
             >
-              <div className="text-center bg-success text-white rounded-3 py-3 mb-4">
+              <div className="text-center bg-primary text-white rounded-3 py-3 mb-4">
                 <h3 className="fw-bold mb-1">Social Media Management</h3>
                 <p className="mb-0">Instagram Facebook</p>
               </div>
@@ -82,12 +90,12 @@ From content creation to profile optimization and engagement strategies—we han
                 {pointer.map((point, index) => (
                   <li
                     key={index}
-                    className="d-flex align-items-start py-3 px-2 border-bottom"
+                    className="d-flex align-items-start py-2 px-2 border-bottom"
                   >
                     <span className="me-2 px-3">
                       <i
                         className="bi bi-check-circle-fill"
-                        style={{ fontSize: "1.3rem", color: "#28a745" }}
+                        style={{ fontSize: "1.3rem", color: "#0D6EFD" }}
                       ></i>
                     </span>
                     <span
@@ -107,14 +115,14 @@ From content creation to profile optimization and engagement strategies—we han
                   className="fw-bold text-danger mb-1"
                   style={{ fontSize: "1.8rem" }}
                 >
-                  ₹22,000 <span className="text-muted fs-6">+ GST / month</span>
+                  ₹22,000<sup>*</sup> <span className="text-muted fs-6">+ GST / month</span>
                 </h4>
               </div>
 
               <div className="text-center mt-3">
                 <Link to="/Contact">
                   <button
-                    className="btn btn-success px-4 py-2 fw-semibold rounded-pill"
+                    className="btn btn-primary px-4 py-2 fw-semibold rounded-pill"
                     style={{
                       fontSize: "1rem",
                       transition: "0.3s",
