@@ -38,20 +38,20 @@ export default function HeroSection() {
                 personalized strategy proposal today to start driving ROI from
                 digital marketing!
               </p>
-              <Link to="/Contact" className="text-decoration-none">
+              <Link to="/Contact" className="text-decoration-none d-none d-md-block">
                 <button className="nav-btn2 mt-3">Let's get started!</button>
               </Link>
             </div>
 
             {/* Right: Stylish Form */}
-            <div className="col-lg-6 mt-5 mt-lg-0 d-none d-md-block" data-aos="fade-left">
+            <div className="col-lg-6 mt-5 mt-lg-0 " data-aos="fade-left">
               <div className="form-glass p-3 p-md-5 rounded-4 shadow-lg">
                 <h3 className="text-white fw-semibold mb-4">
                Coffee or Beer? It's on us!
                 </h3>
              
                 <form className="row g-3" ref={formRef} onSubmit={handleSubmit}>
-                  <div className="col-md-6">
+                  <div className="col-6">
                     <input
                       type="text"
                       name="name"
@@ -60,7 +60,7 @@ export default function HeroSection() {
                       required
                     />
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-6">
                     <input
                       type="email"
                       name="email"
@@ -69,7 +69,7 @@ export default function HeroSection() {
                       required
                     />
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-6">
                     <input
                       type="tel"
                       name="phone"
@@ -79,7 +79,7 @@ export default function HeroSection() {
                       required
                     />
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-6">
                     <input
                       type="text"
                       name="company"

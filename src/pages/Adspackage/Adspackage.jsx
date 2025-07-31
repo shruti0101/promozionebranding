@@ -39,9 +39,7 @@ const Adspackage = () => {
     "Google keyword planner ",
     "Semrush / Ahrefs / Spyfu",
     "Google Merchant Center",
-    "1 Reels Posting Per Week",
-    "Page Monitoring",
-    "Competitors Analysis",
+    
   ];
 
   return (

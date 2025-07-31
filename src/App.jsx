@@ -21,9 +21,6 @@ import Home from "./components/Home/Home";
 import Whoweare from "./pages/who we are/Whoweare";
 import Review from "./pages/Reviews/Review";
 import Approach from "./pages/Ourapproach.jsx/Approach";
-import BlogList from "./pages/Blog/BlogList";
-import BlogPage from "./pages/Blog/BlogPage";
-import AllBlogs from "./pages/Blog/AllBlog";
 
 import Wordpress from "./pages/wordpress/Wordpress";
 import Performance from "./pages/performancemarket/Performance";
@@ -55,19 +52,27 @@ import Ads from "./pages/ADS management/Ads";
 import Smo from "./pages/SMO/Smo";
 import Webredesign from "./pages/WEB REDESIGN/Webredesign";
 import Landing from "./pages/Landingpage/Landing";
-
+import Aidigital from "./pages/AIdigital/Aidigital";
+import Digital from "./pages/Digitalmarket/Digital";
 import Webapp from "./pages/Webapp/Webapp";
 import B2bweb from "./pages/B2Bwebdev/B2bweb";
 import Web from "./pages/webawarenesspackage/Web";
+import Blog from "./pages/Blogs/Blog";
 import { Navigate } from "react-router-dom";
 
-import Popup from "./components/POPUP/Popup";
+// import Popup from "./components/POPUP/Popup";
 import Socialpackage from "./pages/Socialpackage/Socialpackage";
 import Seopackage from "./pages/Seopackage/Seopackage";
 import Adspackage from "./pages/Adspackage/Adspackage";
 import Privacy from "./pages/PrivacyPolicy/Privacy";
 import Tc from "./pages/T&C/Tc";
-
+import BlogPage from "./components/Blogs/BlogPage";
+import BlogList from "./components/Blogs/BlogList";
+import Layoutt from "./pages/admin/Layoutt";  
+import Dashboard from "./pages/admin/Dashboard";
+import AddBlog from "./pages/admin/AddBlog";
+import ListBlog from "./pages/admin/ListBlog";
+import Login from "./components/Admin/Login";
 
 function App() {
   return (
@@ -76,9 +81,18 @@ function App() {
       <ScrollToTopOnRouteChange />
       <Whatsapp />
       <Social />
-      <Popup />
+      {/* <Popup /> */}
 
       <Routes>
+
+
+     <Route path="admin" element={ true ? <Layoutt/>: <Login/>}>
+  <Route path="dashboard" element={<Dashboard />} />
+  <Route path="addblog" element={<AddBlog />} />
+  <Route path="listblog" element={<ListBlog />} />
+</Route>
+
+
         {/* ——— root layout route ——— */}
         <Route path="/" element={<Layout />}>
           {/* home ("/") */}
@@ -87,9 +101,14 @@ function App() {
           {/* —— Company Profile —— */}
           <Route path="profile/OurApproach" element={<Approach />} />
           <Route path="profile/whoweare" element={<Whoweare />} />
-          <Route path="profile/blogs" element={<BlogList />} />
-          <Route path="profile/blogs/all" element={<AllBlogs />} />
-          <Route path="profile/blogs/:id" element={<BlogPage />} />
+          <Route path="profile/blogs" element={<Blog />} />
+          {/* <Route path="profile/blogs/all" element={<BlogList />} /> */}
+
+ 
+
+
+
+          <Route path="profile/blog/:id" element={<BlogPage />} />
           <Route path="profile/reviews" element={<Review />} />
           <Route path="profile/career" element={<Career />} />
 
@@ -190,12 +209,12 @@ function App() {
 
           {/* —— Guaranteed SEO —— */}
           <Route
-            path="policies/privacy-policy"
-            element={<Privacy />}
+            path="services/ai-digital-marketing-services"
+            element={<Aidigital />}
           />
           <Route
-            path="/policies/terms&conditions"
-            element={<Tc />}
+            path="services/digital-marketing-services"
+            element={<Digital />}
           />
           <Route
             path="services/enterprise-seo-services"
@@ -205,11 +224,24 @@ function App() {
 
           {/* packages */}
 
-         <Route path="/packages/web-awareness" element={<Web></Web>}/>
-<Route path="/packages/social-media-management" element={<Socialpackage></Socialpackage>}/>
-<Route path="/packages/seo" element={<Seopackage></Seopackage>}/>
-<Route path="/packages/Ads-management" element={<Adspackage></Adspackage>}/>
+          <Route path="/packages/web-awareness" element={<Web></Web>} />
+          <Route
+            path="/packages/social-media-management"
+            element={<Socialpackage></Socialpackage>}
+          />
+          <Route path="/packages/seo" element={<Seopackage></Seopackage>} />
+          <Route
+            path="/packages/Ads-management"
+            element={<Adspackage></Adspackage>}
+          />
 
+          {/* policies */}
+
+          <Route
+            path="/policies/privacy-policy"
+            element={<Privacy></Privacy>}
+          />
+          <Route path="/policies/terms&conditions" element={<Tc></Tc>} />
 
           {/* —— 404 catch‑all (keep LAST) —— */}
           <Route path="*" element={<Navigate to="/" replace />} />
