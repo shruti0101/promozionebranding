@@ -3,7 +3,7 @@ import logoo from "../../assets/logoo.webp";
 import Sidebar from "../../components/SIDEBAR/Sidebar";
 
 const Layoutt = () => {
-  const navigate = useNavigate();  // ✅ Small 'n'
+  const navigate = useNavigate();
 
   return (
     <>
@@ -32,7 +32,7 @@ const Layoutt = () => {
 
         {/* Main Content Area */}
         <div >
-          <Outlet /> {/* This will render Dashboard, AddBlog, ListBlog */}
+          <Outlet /> 
         </div>
       </div>
     </>

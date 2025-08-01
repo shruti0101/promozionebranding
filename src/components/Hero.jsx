@@ -64,7 +64,7 @@ export default function HeroSection() {
                     <input
                       type="email"
                       name="email"
-                      placeholder="Email Address"
+                      placeholder="Email Address "
                       className="form-control input-fill"
                       required
                     />
