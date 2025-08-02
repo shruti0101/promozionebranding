@@ -1,15 +1,27 @@
-const express = require('express');
-const path = require('path');
+import express from 'express';
+import 'dotenv/config';
+import cookieParser from 'cookie-parser';
+import connectDB from './Database/db.js';
+// import adminRouter from './routes/AdminRoutes.js';
+import blogRouter from './routes/BlogRoutes.js';
+
 const app = express();
 
+await connectDB();
 
-app.use(express.static(path.join(__dirname, 'build')));
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+app.use(cookieParser());
+app.use(express.json());
+
+// app.use("/api/admin", adminRouter);
+app.use("/api/blog", blogRouter);
+
+app.get('/', (req, res) => {
+    res.send("API is working");
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+const port = process.env.PORT || 4000;
+
+app.listen(port, () => {
+    console.log(`Server running on port ${port}`);
 });
