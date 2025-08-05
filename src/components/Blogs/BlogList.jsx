@@ -1,8 +1,22 @@
 import  { useState, useEffect } from "react";
 import BlogCard from "./BlogCard";
 import { blog_data } from "../../assets/blogs/assets";
+import axios from "axios";
 
 const BlogList = () => {
+const [data, setData]= useState([])
+
+const fetchData = async()=>{
+  const res = await axios("http://localhost:5000/api/admin/all-blogs")
+
+  setData(res.data.blogs);
+}
+
+useEffect(()=>{
+fetchData()
+},[])
+
+
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -18,13 +32,13 @@ const BlogList = () => {
     <>
       <div className="container text-center p-4">
         <h1 className="fw-bold">Welcome to the Blog Page</h1>
-        <p className="fw-semibold">Explore some of our blogs</p>
+        <p className="fw-semibold fs-4">Explore some of our blogs</p>
       </div>
 
       <div className="container">
         <div className="row">
           {loading ? (
-            blog_data.map((blog) => (
+            data.map((blog) => (
               <div className="col-md-4 col-12 mb-4" key={blog._id}>
                 <BlogCard blog={blog} />
               </div>

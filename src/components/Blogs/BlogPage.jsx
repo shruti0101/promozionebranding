@@ -1,26 +1,28 @@
 import { useParams } from "react-router-dom";
-import { blog_data } from "../../assets/blogs/assets";
 import { useEffect, useState } from "react";
+import axios from "axios"; // Make sure axios is imported
 
 const BlogPage = () => {
   const { id } = useParams();
-  const [data, setData] = useState(null);
+  const [blog, setBlog] = useState(null);
 
-  const fetchData = async () => {
-    // Ensure type safety for comparison (convert _id to string)
-    const data = blog_data.find((item) => item._id.toString() === id);
-    setData(data);
+  const fetchBlog = async () => {
+    try {
+      const res = await axios.get(`http://localhost:5000/api/blog/${id}`);
+      setBlog(res.data.blog);
+    } catch (err) {
+      console.error("Error fetching blog:", err);
+    }
   };
 
   useEffect(() => {
-    fetchData();
-  }, [id]); // Dependency array added to avoid infinite loop
+    fetchBlog();
+  }, [id]);
 
-  if (!data) {
+  if (!blog) {
     return <h2 className="text-center p-5 my-5 fw-bold fs-1">Blog Not Found</h2>;
   }
 
-  // Date Formatter
   const formatDate = (dateString) => {
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     const date = new Date(dateString);
@@ -30,10 +32,10 @@ const BlogPage = () => {
   return (
     <section className="bg-light">
       <div className="container py-5">
-        <h1 className="fw-bold mb-4 text-center p-3 text-wrap">{data.title}</h1>
-        <img src={data.image} alt={data.title} className="img-fluid mb-4 rounded" />
-        <p className="text-muted">Published on {formatDate(data.createdAt)}</p>
-        <p dangerouslySetInnerHTML={{ "__html": data.description }}></p>
+        <h1 className="fw-bold mb-4 text-center p-3 text-wrap">{blog.title}</h1>
+        <img src={blog.image} alt={blog.title} className="img-fluid mb-4 rounded" />
+        <p className="text-muted">Published on {formatDate(blog.createdAt)}</p>
+        <p dangerouslySetInnerHTML={{ __html: blog.description }}></p>
       </div>
     </section>
   );

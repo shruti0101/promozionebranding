@@ -1,27 +1,29 @@
-import { Routes, Route } from "react-router-dom";
+import {
+  Routes,
+  Route,
+  Navigate,
+  BrowserRouter as Router,
+  useLocation,
+} from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./index.css";
 
 import Layout from "./Layout";
-
-import ScrollToTopOnRouteChange from "./components/ScrollToTopOnRouteChange";
+import Layoutt from "./pages/admin/Layoutt";
 import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTopOnRouteChange from "./components/ScrollToTopOnRouteChange";
 import Whatsapp from "./components/Whatsapp";
 import Social from "./components/SOCIALSLIDER/Social";
-// import Popup from "./components/POPUP/Popup";
-
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-/* — pages — */
+/* — Pages — */
 import Home from "./components/Home/Home";
-
 import Whoweare from "./pages/who we are/Whoweare";
 import Review from "./pages/Reviews/Review";
 import Approach from "./pages/Ourapproach.jsx/Approach";
-
 import Wordpress from "./pages/wordpress/Wordpress";
 import Performance from "./pages/performancemarket/Performance";
 import Lead from "./pages/lead/Lead";
@@ -58,61 +60,81 @@ import Webapp from "./pages/Webapp/Webapp";
 import B2bweb from "./pages/B2Bwebdev/B2bweb";
 import Web from "./pages/webawarenesspackage/Web";
 import Blog from "./pages/Blogs/Blog";
-import { Navigate } from "react-router-dom";
-
-// import Popup from "./components/POPUP/Popup";
-import Socialpackage from "./pages/Socialpackage/Socialpackage";
-import Seopackage from "./pages/Seopackage/Seopackage";
-import Adspackage from "./pages/Adspackage/Adspackage";
-import Privacy from "./pages/PrivacyPolicy/Privacy";
-import Tc from "./pages/T&C/Tc";
 import BlogPage from "./components/Blogs/BlogPage";
-import BlogList from "./components/Blogs/BlogList";
-import Layoutt from "./pages/admin/Layoutt";  
+
 import Dashboard from "./pages/admin/Dashboard";
 import AddBlog from "./pages/admin/AddBlog";
 import ListBlog from "./pages/admin/ListBlog";
 import Login from "./components/Admin/Login";
+import Signup from "./components/Admin/Signup";
+import ProtectedRoute from "./components/Admin/ProtectedRoute";
 
-function App() {
+import Privacy from "./pages/PrivacyPolicy/Privacy";
+import Tc from "./pages/T&C/Tc";
+import Socialpackage from "./pages/Socialpackage/Socialpackage";
+import Seopackage from "./pages/Seopackage/Seopackage";
+import Adspackage from "./pages/Adspackage/Adspackage";
+
+const AppWrapper = () => {
+  const location = useLocation();
+  const isAdminRoute = location.pathname.startsWith("/admin");
+
   return (
-    <div>
+    <>
       <ToastContainer />
-      <ScrollToTopOnRouteChange />
-      <Whatsapp />
-      <Social />
-      {/* <Popup /> */}
+      <ScrollToTop />
+      {!isAdminRoute && <Whatsapp />}
+      {!isAdminRoute && <Social />}
+      {isAdminRoute && <ScrollToTopOnRouteChange />}
 
       <Routes>
+        <Route path="/admin" element={<Navigate to="/admin/login" replace />} />
+        <Route path="/admin/login" element={<Login />} />
+        {/* <Route path="/admin/signup" element={<Signup />} /> */}
 
+        <Route
+          path="/admin/dashboard"
+          element={
+            <ProtectedRoute>
+              <>
+                <Layoutt />
+                <Dashboard />
+              </>
+            </ProtectedRoute>
+          }
+        />
 
-     <Route path="admin" element={ true ? <Layoutt/>: <Login/>}>
-  <Route path="dashboard" element={<Dashboard />} />
-  <Route path="addblog" element={<AddBlog />} />
-  <Route path="listblog" element={<ListBlog />} />
-</Route>
+        <Route
+          path="/admin/addblog"
+          element={
+            <ProtectedRoute>
+              <Layoutt />
+              <AddBlog />
+            </ProtectedRoute>
+          }
+        />
 
+        <Route
+          path="/admin/listblog"
+          element={
+            <ProtectedRoute>
+              <Layoutt />
+              <ListBlog />
+            </ProtectedRoute>
+          }
+        />
 
-        {/* ——— root layout route ——— */}
+        {/* Public Website Routes */}
         <Route path="/" element={<Layout />}>
-          {/* home ("/") */}
           <Route index element={<Home />} />
-
-          {/* —— Company Profile —— */}
           <Route path="profile/OurApproach" element={<Approach />} />
           <Route path="profile/whoweare" element={<Whoweare />} />
-          <Route path="profile/blogs" element={<Blog />} />
-          {/* <Route path="profile/blogs/all" element={<BlogList />} /> */}
-
- 
-
-
-
-          <Route path="profile/blog/:id" element={<BlogPage />} />
           <Route path="profile/reviews" element={<Review />} />
+          <Route path="profile/blogs" element={<Blog />} />
+          <Route path="profile/blog/:id" element={<BlogPage />} />
           <Route path="profile/career" element={<Career />} />
 
-          {/* —— Website Development —— */}
+          {/* Web Dev */}
           <Route
             path="services/wordpress-website-services"
             element={<Wordpress />}
@@ -158,7 +180,7 @@ function App() {
             element={<B2bweb />}
           />
 
-          {/* —— Revenue Marketing & CRO —— */}
+          {/* Marketing */}
           <Route
             path="services/performance-marketing-services"
             element={<Performance />}
@@ -184,7 +206,7 @@ function App() {
           <Route path="services/b2c-marketing-services" element={<B2c />} />
           <Route path="services/d2c-marketing-services" element={<D2c />} />
 
-          {/* —— Digital Marketing —— */}
+          {/* Digital Marketing */}
           <Route
             path="services/content-marketing-services"
             element={<Content />}
@@ -207,7 +229,7 @@ function App() {
           />
           <Route path="contact" element={<Contact />} />
 
-          {/* —— Guaranteed SEO —— */}
+          {/* SEO */}
           <Route
             path="services/ai-digital-marketing-services"
             element={<Aidigital />}
@@ -222,34 +244,32 @@ function App() {
           />
           <Route path="services/ai-seo-services" element={<Seoservices />} />
 
-          {/* packages */}
-
-          <Route path="/packages/web-awareness" element={<Web></Web>} />
+          {/* Packages */}
+          <Route path="/packages/web-awareness" element={<Web />} />
           <Route
             path="/packages/social-media-management"
-            element={<Socialpackage></Socialpackage>}
+            element={<Socialpackage />}
           />
-          <Route path="/packages/seo" element={<Seopackage></Seopackage>} />
-          <Route
-            path="/packages/Ads-management"
-            element={<Adspackage></Adspackage>}
-          />
+          <Route path="/packages/seo" element={<Seopackage />} />
+          <Route path="/packages/Ads-management" element={<Adspackage />} />
 
-          {/* policies */}
+          {/* Policies */}
+          <Route path="/policies/privacy-policy" element={<Privacy />} />
+          <Route path="/policies/terms&conditions" element={<Tc />} />
 
-          <Route
-            path="/policies/privacy-policy"
-            element={<Privacy></Privacy>}
-          />
-          <Route path="/policies/terms&conditions" element={<Tc></Tc>} />
-
-          {/* —— 404 catch‑all (keep LAST) —— */}
+          {/* Catch-all */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>
+    </>
+  );
+};
 
-      <ScrollToTop />
-    </div>
+function App() {
+  return (
+    <Router>
+      <AppWrapper />
+    </Router>
   );
 }
 
