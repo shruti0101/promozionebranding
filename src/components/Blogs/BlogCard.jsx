@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 const BlogCard = ({ blog }) => {
-  const { title, description, image, _id, createdAt } = blog;
+  const { title, description, image, permalink, createdAt } = blog;
   const navigate = useNavigate();
 
   const formatDate = (dateString) => {
@@ -10,10 +10,11 @@ const BlogCard = ({ blog }) => {
   };
   return (
     <>
-      <div onClick={() => navigate(`/profile/blog/${_id}`)} 
-        className="card h-100 shadow-sm blog-card border-0 rounded-4 overflow-hidden cursor-pointer"
+      <div onClick={() => navigate(`/profile/blog/${permalink}`)}  
+ 
+        className="card h-100 mt-5 shadow-sm blog-card border-0 rounded-4 overflow-hidden cursor-pointer"
       style={{ transition: "transform 0.3s ease", cursor: "pointer", boxShadow:"3px, 3px, 4px ,4px ,green" }}>
-        <img src={image} alt="" className="aspect-ratio img-fluid" />
+        <img src={image} alt={title} className="aspect-ratio img-fluid" />
         <p className="text-muted pt-3 p-2">{formatDate(createdAt)}</p>
         <div className="p-2 ">
           <h5 className="mb-2 fw-semibold text-black">{title}</h5>

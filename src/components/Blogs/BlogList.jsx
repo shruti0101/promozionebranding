@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import BlogCard from "./BlogCard";
 import axios from "axios";
+import "./blog.css";
 
 const BlogList = () => {
   const [data, setData] = useState([]);
+  const [visibleBlogs, setVisibleBlogs] = useState(6); // Number of blogs initially visible
   const [loading, setLoading] = useState(false);
 
   const fetchData = async () => {
@@ -13,7 +15,7 @@ const BlogList = () => {
     } catch (error) {
       console.error("Failed to fetch blogs", error);
     } finally {
-      setLoading(true);  // Set loading to true after fetch completes
+      setLoading(true);
     }
   };
 
@@ -21,27 +23,55 @@ const BlogList = () => {
     fetchData();
   }, []);
 
+  const handleLoadMore = () => {
+    setVisibleBlogs((prev) => prev + 6); // Load 6 more each time
+  };
+
   return (
     <>
-      <div className="container text-center p-4">
-        <h1 className="fw-bold">Welcome to the Blog Page</h1>
-        <p className="fw-semibold fs-4">Explore some of our blogs</p>
+      {/* Hero Section */}
+      <div className="blog-hero-section text-center py-5 text-white">
+        <div className="container">
+          <h1 className="fw-bold text-white display-5 mb-3 mt-3">Welcome to the Blog Page</h1>
+          <p className="lead">Explore insights, tips, and updates from our team</p>
+        </div>
       </div>
 
-      <div className="container">
+      {/* Blog List */}
+      <div className="container py-5">
         <div className="row">
           {!loading ? (
-            <p className="text-center fw-bold p-5">Loading blogs...</p>
-          ) : data.length === 0 ? (
-            <p className="text-center fw-bold p-5">No Blogs Found</p>
-          ) : (
-            data.map((blog) => (
-              <div className="col-md-4 col-12 mb-4" key={blog._id}>
-                <BlogCard blog={blog} />
+            <div className="text-center py-5 w-100">
+              <div className="spinner-border text-primary" role="status">
+                <span className="visually-hidden">Loading...</span>
               </div>
-            ))
+              <p className="mt-3 fw-semibold">Loading blogs...</p>
+            </div>
+          ) : data.length === 0 ? (
+            <p className="text-center fw-semibold fs-5 text-muted w-100">No Blogs Found</p>
+          ) : (
+            data
+              .slice(0, visibleBlogs)
+              .map((blog, index) => (
+                <div
+                  className="col-md-6 col-lg-4 col-12 mb-4 animate__animated animate__fadeInUp"
+                  key={blog._id}
+                  style={{ animationDelay: `${index * 0.1}s`, animationDuration: "0.5s" }}
+                >
+                  <BlogCard blog={blog} />
+                </div>
+              ))
           )}
         </div>
+
+        {/* Load More Button */}
+        {visibleBlogs < data.length && (
+          <div className="text-center mt-5">
+            <button className="btn btn-primary px-4 py-2 fw-semibold" onClick={handleLoadMore}>
+              Load More
+            </button>
+          </div>
+        )}
       </div>
     </>
   );

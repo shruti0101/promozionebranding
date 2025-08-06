@@ -88,7 +88,7 @@ const Dashboard = () => {
         {/* Cards Row */}
         <div className="d-flex flex-wrap flex-md-nowrap gap-4 mt-4 align-items-stretch">
           {/* Blogs Card */}
-          <div className="card shadow-sm p-4 d-flex flex-column align-items-center gap-3 flex-grow-1">
+          <div className="shadow-sm pb-5 d-flex flex-column align-items-center gap-3 flex-grow-1">
             <div
               className="bg-primary rounded-circle d-flex justify-content-center align-items-center"
               style={{ width: "60px", height: "60px" }}
@@ -101,12 +101,12 @@ const Dashboard = () => {
             </div>
             <div className="d-flex pt-3 align-items-center justify-content-center flex-column">
               <p className="fs-2 fw-bold m-0">{dashboardData.blogs}</p>
-              <p className="fs-2 text-black m-0">Blogs</p>
+              <p className="fs-2 text-black m-0">Total Number of Blogs Added</p>
             </div>
           </div>
 
           {/* Drafts Card */}
-          <div className="card shadow-sm p-4 d-flex flex-column align-items-center gap-3 flex-grow-1">
+          {/* <div className="card shadow-sm p-4 d-flex flex-column align-items-center gap-3 flex-grow-1">
             <div
               className="bg-warning rounded-circle d-flex justify-content-center align-items-center"
               style={{ width: "60px", height: "60px" }}
@@ -119,9 +119,9 @@ const Dashboard = () => {
             </div>
             <div className="d-flex pt-3 align-items-center justify-content-center flex-column">
               <p className="fs-2 fw-bold m-0">{dashboardData.drafts}</p>
-              <p className="fs-2 text-black m-0">Drafts</p>
+              <p className="fs-2 text-black m-0">Total Blogs</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

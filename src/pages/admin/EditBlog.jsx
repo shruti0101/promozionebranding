@@ -1,11 +1,13 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
+import JoditEditor from "jodit-react";
 
 const EditBlog = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+  const editor = useRef(null);
 
   const [blogData, setBlogData] = useState({
     title: "",
@@ -16,7 +18,6 @@ const EditBlog = () => {
   const [imageFile, setImageFile] = useState(null);
   const [previewImage, setPreviewImage] = useState("");
 
-  // Fetch blog data
   const fetchBlog = async () => {
     try {
       const { data } = await axios.get(`http://localhost:5000/api/blog/${id}`);
@@ -40,10 +41,8 @@ const EditBlog = () => {
     fetchBlog();
   }, []);
 
-  // Handle Form Submit
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     const formData = new FormData();
     formData.append(
       "blog",
@@ -71,6 +70,45 @@ const EditBlog = () => {
       }
     } catch (error) {
       toast.error(error.message);
+    }
+  };
+
+  const editorConfig = {
+    readonly: false,
+    toolbarAdaptive: false,
+    buttons: [
+      'bold', 'italic', 'underline', 'strikethrough', '|',
+      'ul', 'ol', '|',
+      'outdent', 'indent', '|',
+      'font', 'fontsize', 'brush', 'paragraph', '|',
+      'h5', 'h6', '|',  // Custom H5 & H6 buttons
+      'align', '|',
+      'link', 'image', '|',
+      'undo', 'redo', '|',
+      'hr', 'eraser', 'copyformat', '|',
+      'fullsize', 'selectall', 'print', '|',
+      'source'
+    ],
+    cleanHTML: {
+      allowTags: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'ul', 'ol', 'li', 'strong', 'em', 'u', 's', 'a', 'img'],
+    },
+    controls: {
+      h5: {
+        name: 'h5',
+        icon: 'heading',
+        tooltip: 'Heading 5',
+        exec: (editor) => {
+          editor.s.wrapInTag('h5');
+        }
+      },
+      h6: {
+        name: 'h6',
+        icon: 'heading',
+        tooltip: 'Heading 6',
+        exec: (editor) => {
+          editor.s.wrapInTag('h6');
+        }
+      }
     }
   };
 
@@ -103,29 +141,16 @@ const EditBlog = () => {
         </div>
         <div className="mb-3">
           <label>Description</label>
-          <textarea
-            className="form-control"
-            rows="5"
+          <JoditEditor
+            ref={editor}
+            // config={editorConfig}
             value={blogData.description}
-            onChange={(e) =>
-              setBlogData({ ...blogData, description: e.target.value })
+            onChange={(newContent) =>
+              setBlogData({ ...blogData, description: newContent })
             }
-            required
-          ></textarea>
+          />
         </div>
-        {/* <div className="mb-3">
-          <label>Status</label>
-          <select
-            className="form-select"
-            value={blogData.ispublished}
-            onChange={(e) =>
-              setBlogData({ ...blogData, ispublished: e.target.value === "true" })
-            }
-          >
-            <option value={true}>Published</option>
-            <option value={false}>Unpublished</option>
-          </select>
-        </div> */}
+
         <div className="mb-3">
           <label>Image</label>
           <input
@@ -145,7 +170,7 @@ const EditBlog = () => {
             />
           )}
         </div>
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn mb-4 btn-primary">
           Update Blog
         </button>
       </form>

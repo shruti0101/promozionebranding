@@ -6,9 +6,8 @@ const main = require("../config/Gemini.js");
 // Add Blog
 const addBlog = async (req, res) => {
   try {
-    const { title, subtitle, description, ispublished } = JSON.parse(
-      req.body.blog
-    );
+   const { title, subtitle, description, ispublished, permalink } = JSON.parse(req.body.blog);
+
     const imageFile = req.file;
 
     if (!title || !subtitle || !description || ispublished === undefined) {
@@ -33,18 +32,21 @@ const addBlog = async (req, res) => {
       transformation: [
         { quality: "auto" },
         { format: "webp" },
-        { width: "1280" },
+        { width: "700" },
+        {height:"400"}
       ],
     });
 
-    await Blog.create({
-      title,
-      subtitle,
-      description,
-      image: optimizedImageUrl,
-      fileId: response.fileId,
-      ispublished,
-    });
+   await Blog.create({
+    title,
+    subtitle,
+    description,
+    image: optimizedImageUrl,
+    fileId: response.fileId,
+    ispublished,
+    permalink,  // Save permalink
+});
+
 
     res.json({
       success: true,
@@ -142,31 +144,37 @@ const getAllBlogAdmin = async (req, res) => {
   }
 };
 
-const getDashboard = async (res, req) => {
+const getDashboard = async (req, res) => {
   try {
-    const recentBlog = await Blog.fing({}).sort({ createdAt: -1 }).limit(5);
+    const recentBlogs = await Blog.find({}).sort({ createdAt: -1 }).limit(5);
     const blogs = await Blog.countDocuments();
     const draft = await Blog.countDocuments({ ispublished: false });
 
     const dashboardData = {
       blogs,
-      draft,
-      recentBlog,
+      drafts: draft,   
+      recentBlogs,     
     };
 
     res.json({
       success: true,
       dashboardData,
     });
-  } catch (error) {}
+  } catch (error) {
+    res.json({
+      success: false,
+      message: error.message,
+    });
+  }
 };
+
 
 // Get blog by ID
 const getBlogsById = async (req, res) => {
   try {
-    const { blogId } = req.params;
+    const { slug } = req.params;  // Changed from blogId to slug
 
-    const blog = await Blog.findById(blogId);
+    const blog = await Blog.findOne({ permalink: slug });  // Find by permalink
     if (!blog) {
       return res.json({
         success: false,
@@ -186,10 +194,30 @@ const getBlogsById = async (req, res) => {
   }
 };
 
+
+
+
 // Delete blog by ID
 const deleteBlogById = async (req, res) => {
   try {
     const { id } = req.params;
+
+    // Find the blog to get fileId of the image
+
+    const blog = await Blog.findById(id);
+    if (!blog) {
+      return res.json({
+        success: false,
+        message: "Blog not found",
+      });
+    }
+
+    // Delete image from ImageKit if fileId exists
+    if (blog.fileId) {
+      await imagekit.deleteFile(blog.fileId);
+    }
+
+    // Delete blog from MongoDB
     await Blog.findByIdAndDelete(id);
 
     res.json({
@@ -203,6 +231,9 @@ const deleteBlogById = async (req, res) => {
     });
   }
 };
+
+
+
 
 // Toggle publish status
 const togglePublish = async (req, res) => {

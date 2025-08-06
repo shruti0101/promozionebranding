@@ -63,7 +63,7 @@ const Sidebar = () => {
             alt="Add Blog Icon" 
             style={{ width: '24px', height: '25px' }} 
           />
-          <p className="mb-0 fs-5 fw-semibold">Explore Blog List</p>
+          <p className="mb-0 fs-5 fw-semibold">Explore All Blogs</p>
         </NavLink>
       </section>
     </>

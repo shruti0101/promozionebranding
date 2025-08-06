@@ -84,9 +84,10 @@ const AppWrapper = () => {
     <>
       <ToastContainer />
       <ScrollToTop />
+      <ScrollToTopOnRouteChange />
       {!isAdminRoute && <Whatsapp />}
       {!isAdminRoute && <Social />}
-      {isAdminRoute && <ScrollToTopOnRouteChange />}
+  
 
       <Routes>
         <Route path="/admin" element={<Navigate to="/admin/login" replace />} />
@@ -142,7 +143,8 @@ const AppWrapper = () => {
           <Route path="profile/whoweare" element={<Whoweare />} />
           <Route path="profile/reviews" element={<Review />} />
           <Route path="profile/blogs" element={<Blog />} />
-          <Route path="profile/blog/:id" element={<BlogPage />} />
+        <Route path="profile/blog/:slug" element={<BlogPage />} />
+
           <Route path="profile/career" element={<Career />} />
 
           {/* Web Dev */}
