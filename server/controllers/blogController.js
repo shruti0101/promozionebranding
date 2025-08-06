@@ -1,6 +1,7 @@
 const fs = require("fs");
 const imagekit = require("../config/imageKit.js");
 const Blog = require("../models/Blog.js");
+const main = require("../config/Gemini.js");
 
 // Add Blog
 const addBlog = async (req, res) => {
@@ -95,7 +96,7 @@ const updateBlog = async (req, res) => {
         transformation: [
           { quality: "auto" },
           { format: "webp" },
-          { width: "1280" },
+          { width: "500 " },
         ],
       });
 
@@ -231,6 +232,26 @@ const togglePublish = async (req, res) => {
   }
 };
 
+const generateContent = async (req,res) => {
+  try {
+    const { prompt } = req.body;
+
+    const content = await main(
+      prompt +
+        "Generate a blog content for this topic it should be unique and SEO friendly "
+    );
+    res.json({
+      success: true,
+      content,
+    });
+  } catch (error) {
+    res.json({
+      success: false,
+      message: error.message,
+    });
+  }
+};
+
 module.exports = {
   addBlog,
   getALLBlogs,
@@ -239,5 +260,6 @@ module.exports = {
   togglePublish,
   getDashboard,
   getAllBlogAdmin,
-  updateBlog
+  updateBlog,
+  generateContent
 };

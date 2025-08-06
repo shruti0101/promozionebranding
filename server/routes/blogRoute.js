@@ -5,7 +5,8 @@ const {
   getBlogsById,
   deleteBlogById,
   togglePublish,
-  updateBlog
+  updateBlog,
+  generateContent
 
 } = require("../controllers/blogController");
 const upload = require("../middleware/multer.js");
@@ -18,6 +19,7 @@ blogRouter.get("/:blogId", getBlogsById);
 blogRouter.delete("/delete/:id", deleteBlogById);
 blogRouter.post("/toggle", togglePublish);
 blogRouter.put("/update/:id", upload.single("image"), updateBlog); 
+blogRouter.post('/generate',generateContent)
 
 
 

@@ -74,6 +74,7 @@ import Tc from "./pages/T&C/Tc";
 import Socialpackage from "./pages/Socialpackage/Socialpackage";
 import Seopackage from "./pages/Seopackage/Seopackage";
 import Adspackage from "./pages/Adspackage/Adspackage";
+import EditBlog from "./pages/admin/EditBlog";
 
 const AppWrapper = () => {
   const location = useLocation();
@@ -120,6 +121,16 @@ const AppWrapper = () => {
             <ProtectedRoute>
               <Layoutt />
               <ListBlog />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/admin/edit-blog/:id"
+          element={
+            <ProtectedRoute>
+              <Layoutt />
+              <EditBlog />
             </ProtectedRoute>
           }
         />

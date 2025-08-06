@@ -30,16 +30,16 @@ const ListBlog = () => {
 
   return (
     <>
-      <div className="flex-1 pt-5 px-5 bg-light">
+      <div className=" container flex-1 pt-5 px-5 bg-light">
         <h1>All Blogs</h1>
 
      <div className="table-responsive">
             <table className="table align-middle mb-0">
-              <thead className="table-light">
-                <tr>
+              <thead className="table-light ">
+                <tr >
                   <th>#</th>
                   <th>Blog Title</th>
-                  <th className="d-none d-md-table-cell">Date</th>
+                  <th className="d-none d-md-table-cell ">Date</th>
                   <th className="d-none d-md-table-cell">Status</th>
                   <th>Actions</th>
                 </tr>

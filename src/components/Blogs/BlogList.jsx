@@ -1,31 +1,24 @@
-import  { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import BlogCard from "./BlogCard";
-import { blog_data } from "../../assets/blogs/assets";
 import axios from "axios";
 
 const BlogList = () => {
-const [data, setData]= useState([])
-
-const fetchData = async()=>{
-  const res = await axios("http://localhost:5000/api/admin/all-blogs")
-
-  setData(res.data.blogs);
-}
-
-useEffect(()=>{
-fetchData()
-},[])
-
-
+  const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    // Simulate loading delay (e.g., API call)
-    const timer = setTimeout(() => {
-      setLoading(true);
-    }, 1000); // 1 second loading time
+  const fetchData = async () => {
+    try {
+      const res = await axios("http://localhost:5000/api/admin/all-blogs");
+      setData(res.data.blogs);
+    } catch (error) {
+      console.error("Failed to fetch blogs", error);
+    } finally {
+      setLoading(true);  // Set loading to true after fetch completes
+    }
+  };
 
-    return () => clearTimeout(timer); // Cleanup
+  useEffect(() => {
+    fetchData();
   }, []);
 
   return (
@@ -37,14 +30,16 @@ fetchData()
 
       <div className="container">
         <div className="row">
-          {loading ? (
+          {!loading ? (
+            <p className="text-center fw-bold p-5">Loading blogs...</p>
+          ) : data.length === 0 ? (
+            <p className="text-center fw-bold p-5">No Blogs Found</p>
+          ) : (
             data.map((blog) => (
               <div className="col-md-4 col-12 mb-4" key={blog._id}>
                 <BlogCard blog={blog} />
               </div>
             ))
-          ) : (
-            <p className="text-center fw-bold p-5">Loading blogs...</p>
           )}
         </div>
       </div>

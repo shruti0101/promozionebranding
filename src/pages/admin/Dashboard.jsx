@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { assets, dashboard_data } from "../../assets/blogs/assets";
 import BlogTable from "./BlogTable";
+import { toast } from "react-toastify";
+import axios from "axios";
 
 const Dashboard = () => {
 
@@ -14,8 +16,18 @@ const Dashboard = () => {
     recentBlogs: [],
   });
 
+
+
   const fetchDashboardData = async () => {
-    setDashboardData(dashboard_data);
+    
+    try {
+      const {data}= await axios.get('http://localhost:5000/api/admin/dashboard')
+      data.success ? setDashboardData(data.dashboardData): toast.error(data.message)
+    } catch (error) {
+      toast.error(error.message)
+    }
+   
+
   };
 
   useEffect(() => {

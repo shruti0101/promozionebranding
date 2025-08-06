@@ -9,11 +9,15 @@ const BlogTable = ({ blog, fetchDashboardData, index }) => {
   const navigate = useNavigate();
 
   const deleteBlog = async () => {
-    const confirm = window.confirm("Are you sure you want to delete this blog?");
+    const confirm = window.confirm(
+      "Are you sure you want to delete this blog?"
+    );
     if (!confirm) return;
 
     try {
-      const { data } = await axios.delete(`http://localhost:5000/api/blog/delete/${blog._id}`);
+      const { data } = await axios.delete(
+        `http://localhost:5000/api/blog/delete/${blog._id}`
+      );
       if (data.success) {
         toast.success(data.message);
         await fetchDashboardData();
@@ -37,21 +41,23 @@ const BlogTable = ({ blog, fetchDashboardData, index }) => {
         {BlogDate.toLocaleDateString()}
       </td>
       <td className="px-3 py-3 d-none d-md-table-cell">
-        <span className={`badge ${blog.ispublished ? "bg-danger" : "bg-success"}`}>
+        <span
+          className={`badge ${blog.ispublished ? "bg-danger" : "bg-success"}`}
+        >
           {blog.ispublished ? "Unpublished" : "Published"}
         </span>
       </td>
       <td className="px-3 py-3">
         <div className="d-flex align-items-center gap-3">
-          <button onClick={handleEdit} className="btn btn-sm btn-outline-primary">
+          <button
+            onClick={handleEdit}
+            className="btn btn-sm btn-outline-primary"
+          >
             Edit
           </button>
-          <img
-            onClick={deleteBlog}
-            src={assets.cross_icon}
-            alt="Delete"
-            style={{ width: "18px", height: "18px", cursor: "pointer" }}
-          />
+          <button className="btn btn-primary" onClick={deleteBlog} alt="Delete">
+            Delete
+          </button>
         </div>
       </td>
     </tr>

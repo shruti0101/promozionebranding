@@ -33,7 +33,7 @@ const BlogPage = () => {
     <section className="bg-light">
       <div className="container py-5">
         <h1 className="fw-bold mb-4 text-center p-3 text-wrap">{blog.title}</h1>
-        <img src={blog.image} alt={blog.title} className="img-fluid mb-4 rounded" />
+        <img src={blog.image} alt={blog.title} className="img-fluid  mb-4 rounded" />
         <p className="text-muted">Published on {formatDate(blog.createdAt)}</p>
         <p dangerouslySetInnerHTML={{ __html: blog.description }}></p>
       </div>

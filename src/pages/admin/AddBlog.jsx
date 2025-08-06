@@ -3,10 +3,12 @@ import { assets } from "../../assets/blogs/assets";
 import JoditEditor from "jodit-react";
 import axios from "axios";
 import { toast } from "react-toastify";
+import { marked } from 'marked';
+
 
 const AddBlog = () => {
   const [isAdding, setIsAdding] = useState(false);
-
+ const [loading, setLoading] = useState(false);
   const [image, setImage] = useState(false);
   const [title, setTitle] = useState("");
   const [subtitle, setsubTitle] = useState("");
@@ -41,8 +43,25 @@ const AddBlog = () => {
       setIsAdding(false);
     }
   };
+const genContent = async () => {
+  if (!title) return toast.error('Please enter the title first');
+  try {
+    setLoading(true);
+    const { data } = await axios.post("http://localhost:5000/api/blog/generate", { prompt: title });
+    if (data.success) {
+      const htmlContent = marked.parse(data.content);  // Convert Markdown to HTML
+      setDescription(htmlContent);  // Set to JoditEditor
+      toast.success("AI Content Generated!");
+    } else {
+      toast.error(data.message || "Failed to generate content");
+    }
+  } catch (error) {
+    toast.error(error.message || "Something went wrong while generating content");
+  } finally {
+    setLoading(false);
+  }
+};
 
-  const genContent = async () => {};
 
   return (
     <div className="container py-4">
@@ -107,7 +126,7 @@ const AddBlog = () => {
         </div>
 
         {/* Blog Description */}
-        <div className="mb-4 position-relative">
+        <div disabled={loading} className="mb-4 position-relative">
           <label className="form-label fw-semibold">Blog Description</label>
           <button
             type="button"
@@ -125,7 +144,7 @@ const AddBlog = () => {
         </div>
 
         {/* Publish Toggle */}
-        {/* <div className="d-flex gap-2 mt-4">
+        <div className="d-flex gap-2 mt-4">
           <p className="text-capitalize">publish now</p>
           <input
             type="checkbox"
@@ -133,7 +152,7 @@ const AddBlog = () => {
             className="cursor-pointer"
             onChange={(e) => setisPublished(e.target.checked)}
           />
-        </div> */}
+        </div>
 
         {/* Submit Button */}
         <button disabled={isAdding} type="submit" className="btn btn-primary ">
