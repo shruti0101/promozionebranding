@@ -41,6 +41,7 @@ const addBlog = async (req, res) => {
       subtitle,
       description,
       image: optimizedImageUrl,
+      fileId: response.fileId,
       ispublished,
     });
 
@@ -53,6 +54,67 @@ const addBlog = async (req, res) => {
       success: false,
       message: error.message,
     });
+  }
+};
+
+// update blog
+
+const updateBlog = async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    const existingBlog = await Blog.findById(id);
+    if (!existingBlog) {
+      return res.json({ success: false, message: "Blog not found" });
+    }
+
+    const { title, subtitle, description, ispublished } = JSON.parse(
+      req.body.blog
+    );
+
+    let updatedImageUrl = existingBlog.image;
+    let updatedFileId = existingBlog.fileId;
+
+    // If a new image is uploaded, delete old image from ImageKit and upload new one
+    if (req.file) {
+      // Delete old image from ImageKit
+      if (existingBlog.fileId) {
+        await imagekit.deleteFile(existingBlog.fileId);
+      }
+
+      const fileBuffer = fs.readFileSync(req.file.path);
+
+      const uploadResponse = await imagekit.upload({
+        file: fileBuffer,
+        fileName: req.file.originalname,
+        folder: "/blogs",
+      });
+
+      updatedImageUrl = imagekit.url({
+        path: uploadResponse.filePath,
+        transformation: [
+          { quality: "auto" },
+          { format: "webp" },
+          { width: "1280" },
+        ],
+      });
+
+      updatedFileId = uploadResponse.fileId;
+    }
+
+    // Update blog in DB
+    existingBlog.title = title;
+    existingBlog.subtitle = subtitle;
+    existingBlog.description = description;
+    existingBlog.ispublished = ispublished;
+    existingBlog.image = updatedImageUrl;
+    existingBlog.fileId = updatedFileId;
+
+    await existingBlog.save();
+
+    res.json({ success: true, message: "Blog updated successfully" });
+  } catch (error) {
+    res.json({ success: false, message: error.message });
   }
 };
 
@@ -83,17 +145,18 @@ const getDashboard = async (res, req) => {
   try {
     const recentBlog = await Blog.fing({}).sort({ createdAt: -1 }).limit(5);
     const blogs = await Blog.countDocuments();
-    const draft= await Blog.countDocuments({ispublished:false})
+    const draft = await Blog.countDocuments({ ispublished: false });
 
+    const dashboardData = {
+      blogs,
+      draft,
+      recentBlog,
+    };
 
-  const dashboardData  ={
-blogs,draft,recentBlog
-  }
-
-  res.json({
-    success:true,
-    dashboardData 
-  })
+    res.json({
+      success: true,
+      dashboardData,
+    });
   } catch (error) {}
 };
 
@@ -125,7 +188,7 @@ const getBlogsById = async (req, res) => {
 // Delete blog by ID
 const deleteBlogById = async (req, res) => {
   try {
-    const { id } = req.body;
+    const { id } = req.params;
     await Blog.findByIdAndDelete(id);
 
     res.json({
@@ -175,5 +238,6 @@ module.exports = {
   deleteBlogById,
   togglePublish,
   getDashboard,
-  getAllBlogAdmin
+  getAllBlogAdmin,
+  updateBlog
 };

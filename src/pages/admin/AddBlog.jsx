@@ -125,7 +125,7 @@ const AddBlog = () => {
         </div>
 
         {/* Publish Toggle */}
-        <div className="d-flex gap-2 mt-4">
+        {/* <div className="d-flex gap-2 mt-4">
           <p className="text-capitalize">publish now</p>
           <input
             type="checkbox"
@@ -133,11 +133,11 @@ const AddBlog = () => {
             className="cursor-pointer"
             onChange={(e) => setisPublished(e.target.checked)}
           />
-        </div>
+        </div> */}
 
         {/* Submit Button */}
         <button disabled={isAdding} type="submit" className="btn btn-primary ">
-          {isAdding ? "Adding..." : "Add Blog"}
+          {isAdding ? "Submitting...." : "Submit Blog"}
         </button>
       </form>
     </div>
