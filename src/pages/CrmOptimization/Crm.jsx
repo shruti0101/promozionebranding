@@ -12,7 +12,7 @@ import Tiltcard from "../../TiltCardHome/Tiltcard";
 import crm2 from "../../assets/services/crm1.webp";
 import VanillaTilt from "vanilla-tilt";
 import WhyChoose from "../WHYCHOOSE/WhyChoose";
-import crm from "../../assets/services/crm.webp"
+import crm from "../../assets/services/CRM.webp"
 
 const Crm = () => {
 
