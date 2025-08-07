@@ -26,7 +26,7 @@ const BlogSchema = new mongoose.Schema({
     permalink: {
         type: String,
         required: true,
-        unique: true,  // Ensure no duplicates
+        unique: true,  
     }
 }, { timestamps: true });
 

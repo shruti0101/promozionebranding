@@ -1,5 +1,5 @@
 import axios from "axios";
-import { assets } from "../../assets/blogs/assets";
+
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
@@ -30,7 +30,7 @@ const BlogTable = ({ blog, fetchDashboardData, index }) => {
   };
 
   const handleEdit = () => {
-    navigate(`/admin/edit-blog/${blog._id}`);
+    navigate(`/admin/edit-blog/${blog.permalink}`);
   };
 
   return (

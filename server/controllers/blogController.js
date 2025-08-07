@@ -64,9 +64,9 @@ const addBlog = async (req, res) => {
 
 const updateBlog = async (req, res) => {
   try {
-    const { id } = req.params;
+  const { permalink } = req.params;
 
-    const existingBlog = await Blog.findById(id);
+   const existingBlog = await Blog.findOne({ permalink }); 
     if (!existingBlog) {
       return res.json({ success: false, message: "Blog not found" });
     }

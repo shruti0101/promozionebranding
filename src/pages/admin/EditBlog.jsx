@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import JoditEditor from "jodit-react";
 
 const EditBlog = () => {
-  const { id } = useParams();
+  const { permalink  } = useParams();
   const navigate = useNavigate();
   const editor = useRef(null);
 
@@ -20,7 +20,7 @@ const EditBlog = () => {
 
   const fetchBlog = async () => {
     try {
-      const { data } = await axios.get(`http://localhost:5000/api/blog/${id}`);
+      const { data } = await axios.get(`http://localhost:5000/api/blog/${permalink}`);
       if (data.success) {
         setBlogData({
           title: data.blog.title,
@@ -59,7 +59,7 @@ const EditBlog = () => {
 
     try {
       const { data } = await axios.put(
-        `http://localhost:5000/api/blog/update/${id}`,
+        `http://localhost:5000/api/blog/update/${permalink}`,
         formData
       );
       if (data.success) {

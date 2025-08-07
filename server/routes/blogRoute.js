@@ -18,7 +18,8 @@ blogRouter.get("/all", getALLBlogs);
 blogRouter.get("/:slug", getBlogsById);
 blogRouter.delete("/delete/:id", deleteBlogById);
 blogRouter.post("/toggle", togglePublish);
-blogRouter.put("/update/:id", upload.single("image"), updateBlog); 
+blogRouter.put("/update/:permalink", upload.single("image"), updateBlog); 
+
 blogRouter.post('/generate',generateContent)
 
 

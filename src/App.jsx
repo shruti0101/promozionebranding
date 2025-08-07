@@ -127,7 +127,7 @@ const AppWrapper = () => {
         />
 
         <Route
-          path="/admin/edit-blog/:id"
+          path="/admin/edit-blog/:permalink"
           element={
             <ProtectedRoute>
               <Layoutt />
