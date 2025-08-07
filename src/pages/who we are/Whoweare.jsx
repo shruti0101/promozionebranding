@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import ctaImage from "../../assets/ctaweb.webp";
-import star from "../../assets/about/star.svg";
+
 import hello from "../../assets/about/hello.svg";
 import line from "../../assets/about/line.svg";
 import office from "../../assets/about/right-img.webp";
@@ -44,18 +44,7 @@ const Whoweare = () => {
   return (
     <>
       <div className="whoweare-section ">
-        <img
-          src={star}
-          className="star top-left"
-          alt="star"
-          data-aos="fade-down"
-        />
-        <img
-          src={star}
-          className="star top-right"
-          alt="star"
-          data-aos="fade-down-left"
-        />
+    
         <img
           src={hello}
           className="hello-img star"
