@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../styles/scrolltop.css"; // make sure the path is correct
+import "../styles/ScrollTop.css" // make sure the path is correct
 
 const ScrollToTop = () => {
   const [visible, setVisible] = useState(false);
