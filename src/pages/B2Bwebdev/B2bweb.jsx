@@ -7,7 +7,7 @@ import Process from "../Process/Process";
 import { FaCheckCircle } from "react-icons/fa";
 
 import Tiltcard from "../../TiltCardHome/Tiltcard";
-import b2bweb1 from "../../assets/services/b2b.webp";
+import b2bweb1 from "../../assets/services/B2B.webp";
 
 import WhyChoose from "../WHYCHOOSE/WhyChoose";
 import b2bweb from "../../assets/services/b2bweb1.webp";
