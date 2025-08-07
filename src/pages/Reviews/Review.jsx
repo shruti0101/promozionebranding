@@ -1,4 +1,4 @@
-import "./style.css";
+import "./Style.css";
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AOS from "aos";
