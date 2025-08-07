@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 // Import images
-import digitalMarketingImage from "../../../assets/specialized/Digital-MARKETING.webp";
+import digitalMarketingImage from "../../../assets/specialized/DIGITAL-MARKETING.webp";
 import linkedin from "../../../assets/specialized/linkedin.webp";
 import blog from "../../../assets/specialized/blogging.webp";
 import wordpress from "../../../assets/services/web-design.webp";
