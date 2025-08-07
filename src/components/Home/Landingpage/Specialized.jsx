@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 // Import images
 import digitalMarketingImage from "../../../assets/specialized/DIGITAL-MARKETING.webp";
-import linkedin from "../../../assets/specialized/linkedin.webp";
+import linkedin from "../../../assets/specialized/linkedIn.webp";
 import blog from "../../../assets/specialized/blogging.webp";
 import wordpress from "../../../assets/services/web-design.webp";
 import smo from "../../../assets/specialized/smo.webp";
