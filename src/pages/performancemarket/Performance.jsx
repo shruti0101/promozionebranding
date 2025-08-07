@@ -6,7 +6,7 @@ import "./Style.css";
 import ctaImage from "../../assets/ctaweb.webp";
 import Form2 from "../../components/Home/Landingpage/Form2";
 
-import google from "../../assets/specialized/Google-AdWord-course.webp"
+import google from "../../assets/specialized/Google-AdWord-Course.webp"
 import Story from "../Story/Story"
 import Tiltcard from "../../TiltCardHome/Tiltcard";
 import { Link } from "react-router-dom";
