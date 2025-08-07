@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
-import "./style.css";
+import "./Style.css";
 
 const Story = () => {
   const { ref, inView } = useInView({
