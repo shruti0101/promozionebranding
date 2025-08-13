@@ -68,7 +68,7 @@ import ListBlog from "./pages/admin/ListBlog";
 import Login from "./components/Admin/Login";
 import Signup from "./components/Admin/Signup";
 import ProtectedRoute from "./components/Admin/ProtectedRoute";
-
+import Popup from "./components/POPUP/Popup"
 import Privacy from "./pages/PrivacyPolicy/Privacy";
 import Tc from "./pages/T&C/Tc";
 import Socialpackage from "./pages/Socialpackage/Socialpackage";
@@ -82,7 +82,9 @@ const AppWrapper = () => {
 
   return (
     <>
+
       <ToastContainer />
+      <Popup></Popup>
       <ScrollToTop />
       <ScrollToTopOnRouteChange />
       {!isAdminRoute && <Whatsapp />}
@@ -90,9 +92,9 @@ const AppWrapper = () => {
   
 
       <Routes>
-        <Route path="/admin" element={<Navigate to="/admin/login" replace />} />
-        <Route path="/admin/login" element={<Login />} />
-        {/* <Route path="/admin/signup" element={<Signup />} /> */}
+     
+        <Route path="/login" element={<Login />} />
+  
 
         <Route
           path="/admin/dashboard"
@@ -263,7 +265,7 @@ const AppWrapper = () => {
             path="/packages/social-media-management"
             element={<Socialpackage />}
           />
-          <Route path="/packages/seo" element={<Seopackage />} />
+        
           <Route path="/packages/Ads-management" element={<Adspackage />} />
 
           {/* Policies */}
@@ -280,7 +282,7 @@ const AppWrapper = () => {
 
 function App() {
   return (
-    <Router>
+    <Router >
       <AppWrapper />
     </Router>
   );

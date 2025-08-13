@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../styles/Hero.css";
@@ -7,10 +7,28 @@ import { FaDownload } from "react-icons/fa";
 
 export default function HeroSection() {
   const formRef = useRef();
+  const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // handle submission
+
+    try {
+      const formData = new FormData(formRef.current);
+
+      const res = await fetch("https://formsubmit.co/YOUR_EMAIL", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (res.ok) {
+        setSubmitted(true);
+        formRef.current.reset();
+      } else {
+        setSubmitted(false);
+      }
+    } catch (error) {
+      setSubmitted(false);
+    }
   };
 
   useEffect(() => {
@@ -25,7 +43,7 @@ export default function HeroSection() {
     <div className="container-fluid m-0 p-0">
       <section className="hero-section pt-0 d-flex align-items-center justify-content-center">
         <div className="hero-overlay" />
-        <div className=" hero-content position-relative py-5">
+        <div className="hero-content position-relative py-4">
           <div className="row align-items-center">
             {/* Left: Text */}
             <div className="col-lg-6 text-white" data-aos="fade-right">
@@ -38,19 +56,33 @@ export default function HeroSection() {
                 personalized strategy proposal today to start driving ROI from
                 digital marketing!
               </p>
-              <Link to="/Contact" className="text-decoration-none d-none d-md-block">
+              <Link
+                to="/Contact"
+                className="text-decoration-none d-none d-md-block"
+              >
                 <button className="nav-btn2 mt-3">Let's get started!</button>
               </Link>
             </div>
 
             {/* Right: Stylish Form */}
-            <div className="col-lg-6 mt-5 mt-lg-0 " data-aos="fade-left">
+            <div className="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left">
               <div className="form-glass p-3 p-md-5 rounded-4 shadow-lg">
                 <h3 className="text-white fw-semibold mb-4">
-               Coffee or Beer? It's on us!
+                  Coffee or Beer? It's on us!
                 </h3>
-             
-                <form className="row g-3" ref={formRef} onSubmit={handleSubmit}>
+
+                {submitted && (
+                  <p className="text-success fw-bold">
+                    Thank you! Your form has been submitted.
+                  </p>
+                )}
+
+                <form
+                  className="row g-3"
+                  ref={formRef}
+                  onSubmit={handleSubmit}
+                >
+                  <input type="hidden" name="_captcha" value="false" />
                   <div className="col-6">
                     <input
                       type="text"
@@ -64,7 +96,7 @@ export default function HeroSection() {
                     <input
                       type="email"
                       name="email"
-                      placeholder="Email Address "
+                      placeholder="Email Address"
                       className="form-control input-fill"
                       required
                     />
@@ -98,7 +130,7 @@ export default function HeroSection() {
                   <div className="col-12 text-center">
                     <button
                       type="submit"
-                      className="btn btn-light px-4  fw-semibold rounded-pill"
+                      className="btn btn-light px-4 fw-semibold rounded-pill"
                     >
                       Get Started Now
                     </button>

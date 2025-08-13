@@ -31,8 +31,8 @@ const BlogPage = () => {
 
   return (
     <section className="bg-light">
-      <div className="container py-5">
-        <h1 className="fw-bold mb-3 text-start p-3 text-wrap ">{blog.title}</h1>
+      <div className="container py-3">
+        <h1 className="fw-bold  text-start p-2 text-wrap ">{blog.title}</h1>
         <img src={blog.image} alt={blog.title} className="img-fluid  mb-4 rounded" />
         <p className="text-muted">Published on {formatDate(blog.createdAt)}</p>
         <p dangerouslySetInnerHTML={{ __html: blog.description }}></p>

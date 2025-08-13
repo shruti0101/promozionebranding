@@ -149,7 +149,7 @@ const Navbar = () => {
         ["Social Media Management", "/packages/social-media-management"],
 
         ["Ads Management ", "/packages/Ads-management"],
-        ["SEO ", "/packages/seo"],
+     
       ],
     },
   ];
