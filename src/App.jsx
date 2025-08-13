@@ -72,7 +72,7 @@ import Popup from "./components/POPUP/Popup"
 import Privacy from "./pages/PrivacyPolicy/Privacy";
 import Tc from "./pages/T&C/Tc";
 import Socialpackage from "./pages/Socialpackage/Socialpackage";
-import Seopackage from "./pages/Seopackage/Seopackage";
+
 import Adspackage from "./pages/Adspackage/Adspackage";
 import EditBlog from "./pages/admin/EditBlog";
 

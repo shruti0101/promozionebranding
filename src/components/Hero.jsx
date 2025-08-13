@@ -24,7 +24,9 @@ export default function HeroSection() {
         setSubmitted(true);
         formRef.current.reset();
       } else {
-        setSubmitted(false);
+              setTimeout(() => {
+          setSubmitted(false);
+        }, 5000);
       }
     } catch (error) {
       setSubmitted(false);
