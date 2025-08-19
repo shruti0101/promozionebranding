@@ -99,55 +99,55 @@ const Approach = () => {
 
 
 
-      <div className="container timeline-wrapper">
-        <h1 data-aos="zoom-in" className="text-center">
-          Our Process
-        </h1>
-        <div className="underline"></div>
-        <p className="fw-semibold text-center mx-auto description-text">
-          We created a 5 step process that we follow to ensure we are providing
-          an excellent service to all of the businesses we work with.
-        </p>
+        <div className="container timeline-wrapper">
+          <h1 data-aos="zoom-in" className="text-center">
+            Our Process
+          </h1>
+          <div className="underline"></div>
+          <p className="fw-semibold text-center mx-auto description-text">
+            We created a 5 step process that we follow to ensure we are providing
+            an excellent service to all of the businesses we work with.
+          </p>
 
-        <div className="timeline-content container">
-          <div className="content-box flex-column flex-md-row">
-            <div className="content-text mb-4 mb-md-0 w-100">
-              <h1 className="fw-bold fs-1">{steps[activeId - 1].title}</h1>
-              <p className="text-muted">{steps[activeId - 1].desc}</p>
-              <a
-                href={`#section-${activeId}`}
-                className="nav-btn mt-2"
-                style={{ scrollBehavior: "smooth" }}
-              >
-                Read More
-              </a>
-            </div>
-            <div className="content-image w-100">
-              <img
-                src={steps[activeId - 1].image}
-                alt={steps[activeId - 1].title}
-                className="img-fluid"
-              />
+          <div className="timeline-content container">
+            <div className="content-box flex-column flex-md-row">
+              <div className="content-text mb-4 mb-md-0 w-100">
+                <h1 className="fw-bold fs-1">{steps[activeId - 1].title}</h1>
+                <p className="text-muted">{steps[activeId - 1].desc}</p>
+                <a
+                  href={`#section-${activeId}`}
+                  className="nav-btn mt-2"
+                  style={{ scrollBehavior: "smooth" }}
+                >
+                  Read More
+                </a>
+              </div>
+              <div className="content-image w-100">
+                <img
+                  src={steps[activeId - 1].image}
+                  alt={steps[activeId - 1].title}
+                  className="img-fluid"
+                />
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="timeline">
-          {steps.map((step, index) => (
-            <div
-              key={step.id}
-              className={`timeline-step ${
-                activeId === step.id ? "active" : ""
-              }`}
-              onClick={() => setActiveId(step.id)}
-            >
-              <div className="circle">{step.id}</div>
-              {index !== 0 && <div className="line" />}
-              <p className="step-title">{step.title}</p>
-            </div>
-          ))}
+          <div className="timeline">
+            {steps.map((step, index) => (
+              <div
+                key={step.id}
+                className={`timeline-step ${
+                  activeId === step.id ? "active" : ""
+                }`}
+                onClick={() => setActiveId(step.id)}
+              >
+                <div className="circle">{step.id}</div>
+                {index !== 0 && <div className="line" />}
+                <p className="step-title">{step.title}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
 
 {/* summary of our approach */}
      <section

@@ -65,15 +65,15 @@ const WhyChooseUs = () => {
 
           <Row className="align-items-center">
             <Col lg={6} data-aos="fade-right">
-              <h3 className="fw-bold text-dark">
+              {/* <h3 className="fw-bold text-dark">
                 100% <span className="text-primary">GUARANTEED DIGITAL SUCCESS</span>
-              </h3>
-              <p className="text-muted mt-3">
+              </h3> */}
+              <p className="text-black fs-4 mt-3">
                 We know what you're thinking — “Every agency makes big claims, why should I trust Promozione?”
               </p>
               <p className="fw-semibold text-dark mt-4">
                 Here's why we're different – We don't just promise results... <br />
-                <span className="text-primary fw-bold">We deliver 100% Guaranteed Success!</span>
+                {/* <span className="text-primary fw-bold">We deliver 100% Guaranteed Success!</span> */}
               </p>
               <ul className="mt-4 ps-3 list-unstyled">
                 <li className="mb-2">✅ Get Ranked on Google in 6 Months – Guaranteed!</li>

@@ -19,6 +19,7 @@ import ctaImage from "../../assets/ctaweb.webp";
 import Form2 from "../../components/Home/Landingpage/Form2";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import SEO from "../../components/helmet/Helmet";
 const cardItems = [
   {
     title: "On-Page SEO",
@@ -283,6 +284,13 @@ We don't just promise results – we guarantee them in 6 months, or you get your
             buttonText="Book Your Free Consultation Now!"
             image={ctaImage}
           ></Form2>
+
+
+
+           <SEO
+        title="GEO Services: Grow Your AI Search Visibility in 2025"
+        description="Counter risk while growing visibility in AI search with generative engine optimization (GEO) services that include SEO. Learn more about our services now!"
+      />
     </>
   );
 };

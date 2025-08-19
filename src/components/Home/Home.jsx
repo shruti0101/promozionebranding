@@ -11,41 +11,35 @@ import Project from "./Landingpage/Project";
 
 import Leadgen from "./Landingpage/Leadgen";
 import Form2 from "./Landingpage/Form2";
-import ctaImage from "../../assets/ctaweb.webp"
+import ctaImage from "../../assets/ctaweb.webp";
 
 import Hero from "../Hero";
 
 const Home = () => {
   return (
     <div>
-      
+      <Hero></Hero>
 
-        <Hero></Hero>
+      <Services />
 
-<Services />
-
-    <Leadgen></Leadgen>
+      {/* <Leadgen></Leadgen> */}
       <WhyChoose />
 
-
-
-    
       <SectorServe />
-        <Form1 />
+      <Form1 />
       <Specialized />
       <Orbit />
-        <Project></Project>
+      <Project></Project>
       <Testimonials />
       <Faq />
-<Form2
- heading="Get your Brands Ranked With Us"
-  price="Your Growth is Our Guarantee."
-  buttonText="Chalo Shuru Karaein"
-  image={ctaImage}
-
-></Form2>
+      <Form2
+        heading="Get your Brands Ranked With Us"
+        price="Your Growth is Our Guarantee."
+        buttonText="Chalo Shuru Karaein"
+        image={ctaImage}
+      ></Form2>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
