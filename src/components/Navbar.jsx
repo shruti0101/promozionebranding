@@ -94,7 +94,7 @@ const Navbar = () => {
       name: "revenue",
       label: "Revenue Marketing & CRO",
       items: [
-        ["B2B Lead Generation", "/services/b2b-lead-generation-services"],
+        // ["B2B Lead Generation", "/services/b2b-lead-generation-services"],
         ["B2B Marketing", "/services/b2b-marketing-services"],
 
         ["B2C Marketing", "/services/b2c-marketing-services"],
