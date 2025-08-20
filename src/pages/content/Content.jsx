@@ -1,7 +1,7 @@
 import React from "react";
 import content from "../../assets/services/content.webp";
 import { useRef, useEffect } from "react";
-
+import SEO from "../../components/helmet/Helmet"
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import {
@@ -337,6 +337,13 @@ const Content = () => {
         buttonText=" Start your journey today!"
         image={ctaImage}
       ></Form2>
+
+
+      
+              <SEO
+              title="Content Marketing Services That Boost Traffic by Over 10% "
+              description="We offer content marketing services that include strategy development, content creation, and more. Browse our content marketing services packages!"
+            />
     </div>
   );
 };

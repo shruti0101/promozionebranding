@@ -88,7 +88,7 @@ const WhyChooseUs = () => {
             <Col lg={6}>
               <Row className="g-4">
                 {stats.map((item, idx) => (
-                  <Col sm={6} key={idx} data-aos="zoom-in" data-aos-delay={idx * 100}>
+                  <Col sm={6} key={idx} >
                     <div
                       className="stat-box position-relative p-4 rounded h-100"
                       style={{

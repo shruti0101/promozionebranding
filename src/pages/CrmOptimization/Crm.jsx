@@ -12,23 +12,22 @@ import Tiltcard from "../../TiltCardHome/Tiltcard";
 import crm2 from "../../assets/services/crm1.webp";
 import VanillaTilt from "vanilla-tilt";
 import WhyChoose from "../WHYCHOOSE/WhyChoose";
-import crm from "../../assets/services/CRM.webp"
-
+import crm from "../../assets/services/CRM.webp";
+import SEO from "../../components/helmet/Helmet";
 const Crm = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
 
-     useEffect(() => {
-        AOS.init({ duration: 800, once: true });
-    
-        const tiltElements = document.querySelectorAll(".tilt");
-        VanillaTilt.init(tiltElements, {
-          max: 15,
-          speed: 400,
-          scale: 1.05,
-          glare: true,
-          "max-glare": 0.3,
-        });
-      }, []);
-    
+    const tiltElements = document.querySelectorAll(".tilt");
+    VanillaTilt.init(tiltElements, {
+      max: 15,
+      speed: 400,
+      scale: 1.05,
+      glare: true,
+      "max-glare": 0.3,
+    });
+  }, []);
+
   const cardItems = [
     {
       title: "CRM Audit & Health Check",
@@ -56,114 +55,109 @@ const Crm = () => {
     },
   ];
 
-    const funnelData = [
-  {
-    title: "Step 1: Business & Goal Understanding",
-    services: [
-      " Aapka target customer, product/service aur campaign objective samajhna.",
-  
-    ],
-    color: "#2563eb",
-  },
-  {
-    title: "Step 2: Keyword & Competitor Research",
-    services: [
-      " Jo log aapka product Google pe search kar rahe hain, unko target karte hain.",
-    ],
-    color: "#16a34a",
-  },
-  {
-    title: "Step 3: Campaign Setup & Ad Design",
-    services: [
-      "  Search ads, display banners, YouTube videos – sab create karke launch karte hain.",
-    ],
-    color: "#f59e0b",
-  },
-  {
-    title: "Step 4: Conversion Tracking Setup",
-    services: [
-      "  Lead forms, WhatsApp clicks, calls – sab track hota hai with proper tools.",
-    ],
-    color: "#ec4899",
-  },
-  {
-    title: "Step 5: Optimization & Scaling",
-    services: [
-      "  Low CTR? High CPC? We fix it. High performance? We scale it.",
-    ],
-    color: "#0ea5e9",
-  },
-
-   {
-    title: "Step 6: Reporting & ROI Analysis",
-    services: [
-      " Aapko milta hai clear, easy-to-read report with results that matter.",
-    ],
-    color: "#222",
-  },
-];
-
-const services = [
+  const funnelData = [
     {
-  icon: "bi-journal-text",
-  title: "CRM Audit & Health Check",
-  description:
-    "Full review of current setup, usage gaps, data quality, and user behavior.",
-},
-  {
-    icon: "bi-bullseye",
-    title: "Workflow & Automation Setup",
-    description:
-      "Smart automations for lead scoring, follow-ups, reminders, and task flows.",
-  },
-  {
-    icon: "bi-geo-alt",
-    title: "Lead & Pipeline Optimization",
-    description:
-      "Customize stages, filters, deal flows, and contact segmentation.",
-  },
-  {
-    icon: "bi-bar-chart-line",
-    title: "Custom Dashboards & Reports",
-    description:
-      "Real-time insights into sales, revenue, deals, and agent performance.",
-  },
-  {
-    icon: "bi-gear",
-    title: "CRM Integration",
-    description:
-      "Connect your CRM to marketing tools, WhatsApp, email platforms, landing pages, etc.",
-  },
-  {
-    icon: "bi-sliders",
-    title: "Data Cleanup & Migration",
-    description:
-      "Fix duplicates, outdated data, and migrate to a cleaner structure.",
-  },
-  {
-    icon: "bi-graph-up",
-    title: "Team Training & Adoption",
-    description:
-      "CRM toh powerful hai… but only if your team actually uses it. We train, onboard, and guide.",
-  },
- 
-];
+      title: "Step 1: Business & Goal Understanding",
+      services: [
+        " Aapka target customer, product/service aur campaign objective samajhna.",
+      ],
+      color: "#2563eb",
+    },
+    {
+      title: "Step 2: Keyword & Competitor Research",
+      services: [
+        " Jo log aapka product Google pe search kar rahe hain, unko target karte hain.",
+      ],
+      color: "#16a34a",
+    },
+    {
+      title: "Step 3: Campaign Setup & Ad Design",
+      services: [
+        "  Search ads, display banners, YouTube videos – sab create karke launch karte hain.",
+      ],
+      color: "#f59e0b",
+    },
+    {
+      title: "Step 4: Conversion Tracking Setup",
+      services: [
+        "  Lead forms, WhatsApp clicks, calls – sab track hota hai with proper tools.",
+      ],
+      color: "#ec4899",
+    },
+    {
+      title: "Step 5: Optimization & Scaling",
+      services: [
+        "  Low CTR? High CPC? We fix it. High performance? We scale it.",
+      ],
+      color: "#0ea5e9",
+    },
 
+    {
+      title: "Step 6: Reporting & ROI Analysis",
+      services: [
+        " Aapko milta hai clear, easy-to-read report with results that matter.",
+      ],
+      color: "#222",
+    },
+  ];
 
-const points=[
- " Sales team not updating data?",
-"Leads falling through cracks?",
-"Reporting takes forever?",
-"You’re using only 20% of CRM features?",
-"CRM feels like a burden, not a solution?"
+  const services = [
+    {
+      icon: "bi-journal-text",
+      title: "CRM Audit & Health Check",
+      description:
+        "Full review of current setup, usage gaps, data quality, and user behavior.",
+    },
+    {
+      icon: "bi-bullseye",
+      title: "Workflow & Automation Setup",
+      description:
+        "Smart automations for lead scoring, follow-ups, reminders, and task flows.",
+    },
+    {
+      icon: "bi-geo-alt",
+      title: "Lead & Pipeline Optimization",
+      description:
+        "Customize stages, filters, deal flows, and contact segmentation.",
+    },
+    {
+      icon: "bi-bar-chart-line",
+      title: "Custom Dashboards & Reports",
+      description:
+        "Real-time insights into sales, revenue, deals, and agent performance.",
+    },
+    {
+      icon: "bi-gear",
+      title: "CRM Integration",
+      description:
+        "Connect your CRM to marketing tools, WhatsApp, email platforms, landing pages, etc.",
+    },
+    {
+      icon: "bi-sliders",
+      title: "Data Cleanup & Migration",
+      description:
+        "Fix duplicates, outdated data, and migrate to a cleaner structure.",
+    },
+    {
+      icon: "bi-graph-up",
+      title: "Team Training & Adoption",
+      description:
+        "CRM toh powerful hai… but only if your team actually uses it. We train, onboard, and guide.",
+    },
+  ];
 
-]
-const note=[
-  "CRM toh powerful hai… but only if your team actually uses it. We train, onboard, and guide."
+  const points = [
+    " Sales team not updating data?",
+    "Leads falling through cracks?",
+    "Reporting takes forever?",
+    "You’re using only 20% of CRM features?",
+    "CRM feels like a burden, not a solution?",
+  ];
+  const note = [
+    "CRM toh powerful hai… but only if your team actually uses it. We train, onboard, and guide.",
+  ];
 
-] 
-
-    const features = [
+  const features = [
     "Business-First Approach (not tech-first)",
     " Automation + Sales Process Experts",
     " Affordable for Indian startups & SMEs",
@@ -173,8 +167,6 @@ const note=[
     "Reduce manual work Increase lead conversion",
   ];
 
-
- 
   return (
     <>
       <Tiltcard
@@ -206,9 +198,7 @@ At Promozione Branding Pvt. Ltd., we specialize in CRM Optimization Services tha
             <div className="col-md-6" data-aos="fade-right">
               <h2 className="php-heading">
                 What is{" "}
-                <span style={{ color: "#2548BD" }}>
-                  CRM Optimization?
-                </span>{" "}
+                <span style={{ color: "#2548BD" }}>CRM Optimization?</span>{" "}
               </h2>
               <p className="php-desc">
                 CRM Optimization means improving how your CRM works for your
@@ -250,7 +240,7 @@ At Promozione Branding Pvt. Ltd., we specialize in CRM Optimization Services tha
 
       {/* why choose */}
 
-       <WhyChoose
+      <WhyChoose
         title="Why Choose
 "
         highlightedText="Promozione for CRM Optimization"
@@ -268,43 +258,40 @@ CRM Optimization = More Sales, Less Effort
       />
 
       {/* our process */}
-<Process
-title="Our  CRM Optimization Process" image={funnel} data={funnelData} 
+      <Process
+        title="Our  CRM Optimization Process"
+        image={funnel}
+        data={funnelData}
+      ></Process>
 
-></Process>
+      {/* our services */}
 
-
-{/* our services */}
-
- <Service
-      title="Our CRM Optimization Services Include:"
-      subtitle="Signs You Need CRM Optimization
+      <Service
+        title="Our CRM Optimization Services Include:"
+        subtitle="Signs You Need CRM Optimization
 
 
 
       "
         points={points}
         note={note}
-    
-    
-      services={services}
-      image={crm }
-    />
+        services={services}
+        image={crm}
+      />
 
-
-{/*  other parts*/}
-<Story></Story>
- <Form2
+      {/*  other parts*/}
+      <Story></Story>
+      <Form2
         heading="Let's Build Your Success Story Together"
         price="Your Growth is Our Guarantee."
         buttonText="Click Now, Thank Us Later."
         image={ctaImage}
       ></Form2>
 
-
-
-
-
+      <SEO
+        title="Conversion Rate Optimization Services for Driving Revenue "
+        description="Earn more sales, leads, and revenue from your site with conversion rate optimization services. View CRO service plans, get custom pricing, and more now!"
+      />
     </>
   );
 };
