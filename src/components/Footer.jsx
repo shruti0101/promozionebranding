@@ -100,10 +100,10 @@ const Footer = () => {
           ])}
 
           {renderDropdown("revenue", "Revenue Marketing & CRO", [
-            {
-              label: "B2B Lead Generation",
-              to: "/services/b2b-lead-generation-services",
-            },
+            // {
+            //   label: "B2B Lead Generation",
+            //   to: "/services/b2b-lead-generation-services",
+            // },
             { label: "B2B Marketing", to: "/services/b2b-marketing-services" },
             { label: "B2C Marketing", to: "/services/b2c-marketing-services" },
             { label: "D2C Marketing", to: "/services/d2c-marketing-services" },
