@@ -49,16 +49,6 @@ const Socialmedia = () => {
 
 
 
-//   const points = [
-//   "100% Guaranteed Social Media Growth in 6 Months",
-//   "Custom Content Strategy for Every Business",
-//   "Dedicated Social Media Manager",
-//   "Creative Content Creation (Graphics + Videos)",
-//   "Performance Tracking & Reporting",
-//   "Audience Engagement & Community Building",
-//   "Affordable Packages for SMEs",
-//   "We don't just post – we create content that drives action!",
-// ];
 const services = [
   {
     icon: "bi-bullseye",
@@ -158,13 +148,15 @@ const services = [
 
   return (
     <>
+    {/* 100% Guaranteed */}
     
       <Tiltcard
-        heading="Elevate Your Brand with 100% Guaranteed Social Media Management Services in India
+        heading="Elevate Your Brand with Social Media Management Services in India
 "
-        paragraph="Looking to make your brand the next big thing on social media? At Promozione Branding Pvt. Ltd., we offer 100% Guaranteed Social Media Management Services in India designed to help SMEs boost brand awareness, drive engagement, and generate qualified leads through social media platforms.
+        paragraph="Looking to make your brand the next big thing on social media? At Promozione Branding Pvt. Ltd., we offer  Social Media Management Services in India designed to help SMEs boost brand awareness, drive engagement, and generate qualified leads through social media platforms.
 
 "
+// 100% Guaranteed
         cardItems={cardItems}
         services="Social Media Management Services "
       />
@@ -185,8 +177,7 @@ const services = [
                 Instagram, Facebook, LinkedIn, Twitter, and YouTube. It involves
                 creating, publishing, and analyzing content, as well as engaging
                 with your audience. With Promozione, we not only manage your
-                social media – we guarantee visible growth and engagement within
-                6 months!
+                social media accounts but also create a tailored strategy to help you
               </p>
             </div>
           </div>
@@ -210,7 +201,7 @@ const services = [
                 Why Choose Our <span className="text-accent">Social Media Management</span> Services?
               </h2>
               <ul className="list-style-custom ">
-                <li>100% Guaranteed Social Media Growth in 6 Months</li>
+                {/* <li>100% Guaranteed Social Media Growth in 6 Months</li> */}
                 <li>Custom Content Strategy for Every Business</li>
                 <li>Dedicated Social Media Manager</li>
                 <li>Creative Content Creation (Graphics + Videos)</li>
@@ -230,7 +221,7 @@ const services = [
           </div>
         </div>
         <svg className="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
-          <path fill="#fff" fillOpacity="1"
+          <path fill="#5fb7dfff" fillOpacity="1"
             d="M0,96L48,101.3C96,107,192,117,288,138.7C384,160,480,192,576,176C672,160,768,96,864,85.3C960,75,1056,117,1152,122.7C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
           </path>
         </svg>

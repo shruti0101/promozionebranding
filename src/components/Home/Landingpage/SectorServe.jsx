@@ -41,15 +41,18 @@ const SectorServe = () => {
   }, []);
 
   return (
-    <div className="container py-5">
+    <>
+    <section className="py-5"style={{ backgroundColor: "#F8F6FF" }}>
+
+    <div className="container ">
       <h2 className="fw-bold text-center mb-sm-0 text-capitalize mt-2" style={{ color: "#2548BD" }}>
         different Industry we serve
       </h2>
       <div className="mx-auto mb-4 mt-3" style={{ width: "60px", height: "4px", backgroundColor: "#0d6efd" }}></div>
       <div className="row">
         {sectors.map((sector, index) => (
-          <div className="col-lg-3 col-md-4 col-sm-6 mb-4" key={sector.title} data-aos="fade-up" >
-            <div className="sector-card h-100">
+          <div className="col-lg-3  col-md-4 col-sm-6 mb-4" key={sector.title} data-aos="fade-up" >
+            <div  className="sector-card h-100 ">
               {/* Animated Borders */}
               <span className="left-border"></span>
               <span className="top-border"></span>
@@ -58,7 +61,7 @@ const SectorServe = () => {
 
               <img src={sector.img} className="sector-card-img" alt={sector.alt} />
               <div className="sector-card-body">
-                <h5 className="sector-card-title">{sector.title}</h5>
+                <h5 className="sector-card-title ">{sector.title}</h5>
                 <p className="sector-card-text">{sector.desc}</p>
               </div>
             </div>
@@ -66,6 +69,8 @@ const SectorServe = () => {
         ))}
       </div>
     </div>
+    </section>
+    </>
   );
 };
 

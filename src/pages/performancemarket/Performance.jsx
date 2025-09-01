@@ -63,9 +63,10 @@ const Performance = () => {
     <div>
       {/* hero */}
    <Tiltcard
-        heading="Performance Marketing Services Get Guaranteed Growth with Promozione Branding Pvt. Ltd."
-        paragraph="Are you tired of investing in marketing campaigns without seeing tangible results? At Promozione Branding Pvt. Ltd., we offer Performance Marketing Services in India with 100% Guaranteed Results. We don’t just promise – we deliver measurable growth
+        heading="Performance Marketing Services Get Growth with Promozione Branding Pvt. Ltd."
+        paragraph="Are you tired of investing in marketing campaigns without seeing tangible results? At Promozione Branding Pvt. Ltd., we offer Performance Marketing Services in India  We don’t just promise – we deliver measurable growth
 "
+// with 100% Guaranteed Results.
         cardItems={cardItems}
         services="Performance Marketing Services "
       />
@@ -153,8 +154,9 @@ const Performance = () => {
           </h2>
           <div className="row text-center g-4">
             {[
-              "100% Guaranteed ROI",
+              // "100% Guaranteed ROI",
               "Transparent Campaign Reporting",
+              "High-Impact Ad Creatives",
               "Dedicated Marketing Experts",
               "High-Quality Lead Generation",
               "Customized Campaign Strategies",

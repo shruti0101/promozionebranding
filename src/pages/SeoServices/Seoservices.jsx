@@ -58,10 +58,14 @@ const Seoservices = () => {
 
   return (
     <>
+     {/* 6 Month Guaranteed */}
       <Tiltcard
-        heading="Best AI SEO Services in India –  6 Month Guaranteed Google Ranking with Promozione Branding Pvt. Ltd."
-        paragraph="Struggling to rank your website on Google? At Promozione Branding Pvt. Ltd., we offer 100% Guaranteed SEO Services in India that help your business rank higher, drive traffic, and generate qualified leads.
-We don't just promise results – we guarantee them in 6 months, or you get your money back!"
+        heading="Best AI SEO Services in India –  Google Ranking with Promozione Branding Pvt. Ltd."
+        paragraph="Struggling to rank your website on Google? At Promozione Branding Pvt. Ltd., we offer  SEO Services in India that help your business rank higher, drive traffic, and generate qualified leads.
+"
+// We don't just promise results – we guarantee them in 6 months, or you get your money back!
+
+// 100% Guaranteed
         cardItems={cardItems}
          services="AI Seo services"
       />
@@ -167,7 +171,7 @@ We don't just promise results – we guarantee them in 6 months, or you get your
               </p>
             </div>
 
-            <div className="strategy-step">
+            {/* <div className="strategy-step">
               <FaRedo className="strategy-icon" />
               <h5 className="step-title">
                 Step 6: Guaranteed Results in 6 Months
@@ -177,7 +181,7 @@ We don't just promise results – we guarantee them in 6 months, or you get your
                 <strong>first-page rankings on Google</strong> – or your money
                 back!.
               </p>
-            </div>
+            </div> */}
           </div>
         </Container>
       </section>

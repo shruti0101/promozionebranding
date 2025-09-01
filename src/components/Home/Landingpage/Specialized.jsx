@@ -61,6 +61,7 @@ const Specialized = () => {
 
   return (
     <section className="py-5 bg-white text-center">
+      
       <div className="container">
         <h2 className="mb-3 fw-bold" style={{ color: "#2548BD" }}>
           Our Specialized Services
@@ -95,7 +96,9 @@ const Specialized = () => {
           ))}
         </div>
       </div>
+       
     </section>
+    
   );
 };
 

@@ -61,11 +61,12 @@ const Content = () => {
     <div>
       {/* hero */}
       <Tiltcard
-        heading="Content Marketing Services in India – GetGuaranteed Results with Promozione Branding Pvt. Ltd."
-        paragraph="Content is not just king – it’s the heartbeat of your brand. At Promozione Branding Pvt. Ltd., we offer 100% Guaranteed Content Marketing Services in India that captivate your audience, boost your brand presence, and drive qualified leads.
+        heading="Content Marketing Services in India – Get Results with Promozione Branding Pvt. Ltd."
+        paragraph="Content is not just king – it’s the heartbeat of your brand. At Promozione Branding Pvt. Ltd., we offer Content Marketing Services in India that captivate your audience, boost your brand presence, and drive qualified leads.
 
 
 "
+// 100% Guaranteed
         cardItems={cardItems}
         services="content marketing services"
       />
@@ -207,7 +208,8 @@ const Content = () => {
           </h2>
           <div className="row text-center g-4">
             {[
-              "100% Guaranteed Results in 6 Months",
+              // "100% Guaranteed Results in 6 Months",
+              "Proven Content Marketing Framework",
               "SEO-Optimized Content That Ranks & Converts",
               "Dedicated Content Strategists & Writers",
               "Data-Driven Content Strategies",

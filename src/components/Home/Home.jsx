@@ -24,10 +24,11 @@ const Home = () => {
 
       {/* <Leadgen></Leadgen> */}
       <WhyChoose />
-
-      <SectorServe />
+     <Specialized />
+    
       <Form1 />
-      <Specialized />
+ 
+        <SectorServe />
       <Orbit />
       <Project></Project>
       <Testimonials />

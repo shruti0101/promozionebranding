@@ -194,8 +194,15 @@ const Services = () => {
             ))}
           </div>
         </div>
+
+  
+
+            
       </section>
+     
       <Slider />
+
+       
     </>
   );
 };
