@@ -11,7 +11,9 @@ const BlogList = () => {
 
   const fetchData = async () => {
     try {
-      const res = await axios.get(`${process.env.REACT_APP_API_URL}/admin/all-blogs`);
+    const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/blog/all`);
+
+
       setData(res.data.blogs || []); // fallback to empty array
     } catch (error) {
       console.error("Failed to fetch blogs", error);
