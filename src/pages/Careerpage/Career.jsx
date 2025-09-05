@@ -122,7 +122,8 @@ const Career = () => {
                 data-aos="fade-up"
                 data-aos-delay={i * 100}
               >
-                <div className="card-glass text-center p-4 rounded-4 h-100">
+                <div style={{backgroundColor: "#F1ECFF"
+                }} className="card-glass  text-center p-4 rounded-4 h-100">
                   <i className={`${perk.icon} fs-1 text-primary`}></i>
                   <h6 className="mt-3 fw-semibold">{perk.title}</h6>
                 </div>

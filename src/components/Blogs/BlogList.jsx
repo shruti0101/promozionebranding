@@ -10,7 +10,8 @@ const BlogList = () => {
 
   const fetchData = async () => {
     try {
-      const res = await axios("http://localhost:5000/api/admin/all-blogs");
+      // ✅ Corrected: use /api instead of localhost:5000
+      const res = await axios.get("/api/admin/all-blogs");
       setData(res.data.blogs);
     } catch (error) {
       console.error("Failed to fetch blogs", error);
@@ -32,7 +33,9 @@ const BlogList = () => {
       {/* Hero Section */}
       <div className="blog-hero-section text-center py-5 text-white">
         <div className="container">
-          <h1 className="fw-bold text-white display-5 mb-3 mt-3">Welcome to the Blog Page</h1>
+          <h1 className="fw-bold text-white display-5 mb-3 mt-3">
+            Welcome to the Blog Page
+          </h1>
           <p className="lead">Explore insights, tips, and updates from our team</p>
         </div>
       </div>
@@ -48,7 +51,9 @@ const BlogList = () => {
               <p className="mt-3 fw-semibold">Loading blogs...</p>
             </div>
           ) : data.length === 0 ? (
-            <p className="text-center fw-semibold fs-5 text-muted w-100">No Blogs Found</p>
+            <p className="text-center fw-semibold fs-5 text-muted w-100">
+              No Blogs Found
+            </p>
           ) : (
             data
               .slice(0, visibleBlogs)
@@ -56,7 +61,10 @@ const BlogList = () => {
                 <div
                   className="col-md-6 col-lg-4 col-12 mb-4 animate__animated animate__fadeInUp"
                   key={blog._id}
-                  style={{ animationDelay: `${index * 0.1}s`, animationDuration: "0.5s" }}
+                  style={{
+                    animationDelay: `${index * 0.1}s`,
+                    animationDuration: "0.5s",
+                  }}
                 >
                   <BlogCard blog={blog} />
                 </div>
@@ -67,7 +75,10 @@ const BlogList = () => {
         {/* Load More Button */}
         {visibleBlogs < data.length && (
           <div className="text-center mt-5">
-            <button className="btn btn-primary px-4 py-2 fw-semibold" onClick={handleLoadMore}>
+            <button
+              className="btn btn-primary px-4 py-2 fw-semibold"
+              onClick={handleLoadMore}
+            >
               Load More
             </button>
           </div>

@@ -11,10 +11,10 @@ export default function Signup() {
   const signupHandler = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/signup", { username, email, password });
+      await axios.post("/api/signup", { username, email, password });
       navigate("/admin/login");
     } catch (err) {
-      alert(err.response.data.message);
+      alert(err.response?.data?.message || "Signup failed");
     }
   };
 

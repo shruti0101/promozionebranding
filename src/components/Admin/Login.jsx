@@ -10,11 +10,13 @@ export default function Login() {
   const loginHandler = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/login", { email, password });
+      // ✅ Use relative API path (goes through Nginx reverse proxy)
+      const res = await axios.post("/api/login", { email, password });
+
       localStorage.setItem("token", res.data.token);
       navigate("/admin/dashboard");
     } catch (err) {
-      alert(err.response.data.message);
+      alert(err?.response?.data?.message || "Login failed. Please try again.");
     }
   };
 

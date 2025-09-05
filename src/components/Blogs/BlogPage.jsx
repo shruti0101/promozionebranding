@@ -3,12 +3,13 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 const BlogPage = () => {
-  const { slug } = useParams(); // Change from id to slug
+  const { slug } = useParams();
   const [blog, setBlog] = useState(null);
 
+  // Always call through /api (Nginx will proxy to backend)
   const fetchBlog = async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/blog/${slug}`);
+      const res = await axios.get(`/api/blog/${slug}`);
       setBlog(res.data.blog);
     } catch (err) {
       console.error("Error fetching blog:", err);
@@ -17,14 +18,14 @@ const BlogPage = () => {
 
   useEffect(() => {
     fetchBlog();
-  }, [slug]); // Dependency is slug now
+  }, [slug]);
 
   if (!blog) {
     return <h2 className="text-center p-5 my-5 fw-bold fs-1">Blog Not Found</h2>;
   }
 
   const formatDate = (dateString) => {
-    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const options = { year: "numeric", month: "long", day: "numeric" };
     const date = new Date(dateString);
     return date.toLocaleDateString(undefined, options);
   };
@@ -32,8 +33,12 @@ const BlogPage = () => {
   return (
     <section className="bg-light">
       <div className="container py-3">
-        <h1 className="fw-bold  text-start p-2 text-wrap ">{blog.title}</h1>
-        <img src={blog.image} alt={blog.title} className="img-fluid  mb-4 rounded" />
+        <h1 className="fw-bold text-start p-2 text-wrap">{blog.title}</h1>
+        <img
+          src={blog.image}
+          alt={blog.title}
+          className="img-fluid mb-4 rounded"
+        />
         <p className="text-muted">Published on {formatDate(blog.createdAt)}</p>
         <p dangerouslySetInnerHTML={{ __html: blog.description }}></p>
       </div>
