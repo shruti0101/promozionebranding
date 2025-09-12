@@ -6,6 +6,8 @@ const Blog = () => {
     <div>
 
         <BlogList></BlogList>
+
+
     </div>
   )
 }

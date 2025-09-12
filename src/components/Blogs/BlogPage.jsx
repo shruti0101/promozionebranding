@@ -6,10 +6,9 @@ const BlogPage = () => {
   const { slug } = useParams();
   const [blog, setBlog] = useState(null);
 
-  // Always call through /api (Nginx will proxy to backend)
   const fetchBlog = async () => {
     try {
-      const res = await axios.get(`/api/blog/${slug}`);
+      const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/blog/${slug}`);
       setBlog(res.data.blog);
     } catch (err) {
       console.error("Error fetching blog:", err);
