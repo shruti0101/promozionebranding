@@ -3,7 +3,6 @@ import {
   Route,
   Navigate,
   BrowserRouter as Router,
-  useLocation,
 } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
@@ -11,7 +10,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./index.css";
 
 import Layout from "./Layout";
-import Layoutt from "./pages/admin/Layoutt";
+
 import ScrollToTop from "./components/ScrollToTop";
 import ScrollToTopOnRouteChange from "./components/ScrollToTopOnRouteChange";
 import Whatsapp from "./components/Whatsapp";
@@ -59,85 +58,23 @@ import Digital from "./pages/Digitalmarket/Digital";
 import Webapp from "./pages/Webapp/Webapp";
 import B2bweb from "./pages/B2Bwebdev/B2bweb";
 import Web from "./pages/webawarenesspackage/Web";
-import Blog from "./pages/Blogs/Blog";
-import BlogPage from "./components/Blogs/BlogPage";
+import Blog from "./pages/Blogs/Blogs";
 
-import Dashboard from "./pages/admin/Dashboard";
-import AddBlog from "./pages/admin/AddBlog";
-import ListBlog from "./pages/admin/ListBlog";
-import Login from "./components/Admin/Login";
-import Signup from "./components/Admin/Signup";
-import ProtectedRoute from "./components/Admin/ProtectedRoute";
-import Popup from "./components/POPUP/Popup"
+import Popup from "./components/POPUP/Popup";
 import Privacy from "./pages/PrivacyPolicy/Privacy";
 import Tc from "./pages/T&C/Tc";
 import Socialpackage from "./pages/Socialpackage/Socialpackage";
-
 import Adspackage from "./pages/Adspackage/Adspackage";
-import EditBlog from "./pages/admin/EditBlog";
 
-const AppWrapper = () => {
-  const location = useLocation();
-  const isAdminRoute = location.pathname.startsWith("/admin");
-
+const App = () => {
   return (
-    <>
-
+    <Router>
       <ToastContainer />
-      <Popup></Popup>
+      <Popup />
       <ScrollToTop />
       <ScrollToTopOnRouteChange />
-      {!isAdminRoute && <Whatsapp />}
-      {!isAdminRoute && <Social />}
-  
 
       <Routes>
-     
-        <Route path="/login" element={<Login />} />
-  
-
-        <Route
-          path="/admin/dashboard"
-          element={
-            <ProtectedRoute>
-              <>
-                <Layoutt />
-                <Dashboard />
-              </>
-            </ProtectedRoute>
-          }
-        />
-
-        <Route
-          path="/admin/addblog"
-          element={
-            <ProtectedRoute>
-              <Layoutt />
-              <AddBlog />
-            </ProtectedRoute>
-          }
-        />
-
-        <Route
-          path="/admin/listblog"
-          element={
-            <ProtectedRoute>
-              <Layoutt />
-              <ListBlog />
-            </ProtectedRoute>
-          }
-        />
-
-        <Route
-          path="/admin/edit-blog/:permalink"
-          element={
-            <ProtectedRoute>
-              <Layoutt />
-              <EditBlog />
-            </ProtectedRoute>
-          }
-        />
-
         {/* Public Website Routes */}
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -145,8 +82,6 @@ const AppWrapper = () => {
           <Route path="profile/whoweare" element={<Whoweare />} />
           <Route path="profile/reviews" element={<Review />} />
           <Route path="profile/blogs" element={<Blog />} />
-        <Route path="profile/blog/:slug" element={<BlogPage />} />
-
           <Route path="profile/career" element={<Career />} />
 
           {/* Web Dev */}
@@ -162,10 +97,7 @@ const AppWrapper = () => {
             path="services/php-website-development-services"
             element={<Php />}
           />
-          <Route
-            path="services/cms-web-development-services"
-            element={<Cms />}
-          />
+          <Route path="services/cms-web-development-services" element={<Cms />} />
           <Route
             path="services/react-web-development-services"
             element={<Reactt />}
@@ -226,7 +158,10 @@ const AppWrapper = () => {
             path="services/content-marketing-services"
             element={<Content />}
           />
-          <Route path="services/crm-optimizations-services" element={<Crm />} />
+          <Route
+            path="services/crm-optimizations-services"
+            element={<Crm />}
+          />
           <Route path="services/email-marketing-services" element={<Email />} />
           <Route path="services/video-marketing-services" element={<Video />} />
           <Route path="services/social-media-optimization" element={<Smo />} />
@@ -265,7 +200,6 @@ const AppWrapper = () => {
             path="/packages/social-media-management"
             element={<Socialpackage />}
           />
-        
           <Route path="/packages/Ads-management" element={<Adspackage />} />
 
           {/* Policies */}
@@ -276,16 +210,8 @@ const AppWrapper = () => {
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>
-    </>
-  );
-};
-
-function App() {
-  return (
-    <Router >
-      <AppWrapper />
     </Router>
   );
-}
+};
 
 export default App;
