@@ -3,6 +3,7 @@ import Tiltcard from "../../TiltCardHome/Tiltcard";
 import b2b from "../../assets/services/b2b-marketing.webp";
 import funnel from "../../assets/services/funnel.webp";
 import "./B2b.css"
+import SEO from "../../components/helmet/Helmet";
 import { FaCheckCircle } from "react-icons/fa";
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
@@ -88,6 +89,13 @@ const cardItems = [
 
   return (
     <div>
+
+  <SEO
+      title="Top Marketing Agency for SaaS | Best B2B SaaS PPC Agency"
+      description="B2B Marketing provides actionable intelligence, data, events and training to help marketers maximize business performance and realize their potential."
+    />
+
+
       <Tiltcard
         heading="B2B Marketing Services in India – Generate Quality Leads & Close Bigger Deals"
         paragraph="B2B marketing is not about massive reach — it’s about reaching the right decision-makers at the right time.

@@ -1,6 +1,6 @@
 import Tiltcard from "../../TiltCardHome/Tiltcard";
 import { Link } from "react-router-dom";
-import Helmet from "../../components/helmet/Helmet";
+import SEO from "../../components/helmet/Helmet";
 
 const Adspackage = () => {
   const cardItems = [
@@ -45,6 +45,13 @@ const Adspackage = () => {
 
   return (
     <>
+
+ <SEO
+      title=" Ads Package "
+      description="Need Ads management services? Trust Promozione to provide Ads services that accelerate your sales and lead generation efforts. Get a free quote now!"
+    />
+
+    
       <Tiltcard
         heading={`Ads Management Packages in India
 Maximize ROI with Targeted Facebook & Instagram Ad Campaigns
@@ -267,10 +274,7 @@ From audience research to A/B testing, performance tracking, and real-time optim
     ))}
   </div>
 </div>
- <Helmet
-      title=" Ads Package "
-      description="Need Ads management services? Trust Promozione to provide Ads services that accelerate your sales and lead generation efforts. Get a free quote now!"
-    />
+
     </>
   );
 };

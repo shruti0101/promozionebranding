@@ -6,7 +6,7 @@ import ctaImage from "../../assets/ctaweb.webp";
 import Process from "../Process/Process";
 import { FaCheckCircle } from "react-icons/fa";
 import { useEffect } from "react";
-import Helmet from "../../components/helmet/Helmet";
+import SEO from "../../components/helmet/Helmet";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Tiltcard from "../../TiltCardHome/Tiltcard";
@@ -29,33 +29,32 @@ const AiPerformance = () => {
     });
   }, []);
 
-const cardItems = [
-  {
-    title: " Predictive Targeting",
-    icon: "🎯", // Target — for strategic planning and audience targeting
-  },
-  {
-    title: "Smart Ad Creative Testing",
-    icon: "🧪", // Test tube — symbolizes experimentation and testing
-  },
-  {
-    title: "Real-Time Budget Allocation",
-    icon: "💸", // Money with wings — dynamic use of budget
-  },
-  {
-    title: "Dynamic Retargeting",
-    icon: "🔁", // Repeat — represents retargeting cycles
-  },
-  {
-    title: "A/B & Multivariate Testing",
-    icon: "⚖️", // Balance scale — comparing variations fairly
-  },
-  {
-    title: "AI Keyword & Audience Insights",
-    icon: "🤖", // Robot — AI-driven decisions
-  },
-];
-
+  const cardItems = [
+    {
+      title: " Predictive Targeting",
+      icon: "🎯", // Target — for strategic planning and audience targeting
+    },
+    {
+      title: "Smart Ad Creative Testing",
+      icon: "🧪", // Test tube — symbolizes experimentation and testing
+    },
+    {
+      title: "Real-Time Budget Allocation",
+      icon: "💸", // Money with wings — dynamic use of budget
+    },
+    {
+      title: "Dynamic Retargeting",
+      icon: "🔁", // Repeat — represents retargeting cycles
+    },
+    {
+      title: "A/B & Multivariate Testing",
+      icon: "⚖️", // Balance scale — comparing variations fairly
+    },
+    {
+      title: "AI Keyword & Audience Insights",
+      icon: "🤖", // Robot — AI-driven decisions
+    },
+  ];
 
   const funnelData = [
     {
@@ -167,18 +166,14 @@ const cardItems = [
     " Zero ad budget wastage – sab paisa ka hisaab milega",
     " More conversions, less cost, faster scale",
     " Real estate or education brands needing qualified leadsn",
-   
   ];
 
   return (
     <>
-
-
-  <SEO
+     <SEO
       title="Top Ads Management Services [25% Lift in Ads Sales] "
       description="Need Ads management services? Trust Promozione to provide Ads services that accelerate your sales and lead generation efforts. Get a free quote now!"
     />
-
 
       <Tiltcard
         heading="AI Performance Marketing Services in India – Smarter Ads, Better Results 
@@ -297,10 +292,6 @@ Get 10x smarter with your marketing.
         buttonText="Talk to Our AI Ad Strategist."
         image={ctaImage}
       ></Form2>
-
-
- 
-
     </>
   );
 };
