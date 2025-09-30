@@ -4,7 +4,7 @@ import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
 import ctaImage from "../../assets/ctaweb.webp";
 import Process from "../Process/Process";
-
+import { Helmet } from "react-helmet";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -172,6 +172,16 @@ const features = [
 
   return (
     <>
+
+
+<Helmet>
+  <title>Best Top SEO Website Development Company in Delhi</title>
+  <meta
+    name="description"
+    content="Get online fast with our professional web design service. From simple to complex, our website design team will create, host, and update the site for you."
+  />
+</Helmet>
+
       <Tiltcard
         heading="SEO Web Design Services – Design That Looks Good & Ranks Better
 

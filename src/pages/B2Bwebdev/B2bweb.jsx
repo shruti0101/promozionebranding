@@ -5,7 +5,7 @@ import Form2 from "../../components/Home/Landingpage/Form2";
 import ctaImage from "../../assets/ctaweb.webp";
 import Process from "../Process/Process";
 import { FaCheckCircle } from "react-icons/fa";
-
+import { Helmet } from "react-helmet";
 import Tiltcard from "../../TiltCardHome/Tiltcard";
 import b2bweb1 from "../../assets/services/B2B.webp";
 
@@ -157,6 +157,14 @@ const funnelData = [
 
   return (
     <>
+<Helmet>
+  <title>Everything Design: B2B Branding & Website Agency</title>
+  <meta
+    name="description"
+    content="Promozione Branding provides expert website development as per your requirements. Get a High-Converting website for your brand. Book a Free Consultation."
+  />
+</Helmet>
+
       <Tiltcard
         heading="B2B Website Development Services – Where Development Meets Business Growth 
 

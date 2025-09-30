@@ -14,7 +14,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Style.css";
 import roi from "../../assets/services/roi_1.webp";
-
+import { Helmet } from "react-helmet";
 const Approach = () => {
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
@@ -57,6 +57,16 @@ const Approach = () => {
 
   return (
     <>
+
+
+<Helmet>
+  <title>Our Approach to Digital Marketing Strategy & SEO | Promozione Branding</title>
+  <meta
+    name="description"
+    content="Discover our proven digital marketing approach—data-driven strategies, SEO, and customized solutions to accelerate brand growth and maximize online results."
+  />
+</Helmet>
+
       <section className="container-fluid section-marketing position-relative overflow-hidden">
         {/* SVG Background */}
         <svg

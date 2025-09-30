@@ -12,7 +12,7 @@ import Tiltcard from "../../TiltCardHome/Tiltcard";
 import video from "../../assets/services/video (2).webp";
 import VanillaTilt from "vanilla-tilt";
 import WhyChoose from "../WHYCHOOSE/WhyChoose";
-
+import { Helmet } from "react-helmet";
 const Video = () => {
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
@@ -171,6 +171,17 @@ const services = [
 
   return (
     <>
+
+
+   <Helmet>
+  <title>Video Marketing Agency India |Video Production Services</title>
+  <meta
+    name="description"
+    content="Afraid you can't afford video marketing? Our video marketing services can help you produce cost-effective campaigns that reach and engage. Contact us!"
+  />
+</Helmet>
+
+
       <Tiltcard
         heading="Video Marketing Services in India – Tell Your Story, Sell Your Brand
 

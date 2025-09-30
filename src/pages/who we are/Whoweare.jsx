@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import ctaImage from "../../assets/ctaweb.webp";
-
+import { Helmet } from "react-helmet";
 import hello from "../../assets/about/hello.svg";
 import line from "../../assets/about/line.svg";
 import office from "../../assets/about/right-img.webp";
@@ -43,6 +43,16 @@ const Whoweare = () => {
 
   return (
     <>
+
+
+    <Helmet>
+  <title>Who We Are | Promozione Branding – Digital Marketing Experts</title>
+  <meta
+    name="description"
+    content="Meet Promozione Branding: experts in SEO and digital marketing, committed to brand growth with data-driven results and proven client success stories."
+  />
+</Helmet>
+
       <div className="whoweare-section ">
     
         <img

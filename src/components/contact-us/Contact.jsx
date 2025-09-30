@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import underline from "../../assets/contact/underline-effect.webp";
 import "./Contact.css";
 import { toast } from "react-toastify";
-
+import { Helmet } from "react-helmet";
 export default function ContactSection() {
   const formRef = useRef();
 
@@ -35,6 +35,15 @@ export default function ContactSection() {
 
   return (
     <>
+<Helmet>
+  <title>Contact Promozione Branding | Digital Marketing Experts Ready to Help</title>
+  <meta
+    name="description"
+    content="Get in touch with Promozione Branding for expert digital marketing support. Quick response guaranteed. Connect via form, email, phone, or social media today."
+  />
+</Helmet>
+
+
       <section className="py-5 custom-bg-blue">
         <div className="text-center px-3 position-relative mb-5">
           <h1 className="fw-bold fs-1 text-black">

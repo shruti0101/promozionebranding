@@ -5,6 +5,7 @@ import Form2 from "../../components/Home/Landingpage/Form2";
 import lead from "../../assets/approach/lead.webp";
 import Story from "../Story/Story";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 const Lead = () => {
   return (
     <div>

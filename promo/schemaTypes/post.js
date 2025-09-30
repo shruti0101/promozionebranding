@@ -67,8 +67,8 @@ export default defineType({
     defineField({
       name: 'metaDescription',
       title: 'Meta Description',
-      type: 'text',
-      rows: 3,
+      type: 'string',
+      
       description: 'SEO description for the blog (recommended < 160 characters)',
     }),
   ],

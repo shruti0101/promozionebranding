@@ -1,9 +1,10 @@
 import React from "react";
 import content from "../../assets/services/content.webp";
 import { useRef, useEffect } from "react";
-import SEO from "../../components/helmet/Helmet"
+
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import {
   FaSearch,
   FaProjectDiagram,
@@ -59,6 +60,16 @@ const Content = () => {
 
   return (
     <div>
+
+
+<Helmet>
+  <title>Content Marketing Services That Grow Your Business</title>
+  <meta
+    name="description"
+    content="Our content marketing agency's services encompass a wide range of marketing assets, including blog posts, whitepapers, case studies, infographics, video scripts, social media content"
+  />
+</Helmet>
+
       {/* hero */}
       <Tiltcard
         heading="Content Marketing Services in India – Get Results with Promozione Branding Pvt. Ltd."
@@ -342,10 +353,7 @@ const Content = () => {
 
 
       
-              <SEO
-              title="Content Marketing Services That Boost Traffic by Over 10% "
-              description="We offer content marketing services that include strategy development, content creation, and more. Browse our content marketing services packages!"
-            />
+             
     </div>
   );
 };

@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Career.css";
-
+import { Helmet } from "react-helmet";
 const Career = () => {
  
   const formRef = useRef();
@@ -91,6 +91,18 @@ const Career = () => {
   ];
 
   return (
+
+
+<>
+
+<Helmet>
+  <title>Careers at Promozione Branding | Join Our Digital Marketing Team</title>
+  <meta
+    name="description"
+    content="Explore exciting career opportunities with Promozione Branding. Join a dynamic team driving digital marketing innovation and grow your professional journey."
+  />
+</Helmet>
+
     <div className="career-wrapper text-dark">
       <section className="career-section text-white text-center py-5">
         <div className="container">
@@ -208,6 +220,8 @@ const Career = () => {
         </div>
       </section>
     </div>
+</>
+
   );
 };
 

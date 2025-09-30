@@ -14,7 +14,7 @@ import icon5 from "../../assets/reviews/customer-service.webp";
 import icon6 from "../../assets/reviews/results.webp";
 import icon7 from "../../assets/reviews/technology.webp";
 import icon8 from "../../assets/reviews/expertise.webp";
-
+import { Helmet } from "react-helmet";
 
 const Review = () => {
   useEffect(() => {
@@ -349,6 +349,16 @@ tech: [
 
   return (
     <div>
+
+
+<Helmet>
+  <title>Client Reviews & Testimonials | Trusted Digital Marketing Agency</title>
+  <meta
+    name="description"
+    content="Read authentic client reviews showcasing Promozione Branding’s proven digital marketing success. Trusted strategies delivering measurable growth and satisfaction."
+  />
+</Helmet>
+
       {/* Header Section */}
       <section className="container-fluid section-marketing position-relative overflow-hidden">
         {/* SVG Background */}

@@ -10,7 +10,7 @@ import google from "../../assets/specialized/Google-AdWord-Course.webp"
 import Story from "../Story/Story"
 import Tiltcard from "../../TiltCardHome/Tiltcard";
 import { Link } from "react-router-dom";
-
+import { Helmet } from "react-helmet";
 const cardItems = [
   {
     icon: "📱", // Reflects mobile & social platforms
@@ -61,6 +61,16 @@ const Performance = () => {
 
   return (
     <div>
+
+
+<Helmet>
+  <title>Performance Marketing Agency | Ecommerce Agency in India</title>
+  <meta
+    name="description"
+    content="Unlock growth potential with our performance marketing agency. We specialize in data-driven strategies, PPC, SEO, social ads, and conversion optimization."
+  />
+</Helmet>
+
       {/* hero */}
    <Tiltcard
         heading="Performance Marketing Services Get Growth with Promozione Branding Pvt. Ltd."

@@ -12,7 +12,7 @@ import Story from '../Story/Story';
 import ctaImage from "../../assets/ctaweb.webp"
 import { Link } from 'react-router-dom';
 import Form2 from '../../components/Home/Landingpage/Form2';
-
+import { Helmet } from "react-helmet";
 
 const Php = () => {
 
@@ -90,6 +90,17 @@ const cardItems = [
     
   return (
     <div>
+
+
+<Helmet>
+  <title>PHP Development Company: Custom PHP Services</title>
+  <meta
+    name="description"
+    content="We provide custom PHP development services to design, develop, and deploy custom web applications using the PHP programming language."
+  />
+</Helmet>
+
+
  <Tiltcard
         heading="PHP Website Development Services in India – Fast, Secure & Fully Custom
 "

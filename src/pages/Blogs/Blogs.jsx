@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { getAllPosts } from "../../queries";
 import { Link } from "react-router-dom";
 import { urlFor } from "../../sanityClient";
-
+import { Helmet } from "react-helmet";
 export default function BlogList() {
   const [posts, setPosts] = useState([]);
 
@@ -22,6 +22,19 @@ export default function BlogList() {
   }
 
   return (
+
+
+    <>
+    
+<Helmet>
+  <title>Digital Marketing Insights & Tips | Promozione Branding Blog</title>
+  <meta
+    name="description"
+    content="Stay updated with the latest SEO, branding, content marketing, and digital growth strategies. Expert tips and industry insights to fuel your business success."
+  />
+</Helmet>
+    
+    
     <div className="bg-light">
       {/* Hero Header */}
       <div className="bg-primary  text-white text-center py-5 mb-5 rounded">
@@ -71,5 +84,6 @@ export default function BlogList() {
         )}
       </div>
     </div>
+    </>
   );
 }

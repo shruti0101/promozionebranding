@@ -3,7 +3,7 @@ import Tiltcard from "../../TiltCardHome/Tiltcard";
 import b2b from "../../assets/services/b2b-marketing.webp";
 import funnel from "../../assets/services/funnel.webp";
 import "./B2b.css"
-import SEO from "../../components/helmet/Helmet";
+import { Helmet } from "react-helmet";
 import { FaCheckCircle } from "react-icons/fa";
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
@@ -89,11 +89,14 @@ const cardItems = [
 
   return (
     <div>
+<Helmet>
+  <title>Top Marketing Agency for SaaS | Best B2B SaaS PPC Agency</title>
+  <meta
+    name="description"
+    content="Explore our SEO, Branding, and Digital Marketing B2B Marketing provides actionable intelligence, data, events and training to help marketers maximize business performance and realize their potential."
+  />
+</Helmet>
 
-  <SEO
-      title="Top Marketing Agency for SaaS | Best B2B SaaS PPC Agency"
-      description="B2B Marketing provides actionable intelligence, data, events and training to help marketers maximize business performance and realize their potential."
-    />
 
 
       <Tiltcard

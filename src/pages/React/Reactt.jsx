@@ -2,7 +2,7 @@ import Tiltcard from "../../TiltCardHome/Tiltcard";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import "./Style.css";
-import { FaCheckCircle } from "react-icons/fa";
+import { Helmet } from "react-helmet";
 import {
   FaLaptopCode,
   FaPencilRuler,
@@ -84,6 +84,16 @@ const Reactt = () => {
   }, []);
   return (
     <div>
+
+
+<Helmet>
+  <title>Trusted React JS Development Company</title>
+  <meta
+    name="description"
+    content="Promozione Branding is a leading ReactJS development company known for providing ultimate solutions with virtual DOM, reusable components, JSK, and server-side rendering."
+  />
+</Helmet>
+
       <Tiltcard
         heading="React Web Development Services – Build Fast, Scalable & Modern Web Apps
 

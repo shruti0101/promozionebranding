@@ -4,7 +4,7 @@ import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
 import ctaImage from "../../assets/ctaweb.webp";
 import Process from "../Process/Process";
-
+import { Helmet } from "react-helmet";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -174,6 +174,16 @@ const services = [
 
   return (
     <>
+
+
+<Helmet>
+  <title>SMO Services | Best Social Media Optimization Company</title>
+  <meta
+    name="description"
+    content="SMO stands for social media optimization. SMO services cover all the social media platforms and use them to promote your business via various tactics"
+  />
+</Helmet>
+
       <Tiltcard
         heading="SMO Services – Get Noticed. Get Talked About. Get Results 
 

@@ -16,7 +16,7 @@ import "./style.css"
 import Tiltcard from "../../TiltCardHome/Tiltcard";
 import { useEffect } from "react";
 import Story from "../Story/Story";
-
+import { Helmet } from "react-helmet";
 const cardItems = [
   {
     icon: <img src={google} alt="Google Ads" style={{ height: 40 }} />,
@@ -149,7 +149,15 @@ const services = [
   return (
     <>
     {/* 100% Guaranteed */}
-    
+    <Helmet>
+  <title>Best Social Media Management Services India | #1 Company</title>
+  <meta
+    name="description"
+    content="A top social media management company and agency. We offer social media marketing, social media management, and social media advertising"
+  />
+</Helmet>
+
+
       <Tiltcard
         heading="Elevate Your Brand with Social Media Management Services in India
 "

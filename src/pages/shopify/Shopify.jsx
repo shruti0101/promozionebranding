@@ -12,6 +12,7 @@ import WhyChoose from "../WHYCHOOSE/WhyChoose";
 import ctaImage from "../../assets/ctaweb.webp";
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
+import { Helmet } from "react-helmet";
 const Shopify = () => {
   const cardItems = [
     {
@@ -165,6 +166,16 @@ const Shopify = () => {
 
   return (
     <div>
+
+<Helmet>
+  <title>Shopify Website Design & Development Services | Top Rated</title>
+  <meta
+    name="description"
+    content="We know Shopify inside and out and can use the platform to help you create unique and attractive customized websites that generate more traffic, conversions."
+  />
+</Helmet>
+
+
       <Tiltcard
         heading="Shopify Web Designing Services in India – Launch Your Online Store 
 

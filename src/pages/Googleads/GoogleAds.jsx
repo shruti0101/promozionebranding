@@ -178,6 +178,15 @@ const note=[
 ] 
   return (
     <div>
+
+<Helmet>
+  <title>Google Ads  Services | Reach More Customers</title>
+  <meta
+    name="description"
+    content="Google Ads are paid advertisements displayed on the Bing search engine and various Microsoft-owned platforms, including MSN, Outlook, and partner websites."
+  />
+</Helmet>
+
       <Tiltcard
         heading="Micosoft/Bing Ads  – Get Instant Leads & ROI-Driven Results
 

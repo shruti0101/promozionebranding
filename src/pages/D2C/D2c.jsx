@@ -13,6 +13,7 @@ import d2c1 from "../../assets/services/d2c1.webp";
 import VanillaTilt from "vanilla-tilt";
 import WhyChoose from "../WHYCHOOSE/WhyChoose";
 import crm from "../../assets/services/d2c.webp";
+import { Helmet } from "react-helmet";
 
 const D2c = () => {
   useEffect(() => {
@@ -162,6 +163,15 @@ const D2c = () => {
 
   return (
     <>
+
+<Helmet>
+  <title>D2C e-Commerce Digital Marketing Services </title>
+  <meta
+    name="description"
+    content="Increase D2C ecommerce sales and ROAS with our Digital Marketing Services. 10X your brand growth with our targeted strategies to reach your audience"
+  />
+</Helmet>
+
       <Tiltcard
         heading="D2C Marketing Services in India – Scale Fast, Sell Direct, Grow Smart 
 

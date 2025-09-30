@@ -13,7 +13,7 @@ import crm2 from "../../assets/services/crm1.webp";
 import VanillaTilt from "vanilla-tilt";
 import WhyChoose from "../WHYCHOOSE/WhyChoose";
 import digital2 from "../../assets/services/digital2.webp";
-import SEO from "../../components/helmet/Helmet";
+import { Helmet } from "react-helmet";
 const Digital = () => {
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
@@ -167,6 +167,15 @@ const Digital = () => {
 
   return (
     <>
+
+
+<Helmet>
+  <title>Demand Generation Solutions for B2B Growth | Promozione Branding</title>
+  <meta
+    name="description"
+    content="Learn more about how Promozione Branding creates demand generation strategies across the B2B buyer journey through paid media, SEO and marketing operations"
+  />
+</Helmet>
       <Tiltcard
         heading=" Digital Marketing Services in India – Drive Growth, Not Just Clicks 
 
@@ -274,10 +283,7 @@ From startups to scaling brands, our campaigns are crafted to deliver real ROI, 
         image={ctaImage}
       ></Form2>
 
-      <SEO
-        title="Digital Marketing Services & Internet Marketing Solutions "
-        description="Find custom digital marketing services, like SEO, PPC, content marketing, and more, with Promozione online marketing services. Learn more about our digital marketing agency here!"
-      />
+    
     </>
   );
 };

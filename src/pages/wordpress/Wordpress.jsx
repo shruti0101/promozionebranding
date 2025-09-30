@@ -4,7 +4,7 @@ import Tiltcard from "../../TiltCardHome/Tiltcard";
 import wp1 from "../../assets/services/wp1.webp";
 import themesImg from "../../assets/services/themes-img.webp";
 import { FaCheckCircle } from "react-icons/fa";
-
+import { Helmet } from "react-helmet";
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
 import ctaImage from "../../assets/ctaweb.webp"
@@ -131,6 +131,16 @@ const Wordpress = () => {
 
   return (
     <div>
+
+
+  <Helmet>
+  <title>WordPress Development Services, WP Custom AI Solutions</title>
+  <meta
+    name="description"
+    content="Page Traffic offers custom WordPress web design services to help you build a user-friendly and SEO-optimized website for your brand and grow your business."
+  />
+</Helmet>
+
       <Tiltcard
         heading="WordPress Website Designing Services in India – Bilkul Business-Ready!
 "

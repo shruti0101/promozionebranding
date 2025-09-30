@@ -4,7 +4,7 @@ import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
 import ctaImage from "../../assets/ctaweb.webp";
 import Process from "../Process/Process";
-
+import { Helmet } from "react-helmet";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -13,7 +13,7 @@ import crm2 from "../../assets/services/crm1.webp";
 import VanillaTilt from "vanilla-tilt";
 import WhyChoose from "../WHYCHOOSE/WhyChoose";
 import crm from "../../assets/services/CRM.webp";
-import SEO from "../../components/helmet/Helmet";
+
 const Crm = () => {
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
@@ -169,6 +169,16 @@ const Crm = () => {
 
   return (
     <>
+
+
+<Helmet>
+  <title>CRM Optimization Services & Boost ROI & Customer Satisfactions</title>
+  <meta
+    name="description"
+    content="Discover CRM Optimization Services to Predict Sales and Optimize usage. Leverage Customer Relationship Management (CRM) technology to increase your sales"
+  />
+</Helmet>
+
       <Tiltcard
         heading="CRM Optimization Services – Boost Sales, Streamline Operations & Grow Smarter
 
@@ -288,10 +298,7 @@ CRM Optimization = More Sales, Less Effort
         image={ctaImage}
       ></Form2>
 
-      <SEO
-        title="Conversion Rate Optimization Services for Driving Revenue "
-        description="Earn more sales, leads, and revenue from your site with conversion rate optimization services. View CRO service plans, get custom pricing, and more now!"
-      />
+   
     </>
   );
 };

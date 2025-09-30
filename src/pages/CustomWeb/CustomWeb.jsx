@@ -6,6 +6,7 @@ import cms from "../../assets/services/cms.webp";
 import ctaImage from "../../assets/ctaweb.webp"
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
+import { Helmet } from "react-helmet";
 import {
   FaCogs,
 
@@ -91,6 +92,16 @@ const floatingIcons = [
 
   return (
     <div>
+
+
+<Helmet>
+  <title>Custom Website Design Agency | #1 Website Design Services</title>
+  <meta
+    name="description"
+    content="Elevate your business with custom web development services. Create high-quality, responsive websites with our expert team. Contact our experts today."
+  />
+</Helmet>
+
       {/* Tilt Card Section */}
       <Tiltcard
         heading="Custom Web Development & Design Services in India – Tailored for Your Business"

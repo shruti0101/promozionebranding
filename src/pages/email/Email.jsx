@@ -12,6 +12,7 @@ import email1 from "../../assets/services/email1.webp"
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
 import ctaImage from "../../assets/ctaweb.webp";
+import { Helmet } from "react-helmet";
 
 const Email = () => {
 
@@ -134,6 +135,16 @@ const note=[
   
  
     <div>
+
+
+<Helmet>
+  <title>No.1 Email Marketing Service Provider in India</title>
+  <meta
+    name="description"
+    content="Promozione Branding is the best Email Marketing Service Provider & Agency in India. Hire the best email marketing company in India @100% Inbox Ratio."
+  />
+</Helmet>
+
         <Tiltcard
         heading="Email Marketing Services – Inbox Pe Impact Banao 
 

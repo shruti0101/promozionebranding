@@ -7,6 +7,7 @@ import Process from "../Process/Process";
 import { FaCheckCircle } from "react-icons/fa";
 import { useEffect } from "react";
 import AOS from "aos";
+import { Helmet } from "react-helmet";
 import "aos/dist/aos.css";
 import Tiltcard from "../../TiltCardHome/Tiltcard";
 import crm2 from "../../assets/services/B2C.webp";
@@ -163,6 +164,16 @@ const B2c = () => {
 
   return (
     <>
+
+
+<Helmet>
+  <title>B2C Marketing Service in New Delhi</title>
+  <meta
+    name="description"
+    content="Promozione Branding is a B2C marketing agency that offers a wide range of services to help businesses grow and achieve their marketing goals."
+  />
+</Helmet>
+
       <Tiltcard
         heading="B2C Marketing Services in India – Turn Viewers into Buyers
 
