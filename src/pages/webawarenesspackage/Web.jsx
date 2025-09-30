@@ -12,7 +12,8 @@ const Web = () => {
     },
     {
       title: "Mobile-Responsive Design",
-      icon: "🎯", // Seamless experience across all devices for better engagement
+      icon: "🎯", // Seamless experience across all devices f
+      // or better engagement
     },
     {
       title: "Theme Setup & Customization",
