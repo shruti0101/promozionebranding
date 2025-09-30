@@ -1,5 +1,6 @@
 import Tiltcard from "../../TiltCardHome/Tiltcard";
 import { Link } from "react-router-dom";
+import Helmet from "../../components/helmet/Helmet";
 
 const Adspackage = () => {
   const cardItems = [
@@ -266,7 +267,10 @@ From audience research to A/B testing, performance tracking, and real-time optim
     ))}
   </div>
 </div>
-
+ <Helmet
+      title=" Ads Package "
+      description="Need Ads management services? Trust Promozione to provide Ads services that accelerate your sales and lead generation efforts. Get a free quote now!"
+    />
     </>
   );
 };

@@ -6,7 +6,7 @@ import ctaImage from "../../assets/ctaweb.webp";
 import Process from "../Process/Process";
 import { FaCheckCircle } from "react-icons/fa";
 import { useEffect } from "react";
-
+import Helmet from "../../components/helmet/Helmet";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Tiltcard from "../../TiltCardHome/Tiltcard";
@@ -172,6 +172,14 @@ const cardItems = [
 
   return (
     <>
+
+
+  <SEO
+      title="Top Ads Management Services [25% Lift in Ads Sales] "
+      description="Need Ads management services? Trust Promozione to provide Ads services that accelerate your sales and lead generation efforts. Get a free quote now!"
+    />
+
+
       <Tiltcard
         heading="AI Performance Marketing Services in India – Smarter Ads, Better Results 
 
@@ -289,6 +297,10 @@ Get 10x smarter with your marketing.
         buttonText="Talk to Our AI Ad Strategist."
         image={ctaImage}
       ></Form2>
+
+
+ 
+
     </>
   );
 };
