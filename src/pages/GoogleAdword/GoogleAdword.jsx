@@ -12,7 +12,7 @@ import Tiltcard from "../../TiltCardHome/Tiltcard";
 
 import VanillaTilt from "vanilla-tilt";
 import WhyChoose from "../WHYCHOOSE/WhyChoose";
-
+import { Helmet } from "react-helmet";
 import ad2 from "../../assets/services/ad2.webp"
 import ad1 from "../../assets/services/googlead.webp"
 
@@ -175,6 +175,17 @@ const services = [
 
   return (
     <>
+
+
+<Helmet>
+  <title>Google Ads (PPC Campaign) Services India
+</title>
+  <meta
+    name="description"
+    content="Maximize ROI with our expert PPC agency. Get top-notch pay-per-click marketing services to drive traffic, boost conversions & grow your business online!"
+  />
+</Helmet>
+
       <Tiltcard
         heading="Google Ads / PPC Services in India – Get Instant Leads & ROI-Driven Results
 

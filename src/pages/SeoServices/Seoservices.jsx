@@ -19,7 +19,7 @@ import ctaImage from "../../assets/ctaweb.webp";
 import Form2 from "../../components/Home/Landingpage/Form2";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import SEO from "../../components/helmet/Helmet";
+import { Helmet } from "react-helmet";
 const cardItems = [
   {
     title: "On-Page SEO",
@@ -61,10 +61,11 @@ const Seoservices = () => {
 
 
 <Helmet>
-  <title>Trusted React JS Development Company</title>
+  <title>AI SEO Agency for Advanced Search Engine Optimization
+</title>
   <meta
     name="description"
-    content="Promozione Branding is a leading ReactJS development company known for providing ultimate solutions with virtual DOM, reusable components, JSK, and server-side rendering."
+    content="Boost your search rankings with our AI SEO Agent. Automate audits, keyword research, and content optimization using intelligent, hands-free workflows."
   />
 </Helmet>
 
@@ -302,10 +303,7 @@ const Seoservices = () => {
 
 
 
-           <SEO
-        title="GEO Services: Grow Your AI Search Visibility in 2025"
-        description="Counter risk while growing visibility in AI search with generative engine optimization (GEO) services that include SEO. Learn more about our services now!"
-      />
+      
     </>
   );
 };
