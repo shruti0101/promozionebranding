@@ -4,6 +4,7 @@ import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemaTypes'
 
 export default defineConfig({
+   basePath: '/studio',
   name: 'default',
   title: 'promo',
 
@@ -14,5 +15,7 @@ export default defineConfig({
 
   schema: {
     types: schemaTypes,
+     
   },
+   useCdn: false,
 })
