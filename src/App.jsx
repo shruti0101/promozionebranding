@@ -13,7 +13,7 @@ import Layout from "./Layout";
 
 import ScrollToTop from "./components/ScrollToTop";
 import ScrollToTopOnRouteChange from "./components/ScrollToTopOnRouteChange";
-import Whatsapp from "./components/Whatsapp";
+
 import Social from "./components/SOCIALSLIDER/Social";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -65,16 +65,20 @@ import Privacy from "./pages/PrivacyPolicy/Privacy";
 import Tc from "./pages/T&C/Tc";
 import Socialpackage from "./pages/Socialpackage/Socialpackage";
 import Adspackage from "./pages/Adspackage/Adspackage";
-
+import Whatsapp from "./components/Whatsapp";
+import BlogPost from "./pages/Blogs/BlogPost";
 const App = () => {
   return (
     <Router>
       <ToastContainer />
       <Popup />
+      <Social></Social>
       <ScrollToTop />
       <ScrollToTopOnRouteChange />
+      <Whatsapp></Whatsapp>
 
       <Routes>
+
         {/* Public Website Routes */}
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -82,6 +86,7 @@ const App = () => {
           <Route path="profile/whoweare" element={<Whoweare />} />
           <Route path="profile/reviews" element={<Review />} />
           <Route path="profile/blogs" element={<Blog />} />
+           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="profile/career" element={<Career />} />
 
           {/* Web Dev */}
@@ -97,7 +102,10 @@ const App = () => {
             path="services/php-website-development-services"
             element={<Php />}
           />
-          <Route path="services/cms-web-development-services" element={<Cms />} />
+          <Route
+            path="services/cms-web-development-services"
+            element={<Cms />}
+          />
           <Route
             path="services/react-web-development-services"
             element={<Reactt />}
@@ -158,10 +166,7 @@ const App = () => {
             path="services/content-marketing-services"
             element={<Content />}
           />
-          <Route
-            path="services/crm-optimizations-services"
-            element={<Crm />}
-          />
+          <Route path="services/crm-optimizations-services" element={<Crm />} />
           <Route path="services/email-marketing-services" element={<Email />} />
           <Route path="services/video-marketing-services" element={<Video />} />
           <Route path="services/social-media-optimization" element={<Smo />} />
