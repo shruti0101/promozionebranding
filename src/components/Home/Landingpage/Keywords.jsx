@@ -273,12 +273,35 @@ export default function ServicesSection() {
         // 26 row (digital)
 
        { title: "Social Media Management Services in Delhi ", link: "/services/social-media-marketing" },
-    
+
     { title: "Social Media Management Services in Delhi NCR", link: "/services/social-media-marketing" },
 
     { title: "Social Media Management Company in Delhi ", link: "/services/social-media-marketing" },
 
        { title: "Social Media Management Company in Delhi NCR", link: "/services/social-media-marketing" },
+
+        // 27 row (digital)
+
+       { title: "B2C Web Development in Delhi ", link: "/services/custom-web-development-services" },
+
+    { title: "B2C Web Development Services in Delhi NCR", link: "/services/custom-web-development-services" },
+
+    { title: "B2C Web Development Company in Delhi ", link: "/services/custom-web-development-services" },
+
+       { title: "B2C Web Development Company in Delhi NCR", link: "/services/custom-web-development-services" },
+
+
+        // 28 row (digital)
+
+       { title: "D2C Web Development in Delhi ", link: "/services/custom-web-development-services" },
+
+    { title: "D2C Web Development Services in Delhi NCR", link: "/services/custom-web-development-services" },
+
+    { title: "D2C Web Development Company in Delhi ", link: "/services/custom-web-development-services" },
+
+       { title: "D2C Web Development Company in Delhi NCR", link: "/services/custom-web-development-services" },
+
+
 
   ];    
 
@@ -298,17 +321,7 @@ export default function ServicesSection() {
                   className="d-flex align-items-center p-3"
                   style={{ backgroundColor: "#ECF4FF" }}
                 >
-                  {/* Number */}
-                  <span
-                    style={{
-                      fontSize: "20px",
-                      fontWeight: "bold",
-                      color: "#0D6DFB",
-                      marginRight: "10px",
-                    }}
-                  >
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
+               
                   {/* Text */}
                   <p
                     className="mb-0"
