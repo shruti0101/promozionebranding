@@ -42,19 +42,24 @@ export default function BlogPost() {
       <div className="container mt-5 ">
         {post.mainImage && (
           <img
-            src={urlFor(post.mainImage)
-            
-              .auto("format")
-              .url()}
+            src={urlFor(post.mainImage).auto("format").url()}
             alt={post.title}
-            className="card-img-top"
-            style={{ height: "520px", objectFit: "cover" ,borderRadius:"10px"}}
+            className="card-img-top img-fluid rounded "
+         
           />
         )}
       </div>
 
       {/* Content Section */}
       <div className="container py-5">
+        <p className="text-danger">
+          Published at{" "}
+          {new Date(post._createdAt).toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          })}
+        </p>
         <div className="bg-white shadow-lg rounded-3 p-4 p-md-5">
           <div className="fs-5 lh-lg text-black">
             <PortableText value={post.body} />

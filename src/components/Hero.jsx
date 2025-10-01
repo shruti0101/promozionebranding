@@ -50,7 +50,7 @@ export default function HeroSection() {
             {/* Left: Text */}
             <div className="col-lg-6 text-white" data-aos="fade-right">
               <h1 className="hero-title pt-3 pt-md-3">
-                Digital Marketing Agency That Drives Revenue
+               Helping <span className="hero-high">Startups</span> and <span className="hero-high">SMEs</span>  with Design & Development
               </h1>
               <p className="hero-subtitle">
                 Not every digital marketing agency can seamlessly connect

@@ -22,68 +22,79 @@ export default function BlogList() {
   }
 
   return (
-
-
     <>
-    
-<Helmet>
-  <title>Digital Marketing Insights & Tips | Promozione Branding Blog</title>
-  <meta
-    name="description"
-    content="Stay updated with the latest SEO, branding, content marketing, and digital growth strategies. Expert tips and industry insights to fuel your business success."
-  />
-</Helmet>
-    
-    
-    <div className="bg-light">
-      {/* Hero Header */}
-      <div className="bg-primary  text-white text-center py-5 mb-5 rounded">
-        <h1 className="text-white display-4 fw-bold">Explore All Blogs</h1>
-        <p className="lead mb-0">Stay updated with more blogs and insights.</p>
-      </div>
+      <Helmet>
+        <title>
+          Digital Marketing Insights & Tips | Promozione Branding Blog
+        </title>
+        <meta
+          name="description"
+          content="Stay updated with the latest SEO, branding, content marketing, and digital growth strategies. Expert tips and industry insights to fuel your business success."
+        />
+      </Helmet>
 
-      {/* Blog Grid */}
-      <div className="container pb-5">
-        {posts.length === 0 ? (
-          <p className="text-center text-secondary fs-5">No blogs available.</p>
-        ) : (
-          <div className="row g-4">
-            {posts.map((post) => (
-              <div className="col-md-6 col-lg-4" key={post._id}>
-                <div className="card h-75 shadow-sm border-0">
-                  {post.mainImage && (
-                    <img
-                      src={urlFor(post.mainImage)
-                        .width(600)
-                        .height(400)
-                        .auto("format")
-                        .url()}
-                      alt={post.title}
-                      className="card-img-top"
-                      style={{ height: "220px", objectFit: "cover" }}
-                    />
-                  )}
-                  <div className="card-body d-flex flex-column">
-                    <h5 className="card-title fw-semibold">
-                      {post.title || "Untitled"}
-                    </h5>
-                    <p className="card-text text-muted flex-grow-1">
-                      {post.excerpt}
-                    </p>
-                    <Link
-                      to={`/blog/${post.slug.current}`}
-                      className="btn btn-primary mt-3 align-self-start"
-                    >
-                      Read More →
-                    </Link>
+      <div className="bg-light">
+        {/* Hero Header */}
+        <div className="bg-primary  text-white text-center py-5 mb-5 rounded">
+          <h1 className="text-white display-4 fw-bold">Explore All Blogs</h1>
+          <p className="lead mb-0">
+            Stay updated with more blogs and insights.
+          </p>
+        </div>
+
+        {/* Blog Grid */}
+        <div className="container pb-5">
+          {posts.length === 0 ? (
+            <p className="text-center text-secondary fs-3">
+          Loading....
+            </p>
+          ) : (
+            <div className="row g-4">
+              {posts.map((post) => (
+                <div className="col-md-6 col-lg-4" key={post._id}>
+                  <div className="card h-75 shadow-sm border-0">
+                    {post.mainImage && (
+                      <img
+                        src={urlFor(post.mainImage)
+                          .width(600)
+                          .height(400)
+                          .auto("format")
+                          .url()}
+                        alt={post.title}
+                        className="card-img-top img-fluid"
+                        style={{ height: "220px", objectFit: "cover" }}
+                      />
+                    )}
+                    <div className="card-body d-flex flex-column">
+                      <p className="text-danger">
+                        Published at{" "}
+                        {new Date(post._createdAt).toLocaleDateString("en-US", {
+                          year: "numeric",
+                          month: "long",
+                          day: "numeric",
+                        })}
+                      </p>
+
+                      <h5 className="card-title fw-semibold">
+                        {post.title || "Untitled"}
+                      </h5>
+                      <p className="card-text text-muted flex-grow-1">
+                        {post.excerpt}
+                      </p>
+                      <Link
+                        to={`/blog/${post.slug.current}`}
+                        className="btn btn-primary mt-3 align-self-start"
+                      >
+                        Read More →
+                      </Link>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        )}
+              ))}
+            </div>
+          )}
+        </div>
       </div>
-    </div>
     </>
   );
 }

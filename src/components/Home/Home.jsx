@@ -14,6 +14,7 @@ import Form2 from "./Landingpage/Form2";
 import ctaImage from "../../assets/ctaweb.webp";
 
 import Hero from "../Hero";
+import Keywords from "./Landingpage/Keywords";
 
 const Home = () => {
   return (
@@ -31,6 +32,7 @@ const Home = () => {
         <SectorServe />
       <Orbit />
       <Project></Project>
+      <Keywords></Keywords>
       <Testimonials />
       <Faq />
       <Form2

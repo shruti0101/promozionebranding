@@ -4,7 +4,7 @@ import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
 import ctaImage from "../../assets/ctaweb.webp";
 import Process from "../Process/Process";
-
+import { Helmet } from "react-helmet";
 import  { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
