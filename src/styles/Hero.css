@@ -8,7 +8,7 @@
 .hero-section {
   position: relative;
   min-height: 100vh;
-  background: #013B7A;
+  /* background: #013B7A; */
   background-size: center;
   background-repeat: repeat;
   padding: 40px 20px;
