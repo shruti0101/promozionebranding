@@ -26,8 +26,8 @@ export default function HeroSection() {
           minWidth: 200.0,
           scale: 1.0,
           scaleMobile: 1.0,
-          color: 0xb33169, // globe line color (#B33169)
-          backgroundColor: 0x23153c, // bg color (#23153C)
+          color: 0xb33169, // Globe color
+          backgroundColor: 0x23153c, // Background
         })
       );
     }
@@ -41,7 +41,6 @@ export default function HeroSection() {
       <section
         className="hero-section pt-0 d-flex align-items-center justify-content-center"
         ref={vantaRef}
-        style={{ minHeight: "100vh", position: "relative" }}
       >
         <div className="hero-overlay" />
         <div className="hero-content position-relative py-4">
@@ -57,10 +56,7 @@ export default function HeroSection() {
                 personalized strategy proposal today to start driving ROI from
                 digital marketing!
               </p>
-              <Link
-                to="/Contact"
-                className="text-decoration-none d-none d-md-block"
-              >
+              <Link to="/Contact" className="text-decoration-none">
                 <button className="nav-btn2 mt-3">Let's get started!</button>
               </Link>
             </div>
