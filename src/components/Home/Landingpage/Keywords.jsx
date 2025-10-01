@@ -12,6 +12,33 @@ export default function ServicesSection() {
     { title: "B2B Website Development Company ", link: "/services/b2b-web-development-services" },
 
 
+
+
+
+       // 27 row (digital)
+
+       { title: "B2C Website Development Services in Delhi ", link: "/services/custom-web-development-services" },
+
+    { title: "B2C Website Development Services in Delhi NCR", link: "/services/custom-web-development-services" },
+
+    { title: "B2C Website Development Company in Delhi", link: "/services/custom-web-development-services" },
+
+       { title: "B2C Website Development Company ", link: "/services/custom-web-development-services" },
+
+
+        // 28 row (digital)
+
+       { title: "D2C Website Development Services in Delhi ", link: "/services/custom-web-development-services" },
+
+    { title: "D2C Website Development Services in Delhi NCR", link: "/services/custom-web-development-services" },
+
+    { title: "D2C Website Development Company in Delhi ", link: "/services/custom-web-development-services" },
+
+       { title: "D2C Website Development Company", link: "/services/custom-web-development-services" },
+
+
+
+
     // second row
 
     { title: "PHP Website Development Services in Delhi", link: "/services/custom-web-development-services" },
@@ -280,26 +307,7 @@ export default function ServicesSection() {
 
        { title: "Social Media Management Company in Delhi NCR", link: "/services/social-media-marketing" },
 
-        // 27 row (digital)
-
-       { title: "B2C Web Development in Delhi ", link: "/services/custom-web-development-services" },
-
-    { title: "B2C Web Development Services in Delhi NCR", link: "/services/custom-web-development-services" },
-
-    { title: "B2C Web Development Company in Delhi ", link: "/services/custom-web-development-services" },
-
-       { title: "B2C Web Development Company in Delhi NCR", link: "/services/custom-web-development-services" },
-
-
-        // 28 row (digital)
-
-       { title: "D2C Web Development in Delhi ", link: "/services/custom-web-development-services" },
-
-    { title: "D2C Web Development Services in Delhi NCR", link: "/services/custom-web-development-services" },
-
-    { title: "D2C Web Development Company in Delhi ", link: "/services/custom-web-development-services" },
-
-       { title: "D2C Web Development Company in Delhi NCR", link: "/services/custom-web-development-services" },
+ 
 
 
 
