@@ -130,6 +130,10 @@ const GrowthPopup = () => {
         className="form-control input-yellow"
         name="phone"
         placeholder="Mobile No."
+        minLength={10}
+        maxLength={10}
+        pattern="[0-9]{10}"
+        required
       />
     </div>
 
