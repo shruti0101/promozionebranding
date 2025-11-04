@@ -24,30 +24,40 @@ import ecom from "../../../assets/specialized/ecommerce-shopping.webp";
 import icon2 from "../../../assets/specialized/icon-2.webp";
 import insta from "../../../assets/specialized/instagram-icon-1.webp";
 import seo from "../../../assets/specialized/seo-1.webp";
-
+import { Link } from "react-router-dom";
 // Data
 const specializedCards = [
-  { img: digitalMarketingImage, alt: "Digital Marketing", title: "Digital Marketing Services" },
-  { img: seo, alt: "SEO", title: "Search Engine Optimization Services" },
-  { img: linkedin, alt: "LinkedIn Marketing", title: "LinkedIn Marketing Services" },
+  { img: digitalMarketingImage, alt: "Digital Marketing", title: "Digital Marketing Services", link:"/services/digital-marketing-services" },
 
-  { img: ppc, alt: "Pay Per Click", title: "Pay Per Click Services" },
-  { img: lead, alt: "Website Designing", title: "Website Designing Services" },
-  { img: smo, alt: "Social Media Optimization", title: "Social Media Services" },
-  { img: ppc2, alt: "Google Adsense", title: "Meta Ads" },
-  { img: affiliate, alt: "Affiliate Marketing", title: "Affiliate Marketing Services" },
-  { img: mobile, alt: "Mobile App Marketing", title: "Mobile App Marketing Services" },
-  { img: emailMarketing, alt: "Email Marketing", title: "Email Marketing Services" },
-  { img: goodlead, alt: "Google AdWord", title: "Content Optimization" },
-  { img: ecom, alt: "E-commerce Marketing", title: "E-commerce Marketing Services" },
-  { img: localBusiness, alt: "Local Business Listing", title: "Local Business Listing Services" },
-  { img: blog, alt: "Blogging", title: "Blogging Services" },
-  { img: insta, alt: "Instagram Marketing", title: "Instagram Marketing Services" },
-  { img: googleAdsense, alt: "Analytics & Reporting", title: "Google Analytics Services" },
-  { img: analytics, alt: "Youtube Marketing Services", title: "Youtube Marketing Services" },
-  { img: googleAdsense2, alt: "Google AdWord Services", title: "Google AdWord Services" },
-    { img: wordpress, alt: "WordPress Website Design", title: "Small Business Website Designing" },
-  { img: icon2, alt: "Facebook Marketing Services", title: "Facebook Marketing Services" },
+  { img: seo, alt: "SEO", title: "Search Engine Optimization Services" ,link:"/services/enterprise-seo-services"},
+
+  { img: linkedin, alt: "LinkedIn Marketing", title: "LinkedIn Marketing Services" ,link:"/services/social-media-marketing" },
+
+  { img: ppc, alt: "Pay Per Click", title: "Pay Per Click Services",link:"/services/google-adword-ppc-services" },
+
+  { img: lead, alt: "Website Designing", title: "Website Designing Services" ,link:"/services/custom-web-development-services"},
+
+  { img: smo, alt: "Social Media Optimization", title: "Social Media Services" ,link:"/services/social-media-marketing"},
+
+  { img: ppc2, alt: "Google Adsense", title: "Meta Ads", link:"/services/social-media-marketing" },
+  { img: affiliate, alt: "Affiliate Marketing", title: "Affiliate Marketing Services" ,link:"/services/digital-marketing-services" },
+
+  { img: mobile, alt: "Mobile App Marketing", title: "Mobile App Development Services" ,link:"/services/web-application-development-services" },
+
+  { img: emailMarketing, alt: "Email Marketing", title: "Email Marketing Services" ,link:"/services/email-marketing-services"},
+  { img: goodlead, alt: "Google AdWord", title: "Content Optimization" ,link:"/services/content-marketing-services" },
+  { img: ecom, alt: "E-commerce Marketing", title: "E-commerce Marketing Services",link:"/services/shopify-web-designing-services" },
+  { img: localBusiness, alt: "Local Business Listing", title: "Local Business Listing Services" ,link:"/services/ai-digital-marketing-services"},
+
+  { img: blog, alt: "Blogging", title: "Blogging Services" ,link:"/services/content-marketing-services"},
+
+  { img: insta, alt: "Instagram Marketing", title: "Instagram Marketing Services",link:"/services/social-media-optimization" },
+  { img: googleAdsense, alt: "Analytics & Reporting", title: "Ads Management Services" ,link:"/services/google-adword-ppc-services" },
+
+  { img: analytics, alt: "Youtube Marketing Services", title: "Youtube Marketing Services" ,link:"/services/social-media-optimization" },
+  { img: googleAdsense2, alt: "Google AdWord Services", title: "Google AdWord Services" ,link:"/services/google-adword-ppc-services" },
+    { img: wordpress, alt: "WordPress Website Design", title: "Small Business Website Designing" ,link:"/services/wordpress-website-services" },
+  { img: icon2, alt: "Facebook Marketing Services", title: "Facebook Marketing Services" ,link:"/services/social-media-marketing"},
 ];
 
 const Specialized = () => {
@@ -72,13 +82,14 @@ const Specialized = () => {
         ></div>
 
         {/* RESPONSIVE CARD GRID */}
-        <div className="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+        <div className="row row-cols-2 ro w-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4 ">
           {specializedCards.map((card, idx) => (
-            <div
-              className="col card-hover"
+            <Link to={card.link}
+              className="col card-hover text-decoration-none  "
               key={idx}
               data-aos="fade-up"
               data-aos-duration="500"
+               
             >
               <div className="specialized-card h-100 border-light shadow-sm rounded-3">
                 <img
@@ -92,7 +103,7 @@ const Specialized = () => {
                   <h6 className="fw-semibold text-dark">{card.title}</h6>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

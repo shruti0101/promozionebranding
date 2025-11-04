@@ -5,6 +5,15 @@ html{
 
 
 
+
+.cinzel {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+}
+
+
 /* Section wrapper */
 .section-marketing {
   position: relative;

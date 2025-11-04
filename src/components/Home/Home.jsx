@@ -15,7 +15,7 @@ import ctaImage from "../../assets/ctaweb.webp";
 
 import Hero from "../Hero";
 import Keywords from "./Landingpage/Keywords";
-
+import CitiesKeyword from "../CitiesKeyword/CitiesKeyword";
 const Home = () => {
   return (
     <div>
@@ -35,6 +35,8 @@ const Home = () => {
       <Keywords></Keywords>
       <Testimonials />
       <Faq />
+  <CitiesKeyword />
+
       <Form2
         heading="Get your Brands Ranked With Us"
         price="Your Growth is Our Guarantee."

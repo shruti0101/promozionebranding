@@ -30,9 +30,9 @@
 
 .hero-title {
   color: white;
-  font-size: 3.5rem;
+  font-size: 3.1rem;
   font-weight: bold;
-  max-width: 750px;
+  max-width: 800px;
   line-height: 1.2;
 }
 
@@ -41,7 +41,8 @@
   font-weight: 500;
   color: white;
   max-width: 750px;
-  line-height: 1.6;
+  line-height: 1.7;
+ 
 }
 
 .nav-btn2 {

@@ -67,6 +67,8 @@ import Socialpackage from "./pages/Socialpackage/Socialpackage";
 import Adspackage from "./pages/Adspackage/Adspackage";
 import Whatsapp from "./components/Whatsapp";
 import BlogPost from "./pages/Blogs/BlogPost";
+import CityPage from "./pages/CityPage/Citypage";
+
 const App = () => {
   return (
     <Router>
@@ -82,6 +84,9 @@ const App = () => {
         {/* Public Website Routes */}
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+
+          <Route path="/:serviceType/:slug" element={<CityPage />} />
+
           <Route path="profile/OurApproach" element={<Approach />} />
           <Route path="profile/whoweare" element={<Whoweare />} />
           <Route path="profile/reviews" element={<Review />} />

@@ -45,8 +45,8 @@ export default function HeroSection() {
         <div className="hero-overlay" />
         <div className="hero-content position-relative py-4">
           <div className="row align-items-center">
-            <div className="col-lg-6 text-white" data-aos="fade-right">
-              <h1 className="hero-title pt-3 pt-md-3">
+            <div className="col-lg-6 text-white " data-aos="fade-right">
+              <h1 className="hero-title pt-3 pt-md-3 cinzel">
                 Helping <span className="hero-high">Startups</span> and{" "}
                 <span className="hero-high">SMEs</span> with Design & Development
               </h1>

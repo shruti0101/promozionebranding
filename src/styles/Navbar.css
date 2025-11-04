@@ -15,7 +15,7 @@
 .nav-item .nav-link {
   color: #000;
   font-weight: semibold;
-  font-size: 1rem;
+  font-size: 0.97rem;
    font-family: "Mona Sans", sans-serif;
      /* display: inline-block; */
   transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
