@@ -67,7 +67,7 @@ import Socialpackage from "./pages/Socialpackage/Socialpackage";
 import Adspackage from "./pages/Adspackage/Adspackage";
 import Whatsapp from "./components/Whatsapp";
 import BlogPost from "./pages/Blogs/BlogPost";
-import CityPage from "./pages/CityPage/Citypage";
+import CityPage from "./pages/CityPage/CityPage";
 
 
 import { serviceLocations } from "./citydata/Citydata";
