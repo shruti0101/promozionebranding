@@ -10,7 +10,7 @@ import {
   revenueMarketingServices,
 } from "../../servicesdata/ServicesData";
 import { CityPageData } from "../../citydata/Citydata";
-import "./Citypage.css";
+import "./CityPage.css";
 
 const CityPage = () => {
   const location = useLocation();
