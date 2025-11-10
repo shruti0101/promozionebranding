@@ -68,7 +68,7 @@ import Adspackage from "./pages/Adspackage/Adspackage";
 import Whatsapp from "./components/Whatsapp";
 import BlogPost from "./pages/Blogs/BlogPost";
 import CityPage from "./pages/CityPage/Citypage";
-import { serviceLocations } from "./citydata/Citydata";
+import { serviceLocations } from "./Citydata/Citydata";
 
 const App = () => {
   return (
