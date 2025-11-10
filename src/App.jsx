@@ -67,7 +67,7 @@ import Socialpackage from "./pages/Socialpackage/Socialpackage";
 import Adspackage from "./pages/Adspackage/Adspackage";
 import Whatsapp from "./components/Whatsapp";
 import BlogPost from "./pages/Blogs/BlogPost";
-import CityPage from "./pages/CityPage/CityPage";
+import Citypage from "./pages/Citypage/Citypage";
 
 import { serviceLocations } from "./citydata/Citydata";
 
@@ -94,7 +94,7 @@ const App = () => {
         {serviceLocations.map(({ id, link }) => {
           // Remove leading slash if present
           const path = link.startsWith("/") ? link.slice(1) : link;
-          return <Route key={id} path={path} element={<CityPage />} />;
+          return <Route key={id} path={path} element={<Citypage />} />;
         })}
 
 
