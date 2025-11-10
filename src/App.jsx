@@ -69,7 +69,8 @@ import Whatsapp from "./components/Whatsapp";
 import BlogPost from "./pages/Blogs/BlogPost";
 import CityPage from "./pages/CityPage/CityPage";
 
-import { serviceLocations } from "./Citydata/Citydata";
+import { serviceLocations } from "./citydata/Citydata";
+
 
 const App = () => {
   return (
