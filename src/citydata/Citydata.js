@@ -1,55 +1,41 @@
-import img1 from "../assets/citypages/1.jpg";
+import img1 from "../assets/citypages/1.webp";
 import img2 from "../assets/citypages/webdesign1.webp";
 import img3 from "../assets/citypages/whychoose.webp";
+import roi from "../assets/services/roi_1.webp";
 
 export const serviceLocations = [
   {
-    link: "/Website-Development/Rajasthan",
+    id: 1,
+    link: "Web-Development-Services-In-Rajasthan",
     label: "Web Development Services in Rajasthan",
-    id: 1,
   },
   {
-    link: "/Website-Development/uttar-pradesh",
+    id: 2,
+    link: "Web-Development-Services-In-Uttar-Pradesh",
     label: "Web Development Services in Uttar Pradesh",
-    id: 1,
   },
   {
-    link: "/Website-Development/Uttarakhand",
-    label: "Web Development Services in Uttarakhand",
-    id: 1,
-  },
-  {
-    link: "/Website-Development/Delhi",
-    label: "Web Development Services in Delhi",
-    id: 1,
-  },
-
-  {
-    link: "/Guaranteed-SEO/uttar-pradesh",
-    label: "Guaranteed SEO Services in Uttar Pradesh",
-    id: 1,
-  },
-  {
-    link: "/Guaranteed-SEO/uttarakhand",
-    label: "Guaranteed SEO Services in Uttarakhand",
-    id: 1,
-  },
-  {
-    link: "/Guaranteed-SEO/patna",
-    label: "Guaranteed SEO Services in Patna",
-    id: 1,
-  },
-  {
-    link: "/Guaranteed-SEO/delhi",
+    id: 3,
+    link: "Guaranteed-SEO-Services-In-Delhi",
     label: "Guaranteed SEO Services in Delhi",
-    id: 1,
+  },
+  {
+    id: 4,
+    link: "Guaranteed-SEO-Services-In-Uttarakhand",
+    label: "Guaranteed SEO Services in Uttarakhand",
+  },
+  {
+    id: 4,
+    link: "Guaranteed-SEO-Services-In-Uttar-Pradesh",
+    label: "Guaranteed SEO Services in Uttar Pradesh",
   },
 ];
+
 
 // src/data/CityPageData.js
 
 export const CityPageData = {
-  "Website-Development": {
+  "Web-Development": {
     hero: {
       title: "Web Development Agency in {slug}",
       highlight: "Website Development ",
@@ -71,6 +57,10 @@ We know you have high expectations from us – whether it be a new website or an
     },
 
     whyChooseUs: [
+
+         {
+  heading: " why choose our website development services in {slug}",
+    },
     
       {
         text: "Flexibility and Compatibility ",
@@ -78,11 +68,11 @@ We know you have high expectations from us – whether it be a new website or an
       },
       {
         text: "Wide Range of Frameworks and Libraries ",
-        desc: "Popular frameworks like Laravel, Symfony, and CodeIgniter provide a structured and modular way to develop web applications and make it easier to create secure, scalable, and maintainable applications. "
+        desc: "Popular frameworks like Laravel, Symfony, and CodeIgniter provide a structured and modular way to develop web applications, making it easier to create secure, scalable, and maintainable solutions. These frameworks come with built-in tools for routing, authentication, and database management, helping developers save time and reduce errors.  "
       },
       {
         text: "Economical ",
-        desc: "Its open-source software also means development is economical because there will be no investment in expensive licenses or subscriptions. There are other free resources, documentation, and community support that can make web application development even more economical."
+        desc: "Its open-source nature also makes development highly economical, as there’s no need to invest in costly licenses or subscriptions. Developers can access a wide range of free resources, libraries, and plugins to accelerate the development process. Moreover, the vast community support, detailed documentation, and active forums help resolve issues quickly, making web application development efficient."
       },
 
     ],
@@ -181,50 +171,50 @@ faq: [
   
 "Guaranteed-SEO": {
   hero: {
-    title: "Guaranteed SEO Company in {slug}",
-    highlight: "Guaranteed SEO Services",
+    title: "Digital Marketing Agency in {slug}",
+    highlight: " Digital Marketing Agency  ",
     description: `
-      <strong>Promozione Branding Pvt. Ltd.</strong> offers top-notch Guaranteed SEO Services in {slug} to help your business dominate search engine results. 
-      Our proven SEO strategies, advanced keyword research, and ethical optimization ensure long-term visibility and growth. 
-      Whether you want to rank locally or globally, our SEO experts in {slug} guarantee measurable results that boost your traffic, leads, and revenue.
+      <strong>Promozione Branding Pvt. Ltd.</strong>  is a comprehensive Digital Marketing Agency that provides all kinds of services. It is our enthusiasm to discover the core of the successful businesses that makes us a great partner. Promozione Branding Pvt. Ltd. is the top Digital Marketing Agency in {slug}. We have been getting the best marketing results for our clients through our integrated full-service Digital Branding Architecture and Marketing Strategy. We are at the crossroads of creativity, technology, and strategy by using our expertise, and our clients are the ones who benefit the most.
     `,
     image: "/assets/citypages/seo.webp",
   },
 
   about: {
-    heading: "Best Guaranteed SEO Company in {slug}: Drive Organic Growth with Confidence",
+    heading: "Digital Marketing Agency Near Me ",
     text: `
-      <strong>Promozione Branding Pvt. Ltd.</strong> is a trusted name for Guaranteed SEO Services in {slug}, providing data-backed, performance-driven SEO solutions that help businesses achieve higher rankings, more visibility, and sustainable online growth. 
-      <br><br>
-      We blend advanced SEO tools, in-depth competitor analysis, and strategic planning to ensure your website achieves consistent ranking improvements. 
-      From on-page SEO and technical audits to link-building and content marketing, our experts cover every aspect to ensure your business stays ahead in the competitive digital landscape.
-      <br><br>
-      Choosing our <strong>SEO Agency in {slug}</strong> means choosing transparency, accountability, and guaranteed performance. 
-      We don’t make unrealistic promises — we deliver measurable results that you can see in your analytics and conversions.
+      Are you in the process of scouting for a <strong> Digital Marketing Agency </strong> slightly nearby? If yes, then stop your search! Promozione Branding Pvt. Ltd. is a dependable choice among the <strong> digital marketing Agency in </strong> {slug}  that plans to work with you for growing the online presence of your business. To create the visibility of your brand, we focus on <strong> SEO, Social Media Marketing, and PPC advertising, </strong> and that’s just the beginning.
+We are present in all main areas of Lucknow. There are some locations where we usually serve <strong> Hazratganj, Gomti Nagar, Gomti Nagar Extension, Alambagh, Sushant Golf City, and Indira Nagar. </strong>
+By using data-driven marketing strategies, our experienced team makes sure that your business gets in touch with the right audience. Let’s make it possible for you to take the lead in the digital world!
+
     `,
-    image: img1,
+    image: roi,
   },
 
   whyChooseUs: [
     {
-      text: "White-Hat SEO Practices",
-      desc: "We strictly follow Google’s guidelines and use ethical SEO techniques to ensure your website grows sustainably without the risk of penalties."
+  heading: "why choose our Digital Marketing services in {slug}",
+    }
+,
+
+    {
+      text: "Search Engine Optimization (SEO) ",
+      desc: "Search Engine Market Optimization SEO is indispensable for total marketing effectiveness through the internet. Promozione Branding Pvt. Ltd. through its modern SEO techniques renders your website to take up a high position in the search results of famous search engines like Google. The visibility of your website is increased, the organic traffic is driven and the long-term success is assured by a focus on keyword optimization, quality content, and building strong backlinks."
     },
     {
-      text: "Guaranteed Ranking Improvement",
-      desc: "Our proven strategies ensure noticeable ranking growth within 2–3 months, with clear monthly reports tracking your progress."
+      text: "Social Media Marketing ",
+      desc: "Social media is one of the most promising means of the audience and building your brand through Facebook Marketing and Instagram Marketing connection. To get to the audience, we will manage your social media accounts and create captivating content. Our social media specialists are aware of how to scale up your profile across all platforms."
     },
     {
-      text: "Customized SEO Strategy",
-      desc: "Every business is different, so we create a tailored SEO roadmap specific to your niche, target audience, and goals."
+      text: "Google My Business (GMB) Optimization ",
+      desc: "A Google My Business profile is an absolute must for your local business. It allows potential customers to find you directly on Google Search and Maps. We take care that you will meet more locals in the search as we correctly and timely updating the most important information about your business."
     },
     {
-      text: "Local & Global SEO Expertise",
-      desc: "Whether you want to dominate local searches in {slug} or attract international traffic, we optimize your presence to achieve your specific goals."
+      text: "Influencer Marketing ",
+      desc: "Influencer marketing, a trendy yet effective strategy, employs popular social media influencers to market brands in Lucknow, India. The influencers are picked whose follower’s category matches your target market, and then your brand is kept true to its essence and made effective."
     },
     {
-      text: "Transparent Reporting",
-      desc: "You get detailed reports showing keyword ranking, traffic analytics, and ROI — so you know exactly where your investment goes."
+      text: "Graphic Design",
+      desc: "With an attractive design, your brand may not only cope with the competition but even become a winner. Our graphic design team dedicated to brand creation will produce not only eye-catching but also professional designs that will not only match your brand but also be the same for social media, ads, or just any other platform."
     },
   ],
 
@@ -243,64 +233,78 @@ faq: [
   },
 
   form: {
-    heading: "Why Choose Promozione Branding Pvt. Ltd. for Guaranteed SEO Services in {slug}?",
+    heading: "What Makes Promozione Branding Pvt. Ltd. the Best Choice for Digital Marketing Agency in {slug}? ",
     points: [
       {
-        title: "1. Data-Driven SEO Strategies",
-        desc: "Our SEO process is backed by analytics, insights, and proven methods — not guesswork. We continuously test, measure, and refine our approach for maximum ROI."
+        title: "1. Expertise and Experience ",
+        desc: "Promozione Branding Pvt. Ltd. has a powerful digital marketing solutions company that helps brands grow online through the extensive experience of their Agency. The Agency has a proven track record in SEO, social media marketing, PPC, and more, and keeps its strategies updated with the latest trends and digital strategies to ensure your business remains ahead of the competition."
       },
       {
-        title: "2. Transparent and Ethical Process",
-        desc: "We believe in 100% transparency. From keyword selection to link-building reports, you’ll know exactly what’s happening at every stage."
+        title: "2. Tailored Solutions",
+        desc: "Every business is different and has specific marketing goals. That is why we make personalized digital marketing strategies that take into account your brand's objectives, target market, and industry. Our tailor-made approach guarantees measurable outcomes for your business whether it is improving online visibility, increasing lead generation or boosting brand awareness, etc."
       },
       {
-        title: "3. Dedicated SEO Experts",
-        desc: "Our team of experienced SEO professionals stays updated with the latest trends and algorithms to ensure your business never falls behind."
+        title: "3. Collaboration and Communication ",
+        desc: "Digital marketing is a long-lasting process which must be carried out with the utmost transparency and cooperation. Our Agency is always in communication with you, through every single campaign, guaranteeing that you receive information about strategies, performance reports, and key metrics. This partnership-driven approach helps align our marketing efforts with your long-term business goals."
       },
       {
-        title: "4. Guaranteed Results",
-        desc: "We commit to measurable improvement — whether it’s keyword rankings, organic traffic, or conversions, we guarantee progress within defined timelines."
+        title: "4. Deadline Delivery ",
+        desc: "Adhering to time schedules is of utmost importance in the heavily competitive digital world. Our digital marketing agency applies a methodical workflow to ensure deadlines are met while at the same time maintaining campaign quality. Be it social media campaigns, SEO optimization, or paid ads, we make sure that every deliverable is finished on time for maximum impact."
       }
     ],
     image: img3,
   },
 
-  faq: [
-    {
-      question: "What makes Promozione Branding Pvt. Ltd. the best Guaranteed SEO Company in {slug}?",
-      answer: "Our commitment to ethical, results-driven SEO and data-backed strategies makes us the best choice. We offer transparent reporting, measurable growth, and consistent ranking improvements."
-    },
-    {
-      question: "When can I expect to see SEO results?",
-      answer: "Typically, noticeable improvements are seen within 2–3 months. SEO is a long-term strategy, and our guaranteed approach ensures consistent growth month after month."
-    },
-    {
-      question: "Do you guarantee first-page rankings?",
-      answer: "We guarantee continuous improvement and top-tier visibility for your target keywords following Google’s best practices. Our approach avoids shortcuts and delivers lasting results."
-    },
-    {
-      question: "What type of businesses can benefit from Guaranteed SEO Services?",
-      answer: "Our SEO solutions suit all business types — local, eCommerce, startups, and enterprises. We tailor every campaign to the client’s niche and goals."
-    },
-    {
-      question: "How do you measure SEO success?",
-      answer: "We track key performance metrics such as keyword rankings, organic traffic, conversions, and ROI. You’ll receive detailed monthly progress reports."
-    },
-    {
-      question: "Do you also provide local SEO services?",
-      answer: "Yes. We specialize in Local SEO in {slug} to help businesses dominate local search results and Google Maps listings."
-    },
-    {
-      question: "Is SEO a one-time investment?",
-      answer: "No. SEO is an ongoing process that requires continuous optimization to maintain and improve rankings, especially with changing algorithms and competition."
-    },
-    {
-      question: "How do I get started with your Guaranteed SEO Services in {slug}?",
-      answer: "Simply contact Promozione Branding Pvt. Ltd. today to schedule a free SEO consultation. We’ll audit your website and build a tailored strategy for guaranteed growth."
-    },
-  ],
+ faq: [
+  {
+    question: "What makes Promozione Branding Pvt. Ltd. the best Digital Marketing Agency ",
+    answer:
+      "Due to our innovative approaches, data-supported initiatives, and verifiable results, Promozione Branding Pvt. Ltd. is credited as the top digital marketing agency in {slug}. We provide professional assistance in SEO, social media, PPC, and branding, which lead to increased online visibility and sales for businesses."
+  },
+  {
+    question: "What are your digital marketing services?",
+    answer:
+      "Being a full-service digital marketing provider, we cover a complete spectrum of services such as SEO (Search Engine Optimization), Social Media Marketing, PPC Advertising, Content Marketing, Email Marketing, and Online Reputation Management — all tailored to your business objectives."
+  },
+  {
+    question: "What role does a digital marketing agency play in the growth of my business online?",
+    answer:
+      "A digital marketing agency like Promozione Branding Pvt. Ltd. helps your business gain online visibility, attract the right traffic, and increase sales. Our strategic campaigns, analytics, and creative content drive measurable growth and long-term brand success."
+  },
+  {
+    question: "What are the advantages of choosing a local digital marketing agency  over a national one?",
+    answer:
+      "Working with a marketing firm in {slug} gives you the advantage of local market knowledge and personalized service. We understand the {slug} market deeply, enabling us to craft localized strategies that help your brand connect with and convert the right audience."
+  },
+  {
+    question: "Are your digital marketing services suitable for startups and small businesses?",
+    answer:
+      "Absolutely! Our digital marketing services are designed for businesses of all sizes. Whether you're a startup, a small business, or a large enterprise, our adaptable methods will help you reach your target audience effectively and build a strong online presence."
+  },
+  {
+    question: "How long does it take to see results from digital marketing campaigns?",
+    answer:
+      "The timeline depends on the type of campaign. For SEO, results generally appear within 3–6 months, while PPC and social media ads can deliver quicker results. As a leading digital marketing agency in {slug}, we ensure steady progress and long-lasting growth for every campaign."
+  },
+  {
+    question: "Do you offer customized strategies for different industries?",
+    answer:
+      "Yes, we create tailored strategies for every client based on their industry, goals, and target audience. Our expertise spans various sectors including education, healthcare, real estate, and eCommerce."
+  },
+  {
+    question: "How can I get started with Promozione Branding Pvt. Ltd.?",
+    answer:
+      "Getting started is easy! Contact our team for a free consultation. As one of the most reliable digital marketing agencies in {slug}, we’ll analyze your business goals and create a customized plan to boost your brand’s visibility, engagement, and sales."
+  }
+],
+
 
   servicesListKey: "guaranteedSeoServices",
 },
+
+
+  // service 3
+
+  
 
 };

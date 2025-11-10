@@ -68,6 +68,7 @@ import Adspackage from "./pages/Adspackage/Adspackage";
 import Whatsapp from "./components/Whatsapp";
 import BlogPost from "./pages/Blogs/BlogPost";
 import CityPage from "./pages/CityPage/Citypage";
+import { serviceLocations } from "./citydata/Citydata";
 
 const App = () => {
   return (
@@ -81,11 +82,19 @@ const App = () => {
 
       <Routes>
 
+
         {/* Public Website Routes */}
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
 
-          <Route path="/:serviceType/:slug" element={<CityPage />} />
+
+  {/* Dynamically generate city/service routes */}
+        {serviceLocations.map(({ id, link }) => {
+          // Remove leading slash if present
+          const path = link.startsWith("/") ? link.slice(1) : link;
+          return <Route key={id} path={path} element={<CityPage />} />;
+        })}
+
 
           <Route path="profile/OurApproach" element={<Approach />} />
           <Route path="profile/whoweare" element={<Whoweare />} />
@@ -215,6 +224,10 @@ const App = () => {
           {/* Policies */}
           <Route path="/policies/privacy-policy" element={<Privacy />} />
           <Route path="/policies/terms&conditions" element={<Tc />} />
+
+
+
+
 
           {/* Catch-all */}
           <Route path="*" element={<Navigate to="/" replace />} />

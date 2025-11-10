@@ -37,7 +37,7 @@ const Slider = () => {
       >
         {repeatedItems.map((item, index) => (
           <React.Fragment key={index}>
-            <span className="scroll-item">{item}</span>
+            <span className="scroll-item cinzel">{item}</span>
             <span className="scroll-item star-icon">★</span>
           </React.Fragment>
         ))}

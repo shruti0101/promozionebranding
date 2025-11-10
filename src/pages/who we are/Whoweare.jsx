@@ -70,10 +70,11 @@ const Whoweare = () => {
         <img src={video} className="video" alt="video" data-aos="fade-up" />
 
         <div className="text-section" data-aos="fade-right">
-          <h1>
-            <span className="text-white">Branding</span>
+          <h1 className="cinzel">
+            <span className="text-white">Branding</span> <br />
+               <span className="agency-heading">Agency</span>
           </h1>
-          <h1 className="agency-heading">Agency</h1>
+       
           <p className="description">
             We are a dynamic motion, digital, and{" "}
             <strong>branding agency</strong>
@@ -128,7 +129,7 @@ const Whoweare = () => {
 
       <div className="marquee-wrapper ">
         <div className="marquee-track">
-          <div className="marquee-content">
+          <div className="marquee-content cinzel">
             <span>Design your future with Promozione Branding!</span>
             <span>Design your future with Promozione Branding!</span>
             <span>Design your future with Promozione Branding!</span>
