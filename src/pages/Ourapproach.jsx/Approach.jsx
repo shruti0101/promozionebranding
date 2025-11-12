@@ -123,7 +123,7 @@ const Approach = () => {
             <div className="content-box flex-column flex-md-row">
               <div className="content-text mb-4 mb-md-0 w-100">
                 <h1 className="fw-bold fs-1">{steps[activeId - 1].title}</h1>
-                <p className="text-muted">{steps[activeId - 1].desc}</p>
+                <p className="text-black">{steps[activeId - 1].desc}</p>
                 <a
                   href={`#section-${activeId}`}
                   className="nav-btn mt-2"
@@ -229,7 +229,7 @@ const Approach = () => {
             <div className="col-12">
               <p className="text-danger fw-bold">03. Design & Build</p>
               <h1>Build to Industry & Accessibility Standards</h1>
-              <p className=" w-100 mx-auto lh-lead ">
+              <p className=" w-75 mt-4 mx-auto fw-semibold lh-lead ">
                 After finalising the prototype, we begin to build the final
                 project. Our projects are built with the needs and goals of the
                 business in mind to ensure we are providing the best ROI possible.

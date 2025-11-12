@@ -18,7 +18,7 @@
 }
 
 .specialized-card-img {
-  width: clamp(40px, 22vw, 90px); /* Fully responsive icon width */
+  width: clamp(40px, 22vw, 90px); 
   height: auto;
   margin-bottom: 18px;
   object-fit: contain;
@@ -34,7 +34,7 @@
 }
 
 .specialized-card-text {
-  font-size: clamp(0.8rem, 1.2vw, 1rem); /* Responsive font size */
+  font-size: clamp(0.8rem, 1.2vw, 1rem);
   font-weight: 600;
   color: #2548bd;
   line-height: 1.4;
@@ -47,4 +47,14 @@
 
 .card-hover:hover {
   z-index: 10;
+}
+.specialized-font{
+  font-size: 1rem;
+}
+
+
+@media screen and (max-width: 562px) {
+.specialized-font{
+  font-size: 0.46rem;
+}
 }

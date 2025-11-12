@@ -88,9 +88,10 @@ const WhyChooseUs = () => {
             <Col lg={6}>
               <Row className="g-4">
                 {stats.map((item, idx) => (
-                  <Col sm={6} key={idx} >
+                  <Col xs={6} sm={6} key={idx}>
+
                     <div
-                      className="stat-box position-relative p-4 rounded h-100"
+                      className="stat-box position-relative p-2 p-md-3 rounded h-100"
                       style={{
                         backgroundColor: item.bg,
                         boxShadow: "0 2px 10px rgba(0,0,0,0.05)",
@@ -113,7 +114,7 @@ const WhyChooseUs = () => {
                       <img
                         src={item.img}
                         alt="stat"
-                        className="stat-img"
+                        className="stat-img d-none d-lg-block"
                       />
                     </div>
                   </Col>

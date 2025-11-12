@@ -2,6 +2,7 @@ import img1 from "../assets/citypages/1.webp";
 import img2 from "../assets/citypages/webdesign1.webp";
 import img3 from "../assets/citypages/whychoose.webp";
 import roi from "../assets/services/roi_1.webp";
+import img4 from "../assets/citypages/dm-2.webp"
 
 export const serviceLocations = [
   {
@@ -16,17 +17,17 @@ export const serviceLocations = [
   },
   {
     id: 3,
-    link: "Guaranteed-SEO-Services-In-Delhi",
-    label: "Guaranteed SEO Services in Delhi",
+    link: "Digital-Marketing-Services-In-Delhi",
+    label: "Digital Marketing Services in Delhi",
   },
   {
     id: 4,
-    link: "Guaranteed-SEO-Services-In-Uttarakhand",
-    label: "Guaranteed SEO Services in Uttarakhand",
+    link: "Digital-Marketing-Services-In-Uttarakhand",
+    label: "Digital Marketing Services in Uttarakhand",
   },
   {
     id: 4,
-    link: "Guaranteed-SEO-Services-In-Uttar-Pradesh",
+    link: "Digital-Marketing-Services-In-Uttar-Pradesh",
     label: "Guaranteed SEO Services in Uttar Pradesh",
   },
 ];
@@ -167,9 +168,10 @@ faq: [
     servicesListKey: "webDevServices",
   },
 
-  // service 2
+
+  // service 2 digital marketinh
   
-"Guaranteed-SEO": {
+"Digital-Marketing": {
   hero: {
     title: "Digital Marketing Agency in {slug}",
     highlight: " Digital Marketing Agency  ",
@@ -252,7 +254,7 @@ By using data-driven marketing strategies, our experienced team makes sure that 
         desc: "Adhering to time schedules is of utmost importance in the heavily competitive digital world. Our digital marketing agency applies a methodical workflow to ensure deadlines are met while at the same time maintaining campaign quality. Be it social media campaigns, SEO optimization, or paid ads, we make sure that every deliverable is finished on time for maximum impact."
       }
     ],
-    image: img3,
+    image: img4,
   },
 
  faq: [
@@ -299,7 +301,7 @@ By using data-driven marketing strategies, our experienced team makes sure that 
 ],
 
 
-  servicesListKey: "guaranteedSeoServices",
+  servicesListKey: "digitalMarketingServices",
 },
 
 

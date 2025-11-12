@@ -33,7 +33,7 @@ const Orbit = () => {
         overflow: "hidden",
       }}
     >
-      <div className="container py-4">
+      <div className="container py-3">
  <h2 className="mt-1 fw-bold fs-2 text-center mb-sm-0" style={{ color: "#2548BD"  }}>
           About Us
         </h2>
@@ -74,7 +74,7 @@ const Orbit = () => {
           {/* Right Side Orbit */}
           <div
             className="col-lg-6 position-relative d-flex justify-content-center align-items-center"
-            style={{ minHeight: "500px" }}
+            style={{ minHeight: "400px" }}
           >
             {/* Central Logo */}
             <div

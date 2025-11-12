@@ -1,6 +1,11 @@
 .project-card {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
+
+.project-section{
+ 
+  background-color: #F7F7F7;
+}
 .project-card:hover {
   transform: translateY(-9px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
@@ -9,8 +14,8 @@
 .project-img {
   border-radius: 10px;
   width: 100%;
-  height: 250px;
-  object-fit: cover;
+  height: 550px;
+  object-fit: contain;
 }
 
 .triangle {
@@ -28,4 +33,11 @@
 }
 .triangle-lightgray {
   border-bottom: 10px solid #ccc;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .project-img {
+    height: 200px;
+  }
 }

@@ -404,7 +404,7 @@ const CityPage = () => {
 
       {/* form section */}
 
-      <section className="choice-section py-5">
+      <section style={{backgroundColor:"#F7F7F7"}} className="  py-5">
         <div className="container-fluid px-2 px-md-5">
           <div className="row align-items-center g-3">
 

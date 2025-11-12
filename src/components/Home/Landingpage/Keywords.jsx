@@ -607,36 +607,43 @@ export default function ServicesSection() {
       link: "/services/social-media-marketing",
     },
 
-    {
-      title: "Social Media Management Company in Delhi NCR",
-      link: "/services/social-media-marketing",
-    },
+    // {
+    //   title: "Social Media Management Company in Delhi NCR",
+    //   link: "/services/social-media-marketing",
+    // },
   ];
 
   return (
-    <section className="py-5 bg-white">
-      <div className="container">
-        <div className="row">
-          {services.map((service, index) => (
-            <div className="col-12 col-sm-6 col-lg-3 mb-3" key={index}>
-              <a href={service.link} className="text-decoration-none">
-                <div
-                  className="d-flex align-items-center p-3"
-                  style={{ backgroundColor: "#ECF4FF" }}
-                >
-                  {/* Text */}
-                  <p
-                    className="mb-0"
-                    style={{ fontSize: "14px", color: "#000" }}
-                  >
-                    {service.title}
-                  </p>
-                </div>
-              </a>
+<section className="py-5 bg-white">
+  <div className="container">
+    <div className="row g-3 g-md-4 justify-content-center">
+      {services.map((service, index) => (
+        <div className="col-4 col-md-4 col-lg-2" key={index}>
+          <a
+            href={service.link}
+            className="text-decoration-none d-block h-100"
+          >
+            <div
+              className="p-2 p-md-3 text-center rounded-4 h-100 d-flex align-items-center justify-content-center flex-column shadow-sm service-card"
+              style={{
+                backgroundColor: "#ECF4FF",
+                transition: "all 0.3s ease",
+              }}
+            >
+              <p
+                className="mb-0 fw-semibold"
+                style={{ fontSize: "12px", color: "#0A1A44" }}
+              >
+                {service.title}
+              </p>
             </div>
-          ))}
+          </a>
         </div>
-      </div>
-    </section>
+      ))}
+    </div>
+  </div>
+</section>
+
+
   );
 }

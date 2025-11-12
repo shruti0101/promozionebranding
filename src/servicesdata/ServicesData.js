@@ -80,46 +80,10 @@ export const webDevServices = [
 ];
 
 
-  export const digitalMarketingServices = [
-  {
-    id: 1,
-    title: "SEO Optimization",
-    description: "Improve your website ranking and drive organic traffic.",
-    icon: "FaSearch",
-    link: "/services/seo-optimization",
-  },
-  {
-    id: 2,
-    title: "Social Media Marketing",
-    description: "Engage audiences and grow your brand on social platforms.",
-    icon: "FaFacebookF",
-    link: "/services/social-media-marketing",
-  },
-  {
-    id: 3,
-    title: "Google Ads Management",
-    description: "Run high-performing Google Ads campaigns for instant reach.",
-    icon: "FaGoogle",
-    link: "/services/google-ads-management",
-  },
-  {
-    id: 4,
-    title: "Content Marketing",
-    description: "Create and distribute engaging content that converts.",
-    icon: "FaPenFancy",
-    link: "/services/content-marketing",
-  },
-  {
-    id: 5,
-    title: "Email Marketing",
-    description: "Reach your audience directly with personalized email campaigns.",
-    icon: "FaEnvelope",
-    link: "/services/email-marketing",
-  },
-];
 
 
-export const guaranteedSeoServices = [
+
+export const digitalMarketingServices = [
   {
     id: 1,
     title: "Content Marketing",
@@ -178,7 +142,7 @@ export const guaranteedSeoServices = [
   },
   {
     id: 8,
-    title: "Social Media Management Services",
+    title: "SMM Services",
     description:
       "Build and manage strong social media communities with consistent posting, engagement, and analytics.",
     icon: "FaFacebookMessenger",
@@ -226,3 +190,40 @@ export const guaranteedSeoServices = [
   },
 ];
 
+  export const guaranteedSeoServices = [
+  {
+    id: 1,
+    title: "SEO Optimization",
+    description: "Improve your website ranking and drive organic traffic.",
+    icon: "FaSearch",
+    link: "/services/seo-optimization",
+  },
+  {
+    id: 2,
+    title: "Social Media Marketing",
+    description: "Engage audiences and grow your brand on social platforms.",
+    icon: "FaFacebookF",
+    link: "/services/social-media-marketing",
+  },
+  {
+    id: 3,
+    title: "Google Ads Management",
+    description: "Run high-performing Google Ads campaigns for instant reach.",
+    icon: "FaGoogle",
+    link: "/services/google-ads-management",
+  },
+  {
+    id: 4,
+    title: "Content Marketing",
+    description: "Create and distribute engaging content that converts.",
+    icon: "FaPenFancy",
+    link: "/services/content-marketing",
+  },
+  {
+    id: 5,
+    title: "Email Marketing",
+    description: "Reach your audience directly with personalized email campaigns.",
+    icon: "FaEnvelope",
+    link: "/services/email-marketing",
+  },
+];

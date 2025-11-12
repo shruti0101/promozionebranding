@@ -56,7 +56,7 @@ const specializedCards = [
 
   { img: analytics, alt: "Youtube Marketing Services", title: "Youtube Marketing Services" ,link:"/services/social-media-optimization" },
   { img: googleAdsense2, alt: "Google AdWord Services", title: "Google AdWord Services" ,link:"/services/google-adword-ppc-services" },
-    { img: wordpress, alt: "WordPress Website Design", title: "Small Business Website Designing" ,link:"/services/wordpress-website-services" },
+    { img: wordpress, alt: "B2B Web Development", title: "B2B Web Development" ,link:"/services/b2b-web-development-services" },
   { img: icon2, alt: "Facebook Marketing Services", title: "Facebook Marketing Services" ,link:"/services/social-media-marketing"},
 ];
 
@@ -82,7 +82,7 @@ const Specialized = () => {
         ></div>
 
         {/* RESPONSIVE CARD GRID */}
-        <div className="row row-cols-2 ro w-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4 ">
+        <div className="row row-cols-4 row-cols-md-3 row-cols-lg-5 g-2  ">
           {specializedCards.map((card, idx) => (
             <Link to={card.link}
               className="col card-hover text-decoration-none  "
@@ -91,16 +91,16 @@ const Specialized = () => {
               data-aos-duration="500"
                
             >
-              <div className="specialized-card h-100 border-light shadow-sm rounded-3">
+              <div className="specialized-card  border-light shadow-sm rounded-3">
                 <img
                   src={card.img}
-                  className="p-4 img-fluid mx-auto d-block specialized-card-img"
+                  className="p-2 p-md-4 img-fluid  "
                   alt={card.alt}
-                  // style={{ maxHeight: "120px", objectFit: "contain" }}
+                  style={{ maxHeight: "110px", objectFit: "contain" }}
                   loading="lazy"
                 />
                 <div className="px-3 pb-3">
-                  <h6 className="fw-semibold text-dark">{card.title}</h6>
+                  <h6  className="fw-semibold specialized-font  text-dark">{card.title}</h6>
                 </div>
               </div>
             </Link>
