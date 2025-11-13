@@ -4,7 +4,7 @@ import img3 from "../assets/citypages/whychoose.webp";
 import roi from "../assets/services/roi_1.webp";
 import img4 from "../assets/citypages/dm-2.webp"
 import img5 from "../assets/citypages/advance.jpg"
-import img6 from "../assets/citypages/team-banner.jpg"
+
 export const serviceLocations = [
 
   // wd
