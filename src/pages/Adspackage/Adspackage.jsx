@@ -46,9 +46,9 @@ const Adspackage = () => {
   return (
     <>
 
- <SEO
-      title=" Ads Package "
-      description="Need Ads management services? Trust Promozione to provide Ads services that accelerate your sales and lead generation efforts. Get a free quote now!"
+  <SEO
+      title="Ads Package services"
+      description="Ads Package services services here is this servive"
     />
 
     

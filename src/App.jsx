@@ -75,7 +75,8 @@ import { serviceLocations } from "./citydata/Citydata";
 
 const App = () => {
   return (
-    <Router>
+  
+<>
       <ToastContainer />
       <Popup />
       <Social></Social>
@@ -236,7 +237,8 @@ const App = () => {
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>
-    </Router>
+
+</>
   );
 };
 

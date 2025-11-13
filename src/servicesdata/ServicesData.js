@@ -86,41 +86,42 @@ export const webDevServices = [
 export const digitalMarketingServices = [
   {
     id: 1,
-    title: "Content Marketing",
+    title: "Content Marketing Services",
     description:
-      "Boost your website’s visibility with high-quality, keyword-rich content that engages and converts your audience.",
+      "Digital Marketing Services in {slug}",
     icon: "FaPenNib",
     link: "/services/content-marketing-services",
   },
+  
   {
     id: 2,
     title: "CRM Optimization Services",
     description:
-      "Enhance customer relationships with data-driven CRM solutions that improve retention, engagement, and loyalty.",
+      "Digital Marketing Services in {slug}",
     icon: "FaChartLine",
     link: "/services/crm-optimizations-services",
   },
   {
     id: 3,
-    title: "Email Marketing",
+    title: "Email Marketing Services",
     description:
-      "Send personalized, high-converting email campaigns that nurture leads and drive consistent engagement.",
+      "Digital Marketing Services in {slug}",
     icon: "FaEnvelopeOpenText",
     link: "/services/email-marketing-services",
   },
   {
     id: 4,
-    title: "Video Marketing",
+    title: "Video Marketing Services",
     description:
-      "Tell your brand’s story with engaging videos that boost conversions and enhance audience trust.",
+      "Digital Marketing Services in {slug}",
     icon: "FaVideo",
     link: "/services/video-marketing-services",
   },
   {
     id: 5,
-    title: "Microsoft/Bing Ads",
+    title: "Microsoft/Bing Ads Services",
     description:
-      "Expand your brand reach through Microsoft and Bing Ads campaigns that capture high-intent audiences.",
+      "Digital Marketing Services in {slug}",
     icon: "FaMicrosoft",
     link: "/services/microsoft-bing-ads-services",
   },
@@ -128,7 +129,7 @@ export const digitalMarketingServices = [
     id: 6,
     title: "Google Ads / PPC Services",
     description:
-      "Generate instant traffic and quality leads with expertly managed Google Ads and pay-per-click campaigns.",
+      "Digital Marketing Services in {slug}",
     icon: "FaGoogle",
     link: "/services/google-adword-ppc-services",
   },
@@ -136,7 +137,7 @@ export const digitalMarketingServices = [
     id: 7,
     title: "SMO Services",
     description:
-      "Boost your brand’s social presence with effective optimization across platforms like Facebook, Instagram, and LinkedIn.",
+      "Digital Marketing Services in {slug}",
     icon: "FaShareAlt",
     link: "/services/social-media-optimization",
   },
@@ -144,7 +145,7 @@ export const digitalMarketingServices = [
     id: 8,
     title: "SMM Services",
     description:
-      "Build and manage strong social media communities with consistent posting, engagement, and analytics.",
+      "Digital Marketing Services in {slug}",
     icon: "FaFacebookMessenger",
     link: "/services/social-media-marketing",
   },

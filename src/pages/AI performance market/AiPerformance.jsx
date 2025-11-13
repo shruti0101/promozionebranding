@@ -171,8 +171,8 @@ const AiPerformance = () => {
   return (
     <>
      <SEO
-      title="Top Ads Management Services [25% Lift in Ads Sales] "
-      description="Need Ads management services? Trust Promozione to provide Ads services that accelerate your sales and lead generation efforts. Get a free quote now!"
+      title="AI performance marketing"
+      description="AI performance marketing services here is this servive"
     />
 
       <Tiltcard

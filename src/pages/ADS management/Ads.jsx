@@ -172,9 +172,9 @@ const Ads = () => {
     <>
 
     
-    <SEO
-      title="Top Ads Management Services [25% Lift in Ads Sales] "
-      description="Need Ads management services? Trust Promozione to provide Ads services that accelerate your sales and lead generation efforts. Get a free quote now!"
+  <SEO
+      title="Ads Management services"
+      description="Ads Management services  here is this in dekhi"
     />
 
       <Tiltcard

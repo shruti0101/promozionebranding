@@ -1,14 +1,14 @@
 import  { useState } from "react";
 import { Link } from "react-router-dom";
 import {
-  FaPhone,
   FaEnvelope,
   FaMapMarkerAlt,
   FaChevronDown,
   FaChevronUp,
 } from "react-icons/fa";
+import { MdCall } from "react-icons/md";
 import "../styles/Footer.css";
-import { FaDownload } from "react-icons/fa";
+
 
 
 const Footer = () => {
@@ -104,13 +104,14 @@ const Footer = () => {
             //   label: "B2B Lead Generation",
             //   to: "/services/b2b-lead-generation-services",
             // },
-            { label: "B2B Marketing", to: "/services/b2b-marketing-services" },
-            { label: "B2C Marketing", to: "/services/b2c-marketing-services" },
-            { label: "D2C Marketing", to: "/services/d2c-marketing-services" },
-            {
+              {
               label: "AI Performance Marketing Services",
               to: "/services/ai-performance-marketing-services",
             },
+            { label: "B2B Marketing", to: "/services/b2b-marketing-services" },
+            { label: "B2C Marketing", to: "/services/b2c-marketing-services" },
+            { label: "D2C Marketing", to: "/services/d2c-marketing-services" },
+          
             {
               label: "Ads Management",
               to: "/services/ads-management-services",
@@ -172,18 +173,54 @@ const Footer = () => {
             { label: "Contact Us", to: "/Contact" },
           ])}
 
-          {renderDropdown("Policies", "Policies", [
-            { label: "Privacy Policy", to: "/policies/privacy-policy" },
-            { label: "Terms and Conditions", to: "/policies/terms&conditions" },
-            { label: " 📄 Download Brochure", to: "/brochure.pdf", download: true },
-          ])}
+       {/* Policies Section */}
+<div className="footer-column">
+  <div className="dropdown-header" onClick={() => toggleMenu("Policies")}>
+    <h3>Policies</h3>
+    <span className="dropdown-icon">
+      {openMenus["Policies"] ? <FaChevronUp /> : <FaChevronDown />}
+    </span>
+  </div>
+  <ul className={`dropdown-links ${openMenus["Policies"] ? "open" : ""}`}>
+    <li>
+      <Link to="/policies/privacy-policy">Privacy Policy</Link>
+    </li>
+    <li>
+      <Link to="/policies/terms&conditions">Terms and Conditions</Link>
+    </li>
+    <li>
+      <a href="/brochure.pdf" download className="text-white">
+        📄 Download Brochure
+      </a>
+    </li>
+
+    {/* ✅ Certificate Images INSIDE Policies section */}
+    <li className="mt-4">
+      <div className="d-flex align-items-center">
+        <img
+          src="https://res.cloudinary.com/dzbkxqqo9/image/upload/v1763013962/Your_1_qohgd9.webp"
+          alt="Certificate 1"
+          className="img-fluid me-2 bg-white rounded" 
+          style={{ maxWidth: "110px" }}
+        />
+        <img
+          src="https://res.cloudinary.com/dzbkxqqo9/image/upload/v1763013962/Your_cwlz9a.webp"
+          alt="Certificate 2"
+          className="img-fluid bg-white rounded"
+          style={{ maxWidth: "110px" }}
+        />
+      </div>
+    </li>
+  </ul>
+</div>
+
         </div>  
 
         {/* Contact Info */}
         <div className="get-in-touch footer-bottom1">
           <div className="contact-box">
 
-            <FaPhone className="contact-icon" />
+            <MdCall className="contact-icon" />
             <div>
               <h5 className="contact-title">011 42603232</h5>
               <p className="contact-subtitle">Mon–Sat 9:30AM–6:30PM</p>

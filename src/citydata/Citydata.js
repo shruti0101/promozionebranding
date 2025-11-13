@@ -3,8 +3,11 @@ import img2 from "../assets/citypages/webdesign1.webp";
 import img3 from "../assets/citypages/whychoose.webp";
 import roi from "../assets/services/roi_1.webp";
 import img4 from "../assets/citypages/dm-2.webp"
-
+import img5 from "../assets/citypages/advance.jpg"
+import img6 from "../assets/citypages/team-banner.jpg"
 export const serviceLocations = [
+
+  // wd
   {
     id: 1,
     link: "Web-Development-Services-In-Rajasthan",
@@ -15,20 +18,39 @@ export const serviceLocations = [
     link: "Web-Development-Services-In-Uttar-Pradesh",
     label: "Web Development Services in Uttar Pradesh",
   },
-  {
+    {
     id: 3,
-    link: "Digital-Marketing-Services-In-Delhi",
-    label: "Digital Marketing Services in Delhi",
+    link: "Web-Development-Services-In-Gurgaon",
+    label: "Web Development Services in Gurgaon",
+  },
+
+
+    {
+    id: 4,
+    link: "Web-Development-Services-In-Delhi-NCR",
+    label: "Web Development Services in Delhi NCR",
+  },
+// dm
+  {
+    id: 5,
+    link: "Digital-Marketing-Services-In-Delhi-NCR",
+    label: "Digital Marketing Services in Delhi NCR",
   },
   {
-    id: 4,
-    link: "Digital-Marketing-Services-In-Uttarakhand",
-    label: "Digital Marketing Services in Uttarakhand",
+    id: 6,
+    link: "Digital-Marketing-Services-In-Rajasthan",
+    label: "Digital Marketing Services in Rajasthan",
   },
   {
-    id: 4,
+    id: 7,
     link: "Digital-Marketing-Services-In-Uttar-Pradesh",
-    label: "Guaranteed SEO Services in Uttar Pradesh",
+    label: "Digital Marketing Services in Uttar Pradesh",
+  },
+
+    {
+    id: 8,
+    link: "Digital-Marketing-Services-In-Gurgaon",
+    label: "Digital Marketing Services in Gurgaon",
   },
 ];
 
@@ -41,7 +63,7 @@ export const CityPageData = {
       title: "Web Development Agency in {slug}",
       highlight: "Website Development ",
       description: `
-       Promozione Branding Pvt. Ltd. offers a variety of Website Development Company in {slug}, which include Website Development Agency in {slug}, Enterprise Web Portal Development Services in {slug}, and custom complex solutions for e-commerce and e-business solutions, to meet your wide range of business requirements and accelerate your growth with fast, user-friendly and flawless web solutions.
+       Promozione Branding Pvt. Ltd. offers a variety of Web Development Company in {slug}, which include Website Development Agency in {slug}, Enterprise Web Portal Development Services in {slug}, and custom complex solutions for e-commerce and e-business solutions, to meet your wide range of business requirements and accelerate your growth with fast, user-friendly and flawless web solutions.
       `,
       image: "/assets/citypages/webdesign1.webp",
     },
@@ -165,6 +187,10 @@ faq: [
 ],
 
 
+metaTitle: "Web Development Services in {slug}/Web Development Company in {slug} ",
+metaDescription:
+  "Promozione Branding Pvt Ltd is One of the Best Web Development Service Provider Company in {slug}, we offering best B2B, Custom, PHP, CMS web Development services in {slug}.",
+
     servicesListKey: "webDevServices",
   },
 
@@ -176,7 +202,7 @@ faq: [
     title: "Digital Marketing Agency in {slug}",
     highlight: " Digital Marketing Agency  ",
     description: `
-      <strong>Promozione Branding Pvt. Ltd.</strong>  is a comprehensive Digital Marketing Agency that provides all kinds of services. It is our enthusiasm to discover the core of the successful businesses that makes us a great partner. Promozione Branding Pvt. Ltd. is the top Digital Marketing Agency in {slug}. We have been getting the best marketing results for our clients through our integrated full-service Digital Branding Architecture and Marketing Strategy. We are at the crossroads of creativity, technology, and strategy by using our expertise, and our clients are the ones who benefit the most.
+      <strong>Promozione Branding Pvt. Ltd.</strong>  is a comprehensive Digital Marketing Agency that provides all kinds of services. It is our enthusiasm to discover the core of the successful businesses that makes us a great partner. Promozione Branding Pvt. Ltd. is the top Digital Marketing Agency in {slug}. We have been getting the best marketing results for our clients through our integrated full-service Digital Branding Architecture and Marketing Strategy. We are at the crossroads of creativity, technology, and strategy 
     `,
     image: "/assets/citypages/seo.webp",
   },
@@ -221,41 +247,40 @@ By using data-driven marketing strategies, our experienced team makes sure that 
   ],
 
   advance: {
-    heading: "Advanced Guaranteed SEO Services by Promozione Branding Pvt. Ltd. in {slug}",
+    heading: "Advanced Digital Marketing Services by Promozione Branding Pvt. Ltd. in {slug}",
     text: `
-      Our <strong>Guaranteed SEO Agency in {slug}</strong> uses a holistic approach that combines technical SEO, content strategy, and authority building to deliver real, long-term results.
+       <strong>1. Expertise and Experience :</strong> Promozione Branding Pvt. Ltd. has a powerful digital marketing solutions company that helps brands grow online through the extensive experience of their Agency. The Agency has a proven track record in SEO, social media marketing, PPC, and more, and keeps its strategies updated with the latest trends and digital strategies to ensure your business remains ahead of the competition.
       <br><br>
-      We start with a comprehensive website audit to identify bottlenecks and optimization opportunities. Then, we deploy advanced tools to analyze keyword performance, backlink quality, and competitor strategies.
+       <strong>2. Tailored Solutions :</strong> Every business is different and has specific marketing goals. That is why we make personalized digital marketing strategies that take into account your brand's objectives, target market, and industry. Our tailor-made approach guarantees measurable outcomes for your business whether it is improving online visibility, increasing lead generation or boosting brand awareness, etc.
       <br><br>
-      As one of the <strong>Best SEO Companies in {slug}</strong>, we focus on both short-term ranking boosts and sustainable organic growth — so your visibility remains consistent even after algorithm updates.
+<strong>3. Collaboration and Communication :</strong> Digital marketing is a long-lasting process which must be carried out with the utmost transparency and cooperation. Our Agency is always in communication with you, through every single campaign, guaranteeing that you receive information about strategies, performance reports, and key metrics. This partnership-driven approach helps align our marketing efforts with your long-term business goals.
       <br><br>
-      Partner with us for a guaranteed SEO plan that brings more clicks, conversions, and credibility to your brand.
+      <strong >4. Deadline Delivery :</strong> Adhering to time schedules is of utmost importance in the heavily competitive digital world. Our digital marketing agency applies a methodical workflow to ensure deadlines are met while at the same time maintaining campaign quality. Be it social media campaigns, SEO optimization, or paid ads, we make sure that every deliverable is finished on time for maximum impact.
     `,
-    image: img2,
+    image: img5,
   },
 
+
   form: {
-    heading: "What Makes Promozione Branding Pvt. Ltd. the Best Choice for Digital Marketing Agency in {slug}? ",
+    heading: "Digital Marketing Solutions in {slug} for Every Business Type ? ",
     points: [
       {
-        title: "1. Expertise and Experience ",
-        desc: "Promozione Branding Pvt. Ltd. has a powerful digital marketing solutions company that helps brands grow online through the extensive experience of their Agency. The Agency has a proven track record in SEO, social media marketing, PPC, and more, and keeps its strategies updated with the latest trends and digital strategies to ensure your business remains ahead of the competition."
+        title: "B2B Digital Marketing Services in {slug}  ",
+        desc: "By B2B firms, trust and relationships that last are of utmost importance. The main activities of our <strong> B2B digital marketing services in {slug} </strong> are lead generation, content marketing, and LinkedIn ads to draw decision-makers in and eventually change them into clients that are loyal. We create campaigns driven by data that allow you to gain your brand's power and win high-value deals quickly and easily."
+      },  
+      {
+        title: " B2C Digital Marketing Services in {slug} ",
+        desc: "It is in the  B2C arena where engagement and customer experience become the main drivers of results. The <strong> B2C digital marketing agency in {slug} </strong> of ours employs social media marketing, influencer partnerships, paid campaigns, and remarketing tactics to directly interact with consumers and thus, increase sales, B2C agency brings the help of keeping your brand dynamically connected and emotionally attached with your audience."
       },
       {
-        title: "2. Tailored Solutions",
-        desc: "Every business is different and has specific marketing goals. That is why we make personalized digital marketing strategies that take into account your brand's objectives, target market, and industry. Our tailor-made approach guarantees measurable outcomes for your business whether it is improving online visibility, increasing lead generation or boosting brand awareness, etc."
+        title: "D2C Digital Marketing Services in {slug}  ",
+        desc: "D2C Digital Marketing are the major contributor of India’s economy — and we are excited to assist their expansion. Our D2C-based digital marketing solutions consist of affordable SEO, social media, and performance marketing tactics that yield the highest ROI without putting too much pressure on your budget. In addition, we assist D2C in overcoming bigger brands in visibility and lead acquisition."
       },
-      {
-        title: "3. Collaboration and Communication ",
-        desc: "Digital marketing is a long-lasting process which must be carried out with the utmost transparency and cooperation. Our Agency is always in communication with you, through every single campaign, guaranteeing that you receive information about strategies, performance reports, and key metrics. This partnership-driven approach helps align our marketing efforts with your long-term business goals."
-      },
-      {
-        title: "4. Deadline Delivery ",
-        desc: "Adhering to time schedules is of utmost importance in the heavily competitive digital world. Our digital marketing agency applies a methodical workflow to ensure deadlines are met while at the same time maintaining campaign quality. Be it social media campaigns, SEO optimization, or paid ads, we make sure that every deliverable is finished on time for maximum impact."
-      }
+    
     ],
     image: img4,
   },
+
 
  faq: [
   {
@@ -299,6 +324,11 @@ By using data-driven marketing strategies, our experienced team makes sure that 
       "Getting started is easy! Contact our team for a free consultation. As one of the most reliable digital marketing agencies in {slug}, we’ll analyze your business goals and create a customized plan to boost your brand’s visibility, engagement, and sales."
   }
 ],
+
+
+metaTitle: "Digital Marketing Services in {slug}/Digital Marketing Company in {slug} ",
+metaDescription:
+  "Promozione Branding Pvt Ltd is One of the Best Digital Marketing Services Provider Company in {slug}, we offering best content, video, SMO, SMM, services in {slug}.",
 
 
   servicesListKey: "digitalMarketingServices",

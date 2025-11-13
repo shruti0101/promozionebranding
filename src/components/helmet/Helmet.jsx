@@ -1,12 +1,23 @@
 // SEO.js
+import { useEffect } from "react";
 
-import { Helmet } from "react-helmet";
+// SEO.js
+const SEO = ({ title, description }) => {
+  if (typeof document !== "undefined") {
+    document.title = title;
+    let descTag = document.querySelector('meta[name="description"]');
+    if (!descTag) {
+      descTag = document.createElement("meta");
+      descTag.setAttribute("name", "description");
+      document.head.appendChild(descTag);
+    }
+    descTag.setAttribute("content", description);
+  }
 
-const SEO = ({ title, description }) => (
-  <Helmet>
-    <title>{title}</title>
-    <meta name="description" content={description} />
-  </Helmet>
-);
+  return null;
+};
+
+
+
 
 export default SEO;

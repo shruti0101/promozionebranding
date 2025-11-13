@@ -3,6 +3,7 @@ import { useLocation, Link } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
 import faq from "../../assets/citypages/faq.webp";
 import Testimonials from "../../components/Home/Landingpage/Testimonials";
+
 import {
   webDevServices,
   guaranteedSeoServices,
@@ -11,8 +12,29 @@ import {
 } from "../../servicesdata/ServicesData";
 import { CityPageData } from "../../citydata/Citydata";
 import "./CityPage.css";
+import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
+import CitiesKeyword from "../../components/CitiesKeyword/CitiesKeyword";
+
 
 const CityPage = () => {
+
+
+
+
+const logos = [
+ "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1763012515/client10_i1oz1g.webp",
+  "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1763012515/client9_dnscbf.webp",
+  "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1763012514/client8_itgctd.webp",
+  "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1763012513/client7_rx3itv.webp",
+  "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1763012511/client2_r6wne6.webp",
+  "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1763012512/client5_zl3f4q.webp",
+  "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1763012511/client4_ius5cr.webp",
+  "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1763012510/client1_uvcw9r.webp",
+];
+
+
+
   const location = useLocation();
   const pathParts = location.pathname.split("-Services-In-");
   const serviceType = pathParts[0].replace("/", "");
@@ -31,6 +53,19 @@ const CityPage = () => {
     digitalMarketingServices,
     revenueMarketingServices,
   };
+
+
+  
+  // Converts "digital-marketing-mumbai" or "mumbai" → "Mumbai"
+function formatCityName(slug) {
+  if (!slug) return "";
+  return slug
+    .split("-") // split by dash
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1)) // capitalize each
+    .join(" "); // join back with spaces
+}
+
+
   const servicesData = servicesMap[pageData.servicesListKey] || [];
 
   // Build highlighted text safely
@@ -49,31 +84,103 @@ const CityPage = () => {
     `<span class='slug-highlight'>${slug}</span>`
   );
 
+
+
+// Dynamic meta title & description
+  const metaTitle = pageData?.metaTitle
+    ? `${pageData.metaTitle.replaceAll("{slug}", formatCityName(slug))} `
+    : `Promozione Branding | ${formatCityName(slug)}`;
+
+  const metaDescription = pageData?.metaDescription
+    ? pageData.metaDescription.replaceAll("{slug}", formatCityName(slug))
+    : `Promozione Branding offers top digital marketing services in ${formatCityName(slug)}.`;
+
+
+useEffect(() => {
+  // Manually sync Helmet updates to actual <head>
+  const head = document.querySelector("head");
+
+  // Remove old meta if any
+  const oldMeta = head.querySelector('meta[name="description"]');
+  if (oldMeta) oldMeta.remove();
+
+  // Create new meta
+  const newMeta = document.createElement("meta");
+  newMeta.name = "description";
+  newMeta.content = metaDescription;
+  head.appendChild(newMeta);
+
+  // Update title as well
+  document.title = metaTitle;
+}, [metaTitle, metaDescription]);
+
   return (
-    <>
+
+
+<>
+   <Helmet prioritizeSeoTags>
+        <title>{metaTitle}</title>
+        <meta name="description" content={metaDescription} />
+        <meta property="og:title" content={metaTitle} />
+        <meta property="og:description" content={metaDescription} />
+      </Helmet>
+
+
+
+
       {/* HERO SECTION */}
-      <section className="hero-section d-flex align-items-center">
-        <div className="container px-4 px-md-5">
+      <section className="hero-section py-4 ">
+        <div className="container-fluid px-2 px-md-5">
           <div className="row align-items-center text-center">
             <div className="col-12">
               <h1
-                className="text-black mb-4 fw-bold display-5 cinzel"
+                className="text-black hero-head  mb-4 fw-bold display-5 cinzel"
                 dangerouslySetInnerHTML={{ __html: titleHtml }}
               />
 
               <p
-                className="text-black lh-lg fs-5"
+                className="text-black hero-text lh-lg  "
                 dangerouslySetInnerHTML={{ __html: descHtml }}
               />
             </div>
           </div>
+
+
+     <div className="py-3 text-center">
+        <h2 className="mb-3 mb-md-5 fw-bold cinzel">Our Premium Clients</h2>
+        <div className="clientele-slider overflow-hidden">
+          <div className="slide-track d-flex align-items-center">
+            {/* Duplicate the logos twice to create continuous loop */}
+            {[...logos, ...logos].map((logo, i) => (
+              <div className="slide " key={i}>
+                <img
+                  src={logo}
+                  alt={`client-${i}`}
+                  className="img-fluid rounded"
+                  style={{ maxHeight: "70px", objectFit: "contain" }}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+ 
         </div>
       </section>
 
+
+   
+
+
+
+
+  
+
+
       {/* ABOUT SECTION */}
-      <section className="about-section py-2 ">
+      <section className="about-section py-3 ">
         <div className="container-fluid px-2 px-md-5">
-          <div className="row align-items-center gy-4">
+          <div className="row align-items-center gy-2">
             <div className="col-md-7   text-start lh-lg">
               <h2
                 className="cinzel mt-4"
@@ -108,88 +215,91 @@ const CityPage = () => {
 
 
       {/* WHY CHOOSE US */}
-      <section className="py-5 why-choose-section text-black text-center">
-        <div className="container-fluid">
+ <section className="py-5 why-choose-section text-black text-center">
+  <div className="container-fluid px-3 px-md-5">
     <h2
-  className="cinzel"
-  dangerouslySetInnerHTML={{
-    __html:
-      pageData?.whyChooseUs?.[0]?.heading?.replaceAll(
-        "{slug}",
-        `<span class='slug-highlight'>${slug}</span>`
-      ) || "",
-  }}
-/>
+      className="cinzel mb-4 fw-bold"
+      dangerouslySetInnerHTML={{
+        __html:
+          pageData?.whyChooseUs?.[0]?.heading?.replaceAll(
+            "{slug}",
+            `<span class='slug-highlight'>${slug}</span>`
+          ) || "",
+      }}
+    />
 
-<div className="py-5">
-  <div className="row justify-content-center">
-    {Array.isArray(pageData?.whyChooseUs)
-      ? pageData.whyChooseUs.slice(1).map((item, i) => (
-          <div key={i} className="col-6 col-md-4 mb-4">
-            <div className="why-card text-center p-3 h-100">
-              <div className="icon-wrapper mx-auto mb-3">
-                <i className="bi bi-check-circle-fill text-primary fs-2"></i>
+    <div className="py-4">
+      <div className="row justify-content-center">
+        {Array.isArray(pageData?.whyChooseUs)
+          ? pageData.whyChooseUs.slice(1).map((item, i) => (
+              <div key={i} className="col-12 col-sm-6 col-md-4  mb-4">
+                <div className="why-card  p-3 h-100">
+                  <div className="icon-wrapper mx-auto mb-3">
+                    <i className="bi bi-check-circle-fill text-primary fs-2"></i>
+                  </div>
+                  <h3 className="fw-semibold text-dark mb-3">{item?.text}</h3>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        item?.desc?.replaceAll(
+                          "{slug}",
+                          `<span class='slug-highlight'>${slug}</span>`
+                        ) || "",
+                    }}
+                  />
+                </div>
               </div>
-              <h3 className="fw-semibold text-dark mb-3">{item?.text}</h3>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html:
-                    item?.desc?.replaceAll(
-                      "{slug}",
-                      `<span class='slug-highlight'>${slug}</span>`
-                    ) || "",
-                }}
-              />
-            </div>
-          </div>
-        ))
-      : null}
+            ))
+          : null}
+      </div>
+    </div>
   </div>
-</div>
+</section>
 
-        </div>
-      </section>
 
       {/* advanced */}
 
-      <section className="about-section py-4 ">
-        <div className="container-fluid px-2 px-md-5">
-          <div className="row align-items-center gy-4">
-            <div className="col-md-7 my-5   lh-lg">
-              <h2
-                className="cinzel"
-                dangerouslySetInnerHTML={{
-                  __html: pageData.advance.heading.replaceAll(
-                    "{slug}",
-                    `<span class='slug-highlight'>${slug}</span>`
-                  ),
-                }}
-              />
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: pageData.advance.text.replaceAll(
-                    "{slug}",
-                    `<span class='slug-highlight'>${slug}</span>`
-                  ),
-                }}
-              />
-            </div>
+    <section className="about-section py-4">
+  <div className="container-fluid px-2 px-md-5">
+    <h2
+      className="cinzel fw-bold text-center mb-3 mx-auto advance-heading"
+      dangerouslySetInnerHTML={{
+        __html: pageData.advance.heading.replaceAll(
+          "{slug}",
+          `<span class='slug-highlight'>${slug}</span>`
+        ),
+      }}
+    />
 
-            <div className="col-md-5">
-              <img
-                src={pageData.advance.image}
-                alt={pageData.advance.heading}
-                className="img-fluid  rounded"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+    <div className="row align-items-center gy-4 about-content">
+      <div className="col-12 col-md-7 my-4 lh-lg ">
+        <p
+          className="about-text"
+          dangerouslySetInnerHTML={{
+            __html: pageData.advance.text.replaceAll(
+              "{slug}",
+              `<span class='slug-highlight'>${slug}</span>`
+            ),
+          }}
+        />
+      </div>
+
+      <div className="col-12 col-md-5  text-center">
+        <img
+          src={pageData.advance.image}
+          alt={pageData.advance.heading}
+          className="img-fluid rounded about-img"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* SERVICES SECTION */}
       <section className="services-section bg-white py-5 text-center">
         <div className="container">
-          <h2 className="fw-bold text-dark mb-5 cinzel">
+          <h2 className="fw-bold text-dark mb-5 cinzel advance-heading">
             Our Top{" "}
             <span
               dangerouslySetInnerHTML={{ __html: pageData.hero.highlight }}
@@ -404,82 +514,76 @@ const CityPage = () => {
 
       {/* form section */}
 
-      <section style={{backgroundColor:"#F7F7F7"}} className="  py-5">
-        <div className="container-fluid px-2 px-md-5">
-          <div className="row align-items-center g-3">
+ <section style={{ backgroundColor: "#F7F7F7" }} className="py-4">
+  <div className="container-fluid px-2 px-md-5">
 
-      <h2
-                className="cinzel w-75"
-                dangerouslySetInnerHTML={{
-                  __html: pageData.form.heading.replaceAll(
-                    "{slug}",
-                    `<span class='slug-highlight'>${slug}</span>`
-                  ),
-                }}
-              />
+     <h2
+        className="cinzel w-75 text-center advance-heading mx-auto mb-4"
+        dangerouslySetInnerHTML={{
+          __html: pageData.form.heading.replaceAll(
+            "{slug}",
+            `<span class='slug-highlight'>${formatCityName(slug)}</span>`
+          ),
+        }}
+      />
+    <div className="row align-items-center">
 
-            {/* Left Content */}
-            <div className="col-md-6">
-        
-              {pageData.form.points.map((item, i) => (
-                <div key={i} className="choice-point mb-4">
-                  <h4 className="fw-semibold text-primary mb-2">
-                    {item.title}
-                  </h4>
-                  <p className="text-black">{item.desc}</p>
-                </div>
-              ))}
-            </div>
+      {/* Dynamic Heading */}
+     
 
-            {/* Right Form */}
-            <div className="col-md-6">
-              {/* <div className="contact-form-card p-4 p-md-5 shadow-lg rounded-4 bg-white">
-         <h3 className="text-center mb-4">Get In Touch With Us</h3>
-       
-          <form>
-            <div className="mb-3 text-start">
-              <input type="text" className="form-control" placeholder="Full Name" required />
-            </div>
-            <div className="mb-3 text-start">
-              <input type="email" className="form-control" placeholder="Email Address" required />
-            </div>
-            <div className="mb-3 text-start">
-              <input type="text" className="form-control" placeholder="Phone Number" required />
-            </div>
-            <div className="mb-3 text-start">
-              <textarea className="form-control" rows="4" placeholder="Your Message" required></textarea>
-            </div>
-            <button type="submit" className="btn-gradient w-100 py-2 fw-semibold">
-       Digital Duniya Mein Aayein! Submit Now!
-            </button>
-          </form>
-        </div> */}
-
-              <img
-                src={pageData.form.image}
-                alt={pageData.form.heading}
-                className="img-fluid "
-              />
-            </div>
+      {/* Left Content */}
+      <div className="col-md-6">
+        {pageData.form.points.map((item, i) => (
+          <div key={i} className="choice-point mb-4">
+            <h4
+              className="fw-semibold text-primary mb-2"
+              dangerouslySetInnerHTML={{
+                __html: item.title.replaceAll(
+                  "{slug}",
+                  `<span class='slug-highlight'>${formatCityName(slug)}</span>`
+                ),
+              }}
+            />
+            <p
+              className="text-black"
+              dangerouslySetInnerHTML={{
+                __html: item.desc.replaceAll(
+                  "{slug}",
+                  `<span class='slug-highlight'>${formatCityName(slug)}</span>`
+                ),
+              }}
+            />
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
+
+      {/* Right Image */}
+      <div className="col-md-6">
+        <img
+          src={pageData.form.image}
+          alt={pageData.form.heading}
+          className="img-fluid  mb-md-5"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* testimonials */}
 
       <Testimonials></Testimonials>
 
-    {/* FAQ SECTION */}
 {/* FAQ SECTION */}
 <section className="faq-section py-5 bg-light">
-  <div className="container">
-    <div className="row align-items-start g-5">
+  <div className="container-fluid">
+    <div className="row  ">
       {/* Left Image */}
-      <div className="col-md-5">
+      <div className="col-md-5  d-none d-md-block">
         <img
           src={faq}
           alt="FAQ section illustration"
-          className="img-fluid"
+          className="img-fluid mt-5 pt-3"
         />
       </div>
 
@@ -535,7 +639,7 @@ const CityPage = () => {
   </div>
 </section>
 
-
+<CitiesKeyword head="Explore" head2="More "></CitiesKeyword>
     </>
   );
 };
