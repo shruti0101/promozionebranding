@@ -14,12 +14,59 @@ import { CityPageData } from "../../citydata/Citydata";
 import "./CityPage.css";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
-import CitiesKeyword from "../../components/CitiesKeyword/CitiesKeyword";
+
 
 
 const CityPage = () => {
 
+ const supplycard = [
 
+  // wd
+  {
+    id: 1,
+    link: "/Web-Development-Services-In-Rajasthan",
+    label: "Web Development Services in Rajasthan",
+  },
+  {
+    id: 2,
+    link: "/Web-Development-Services-In-Uttar-Pradesh",
+    label: "Web Development Services in Uttar Pradesh",
+  },
+    {
+    id: 3,
+    link: "/Web-Development-Services-In-Gurgaon",
+    label: "Web Development Services in Gurgaon",
+  },
+
+
+    {
+    id: 4,
+    link: "/Web-Development-Services-In-Delhi-NCR",
+    label: "Web Development Services in Delhi NCR",
+  },
+// dm
+  {
+    id: 5,
+    link: "/Digital-Marketing-Services-In-Delhi-NCR",
+    label: "Digital Marketing Services in Delhi NCR",
+  },
+  {
+    id: 6,
+    link: "/Digital-Marketing-Services-In-Rajasthan",
+    label: "Digital Marketing Services in Rajasthan",
+  },
+  {
+    id: 7,
+    link: "/Digital-Marketing-Services-In-Uttar-Pradesh",
+    label: "Digital Marketing Services in Uttar Pradesh",
+  },
+
+    {
+    id: 8,
+    link: "/Digital-Marketing-Services-In-Gurgaon",
+    label: "Digital Marketing Services in Gurgaon",
+  },
+];
 
 
 const logos = [
@@ -479,7 +526,7 @@ useEffect(() => {
               },
               {
                 title: "Guaranteed SEO",
-                desc: `SEO Services in ${slug}`,
+                desc: `Our GuaranteedSEO Services in ${slug}`,
                 icon: "bi-rocket-takeoff",
                 type: "guaranteed-seo",
                 link: `/Guaranteed-SEO-Services-In-${slug}`,
@@ -639,7 +686,24 @@ useEffect(() => {
   </div>
 </section>
 
-<CitiesKeyword head="Explore" head2="More "></CitiesKeyword>
+
+   <div className="container-fluid px-4 py-5 bg-light">
+      <h2 className="fw-bold display-6 mb-4 text-center">
+     Explore Our <span className="text-primary">Other Services</span>
+      </h2>
+
+      <div className="row g-3 justify-content-center">
+        {supplycard.map(({ link, label, id }) => (
+          <div key={id} className="col-6 col-sm-4 col-md-3 ">
+            <Link to={link} className="text-decoration-none">
+              <div className="city-box text-center">
+                <span className="city-label">{label}</span>
+              </div>
+            </Link>
+          </div>
+        ))}
+      </div>
+    </div>
     </>
   );
 };
