@@ -6,8 +6,7 @@ import img4 from "../assets/citypages/dm-2.webp"
 import img5 from "../assets/citypages/advance.jpg"
 
 export const serviceLocations = [
-
-  // wd
+  // wd (existing)
   {
     id: 1,
     link: "Web-Development-Services-In-Rajasthan",
@@ -18,41 +17,712 @@ export const serviceLocations = [
     link: "Web-Development-Services-In-Uttar-Pradesh",
     label: "Web Development Services in Uttar Pradesh",
   },
-    {
+  {
     id: 3,
     link: "Web-Development-Services-In-Gurgaon",
     label: "Web Development Services in Gurgaon",
   },
-
-
-    {
+  {
     id: 4,
     link: "Web-Development-Services-In-Delhi-NCR",
     label: "Web Development Services in Delhi NCR",
   },
-// dm
-  {
-    id: 5,
-    link: "Digital-Marketing-Services-In-Delhi-NCR",
-    label: "Digital Marketing Services in Delhi NCR",
-  },
-  {
-    id: 6,
-    link: "Digital-Marketing-Services-In-Rajasthan",
-    label: "Digital Marketing Services in Rajasthan",
-  },
-  {
-    id: 7,
-    link: "Digital-Marketing-Services-In-Uttar-Pradesh",
-    label: "Digital Marketing Services in Uttar Pradesh",
-  },
 
-    {
-    id: 8,
-    link: "Digital-Marketing-Services-In-Gurgaon",
-    label: "Digital Marketing Services in Gurgaon",
-  },
+  // Auto-added cities
+  { id: 5, link: "Web-Development-Services-In-Uttarakhand", label: "Web Development Services in Uttarakhand" },
+  { id: 6, link: "Web-Development-Services-In-Bahadurgarh", label: "Web Development Services in Bahadurgarh" },
+  { id: 7, link: "Web-Development-Services-In-Bengaluru", label: "Web Development Services in Bengaluru" },
+  { id: 8, link: "Web-Development-Services-In-Bhiwadi", label: "Web Development Services in Bhiwadi" },
+  { id: 9, link: "Web-Development-Services-In-Bhopal", label: "Web Development Services in Bhopal" },
+  { id: 10, link: "Web-Development-Services-In-Bhubaneswar", label: "Web Development Services in Bhubaneswar" },
+  { id: 11, link: "Web-Development-Services-In-Bihar", label: "Web Development Services in Bihar" },
+  { id: 12, link: "Web-Development-Services-In-Chandigarh", label: "Web Development Services in Chandigarh" },
+  { id: 13, link: "Web-Development-Services-In-Chennai", label: "Web Development Services in Chennai" },
+  { id: 14, link: "Web-Development-Services-In-Chhattisgarh", label: "Web Development Services in Chhattisgarh" },
+  { id: 15, link: "Web-Development-Services-In-Daman", label: "Web Development Services in Daman" },
+  { id: 16, link: "Web-Development-Services-In-Dehradun", label: "Web Development Services in Dehradun" },
+  { id: 17, link: "Web-Development-Services-In-Delhi", label: "Web Development Services in Delhi" },
+  { id: 18, link: "Web-Development-Services-In-Gandhinagar", label: "Web Development Services in Gandhinagar" },
+  { id: 19, link: "Web-Development-Services-In-Ghaziabad", label: "Web Development Services in Ghaziabad" },
+  { id: 20, link: "Web-Development-Services-In-Goa", label: "Web Development Services in Goa" },
+  { id: 21, link: "Web-Development-Services-In-Greater-Noida", label: "Web Development Services in Greater Noida" },
+  { id: 22, link: "Web-Development-Services-In-Gujarat", label: "Web Development Services in Gujarat" },
+  { id: 23, link: "Web-Development-Services-In-Gurgaon", label: "Web Development Services in Gurgaon" },
+  { id: 24, link: "Web-Development-Services-In-Guwahati", label: "Web Development Services in Guwahati" },
+  { id: 25, link: "Web-Development-Services-In-Gwalior", label: "Web Development Services in Gwalior" },
+  { id: 26, link: "Web-Development-Services-In-Haridwar", label: "Web Development Services in Haridwar" },
+  { id: 27, link: "Web-Development-Services-In-Haryana", label: "Web Development Services in Haryana" },
+  { id: 28, link: "Web-Development-Services-In-Himachal-Pradesh", label: "Web Development Services in Himachal Pradesh" },
+  { id: 29, link: "Web-Development-Services-In-Hyderabad", label: "Web Development Services in Hyderabad" },
+  { id: 30, link: "Web-Development-Services-In-Indore", label: "Web Development Services in Indore" },
+  { id: 31, link: "Web-Development-Services-In-Jaipur", label: "Web Development Services in Jaipur" },
+  { id: 32, link: "Web-Development-Services-In-Jammu-And-Kashmir", label: "Web Development Services in Jammu & Kashmir" },
+  { id: 33, link: "Web-Development-Services-In-Jharkhand", label: "Web Development Services in Jharkhand" },
+  { id: 34, link: "Web-Development-Services-In-Kanpur", label: "Web Development Services in Kanpur" },
+  { id: 35, link: "Web-Development-Services-In-Karnataka", label: "Web Development Services in Karnataka" },
+  { id: 36, link: "Web-Development-Services-In-Kerala", label: "Web Development Services in Kerala" },
+  { id: 37, link: "Web-Development-Services-In-Kolkata", label: "Web Development Services in Kolkata" },
+  { id: 38, link: "Web-Development-Services-In-Kundli", label: "Web Development Services in Kundli" },
+  { id: 39, link: "Web-Development-Services-In-Leh", label: "Web Development Services in Leh" },
+  { id: 40, link: "Web-Development-Services-In-Lucknow", label: "Web Development Services in Lucknow" },
+  { id: 41, link: "Web-Development-Services-In-Ludhiana", label: "Web Development Services in Ludhiana" },
+  { id: 42, link: "Web-Development-Services-In-Madhya-Pradesh", label: "Web Development Services in Madhya Pradesh" },
+  { id: 43, link: "Web-Development-Services-In-Maharashtra", label: "Web Development Services in Maharashtra" },
+  { id: 44, link: "Web-Development-Services-In-Manali", label: "Web Development Services in Manali" },
+  { id: 45, link: "Web-Development-Services-In-Manesar", label: "Web Development Services in Manesar" },
+  { id: 46, link: "Web-Development-Services-In-Mathura", label: "Web Development Services in Mathura" },
+  { id: 47, link: "Web-Development-Services-In-Meerut", label: "Web Development Services in Meerut" },
+  { id: 48, link: "Web-Development-Services-In-Mumbai", label: "Web Development Services in Mumbai" },
+  { id: 49, link: "Web-Development-Services-In-Nagpur", label: "Web Development Services in Nagpur" },
+  { id: 50, link: "Web-Development-Services-In-Noida", label: "Web Development Services in Noida" },
+  { id: 51, link: "Web-Development-Services-In-Orissa", label: "Web Development Services in Orissa" },
+  { id: 52, link: "Web-Development-Services-In-Panipat", label: "Web Development Services in Panipat" },
+  { id: 53, link: "Web-Development-Services-In-Patna", label: "Web Development Services in Patna" },
+  { id: 54, link: "Web-Development-Services-In-Pune", label: "Web Development Services in Pune" },
+  { id: 55, link: "Web-Development-Services-In-Punjab", label: "Web Development Services in Punjab" },
+  { id: 56, link: "Web-Development-Services-In-Raipur", label: "Web Development Services in Raipur" },
+  { id: 57, link: "Web-Development-Services-In-Rajasthan", label: "Web Development Services in Rajasthan" },
+  { id: 58, link: "Web-Development-Services-In-Ranchi", label: "Web Development Services in Ranchi" },
+  { id: 59, link: "Web-Development-Services-In-Rohtak", label: "Web Development Services in Rohtak" },
+  { id: 60, link: "Web-Development-Services-In-Roorkee", label: "Web Development Services in Roorkee" },
+  { id: 61, link: "Web-Development-Services-In-Rudrapur", label: "Web Development Services in Rudrapur" },
+  { id: 62, link: "Web-Development-Services-In-Shimla", label: "Web Development Services in Shimla" },
+  { id: 63, link: "Web-Development-Services-In-Sikkim", label: "Web Development Services in Sikkim" },
+  { id: 64, link: "Web-Development-Services-In-Sonipat", label: "Web Development Services in Sonipat" },
+  { id: 65, link: "Web-Development-Services-In-Srinagar", label: "Web Development Services in Srinagar" },
+  { id: 66, link: "Web-Development-Services-In-Tamil-Nadu", label: "Web Development Services in Tamil Nadu" },
+  { id: 67, link: "Web-Development-Services-In-Telangana", label: "Web Development Services in Telangana" },
+  { id: 68, link: "Web-Development-Services-In-Thiruvananthapuram", label: "Web Development Services in Thiruvananthapuram" },
+  { id: 69, link: "Web-Development-Services-In-Uttar-Pradesh", label: "Web Development Services in Uttar Pradesh" },
+  { id: 70, link: "Web-Development-Services-In-Uttaranchal", label: "Web Development Services in Uttaranchal" },
+  { id: 71, link: "Web-Development-Services-In-West-Bengal", label: "Web Development Services in West Bengal" },
+  { id: 72, link: "Web-Development-Services-In-Ayodhya", label: "Web Development Services in Ayodhya" },
+  { id: 73, link: "Web-Development-Services-In-Haora", label: "Web Development Services in Haora" },
+  { id: 74, link: "Web-Development-Services-In-Hugli", label: "Web Development Services in Hugli" },
+  { id: 75, link: "Web-Development-Services-In-Nadia", label: "Web Development Services in Nadia" },
+  { id: 76, link: "Web-Development-Services-In-Murshidabad", label: "Web Development Services in Murshidabad" },
+  { id: 77, link: "Web-Development-Services-In-Faridabad", label: "Web Development Services in Faridabad" },
+  { id: 78, link: "Web-Development-Services-In-Bhiwani", label: "Web Development Services in Bhiwani" },
+  { id: 79, link: "Web-Development-Services-In-Sirsa", label: "Web Development Services in Sirsa" },
+  { id: 80, link: "Web-Development-Services-In-Jind", label: "Web Development Services in Jind" },
+  { id: 81, link: "Web-Development-Services-In-Yamuna-Nagar", label: "Web Development Services in Yamuna Nagar" },
+  { id: 82, link: "Web-Development-Services-In-Karnal", label: "Web Development Services in Karnal" },
+  { id: 83, link: "Web-Development-Services-In-Kurukshetra", label: "Web Development Services in Kurukshetra" },
+  { id: 84, link: "Web-Development-Services-In-Ambala", label: "Web Development Services in Ambala" },
+  { id: 85, link: "Web-Development-Services-In-Jhajjar", label: "Web Development Services in Jhajjar" },
+  { id: 86, link: "Web-Development-Services-In-Rewari", label: "Web Development Services in Rewari" },
+  { id: 87, link: "Web-Development-Services-In-Punchkula", label: "Web Development Services in Punchkula" },
+  { id: 88, link: "Web-Development-Services-In-Mohali", label: "Web Development Services in Mohali" },
+  { id: 89, link: "Web-Development-Services-In-Kapurthala", label: "Web Development Services in Kapurthala" },
+  { id: 90, link: "Web-Development-Services-In-Patiala", label: "Web Development Services in Patiala" },
+  { id: 91, link: "Web-Development-Services-In-Bhatinda", label: "Web Development Services in Bhatinda" },
+  { id: 92, link: "Web-Development-Services-In-Hoshiyarpur", label: "Web Development Services in Hoshiyarpur" },
+  { id: 93, link: "Web-Development-Services-In-Gurdaspur", label: "Web Development Services in Gurdaspur" },
+  { id: 94, link: "Web-Development-Services-In-Allahabad", label: "Web Development Services in Allahabad" },
+  { id: 95, link: "Web-Development-Services-In-Moradabad", label: "Web Development Services in Moradabad" },
+  { id: 96, link: "Web-Development-Services-In-Bareilly", label: "Web Development Services in Bareilly" },
+  { id: 97, link: "Web-Development-Services-In-Hardoi", label: "Web Development Services in Hardoi" },
+  { id: 98, link: "Web-Development-Services-In-Varanasi", label: "Web Development Services in Varanasi" },
+  { id: 99, link: "Web-Development-Services-In-Aligarh", label: "Web Development Services in Aligarh" },
+  { id: 100, link: "Web-Development-Services-In-Bulandshahar", label: "Web Development Services in Bulandshahar" },
+  { id: 101, link: "Web-Development-Services-In-Shahjahanpur", label: "Web Development Services in Shahjahanpur" },
+  { id: 102, link: "Web-Development-Services-In-Jhansi", label: "Web Development Services in Jhansi" },
+  { id: 103, link: "Web-Development-Services-In-Alwar", label: "Web Development Services in Alwar" },
+  { id: 104, link: "Web-Development-Services-In-Ajmer", label: "Web Development Services in Ajmer" },
+  { id: 105, link: "Web-Development-Services-In-Kota", label: "Web Development Services in Kota" },
+  { id: 106, link: "Web-Development-Services-In-Bikaner", label: "Web Development Services in Bikaner" },
+  { id: 107, link: "Web-Development-Services-In-Jodhpur", label: "Web Development Services in Jodhpur" },
+  { id: 108, link: "Web-Development-Services-In-Surat", label: "Web Development Services in Surat" },
+  { id: 109, link: "Web-Development-Services-In-Vadodra", label: "Web Development Services in Vadodra" },
+  { id: 110, link: "Web-Development-Services-In-Rajkot", label: "Web Development Services in Rajkot" },
+  { id: 111, link: "Web-Development-Services-In-Muzaffarpur", label: "Web Development Services in Muzaffarpur" },
+  { id: 112, link: "Web-Development-Services-In-Madurai", label: "Web Development Services in Madurai" },
+  { id: 113, link: "Web-Development-Services-In-Puducherry", label: "Web Development Services in Puducherry" },
+  { id: 114, link: "Web-Development-Services-In-Faizabad", label: "Web Development Services in Faizabad" },
+
+  // dm
+  // DIGITAL MARKETING SERVICES (Starting after id: 114)
+
+{
+  id: 115,
+  link: "Digital-Marketing-Services-In-Uttarakhand",
+  label: "Digital Marketing Services in Uttarakhand",
+},
+{
+  id: 116,
+  link: "Digital-Marketing-Services-In-Bahadurgarh",
+  label: "Digital Marketing Services in Bahadurgarh",
+},
+{
+  id: 117,
+  link: "Digital-Marketing-Services-In-Bengaluru",
+  label: "Digital Marketing Services in Bengaluru",
+},
+{
+  id: 118,
+  link: "Digital-Marketing-Services-In-Bhiwadi",
+  label: "Digital Marketing Services in Bhiwadi",
+},
+{
+  id: 119,
+  link: "Digital-Marketing-Services-In-Bhopal",
+  label: "Digital Marketing Services in Bhopal",
+},
+{
+  id: 120,
+  link: "Digital-Marketing-Services-In-Bhubaneswar",
+  label: "Digital Marketing Services in Bhubaneswar",
+},
+{
+  id: 121,
+  link: "Digital-Marketing-Services-In-Bihar",
+  label: "Digital Marketing Services in Bihar",
+},
+{
+  id: 122,
+  link: "Digital-Marketing-Services-In-Chandigarh",
+  label: "Digital Marketing Services in Chandigarh",
+},
+{
+  id: 123,
+  link: "Digital-Marketing-Services-In-Chennai",
+  label: "Digital Marketing Services in Chennai",
+},
+{
+  id: 124,
+  link: "Digital-Marketing-Services-In-Chhattisgarh",
+  label: "Digital Marketing Services in Chhattisgarh",
+},
+{
+  id: 125,
+  link: "Digital-Marketing-Services-In-Daman",
+  label: "Digital Marketing Services in Daman",
+},
+{
+  id: 126,
+  link: "Digital-Marketing-Services-In-Dehradun",
+  label: "Digital Marketing Services in Dehradun",
+},
+{
+  id: 127,
+  link: "Digital-Marketing-Services-In-Delhi",
+  label: "Digital Marketing Services in Delhi",
+},
+{
+  id: 128,
+  link: "Digital-Marketing-Services-In-Gandhinagar",
+  label: "Digital Marketing Services in Gandhinagar",
+},
+{
+  id: 129,
+  link: "Digital-Marketing-Services-In-Ghaziabad",
+  label: "Digital Marketing Services in Ghaziabad",
+},
+{
+  id: 130,
+  link: "Digital-Marketing-Services-In-Goa",
+  label: "Digital Marketing Services in Goa",
+},
+{
+  id: 131,
+  link: "Digital-Marketing-Services-In-Greater-Noida",
+  label: "Digital Marketing Services in Greater Noida",
+},
+{
+  id: 132,
+  link: "Digital-Marketing-Services-In-Gujarat",
+  label: "Digital Marketing Services in Gujarat",
+},
+{
+  id: 133,
+  link: "Digital-Marketing-Services-In-Gurgaon",
+  label: "Digital Marketing Services in Gurgaon",
+},
+{
+  id: 134,
+  link: "Digital-Marketing-Services-In-Guwahati",
+  label: "Digital Marketing Services in Guwahati",
+},
+{
+  id: 135,
+  link: "Digital-Marketing-Services-In-Gwalior",
+  label: "Digital Marketing Services in Gwalior",
+},
+{
+  id: 136,
+  link: "Digital-Marketing-Services-In-Haridwar",
+  label: "Digital Marketing Services in Haridwar",
+},
+{
+  id: 137,
+  link: "Digital-Marketing-Services-In-Haryana",
+  label: "Digital Marketing Services in Haryana",
+},
+{
+  id: 138,
+  link: "Digital-Marketing-Services-In-Himachal-Pradesh",
+  label: "Digital Marketing Services in Himachal Pradesh",
+},
+{
+  id: 139,
+  link: "Digital-Marketing-Services-In-Hyderabad",
+  label: "Digital Marketing Services in Hyderabad",
+},
+{
+  id: 140,
+  link: "Digital-Marketing-Services-In-Indore",
+  label: "Digital Marketing Services in Indore",
+},
+{
+  id: 141,
+  link: "Digital-Marketing-Services-In-Jaipur",
+  label: "Digital Marketing Services in Jaipur",
+},
+{
+  id: 142,
+  link: "Digital-Marketing-Services-In-Jammu-And-Kashmir",
+  label: "Digital Marketing Services in Jammu & Kashmir",
+},
+{
+  id: 143,
+  link: "Digital-Marketing-Services-In-Jharkhand",
+  label: "Digital Marketing Services in Jharkhand",
+},
+{
+  id: 144,
+  link: "Digital-Marketing-Services-In-Kanpur",
+  label: "Digital Marketing Services in Kanpur",
+},
+{
+  id: 145,
+  link: "Digital-Marketing-Services-In-Karnataka",
+  label: "Digital Marketing Services in Karnataka",
+},
+{
+  id: 146,
+  link: "Digital-Marketing-Services-In-Kerala",
+  label: "Digital Marketing Services in Kerala",
+},
+{
+  id: 147,
+  link: "Digital-Marketing-Services-In-Kolkata",
+  label: "Digital Marketing Services in Kolkata",
+},
+{
+  id: 148,
+  link: "Digital-Marketing-Services-In-Kundli",
+  label: "Digital Marketing Services in Kundli",
+},
+{
+  id: 149,
+  link: "Digital-Marketing-Services-In-Leh",
+  label: "Digital Marketing Services in Leh",
+},
+{
+  id: 150,
+  link: "Digital-Marketing-Services-In-Lucknow",
+  label: "Digital Marketing Services in Lucknow",
+},
+{
+  id: 151,
+  link: "Digital-Marketing-Services-In-Ludhiana",
+  label: "Digital Marketing Services in Ludhiana",
+},
+{
+  id: 152,
+  link: "Digital-Marketing-Services-In-Madhya-Pradesh",
+  label: "Digital Marketing Services in Madhya Pradesh",
+},
+{
+  id: 153,
+  link: "Digital-Marketing-Services-In-Maharashtra",
+  label: "Digital Marketing Services in Maharashtra",
+},
+{
+  id: 154,
+  link: "Digital-Marketing-Services-In-Manali",
+  label: "Digital Marketing Services in Manali",
+},
+{
+  id: 155,
+  link: "Digital-Marketing-Services-In-Manesar",
+  label: "Digital Marketing Services in Manesar",
+},
+{
+  id: 156,
+  link: "Digital-Marketing-Services-In-Mathura",
+  label: "Digital Marketing Services in Mathura",
+},
+{
+  id: 157,
+  link: "Digital-Marketing-Services-In-Meerut",
+  label: "Digital Marketing Services in Meerut",
+},
+{
+  id: 158,
+  link: "Digital-Marketing-Services-In-Mumbai",
+  label: "Digital Marketing Services in Mumbai",
+},
+{
+  id: 159,
+  link: "Digital-Marketing-Services-In-Nagpur",
+  label: "Digital Marketing Services in Nagpur",
+},
+{
+  id: 160,
+  link: "Digital-Marketing-Services-In-Noida",
+  label: "Digital Marketing Services in Noida",
+},
+{
+  id: 161,
+  link: "Digital-Marketing-Services-In-Orissa",
+  label: "Digital Marketing Services in Orissa",
+},
+{
+  id: 162,
+  link: "Digital-Marketing-Services-In-Panipat",
+  label: "Digital Marketing Services in Panipat",
+},
+{
+  id: 163,
+  link: "Digital-Marketing-Services-In-Patna",
+  label: "Digital Marketing Services in Patna",
+},
+{
+  id: 164,
+  link: "Digital-Marketing-Services-In-Pune",
+  label: "Digital Marketing Services in Pune",
+},
+{
+  id: 165,
+  link: "Digital-Marketing-Services-In-Punjab",
+  label: "Digital Marketing Services in Punjab",
+},
+{
+  id: 166,
+  link: "Digital-Marketing-Services-In-Raipur",
+  label: "Digital Marketing Services in Raipur",
+},
+{
+  id: 167,
+  link: "Digital-Marketing-Services-In-Rajasthan",
+  label: "Digital Marketing Services in Rajasthan",
+},
+{
+  id: 168,
+  link: "Digital-Marketing-Services-In-Ranchi",
+  label: "Digital Marketing Services in Ranchi",
+},
+{
+  id: 169,
+  link: "Digital-Marketing-Services-In-Rohtak",
+  label: "Digital Marketing Services in Rohtak",
+},
+{
+  id: 170,
+  link: "Digital-Marketing-Services-In-Roorkee",
+  label: "Digital Marketing Services in Roorkee",
+},
+{
+  id: 171,
+  link: "Digital-Marketing-Services-In-Rudrapur",
+  label: "Digital Marketing Services in Rudrapur",
+},
+{
+  id: 172,
+  link: "Digital-Marketing-Services-In-Shimla",
+  label: "Digital Marketing Services in Shimla",
+},
+{
+  id: 173,
+  link: "Digital-Marketing-Services-In-Sikkim",
+  label: "Digital Marketing Services in Sikkim",
+},
+{
+  id: 174,
+  link: "Digital-Marketing-Services-In-Sonipat",
+  label: "Digital Marketing Services in Sonipat",
+},
+{
+  id: 175,
+  link: "Digital-Marketing-Services-In-Srinagar",
+  label: "Digital Marketing Services in Srinagar",
+},
+{
+  id: 176,
+  link: "Digital-Marketing-Services-In-Tamil-Nadu",
+  label: "Digital Marketing Services in Tamil Nadu",
+},
+{
+  id: 177,
+  link: "Digital-Marketing-Services-In-Telangana",
+  label: "Digital Marketing Services in Telangana",
+},
+{
+  id: 178,
+  link: "Digital-Marketing-Services-In-Thiruvananthapuram",
+  label: "Digital Marketing Services in Thiruvananthapuram",
+},
+{
+  id: 179,
+  link: "Digital-Marketing-Services-In-Uttar-Pradesh",
+  label: "Digital Marketing Services in Uttar Pradesh",
+},
+{
+  id: 180,
+  link: "Digital-Marketing-Services-In-Uttaranchal",
+  label: "Digital Marketing Services in Uttaranchal",
+},
+{
+  id: 181,
+  link: "Digital-Marketing-Services-In-West-Bengal",
+  label: "Digital Marketing Services in West Bengal",
+},
+{
+  id: 182,
+  link: "Digital-Marketing-Services-In-Ayodhya",
+  label: "Digital Marketing Services in Ayodhya",
+},
+{
+  id: 183,
+  link: "Digital-Marketing-Services-In-Haora",
+  label: "Digital Marketing Services in Haora",
+},
+{
+  id: 184,
+  link: "Digital-Marketing-Services-In-Hugli",
+  label: "Digital Marketing Services in Hugli",
+},
+{
+  id: 185,
+  link: "Digital-Marketing-Services-In-Nadia",
+  label: "Digital Marketing Services in Nadia",
+},
+{
+  id: 186,
+  link: "Digital-Marketing-Services-In-Murshidabad",
+  label: "Digital Marketing Services in Murshidabad",
+},
+{
+  id: 187,
+  link: "Digital-Marketing-Services-In-Faridabad",
+  label: "Digital Marketing Services in Faridabad",
+},
+{
+  id: 188,
+  link: "Digital-Marketing-Services-In-Bhiwani",
+  label: "Digital Marketing Services in Bhiwani",
+},
+{
+  id: 189,
+  link: "Digital-Marketing-Services-In-Sirsa",
+  label: "Digital Marketing Services in Sirsa",
+},
+{
+  id: 190,
+  link: "Digital-Marketing-Services-In-Jind",
+  label: "Digital Marketing Services in Jind",
+},
+{
+  id: 191,
+  link: "Digital-Marketing-Services-In-Yamuna-Nagar",
+  label: "Digital Marketing Services in Yamuna Nagar",
+},
+{
+  id: 192,
+  link: "Digital-Marketing-Services-In-Karnal",
+  label: "Digital Marketing Services in Karnal",
+},
+{
+  id: 193,
+  link: "Digital-Marketing-Services-In-Kurukshetra",
+  label: "Digital Marketing Services in Kurukshetra",
+},
+{
+  id: 194,
+  link: "Digital-Marketing-Services-In-Ambala",
+  label: "Digital Marketing Services in Ambala",
+},
+{
+  id: 195,
+  link: "Digital-Marketing-Services-In-Jhajjar",
+  label: "Digital Marketing Services in Jhajjar",
+},
+{
+  id: 196,
+  link: "Digital-Marketing-Services-In-Rewari",
+  label: "Digital Marketing Services in Rewari",
+},
+{
+  id: 197,
+  link: "Digital-Marketing-Services-In-Punchkula",
+  label: "Digital Marketing Services in Punchkula",
+},
+{
+  id: 198,
+  link: "Digital-Marketing-Services-In-Mohali",
+  label: "Digital Marketing Services in Mohali",
+},
+{
+  id: 199,
+  link: "Digital-Marketing-Services-In-Kapurthala",
+  label: "Digital Marketing Services in Kapurthala",
+},
+{
+  id: 200,
+  link: "Digital-Marketing-Services-In-Patiala",
+  label: "Digital Marketing Services in Patiala",
+},
+{
+  id: 201,
+  link: "Digital-Marketing-Services-In-Bhatinda",
+  label: "Digital Marketing Services in Bhatinda",
+},
+{
+  id: 202,
+  link: "Digital-Marketing-Services-In-Hoshiyarpur",
+  label: "Digital Marketing Services in Hoshiyarpur",
+},
+{
+  id: 203,
+  link: "Digital-Marketing-Services-In-Gurdaspur",
+  label: "Digital Marketing Services in Gurdaspur",
+},
+{
+  id: 204,
+  link: "Digital-Marketing-Services-In-Allahabad",
+  label: "Digital Marketing Services in Allahabad",
+},
+{
+  id: 205,
+  link: "Digital-Marketing-Services-In-Moradabad",
+  label: "Digital Marketing Services in Moradabad",
+},
+{
+  id: 206,
+  link: "Digital-Marketing-Services-In-Bareilly",
+  label: "Digital Marketing Services in Bareilly",
+},
+{
+  id: 207,
+  link: "Digital-Marketing-Services-In-Hardoi",
+  label: "Digital Marketing Services in Hardoi",
+},
+{
+  id: 208,
+  link: "Digital-Marketing-Services-In-Varanasi",
+  label: "Digital Marketing Services in Varanasi",
+},
+{
+  id: 209,
+  link: "Digital-Marketing-Services-In-Aligarh",
+  label: "Digital Marketing Services in Aligarh",
+},
+{
+  id: 210,
+  link: "Digital-Marketing-Services-In-Bulandshahar",
+  label: "Digital Marketing Services in Bulandshahar",
+},
+{
+  id: 211,
+  link: "Digital-Marketing-Services-In-Shahjahanpur",
+  label: "Digital Marketing Services in Shahjahanpur",
+},
+{
+  id: 212,
+  link: "Digital-Marketing-Services-In-Jhansi",
+  label: "Digital Marketing Services in Jhansi",
+},
+{
+  id: 213,
+  link: "Digital-Marketing-Services-In-Alwar",
+  label: "Digital Marketing Services in Alwar",
+},
+{
+  id: 214,
+  link: "Digital-Marketing-Services-In-Ajmer",
+  label: "Digital Marketing Services in Ajmer",
+},
+{
+  id: 215,
+  link: "Digital-Marketing-Services-In-Kota",
+  label: "Digital Marketing Services in Kota",
+},
+{
+  id: 216,
+  link: "Digital-Marketing-Services-In-Bikaner",
+  label: "Digital Marketing Services in Bikaner",
+},
+{
+  id: 217,
+  link: "Digital-Marketing-Services-In-Jodhpur",
+  label: "Digital Marketing Services in Jodhpur",
+},
+{
+  id: 218,
+  link: "Digital-Marketing-Services-In-Surat",
+  label: "Digital Marketing Services in Surat",
+},
+{
+  id: 219,
+  link: "Digital-Marketing-Services-In-Vadodra",
+  label: "Digital Marketing Services in Vadodra",
+},
+{
+  id: 220,
+  link: "Digital-Marketing-Services-In-Rajkot",
+  label: "Digital Marketing Services in Rajkot",
+},
+{
+  id: 221,
+  link: "Digital-Marketing-Services-In-Muzaffarpur",
+  label: "Digital Marketing Services in Muzaffarpur",
+},
+{
+  id: 222,
+  link: "Digital-Marketing-Services-In-Madurai",
+  label: "Digital Marketing Services in Madurai",
+},
+{
+  id: 223,
+  link: "Digital-Marketing-Services-In-Puducherry",
+  label: "Digital Marketing Services in Puducherry",
+},
+{
+  id: 224,
+  link: "Digital-Marketing-Services-In-Faizabad",
+  label: "Digital Marketing Services in Faizabad",
+},
+
+
+
 ];
+
+
+
+
+
+// {
+//   id: 5,
+//   link: "Digital-Marketing-Services-In-Delhi-NCR",
+//   label: "Digital Marketing Services in Delhi NCR",
+// },
+// {
+//   id: 6,
+//   link: "Digital-Marketing-Services-In-Rajasthan",
+//   label: "Digital Marketing Services in Rajasthan",
+// },
+// {
+//   id: 7,
+//   link: "Digital-Marketing-Services-In-Uttar-Pradesh",
+//   label: "Digital Marketing Services in Uttar Pradesh",
+// },
+
+//   {
+//   id: 8,
+//   link: "Digital-Marketing-Services-In-Gurgaon",
+//   label: "Digital Marketing Services in Gurgaon",
+// },
 
 
 // src/data/CityPageData.js

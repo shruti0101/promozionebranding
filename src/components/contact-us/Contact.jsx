@@ -1,48 +1,51 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import underline from "../../assets/contact/underline-effect.webp";
 import "./Contact.css";
 import { toast } from "react-toastify";
 import { Helmet } from "react-helmet";
+import emailjs from "@emailjs/browser";
+
+
 export default function ContactSection() {
   const formRef = useRef();
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (e) => {
+  
+  const handleSubmit = (e) => {
     e.preventDefault();
-    const form = formRef.current;
-    const formData = new FormData(form);
-    const jsonData = {};
-    formData.forEach((value, key) => {
-      jsonData[key] = value;
-    });
+    setLoading(true);
 
-    try {
-      const response = await fetch("https://sheetdb.io/api/v1/egouqlsjl6c1a", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ data: jsonData }),
-      });
-
-      if (response.ok) {
-        toast.success("Proposal submitted successfully!");
-        form.reset();
-      } else {
-        toast.error("Something went wrong. Please try again.");
-      }
-    } catch (error) {
-      toast.error("Failed to connect. Please check your internet.");
-    }
+    emailjs
+      .sendForm(
+        "service_qsdjzek",      
+        "template_3x55moo",    
+        formRef.current,
+        "G5zhdkjqP6NE4mqks"       
+      )
+      .then(
+        () => {
+          toast.success("Proposal submitted successfully!");
+          formRef.current.reset();
+          setLoading(false);
+        },
+        (error) => {
+          toast.error("Failed to send. Please try again.");
+          setLoading(false);
+        }
+      );
   };
 
   return (
     <>
-<Helmet>
-  <title>Contact Promozione Branding | Digital Marketing Experts Ready to Help</title>
-  <meta
-    name="description"
-    content="Get in touch with Promozione Branding for expert digital marketing support. Quick response guaranteed. Connect via form, email, phone, or social media today."
-  />
-</Helmet>
-
+      <Helmet>
+        <title>
+          Contact Promozione Branding | Digital Marketing Experts Ready to Help
+        </title>
+        <meta
+          name="description"
+          content="Get in touch with Promozione Branding for expert digital marketing support. Quick response guaranteed. Connect via form, email, phone, or social media today."
+        />
+      </Helmet>
 
       <section className="py-5 custom-bg-blue">
         <div className="text-center px-3 position-relative mb-5">
@@ -72,71 +75,79 @@ export default function ContactSection() {
             <div className="col-lg-6">
               <div className="bg-white rounded-4 shadow p-4 p-md-5 h-100">
                 <h2 className="fw-bold mb-4">Request a FREE Proposal Now!</h2>
+
                 <form ref={formRef} onSubmit={handleSubmit}>
                   <div className="row g-3">
                     <div className="col-md-12">
-                      <label className="form-label">
-                        First and Last Name *
-                      </label>
+                      <label className="form-label">First and Last Name *</label>
                       <input
                         type="text"
-                        name="Name"
+                        name="name"
                         className="form-control"
                         required
                       />
                     </div>
+
                     <div className="col-md-12">
                       <label className="form-label">Work Email Address *</label>
                       <input
                         type="email"
-                        name="Email"
+                        name="email"
                         className="form-control"
                         required
                       />
                     </div>
+
+                        <div className="col-md-12">
+                      <label className="form-label">Phone Number *</label>
+                      <input
+                        type="tel"
+                        name="number"
+                        maxLength={10}
+                        minLength={10}
+                        pattern="[0-9]{10}"
+                        className="form-control"
+                        required
+                      />
+                    </div>
+
+
                     <div className="col-md-12">
                       <label className="form-label">Company *</label>
                       <input
                         type="text"
-                        name="Company"
+                        name="company"
                         className="form-control"
                         required
                       />
                     </div>
+
+                
                     <div className="col-md-12">
-                      <label className="form-label">Phone Number *</label>
-                      <input
-                        type="tel"
-                        name="Phone"
-                        className="form-control"
-                        required
-                      />
-                    </div>
-                    <div className="col-md-12">
-                      <label className="form-label">Website Link </label>
+                      <label className="form-label">Website Link</label>
                       <input
                         type="text"
-                        name="WebsiteLink"
+                        name="websitelink"
                         className="form-control"
                       />
                     </div>
 
                     <div className="col-12">
-                      <label className="form-label">
-                        Comments or Questions
-                      </label>
+                      <label className="form-label">Comments or Questions</label>
                       <textarea
-                        name="Message"
+                        name="message"
                         rows="4"
                         className="form-control"
                       />
                     </div>
+
                     <div className="col-12">
                       <button
                         type="submit"
                         className="btn btn-primary py-2 w-100 fw-bold"
+                        disabled={loading}
                       >
-                        Get My Free Proposal
+                        {loading ? "Submitting..." : "Get My Free Proposal"}
                       </button>
                     </div>
                   </div>
@@ -161,8 +172,7 @@ export default function ContactSection() {
                       <strong>Get to know your business</strong>
                       <br />
                       From our first conversation, we begin researching your
-                      business, competitors, and industry. We’ll audit your site
-                      to craft a fully customized proposal.
+                      business, competitors, and industry.
                     </div>
                   </li>
                   <li className="mb-4 d-flex align-items-start">
@@ -170,9 +180,8 @@ export default function ContactSection() {
                     <div>
                       <strong>Put together your flight plan</strong>
                       <br />
-                      Based on research, your strategist will compile
-                      personalized recommendations for how your business can
-                      drive more revenue online.
+                      Based on research, your strategist will compile tailored
+                      recommendations.
                     </div>
                   </li>
                   <li className="d-flex align-items-start">
@@ -180,8 +189,8 @@ export default function ContactSection() {
                     <div>
                       <strong>Prepare for takeoff</strong>
                       <br />
-                      Your plan includes pricing, timelines, partnership
-                      details, and growth strategies.
+                      Your custom plan includes pricing, timelines, and growth
+                      strategy.
                     </div>
                   </li>
                 </ul>
