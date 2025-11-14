@@ -4,7 +4,7 @@ import "./CitiesKeyword.css";
 
 const CitiesKeyword = () => {
   return (
-    <div className=" container-fluid px-4 py-5 bg-light">
+    <div className="d-none container-fluid px-4 py-5 bg-light">
       <h2 className="fw-bold display-6 mb-4 text-center">
      Our <span className="text-primary"> Services</span>
       </h2>
