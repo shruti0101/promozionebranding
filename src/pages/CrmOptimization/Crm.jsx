@@ -4,7 +4,7 @@ import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
 import ctaImage from "../../assets/ctaweb.webp";
 import Process from "../Process/Process";
-import { Helmet } from "react-helmet";
+import SEO from "../../components/helmet/Helmet";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -171,13 +171,11 @@ const Crm = () => {
     <>
 
 
-<Helmet>
-  <title>CRM Optimization Services & Boost ROI & Customer Satisfactions</title>
-  <meta
-    name="description"
-    content="Discover CRM Optimization Services to Predict Sales and Optimize usage. Leverage Customer Relationship Management (CRM) technology to increase your sales"
-  />
-</Helmet>
+  <SEO
+        title="crm optimizations services in delhi|crm optimizations agency in delhi"
+        description="Promozione Branding is crm optimizations agency in Delhi,Expert CRM optimization services in Delhi to improve customer engagement, streamline workflows, and boost sales performance with smarter automation."
+      />
+
 
       <Tiltcard
         heading="CRM Optimization Services – Boost Sales, Streamline Operations & Grow Smarter

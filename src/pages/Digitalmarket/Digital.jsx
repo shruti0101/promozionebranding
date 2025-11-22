@@ -4,7 +4,6 @@ import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
 import ctaImage from "../../assets/ctaweb.webp";
 import Process from "../Process/Process";
-import { FaCheckCircle } from "react-icons/fa";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -13,7 +12,7 @@ import crm2 from "../../assets/services/crm1.webp";
 import VanillaTilt from "vanilla-tilt";
 import WhyChoose from "../WHYCHOOSE/WhyChoose";
 import digital2 from "../../assets/services/digital2.webp";
-import { Helmet } from "react-helmet";
+import SEO from "../../components/helmet/Helmet";
 const Digital = () => {
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
@@ -168,14 +167,11 @@ const Digital = () => {
   return (
     <>
 
+  <SEO
+        title="digital marketing services in delhi|digital marketing agency in delhi"
+        description="Promozione Branding is ai digital marketing agency,Professional digital marketing services to boost brand visibility, drive targeted traffic, and increase sales with proven online strategies."
+      />
 
-<Helmet>
-  <title>Best Performance Driven Digital Marketing Agency in India</title>
-  <meta
-    name="description"
-    content="Elevate your brand with our comprehensive digital marketing services. Drive traffic and conversions. Contact us for a tailored strategy today!"
-  />
-</Helmet>
       <Tiltcard
         heading=" Digital Marketing Services in India – Drive Growth, Not Just Clicks 
 

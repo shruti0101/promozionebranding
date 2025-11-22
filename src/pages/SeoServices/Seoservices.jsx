@@ -19,7 +19,7 @@ import ctaImage from "../../assets/ctaweb.webp";
 import Form2 from "../../components/Home/Landingpage/Form2";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Helmet } from "react-helmet";
+import SEO from "../../components/helmet/Helmet";
 const cardItems = [
   {
     title: "On-Page SEO",
@@ -60,14 +60,10 @@ const Seoservices = () => {
     <>
 
 
-<Helmet>
-  <title>AI SEO Agency for Advanced Search Engine Optimization
-</title>
-  <meta
-    name="description"
-    content="Boost your search rankings with our AI SEO Agent. Automate audits, keyword research, and content optimization using intelligent, hands-free workflows."
-  />
-</Helmet>
+    <SEO
+        title="ai seo services in delhi|ai seo services agency in delhi"
+        description="Promozione Branding is ai seo services agency in delhi,AI SEO services in Delhi using smart automation and real-time data to improve rankings, increase traffic, and strengthen your online visibility."
+      />
 
 
      {/* 6 Month Guaranteed */}

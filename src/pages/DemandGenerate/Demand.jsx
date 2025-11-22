@@ -10,7 +10,7 @@ import ctaImage from "../../assets/ctaweb.webp"
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import { Helmet } from "react-helmet";
+import SEO from "../../components/helmet/Helmet";
 const Demand = () => {
 
     useEffect(() => {
@@ -53,13 +53,10 @@ const cardItems = [
   return (
     <>
 
-<Helmet>
-  <title>Demand Generation Solutions for B2B Growth | Promozione Branding</title>
-  <meta
-    name="description"
-    content="Learn more about how Promozione Branding creates demand generation strategies across the B2B buyer journey through paid media, SEO and marketing operations"
-  />
-</Helmet>
+  <SEO
+        title="demand generation services in delhi|demand generation agency in delhi"
+        description="Promozione Branding is demand generation agency in Delhi,Professional demand generation services in Delhi focused on driving qualified leads and accelerating revenue growth with data-driven marketing strategies."
+      />
 
 
       <Tiltcard

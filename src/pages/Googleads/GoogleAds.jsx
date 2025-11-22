@@ -4,7 +4,7 @@ import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
 import ctaImage from "../../assets/ctaweb.webp";
 import Process from "../Process/Process";
-import { Helmet } from "react-helmet";
+import SEO from "../../components/helmet/Helmet";
 import  { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -179,13 +179,11 @@ const note=[
   return (
     <div>
 
-<Helmet>
-  <title>Google Ads  Services | Reach More Customers</title>
-  <meta
-    name="description"
-    content="Google Ads are paid advertisements displayed on the Bing search engine and various Microsoft-owned platforms, including MSN, Outlook, and partner websites."
-  />
-</Helmet>
+  <SEO
+        title="microsoft bing ads services in delhi|microsoft bing ads agency in delhi"
+        description="Promozione Branding is microsoft bing ads  agency in Delhi,Expert Microsoft Bing Ads services in Delhi to expand reach, drive targeted traffic, and boost ROI with cost-effective paid campaigns."
+      />
+
 
       <Tiltcard
         heading="Micosoft/Bing Ads  – Get Instant Leads & ROI-Driven Results

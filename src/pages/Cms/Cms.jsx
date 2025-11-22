@@ -2,7 +2,7 @@ import Tiltcard from "../../TiltCardHome/Tiltcard";
 import cms from "../../assets/services/cms.avif";
 import { useEffect } from "react";
 import AOS from "aos";
-import { Helmet } from "react-helmet";
+import SEO from "../../components/helmet/Helmet";
 import "aos/dist/aos.css";
 import {
   FaLaptopCode,
@@ -94,13 +94,10 @@ const Cms = () => {
   return (
     <div>
 
-<Helmet>
-  <title>Custom CMS Development Services | Promozione Branding.</title>
-  <meta
-    name="description"
-    content="Customizable, scalable, and SEO-optimized CMS web development services to help you manage your web content promptly and cost-effectively while generating leads."
-  />
-</Helmet>
+    <SEO
+        title="cms web development services in delhi| cms website development agency in delhi"
+        description="Promozione Branding is cms website development Agency in Delhi,Expert CMS web development services in Delhi to build secure, scalable, and easy-to-manage websites. Boost your digital presence with custom CMS solutions."
+      />
 
 
 

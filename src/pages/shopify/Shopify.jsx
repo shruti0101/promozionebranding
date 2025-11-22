@@ -12,7 +12,7 @@ import WhyChoose from "../WHYCHOOSE/WhyChoose";
 import ctaImage from "../../assets/ctaweb.webp";
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
-import { Helmet } from "react-helmet";
+import SEO from "../../components/helmet/Helmet";
 const Shopify = () => {
   const cardItems = [
     {
@@ -167,13 +167,10 @@ const Shopify = () => {
   return (
     <div>
 
-<Helmet>
-  <title>Shopify Website Design & Development Services | Top Rated</title>
-  <meta
-    name="description"
-    content="We know Shopify inside and out and can use the platform to help you create unique and attractive customized websites that generate more traffic, conversions."
-  />
-</Helmet>
+    <SEO
+        title="shopify web development services in delhi| shopify website development agency in delhi"
+        description="Promozione Branding is shopify website development Agency in Delhi,Expert Shopify web development services in Delhi to build high-converting online stores. Custom design, secure setup, and seamless eCommerce solutions."
+      />
 
 
       <Tiltcard

@@ -4,10 +4,10 @@ import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
 import ctaImage from "../../assets/ctaweb.webp";
 import Process from "../Process/Process";
-import { FaCheckCircle } from "react-icons/fa";
+
 import { useEffect } from "react";
 import AOS from "aos";
-import { Helmet } from "react-helmet";
+import SEO from "../../components/helmet/Helmet";
 import "aos/dist/aos.css";
 import Tiltcard from "../../TiltCardHome/Tiltcard";
 import crm2 from "../../assets/services/B2C.webp";
@@ -165,14 +165,10 @@ const B2c = () => {
   return (
     <>
 
-
-<Helmet>
-  <title>B2C Marketing Service in New Delhi</title>
-  <meta
-    name="description"
-    content="Promozione Branding is a B2C marketing agency that offers a wide range of services to help businesses grow and achieve their marketing goals."
-  />
-</Helmet>
+  <SEO
+        title="b2c marketing services in delhi|b2c marketing agency in delhi"
+        description="Promozione Branding is b2c marketing agency in Delhi,Professional B2c marketing services in Delhi driving qualified leads, stronger brand visibility, and higher customer engagement. Grow your business with proven strategies."
+      />
 
       <Tiltcard
         heading="B2C Marketing Services in India – Turn Viewers into Buyers

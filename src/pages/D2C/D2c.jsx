@@ -4,7 +4,7 @@ import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
 import ctaImage from "../../assets/ctaweb.webp";
 import Process from "../Process/Process";
-import { FaCheckCircle } from "react-icons/fa";
+
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -13,7 +13,7 @@ import d2c1 from "../../assets/services/d2c1.webp";
 import VanillaTilt from "vanilla-tilt";
 import WhyChoose from "../WHYCHOOSE/WhyChoose";
 import crm from "../../assets/services/d2c.webp";
-import { Helmet } from "react-helmet";
+import SEO from "../../components/helmet/Helmet";
 
 const D2c = () => {
   useEffect(() => {
@@ -164,13 +164,10 @@ const D2c = () => {
   return (
     <>
 
-<Helmet>
-  <title>D2C e-Commerce Digital Marketing Services </title>
-  <meta
-    name="description"
-    content="Increase D2C ecommerce sales and ROAS with our Digital Marketing Services. 10X your brand growth with our targeted strategies to reach your audience"
-  />
-</Helmet>
+  <SEO
+        title="d2c marketing services in delhi|d2c marketing agency in delhi"
+        description="Promozione Branding is d2c marketing agency in Delhi,Professional d2c marketing services in Delhi driving qualified leads, stronger brand visibility, and higher customer engagement. Grow your business with proven strategies."
+      />
 
       <Tiltcard
         heading="D2C Marketing Services in India – Scale Fast, Sell Direct, Grow Smart 

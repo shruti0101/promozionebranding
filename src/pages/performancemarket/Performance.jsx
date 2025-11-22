@@ -10,7 +10,7 @@ import google from "../../assets/specialized/Google-AdWord-Course.webp"
 import Story from "../Story/Story"
 import Tiltcard from "../../TiltCardHome/Tiltcard";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import SEO from "../../components/helmet/Helmet";
 const cardItems = [
   {
     icon: "📱", // Reflects mobile & social platforms
@@ -63,13 +63,10 @@ const Performance = () => {
     <div>
 
 
-<Helmet>
-  <title>Performance Marketing Agency | Ecommerce Agency in India</title>
-  <meta
-    name="description"
-    content="Unlock growth potential with our performance marketing agency. We specialize in data-driven strategies, PPC, SEO, social ads, and conversion optimization."
-  />
-</Helmet>
+  <SEO
+        title="performance marketing services in delhi|performance marketing agency in delhi"
+        description="Promozione Branding is performance marketing agency in Delhi,Expert performance marketing services in Delhi to maximize ROI with data-driven strategies. Boost leads, sales, and brand growth across digital channels."
+      />
 
       {/* hero */}
    <Tiltcard
@@ -80,6 +77,119 @@ const Performance = () => {
         cardItems={cardItems}
         services="Performance Marketing Services "
       />
+
+
+
+      {/* What is Performance Marketing */}
+<section
+  className="py-5 bg-light"
+  style={{ borderRadius: "12px" , backgroundColor:"#E5EEF7" }}
+>
+  <div className="container">
+
+
+    {/* HEADING */}
+    <h2
+      className="text-center fw-bold fs-2 mb-3"
+      style={{ color: "#2548BD", letterSpacing: "1px" }}
+    >
+      WHAT IS PERFORMANCE MARKETING?
+    </h2>
+
+    {/* SUBTEXT */}
+    <p
+      className="text-center mx-auto mb-4"
+      style={{
+        maxWidth: "850px",
+        fontSize: "1.1rem",
+        color: "black",
+        lineHeight: "1.6",
+      }}
+    >
+      Performance Marketing is a digital marketing strategy where advertisers
+      pay only when specific actions are completed (e.g., clicks, conversions, sales).
+    </p>
+
+    {/* MAIN CONTENT BOX */}
+    <div
+      className="mx-auto p-4 shadow-sm bg-white"
+      style={{
+        maxWidth: "1100px",
+        borderRadius: "10px",
+        borderLeft: "4px solid #2548BD",
+         borderRight: "4px solid #2548BD",
+      }}
+    >
+      <p className="mb-3" style={{ color: "black", lineHeight: "1.7" }}>
+        In other words, the marketing company of your choice develops a customized
+        marketing campaign for your business. The company then implements the program,
+        and only when you start receiving more traffic to your website and more business,
+        in general, will it be necessary for you to pay them for their services.
+      </p>
+
+      <p className="mb-3" style={{ color: "black", lineHeight: "1.7" }}>
+        A performance marketing strategy can be implemented in a number of ways, and
+        the specific way that is chosen for you will depend on several different factors.
+        Digital ads are an important aspect of marketing in general, as well as in
+        performance marketing.
+      </p>
+
+      <p style={{ color: "black", lineHeight: "1.7" }}>
+        Whenever prospective customers view and click on ads, it increases your chances
+        of success, which, of course, is what you want.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+{/* benefits */}
+
+<section className="py-5 " style={{backgroundColor:"#E5EEF7"}}>
+  <div className="container">
+
+   
+   
+
+    {/* HEADING */}
+    <h2
+      className="fw-bold mb-4"
+      style={{ color: "#2548BD", fontSize: "1.9rem" }}
+    >
+      BENEFITS OF PERFORMANCE MARKETING
+    </h2>
+
+    {/* LIST */}
+    <ul
+      className="fs-5"
+      style={{ color: "#374151", lineHeight: "1.7", maxWidth: "900px" }}
+    >
+      <li>
+        <strong>Measurable ROI:</strong> Track the effectiveness of campaigns and
+        optimize for better results
+      </li>
+
+      <li>
+        <strong>Cost-effective:</strong> Only pay for desired actions or results
+      </li>
+
+      <li>
+        <strong>Scalability:</strong> Easily scale campaigns to reach larger audiences
+      </li>
+
+      <li>Improved brand awareness</li>
+
+      <li>Increased conversions</li>
+    </ul>
+  </div>
+</section>
+
+
+
+
+
+
+
 
       {/* Services Section */}
       <section className="py-5 bg-white">

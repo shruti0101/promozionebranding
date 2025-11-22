@@ -4,7 +4,7 @@ import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
 import ctaImage from "../../assets/ctaweb.webp";
 import Process from "../Process/Process";
-import { Helmet } from "react-helmet";
+import SEO from "../../components/helmet/Helmet";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -168,13 +168,10 @@ const funnelData = [
     <div>
 
 
-<Helmet>
-  <title>Best Internet Marketing Company in Delhi</title>
-  <meta
-    name="description"
-    content="We're an award-winning Internet Marketing Company in Delhi India. We offer 360°digital solutions that enrich your online presence."
-  />
-</Helmet>
+  <SEO
+        title="internet marketing services in delhi|internet marketing agency in delhi"
+        description="Promozione Branding is internet marketing agency in Delhi,Expert internet marketing services in Delhi to boost brand visibility, drive targeted traffic, and generate more leads with proven digital strategies"
+      />
 
       <Tiltcard
         heading="Internet Marketing Services in India – Be Everywhere Your Audience Is 

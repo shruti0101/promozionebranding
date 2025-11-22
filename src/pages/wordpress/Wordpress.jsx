@@ -4,7 +4,7 @@ import Tiltcard from "../../TiltCardHome/Tiltcard";
 import wp1 from "../../assets/services/wp1.webp";
 import themesImg from "../../assets/services/themes-img.webp";
 import { FaCheckCircle } from "react-icons/fa";
-import { Helmet } from "react-helmet";
+import SEO from "../../components/helmet/Helmet";
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
 import ctaImage from "../../assets/ctaweb.webp"
@@ -132,14 +132,10 @@ const Wordpress = () => {
   return (
     <div>
 
-
-  <Helmet>
-  <title>WordPress Development Services, WP Custom AI Solutions</title>
-  <meta
-    name="description"
-    content="Page Traffic offers custom WordPress web design services to help you build a user-friendly and SEO-optimized website for your brand and grow your business."
-  />
-</Helmet>
+  <SEO
+        title="wordpress website services in delhi|wordpress website agency in delhi"
+        description="Promozione Branding is wordpress website Agency in Delhi,Expert WordPress website services in Delhi for custom, responsive, and SEO-optimized websites. Build a powerful online presence with WordPress professionals."
+      />
 
       <Tiltcard
         heading="WordPress Website Designing Services in India – Bilkul Business-Ready!

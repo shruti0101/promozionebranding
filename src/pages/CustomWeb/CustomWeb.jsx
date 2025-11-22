@@ -6,9 +6,8 @@ import cms from "../../assets/services/cms.webp";
 import ctaImage from "../../assets/ctaweb.webp"
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
-import { Helmet } from "react-helmet";
+import SEO from "../../components/helmet/Helmet";
 import {
-  FaCogs,
 
   FaMobileAlt,
 
@@ -93,14 +92,10 @@ const floatingIcons = [
   return (
     <div>
 
-
-<Helmet>
-  <title>Custom Website Design Agency | #1 Website Design Services</title>
-  <meta
-    name="description"
-    content="Elevate your business with custom web development services. Create high-quality, responsive websites with our expert team. Contact our experts today."
-  />
-</Helmet>
+    <SEO
+        title="Custom Web Development services in delhi | custom website design agency in delhi"
+        description="Promozione Branding is Custom Website Design Agency in Delhi,Expert custom web development services in Delhi to build secure, fast, and scalable websites. Tailored digital solutions to boost brand visibility and conversions."
+      />
 
       {/* Tilt Card Section */}
       <Tiltcard

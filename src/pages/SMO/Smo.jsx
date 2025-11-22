@@ -4,7 +4,7 @@ import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
 import ctaImage from "../../assets/ctaweb.webp";
 import Process from "../Process/Process";
-import { Helmet } from "react-helmet";
+import SEO from "../../components/helmet/Helmet";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -176,13 +176,10 @@ const services = [
     <>
 
 
-<Helmet>
-  <title>SMO Services | Best Social Media Optimization Company</title>
-  <meta
-    name="description"
-    content="SMO stands for social media optimization. SMO services cover all the social media platforms and use them to promote your business via various tactics"
-  />
-</Helmet>
+  <SEO
+        title="social media optimization services in delhi|social media optimization agency in delhi"
+        description="Promozione Branding is social media optimization agency in Delhi,Professional social media optimization services in Delhi to boost brand engagement, followers, and online visibility across top social platforms."
+      />
 
       <Tiltcard
         heading="SMO Services – Get Noticed. Get Talked About. Get Results 

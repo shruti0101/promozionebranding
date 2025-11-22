@@ -12,7 +12,7 @@ import Story from '../Story/Story';
 import ctaImage from "../../assets/ctaweb.webp"
 import { Link } from 'react-router-dom';
 import Form2 from '../../components/Home/Landingpage/Form2';
-import { Helmet } from "react-helmet";
+import SEO from "../../components/helmet/Helmet";
 
 const Php = () => {
 
@@ -92,13 +92,10 @@ const cardItems = [
     <div>
 
 
-<Helmet>
-  <title>PHP Development Company: Custom PHP Services</title>
-  <meta
-    name="description"
-    content="We provide custom PHP development services to design, develop, and deploy custom web applications using the PHP programming language."
-  />
-</Helmet>
+    <SEO
+        title="php website development services in delhi| php website development agency in delhi"
+        description="Promozione Branding is php website development Agency in Delhi,Professional PHP website development services in Delhi offering fast, secure, and scalable web solutions tailored to your business needs."
+      />
 
 
  <Tiltcard

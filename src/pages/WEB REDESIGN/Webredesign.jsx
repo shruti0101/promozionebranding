@@ -13,7 +13,7 @@ import webdesign1 from "../../assets/services/webdesign1.webp";
 import VanillaTilt from "vanilla-tilt";
 import WhyChoose from "../WHYCHOOSE/WhyChoose";
 import webdesign from "../../assets/services/webdesign1.webp";
-import { Helmet } from "react-helmet";
+import SEO from "../../components/helmet/Helmet";
 const Webredesign = () => {
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
@@ -179,13 +179,10 @@ const features = [
   return (
     <>
 
-  <Helmet>
-  <title>Website Redesign Agency & Services [Top-Rated Company]</title>
-  <meta
-    name="description"
-    content="Promozione Branding is a leading website redesign company in Noida Delhi NCR India. We are specialized in Website Redesign Services at best prices."
-  />
-</Helmet>
+  <SEO
+        title="website redesigning services in delhi| website redesigning development agency in delhi"
+        description="Promozione Branding is website redesigning development Agency in Delhi,Professional website redesigning services in Delhi to enhance performance, improve user experience, and boost conversions with a modern look."
+      />
 
       <Tiltcard
         heading="Website Redesigning Services – Makeover That Means Business 

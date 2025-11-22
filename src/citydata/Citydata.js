@@ -3,7 +3,7 @@ import img2 from "../assets/citypages/webdesign1.webp";
 import img3 from "../assets/citypages/whychoose.webp";
 import roi from "../assets/services/roi_1.webp";
 import img4 from "../assets/citypages/dm-2.webp"
-import img5 from "../assets/citypages/advance.jpg"
+import img5 from "../assets/citypages/advance.webp"
 
 export const serviceLocations = [
   // wd (existing)
@@ -205,8 +205,8 @@ export const serviceLocations = [
 },
 {
   id: 127,
-  link: "Digital-Marketing-Services-In-Delhi",
-  label: "Digital Marketing Services in Delhi",
+  link: "Digital-Marketing-Services-In-Delhi-Ncr",
+  label: "Digital Marketing Services in Delhi NCR",
 },
 {
   id: 128,
@@ -694,6 +694,12 @@ export const serviceLocations = [
   label: "Digital Marketing Services in Faizabad",
 },
 
+{
+  id: 224,
+  link: "Digital-Marketing-Services-In-Delhi",
+  label: "Digital Marketing Services in Delhi",
+},
+
 
 
 ];
@@ -881,8 +887,7 @@ metaDescription:
     heading: "Digital Marketing Agency Near Me ",
     text: `
       Are you in the process of scouting for a <strong> Digital Marketing Agency </strong> slightly nearby? If yes, then stop your search! Promozione Branding Pvt. Ltd. is a dependable choice among the <strong> digital marketing Agency in </strong> {slug}  that plans to work with you for growing the online presence of your business. To create the visibility of your brand, we focus on <strong> SEO, Social Media Marketing, and PPC advertising, </strong> and that’s just the beginning.
-We are present in all main areas of Lucknow. There are some locations where we usually serve <strong> Hazratganj, Gomti Nagar, Gomti Nagar Extension, Alambagh, Sushant Golf City, and Indira Nagar. </strong>
-By using data-driven marketing strategies, our experienced team makes sure that your business gets in touch with the right audience. Let’s make it possible for you to take the lead in the digital world!
+We are present in all main areas of <strong> {slug} </strong>, By using data-driven marketing strategies, our experienced team makes sure that your business gets in touch with the right audience. Let’s make it possible for you to take the lead in the digital world!
 
     `,
     image: roi,

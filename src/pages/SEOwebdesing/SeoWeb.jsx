@@ -4,7 +4,7 @@ import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
 import ctaImage from "../../assets/ctaweb.webp";
 import Process from "../Process/Process";
-import { Helmet } from "react-helmet";
+import SEO from "../../components/helmet/Helmet";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -174,13 +174,10 @@ const features = [
     <>
 
 
-<Helmet>
-  <title>Best Top SEO Website Development Company in Delhi</title>
-  <meta
-    name="description"
-    content="Get online fast with our professional web design service. From simple to complex, our website design team will create, host, and update the site for you."
-  />
-</Helmet>
+    <SEO
+        title="seo web development services in delhi| seo website development agency in delhi"
+        description="Promozione Branding is seo website development Agency in Delhi,Expert SEO web development services in Delhi delivering fast, responsive, and search-optimized websites that rank higher and convert better."
+      />
 
       <Tiltcard
         heading="SEO Web Design Services – Design That Looks Good & Ranks Better

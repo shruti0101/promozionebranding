@@ -91,10 +91,10 @@ const cardItems = [
   return (
     <div>
 
- <SEO
-      title=" b2b Package "
-      description="Need b2b management services? Trust Promozione to provide Ads services that accelerate your sales and lead generation efforts. Get a free quote now!"
-    />
+  <SEO
+        title="b2b marketing services in delhi|b2b marketing agency in delhi"
+        description="Promozione Branding is b2b marketing agency in Delhi,Professional B2B marketing services in Delhi driving qualified leads, stronger brand visibility, and higher customer engagement. Grow your business with proven strategies."
+      />
 
 
 

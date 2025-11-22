@@ -4,7 +4,7 @@ import { useRef, useEffect } from "react";
 
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import SEO from "../../components/helmet/Helmet";
 import {
   FaSearch,
   FaProjectDiagram,
@@ -62,13 +62,11 @@ const Content = () => {
     <div>
 
 
-<Helmet>
-  <title>Content Marketing Services That Grow Your Business</title>
-  <meta
-    name="description"
-    content="Our content marketing agency's services encompass a wide range of marketing assets, including blog posts, whitepapers, case studies, infographics, video scripts, social media content"
-  />
-</Helmet>
+  <SEO
+        title="content marketing services in delhi|content marketing agency in delhi"
+        description="Promozione Branding is content marketing agency in Delhi,Professional content marketing services in Delhi to build brand authority, boost engagement, and drive qualified leads with strategic content creation."
+      />
+
 
       {/* hero */}
       <Tiltcard

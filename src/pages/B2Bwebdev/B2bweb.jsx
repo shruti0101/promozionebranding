@@ -4,8 +4,8 @@ import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
 import ctaImage from "../../assets/ctaweb.webp";
 import Process from "../Process/Process";
-import { FaCheckCircle } from "react-icons/fa";
-import { Helmet } from "react-helmet";
+
+import SEO from "../../components/helmet/Helmet";
 import Tiltcard from "../../TiltCardHome/Tiltcard";
 import b2bweb1 from "../../assets/services/B2B.webp";
 
@@ -13,8 +13,6 @@ import WhyChoose from "../WHYCHOOSE/WhyChoose";
 import b2bweb from "../../assets/services/b2bweb1.webp";
 
 const B2bweb = () => {
-
-
   const cardItems = [
     {
       title: "SEO-Optimized Structure",
@@ -41,52 +39,50 @@ const B2bweb = () => {
       icon: "🎓", // Graduation cap – Education, courses, webinars
     },
   ];
-const funnelData = [
-  {
-    title: "Step 1: Business & Goal Understanding",
-    services: [
-      "Aapka target customer, product/service aur campaign objective samajhna.",
-    ],
-    color: "#2563eb",
-  },
-  {
-    title: "Step 2: Keyword & Competitor Research",
-    services: [
-      "Jo log aapka product Google pe search kar rahe hain, unko target karte hain.",
-    ],
-    color: "#16a34a",
-  },
-  {
-    title: "Step 3: Campaign Setup & Ad Design",
-    services: [
-      "Search ads, display banners, YouTube videos – sab create karke launch karte hain.",
-    ],
-    color: "#f59e0b",
-  },
-  {
-    title: "Step 4: Conversion Tracking Setup",
-    services: [
-      "Lead forms, WhatsApp clicks, calls – sab track hota hai with proper tools.",
-    ],
-    color: "#ec4899",
-  },
-  {
-    title: "Step 5: Optimization & Scaling",
-    services: [
-      "Low CTR? High CPC? We fix it. High performance? We scale it.",
-    ],
-    color: "#0ea5e9",
-  },
-  {
-    title: "Step 6: Reporting & ROI Analysis",
-    services: [
-      "Aapko milta hai clear, easy-to-read report with results that matter.",
-    ],
-    color: "#222",
-  },
-
-];
-
+  const funnelData = [
+    {
+      title: "Step 1: Business & Goal Understanding",
+      services: [
+        "Aapka target customer, product/service aur campaign objective samajhna.",
+      ],
+      color: "#2563eb",
+    },
+    {
+      title: "Step 2: Keyword & Competitor Research",
+      services: [
+        "Jo log aapka product Google pe search kar rahe hain, unko target karte hain.",
+      ],
+      color: "#16a34a",
+    },
+    {
+      title: "Step 3: Campaign Setup & Ad Design",
+      services: [
+        "Search ads, display banners, YouTube videos – sab create karke launch karte hain.",
+      ],
+      color: "#f59e0b",
+    },
+    {
+      title: "Step 4: Conversion Tracking Setup",
+      services: [
+        "Lead forms, WhatsApp clicks, calls – sab track hota hai with proper tools.",
+      ],
+      color: "#ec4899",
+    },
+    {
+      title: "Step 5: Optimization & Scaling",
+      services: [
+        "Low CTR? High CPC? We fix it. High performance? We scale it.",
+      ],
+      color: "#0ea5e9",
+    },
+    {
+      title: "Step 6: Reporting & ROI Analysis",
+      services: [
+        "Aapko milta hai clear, easy-to-read report with results that matter.",
+      ],
+      color: "#222",
+    },
+  ];
 
   const services = [
     {
@@ -140,7 +136,7 @@ const funnelData = [
     "Financial Services & Insurance Firms",
     "Enterprise Software Providers",
     "Logistics & B2B eCommerce",
-    "Healthcare & Education Solutions"
+    "Healthcare & Education Solutions",
   ];
   const note = [
     "Whether you're into SaaS, manufacturing, consulting, or enterprise services — our Developments speak your client’s language.",
@@ -152,18 +148,14 @@ const funnelData = [
     " Clear communication, timely delivery, and post-launch support",
     "  India-based pricing with global quality",
     " Developmented to impress decision-makers (CXOs, procurement heads, etc.)",
- 
   ];
 
   return (
     <>
-<Helmet>
-  <title>Everything Design: B2B Branding & Website Agency</title>
-  <meta
-    name="description"
-    content="Promozione Branding provides expert website development as per your requirements. Get a High-Converting website for your brand. Book a Free Consultation."
-  />
-</Helmet>
+      <SEO
+        title="b2b web development services in delhi| b2b website development agency in delhi"
+        description="Professional B2B web development services in Delhi delivering secure, scalable, and lead-focused websites. Grow your business with customized B2B digital solutions."
+      />
 
       <Tiltcard
         heading="B2B Website Development Services – Where Development Meets Business Growth 
@@ -187,12 +179,10 @@ const funnelData = [
       {/* what is section */}
 
       <section className="php-section py-5 ">
-       
         <div className="blob-bg"></div>
 
         <div className="container">
           <div className="row align-items-center flex-wrap-reverse">
-           
             <div className="col-md-6">
               <h2 className="php-heading">
                 Why is Different (and Important)
@@ -215,11 +205,7 @@ const funnelData = [
                   " Offer easy CTAs (Request a Demo, Book a Call, Download PDF)",
                   " Support longer sales cycles",
                 ].map((item, index) => (
-                  <li
-                 
-                   
-                    key={index}
-                  >
+                  <li key={index}>
                     <span className="icon">✅</span>
                     {item}
                   </li>
@@ -252,7 +238,6 @@ const funnelData = [
 
 
 "
-        
         ctaParagraph="Your next deal could start with a visit to your website. Let’s make sure it delivers the right impression and action.
 
  "

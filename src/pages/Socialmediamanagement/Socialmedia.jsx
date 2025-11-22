@@ -16,7 +16,7 @@ import "./style.css"
 import Tiltcard from "../../TiltCardHome/Tiltcard";
 import { useEffect } from "react";
 import Story from "../Story/Story";
-import { Helmet } from "react-helmet";
+import SEO from "../../components/helmet/Helmet";
 const cardItems = [
   {
     icon: <img src={google} alt="Google Ads" style={{ height: 40 }} />,
@@ -149,13 +149,11 @@ const services = [
   return (
     <>
     {/* 100% Guaranteed */}
-    <Helmet>
-  <title>Best Social Media Management Services India | #1 Company</title>
-  <meta
-    name="description"
-    content="A top social media management company and agency. We offer social media marketing, social media management, and social media advertising"
-  />
-</Helmet>
+    <SEO
+        title="social media marketing services in delhi|social media marketing agency in delhi"
+        description="Promozione Branding is social media marketing agency in Delhi,Expert social media marketing services in Delhi to increase brand awareness, boost engagement, and drive qualified leads with result-driven strategies."
+      />
+
 
 
       <Tiltcard

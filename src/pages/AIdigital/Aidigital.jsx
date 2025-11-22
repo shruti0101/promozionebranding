@@ -7,7 +7,7 @@ import Process from "../Process/Process";
 // import { FaCheckCircle } from "react-icons/fa";
 import { useEffect } from "react";
 import AOS from "aos";
-import { Helmet } from "react-helmet";
+import SEO from "../../components/helmet/Helmet";
 import "aos/dist/aos.css";
 import Tiltcard from "../../TiltCardHome/Tiltcard";
 import crm2 from "../../assets/services/crm1.webp";
@@ -178,13 +178,11 @@ const note=[
   return (
     <>
 
-<Helmet>
-  <title>Top Marketing Agency for SaaS | Best B2B SaaS PPC Agency</title>
-  <meta
-    name="description"
-    content="Explore our SEO, Branding, and Digital Marketing B2B Marketing provides actionable intelligence, data, events and training to help marketers maximize business performance and realize their potential."
-  />
-</Helmet>
+  <SEO
+        title="ai digital marketing services in delhi|ai digital marketing agency in delhi"
+        description="Promozione Branding is ai digital marketing agency in Delhi,AI digital marketing services in Delhi to boost ROI with data-driven automation, smarter targeting, and optimized customer engagement."
+      />
+
 
 
       <Tiltcard

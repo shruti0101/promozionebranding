@@ -12,7 +12,7 @@ import Tiltcard from "../../TiltCardHome/Tiltcard";
 
 import VanillaTilt from "vanilla-tilt";
 import WhyChoose from "../WHYCHOOSE/WhyChoose";
-import { Helmet } from "react-helmet";
+import SEO from "../../components/helmet/Helmet";
 import ad2 from "../../assets/services/ad2.webp"
 import ad1 from "../../assets/services/googlead.webp"
 
@@ -177,14 +177,11 @@ const services = [
     <>
 
 
-<Helmet>
-  <title>Google Ads (PPC Campaign) Services India
-</title>
-  <meta
-    name="description"
-    content="Maximize ROI with our expert PPC agency. Get top-notch pay-per-click marketing services to drive traffic, boost conversions & grow your business online!"
-  />
-</Helmet>
+  <SEO
+        title="google adword ppc services in delhi|google adword ppc agency in delhi"
+        description="Promozione Branding is google adword ppc agency in Delhi,Expert Google AdWords PPC services in Delhi to increase leads, sales, and ROI with data-driven, highly targeted ad campaigns."
+      />
+
 
       <Tiltcard
         heading="Google Ads / PPC Services in India – Get Instant Leads & ROI-Driven Results

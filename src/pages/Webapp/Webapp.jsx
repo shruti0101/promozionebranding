@@ -9,7 +9,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Tiltcard from "../../TiltCardHome/Tiltcard";
-import { Helmet } from "react-helmet";
+import SEO from "../../components/helmet/Helmet";
 import VanillaTilt from "vanilla-tilt";
 import WhyChoose from "../WHYCHOOSE/WhyChoose";
 import webapp from "../../assets/services/web-app.webp";
@@ -180,13 +180,10 @@ const services = [
   return (
     <>
 
-  <Helmet>
-  <title>Web Application Development Company</title>
-  <meta
-    name="description"
-    content="Achieve your business goals with web development solutions. Our battle-tested developers specialize in a wide range of web development services"
-  />
-</Helmet>
+   <SEO
+        title="web application development services in delhi|web application development agency in delhi"
+        description="Promozione Branding is web application development Agency in Delhi,Professional web application development services in Delhi delivering fast, secure, and scalable custom web apps tailored to your business needs."
+      />
 
       <Tiltcard
         heading="Web Application Development Services – Powerful, Scalable & Custom-Built 

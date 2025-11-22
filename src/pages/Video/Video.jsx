@@ -4,7 +4,7 @@ import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
 import ctaImage from "../../assets/ctaweb.webp";
 import Process from "../Process/Process";
-import { FaCheckCircle } from "react-icons/fa";
+
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -12,7 +12,7 @@ import Tiltcard from "../../TiltCardHome/Tiltcard";
 import video from "../../assets/services/video (2).webp";
 import VanillaTilt from "vanilla-tilt";
 import WhyChoose from "../WHYCHOOSE/WhyChoose";
-import { Helmet } from "react-helmet";
+import SEO from "../../components/helmet/Helmet";
 const Video = () => {
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
@@ -172,14 +172,11 @@ const services = [
   return (
     <>
 
+  <SEO
+        title="video marketing services in delhi|video marketing agency in delhi"
+        description="Promozione Branding is video marketing agency in Delhi,Professional video marketing services in Delhi to boost brand visibility and engagement with creative, high-quality video content."
+      />
 
-   <Helmet>
-  <title>Video Marketing Agency India |Video Production Services</title>
-  <meta
-    name="description"
-    content="Afraid you can't afford video marketing? Our video marketing services can help you produce cost-effective campaigns that reach and engage. Contact us!"
-  />
-</Helmet>
 
 
       <Tiltcard

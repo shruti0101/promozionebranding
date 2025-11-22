@@ -2,7 +2,7 @@ import Tiltcard from "../../TiltCardHome/Tiltcard";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import "./Style.css";
-import { Helmet } from "react-helmet";
+import SEO from "../../components/helmet/Helmet";
 import {
   FaLaptopCode,
   FaPencilRuler,
@@ -86,13 +86,10 @@ const Reactt = () => {
     <div>
 
 
-<Helmet>
-  <title>Trusted React JS Development Company</title>
-  <meta
-    name="description"
-    content="Promozione Branding is a leading ReactJS development company known for providing ultimate solutions with virtual DOM, reusable components, JSK, and server-side rendering."
-  />
-</Helmet>
+    <SEO
+        title="react web development services in delhi| react website development agency in delhi"
+        description="Promozione Branding is react website development Agency in Delhi,Professional React web development services in Delhi for fast, scalable, and high-performance websites and web apps"
+      />
 
       <Tiltcard
         heading="React Web Development Services – Build Fast, Scalable & Modern Web Apps

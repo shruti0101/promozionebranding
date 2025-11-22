@@ -306,10 +306,10 @@ useEffect(() => {
 
       {/* advanced */}
 
-    <section className="about-section py-4">
+    <section style={{backgroundColor:"#F4F4F4"}} className="about-section  py-4">
   <div className="container-fluid px-2 px-md-5">
     <h2
-      className="cinzel fw-bold text-center mb-3 mx-auto advance-heading"
+      className="cinzel fw-bold text-center mb-4 mx-auto advance-heading"
       dangerouslySetInnerHTML={{
         __html: pageData.advance.heading.replaceAll(
           "{slug}",
@@ -335,7 +335,7 @@ useEffect(() => {
         <img
           src={pageData.advance.image}
           alt={pageData.advance.heading}
-          className="img-fluid rounded about-img"
+          className="img-fluid rounded"
         />
       </div>
     </div>

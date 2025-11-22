@@ -13,7 +13,7 @@ import landing1 from "../../assets/services/landing1.webp";
 import VanillaTilt from "vanilla-tilt";
 import WhyChoose from "../WHYCHOOSE/WhyChoose";
 import landing from "../../assets/services/landing.webp";
-import { Helmet } from "react-helmet";
+import SEO from "../../components/helmet/Helmet";
 const Landing = () => {
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
@@ -174,13 +174,10 @@ const features = [
     <>
 
 
-<Helmet>
-  <title>The Best Landing Page Designers for In India</title>
-  <meta
-    name="description"
-    content="We create custom landing pages that make your product stand out, improving brand visibility and building trust with your audience."
-  />
-</Helmet>
+  <SEO
+        title="landing page design services in delhi|website landing page design agency in delhi"
+        description="Promozione Branding is website landing page design Agency in Delhi,Expert landing page design services in Delhi that boost conversions and generate more leads. Custom, fast, and SEO-optimized landing pages for your business."
+      />
 
       <Tiltcard
         heading="Landing Page Design Services – One Page. One Goal. Unlimited Conversions 

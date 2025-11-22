@@ -91,48 +91,7 @@ background-color: #E5F1FC;
   z-index: 2;
 }
 
-/* Tilt container */
-/* .tilt-container {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 30px;
-  width: 100%;
-  height: auto;
-  max-width: 508px;
-  min-height: 500px;
-  transition: transform 0.3s ease;
-  will-change: transform;
-  transform-style: preserve-3d;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  
-       
-} */
-
-
-
-/* .tilt-skew-wrapper {
-  transform:perspective(1000px)  rotateY(-25deg) ;
-  transform-style: preserve-3d;
-} */
-/* 
-.custom-card {
-  background: #ffffff;
-  border-radius: 20px;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  will-change: transform;
-  transform-style: preserve-3d;
-
-} */
-
-/* .custom-card.card-hovered {
-  transform: translateY(-30px) scale(1.5);
-  box-shadow: 0 20px 45px rgba(3, 5, 3, 0.35);
-} */
 
 .icon-wrapper {
   width: 48px;
@@ -159,3 +118,5 @@ background-color: #E5F1FC;
     height: auto;
   }
 }
+
+

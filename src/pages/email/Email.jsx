@@ -2,7 +2,7 @@ import React from 'react'
 import { useRef } from 'react';
 import email from "../../assets/services/email.webp"
 import Tiltcard from "../../TiltCardHome/Tiltcard"
-import Process from "../Process/Process"
+
 import Service from "../Servicecomponent/Service"
 import WhyChoose from "../WHYCHOOSE/WhyChoose"
 import { useEffect } from 'react';
@@ -12,13 +12,14 @@ import email1 from "../../assets/services/email1.webp"
 import Story from "../Story/Story";
 import Form2 from "../../components/Home/Landingpage/Form2";
 import ctaImage from "../../assets/ctaweb.webp";
-import { Helmet } from "react-helmet";
+import SEO from "../../components/helmet/Helmet";
 
 const Email = () => {
 
 
   const features = [
   "Copy + Design + Tech under one roof",
+  
   "Indian + Global audience experience",
   "Strategic automation setup",
   "Affordable pricing for SMEs & startups",
@@ -137,13 +138,11 @@ const note=[
     <div>
 
 
-<Helmet>
-  <title>No.1 Email Marketing Service Provider in India</title>
-  <meta
-    name="description"
-    content="Promozione Branding is the best Email Marketing Service Provider & Agency in India. Hire the best email marketing company in India @100% Inbox Ratio."
-  />
-</Helmet>
+  <SEO
+        title="email marketing services in delhi|email marketing agency in delhi"
+        description="Promozione Branding is email marketing agency in Delhi,Professional email marketing services in Delhi to boost engagement, nurture leads, and increase conversions with targeted email campaigns."
+      />
+
 
         <Tiltcard
         heading="Email Marketing Services – Inbox Pe Impact Banao 
