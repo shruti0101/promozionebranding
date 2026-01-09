@@ -98,7 +98,7 @@ const Footer = () => {
               to: "/services/wordpress-website-services",
             },
           ])}
-
+{/* 
           {renderDropdown("revenue", "Revenue Marketing & CRO", [
             // {
             //   label: "B2B Lead Generation",
@@ -162,7 +162,7 @@ const Footer = () => {
             },
             { label: "SMO", to: "/services/social-media-optimization" },
             { label: "SMM", to: "/services/social-media-marketing" },
-          ])}
+          ])} */}
 
           {renderDropdown("company", "Company Profile", [
             { label: "Our Approach", to: "/profile/OurApproach" },
@@ -187,6 +187,10 @@ const Footer = () => {
     </li>
     <li>
       <Link to="/policies/terms&conditions">Terms and Conditions</Link>
+    </li>
+
+     <li>
+      <Link to="/policies/refund&returns">Refund and Return Policy</Link>
     </li>
     <li>
       <a href="/brochure.pdf" download className="text-white">
@@ -238,7 +242,7 @@ const Footer = () => {
             <div>
               <h5 className="contact-title">Promozione Branding</h5>
               <p className="contact-subtitle">
-                Vardhman Plaza, Sector-3, Rohini, New Delhi
+UNIT, NO 356 PLOT NO 7 3RD FLR, VARDHMAN PLAZA,<br /> SEC3 PRASHANT V,SEVEN SEAS, <br /> DELHI, DELHI, INDIA, 110085
               </p>
             </div>
           </div>

@@ -90,65 +90,66 @@ const Navbar = () => {
       ],
     },
 
-    {
-      name: "revenue",
-      label: "Revenue Marketing & CRO",
-      items: [
-        // ["B2B Lead Generation", "/services/b2b-lead-generation-services"],
-        ["B2B Marketing", "/services/b2b-marketing-services"],
+    // {
+    //   name: "revenue",
+    //   label: "Revenue Marketing & CRO",
+    //   items: [
+    //     // ["B2B Lead Generation", "/services/b2b-lead-generation-services"],
+    //     ["B2B Marketing", "/services/b2b-marketing-services"],
 
-        ["B2C Marketing", "/services/b2c-marketing-services"],
-        ["D2C Marketing", "/services/d2c-marketing-services"],
+    //     ["B2C Marketing", "/services/b2c-marketing-services"],
+    //     ["D2C Marketing", "/services/d2c-marketing-services"],
 
-        [
-          "AI Performance Marketing Services",
-          "/services/ai-performance-marketing-services",
-        ],
-        ["Ads Management", "/services/ads-management-services"],
-        ["Internet Marketing", "/services/internet-marketing-services"],
-        ["Demand Generation", "/services/demand-generation-services"],
-        ["Performance Marketing", "/services/performance-marketing-services"],
-      ],
-    },
+    //     [
+    //       "AI Performance Marketing Services",
+    //       "/services/ai-performance-marketing-services",
+    //     ],
+    //     ["Ads Management", "/services/ads-management-services"],
+    //     ["Internet Marketing", "/services/internet-marketing-services"],
+    //     ["Demand Generation", "/services/demand-generation-services"],
+    //     ["Performance Marketing", "/services/performance-marketing-services"],
+    //   ],
+    // },
 
-    {
-      name: "digital",
-      label: "Digital Marketing",
-      items: [
-        ["Content Marketing", "/services/content-marketing-services"],
-        ["CRM Optimizations", "/services/crm-optimizations-services"],
-        ["Email Marketing", "/services/email-marketing-services"],
-        ["Video Marketing", "/services/video-marketing-services"],
-        // ["Social Media Ads", "/services/social"],
-        ["Microsoft/Bing Ads", "/services/microsoft-bing-ads-services"],
-        ["Google AdWords/PPC", "/services/google-adword-ppc-services"],
-        ["SMO", "/services/social-media-optimization"],
-        ["SMM", "/services/social-media-marketing"],
-      ],
-    },
-    {
-      name: "seo",
-      label: "Guaranteed SEO",
-      items: [
-        [
-          "AI Digital Marketing Services",
-          "/services/ai-digital-marketing-services",
-        ],
-        // ["E-Commerce SEO Services", "/services/ecommerce-seo"],
-        ["Digital Marketing Services", "/services/digital-marketing-services"],
-        ["Enterprise SEO Services", "/services/enterprise-seo-services"],
-        ["AI SEO Services", "/services/ai-seo-services"],
-      ],
-    },
+    // {
+    //   name: "digital",
+    //   label: "Digital Marketing",
+    //   items: [
+    //     ["Content Marketing", "/services/content-marketing-services"],
+    //     ["CRM Optimizations", "/services/crm-optimizations-services"],
+    //     ["Email Marketing", "/services/email-marketing-services"],
+    //     ["Video Marketing", "/services/video-marketing-services"],
+    //     // ["Social Media Ads", "/services/social"],
+    //     ["Microsoft/Bing Ads", "/services/microsoft-bing-ads-services"],
+    //     ["Google AdWords/PPC", "/services/google-adword-ppc-services"],
+    //     ["SMO", "/services/social-media-optimization"],
+    //     ["SMM", "/services/social-media-marketing"],
+    //   ],
+    // },
+
+    // {
+    //   name: "seo",
+    //   label: "Guaranteed SEO",
+    //   items: [
+    //     [
+    //       "AI Digital Marketing Services",
+    //       "/services/ai-digital-marketing-services",
+    //     ],
+    //     // ["E-Commerce SEO Services", "/services/ecommerce-seo"],
+    //     ["Digital Marketing Services", "/services/digital-marketing-services"],
+    //     ["Enterprise SEO Services", "/services/enterprise-seo-services"],
+    //     ["AI SEO Services", "/services/ai-seo-services"],
+    //   ],
+    // },
 
     {
       name: "Packages",
       label: "Packages",
       items: [
         ["Web Awareness", "/packages/web-awareness"],
-        ["Social Media Management", "/packages/social-media-management"],
+        // ["Social Media Management", "/packages/social-media-management"],
 
-        ["Ads Management ", "/packages/Ads-management"],
+        // ["Ads Management ", "/packages/Ads-management"],
       ],
     },
   ];

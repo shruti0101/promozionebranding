@@ -71,7 +71,8 @@ import CityPage from "./pages/CityPage/CityPage";
 
 
 import { serviceLocations } from "./citydata/Citydata";
-
+import Pay from "./components/pay/Checkout"
+import Refund from "./pages/Refund/Refundreturn"
 
 const App = () => {
   return (
@@ -202,6 +203,9 @@ const App = () => {
           />
           <Route path="contact" element={<Contact />} />
 
+          {/* checkout */}
+             <Route path="checkout" element={<Pay />} />
+
           {/* SEO */}
           <Route
             path="services/ai-digital-marketing-services"
@@ -228,7 +232,7 @@ const App = () => {
           {/* Policies */}
           <Route path="/policies/privacy-policy" element={<Privacy />} />
           <Route path="/policies/terms&conditions" element={<Tc />} />
-
+          <Route path="/policies/refund&returns" element={<Refund />} />
 
 
 

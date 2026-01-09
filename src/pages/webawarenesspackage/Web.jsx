@@ -117,7 +117,7 @@ Get a FREE consultation today and discover the best plans with Promozione Brandi
 
         <div className="text-center mt-4">
 
-          <Link to="/Contact">
+          <Link to="/checkout">
              <button
             className="btn btn-primary px-4 py-2 fw-semibold rounded-pill"
             style={{

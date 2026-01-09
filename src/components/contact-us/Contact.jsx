@@ -213,14 +213,13 @@ export default function ContactSection() {
 
             
             {/* delhi office */}
-            <div className="col-md-4">
+            <div className="col-md-8 mx-auto">
               <div className="address-card p-4 bg-white shadow-sm rounded-4 h-100 border-start border-4 border-primary">
                 <h5 className="fw-bold text-primary mb-3">
                   <i className="bi bi-geo-alt-fill me-2"></i> Delhi Office
                 </h5>
-                <p className="mb-2 text-muted">
-                  Vardhman Plaza, <br />
-                  Sector-3, Rohini, New Delhi
+                <p className="mb-2 text-black">
+              UNIT, NO 356 PLOT NO 7 3RD FLR, VARDHMAN PLAZA, SEC3 PRASHANT V,SEVEN SEAS,<br /> DELHI, DELHI, INDIA, 110085
                 </p>
                 <p className="mb-1">
                   <i className="bi bi-telephone me-2 text-success"></i>  
@@ -236,7 +235,7 @@ export default function ContactSection() {
             </div>
 
             {/* Gurugram Office */}
-            <div className="col-md-4">
+            {/* <div className="col-md-4">
               <div className="address-card p-4 bg-white shadow-sm rounded-4 h-100 border-start border-4 border-primary">
                 <h5 className="fw-bold text-primary mb-3">
                   <i className="bi bi-geo-alt-fill me-2"></i> Gurugram Office
@@ -256,10 +255,10 @@ export default function ContactSection() {
                   info@promozionebranding.com
                 </p>
               </div>
-            </div>
+            </div> */}
 
             {/* Noida Office */}
-            <div className="col-md-4">
+            {/* <div className="col-md-4">
               <div className="address-card p-4 bg-white shadow-sm rounded-4 h-100 border-start border-4 border-primary">
                 <h5 className="fw-bold text-primary mb-3">
                   <i className="bi bi-geo-alt-fill me-2"></i> Noida Office
@@ -279,7 +278,7 @@ export default function ContactSection() {
                   info@promozionebranding.com
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
