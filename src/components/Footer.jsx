@@ -242,7 +242,7 @@ const Footer = () => {
             <div>
               <h5 className="contact-title">Promozione Branding</h5>
               <p className="contact-subtitle">
-UNIT, NO 356 PLOT NO 7 3RD FLR, VARDHMAN PLAZA,<br /> SEC3 PRASHANT V,SEVEN SEAS, <br /> DELHI, DELHI, INDIA, 110085
+UNIT, NO 356 PLOT NO 7 3RD FLR, VARDHMAN PLAZA,<br /> SEC3 PRASHANT V,SEVEN SEAS, <br /> DELHI, INDIA, 110085
               </p>
             </div>
           </div>
