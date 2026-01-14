@@ -1,9 +1,9 @@
-import Services from "./Landingpage/Services";
+// import Services from "./Landingpage/Services";
 import WhyChoose from "./Landingpage/WhyChoose";
 import Form1 from "./Landingpage/Form1";
 
 import SectorServe from "./Landingpage/SectorServe";
-import Specialized from "./Landingpage/Specialized";
+// import Specialized from "./Landingpage/Specialized";
 import Faq from "./Landingpage/Faq";
 import Orbit from "./Landingpage/Orbit";
 import Testimonials from "./Landingpage/Testimonials";
@@ -14,25 +14,25 @@ import Form2 from "./Landingpage/Form2";
 import ctaImage from "../../assets/ctaweb.webp";
 
 import Hero from "../Hero";
-import Keywords from "./Landingpage/Keywords";
+// import Keywords from "./Landingpage/Keywords";
 import CitiesKeyword from "../CitiesKeyword/CitiesKeyword";
 const Home = () => {
   return (
     <div>
       <Hero></Hero>
 
-      <Services />
+      {/* <Services /> */}
 
       {/* <Leadgen></Leadgen> */}
       <WhyChoose />
-     <Specialized />
+     {/* <Specialized /> */}
     
       <Form1 />
  
         <SectorServe />
       <Orbit />
       <Project></Project>
-      <Keywords></Keywords>
+      {/* <Keywords></Keywords> */}
       <Testimonials />
       <Faq />
   <CitiesKeyword />
