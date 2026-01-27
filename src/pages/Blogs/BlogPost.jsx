@@ -60,7 +60,7 @@ export default function BlogPost() {
             day: "numeric",
           })}
         </p>
-        <div className="bg-white shadow-lg rounded-3 p-4 p-md-5">
+        <div className=" shadow-lg rounded-3 p-4 p-md-5">
           <div className="fs-5 lh-lg text-black">
             <PortableText value={post.body} />
           </div>

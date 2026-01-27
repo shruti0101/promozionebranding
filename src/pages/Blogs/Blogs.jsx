@@ -43,7 +43,7 @@ export default function BlogList() {
         </div>
 
         {/* Blog Grid */}
-        <div className="container pb-5">
+        <div className="container ">
           {posts.length === 0 ? (
             <p className="text-center text-secondary fs-3">
           Loading....
@@ -52,7 +52,7 @@ export default function BlogList() {
             <div className="row g-4">
               {posts.map((post) => (
                 <div className="col-md-6 col-lg-4" key={post._id}>
-                  <div className="card h-75 shadow-sm border-0">
+                  <div className="card h-75 overflow-y-auto shadow-sm border-0">
                     {post.mainImage && (
                       <img
                         src={urlFor(post.mainImage)
