@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import checkout from "../../assets/bg/checkout.jpg";
 
 const Checkout = () => {
@@ -16,21 +16,27 @@ const Checkout = () => {
 const handlePayment = async (e) => {
   e.preventDefault();
 
-  const res = await fetch("http://localhost:5000/api/icici/create-payment", {
+  const res = await fetch("/api/icici/create-payment", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(formData),
+    body: JSON.stringify({
+      name: formData.firstName,   // ✅ FIX
+      mobile: formData.phone,     // ✅ FIX
+      amount: formData.amount
+    }),
   });
 
   const data = await res.json();
 
-  if (data.success) {
-    window.location.href = data.paymentUrl; // ✅ REAL ICICI Payment Panel
+  if (res.ok && data.success) {
+    window.location.href = data.paymentUrl;
   } else {
     alert(data.message || "Payment initiation failed");
     console.log(data);
   }
 };
+
+
 
 
   return (
