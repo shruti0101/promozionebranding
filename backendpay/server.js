@@ -59,6 +59,7 @@ function generateSecureHash(plainText) {
     .digest("hex");
 }
 
+
 /* ================== CREATE PAYMENT ================== */
 app.post("/api/icici/create-payment", async (req, res) => {
   try {
