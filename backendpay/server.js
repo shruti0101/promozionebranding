@@ -1,20 +1,36 @@
 const express = require("express");
-const cors = require("cors");
+const axios = require("axios");
 const crypto = require("crypto");
-
+const bodyParser = require("body-parser");
+const cors = require("cors");
+require("dotenv").config();
 const app = express();
-app.use(cors());
-app.use(express.json());
 
-// ===== ICICI UAT CREDENTIALS =====
-const MERCHANT_ID = "100000000007164";
-const AGGREGATOR_ID = "A100000000007164";
-const SECRET_KEY = "ae85111d-7cc7-4f75-b0dd-6ebd33f8a86f";
+/* ================== CORS (PROD READY) ================== */
+app.use(cors({
+  origin: "*",
+  methods: ["GET", "POST", "OPTIONS"],
+  allowedHeaders: ["Content-Type"]
+}));
 
-const ICICI_INITIATE_SALE_URL =
-  "https://pgpayuat.icicibank.com/tsp/pg/api/v2/initiateSale ";
 
-// ===== TXN DATE FORMAT YYYYMMDDHHMISS =====
+
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
+/* ================== ICICI PRODUCTION CONFIG ================== */
+const ICICI_INITIATE_URL = "https://pgpay.icicibank.com/pg/api/v2/initiateSale";
+const PORT = process.env.PORT || 8000;
+const MERCHANT_ID = process.env.MERCHANT_ID;
+const AGGREGATOR_ID = process.env.AGGREGATOR_ID;
+const SECRET_KEY = process.env.SECRET_KEY;
+
+const RETURN_URL = process.env.RETURN_URL;
+
+/* ================== UTILS ================== */
+
+// YYYYMMDDHHMMSS
 function getTxnDate() {
   const d = new Date();
   const pad = (n) => String(n).padStart(2, "0");
@@ -28,108 +44,106 @@ function getTxnDate() {
   );
 }
 
-// ===== SECURE HASH (ICICI OFFICIAL SEQUENCE) =====
-function generateSecureHash(payload) {
-  const hashText =
-    payload.addlParam1 +
-    payload.addlParam2 +
-    payload.amount +
-    payload.currencyCode +
-    payload.customerEmailID +
-    payload.customerMobileNo +
-    payload.customerName +
-    payload.merchantId +
-    payload.merchantTxnNo +
-    payload.payType +
-    payload.returnURL +
-    payload.transactionType +
-    payload.txnDate;
-
-  const secureHash = crypto
-    .createHmac("sha256", SECRET_KEY)
-    .update(hashText, "utf8")
-    .digest("hex")
-    .toLowerCase();
-
-  return { hashText, secureHash };
+// Sort keys & concatenate VALUES ONLY
+function generatePlainHashText(data) {
+  return Object.keys(data)
+    .sort()
+    .map((k) => (data[k] !== null && data[k] !== "" ? data[k] : ""))
+    .join("");
 }
 
-// ===== CREATE PAYMENT API =====
+function generateSecureHash(plainText) {
+  return crypto
+    .createHmac("sha256", SECRET_KEY)
+    .update(plainText)
+    .digest("hex");
+}
+
+/* ================== CREATE PAYMENT ================== */
 app.post("/api/icici/create-payment", async (req, res) => {
   try {
-    const { firstName, phone, amount } = req.body;
+    const { name, mobile, amount } = req.body;
 
-    if (!firstName || !phone || !amount) {
+    if (!name || !mobile || !amount) {
       return res.status(400).json({
         success: false,
-        message: "firstName, phone, amount are required",
+        message: "name, mobile, amount required"
       });
     }
 
-    const merchantTxnNo = "TXN" + Date.now();
-    const txnDate = getTxnDate();
-    const finalAmount = Number(amount).toFixed(2);
-
-    // ===== REQUEST PAYLOAD =====
     const payload = {
       merchantId: MERCHANT_ID,
-      aggregatorID: AGGREGATOR_ID, // sent, but NOT hashed
-      merchantTxnNo: merchantTxnNo,
-      amount: finalAmount,
+      aggregatorID: AGGREGATOR_ID,
+      merchantTxnNo: "TXN" + Date.now(),
+      amount: Number(amount).toFixed(2),
       currencyCode: "356",
       payType: "0",
-      customerEmailID: "test@gmail.com",
+      customerEmailID: "promozionebranding@gmail.com",
+      customerMobileNo: String(mobile),
+      customerName: String(name),
       transactionType: "SALE",
-      returnURL: "http://localhost:3000/payment-success",
-      txnDate: txnDate,
-      customerMobileNo: String(phone),
-      customerName: String(firstName),
-      addlParam1: "000",
-      addlParam2: "111",
+      txnDate: getTxnDate(),
+      returnURL: RETURN_URL,
+      addlParam1: "NA",
+      addlParam2: "NA"
     };
 
-    // ===== HASH GENERATION =====
-    const { hashText, secureHash } = generateSecureHash(payload);
-    payload.secureHash = secureHash;
+    // HASH
+    const plainText = generatePlainHashText(payload);
+    payload.secureHash = generateSecureHash(plainText);
 
-    console.log("🔐 HASH TEXT:", hashText);
-    console.log("🔐 SECURE HASH:", secureHash);
-
-    // ===== API CALL =====
-    const response = await fetch(ICICI_INITIATE_SALE_URL, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(payload),
+    const response = await axios.post(ICICI_INITIATE_URL, payload, {
+      headers: { "Content-Type": "application/json" }
     });
 
-    const data = await response.json();
-    console.log("🏦 ICICI RESPONSE:", data);
+    const data = response.data;
 
-    if (data?.redirectURI && data?.tranCtx) {
+    if (data.responseCode === "R1000") {
       return res.json({
         success: true,
         paymentUrl: `${data.redirectURI}?tranCtx=${data.tranCtx}`,
-        merchantTxnNo,
+        merchantTxnNo: payload.merchantTxnNo
       });
     }
 
     return res.status(400).json({
       success: false,
-      message: data?.responseDescription || "ICICI initiateSale failed",
-      data,
+      iciciResponse: data
     });
-  } catch (err) {
-    console.error("❌ ERROR:", err);
-    return res.status(500).json({
+
+  } catch (error) {
+    console.error("ICICI ERROR:", error?.response?.data || error.message);
+    res.status(500).json({
       success: false,
-      message: err.message,
+      message: "Payment initiation failed"
     });
   }
 });
 
-// ===== SERVER START =====
-app.listen(5000, () => {
-  console.log("✅ ICICI Backend running on http://localhost:5000");
+/* ================== PAYMENT RESPONSE ================== */
+app.post("/api/icici/payment-response", (req, res) => {
+  const responseData = { ...req.body };
+
+  const receivedHash = responseData.secureHash;
+  delete responseData.secureHash;
+
+  const plainText = generatePlainHashText(responseData);
+  const calculatedHash = generateSecureHash(plainText);
+
+  if (receivedHash === calculatedHash) {
+    console.log("✅ PAYMENT VERIFIED", responseData);
+
+    // redirect to frontend success page
+    return res.redirect(
+      `https://promozionebranding.com/payment-success?txn=${responseData.merchantTxnNo}`
+    );
+  }
+
+  console.log("❌ HASH MISMATCH");
+  return res.status(400).send("Invalid payment response");
+});
+
+/* ================== START SERVER ================== */
+app.listen(PORT, () => {
+  console.log("✅ ICICI PG LIVE SERVER RUNNING ON PORT 8000");
 });
