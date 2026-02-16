@@ -69,6 +69,8 @@ import Whatsapp from "./components/Whatsapp";
 import BlogPost from "./pages/Blogs/BlogPost";
 import CityPage from "./pages/CityPage/CityPage";
 
+import PaymentSuccess from "./pages/payment/PaymentSuccess";
+import PaymentFailed from "./pages/payment/PaymentFailed";
 
 import { serviceLocations } from "./citydata/Citydata";
 import Pay from "./components/pay/Checkout"
@@ -205,6 +207,8 @@ const App = () => {
 
           {/* checkout */}
              <Route path="checkout" element={<Pay />} />
+<Route path="/payment-success" element={<PaymentSuccess />} />
+<Route path="/payment-failed" element={<PaymentFailed />} />
 
           {/* SEO */}
           <Route

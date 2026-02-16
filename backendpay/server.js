@@ -3,8 +3,30 @@ const axios = require("axios");
 const crypto = require("crypto");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+
 require("dotenv").config();
+
+
 const app = express();
+
+
+
+
+
+
+
+// const path = require("path");
+
+// require("dotenv").config({
+//   path: path.join(__dirname, ".env"),
+// });
+
+console.log("ENV CHECK:", {
+  MERCHANT_ID: process.env.MERCHANT_ID,
+  AGGREGATOR_ID: process.env.AGGREGATOR_ID,
+  SECRET_KEY: process.env.SECRET_KEY ? "LOADED" : "MISSING",
+});
+
 
 /* ================== CORS (PROD READY) ================== */
 app.use(cors({
@@ -123,6 +145,7 @@ app.post("/api/icici/create-payment", async (req, res) => {
 
 /* ================== PAYMENT RESPONSE ================== */
 app.post("/api/icici/payment-response", (req, res) => {
+
   const responseData = { ...req.body };
 
   const receivedHash = responseData.secureHash;
@@ -131,18 +154,42 @@ app.post("/api/icici/payment-response", (req, res) => {
   const plainText = generatePlainHashText(responseData);
   const calculatedHash = generateSecureHash(plainText);
 
-  if (receivedHash === calculatedHash) {
-    console.log("✅ PAYMENT VERIFIED", responseData);
+  /* ================= HASH CHECK ================= */
 
-    // redirect to frontend success page
+  if (receivedHash !== calculatedHash) {
+
+    console.log("❌ HASH MISMATCH");
+
     return res.redirect(
-      `https://promozionebranding.com/payment-success?txn=${responseData.merchantTxnNo}`
+      `https://promozionebranding.com/payment-failed?txn=${responseData.merchantTxnNo}`
     );
   }
 
-  console.log("❌ HASH MISMATCH");
-  return res.status(400).send("Invalid payment response");
+  console.log("✅ HASH VERIFIED");
+
+  /* ================= PAYMENT STATUS ================= */
+
+  const paymentStatus = responseData.txnStatus;
+
+  if (paymentStatus === "SUCCESS") {
+
+    console.log("💰 PAYMENT SUCCESS");
+
+    return res.redirect(
+      `https://promozionebranding.com/payment-success?txn=${responseData.merchantTxnNo}&amount=${responseData.amount}`
+    );
+
+  } else {
+
+    console.log("❌ PAYMENT FAILED");
+
+    return res.redirect(
+      `https://promozionebranding.com/payment-failed?txn=${responseData.merchantTxnNo}&msg=${responseData.responseMessage}`
+    );
+  }
+
 });
+
 
 /* ================== START SERVER ================== */
 app.listen(PORT, () => {
