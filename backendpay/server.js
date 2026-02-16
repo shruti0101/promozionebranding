@@ -146,6 +146,8 @@ app.post("/api/icici/create-payment", async (req, res) => {
 /* ================== PAYMENT RESPONSE ================== */
 app.post("/api/icici/payment-response", (req, res) => {
 
+  console.log("ICICI RESPONSE:", req.body);
+
   const responseData = { ...req.body };
 
   const receivedHash = responseData.secureHash;
@@ -167,11 +169,9 @@ app.post("/api/icici/payment-response", (req, res) => {
 
   console.log("✅ HASH VERIFIED");
 
-  /* ================= PAYMENT STATUS ================= */
+  /* ================= SUCCESS CHECK ================= */
 
-  const paymentStatus = responseData.txnStatus;
-
-  if (paymentStatus === "SUCCESS") {
+  if (responseData.responseCode === "0000") {
 
     console.log("💰 PAYMENT SUCCESS");
 
@@ -184,7 +184,7 @@ app.post("/api/icici/payment-response", (req, res) => {
     console.log("❌ PAYMENT FAILED");
 
     return res.redirect(
-      `https://promozionebranding.com/payment-failed?txn=${responseData.merchantTxnNo}&msg=${responseData.responseMessage}`
+      `https://promozionebranding.com/payment-failed?txn=${responseData.merchantTxnNo}&msg=${responseData.respMessage}`
     );
   }
 
