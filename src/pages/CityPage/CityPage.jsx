@@ -70,14 +70,22 @@ const CityPage = () => {
 
 
 const logos = [
- "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1763098557/cropped-matrix-logo-Photoroom-2_pov8nn.webp",
-  "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1763012515/client9_dnscbf.webp",
-  "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1763012514/client8_itgctd.webp",
-  "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1763012513/client7_rx3itv.webp",
-  "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1763012511/client2_r6wne6.webp",
-  "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1763012512/client5_zl3f4q.webp",
-  "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1763098935/exoticcrate_tzkahs.webp",
-  "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1763012510/client1_uvcw9r.webp",
+  "1.webp",
+  "2.webp",
+  "3.png",
+  "4.webp",
+
+  "6.webp",
+  "19.webp",
+  "7.png",
+ 
+
+  "10.webp",
+  "11.webp",
+ "13.webp",
+
+
+"/18.webp"
 ];
 
 
