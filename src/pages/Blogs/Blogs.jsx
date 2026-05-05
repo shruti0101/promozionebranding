@@ -38,7 +38,7 @@ export default function BlogList() {
         <div className="bg-primary  text-white text-center py-5 mb-5 rounded">
           <h1 className="text-white display-4 fw-bold">Explore All Blogs</h1>
           <p className="lead mb-0">
-            Stay updated with more blogs and insights.
+            Stay updated with more blogs and insighttttts.
           </p>
         </div>
 
