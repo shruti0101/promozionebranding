@@ -5,8 +5,8 @@ import "../styles/Whatsapp.css";
 
 const Whatsapp = () => {
   return (
-    <a
-      href="https://wa.me/+918802876899" 
+    <a 
+      href="https://wa.me/+917303486777" 
       className="whatsapp-float"
       target="_blank"
       rel="noopener noreferrer"
