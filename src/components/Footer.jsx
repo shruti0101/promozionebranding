@@ -199,7 +199,7 @@ const Footer = () => {
     </li>
 
     {/* ✅ Certificate Images INSIDE Policies section */}
-    <li className="mt-4">
+    {/* <li className="mt-4">
       <div className="d-flex align-items-center">
         <img
           src="https://res.cloudinary.com/dzbkxqqo9/image/upload/v1763013962/Your_1_qohgd9.webp"
@@ -214,42 +214,83 @@ const Footer = () => {
           style={{ maxWidth: "110px" }}
         />
       </div>
-    </li>
+    </li> */}
   </ul>
 </div>
 
         </div>  
 
-        {/* Contact Info */}
-        <div className="get-in-touch footer-bottom1">
-          <div className="contact-box">
+   
+  
+{/* Contact  */}
+<div className="container-fluid mt-2">
+  <div className="row g-3">
 
-            <MdCall className="contact-icon" />
-            <div>
-              <h5 className="contact-title">011 42603232</h5>
-              <p className="contact-subtitle">Mon–Sat 9:30AM–6:30PM</p>
-            </div>
-          </div>
-          <div className="contact-box">
-            <FaEnvelope className="contact-icon" />
-            <div>
-              <h5 className="contact-title">info@promozionebranding.com</h5>
-              <p className="contact-subtitle">Online support</p>
-            </div>
-          </div>
-          <div className="contact-box">
-            <FaMapMarkerAlt className="contact-icon" />
-            <div>
-              <h5 className="contact-title">Promozione Branding</h5>
-              <p className="contact-subtitle">
-UNIT, NO 356 PLOT NO 7 3RD FLR, VARDHMAN PLAZA,<br /> SEC3 PRASHANT V,SEVEN SEAS, <br /> DELHI, INDIA, 110085
-              </p>
-            </div>
-          </div>
+    {/* Box 1 */}
+    <div className="col-6 col-md-3">
+      <div className="contact-box h-100">
+        <MdCall className="contact-icon" />
+        <div>
+          <h5 className="contact-title">011 42603232</h5>
+          <p className="contact-subtitle">
+            Mon–Sat 9:30AM–6:30PM
+          </p>
         </div>
+      </div>
+    </div>
+
+    {/* Box 2 */}
+    <div className="col-6 col-md-3">
+      <div className="contact-box h-100">
+        <FaEnvelope className="contact-icon" />
+        <div>
+          <h5 className="contact-title">
+            info@promozionebranding.com
+          </h5>
+          <p className="contact-subtitle">
+            Online support
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {/* Box 3 */}
+    <div className="col-6 col-md-3">
+      <div className="contact-box h-100">
+        <FaMapMarkerAlt className="contact-icon" />
+        <div>
+          <h5 className="contact-title mb-2">
+            Registered Office
+          </h5>
+          <p className="contact-subtitle">
+            UNIT, NO 356 PLOT NO 7 3RD FLR,
+            VARDHMAN PLAZA, DELHI
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {/* Box 4 */}
+    <div className="col-6 col-md-3">
+      <div className="contact-box h-100">
+        <FaMapMarkerAlt className="contact-icon" />
+        <div>
+          <h5 className="contact-title mb-2">
+           Head Office
+          </h5>
+          <p className="contact-subtitle ">
+  605-606, BEST BUSINESS PARK, NETAJI SUBHASH PLACE,
+DELHI, 110034, INDIA
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
 
         <div className="footer-bottom">
-          <p>© 2025 Promozione Branding. All rights reserved.</p>
+          <p>© 2026 Promozione Branding. All rights reserved.</p>
         </div>
       </div>
     </section>

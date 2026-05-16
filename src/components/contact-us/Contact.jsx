@@ -201,7 +201,7 @@ export default function ContactSection() {
       </section>
 
       {/* Company Offices Section */}
-      <section className="py-5 bg-light office-locations">
+      <section className="col-md-12   py-5 bg-light office-locations">
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="fw-bold text-dark">📍 Our Office Locations</h2>
@@ -211,12 +211,12 @@ export default function ContactSection() {
           </div>
           <div className="row g-4">
 
-            
+                
             {/* delhi office */}
-            <div className="col-md-8 mx-auto">
+            <div className="col-md-6 mx-auto">
               <div className="address-card p-4 bg-white shadow-sm rounded-4 h-100 border-start border-4 border-primary">
                 <h5 className="fw-bold text-primary mb-3">
-                  <i className="bi bi-geo-alt-fill me-2"></i> Delhi Office
+                  <i className="bi bi-geo-alt-fill me-2"></i> Registered Office
                 </h5>
                 <p className="mb-2 text-black">
               UNIT, NO 356 PLOT NO 7 3RD FLR, VARDHMAN PLAZA, SEC3 PRASHANT V,SEVEN SEAS,<br /> DELHI, INDIA, 110085
@@ -235,27 +235,25 @@ export default function ContactSection() {
             </div>
 
             {/* Gurugram Office */}
-            {/* <div className="col-md-4">
+            <div className="col-md-6">
               <div className="address-card p-4 bg-white shadow-sm rounded-4 h-100 border-start border-4 border-primary">
                 <h5 className="fw-bold text-primary mb-3">
-                  <i className="bi bi-geo-alt-fill me-2"></i> Gurugram Office
+                  <i className="bi bi-geo-alt-fill me-2"></i> Head Office
                 </h5>
-                <p className="mb-2 text-muted">
-                  Huda Market, Sector-56
-                  <br />
-                  Gurugram, Haryana - 122002
+                <p className="mb-2 text-black">
+               605-606, Best Business Park, Netaji Subhash Place, <br /> DELHI, 110034, INDIA
                 </p>
                 <p className="mb-1">
                   <i className="bi bi-telephone me-2 text-success"></i>
                   
-                   <a href="tel:011 49097878" className="text-decoration-none text-dark">011 49097878</a>
+                   <a href="tel:+917303486777" className="text-decoration-none text-dark">+91 7303486777</a>
                 </p>
                 <p className="mb-0">
                   <i className="bi bi-envelope  text-danger"></i>{" "}
                   info@promozionebranding.com
                 </p>
               </div>
-            </div> */}
+            </div>
 
             {/* Noida Office */}
             {/* <div className="col-md-4">
