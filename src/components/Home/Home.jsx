@@ -14,8 +14,8 @@ import Form2 from "./Landingpage/Form2";
 import ctaImage from "../../assets/ctaweb.webp";
 
 import Hero from "../Hero";
-import Keywords from "./Landingpage/Keywords";
-import CitiesKeyword from "../CitiesKeyword/CitiesKeyword";
+// import Keywords from "./Landingpage/Keywords";
+// import CitiesKeyword from "../CitiesKeyword/CitiesKeyword";
 const Home = () => {
   return (
     <div>
@@ -32,10 +32,10 @@ const Home = () => {
         <SectorServe />
       <Orbit />
       <Project></Project>
-      <Keywords></Keywords>
+      {/* <Keywords></Keywords> */}
       <Testimonials />
       <Faq />
-  <CitiesKeyword />
+  {/* <CitiesKeyword /> */}
 
       <Form2
         heading="Get your Brands Ranked With Us"
