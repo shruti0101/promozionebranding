@@ -1,39 +1,112 @@
-import React, { useRef, useState } from "react";
+import React, {  useState } from "react";
 import underline from "../../assets/contact/underline-effect.webp";
 import "./Contact.css";
 import { toast } from "react-toastify";
 import { Helmet } from "react-helmet";
-import emailjs from "@emailjs/browser";
+
+import axios from "axios";
 
 
 export default function ContactSection() {
-  const formRef = useRef();
+
   const [loading, setLoading] = useState(false);
 
-  
-  const handleSubmit = (e) => {
-    e.preventDefault();
+
+
+
+
+
+
+
+const [formData, setFormData] = useState({
+  name: "",
+  email: "",
+  phone: "",
+  company: "",
+  website: "",
+  message: "",
+});
+
+const handleChange = (e) => {
+  setFormData({
+    ...formData,
+    [e.target.name]: e.target.value,
+  });
+};
+
+
+
+
+
+
+
+
+
+
+
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  if (!formData.name || !formData.phone || !formData.email) {
+    toast.error("Please fill all required fields.");
+    return;
+  }
+
+  try {
     setLoading(true);
 
-    emailjs
-      .sendForm(
-        "service_qsdjzek",      
-        "template_3x55moo",    
-        formRef.current,
-        "G5zhdkjqP6NE4mqks"       
-      )
-      .then(
-        () => {
-          toast.success("Proposal submitted successfully!");
-          formRef.current.reset();
-          setLoading(false);
-        },
-        (error) => {
-          toast.error("Failed to send. Please try again.");
-          setLoading(false);
-        }
-      );
-  };
+    const payload = {
+      platform: "Promozione Branding Website contact form",
+      platformEmail: "info@promozionebranding.com",
+
+      name: formData.name,
+      phone: formData.phone,
+      email: formData.email,
+
+      place: formData.company || "N/A",
+
+      product: "Digital Marketing Proposal",
+
+      message: `
+
+Company : ${formData.company}
+
+Website : ${formData.website || "N/A"}
+
+Message :
+
+${formData.message}
+
+      `,
+    };
+
+    const { data } = await axios.post(
+      "https://brandbnalo.com/api/form/add",
+      payload
+    );
+
+    if (data.success) {
+      toast.success("Proposal submitted successfully!");
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        company: "",
+        website: "",
+        message: "",
+      });
+    } else {
+      toast.error("Submission Failed");
+    }
+  } catch (err) {
+    console.log(err);
+    toast.error("Server Error");
+  } finally {
+    setLoading(false);
+  }
+};
 
   return (
     <>
@@ -76,79 +149,91 @@ export default function ContactSection() {
               <div className="bg-white rounded-4 shadow p-4 p-md-5 h-100">
                 <h2 className="fw-bold mb-4">Request a FREE Proposal Now!</h2>
 
-                <form ref={formRef} onSubmit={handleSubmit}>
+               <form onSubmit={handleSubmit}>
                   <div className="row g-3">
                     <div className="col-md-12">
                       <label className="form-label">First and Last Name *</label>
-                      <input
-                        type="text"
-                        name="name"
-                        className="form-control"
-                        required
-                      />
+                    <input
+  type="text"
+  name="name"
+  value={formData.name}
+  onChange={handleChange}
+  className="form-control"
+  required
+/>
                     </div>
 
                     <div className="col-md-12">
                       <label className="form-label">Work Email Address *</label>
-                      <input
-                        type="email"
-                        name="email"
-                        className="form-control"
-                        required
-                      />
+                   <input
+  type="email"
+  name="email"
+  value={formData.email}
+  onChange={handleChange}
+  className="form-control"
+  required
+/>
                     </div>
 
                         <div className="col-md-12">
                       <label className="form-label">Phone Number *</label>
-                      <input
-                        type="tel"
-                        name="number"
-                        maxLength={10}
-                        minLength={10}
-                        pattern="[0-9]{10}"
-                        className="form-control"
-                        required
-                      />
+                   <input
+  type="tel"
+  name="phone"
+  value={formData.phone}
+  onChange={handleChange}
+  maxLength={10}
+  pattern="[0-9]{10}"
+  onChange={handleChange}
+  className="form-control"
+  required
+/>
                     </div>
 
 
                     <div className="col-md-12">
                       <label className="form-label">Company *</label>
-                      <input
-                        type="text"
-                        name="company"
-                        className="form-control"
-                        required
-                      />
+                    <input
+  type="text"
+  name="company"
+  value={formData.company}
+  onChange={handleChange}
+  className="form-control"
+  required
+/>
                     </div>
 
                 
                     <div className="col-md-12">
                       <label className="form-label">Website Link</label>
-                      <input
-                        type="text"
-                        name="websitelink"
-                        className="form-control"
-                      />
+                    <input
+  type="text"
+  name="website"
+  value={formData.website}
+  onChange={handleChange}
+  className="form-control"
+/>
                     </div>
 
                     <div className="col-12">
                       <label className="form-label">Comments or Questions</label>
-                      <textarea
-                        name="message"
-                        rows="4"
-                        className="form-control"
-                      />
+                    <textarea
+  rows="4"
+  name="message"
+  value={formData.message}
+  onChange={handleChange}
+  className="form-control"
+/>
                     </div>
 
                     <div className="col-12">
-                      <button
-                        type="submit"
-                        className="btn btn-primary py-2 w-100 fw-bold"
-                        disabled={loading}
-                      >
-                        {loading ? "Submitting..." : "Get My Free Proposal"}
-                      </button>
+                  <button
+  type="submit"
+  disabled={loading}
+  className="btn btn-primary py-2 w-100 fw-bold"
+>
+  {loading ? "Submitting..." : "Get My Free Proposal"}
+</button>
                     </div>
                   </div>
                 </form>
